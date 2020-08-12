@@ -7,6 +7,7 @@ import Navigation from "../components/Navigation/Navigation.js"
 const IndexPage = () => (
   <>
     <h1>Hello test</h1>
+    <p>test</p>
   </>
 )
 
