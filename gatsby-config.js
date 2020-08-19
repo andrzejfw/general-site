@@ -15,6 +15,17 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `GitHub`,
+        fieldName: `github`,
+        url: `https://api.github.com/graphql`,
+        headers: {
+          Authorization: `Bearer your-github-token`,
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // {
