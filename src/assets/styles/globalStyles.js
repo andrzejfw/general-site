@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
-    padding: 80px 65px 0;
+    // padding: 80px 65px 0;
     font-family: 'Montserrat';
   }
   button {
@@ -25,6 +25,23 @@ const GlobalStyle = createGlobalStyle`
   ul {
     padding: 0;
     margin: 0;
+  }
+  // SLick slider style
+  .slick-dots li button:before{
+    font-size:30px !important;
+  }
+  .slick-dots{
+    bottom:-45px !important;
+  }
+  .slick-dots li.slick-active button:before{
+    color: red !important;
+  }
+  .slick-prev:before, .slick-next:before{
+    color:red;
+    font-size:30px !important;
+  }
+  .Carousel__SliderDiv-dxiygc{
+    margin:0 10px;
   }
 `;
 

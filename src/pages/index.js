@@ -1,15 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from 'styled-components'
-import Navigation from "../components/Navigation/Navigation.js"
-import Footer from "../components/Navigation/Footer.js"
+import Slider from "../components/Carousel"
+import ButtonRadius from "../components/Button"
 
+
+const PageContainer = styled.div`
+  max-width:1140px;
+  width:100%;
+  margin:auto;
+`;
 
 const IndexPage = () => (
-  <>
-    <h1>Hello test</h1>
-    <p>test</p>
-  </>
+  <PageContainer>
+    <h1>Home page</h1>
+
+    <Slider></Slider>
+
+    <ButtonRadius></ButtonRadius>
+
+  </PageContainer>
 )
+
 
 export default IndexPage
