@@ -3,7 +3,14 @@ import styled from 'styled-components'
 import Navigation from "../components/Navigation/Navigation.js"
 import Footer from "../components/Navigation/Footer.js"
 import { graphql, useStaticQuery } from "gatsby"
+import Slider from "../components/Carousel"
+import ButtonRadius from "../components/Button"
 
+const Section = styled.section`
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+`;
 
 const IndexPage = () => {
   const gatsbyRepoData = useStaticQuery(graphql`
@@ -16,7 +23,7 @@ const IndexPage = () => {
     }
   `)
   return (
-    <section>
+    <Section>
       <p>
         Build Time Data: Gatsby repo{` `}
         <p >
@@ -24,7 +31,9 @@ const IndexPage = () => {
           {gatsbyRepoData.example.next}
         </p>
       </p>
-    </section>
+      <Slider></Slider>
+      <ButtonRadius></ButtonRadius>
+    </Section>
   )
 }
 export default IndexPage

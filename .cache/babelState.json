@@ -11,17 +11,6 @@
           }
         },
         {
-<<<<<<< HEAD
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
-=======
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -31,17 +20,12 @@
         },
         {
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
->>>>>>> aba6728649674f5e56cabbd4213594835a4a504e
           "options": {}
         }
       ],
       "presets": [
         {
-<<<<<<< HEAD
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-=======
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
->>>>>>> aba6728649674f5e56cabbd4213594835a4a504e
           "options": {
             "plugins": []
           }
@@ -55,17 +39,6 @@
     "develop-html": {
       "plugins": [
         {
-<<<<<<< HEAD
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
-=======
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -75,7 +48,6 @@
         },
         {
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
->>>>>>> aba6728649674f5e56cabbd4213594835a4a504e
           "options": {}
         },
         {
@@ -89,11 +61,7 @@
       ],
       "presets": [
         {
-<<<<<<< HEAD
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-=======
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
->>>>>>> aba6728649674f5e56cabbd4213594835a4a504e
           "options": {
             "plugins": []
           }
@@ -107,17 +75,6 @@
     "build-html": {
       "plugins": [
         {
-<<<<<<< HEAD
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
-=======
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -127,7 +84,6 @@
         },
         {
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
->>>>>>> aba6728649674f5e56cabbd4213594835a4a504e
           "options": {}
         },
         {
@@ -141,11 +97,7 @@
       ],
       "presets": [
         {
-<<<<<<< HEAD
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-=======
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
->>>>>>> aba6728649674f5e56cabbd4213594835a4a504e
           "options": {
             "plugins": []
           }
@@ -159,17 +111,6 @@
     "build-javascript": {
       "plugins": [
         {
-<<<<<<< HEAD
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
-=======
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -179,7 +120,6 @@
         },
         {
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
->>>>>>> aba6728649674f5e56cabbd4213594835a4a504e
           "options": {}
         },
         {
@@ -193,11 +133,7 @@
       ],
       "presets": [
         {
-<<<<<<< HEAD
-          "name": "C:\\Users\\aleksander.ortenburg\\Desktop\\projects\\baltics-wlasciwy\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-=======
           "name": "C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
->>>>>>> aba6728649674f5e56cabbd4213594835a4a504e
           "options": {
             "plugins": []
           }
