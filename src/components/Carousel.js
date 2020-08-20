@@ -20,6 +20,9 @@ const SliderTextCenter = styled.h3`
     &:hover{
       box-shadow: 0px 0px 30px -12px rgba(0,0,0,0.75);
     }
+    @media(max-width:992px){
+      margin:0 10px 0 10px!important;
+    }
 `;
 
 

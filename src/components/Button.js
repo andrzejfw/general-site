@@ -22,6 +22,7 @@ const ButtonRadius = styled.button`
   margin:60px auto 0 auto;
   border-radius:30px;
   transition:.5s;
+  font-weight:bold;
   &:hover{
     background:#004cc2;
   }

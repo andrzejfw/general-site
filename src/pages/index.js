@@ -5,6 +5,7 @@ import Footer from "../components/Navigation/Footer.js"
 import { graphql, useStaticQuery } from "gatsby"
 import Slider from "../components/Carousel"
 import ButtonRadius from "../components/Button"
+import Tabs from "../components/TabBrand"
 
 const Section = styled.section`
     width:100%;
@@ -33,6 +34,7 @@ const IndexPage = () => {
       </p>
       <Slider></Slider>
       <ButtonRadius></ButtonRadius>
+      <Tabs></Tabs>
     </Section>
   )
 }
