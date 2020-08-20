@@ -13,22 +13,22 @@ const Section = styled.section`
 `;
 
 const IndexPage = () => {
-  const gatsbyRepoData = useStaticQuery(graphql`
-  query {
-    example{
-      count
-      next
-    }    
+  // const gatsbyRepoData = useStaticQuery(graphql`
+  // query {
+  //   example{
+  //     count
+  //     next
+  //   }    
      
-    }
-  `)
+  //   }
+  // `)
   return (
     <Section>
       <p>
         Build Time Data: Gatsby repo{` `}
         <p >
-          {gatsbyRepoData.example.count} <br />
-          {gatsbyRepoData.example.next}
+          {/* {gatsbyRepoData.example.count} <br />
+          {gatsbyRepoData.example.next} */}
         </p>
       </p>
       <Slider></Slider>
