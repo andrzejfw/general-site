@@ -48,44 +48,61 @@ const GlobalStyle = createGlobalStyle`
   }
   @media(max-width:1470px){.slick-slider{max-width:1100px; margin:auto;}}
   @media(max-width:1170px){.slick-slider{max-width:768px !important; margin:auto;}}
+  @media(max-width:850px){.slick-slider{max-width:450px !important; margin:auto;}}
+
 
   //end slick slider
   // tabs
   .react-tabs__tab--selected{
     background:red !important;
     border:3px solid #fff;
-    border-radius:5px !important;
+    border-radius:20px !important;
+  }
+  .react-tabs__tab-panel--selected{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .react-tabs__tab-panel--selected img{
+    max-width:110px;
   }
   .react-tabs{
     max-width:600px;
+    min-height:200px;
     margin:auto;
     background:#005EEF;
-    border-radius:5px;
+    border-radius:14px;
     margin-top:20px;
+    padding:15px;
   }
   .react-tabs__tab{
-    padding:10px 20px !important;
+    padding:15px 25px !important;
     border-radius:10px;
+    transform: scale(1.1);
   }
   .react-tabs__tab-list{
-    border-bottom:none !important;
+    border-bottom:0px !important;
     text-align:center;
   }
   .react-tabs__tab{
     color:#fff;
     font-weight:bold;
+    transition:.4s;
+      &:hover{
+        transform: scale(1.1);
+      }
   }
   #react-tabs-0{
     background:orange !important;
-    margin-right:10px;
+    margin-right:15px;
   }
   #react-tabs-2{
     background:#c21916 !important;
-    margin-right:10px;
+    margin-right:15px;
   }
   #react-tabs-4{
     background:pink !important;
-    margin-right:10px;
+    margin-right:15px;
   }
   #react-tabs-6{
     background:green !important;

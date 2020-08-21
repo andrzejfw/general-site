@@ -64,6 +64,16 @@ function SampleNextArrow(props) {
             {
               breakpoint: 992,
               settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows:true
+              }
+            },
+            {
+              breakpoint: 520,
+              settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
