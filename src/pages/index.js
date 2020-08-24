@@ -1,17 +1,19 @@
 import React from "react"
 import styled from 'styled-components'
-import Navigation from "../components/Navigation/Navigation.js"
-import Footer from "../components/Navigation/Footer.js"
 import { graphql, useStaticQuery } from "gatsby"
 import Slider from "../components/Carousel"
 import ButtonRadius from "../components/Button"
 import Tabs from "../components/TabBrand"
 
+
+
 const Section = styled.section`
     width:100%;
-    max-width:1400px;
+    max-width:1200px;
     margin:auto;
 `;
+
+
 
 const IndexPage = () => {
   // const gatsbyRepoData = useStaticQuery(graphql`

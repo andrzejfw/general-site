@@ -83,6 +83,10 @@ const GlobalStyle = createGlobalStyle`
   .react-tabs__tab-list{
     border-bottom:0px !important;
     text-align:center;
+    @media(max-width:768px){
+      display:flex;
+      flex-direction:column;
+    }
   }
   .react-tabs__tab{
     color:#fff;
@@ -95,17 +99,34 @@ const GlobalStyle = createGlobalStyle`
   #react-tabs-0{
     background:orange !important;
     margin-right:15px;
+    @media(max-width:768px){
+     margin-left:15px;
+     margin-top:10px;
+    }
   }
   #react-tabs-2{
     background:#c21916 !important;
     margin-right:15px;
+    @media(max-width:768px){
+      margin-left:15px;
+      margin-top:10px;
+     }
   }
   #react-tabs-4{
     background:pink !important;
     margin-right:15px;
+    @media(max-width:768px){
+      margin-left:15px;
+      margin-top:10px;
+     }
   }
   #react-tabs-6{
     background:green !important;
+    @media(max-width:768px){
+      margin-left:15px;
+      margin-right:15px;
+      margin-top:10px;
+     }
   }
   // end tabs
 `;
