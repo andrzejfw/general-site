@@ -1,6 +1,8 @@
 import React from "react"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { graphql } from "gatsby"
+import { Link } from "gatsby"
 
 
 
@@ -20,50 +22,47 @@ export default class extends React.Component{
             </TabList>
 
             <TabPanel>
-            <p>
-                <b>Mario</b> (<i>Japanese: マリオ Hepburn: Mario, [ma.ɾʲi.o]</i>) (<i>English:
-                /ˈmɑːrioʊ/; Italian: [ˈmaːrjo]</i>) is a fictional character in the Mario video
-                game franchise, owned by Nintendo and created by Japanese video game designer
-                Shigeru Miyamoto. Serving as the company's mascot and the eponymous protagonist
-                of the series, Mario has appeared in over 200 video games since his creation.
-                Depicted as a short, pudgy, Italian plumber who resides in the Mushroom
-                Kingdom, his adventures generally center upon rescuing Princess Peach from the
-                Koopa villain Bowser. His younger brother and sidekick is Luigi.
-            </p>
+                <Link to="hellmanns.cz"> <img src="https://www.hellmanns.cz/sk-eu/content/dam/brands/hellmanns/us/en/hellmanns-logo.png.rendition.380.380.png"/></Link>
+                <Link to="knorr.pl"><img src="https://asset-eu.unileversolutions.com/content/dam/unilever/knorr_world/global/english/logo/knorr_small_scale_under_354px-1714335-png.png.ulenscale.354x354.png"></img></Link>
             </TabPanel>
+
             <TabPanel>
-            <p>
-                <b>Luigi</b> (<i>Japanese: ルイージ Hepburn: Ruīji, [ɾɯ.iː.dʑi̥]</i>) (<i>English: /luˈiːdʒi/;
-                Italian: [luˈiːdʒi]</i>) is a fictional character featured in video games and related media
-                released by Nintendo. Created by prominent game designer Shigeru Miyamoto, Luigi is portrayed
-                as the slightly younger but taller fraternal twin brother of Nintendo's mascot Mario, and
-                appears in many games throughout the Mario franchise, often as a sidekick to his brother.
-            </p>
+                <Link to="https://www.bigmilk.pl/"><img src="https://www.bigmilk.pl/sk-eu/content/dam/brands/big-milk/pl/pl/algida-logo.png.rendition.1960.1960.png"></img></Link>
+                <Link to="https://www.benjerry.com/"><img src="https://www.benjerry.com/modules/bnj-templates/img/logo-small.png"></img></Link>
+                <Link to="https://www.magnumicecream.com/pl/home.html"><img src="https://asset-eu.unileversolutions.com/content/dam/unilever/magnum/global/logo/logo_true_to_pleasure_2-1815173-png.png"></img></Link>
             </TabPanel>
+
             <TabPanel>
-            <p>
-                <b>Princess Peach</b> (<i>Japanese: ピーチ姫 Hepburn: Pīchi-hime, [piː.tɕi̥ çi̥.me]</i>)
-                is a character in Nintendo's Mario franchise. Originally created by Shigeru Miyamoto,
-                Peach is the princess of the fictional Mushroom Kingdom, which is constantly under
-                attack by Bowser. She often plays the damsel in distress role within the series and
-                is the lead female. She is often portrayed as Mario's love interest and has appeared
-                in Super Princess Peach, where she is the main playable character.
-            </p>
+                <Link to="https://www.dove.com/pl/home.html"><img src="https://www.dove.com/content/dam/unilever/dove/global/Dove.png"></img></Link>
+                <Link to="https://www.axe.com/pl/home.html"><img src="https://asset-eu.unileversolutions.com/content/dam/unilever/axe/global/logo/others/deodorants_and_fragrances/fragrances/logo-white@3x-567173.png"></img></Link>
+                <Link to="https://www.rexona.com/pl/home.html"><img src="https://asset-eu.unileversolutions.com/content/dam/unilever/rexona/global/logo/deodorants_and_fragrances/deodorants_and_fragrances_unidentified/rexona_blue_new_2_-794527-840145.png"></img></Link>
             </TabPanel>
+
             <TabPanel>
-            <p>
-                <b>Yoshi</b> (<i>ヨッシー Yosshī, [joɕ.ɕiː]</i>) (<i>English: /ˈjoʊʃi/ or /ˈjɒʃi/</i>), once
-                romanized as Yossy, is a fictional anthropomorphic dinosaur who appears in
-                video games published by Nintendo. Yoshi debuted in Super Mario World (1990) on the
-                Super Nintendo Entertainment System as Mario and Luigi's sidekick. Yoshi later starred
-                in platform and puzzle games, including Super Mario World 2: Yoshi's Island, Yoshi's Story
-                and Yoshi's Woolly World. Yoshi also appears in many of the Mario spin-off games, including
-                Mario Party and Mario Kart, various Mario sports games, and Nintendo's crossover fighting
-                game series Super Smash Bros. Yoshi belongs to the species of the same name, which is
-                characterized by their variety of colors.
-            </p>
+                <Link to="https://www.domestos.com/pl/home.html"><img src="https://domestos-com.homecare.digital/static/cf1f3789ff9af2fab2fef003e7ba1eb0/d786d/DOMESTOS-master-cropped.png.png"></img></Link>
+                <Link to="https://www.cif.pl/home.html"><img src="https://asset-eu.unileversolutions.com/content/dam/unilever/cif/global/logo/cif-logo_web-1489380-png.png"></img></Link>
+
             </TabPanel>
         </Tabs>
       );
     }
   }
+
+
+
+
+// const ComponentName = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
+
+// export const query = graphql`
+//   {
+//     __typename
+//     file(name: {eq: "hellmans-logo"}) {
+//         childImageSharp {
+//           fluid(maxWidth: 150, maxHeight: 100, quality: 90) {
+//             src
+//             srcSet
+//             sizes
+//           }
+//         }
+//   }
+// `
