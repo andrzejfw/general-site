@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Slider from "../components/Carousel"
 import ButtonRadius from "../components/Button"
 import Tabs from "../components/TabBrand"
+import RichText from "../components/RichText"
 
 
 
@@ -37,6 +38,7 @@ const IndexPage = () => {
       <Slider></Slider>
       <ButtonRadius></ButtonRadius>
       <Tabs></Tabs>
+      <RichText></RichText>
     </Section>
   )
 }
