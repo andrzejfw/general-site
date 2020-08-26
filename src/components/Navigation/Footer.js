@@ -15,6 +15,25 @@ const Img = styled.img`
     }
    
 `;
+const Image = styled.img`
+    width:26px;
+    height:18px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    a{
+      text-decoration:none;
+      color: #005EEF;
+      :hover {
+    color: goldenrod;
+    ::after {
+      width: 100%;
+    }
+  }
+  }
+   
+`;
 
 const FooterWrapper = styled.nav`
     height: 15vh;
@@ -62,29 +81,28 @@ const FooterItem = styled.li`
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
-  transition: all 200ms ease-in;
+ 
   position: relative;
   font-family:sans-serif;
   text-transform:capitalize;
   list-style:none;
   text-decoration:none;
+  p{
+    font-size:12px;
+    color: #F005EE;
+  }
   a{
       text-decoration:none;
       color: #005EEF;
+      :hover {
+    color: goldenrod;
+    ::after {
+      width: 100%;
+    }
+  }
   }
 
-  :after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0%;
-    content: ".";
-    color: transparent;
-    background: goldenrod;
-    height: 1px;
-    transition: all 0.4s ease-in;
-  }
+ 
 
   :hover {
     color: goldenrod;
@@ -93,24 +111,57 @@ const FooterItem = styled.li`
     }
   }
 
-  @media (max-width: 768px) {
-    padding: 20px 0;
-    font-size: 1.5rem;
-    z-index: 6;
-  }
+  
 `
 
+const FooterItemList = styled.li`
+  text-decoration: none;
+  color: #005EEF;
+  font-weight:bold;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 1vw;
+ 
+  position: relative;
+  font-family:sans-serif;
+  text-transform:capitalize;
+  list-style:none;
+  text-decoration:none;
+  display:flex;
+  flex-direction:column;  
+  align-items:center; 
+
+  p{
+    font-size:12px;
+    color: #F005EE;
+  }
+  a{
+      text-decoration:none;
+      color: #005EEF;
+      :hover {
+    color: goldenrod;
+    ::after {
+      width: 100%;
+    }
+  }
+  }
+
+ 
+
+  
+
+  
+`
 
 
 const Footer = () => (
     <FooterWrapper>
-          <Link to ="/"><Img src="https://www.unilever.com/Images/UNILEVER_LOGO_160_tcm244-541804.gif" /><p>© Unilever 2020</p></Link>
-        <FooterList>
-            <FooterItem><Link to="/about">Facebook</Link></FooterItem>
-            <FooterItem><Link to="/about">Twitter</Link></FooterItem>
+         <FooterItemList><Link to ="/"><Img src="https://www.unilever.com/Images/UNILEVER_LOGO_160_tcm244-541804.gif" /><p>© Unilever 2020</p></Link></FooterItemList>
+        <FooterList>            
+        <FooterItemList>Social Media<div><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.15.1.48/images/phoenix/facebook-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.15.1.48/images/phoenix/twitter-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.15.1.48/images/phoenix/instagram-purple-royal.svg" /></Link></p></div></FooterItemList>
             <FooterItem><Link to="/about">Sitemap</Link></FooterItem>
             <FooterItem><Link to="/brands">Contact</Link></FooterItem>
-            <FooterItem><Link to="/contact">Legal Links</Link></FooterItem>           
+            <FooterItemList>Legal Links<div><p><Link to="/contact">cookie policy</Link></p><p><Link to="/contact">privacy policy</Link></p><p><Link to="/contact">legal notice</Link></p></div></FooterItemList>           
         </FooterList>
     </FooterWrapper>
 );
