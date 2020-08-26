@@ -9,7 +9,7 @@ const MainLayout = ( {children} ) => (
     <GlobalStyle />
     <Navigation />
     {children}
-    {/* <Footer/> */}
+    <Footer/>
   </>
 )
 

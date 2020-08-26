@@ -14,7 +14,7 @@ const SliderTextCenter = styled.h3`
     background:red;
     margin-right:10px;
     margin-left:10px;
-    padding:50px;
+    padding:60px;
     color:#fff;
     transition:.2s;
     &:hover{
