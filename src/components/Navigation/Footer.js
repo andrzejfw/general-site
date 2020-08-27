@@ -145,7 +145,7 @@ const FooterItemList = styled.li`
 
   p{
     font-size:12px;
-    color: #F005EE;
+    color: #005EEF;
   }
   a{
       text-decoration:none;
