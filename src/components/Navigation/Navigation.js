@@ -23,6 +23,7 @@ const Navigation = styled.nav`
   z-index: 2;
   align-self: center;
   max-width:1350px;
+  z-index:9;
 
   @media (max-width: 768px) {
     position: sticky;
@@ -97,27 +98,53 @@ const Hamburger = styled.div`
 `
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
-
+  const [navbarClose, setNavbarClose] = useState(false)
   return (
+    
     <Navigation>
         <Link to ="/"><Img src="https://www.unilever.com/Images/UNILEVER_LOGO_160_tcm244-541804.gif" /></Link>
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
+
+
+        //  navbarClose={navbarClose}
+        //  onClick={() => setNavbarClose(navbarOpen)}
       >
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
+
+         {/* {navbarClose ? <Hamburger /> : <Hamburger />} */}
+
       </Toggle>
+
+ 
+      
       {navbarOpen ? (
         <Navbox>
           <NavbarLinks />
         </Navbox>
       ) : (
         <Navbox open>
+          <NavbarLinks open/>
+        </Navbox>
+      ) }
+
+
+    {/* {navbarClose ? (
+        <Navbox>
           <NavbarLinks />
         </Navbox>
-      )}
+      ) : (
+        <Navbox>
+          <NavbarLinks/>
+        </Navbox>
+      ) } */}
+
+      
     </Navigation>
   )
 }
+
+
 
 export default Navbar

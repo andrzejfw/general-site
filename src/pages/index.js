@@ -5,6 +5,7 @@ import Slider from "../components/Carousel"
 import ButtonRadius from "../components/Button"
 import Tabs from "../components/TabBrand"
 import RichText from "../components/RichText"
+import Navigation from "../components/Navigation/Navigation"
 
 
 
@@ -27,6 +28,10 @@ const IndexPage = () => {
   //   }
   // `)
   return (
+    // <Navigation></Navigation>
+   <>
+    <Navigation></Navigation>
+    
     <Section>
       <p>
         Build Time Data: Gatsby repo{` `}
@@ -37,9 +42,10 @@ const IndexPage = () => {
       </p>
       <Slider></Slider>
       <ButtonRadius></ButtonRadius>
-      <Tabs></Tabs>
+      {/* <Tabs></Tabs> */}
       <RichText></RichText>
     </Section>
+    </>
   )
 }
 export default IndexPage
