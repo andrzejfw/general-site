@@ -14,11 +14,11 @@ const Img = styled.img`
       color: #005EEF;
     }
     @media(max-width:500px){
-      width:33px;
-      height:34px;
+      width:53px;
+      height:54px;
       
       a {
-        p{font-size:8px;}
+        p{font-size:12px;}
         }
     }
    
@@ -56,13 +56,10 @@ const FooterWrapper = styled.nav`
   align-self: center;
   max-width:1350px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
+   display:flex;
+   flex-direction:column;
    
-    height: 11vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    left: 0;
   }   
     `;
     
@@ -75,12 +72,24 @@ const FooterList = styled.ul`
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
+    @media(max-width:500px){
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
 `;
 const FooterLogo = styled.span`
 a{
     text-decoration:none;
     color:#000;
 }
+`
+
+const FooterImageContainer = styled.div`
+
+    display:flex;
+
 `
 
 const FooterItem = styled.li`
@@ -118,8 +127,9 @@ const FooterItem = styled.li`
    
   }
   @media(max-width:500px){
+    margin:4px;
     a{
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 
@@ -157,7 +167,10 @@ const FooterItemList = styled.li`
   }
 
   @media(max-width:500px){
-    font-size:12px;
+    margin:4px;
+    font-size:14px;
+    justify-content:center;
+    align-items:center; 
     a{
       font-size: 10px;
     }
@@ -174,7 +187,7 @@ const Footer = () => (
     <FooterWrapper>
          <FooterItemList><Link to ="/"><Img src="https://www.unilever.com/Images/UNILEVER_LOGO_160_tcm244-541804.gif" /></Link><p>© Unilever 2020</p></FooterItemList>
         <FooterList>            
-        <FooterItemList>Social Media<div><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.15.1.48/images/phoenix/facebook-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.15.1.48/images/phoenix/twitter-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.15.1.48/images/phoenix/instagram-purple-royal.svg" /></Link></p></div></FooterItemList>
+        <FooterItemList>Social Media<FooterImageContainer><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.15.1.48/images/phoenix/facebook-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.15.1.48/images/phoenix/twitter-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.15.1.48/images/phoenix/instagram-purple-royal.svg" /></Link></p></FooterImageContainer></FooterItemList>
             <FooterItem><Link to="/about">Sitemap</Link></FooterItem>
             <FooterItem><Link to="/brands">Contact</Link></FooterItem>
             <FooterItemList>Legal Links<div><p><Link to="/contact">cookie policy</Link></p><p><Link to="/contact">privacy policy</Link></p><p><Link to="/contact">legal notice</Link></p></div></FooterItemList>           
