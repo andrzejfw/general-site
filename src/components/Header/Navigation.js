@@ -20,7 +20,7 @@ const NavbarSection = styled.section`
     align-items:center;
     flex-wrap:wrap;
     .ml-auto.navbar-nav{
-      height:85vh !important;
+      height:90vh !important;
       align-items:center;
       justify-content:center;
     }
