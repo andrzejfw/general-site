@@ -5,7 +5,7 @@ import Slider from "../components/Carousel"
 import ButtonRadius from "../components/Button"
 import Tabs from "../components/TabBrand"
 import RichText from "../components/RichText"
-import Navigation from "../components/Navigation/Navigation"
+// import Popup from "../components/Popup"
 
 
 
@@ -14,7 +14,6 @@ const Section = styled.section`
     max-width:1200px;
     margin:auto;
 `;
-
 
 
 const IndexPage = () => {
@@ -28,11 +27,8 @@ const IndexPage = () => {
   //   }
   // `)
   return (
-    // <Navigation></Navigation>
    <>
-    <Navigation></Navigation>
-    
-    <Section>
+    <Section>    
       <p>
         Build Time Data: Gatsby repo{` `}
         <p >
@@ -44,6 +40,7 @@ const IndexPage = () => {
       <ButtonRadius></ButtonRadius>
       {/* <Tabs></Tabs> */}
       <RichText></RichText>
+      {/* <Popup></Popup> */}
     </Section>
     </>
   )

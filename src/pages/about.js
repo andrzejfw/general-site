@@ -1,10 +1,10 @@
 import React from "react"
-import Navigation from "../components/Navigation/Navigation"
+// import Navigation from "../components/Navigation/Navigation"
 
 
 const AboutPage = () => (
   <>
-    <Navigation></Navigation>
+    {/* <Navigation></Navigation> */}
     <h1>Hi from the about page</h1>
   </>
 )

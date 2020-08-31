@@ -1,5 +1,5 @@
 import React from "react"
-// import Navigation from "../components/Navigation/Navigation.js"
+import Navigation from "../components/Navigation/header/Navigation.js"
 import Footer from "../components/Navigation/Footer.js"
 import GlobalStyle from "../assets/styles/globalStyles.js"
 
@@ -7,7 +7,7 @@ import GlobalStyle from "../assets/styles/globalStyles.js"
 const MainLayout = ( {children} ) => (
   <>
     <GlobalStyle />
-    {/* <Navigation /> */}
+    <Navigation />
     {children}
     <Footer/>
   </>
