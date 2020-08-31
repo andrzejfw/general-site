@@ -4,8 +4,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Slider from "../components/Carousel"
 import ButtonRadius from "../components/Button"
 import Tabs from "../components/TabBrand"
-import RichText from "../components/RichText"
 // import Popup from "../components/Popup"
+import RichText from "../components/RichText/RichText"
 
 
 

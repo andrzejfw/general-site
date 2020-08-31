@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from 'gatsby';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Header/Header/node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {Modal, Button} from 'react-bootstrap'
-
+import "../Popup/Popup.css"
 
 const Popup = () => {
     return (
