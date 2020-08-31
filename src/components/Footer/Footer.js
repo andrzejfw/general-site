@@ -42,20 +42,22 @@ const Image = styled.img`
 `;
 
 const FooterWrapper = styled.nav`
-    height: 15vh;
+  height: 15vh;
   display: flex;
   align-items:center;
   background-color: #fff;
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
- 
+  
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
   align-self: center;
   width:100vw;
-
+  @media (max-width:992px){
+    height:100%;
+  }
   @media (max-width: 500px) {
    display:flex;
    flex-direction:column;

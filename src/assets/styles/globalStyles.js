@@ -227,19 +227,6 @@ const GlobalStyle = createGlobalStyle`
     font-weight:bold;
   }
   // end tabs
-  //Navigation
-  .Navigation__Navbox-ixhOIQ{
-    z-index:9;
-  }
-  .kSJWij{
-    position:sticky;
-    top:0;
-    left:0;
-    right:0;
-    top:0;
-    max-width:100vw;
-  }
-  //End navigation
 `;
 
 export default GlobalStyle;
