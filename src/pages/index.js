@@ -6,6 +6,7 @@ import ButtonRadius from "../components/Button"
 import Tabs from "../components/TabBrand"
 // import Popup from "../components/Popup"
 import RichText from "../components/RichText/RichText"
+import Accordion from '../components/Accordion/Accordion'
 
 
 
