@@ -13,7 +13,7 @@ font-size: 1em;
   transition: all 0.3s ease-out;
 
 `;
-const BIN = styled.div` 
+const BIN1 = styled.div` 
   margin: 14px;
 `;
 
@@ -97,15 +97,29 @@ const ButtonRadius = styled.button`
 
 
 
-export default class extends React.Component{
-  render() {
+const BIN = () => {
 
+  const gatsbyRepoData = useStaticQuery(graphql`
+  query {
+    example{
+      name
+      language
+      blocks
+     
+    }
+     
+         
+     
+    }
+  `)
+  const etailerUrl = gatsbyRepoData.example.blocks;
+const etailerUrlArr = etailerUrl.split(',');
 
     return (
 
       
       
-      <BIN>
+      <BIN1>
         
       <Button href="#popup1">BUY IT NOW</Button>
       <Overlay id="popup1" >
@@ -115,22 +129,22 @@ export default class extends React.Component{
       <Content class="content">
         <PopupBox >
           <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
-          <Button href='/' target="_blank">KUP TERAZ</Button>
+          <Button href={etailerUrlArr[0]} target="_blank">KUP TERAZ</Button>
         </PopupBox>
         <PopupBox >
           <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
-          <Button href='/' target="_blank" >KUP TERAZ</Button>
+          <Button href={etailerUrlArr[1]} target="_blank" >KUP TERAZ</Button>
         </PopupBox>
         
       </Content>
     </Popup>
   </Overlay>
-    </BIN>
+    </BIN1>
    
   
     );
-  }
-}
+  };
 
+export default BIN;
 
 

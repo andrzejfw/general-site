@@ -14,29 +14,38 @@ const ProductDetailPage = () => {
     const gatsbyRepoData = useStaticQuery(graphql`
   query {
     example{
-      name     
-      brand
-      imageUrl   }    
+      name
+      language
+      blocks
+     
+    }
+     
+         
      
     }
   `)
+  const etailerUrl = gatsbyRepoData.example.blocks;
+const etailerUrlArr = etailerUrl.split(',');
   return (
     < >
-    <window onload="UTIF.replaceIMG()">
+   
 
    
       <p >
         PDP{` `}
         <p >
           {gatsbyRepoData.example.name} <br />
-          {gatsbyRepoData.example.brand}
+          {gatsbyRepoData.example.language}<br />
+          {etailerUrlArr[0]}<br />
+          {etailerUrlArr[1]}<br />
+       
           
           
           
         </p>
       </p>
-     <Image   src={gatsbyRepoData.example.imageUrl} alt="packshot"/>
-     </window>
+     
+    
     </>
   )
 
