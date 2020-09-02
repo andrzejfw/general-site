@@ -11,14 +11,17 @@ const SliderDiv = styled.div`
 
 const SliderTextCenter = styled.h3`
     text-align:center;
-    background:red;
+    background:white;
+    opacity: 0.8;
+    border-radius:14px;
     margin-right:10px;
     margin-left:10px;
     padding:60px;
-    color:#fff;
+    color:#004cc2;
     transition:.2s;
     &:hover{
       box-shadow: 0px 0px 30px -12px rgba(0,0,0,0.75);
+      transform: scale(1.05);
     }
     @media(max-width:992px){
       margin:0 10px 0 10px!important;
@@ -86,22 +89,22 @@ function SampleNextArrow(props) {
       return (
         <Slider {...settings}>
           <SliderDiv>
-            <SliderTextCenter>1</SliderTextCenter>
+            <SliderTextCenter>Slider 1</SliderTextCenter>
           </SliderDiv>
           <SliderDiv>
-            <SliderTextCenter>2</SliderTextCenter>
+            <SliderTextCenter>Slider 2</SliderTextCenter>
           </SliderDiv>
           <SliderDiv>
-            <SliderTextCenter>3</SliderTextCenter>
+            <SliderTextCenter>Slider 3</SliderTextCenter>
           </SliderDiv>
           <SliderDiv>
-            <SliderTextCenter>4</SliderTextCenter>
+            <SliderTextCenter>Slider 4</SliderTextCenter>
           </SliderDiv>
           <SliderDiv>
-            <SliderTextCenter>5</SliderTextCenter>
+            <SliderTextCenter>Slider 5</SliderTextCenter>
           </SliderDiv>
           <SliderDiv>
-            <SliderTextCenter>6</SliderTextCenter>
+            <SliderTextCenter>Slider 6</SliderTextCenter>
           </SliderDiv>
         </Slider>
       );

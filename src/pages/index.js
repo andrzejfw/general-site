@@ -8,6 +8,9 @@ import Popup from "../components/Popup/Popup"
 import RichText from "../components/RichText/RichText"
 import Example from "../components/Modal/Modal"
 import Quotes from "../components/Quotes/Quotes"
+import Accordion from '../components/Accordion/Accordion'
+
+
 
 const Section = styled.section`
     width:100%;
