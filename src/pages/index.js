@@ -4,10 +4,10 @@ import { graphql, useStaticQuery } from "gatsby"
 import Slider from "../components/Carousel"
 import ButtonRadius from "../components/Button"
 import Tabs from "../components/TabBrand"
-// import Popup from "../components/Popup"
+import Popup from "../components/Popup/Popup"
 import RichText from "../components/RichText/RichText"
-
-
+import Example from "../components/Modal/Modal"
+import Quotes from "../components/Quotes/Quotes"
 
 const Section = styled.section`
     width:100%;
@@ -40,7 +40,9 @@ const IndexPage = () => {
       <ButtonRadius></ButtonRadius>
       {/* <Tabs></Tabs> */}
       <RichText></RichText>
-      {/* <Popup></Popup> */}
+      <Example></Example>
+      <Quotes></Quotes>
+      <Popup></Popup>
     </Section>
     </>
   )

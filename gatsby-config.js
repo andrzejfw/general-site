@@ -26,6 +26,24 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["UnileverShilling, UnileverShillingMedium"],
+          urls: ["/static/fonts/fonts.css"],
+        },
+      },
+    },
+    // {
+    //   resolve: "gatsby-plugin-web-font-loader",
+    //   options: {
+    //     custom: {
+    //       families: ["UnileverShillingMedium"],
+    //       urls: ["https://www.unileverbrandcentre.com/readimage.aspx/asset.ai?pubid=pcCOlOE4mQEUEHDTOxxa5w"],
+    //     },
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // {

@@ -55,6 +55,7 @@ const FooterWrapper = styled.nav`
   z-index: 2;
   align-self: center;
   width:100vw;
+  box-shadow:0 0 10px 1px #8888;
   @media (max-width:992px){
     height:100%;
   }
