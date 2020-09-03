@@ -6,7 +6,7 @@ import {Row, Col, Toast, Button} from 'react-bootstrap'
 import "../Popup/Popup.css"
 
 
-const  Popup = () => {
+const Popup = () => {
 
   const [showA, setShowA] = useState(true);
   const [showB, setShowB] = useState(true);

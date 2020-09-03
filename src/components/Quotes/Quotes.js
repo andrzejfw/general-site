@@ -13,15 +13,12 @@ const QuotesDiv = styled.div`
 
 const SliderTextCenter = styled.h3`
     text-align:center;
-    background:red;
+    background:transparent;
     margin-right:10px;
     margin-left:10px;
     padding:60px;
     color:#fff;
     transition:.2s;
-    &:hover{
-      box-shadow: 0px 0px 30px -12px rgba(0,0,0,0.75);
-    }
     @media(max-width:992px){
       margin:0 10px 0 10px!important;
     }
@@ -66,11 +63,11 @@ function SampleNextArrow(props) {
             {
               breakpoint: 992,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
-                arrows:true
+                arrows:false
               }
             },
             {
@@ -86,26 +83,49 @@ function SampleNextArrow(props) {
           ]
       };
       return (
-        <Slider class="quotes" {...settings}>
-          <QuotesDiv>
-            <SliderTextCenter>1</SliderTextCenter>
-          </QuotesDiv>
-          <QuotesDiv>
-            <SliderTextCenter>2</SliderTextCenter>
-          </QuotesDiv>
-          <QuotesDiv>
-            <SliderTextCenter>3</SliderTextCenter>
-          </QuotesDiv>
-          <QuotesDiv>
-            <SliderTextCenter>4</SliderTextCenter>
-          </QuotesDiv>
-          <QuotesDiv>
-            <SliderTextCenter>5</SliderTextCenter>
-          </QuotesDiv>
-          <QuotesDiv>
-            <SliderTextCenter>6</SliderTextCenter>
-          </QuotesDiv>
-        </Slider>
+        <div class="quotes">
+            <Slider class="quotes" {...settings}>
+                <QuotesDiv>
+                    <SliderTextCenter>
+                        <div class="container">
+                            <div class="row header-users">
+                                <div class="col-12">
+                                    <h2>Users opinion</h2>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-8 col-md-12 col-sm-12 order-lg-1 order-md-2 order-sm-2 order-2 left-quotes-section">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                                    <p><b>Bill Gates</b></p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                    <img src="https://lh3.googleusercontent.com/proxy/s4yM6L6lc7yueu_ycpODH2inGrWL3ZEy8PjcCjo9kBCmpYWrkS9kVQMIU0AGIMK-Lt38KBIr61nDj4WEw6oG_Lu9BXBMLAOa-UWBsUoqJ0JDpQ"/>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 order-1 right-quotes-section">
+                                    <img src="https://wallpapercave.com/wp/HFsWtAz.jpg" className="rounded" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </SliderTextCenter>
+                </QuotesDiv>
+                <QuotesDiv>
+                    <SliderTextCenter>2</SliderTextCenter>
+                </QuotesDiv>
+                <QuotesDiv>
+                    <SliderTextCenter>3</SliderTextCenter>
+                </QuotesDiv>
+                <QuotesDiv>
+                    <SliderTextCenter>4</SliderTextCenter>
+                </QuotesDiv>
+                <QuotesDiv>
+                    <SliderTextCenter>5</SliderTextCenter>
+                </QuotesDiv>
+                <QuotesDiv>
+                    <SliderTextCenter>6</SliderTextCenter>
+                </QuotesDiv>
+            </Slider>
+        </div>
       );
     }
   }

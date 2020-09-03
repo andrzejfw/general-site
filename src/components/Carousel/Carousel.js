@@ -87,26 +87,28 @@ function SampleNextArrow(props) {
           ]
       };
       return (
-        <Slider {...settings}>
-          <SliderDiv>
-            <SliderTextCenter>Slider 1</SliderTextCenter>
-          </SliderDiv>
-          <SliderDiv>
-            <SliderTextCenter>Slider 2</SliderTextCenter>
-          </SliderDiv>
-          <SliderDiv>
-            <SliderTextCenter>Slider 3</SliderTextCenter>
-          </SliderDiv>
-          <SliderDiv>
-            <SliderTextCenter>Slider 4</SliderTextCenter>
-          </SliderDiv>
-          <SliderDiv>
-            <SliderTextCenter>Slider 5</SliderTextCenter>
-          </SliderDiv>
-          <SliderDiv>
-            <SliderTextCenter>Slider 6</SliderTextCenter>
-          </SliderDiv>
-        </Slider>
+        <div class="carousel">
+          <Slider {...settings}>
+            <SliderDiv>
+              <SliderTextCenter>Slider 1</SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+              <SliderTextCenter>Slider 2</SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+              <SliderTextCenter>Slider 3</SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+              <SliderTextCenter>Slider 4</SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+              <SliderTextCenter>Slider 5</SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+              <SliderTextCenter>Slider 6</SliderTextCenter>
+            </SliderDiv>
+          </Slider>
+        </div>
       );
     }
   }

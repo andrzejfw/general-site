@@ -13,7 +13,7 @@ const MainLayout = ( {children} ) => (
     <TabStyle />
     <CarouselStyle />
     {children}
-    {/* <Footer/> */}
+    <Footer/>
   </>
 )
 

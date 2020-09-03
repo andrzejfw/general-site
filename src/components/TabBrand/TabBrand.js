@@ -11,7 +11,7 @@ import beauty1 from '../../assets/images/beauty3.png'
 import beauty2 from '../../assets/images/beauty5.png'
 import hc1 from '../../assets/images/hc3.png'
 import hc2 from '../../assets/images/hc5.png'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+// import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const TABS = [
   { text: 'Food', img_active: food1, img_inactive: food2 },

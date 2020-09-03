@@ -1,14 +1,14 @@
 import React from "react"
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from "gatsby"
-import Slider from "../components/Carousel"
+import Slider from "../components/Carousel/Carousel"
 import ButtonRadius from "../components/Button"
-import Tabs from "../components/TabBrand"
+import Tabs from "../components/TabBrand/TabBrand"
 import Popup from "../components/Popup/Popup"
 import RichText from "../components/RichText/RichText"
 import Example from "../components/Modal/Modal"
 import Quotes from "../components/Quotes/Quotes"
-import Accordion from '../components/Accordion/Accordion'
+// import Accordion from '../components/Accordion/Accordion'
 
 
 
