@@ -1,9 +1,9 @@
 import React from "react"
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from "gatsby"
-import Slider from "../components/Carousel"
+import Slider from "../components/Carousel/Carousel"
 import ButtonRadius from "../components/Button"
-import Tabs from "../components/TabBrand"
+import Tabs from "../components/TabBrand/TabBrand"
 // import Popup from "../components/Popup"
 import RichText from "../components/RichText/RichText"
 import Accordion from '../components/Accordion/Accordion'
@@ -18,25 +18,12 @@ const Section = styled.section`
 
 
 const IndexPage = () => {
-  // const gatsbyRepoData = useStaticQuery(graphql`
-  // query {
-  //   example{
-  //     count
-  //     next
-  //   }    
-     
-  //   }
-  // `)
+  
   return (
    <>
     <Section>    
-      <p>
-        Build Time Data: Gatsby repo{` `}
-        <p >
-          {/* {gatsbyRepoData.example.count} <br />
-          {gatsbyRepoData.example.next} */}
-        </p>
-      </p>
+    
+      
       <Slider></Slider>
       <ButtonRadius></ButtonRadius>
       {/* <Tabs></Tabs> */}

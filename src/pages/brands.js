@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import BIN from "../components/BIN/BIN copy"
+import BIN from "../components/BIN/BIN"
 
 
 const BrandsPage = () => (

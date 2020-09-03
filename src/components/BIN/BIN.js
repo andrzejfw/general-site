@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from "gatsby"
+// import ButtonRadius from "../Button"
 
 const Button = styled.a`
 font-size: 1em;
@@ -13,7 +14,7 @@ font-size: 1em;
   transition: all 0.3s ease-out;
 
 `;
-const BIN = styled.div` 
+const BIN1 = styled.div` 
   margin: 14px;
 `;
 
@@ -27,7 +28,7 @@ const Overlay = styled.div`
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-   :target{
+   &:target{
     visibility: visible;
   opacity: 1;
   z-index:100;
@@ -75,19 +76,29 @@ const Close = styled.a`
 `;
 
 
-const ButtonRadius = styled.button`
+const ButtonRadius = styled.a`
   display:flex;
   background:#005EEF;
+  opacity: 0.8;
   border:none;
-  padding:18px 55px;
+  padding:10px 35px;
+  font-size:1.1em;
   color:#fff;
-  text-transform:uppercase;
-  margin:60px auto 0 auto;
-  border-radius:30px;
+  text-transform:uppercase;  
+  border-radius:14px;
+  border:2px solid white;
   transition:.5s;
   font-weight:bold;
+  max-width:190px;
+  justify-content:center;
+  align-items:center; 
+  text-decoration:none;
   &:hover{
     background:#004cc2;
+    transform: scale(1.15);
+    opacity: 1;
+    color:#fff;
+    text-decoration:none;
   }
 `;
 
@@ -97,40 +108,54 @@ const ButtonRadius = styled.button`
 
 
 
-export default class extends React.Component{
-  render() {
+const BIN = () => {
 
+  const gatsbyRepoData = useStaticQuery(graphql`
+  query {
+    example{
+      name
+      language
+      blocks
+     
+    }
+     
+         
+     
+    }
+  `)
+  const etailerUrl = gatsbyRepoData.example.blocks;
+const etailerUrlArr = etailerUrl.split(',');
 
     return (
 
       
       
-      <BIN>
+      <BIN1>
         
-      <Button href="#popup1">BUY IT NOW</Button>
+      <ButtonRadius href="#popup1">BUY IT NOW</ButtonRadius>
       <Overlay id="popup1" >
     <Popup >
-      <h2>Here i am</h2>
+      <h2>Lorem ipsum</h2>
       <Close  href="#">&times;</Close>
       <Content class="content">
         <PopupBox >
           <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
-          <Button href='/' target="_blank">KUP TERAZ</Button>
+          <ButtonRadius href={etailerUrlArr[0]} target="_blank">KUP TERAZ</ButtonRadius>
         </PopupBox>
         <PopupBox >
           <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
-          <Button href='/' target="_blank" >KUP TERAZ</Button>
+          <ButtonRadius href={etailerUrlArr[1]} target="_blank" >KUP TERAZ</ButtonRadius>
         </PopupBox>
         
       </Content>
     </Popup>
   </Overlay>
-    </BIN>
+    </BIN1>
    
   
     );
-  }
-}
+  };
 
+export default BIN;
 
 
