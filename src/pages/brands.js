@@ -5,6 +5,10 @@ import BIN from "../components/BIN/BIN"
 
 const BrandsPage = () => (
  
+  
+
+
+
     <>
     <h1>Hi from the brands page</h1>
     <BIN></BIN>

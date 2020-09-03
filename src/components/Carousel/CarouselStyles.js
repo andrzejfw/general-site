@@ -37,7 +37,8 @@ const CarouselStyle = createGlobalStyle`
   }
   @media(max-width:1470px){
     .carousel .slick-slider{
-      max-width:1100px; margin:auto;
+      max-width:1100px; 
+      margin:40px auto;
     }
     .carousel .slick-next{
       right:34% !important;

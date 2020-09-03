@@ -42,7 +42,7 @@ const Image = styled.img`
 `;
 
 const FooterWrapper = styled.nav`
-  height: 15vh;
+  height: 20vh;
   display: flex;
   align-items:center;
   background-color: #fff;
