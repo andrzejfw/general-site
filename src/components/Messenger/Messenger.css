@@ -1,0 +1,9 @@
+@media(max-width:768px){
+    .fb_mpn_mobile_bounce_in{
+        height: 30% !important;
+        bottom:6% !important;
+        width:90vw !important;
+        margin-right: 30px !important;
+        top: unset !important;
+    }
+}

@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-layout`,
+    // `gatsby-plugin-ngrok-tunneling`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,6 +35,19 @@ module.exports = {
           families: ["UnileverShilling, UnileverShillingMedium"],
           urls: ["/static/fonts/fonts.css"],
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-facebook-customer-chat`,
+      options: {
+        sdk: {
+          appId: '333940694471829',
+        },
+        chat: {
+          pageId: '100856028429752',
+          loggedInGreeting: 'Hi! How can I help you?',
+          loggedOutGreeting: 'Hi! How can I help you?',
+        }
       },
     },
     // {

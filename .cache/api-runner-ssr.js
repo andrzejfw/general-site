@@ -7,6 +7,9 @@ var plugins = [{
     },{
       plugin: require('C:/Users/aleksander.ortenburg/Desktop/projects/baltics-wlasciwy/general-site/node_modules/gatsby-plugin-layout/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('C:/Users/kostiantyn.daniuk/Desktop/project/general-site/node_modules/gatsby-plugin-facebook-customer-chat/gatsby-ssr'),
+      options: {"plugins":[],"sdk":{"appId":"333940694471829"},"chat":{"pageId":"100856028429752","loggedInGreeting":"Hi! How can I help you?","loggedOutGreeting":"Hi! How can I help you?"}},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 const CarouselStyle = createGlobalStyle`
+.carousel {
+  margin-top:50px;
+}
 .carousel .slick-dots li button:before{
     font-size:30px !important;
     color: white !important;
