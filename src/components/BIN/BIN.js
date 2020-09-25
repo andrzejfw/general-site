@@ -110,21 +110,17 @@ const ButtonRadius = styled.a`
 
 const BIN = () => {
 
-  const gatsbyRepoData = useStaticQuery(graphql`
-  query {
-    example{
-      name
-      language
-      blocks
-     
-    }
-     
-         
-     
-    }
-  `)
-  const etailerUrl = gatsbyRepoData.example.blocks;
-const etailerUrlArr = etailerUrl.split(',');
+//   const gatsbyRepoData = useStaticQuery(graphql`
+//   query BINQuery($slug: Int!) {
+//   example(slug: { eq: $slug }) {
+   
+  
+//     slug
+//   }
+// }
+//   `)
+//   const etailerUrl = gatsbyRepoData.example.etailerUrl;
+// const etailerUrlArr = etailerUrl.split(',');
 
     return (
 
@@ -140,11 +136,11 @@ const etailerUrlArr = etailerUrl.split(',');
       <Content class="content">
         <PopupBox >
           <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
-          <ButtonRadius href={etailerUrlArr[0]} target="_blank">KUP TERAZ</ButtonRadius>
+          {/* <ButtonRadius href={etailerUrlArr[0]} target="_blank">KUP TERAZ</ButtonRadius> */}
         </PopupBox>
         <PopupBox >
           <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
-          <ButtonRadius href={etailerUrlArr[1]} target="_blank" >KUP TERAZ</ButtonRadius>
+          {/* <ButtonRadius href={etailerUrlArr[1]} target="_blank" >KUP TERAZ</ButtonRadius> */}
         </PopupBox>
         
       </Content>
