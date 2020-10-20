@@ -20,7 +20,7 @@ class AccordionSection extends Component {
       <div
         style={{
           background: isOpen ? "rgba(255,255,255,0.7)" : "rgba(255,255,255,0.7)",
-          border: "1px solid #004cc2",
+          border: "2px solid #004cc2",
           borderRadius: "14px",
           color:"#004cc2",
           fontWeight: "bold",
