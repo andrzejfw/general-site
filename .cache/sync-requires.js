@@ -11,6 +11,7 @@ exports.components = {
   "component---src-pages-brands-js": hot(preferDefault(require("C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\src\\pages\\brands.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\src\\pages\\contact.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\src\\pages\\index.js"))),
+  "component---src-pages-index-lipton-js": hot(preferDefault(require("C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\src\\pages\\index-lipton.js"))),
   "component---src-pages-pdp-js": hot(preferDefault(require("C:\\Users\\kostiantyn.daniuk\\Desktop\\project\\general-site\\src\\pages\\PDP.js")))
 }
 
