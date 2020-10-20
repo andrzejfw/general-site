@@ -58,7 +58,7 @@ class Accordion extends Component {
 
     return (
       <div style={{
-        width:"100%",
+        width:"99%",
         margin:"0 auto",
         display:"flex",
         flexDirection:"column",
