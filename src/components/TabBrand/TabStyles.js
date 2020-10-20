@@ -66,7 +66,7 @@ const TabStyle = createGlobalStyle`
     @media (max-width:768px) {
       width:100%;
     }
-  }
+  
   img{
     margin-right:10px;
     margin-left:10px;

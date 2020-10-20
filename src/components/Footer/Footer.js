@@ -2,6 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+
+const Footercontainer = styled.div`
+
+    width:100vw;
+    height:20vh; 
+    z-index:2;
+    background:#fff;
+    @media (max-width:992px){
+    height:100%;
+  }
+
+`;
 const Img = styled.img`
     width:66px;
     height:72px;
@@ -30,6 +42,7 @@ const Image = styled.img`
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    margin-top:14px;
     a{
       text-decoration:none;
       color: #005EEF;
@@ -55,7 +68,8 @@ const FooterWrapper = styled.nav`
   z-index: 2;
   align-self: center;
   width:100vw;
-  box-shadow:0 0 10px 1px #8888;
+  max-width:1300px;
+  
   @media (max-width:992px){
     height:100%;
   }
@@ -96,15 +110,14 @@ const FooterImageContainer = styled.div`
 `
 
 const FooterItem = styled.li`
+  line-height:1.2em
   text-decoration: none;
   color: #005EEF;
   font-weight:bold;
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1vw;
- 
-  position: relative;
-  font-family:sans-serif;
+  margin: 0 1vw; 
+  position: relative;  
   text-transform:capitalize;
   list-style:none;
   text-decoration:none;
@@ -130,7 +143,7 @@ const FooterItem = styled.li`
    
   }
   @media(max-width:500px){
-    margin:4px;
+    margin:8px;
     a{
       font-size: 14px;
     }
@@ -148,7 +161,7 @@ const FooterItemList = styled.li`
   margin: 0 1vw;
  
   position: relative;
-  font-family:sans-serif;
+ 
   text-transform:capitalize;
   list-style:none;
   text-decoration:none;
@@ -187,15 +200,17 @@ const FooterItemList = styled.li`
 
 
 const Footer = () => (
+  <Footercontainer>
     <FooterWrapper>
          <FooterItemList><Link to ="/"><Img src="https://www.unilever.com/Images/UNILEVER_LOGO_160_tcm244-541804.gif" /></Link><p>© Unilever 2020</p></FooterItemList>
         <FooterList>            
         <FooterItemList>Social Media<FooterImageContainer><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.16.54/images/phoenix/facebook-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.16.54/images/phoenix/twitter-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.16.54/images/phoenix/instagram-purple-royal.svg" /></Link></p></FooterImageContainer></FooterItemList>
             <FooterItem><Link to="/about">Sitemap</Link></FooterItem>
             <FooterItem><Link to="/brands">Contact</Link></FooterItem>
-            <FooterItemList>Legal Links<div><p><Link to="/contact">cookie policy</Link></p><p><Link to="/contact">privacy policy</Link></p><p><Link to="/contact">legal notice</Link></p></div></FooterItemList>           
+            <FooterItemList>Legal Links<div ><p><Link to="/contact">cookie policy</Link></p><p><Link to="/contact">privacy policy</Link></p><p><Link to="/contact">legal notice</Link></p></div></FooterItemList>           
         </FooterList>
     </FooterWrapper>
+    </Footercontainer>
 );
 
 export default Footer;

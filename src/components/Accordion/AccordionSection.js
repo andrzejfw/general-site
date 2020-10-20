@@ -25,7 +25,8 @@ class AccordionSection extends Component {
           color:"#004cc2",
           fontWeight: "bold",
           margin: "5px",
-          padding: "15px 15px"
+          padding: "15px 15px",
+          width: "1240px"
         }}
       >
         <div onClick={onClick} style={{ cursor: "pointer" }}>
