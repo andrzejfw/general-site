@@ -1,8 +1,16 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
+import styled from 'styled-components';
 import AccordionSection from "./AccordionSection";
 import { auto } from "@popperjs/core";
+
+const AccordionLiptonTab = styled.div`
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+`;
 
 class Accordion extends Component {
   static propTypes = {
@@ -57,14 +65,7 @@ class Accordion extends Component {
     } = this;
 
     return (
-      <div style={{
-        width:"99%",
-        margin:"0 auto",
-        display:"flex",
-        flexDirection:"column",
-        justifyContent:"center",
-        alignItems:"center",
-      }} >
+      <AccordionLiptonTab>
         {children.map(child => (
           <AccordionSection
             isOpen={!!openSections[child.props.label]}
@@ -74,7 +75,7 @@ class Accordion extends Component {
             {child.props.children}
           </AccordionSection>
         ))}
-      </div>
+      </AccordionLiptonTab>
     );
   }
 }
