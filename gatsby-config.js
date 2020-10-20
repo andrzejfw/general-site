@@ -37,19 +37,19 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-facebook-customer-chat`,
-      options: {
-        sdk: {
-          appId: '333940694471829',
-        },
-        chat: {
-          pageId: '100856028429752',
-          loggedInGreeting: 'Hi! How can I help you?',
-          loggedOutGreeting: 'Hi! How can I help you?',
-        }
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-facebook-customer-chat`,
+    //   options: {
+    //     sdk: {
+    //       appId: '333940694471829',
+    //     },
+    //     chat: {
+    //       pageId: '100856028429752',
+    //       loggedInGreeting: 'Hi! How can I help you?',
+    //       loggedOutGreeting: 'Hi! How can I help you?',
+    //     }
+    //   },
+    // },
     // {
     //   resolve: "gatsby-plugin-web-font-loader",
     //   options: {
