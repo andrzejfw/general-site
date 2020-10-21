@@ -108,7 +108,7 @@ function SampleNextArrow(props) {
             <SliderDiv>
               <SliderTextCenter>
                 <ImageSlider src={LiptonGreenTea} width="100%"/>
-                <TextSlider>Green Tea</TextSlider>
+                <TextSlider>Green Tea2</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
