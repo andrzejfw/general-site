@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { default as SliderLipton } from 'react-slick'; 
+import { default as SliderLiptonRecipe } from 'react-slick'; 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Carousel.css';
+import './CarouselLiptonRecipe.css';
 import LiptonGreenTea from '../../assets/images/lipton-green-tea.jpg';
+import ButtonRadius from '../Button';
 
 const SliderDiv = styled.div`
     outline:none;
@@ -12,7 +13,7 @@ const SliderDiv = styled.div`
 
 const SliderTextCenter = styled.h3`
     text-align:center;
-    background:white;
+    background:#fade4c;
     opacity: 0.8;
     border: solid 2px #fade4c;
     border-radius:14px;
@@ -33,15 +34,20 @@ const SliderTextCenter = styled.h3`
 
 const ImageSlider = styled.img`
     border-radius:14px;
+    width: 80%;
+    height: 120px;
+    object-fit: cover;
+    margin: 10% auto 5%;
 `;
 
 const TextSlider = styled.span`
-    position:absolute;
-    top:70%;
-    left:50%;
-    transform:translateX(-50%);
     color:white;
     text-shadow: 2px 2px 10px black;
+`;
+
+const StyledButtonLipton = styled(ButtonRadius)`
+    width: 80% !important;
+    margin: 0 !important;
 `;
 
 function SampleNextArrow(props) {
@@ -102,52 +108,54 @@ function SampleNextArrow(props) {
           ]
       };
       return (
-        <div class="carousel-lipton">
+        <div class="carousel-lipton-recipe">
           <h2>Explore World of Tea</h2>
-          <SliderLipton {...settings}>
+          <SliderLiptonRecipe {...settings}>
             <SliderDiv>
               <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
+                <TextSlider>Green Tea</TextSlider>
+                <StyledButtonLipton></StyledButtonLipton>
+              </SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+            <SliderTextCenter>
+                <ImageSlider src={LiptonGreenTea}/>
+                <TextSlider>Green Tea</TextSlider>
+                <ButtonRadius></ButtonRadius>
+              </SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+            <SliderTextCenter>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
-                <TextSlider>Green Tea</TextSlider>
-              </SliderTextCenter>
-            </SliderDiv>
-            <SliderDiv>
-            <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
-                <TextSlider>Green Tea</TextSlider>
-              </SliderTextCenter>
-            </SliderDiv>
-            <SliderDiv>
-            <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv> 
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
-          </SliderLipton>
+          </SliderLiptonRecipe>
         </div>
       );
     }
