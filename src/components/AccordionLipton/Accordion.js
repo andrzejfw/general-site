@@ -7,7 +7,7 @@ import { auto } from "@popperjs/core";
 const AccordionLiptonTab = styled.div`
   margin: 0 auto;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;

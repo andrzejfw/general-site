@@ -3,13 +3,18 @@ import PropTypes from "prop-types";
 import styled from 'styled-components';
 
 const AccordionSectionLipton = styled.div`
-  border: 1px solid #004cc2;
+  border: 2px solid #D99D4E;
   border-radius: 14px;
-  color: #004cc2;
+  color: #fff;
   font-weight: bold;
   margin: 5px;
   padding: 15px 15px;
-  width: 1240px;
+  width: 50vw;
+  text-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
+  p, span{text-shadow:none};
+  @media (max-width: 992px){
+  width:90vw;
+  }
 `;
 
 class AccordionSection extends Component {
@@ -28,7 +33,7 @@ class AccordionSection extends Component {
     const { onClick, props: { isOpen, label } } = this;
 
     return (
-      <AccordionSectionLipton style={{background: isOpen ? "rgba(255,255,255,0.7)" : "rgba(255,255,255,0.7)",}}>
+      <AccordionSectionLipton style={{background: isOpen ? "#FADE4C" : "#FADE4C",}}>
         <div onClick={onClick} style={{ cursor: "pointer" }}>
           {label}
           <div style={{ float: "right" }}>
@@ -40,7 +45,7 @@ class AccordionSection extends Component {
           <div
             style={{
               background: "transparent",
-              opacity: "0.6",
+         //     opacity: "0.6",
               //border: "2px solid #008f68",
               marginTop: 10,
               padding: "0px 5px"
