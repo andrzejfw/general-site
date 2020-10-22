@@ -3,13 +3,15 @@ import styled from "styled-components"
 import { Link } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
-import "./HeaderLipton.css"
 
 const ImgLogo = styled.img`
   width:90px;
   position: absolute;
   top: -5px;
   left: 10%;
+  @media(max-width:992px) {
+    position: relative;
+  }
 `;
 
 
@@ -49,16 +51,17 @@ const NavigationLipton = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
 
-          <Nav className="ml-auto">
-            <Nav.Link Link href="/about">About</Nav.Link>
-            <Nav.Link Link href="/brands">Brands</Nav.Link>
-            <Nav.Link Link href="/contact">Contact</Nav.Link>
-
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+          <Nav className="ml-lipton">
+          <NavDropdown title="Products" id="collasible-nav-dropdown">
               <NavDropdown.Item Link href="/about">Dropdown1</NavDropdown.Item>
               <NavDropdown.Item Link href="/brands">Dropdown1</NavDropdown.Item>
               <NavDropdown.Item Link href="/contact">Dropdown1</NavDropdown.Item>
             </NavDropdown>
+
+            <Nav.Link Link href="/index-lipton">Recipes</Nav.Link>
+            <Nav.Link Link href="/brands">Campaign</Nav.Link>
+            <Nav.Link Link href="/contact">Our Mission</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </NavbarSection>

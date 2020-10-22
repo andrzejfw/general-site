@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { default as SliderLipton } from 'react-slick'; 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Carousel.css';
 import LiptonGreenTea from '../../assets/images/lipton-green-tea.jpg';
 
 const SliderDiv = styled.div`
@@ -33,6 +32,7 @@ const SliderTextCenter = styled.h3`
 
 const ImageSlider = styled.img`
     border-radius:14px;
+    width: 100%;
 `;
 
 const TextSlider = styled.span`
@@ -107,43 +107,43 @@ function SampleNextArrow(props) {
           <SliderLipton {...settings}>
             <SliderDiv>
               <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea2</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv> 
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>

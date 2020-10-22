@@ -1,4 +1,7 @@
-.navbar {
+import { createGlobalStyle } from 'styled-components';
+
+const NavigationLiptonStyles = createGlobalStyle`
+    .navbar {
     position: sticky;
     top: 0;
     left: 0;
@@ -12,7 +15,7 @@
   .navbar-dark .navbar-nav .nav-link{
     color:white !important;
     text-shadow: 2px 2px 10px rgba(0,0,0,.4);
-    padding: 10px;
+    padding: 10px 50px;
   }
   /* icon animated */
     .navbar-toggler {
@@ -26,7 +29,7 @@
     }
 
     .navbar-toggler .icon-bar {
-      background-color: #005EEF;
+      background-color: white;
       transform: rotate(0deg) translate(0px, 0px);
       transition: ease all .2s;
     }
@@ -84,11 +87,22 @@
       max-width:100vw;
     }
     .dropdown-menu a{
-    color:#005EEF !important;
+        color:white !important;
     }
+
+    .dropdown-item:hover {
+        background-color: #c8381d !important;
+    }
+
     .dropdown-menu.show{
-      transition:height 1s easy !important;
+        transition:height 1s easy !important;
     }
+
+    .dropdown-menu {
+        background-color: #fade4c !important;
+        border: none !important;
+    }
+
     @media(max-width:992px){
       .dropdown a{
         text-align:center;
@@ -100,8 +114,26 @@
         .navbar{
           box-shadow: 0 0 14px 4px #8888;
         }
+
+        .navbar-collapse .ml-lipton {
+        margin-left: 0 !important;
+        text-align: center;
+        }
+    }
+
+    @media(min-width:992px){
+        .navbar-expand-lg .navbar-nav .dropdown-menu {
+            left: 12% !important;
+        }
     }
 
     .bg-yellow {
         background-color: #fade4c!important;
     }
+
+    .ml-lipton {
+        margin-left: 15%!important;
+    }
+`;
+
+export default NavigationLiptonStyles;

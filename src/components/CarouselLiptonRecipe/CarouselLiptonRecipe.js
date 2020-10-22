@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import { default as SliderLiptonRecipe } from 'react-slick'; 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './CarouselLiptonRecipe.css';
 import LiptonGreenTea from '../../assets/images/lipton-green-tea.jpg';
-import ButtonRadius from '../Button';
+import ButtonRadius from '../ButtonLipton';
 
 const SliderDiv = styled.div`
     outline:none;
@@ -14,7 +13,6 @@ const SliderDiv = styled.div`
 const SliderTextCenter = styled.h3`
     text-align:center;
     background:#fade4c;
-    opacity: 0.8;
     border: solid 2px #fade4c;
     border-radius:14px;
     margin-right:10px;
@@ -43,11 +41,11 @@ const ImageSlider = styled.img`
 const TextSlider = styled.span`
     color:white;
     text-shadow: 2px 2px 10px black;
-`;
-
-const StyledButtonLipton = styled(ButtonRadius)`
-    width: 80% !important;
-    margin: 0 !important;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
 `;
 
 function SampleNextArrow(props) {
@@ -114,45 +112,50 @@ function SampleNextArrow(props) {
             <SliderDiv>
               <SliderTextCenter>
                 <ImageSlider src={LiptonGreenTea}/>
-                <TextSlider>Green Tea</TextSlider>
-                <StyledButtonLipton></StyledButtonLipton>
+                <TextSlider>Green Tea with Lemon Recipe</TextSlider>
+                <ButtonRadius>Read more</ButtonRadius>
+              </SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+            <SliderTextCenter>
+                <ImageSlider src={LiptonGreenTea}/>
+                <TextSlider>Green Tea Recipe</TextSlider>
+                <ButtonRadius>Read more</ButtonRadius>
+              </SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+            <SliderTextCenter>
+                <ImageSlider src={LiptonGreenTea}/>
+                <TextSlider>Green Tea with Mint and Sugar Recipe</TextSlider>
+                <ButtonRadius>Read more</ButtonRadius>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
-                <ButtonRadius></ButtonRadius>
+                <ButtonRadius>Read more</ButtonRadius>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
+                <ButtonRadius>Read more</ButtonRadius>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
-              </SliderTextCenter>
-            </SliderDiv>
-            <SliderDiv>
-            <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea}/>
-                <TextSlider>Green Tea</TextSlider>
-              </SliderTextCenter>
-            </SliderDiv>
-            <SliderDiv>
-            <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea}/>
-                <TextSlider>Green Tea</TextSlider>
+                <ButtonRadius>Read more</ButtonRadius>
               </SliderTextCenter>
             </SliderDiv> 
             <SliderDiv>
             <SliderTextCenter>
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
+                <ButtonRadius>Read more</ButtonRadius>
               </SliderTextCenter>
             </SliderDiv>
           </SliderLiptonRecipe>

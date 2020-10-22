@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
+
+const CarouselStyleLiptonRecipe = createGlobalStyle`
 .carousel-lipton-recipe {
     margin:50px 10% 0;
   }
@@ -37,9 +40,9 @@
         margin: 0 !important;
       }
     }
-    .carousel-lipton-recipe .slick-prev, .carousel-lipton-recipe .slick-next{
+    /* .carousel-lipton-recipe .slick-prev, .carousel-lipton-recipe .slick-next{
       z-index:99;
-    }
+    } */
 
     .carousel-lipton-recipe .slick-slider{
         margin:40px auto;
@@ -56,3 +59,6 @@
     .button-recipe {
         margin: 0 !important;
     }
+  `;
+
+  export default CarouselStyleLiptonRecipe;
