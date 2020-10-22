@@ -11,6 +11,7 @@ import Quotes from "../components/Quotes/Quotes"
 import Accordion from '../components/AccordionLipton/Accordion'
 import CustomerChat from "../components/Messenger/Messenger"
 import Button from "../components/ButtonLipton"
+import BannerWithVideoLipton from "../components/BannerWithVideoLipton/BannerWithVideoLipton"
 import { Link } from "gatsby"
 
 
@@ -25,10 +26,11 @@ const Section = styled.section`
 const IndexPage = () => {
   return (
    <>
-    <Section>    
-    
-      
+    <Section> 
+         
     <SliderLipton></SliderLipton>
+    <BannerWithVideoLipton title="Brand Purpose Article" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." videoId="HLtkjt0g0Z8" background="https://asset-eu.unileversolutions.com/content/dam/unilever/lipton_international/france/french/key_visual/core_brand/tea_and_soy_and_fruit_beverages/leaf_and_instant_tea/80755_lipton_1280x854-1154722.jpg"></BannerWithVideoLipton>  
+    
     <Accordion>
         <div label={"cokolwiek"} isOpen>
           <p>

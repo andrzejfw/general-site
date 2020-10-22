@@ -17,6 +17,10 @@ const NavigationLiptonStyles = createGlobalStyle`
     text-shadow: 2px 2px 10px rgba(0,0,0,.4);
     padding: 10px 50px;
   }
+
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #c8381d !important;
+  }
   /* icon animated */
     .navbar-toggler {
       border: none;
