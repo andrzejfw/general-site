@@ -4,7 +4,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../Quotes/Quotes.css"
 import Quotesimg from "../../assets/images/quotes.png"
 import Person from "../../assets/images/bii-gates.jpg"
 
@@ -85,18 +84,18 @@ function SampleNextArrow(props) {
           ]
       };
       return (
-        <div class="quotes">
-            <Slider class="quotes" {...settings}>
+        <div className="quotes">
+            <Slider className="quotes" {...settings}>
                 <QuotesDiv>
                     <SliderTextCenter>
-                        <div class="container">
-                            <div class="row header-users">
-                                <div class="col-12">
+                        <div className="container">
+                            <div className="row header-users">
+                                <div className="col-12">
                                     <h2>Users opinion</h2>
                                 </div>
                             </div>
-                            <div class="row align-items-center">
-                                <div class="col-lg-8 col-md-12 col-sm-12 order-lg-1 order-md-2 order-sm-2 order-2 left-quotes-section">
+                            <div className="row align-items-center">
+                                <div className="col-lg-8 col-md-12 col-sm-12 order-lg-1 order-md-2 order-sm-2 order-2 left-quotes-section">
                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 
@@ -104,7 +103,7 @@ function SampleNextArrow(props) {
                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                   <img src={Quotesimg} alt="Quotesimg" />
                                 </div>
-                                <div class="col-lg-4 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 order-1 right-quotes-section">
+                                <div className="col-lg-4 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 order-1 right-quotes-section">
                                   <img src={Person} alt="Person" />
                                 </div>
                             </div>

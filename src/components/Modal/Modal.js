@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { Link } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Modal, Button} from 'react-bootstrap'
-import "../Modal/Modal.css"
 
 const  Example = () => {
     const [show, setShow] = useState(false);

@@ -18,8 +18,6 @@ import { Link } from "gatsby"
 
 const Section = styled.section`
     width:100%;
-    max-width:1200px;
-    margin:auto;
 `;
 
 
