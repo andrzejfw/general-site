@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
-import { render } from "react-dom";
+
 
 const ImgLogo = styled.img`
   width:90px;
@@ -34,12 +34,10 @@ const NavbarSection = styled.section`
 `;
 
 
-
-
 const NavigationLipton = () => {
   return (
     <>    
-    <Navbar class="Navbartwo" collapseOnSelect expand="lg" bg="yellow" variant="dark">
+    <Navbar className="Navbartwo" collapseOnSelect expand="lg" bg="yellow" variant="dark">
 
       <NavbarSection>
         <Navbar.Brand>
@@ -47,15 +45,15 @@ const NavigationLipton = () => {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
-          <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
+          <span className="icon-bar top-bar"></span>
+          <span className="icon-bar middle-bar"></span>
+          <span className="icon-bar bottom-bar"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
 
           <Nav className="ml-lipton">
           <NavDropdown title="Products" id="collasible-nav-dropdown">
-              <NavDropdown.Item Link href="/about">Dropdown1</NavDropdown.Item>
+              <NavDropdown.Item  Link href="/about">Dropdown1</NavDropdown.Item>
               <NavDropdown.Item Link href="/brands">Dropdown1</NavDropdown.Item>
               <NavDropdown.Item Link href="/contact">Dropdown1</NavDropdown.Item>
             </NavDropdown>

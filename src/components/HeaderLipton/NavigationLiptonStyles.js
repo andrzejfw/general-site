@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 const NavigationLiptonStyles = createGlobalStyle`
+
+.active{
+  color:red !important;
+}
     .navbar {
     position: sticky;
     top: 0;
