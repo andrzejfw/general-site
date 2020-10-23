@@ -165,7 +165,7 @@ const FooterItem = styled.li`
 
 const FooterItemList = styled.li`
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   font-weight:bold;
   display: inline-block;
   white-space: nowrap;
@@ -230,7 +230,7 @@ const FooterLipton = () => (
             <FooterList>            
                 <FooterItem><Link to="/about">Sitemap</Link></FooterItem>
                 <FooterItem><Link to="/brands">Contact</Link></FooterItem>
-                <FooterItemList>Legal Links<div><p><Link to="/contact">cookie policy</Link></p><p><Link to="/contact">privacy policy</Link></p><p><Link to="/contact">legal notice</Link></p></div></FooterItemList>           
+                <FooterItemList>Legal Links<div><p><a href="cookie-notice">cookie policy</a></p><p><a href="/privacy-notice">privacy policy</a></p><p><a href="/legal-notice">legal notice</a></p></div></FooterItemList>           
             </FooterList>
     </FooterWrapper>
     </Footercontainer>

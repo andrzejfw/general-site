@@ -1,8 +1,9 @@
-import React from "react"
+import React, {Component} from "react"
 import styled from "styled-components"
 import { Link } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+import { render } from "react-dom";
 
 const ImgLogo = styled.img`
   width:90px;
@@ -34,9 +35,10 @@ const NavbarSection = styled.section`
 
 
 
+
 const NavigationLipton = () => {
   return (
-    <>
+    <>    
     <Navbar class="Navbartwo" collapseOnSelect expand="lg" bg="yellow" variant="dark">
 
       <NavbarSection>
