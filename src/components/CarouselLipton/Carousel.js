@@ -42,6 +42,7 @@ const TextSlider = styled.span`
     transform:translateX(-50%);
     color:white;
     text-shadow: 2px 2px 10px black;
+    width: 90%;
 `;
 
 function SampleNextArrow(props) {
@@ -102,25 +103,25 @@ function SampleNextArrow(props) {
           ]
       };
       return (
-        <div class="carousel-lipton">
+        <div className="carousel-lipton">
           <h2>Explore World of Tea</h2>
           <SliderLipton {...settings}>
             <SliderDiv>
               <SliderTextCenter>
                 <ImageSlider src={LiptonGreenTea}/>
-                <TextSlider>Green Tea2</TextSlider>
+                <TextSlider>Organic Green Tea Natural</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
                 <ImageSlider src={LiptonGreenTea}/>
-                <TextSlider>Green Tea</TextSlider>
+                <TextSlider>Green Tea with Mint</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
                 <ImageSlider src={LiptonGreenTea}/>
-                <TextSlider>Green Tea</TextSlider>
+                <TextSlider>Green Tea with Lime and Lemon</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>

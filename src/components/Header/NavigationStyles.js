@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
+
+const NavigationStyles = createGlobalStyle`
  .navbar {
     position: sticky;
     top: 0;
@@ -99,3 +102,6 @@
           box-shadow: 0 0 14px 4px #8888;
         }
     }
+`;
+
+export default NavigationStyles;

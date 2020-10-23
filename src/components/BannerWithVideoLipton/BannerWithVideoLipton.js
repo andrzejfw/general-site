@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const BannerWithVideoLiptonWrapper = styled.div`
     width:100%;
-    height: 450px;
+    height: 500px;
     background: url(${props => props.background});
     background-size: cover;
     margin: 50px 0;
@@ -33,22 +33,36 @@ const BannerLiptonContent = styled.div`
 `;
 
 const BannerLiptonParagraph = styled.p`
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #fff;
     text-align: left;
-    padding: 5% 20%;
+    padding: 5% 5% 5% 20%;
 
     @media(max-width:992px){
+      font-size: 1.2rem;
       text-align: center;
-      padding: 5% 9% 5% 4%;
+      padding: 5%;
     }
 `;
 
 const BannerLiptonVideo = styled.div`
-    margin: 6% auto;
+    margin: 6% 10% 6% 0;
 
     @media(max-width:992px){
       margin: 0 auto;
+    }
+`;
+
+const BannerLiptonVideoIframe = styled.iframe`
+    width: 100% !important;
+    max-height: 300px !important;
+    border: 2px solid #fade4c;
+    border-radius: 20px;
+
+    @media(max-width:992px){
+      min-width: 350px !important;
+      max-height: 190px !important;
+      margin-bottom: 5%;
     }
 `;
 
@@ -58,7 +72,7 @@ const BannerWithVideoLipton = ({title, paragraph, videoId, background}) => (
         <BannerLiptonContent>
             <BannerLiptonParagraph>{paragraph}</BannerLiptonParagraph>
             <BannerLiptonVideo>
-            <iframe width="400" height="250" src={`https://www.youtube.com/embed/${videoId}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <BannerLiptonVideoIframe width="600" height="350" src={`https://www.youtube.com/embed/${videoId}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></BannerLiptonVideoIframe>
             </BannerLiptonVideo>
         </BannerLiptonContent>
     </BannerWithVideoLiptonWrapper>

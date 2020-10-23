@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { Link } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Row, Col, Toast, Button} from 'react-bootstrap'
-import "../Popup/Popup.css"
 
 
 const Popup = () => {
@@ -15,7 +14,7 @@ const Popup = () => {
   const toggleShowB = () => setShowB(!showB);
 
   return (
-    <section class="popup">
+    <section className="popup">
       <Row>
         <Col>
           <Toast show={showA} onClose={toggleShowA}>

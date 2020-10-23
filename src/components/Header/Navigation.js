@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { Link } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
-import "./Header.css"
 
 const ImgLogo = styled.img`
   width:90px;
@@ -32,7 +31,7 @@ const NavbarSection = styled.section`
 const Navigation = () => {
   return (
     <>
-    <Navbar class="Navbartwo" collapseOnSelect expand="lg" bg="light" variant="dark">
+    <Navbar className="Navbartwo" collapseOnSelect expand="lg" bg="light" variant="dark">
 
       <NavbarSection>
         <Navbar.Brand>
@@ -40,9 +39,9 @@ const Navigation = () => {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
-          <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
+          <span className="icon-bar top-bar"></span>
+          <span className="icon-bar middle-bar"></span>
+          <span className="icon-bar bottom-bar"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
 

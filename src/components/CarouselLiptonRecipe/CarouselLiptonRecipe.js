@@ -106,7 +106,7 @@ function SampleNextArrow(props) {
           ]
       };
       return (
-        <div class="carousel-lipton-recipe">
+        <div className="carousel-lipton-recipe">
           <h2>Explore World of Tea</h2>
           <SliderLiptonRecipe {...settings}>
             <SliderDiv>

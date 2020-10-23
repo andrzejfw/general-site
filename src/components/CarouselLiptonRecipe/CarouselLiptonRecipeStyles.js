@@ -2,7 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const CarouselStyleLiptonRecipe = createGlobalStyle`
 .carousel-lipton-recipe {
-    margin:50px 10% 0;
+    margin:50px auto 75px;
+    max-width: 1000px;
   }
 
   .carousel-lipton-recipe h2 {
