@@ -8,6 +8,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-layout`,
+    `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
+    
     // `gatsby-plugin-ngrok-tunneling`,
     {
       resolve: `gatsby-source-filesystem`,
