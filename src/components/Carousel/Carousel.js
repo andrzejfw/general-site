@@ -87,7 +87,7 @@ function SampleNextArrow(props) {
           ]
       };
       return (
-        <div class="carousel">
+        <div className="carousel">
           <Slider {...settings}>
             <SliderDiv>
               <SliderTextCenter>Slider 1</SliderTextCenter>

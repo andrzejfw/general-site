@@ -1,7 +1,12 @@
 import React from "react"
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from "gatsby"
+<<<<<<< HEAD
 import Slider from "../components/CarouselLipton/Carousel"
+=======
+import SliderLipton from "../components/CarouselLipton/Carousel"
+import SliderLiptonRecipe from "../components/CarouselLiptonRecipe/CarouselLiptonRecipe"
+>>>>>>> e7c41c7ec01acedb8dd653b1b511110c6dba8365
 import Tabs from "../components/TabBrand/TabBrand"
 import Popup from "../components/Popup/Popup"
 import RichText from "../components/RichText/RichText"
@@ -10,24 +15,29 @@ import Quotes from "../components/Quotes/Quotes"
 import Accordion from '../components/AccordionLipton/Accordion'
 import CustomerChat from "../components/Messenger/Messenger"
 import Button from "../components/ButtonLipton"
+import BannerWithVideoLipton from "../components/BannerWithVideoLipton/BannerWithVideoLipton"
 import { Link } from "gatsby"
 
 
 
 const Section = styled.section`
     width:100%;
-    max-width:1200px;
-    margin:auto;
 `;
 
 
 const IndexPage = () => {
   return (
    <>
-    <Section>    
+    <Section> 
+         
+    <SliderLipton></SliderLipton>
+    <BannerWithVideoLipton title="Brand Purpose Article" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." videoId="HLtkjt0g0Z8" background="https://asset-eu.unileversolutions.com/content/dam/unilever/lipton_international/france/french/key_visual/core_brand/tea_and_soy_and_fruit_beverages/leaf_and_instant_tea/80755_lipton_1280x854-1154722.jpg"></BannerWithVideoLipton>  
     
+<<<<<<< HEAD
       
     <Slider></Slider>
+=======
+>>>>>>> e7c41c7ec01acedb8dd653b1b511110c6dba8365
     <Accordion>
         <div label={"cokolwiek"} isOpen>
           <p>
@@ -46,6 +56,10 @@ const IndexPage = () => {
         </div>
       </Accordion>
       <Link to="https://google.com" target="_blank" style={{ textDecoration: 'none' }}><Button>Read more</Button></Link>
+<<<<<<< HEAD
+=======
+      <SliderLiptonRecipe></SliderLiptonRecipe>
+>>>>>>> e7c41c7ec01acedb8dd653b1b511110c6dba8365
     </Section>
     </>
   )

@@ -17,7 +17,7 @@ const ButtonRadius = styled.button`
   background:#BA2318;
   border:none;
   padding:5px 40px;
-  font-size:1.8em;
+  font-size:1.8rem;
   color:#fff;
   text-transform:none;
   margin:80px auto 20px auto;

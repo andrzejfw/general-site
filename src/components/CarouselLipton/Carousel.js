@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { default as SliderLipton } from 'react-slick'; 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Carousel.css';
 import LiptonGreenTea from '../../assets/images/lipton-green-tea.jpg';
 
 const SliderDiv = styled.div`
@@ -33,6 +32,7 @@ const SliderTextCenter = styled.h3`
 
 const ImageSlider = styled.img`
     border-radius:14px;
+    width: 100%;
 `;
 
 const TextSlider = styled.span`
@@ -42,6 +42,7 @@ const TextSlider = styled.span`
     transform:translateX(-50%);
     color:white;
     text-shadow: 2px 2px 10px black;
+    width: 90%;
 `;
 
 function SampleNextArrow(props) {
@@ -102,48 +103,48 @@ function SampleNextArrow(props) {
           ]
       };
       return (
-        <div class="carousel-lipton">
+        <div className="carousel-lipton">
           <h2>Explore World of Tea</h2>
           <SliderLipton {...settings}>
             <SliderDiv>
               <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
+                <TextSlider>Organic Green Tea Natural</TextSlider>
+              </SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+            <SliderTextCenter>
+                <ImageSlider src={LiptonGreenTea}/>
+                <TextSlider>Green Tea with Mint</TextSlider>
+              </SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+            <SliderTextCenter>
+                <ImageSlider src={LiptonGreenTea}/>
+                <TextSlider>Green Tea with Lime and Lemon</TextSlider>
+              </SliderTextCenter>
+            </SliderDiv>
+            <SliderDiv>
+            <SliderTextCenter>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
-                <TextSlider>Green Tea</TextSlider>
-              </SliderTextCenter>
-            </SliderDiv>
-            <SliderDiv>
-            <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
-                <TextSlider>Green Tea</TextSlider>
-              </SliderTextCenter>
-            </SliderDiv>
-            <SliderDiv>
-            <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
-                <TextSlider>Green Tea</TextSlider>
-              </SliderTextCenter>
-            </SliderDiv>
-            <SliderDiv>
-            <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv> 
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea} width="100%"/>
+                <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
