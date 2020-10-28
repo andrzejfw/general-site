@@ -47,7 +47,7 @@ const SustainabilityParagraphMoreInfo = styled.p`
 
 const SustainabilityPage = () => (
   <>
-    <SustainabilityHeroImage src={SustainabilityHero}/>
+    <SustainabilityHeroImage src={SustainabilityHero} alt="sustainability hands"/>
     <SustainabilityContent>
         <SustainabilityHeader>Jätkusuutlik elu</SustainabilityHeader>
         <p>Usume, et ärikasv ei tohiks toimuda inimeste ja planeedi arvelt. Sellepärast muudame seda, kuidas äri teeme ning seda, kuidas üldse äri tehakse. Unileveri jätkusuutliku elu plaan on julge ambitsioon saavutada muutusi meie ettevõttes ning ühiskonnas. 2010. aastal käivitatud programm loob meie kaubamärkide kaudu jätkusuutiku kasvu, vähendab ärikulusid ja riski ning aitab luua usaldust.</p>
