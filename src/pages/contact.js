@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import SEO from '../components/Seo/Seo'
 
 
 const ContactHeader = styled.h1`
@@ -72,6 +73,7 @@ const ContactMap = styled.div`
 
 const ContactPage = () => (
   <>
+  <SEO title="Kontakt" description=""/>
     <ContactSection>
       <ContactHeader>Unilever Eesti AS</ContactHeader>
       <ContactInformation>

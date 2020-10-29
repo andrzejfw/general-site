@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import Accordion from "../components/Accordion/Accordion"
-import SustainabilityHero from '../assets/images/world-sustainability-hands-scene.jpg';
+import SustainabilityHero from '../assets/images/world-sustainability-hands-scene.jpg'
+import SEO from '../components/Seo/Seo'
 
 const SustainabilityHeroImage = styled.img`
     width: 100%;
@@ -47,6 +48,7 @@ const SustainabilityParagraphMoreInfo = styled.p`
 
 const SustainabilityPage = () => (
   <>
+    <SEO title="Jätkusuutlik elu" description="Usume, et ärikasv ei tohiks toimuda inimeste ja planeedi arvelt."/>
     <SustainabilityHeroImage src={SustainabilityHero} alt="sustainability hands"/>
     <SustainabilityContent>
         <SustainabilityHeader>Jätkusuutlik elu</SustainabilityHeader>
