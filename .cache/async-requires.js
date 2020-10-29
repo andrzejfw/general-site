@@ -13,6 +13,6 @@ exports.components = {
   "component---src-pages-index-lipton-js": () => import("./../../src/pages/index-lipton.js" /* webpackChunkName: "component---src-pages-index-lipton-js" */),
   "component---src-pages-legal-notice-js": () => import("./../../src/pages/legal-notice.js" /* webpackChunkName: "component---src-pages-legal-notice-js" */),
   "component---src-pages-privacy-notice-js": () => import("./../../src/pages/privacy-notice.js" /* webpackChunkName: "component---src-pages-privacy-notice-js" */),
-  "component---src-pages-unilever-jatkusuutliku-elu-plaan-js": () => import("./../../src/pages/unilever-jatkusuutliku-elu-plaan.js" /* webpackChunkName: "component---src-pages-unilever-jatkusuutliku-elu-plaan-js" */)
+  "component---src-pages-sustainability-js": () => import("./../../src/pages/sustainability.js" /* webpackChunkName: "component---src-pages-sustainability-js" */)
 }
 

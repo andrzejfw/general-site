@@ -2,6 +2,8 @@ import React from "react"
 import styled from 'styled-components'
 import PrivacyStyle from "../components/privacyNotice/privacy-notice"
 import Accordion from '../components/AccordionLipton/Accordion'
+import SEO from '../components/Seo/Seo'
+
 
 const Section = styled.section`
     width:100%;
@@ -24,6 +26,7 @@ const Privacy = () => {
   
     return (
      <>
+     <SEO title="Privaatsusteatis" description=""/>
       <Section>    
         <PrivacyStyle/>
         <div class="container">

@@ -10,6 +10,7 @@ import Example from "../components/Modal/Modal"
 import Quotes from "../components/Quotes/Quotes"
 // import Accordion from '../components/Accordion/Accordion'
 // import CustomerChat from "../components/Messenger/Messenger"
+import SEO from '../components/Seo/Seo'
 
 
 const Section = styled.section`
@@ -23,6 +24,7 @@ const IndexPage = () => {
   
   return (
    <>
+   <SEO title="Avaleht" description=""/>
     <Section>    
     
       

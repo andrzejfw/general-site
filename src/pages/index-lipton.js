@@ -14,7 +14,7 @@ import CustomerChat from "../components/Messenger/Messenger"
 import Button from "../components/ButtonLipton"
 import BannerWithVideoLipton from "../components/BannerWithVideoLipton/BannerWithVideoLipton"
 import { Link } from "gatsby"
-
+import SEO from '../components/Seo/Seo'
 
 
 const Section = styled.section`
@@ -25,6 +25,7 @@ const Section = styled.section`
 const IndexPage = () => {
   return (
    <>
+   <SEO title="Lipton" description=""/>
     <Section> 
          
     <SliderLipton></SliderLipton>
