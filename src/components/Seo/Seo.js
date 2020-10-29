@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import PropTypes from 'prop-types'
 
 const SEO = ({ description, title }) => {
     return(
@@ -25,6 +26,11 @@ const SEO = ({ description, title }) => {
             ]} 
         />
     );
+}
+
+SEO.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string
 }
 
 export default SEO;
