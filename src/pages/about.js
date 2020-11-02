@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Image1 from '../assets/images/about.jpg';
-import ImageLi from '../assets/images/li.png';
+import ImageLi from '../assets/images/li.jpg';
 import SEO from '../components/Seo/Seo'
 
 const ImageUlLi = styled.img`
@@ -22,9 +22,7 @@ const Section = styled.section`
     max-width:1200px;
     margin:auto;
     margin-bottom:30px;
-    ul{
-      margin-left:50px;
-    }
+   
     h2 span {
       font-size:20px;
     }
@@ -38,15 +36,12 @@ const Section = styled.section`
     h2 p {
     margin-top: 10px;
     }
-    li {
-    list-style:none;
-    margin-bottom:10px;
-    }
-    ul {
-      margin-left:10px;
-    }
-    p ul {
-      margin-top:20px;
+    ul li {
+      background: url(${ImageLi}) no-repeat left center;
+        padding: 5px 10px 5px 40px;
+        list-style: none;
+        margin: 0;
+        vertical-align: middle;
     }
 `;
 
@@ -67,11 +62,11 @@ const AboutPage = () => {
        <ImageMan src={Image1} alt="man with a seedling"/>
        <h2>Unilever kogu maailmas</h2>
        <ul>
-         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/><b>2,5 miljardit</b> inimest kasutab igapäevaselt meie tooteid.</li>
-         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/>Tarbijad kasutavad kogu maailmas üle <b>400</b> Unileveri kaubamärgi.</li>
-         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/>Unilever tooteid müüakse <b>190</b> riigis.</li>
-         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/><b>155,000</b> inimest töötab igapäevaselt Unileveri eesmärgi nimel.</li>
-         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/>Meie käive oli <b>52 miljardit</b> eurot 2019. aastal</li>
+         <li><b>2,5 miljardit</b> inimest kasutab igapäevaselt meie tooteid.</li>
+         <li>Tarbijad kasutavad kogu maailmas üle <b>400</b> Unileveri kaubamärgi.</li>
+         <li>Unilever tooteid müüakse <b>190</b> riigis.</li>
+         <li><b>155,000</b> inimest töötab igapäevaselt Unileveri eesmärgi nimel.</li>
+         <li>Meie käive oli <b>52 miljardit</b> eurot 2019. aastal</li>
          </ul>
         <h2>Millega Unilever tegeleb?</h2>
         <p>Valmistame tooteid, mida inimesed armastavad ning mis muudavad maailma. Toitvad toiduained. Koduhoolduse esmatarbekaubad. Maitsvad jäätised. Värskendavad teed. Luksuslikud šampoonid. Taskukohased seebid... ja palju muud.</p>
