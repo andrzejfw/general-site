@@ -3,11 +3,22 @@ import styled from 'styled-components'
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Image1 from '../assets/images/about.jpg';
+import ImageLi from '../assets/images/li.png';
 import SEO from '../components/Seo/Seo'
 
-
-const Section = styled.section`
+const ImageUlLi = styled.img`
+  width:20px;
+  margin-right:10px;
+`
+const ImageMan = styled.img`
+    margin-top:1rem;
     width:100%;
+    @media (max-width:768px){
+      width:90vw;
+    }
+`
+const Section = styled.section`
+    width:90vw;
     max-width:1200px;
     margin:auto;
     margin-bottom:30px;
@@ -24,25 +35,15 @@ const Section = styled.section`
       margin-top:2rem;
       margin-bottom:1rem
     }
-    img {
-      margin-top:1rem;
-      width:100%;
-    }
-    @media (max-width:768px){
-      width:90vw;
-    }
     h2 p {
     margin-top: 10px;
     }
-    li::marker {
-    color: #005EEF;
-    font-weight: bold;
-    }
     li {
-    list-style: circle;
+    list-style:none;
+    margin-bottom:10px;
     }
-    li:hover {
-    list-style-type: inherit;
+    ul {
+      margin-left:10px;
     }
     p ul {
       margin-top:20px;
@@ -63,19 +64,19 @@ const AboutPage = () => {
        <p>1890. aastatel pani Lever Brothersi asutaja William Hesketh Level kirja oma ideed Sunlight seebi loomisest, millest valmis revolutsiooniline uus toode, mis aitas populariseerida puhtust ja hügieeni kuninganna Victoria valitsemisajal Inglismaal.</p>
        <p>Toote eesmärk oli muuta puhtus tavapäraseks, vähendada naiste tööd, edendada tervist ning tõsta isiklikku atraktiivsust, et elu oleks Unileveri tooteid kasutavatele inimestele nauditavam ja rahuldavam.</p>
        <p>See eesmärgi- ja missioonitunne on alati olnud osa Unileveri kultuurist. Ka täna aitame inimestel endliselt hea välja näha, end hästi tunda ja elust rohkem kasu saada. Ning seetõttu on meie eesmärgiks muuta jätkusuutlik elu tavapäraseks (making sustainable living commonplace).</p>
-       <img src={Image1} alt="man with a seedling"/>
+       <ImageMan src={Image1} alt="man with a seedling"/>
        <h2>Unilever kogu maailmas</h2>
        <ul>
-         <li><b>2,5 miljardit</b> inimest kasutab igapäevaselt meie tooteid.</li>
-         <li>Tarbijad kasutavad kogu maailmas üle <b>400</b> Unileveri kaubamärgi.</li>
-         <li>Unilever tooteid müüakse <b>190</b> riigis.</li>
-         <li><b>155,000</b> inimest töötab igapäevaselt Unileveri eesmärgi nimel.</li>
-         <li>Meie käive oli <b>52 miljardit</b> eurot 2019. aastal</li>
+         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/><b>2,5 miljardit</b> inimest kasutab igapäevaselt meie tooteid.</li>
+         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/>Tarbijad kasutavad kogu maailmas üle <b>400</b> Unileveri kaubamärgi.</li>
+         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/>Unilever tooteid müüakse <b>190</b> riigis.</li>
+         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/><b>155,000</b> inimest töötab igapäevaselt Unileveri eesmärgi nimel.</li>
+         <li><ImageUlLi src={ImageLi} alt="man with a seedling"/>Meie käive oli <b>52 miljardit</b> eurot 2019. aastal</li>
          </ul>
         <h2>Millega Unilever tegeleb?</h2>
         <p>Valmistame tooteid, mida inimesed armastavad ning mis muudavad maailma. Toitvad toiduained. Koduhoolduse esmatarbekaubad. Maitsvad jäätised. Värskendavad teed. Luksuslikud šampoonid. Taskukohased seebid... ja palju muud.</p>
         <p>Kokku on meie väga armastatud kaubamärke maailmas üle 400, mis tähendab, et leiad vähemalt ühe meie toote seitsmest plaanedi kümnest leibkonnast. Tahame, et kõik need tooted avaldaksid positiivset mõju nende inimeste elule, kes neid ostavad.</p>
-        <p>Vaata lähemalt, mis kaubamärke pakume Eesti turul. Meie olulisemad kaubamärgid on näiteks Hellmann’s, Lipton, Knorr, Magnum, Super Viva, Idüll, Ingman, Ben&Jerry’s, Domestos, Cif, Seventh Generation, Dove, Rexona, Love Beauty & Planet. <Link to="/brands">Check our Brands</Link>
+        <p>Vaata lähemalt, mis kaubamärke pakume Eesti turul. Meie olulisemad kaubamärgid on näiteks Hellmann’s, Lipton, Knorr, Magnum, Super Viva, Idüll, Ingman, Ben&Jerry’s, Domestos, Cif, Seventh Generation, Dove, Rexona, Love Beauty & Planet.
         </p>
         <p>“Kavatsen edasi arendada Unileveri sajaditevanust pühendumust vastutustundlikule ärile. See ei tähenda, et seame eesmärgi kasumist ette vaid seda, et kasumit juhib eesmärk.” Alan Jope, CEO, Unilever.</p>
         <h2>Miks Unilever seda kõike teeb?</h2>
