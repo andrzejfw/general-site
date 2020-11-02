@@ -47,6 +47,7 @@ const BannerLiptonParagraph = styled.p`
 
 const BannerLiptonVideo = styled.div`
     margin: 6% 10% 6% 0;
+    max-width: 600px;
 
     @media(max-width:992px){
       margin: 0 auto;
