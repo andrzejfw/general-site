@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-
+import FacebookImage from '../../assets/images/facebook.png';
+import WomenImage from '../../assets/images/footer-image.png';
 
 const Footercontainer = styled.div`
 
@@ -11,6 +12,7 @@ const Footercontainer = styled.div`
     background:#fff;
     @media (max-width:992px){
     height:100%;
+    margin-bottom:20px;
   }
 
 `;
@@ -35,9 +37,8 @@ const Img = styled.img`
     }
    
 `;
-const Image = styled.img`
+const ImageFacebook = styled.img`
     width:26px;
-    height:16px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -53,6 +54,16 @@ const Image = styled.img`
   }
    
 `;
+const ImageFooter = styled.img`
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    @media (max-width:992px){
+      display:none;
+    }
+`;
 
 const FooterWrapper = styled.nav`
   height: 20vh;
@@ -62,6 +73,7 @@ const FooterWrapper = styled.nav`
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
+  
   
   margin: 0 auto;
   padding: 0 5vw;
@@ -89,11 +101,27 @@ const FooterList = styled.ul`
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
+    margin-right: 20vw;
     @media(max-width:500px){
       display:flex;
       flex-direction:column;
       justify-content:center;
       align-items:center;
+      li a{
+        font-size:16px;
+      }
+      p a{
+        font-size:16px;
+      }
+    }
+    li p{
+      margin: 0;
+      text-align:center;
+      font-size:16px;
+    }
+    a img{
+      margin:2px 0;
+      text-align:center;
     }
 `;
 const FooterLogo = styled.span`
@@ -101,16 +129,16 @@ a{
     text-decoration:none;
     color:#000;
 }
-`
+`;
 
 const FooterImageContainer = styled.div`
 
     display:flex;
 
-`
+`;
 
 const FooterItem = styled.li`
-  line-height:1.2em
+  line-height:1em;
   text-decoration: none;
   color: #005EEF;
   font-weight:bold;
@@ -136,8 +164,6 @@ const FooterItem = styled.li`
   }
   }
 
- 
-
   :hover {
     color: goldenrod;
    
@@ -145,12 +171,12 @@ const FooterItem = styled.li`
   @media(max-width:500px){
     margin:8px;
     a{
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
   
-`
+`;
 
 const FooterItemList = styled.li`
   text-decoration: none;
@@ -184,30 +210,52 @@ const FooterItemList = styled.li`
 
   @media(max-width:500px){
     margin:4px;
-    font-size:14px;
+    font-size:16px;
     justify-content:center;
     align-items:center; 
-    a{
+    /* a{
       font-size: 10px;
     }
     p{
       font-size:8px;
-    }
+    } */
   
    
   }  
-`
+`;
 
 
 const Footer = () => (
   <Footercontainer>
     <FooterWrapper>
          <FooterItemList><Link to ="/"><Img src="https://www.unilever.com/Images/UNILEVER_LOGO_160_tcm244-541804.gif" /></Link><p>© Unilever 2020</p></FooterItemList>
-        <FooterList>            
-        <FooterItemList>Social Media<FooterImageContainer><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.16.54/images/phoenix/facebook-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.16.54/images/phoenix/twitter-purple-royal.svg" /></Link></p><p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.16.54/images/phoenix/instagram-purple-royal.svg" /></Link></p></FooterImageContainer></FooterItemList>
-            <FooterItem><Link to="/about">Sitemap</Link></FooterItem>
-            <FooterItem><Link to="/brands">Contact</Link></FooterItem>
-            <FooterItemList>Legal Links<div ><p><Link to="/contact">cookie policy</Link></p><p><Link to="/contact">privacy policy</Link></p><p><Link to="/contact">legal notice</Link></p></div></FooterItemList>           
+        <FooterList>
+        <FooterItemList><Link to="/contact">Kontakt</Link></FooterItemList>
+        <FooterItemList>
+          <div >
+          <p><Link to="/cookie-notice">Küpsiseeskirjad</Link>
+        </p>
+        <p>
+          <Link to="/privacy-notice">Privaatsuspoliitika</Link></p><p><Link to="/legal-notice">Juriidiline teade</Link>
+          </p>
+          </div>
+          </FooterItemList>          
+        <FooterItemList>Sotsiaalmeedia<FooterImageContainer>
+          <p>
+            <Link to ="facebook.com">
+            <ImageFacebook src={FacebookImage} alt="Facebook Icon"/></Link>
+              </p>
+        {/* <p>
+          <Link to ="/"><Image src="https://www.unilever.pl/resources/7.16.54/images/phoenix/twitter-purple-royal.svg" />
+        </Link></p>
+        <p><Link to ="/"><Image src="https://www.unilever.pl/resources/7.16.54/images/phoenix/instagram-purple-royal.svg" /></Link>
+        </p> */}
+        </FooterImageContainer>
+        </FooterItemList>
+        <FooterItemList>
+          <Link to="/sitemap">Saidikaart</Link>
+          </FooterItemList>
+          <ImageFooter src={WomenImage} alt="Women with furry hairs"/>
         </FooterList>
     </FooterWrapper>
     </Footercontainer>

@@ -10,6 +10,7 @@ const Section = styled.section`
     width:100%;
     max-width:1200px;
     margin:auto;
+    margin-bottom:30px;
     ul{
       margin-left:50px;
     }
@@ -32,7 +33,20 @@ const Section = styled.section`
     }
     h2 p {
     margin-top: 10px;
-}
+    }
+    li::marker {
+    color: #005EEF;
+    font-weight: bold;
+    }
+    li {
+    list-style: circle;
+    }
+    li:hover {
+    list-style-type: inherit;
+    }
+    p ul {
+      margin-top:20px;
+    }
 `;
 
 
@@ -61,17 +75,17 @@ const AboutPage = () => {
         <h2>Millega Unilever tegeleb?</h2>
         <p>Valmistame tooteid, mida inimesed armastavad ning mis muudavad maailma. Toitvad toiduained. Koduhoolduse esmatarbekaubad. Maitsvad jäätised. Värskendavad teed. Luksuslikud šampoonid. Taskukohased seebid... ja palju muud.</p>
         <p>Kokku on meie väga armastatud kaubamärke maailmas üle 400, mis tähendab, et leiad vähemalt ühe meie toote seitsmest plaanedi kümnest leibkonnast. Tahame, et kõik need tooted avaldaksid positiivset mõju nende inimeste elule, kes neid ostavad.</p>
-        <p>Vaata lähemalt, mis kaubamärke pakume Eesti turul. Meie olulisemad kaubamärgid on näiteks Hellmann’s, Lipton, Knorr, Magnum, Super Viva, Idüll, Ingman, Ben&Jerry’s, Domestos, Cif, Seventh Generation, Dove, Rexona, Love Beauty & Planet. <Link to="/src/pages/brands.js">Check our Brands</Link>
+        <p>Vaata lähemalt, mis kaubamärke pakume Eesti turul. Meie olulisemad kaubamärgid on näiteks Hellmann’s, Lipton, Knorr, Magnum, Super Viva, Idüll, Ingman, Ben&Jerry’s, Domestos, Cif, Seventh Generation, Dove, Rexona, Love Beauty & Planet. <Link to="/brands">Check our Brands</Link>
         </p>
         <p>“Kavatsen edasi arendada Unileveri sajaditevanust pühendumust vastutustundlikule ärile. See ei tähenda, et seame eesmärgi kasumist ette vaid seda, et kasumit juhib eesmärk.” Alan Jope, CEO, Unilever.</p>
         <h2>Miks Unilever seda kõike teeb?</h2>
         <p>Soovime, et meie äri õitseks ning teame, et edu sõltub teistest, kes meie ümber õitsevad. Sellepärast on meie ettevõtte eesmärk muuta jätkusuutlik elu tavapäraseks ning ka sellepärast on jätkusuutlik ja pikaajaline kasv meie ärimudeli keskmes.</p>
-        <p>Palun tutvuge Unileveri säästva eluviisi kavaga <Link to="/src/pages/brands.js">SUSTAINABLE LIVING</Link>. Tutvu lähemalt, kuidas see kava juhib pikaajalist kasvu, vähendades samal ajal keskkonnajalajälge ja suurendadas positiivset sotisaalsed mõju. Kokkuvõtvalt keskendub meie jätkusuutlik plaan kolmele punktile:</p>
+        <p>Palun tutvuge Unileveri <Link to="/sustainability">säästva eluviisi kavaga</Link>. Tutvu lähemalt, kuidas see kava juhib pikaajalist kasvu, vähendades samal ajal keskkonnajalajälge ja suurendadas positiivset sotisaalsed mõju. Kokkuvõtvalt keskendub meie jätkusuutlik plaan kolmele punktile:
         <ul>
           <li>Aitame enam kui miljardil inimesel oma tervist ja heaolu parandada;</li>
           <li>Vähendame meie toodete keskkonnajalajälge poole võrra;</li>
           <li>Hangime 100% toorainest jätkusuutlikult ning suurendame inimeste elatustaset kogu meie väärtusahelas.</li>
-        </ul>
+        </ul></p>
         <h2>Eesmärgipõhine, tulevikku sobiv plaan <span>(Purpose-led, Future-fit)</span></h2>
         <p>Maailm ei seisa paigal ning seda ei tee ka meie. Me mitte ainult ei võta muutusi omaks, vaid püüame neid ka ellu viia. See kehtib meie kaubamärkide kohta, mis saavutavad positiivseid muutusi oma eesmärgi ja väärtusahelate kaudu ning ka meie ettevõtte kohta, mille muudame tulevikuks sobivamaks, kiiremaks ja paindlikumaks.</p>
         <p>Oleme koos kujundamas tuleviku tööd – mitmekesisem, kaasavam, kõrgelt kvalifitseeritud ja hästi toimiv. Ettevõttena teeme kõik, et määratleda äri tegemise viisi. Nii me saame muuta jätkusuutliku elu tavapäraseks!</p>
