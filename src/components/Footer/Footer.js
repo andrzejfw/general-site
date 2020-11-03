@@ -234,10 +234,10 @@ const Footer = () => (
         <FooterItemList><Link to="/contact">Kontakt</Link></FooterItemList>
         <FooterItemList>
           <div >
-          <p><Link to="/cookie-notice">Küpsiseeskirjad</Link>
+          <p><Link to="/cookie-notice">Küpsise-eeskirjad</Link>
         </p>
         <p>
-          <Link to="/privacy-notice">Privaatsuspoliitika</Link></p><p><Link to="/legal-notice">Juriidiline teade</Link>
+          <Link to="/privacy-notice">Privaatsuspoliitika</Link></p><p><Link to="/legal-notice">Juriidiline teave</Link>
           </p>
           </div>
           </FooterItemList>          

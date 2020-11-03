@@ -22,6 +22,7 @@ const Section = styled.section`
     max-width:1200px;
     margin:auto;
     margin-bottom:30px;
+    text-align:justify;
    
     h2 span {
       font-size:20px;
