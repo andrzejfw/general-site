@@ -33,8 +33,8 @@ const MainLayout = ( {children} ) => (
     {children}
     {/* <CustomerChat /> */}
 
-    <Footer/>
-    {/* <FooterLipton/> */}
+    {/* <Footer/> */}
+    <FooterLipton/>
   </>
 )
 

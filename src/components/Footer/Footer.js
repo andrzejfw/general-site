@@ -3,33 +3,31 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import FacebookImage from '../../assets/images/facebook.png';
 import WomenImage from '../../assets/images/footer-image.png';
+import LogoImage from '../../assets/images/unilever-logo-white.png';
 
 const Footercontainer = styled.div`
 
-    width:100vw;
     height:20vh; 
     z-index:2;
-    background:#fff;
+    background:#005eef;
     @media (max-width:992px){
     height:100%;
-    margin-bottom:20px;
+    padding-bottom:20px;
   }
 
 `;
 const Img = styled.img`
-    width:66px;
-    height:72px;
+    height:120px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     a{
         text-decoration:none;
-      color: #005EEF;
+      color: #fff;
     }
     @media(max-width:500px){
-      width:53px;
-      height:54px;
+      height:120px;
       
       a {
         p{font-size:12px;}
@@ -44,9 +42,10 @@ const ImageFacebook = styled.img`
     justify-content:center;
     align-items:center;
     margin-top:14px;
+    background: #fff;
     a{
       text-decoration:none;
-      color: #005EEF;
+      color: #fff;
       :hover {
     color: goldenrod;
     
@@ -55,7 +54,7 @@ const ImageFacebook = styled.img`
    
 `;
 const ImageFooter = styled.img`
-    height: 100%;
+    height: 120%;
     bottom: 0;
     position: absolute;
     right: 0;
@@ -69,10 +68,11 @@ const FooterWrapper = styled.nav`
   height: 20vh;
   display: flex;
   align-items:center;
-  background-color: #fff;
+  background-color: #005eef;
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
+  color:#fff;
   
   
   margin: 0 auto;
@@ -107,6 +107,7 @@ const FooterList = styled.ul`
       flex-direction:column;
       justify-content:center;
       align-items:center;
+      margin-right: 0;
       li a{
         font-size:16px;
       }
@@ -140,7 +141,6 @@ const FooterImageContainer = styled.div`
 const FooterItem = styled.li`
   line-height:1em;
   text-decoration: none;
-  color: #005EEF;
   font-weight:bold;
   display: inline-block;
   white-space: nowrap;
@@ -150,14 +150,15 @@ const FooterItem = styled.li`
   list-style:none;
   text-decoration:none;
   display:flex;
+  color:#fff;
 
   p{
     font-size:12px;
-    color: #005EEF;
+    color: #fff;
   }
   a{
       text-decoration:none;
-      color: #005EEF;
+      color: #fff;
       :hover {
     color: goldenrod;
     
@@ -180,7 +181,7 @@ const FooterItem = styled.li`
 
 const FooterItemList = styled.li`
   text-decoration: none;
-  color: #005EEF;
+  color: #fff;
   font-weight:bold;
   display: inline-block;
   white-space: nowrap;
@@ -197,11 +198,11 @@ const FooterItemList = styled.li`
 
   p{
     font-size:12px;
-    color: #005EEF;
+    color: #fff;
   }
   a{
       text-decoration:none;
-      color: #005EEF;
+      color: #fff;
       :hover {
     color: goldenrod;
    
@@ -228,21 +229,21 @@ const FooterItemList = styled.li`
 const Footer = () => (
   <Footercontainer>
     <FooterWrapper>
-         <FooterItemList><Link to ="/"><Img src="https://www.unilever.com/Images/UNILEVER_LOGO_160_tcm244-541804.gif" /></Link><p>© Unilever 2020</p></FooterItemList>
+         <FooterItemList><Link to ="/"><Img src={LogoImage} /></Link><p>© Unilever 2020</p></FooterItemList>
         <FooterList>
         <FooterItemList><Link to="/contact">Kontakt</Link></FooterItemList>
         <FooterItemList>
           <div >
-          <p><Link to="/cookie-notice">Küpsiseeskirjad</Link>
+          <p><Link to="/cookie-notice">Küpsise-eeskirjad</Link>
         </p>
         <p>
-          <Link to="/privacy-notice">Privaatsuspoliitika</Link></p><p><Link to="/legal-notice">Juriidiline teade</Link>
+          <Link to="/privacy-notice">Privaatsuspoliitika</Link></p><p><Link to="/legal-notice">Juriidiline teave</Link>
           </p>
           </div>
           </FooterItemList>          
         <FooterItemList>Sotsiaalmeedia<FooterImageContainer>
           <p>
-            <Link to ="facebook.com">
+            <Link to ="https://www.facebook.com/unilever" target="_blank">
             <ImageFacebook src={FacebookImage} alt="Facebook Icon"/></Link>
               </p>
         {/* <p>

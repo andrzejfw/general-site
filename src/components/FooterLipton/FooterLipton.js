@@ -2,91 +2,84 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import UnileverLogoWhite from '../../assets/images/unilever-logo-white.png';
-
+import FacebookImage from '../../assets/images/facebook-icon-white.png';
+import LadyWithTea from '../../assets/images/lady-with-tea.png';
 
 const Footercontainer = styled.div`
-
-    width:100vw;
     height:20vh; 
     z-index:2;
     background:#fade4c;
+
+    @media (max-width:1600px){
+    height:25vh;
+  }
+
     @media (max-width:992px){
     height:100%;
   }
 
 `;
-const Img = styled.img`
-    width:150px;
-    height:auto;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    a{
-      text-decoration:none;
-      color: #005EEF;
-    }
-    @media(max-width:500px){
-      /* width:100px;
-      height:auto; */
-      
-      a {
-        p{font-size:12px;}
-        }
-    }
-   
-`;
-const Image = styled.img`
+
+const SocialImage = styled.img`
     width:auto;
     height:50px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin:30px 20px;
-    a{
-      text-decoration:none;
-      color: #fff;
-      :hover {
-    color: #c8381d;
-    
-  }
-  }
+    margin:55px 20px;
 
-  @media(max-width:500px){
+  @media (max-width:500px){
       height: 30px;
-      margin: 20px 10px;
+      margin: 20px 10px 0;
   }
    
+`;
+
+const GraphicImage = styled.img`
+  width:auto;
+  height:250px;
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+
+  @media (max-width:1600px){
+    bottom: -5vh;
+  }
+
+  @media (max-width:1100px){
+    display: none;
+  }
 `;
 
 const FooterWrapper = styled.nav`
   height: 20vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   align-items:center;
   background-color: transparent;
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
-  
-  margin: 0 auto;
-  padding: 0 5vw;
+  margin: 0 30% 0 15%;
+  padding: 0 8%;
   z-index: 2;
   align-self: center;
-  width:100vw;
-  max-width:1300px;
   
+  @media (max-width:1600px){
+    margin: 0;
+    padding: 0 10%;
+    max-width: 1000px;
+  }
+
   @media (max-width:992px){
     height:100%;
-    
+    margin: 0 auto 5%;
   }
   @media (max-width: 500px) {
-   display:flex;
-   flex-direction:column;
+    display:flex;
+    flex-direction:column;
+    margin: 0;
+    padding-bottom: 5%;
   }   
     `;
     
-
 const FooterList = styled.ul`
     margin:0;
     padding:0;
@@ -95,7 +88,7 @@ const FooterList = styled.ul`
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    width:37%;
+    
     @media(max-width:500px){
       display:flex;
       flex-direction:column;
@@ -105,25 +98,18 @@ const FooterList = styled.ul`
 `;
 
 const FooterImageContainer = styled.div`
-
     display:flex;
-
 `;
 
 const FooterSection = styled.div`
     display:flex;
     justify-content: space-between;
-    width: 57%;
-
-    @media(max-width:500px){
-        flex-direction: column-reverse;
-    }
 `;
 
 const FooterItem = styled.li`
   line-height:1.2em;
   text-decoration: none;
-  color: #fff;
+  color: #c8381d;
   font-weight:bold;
   display: inline-block;
   white-space: nowrap;
@@ -136,28 +122,22 @@ const FooterItem = styled.li`
 
   p{
     font-size:12px;
-    color: #fff;
+    color: #c8381d;
   }
   a{
       text-decoration:none;
-      color: #fff;
+      color: #c8381d;
       :hover {
-    color: #c8381d;
-    
+      color: #e95c02;
   }
   }
-
- 
 
   :hover {
-    color: #c8381d;
+    color: #e95c02;
    
   }
   @media(max-width:500px){
     margin:8px;
-    a{
-      font-size: 14px;
-    }
   }
 
   
@@ -165,15 +145,12 @@ const FooterItem = styled.li`
 
 const FooterItemList = styled.li`
   text-decoration: none;
-  color: #fff !important;
+  color: #c8381d !important;
   font-weight:bold;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
- 
   position: relative;
-  /* width:33%; */
- 
   text-transform:capitalize;
   list-style:none;
   text-decoration:none;
@@ -183,57 +160,93 @@ const FooterItemList = styled.li`
 
   p{
     font-size:12px;
-    color: #fff;
+    color: #c8381d;
   }
   a{
       text-decoration:none;
-      color: #fff;
+      color: #c8381d;
       :hover {
-    color: #c8381d;
+      color: #e95c02;
    
   }
   }
 
   @media(max-width:500px){
     margin:4px;
-    font-size:14px;
     justify-content:center;
-    align-items:center; 
-    a{
-      font-size: 10px;
-    }
-    p{
-      font-size:8px;
-    }
-  
-   
+    align-items:center;   
   }  
+`;
+
+const UnileverFooter = styled.div`
+    z-index:2;
+    background:#7f7f7f;
+    padding-left: 24%;
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width:1600px){
+    padding-left: 12%;
+  }
+
+    @media (max-width:992px){
+    flex-direction: column;
+    padding-left: 0;
+  }
+`;
+
+const LogoImage = styled.img`
+    width:50px;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    @media(max-width:992px){
+      margin: 5px auto 0;
+    }
+   
+`;
+
+const FooterCopyright = styled.div`
+    font-size: .8rem;
+    color: #fff;
+    align-self: center;
+    padding-left: 10px;
+
+    @media (max-width:992px){
+    padding-bottom: 10px;
+    padding-left: 0;
+  }
 `;
 
 
 const FooterLipton = () => (
+  <>
   <Footercontainer>
     <FooterWrapper>
         <FooterSection>
         <FooterItemList>
             <FooterImageContainer>
-            <p><Link to ="/">
-                <Image src="https://asset-eu.unileversolutions.com/content/dam/unilever/knorr_world/global/other_foods/all/icn_facebook-697026.png" />
-            </Link></p>
-            <p><Link to ="/">
-                <Image src="https://asset-eu.unileversolutions.com/content/dam/unilever/heart/united_kingdom/general_image/ice_cream/all/youtube-790127.png" />
+            <p><Link to ="https://www.facebook.com/LiptonEesti/" target="_blank" rel="noreferrer">
+                <SocialImage src={FacebookImage} alt="Facebook Icon"/>
             </Link></p>
             </FooterImageContainer>
         </FooterItemList>
-        <FooterItemList><Link to ="/"><Img src={UnileverLogoWhite} /></Link><p>© Unilever 2020</p></FooterItemList>
         </FooterSection>
             <FooterList>            
-                <FooterItem><Link to="/about">Sitemap</Link></FooterItem>
-                <FooterItem><Link to="/brands">Contact</Link></FooterItem>
-                <FooterItemList>Legal Links<div><p><a href="cookie-notice">cookie policy</a></p><p><a href="/privacy-notice">privacy policy</a></p><p><a href="/legal-notice">legal notice</a></p></div></FooterItemList>           
+                <FooterItem><Link to="/sitemap">saidi kaart</Link></FooterItem>
+                <FooterItem><Link to="/contact">kontakt</Link></FooterItem>
+                <FooterItemList><a href="/cookie-notice">küpsise-eeskirjad</a><a href="/privacy-notice">privaatsuspoliitika</a><a href="/legal-notice">juriidiline teave</a></FooterItemList>           
             </FooterList>
+        <GraphicImage src={LadyWithTea}/>
     </FooterWrapper>
-    </Footercontainer>
+  </Footercontainer>
+  <UnileverFooter>
+    <Link to ="/"><LogoImage src={UnileverLogoWhite} /></Link><FooterCopyright>© Unilever 2020</FooterCopyright>
+  </UnileverFooter>
+  </>
 );
 
 export default FooterLipton;

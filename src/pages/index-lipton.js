@@ -15,6 +15,7 @@ import Button from "../components/ButtonLipton"
 import BannerWithVideoLipton from "../components/BannerWithVideoLipton/BannerWithVideoLipton"
 import { Link } from "gatsby"
 import SEO from '../components/Seo/Seo'
+import BackgroundImage from '../assets/images/lipton-background.jpg'
 
 
 const Section = styled.section`
@@ -29,7 +30,12 @@ const IndexPage = () => {
     <Section> 
          
     <SliderLipton></SliderLipton>
-    <BannerWithVideoLipton title="Brand Purpose Article" paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." videoId="HLtkjt0g0Z8" background="https://asset-eu.unileversolutions.com/content/dam/unilever/lipton_international/france/french/key_visual/core_brand/tea_and_soy_and_fruit_beverages/leaf_and_instant_tea/80755_lipton_1280x854-1154722.jpg"></BannerWithVideoLipton>  
+    <BannerWithVideoLipton 
+      title="Brand Purpose Article" 
+      paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
+      videoId="HLtkjt0g0Z8" 
+      background={BackgroundImage}>
+    </BannerWithVideoLipton>  
     
     <Accordion>
         <div label={"cokolwiek"} isOpen>
