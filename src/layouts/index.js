@@ -19,10 +19,10 @@ import QuotesStyles from "../components/Quotes/QuotesStyles"
 const MainLayout = ( {children} ) => (
   <>
     <GlobalStyle />
-    <Navigation />
-    <NavigationStyles/>
-    {/* <NavigationLipton/>
-    <NavigationLiptonStyles/> */}
+    {/* <Navigation />
+    <NavigationStyles/> */}
+    <NavigationLipton/>
+    <NavigationLiptonStyles/>
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>

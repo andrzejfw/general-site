@@ -22,6 +22,10 @@ const Section = styled.section`
     width:100%;
 `;
 
+const SectionAccordion = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+`;
 
 const IndexPage = () => {
   return (
@@ -35,8 +39,8 @@ const IndexPage = () => {
       paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
       videoId="HLtkjt0g0Z8" 
       background={BackgroundImage}>
-    </BannerWithVideoLipton>  
-    
+    </BannerWithVideoLipton>
+    <SectionAccordion>
     <Accordion>
         <div label={"cokolwiek"} isOpen>
           <p>
@@ -54,6 +58,7 @@ const IndexPage = () => {
               której sekret tkwi w głównym składniku BIG MILK, czyli świeżym mleku. Spróbuj i przekonaj się, jak smakuje BIG MILK Choco Intense!</p>
         </div>
       </Accordion>
+      </SectionAccordion>  
       <Link to="https://google.com" target="_blank" style={{ textDecoration: 'none' }}><Button>Read more</Button></Link>
       <SliderLiptonRecipe></SliderLiptonRecipe>
     </Section>

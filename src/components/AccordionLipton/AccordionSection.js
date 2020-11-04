@@ -9,7 +9,7 @@ const AccordionSectionLipton = styled.div`
   font-weight: bold;
   margin: 5px;
   padding: 15px 15px;
-  width: 50vw;
+  width: 100%;
   text-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
   p, span{text-shadow:none};
   @media (max-width: 992px){

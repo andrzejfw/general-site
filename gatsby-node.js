@@ -93,6 +93,7 @@ exports.sourceNodes = async ({
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const blogPostTemplate = path.resolve(`src/layouts/pdp.js`);
+  const blogPostTemplateLipton = path.resolve(`src/layouts/pdp-lipton.js`);
   const resultSites = await graphql(`
   query MyQuery {
     allExample {
@@ -133,8 +134,9 @@ exports.createPages = async ({ graphql, actions }) => {
     });
       
     createPage({
-      path: `products/${slugifiedTitle}`,
-      component: blogPostTemplate,
+      //to update when products will be set in estore
+      path: post.fullName === "FULL TITLE" ? `lipton/products/${slugifiedTitle}` : `products/${slugifiedTitle}`,
+      component: post.fullName === "FULL TITLE" ? blogPostTemplateLipton : blogPostTemplate,
       context: {
         slug: post.slug,
       },

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby';
 import BIN from "../components/BIN/BIN"
 import Accordion from "../components/Accordion/Accordion"
+import SEO from '../components/Seo/Seo'
 
 const ProductFirstRow = styled.div`
    display:flex;  
@@ -178,6 +179,7 @@ const PostLayout = ({ data }) => {
   return (
    
     <>
+    <SEO title={data.example.fullName} description={data.example.productShortDescription}/>
     <ProductContainer>
       <ProductFirstRow>
        <ProductImage>
