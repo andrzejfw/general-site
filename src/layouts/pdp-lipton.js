@@ -4,7 +4,8 @@ import { graphql } from 'gatsby';
 import BINLipton from "../components/BINLipton/BINLipton"
 import SEO from '../components/Seo/Seo'
 import TeaIcon from '../assets/images/tea-icon.png'
-
+import CarouselLipton from '../components/CarouselLipton/Carousel'
+import Accordion from "../components/AccordionLipton/Accordion"
 
 const ProductContainer = styled.div`
   background:#fff;
@@ -19,11 +20,11 @@ const TopSectionWrapper = styled.div`
 `;
 
 const BottomSectionWrapper = styled.div`
-  min-height: 300px;
-  background-image: linear-gradient(-210deg,#fff 5%,#fade4c 5%, #fade4c 15%,#fade4c,#fff,#fff 15%);
+  /* min-height: 300px; */
+  background-image: linear-gradient(-210deg,#fade4c 130px,#fade4c,#fff,#fff 130px);
   
   @media(max-width:760px){
-    background-image: linear-gradient(-220deg,#fff 5%,#fade4c 5%, #fade4c 20%,#fade4c,#fff,#fff 20%);
+    background-image: linear-gradient(-220deg,#fade4c 80px,#fade4c,#fff,#fff 80px);
   }
 `;
 
@@ -167,6 +168,15 @@ const ProductBullets = styled.div`
   }
 `;
 
+const SectionAccordion = styled.div`
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 0 50px;
+`;
+
+const AccordionTab = styled.div`
+    max-width:1240px;  
+`;
 
 export const query = graphql`
 query MyQuerLipton($slug: Int!) {
@@ -215,14 +225,15 @@ const PostLayout = ({ data }) => {
             <h1>{data.example.fullName} GREEN TEA</h1>
             <p>{data.example.volume}</p>
             {/* <p>{data.example.format}</p> */}
-            <h2>{data.example.productShortDescription}Lipton's Magnificent Matcha blended with Green Tea delivers the smooth, earthy taste of matcha and the goodness of green tea</h2>
+            {/* <h2>{data.example.productShortDescription}Lipton's Magnificent Matcha blended with Green Tea delivers the smooth, earthy taste of matcha and the goodness of green tea</h2> */}
+            <p>{data.example.productDescription}Legend has it that Buddhist monks used Matcha to enhance their focus for long hours of meditation, and to be alert and present in the moment. Today's Matcha leaf comes from shade grown green tea whose chlorophyll-rich leaves are finely ground into a brilliant green powder, prized for its abilities.</p>
             <BINLipton></BINLipton>
           </ProductMainInfo>
         </ProductFirstRow>
         <ProductRowCenter>
           {/* Product description */}
-          <h3>Tootekirjeldus</h3>
-          <p>{data.example.productDescription}Legend has it that Buddhist monks used Matcha to enhance their focus for long hours of meditation, and to be alert and present in the moment. Today's Matcha leaf comes from shade grown green tea whose chlorophyll-rich leaves are finely ground into a brilliant green powder, prized for its abilities.</p>
+          {/* <h3>Tootekirjeldus</h3>
+          <p>{data.example.productDescription}Legend has it that Buddhist monks used Matcha to enhance their focus for long hours of meditation, and to be alert and present in the moment. Today's Matcha leaf comes from shade grown green tea whose chlorophyll-rich leaves are finely ground into a brilliant green powder, prized for its abilities.</p> */}
         </ProductRowCenter>
       </TopSectionWrapper>
       <ProductBullets>
@@ -236,17 +247,33 @@ const PostLayout = ({ data }) => {
         </ul>
       </ProductBullets>
       <BottomSectionWrapper>
-        <ProductRowCenter>
+        <SectionAccordion>
+          <Accordion>
+            {/* Ingredients */}
+            <AccordionTab label="Koostisosad">
+              <p>
+              <p>{data.example.ingredients}green tea, matcha, aroma</p>
+              </p>
+              
+            </AccordionTab>
+            {/* Usage instructions */}
+            <AccordionTab label="Kasutusjuhend">
+            <p>{data.example.productHowToUse}Get the best from your brew in 2 minutes, adding the tea bag first then water so the leaves can unleash their flavor</p>
+            </AccordionTab>
+          </Accordion>
+        </SectionAccordion>
+        {/* <ProductRowCenter> */}
           {/* Ingredients */}
-          <h3>Koostisosad</h3>
-          <p>{data.example.ingredients}green tea, matcha, aroma</p>
-        </ProductRowCenter>
-        <ProductRowCenter>
+          {/* <h3>Koostisosad</h3>
+          <p>{data.example.ingredients}green tea, matcha, aroma</p> */}
+        {/* </ProductRowCenter>
+        <ProductRowCenter> */}
           {/* Usage instructions */}
-          <h3>Kasutusjuhend</h3>
-          <p>{data.example.productHowToUse}Get the best from your brew in 2 minutes, adding the tea bag first then water so the leaves can unleash their flavor</p>
-        </ProductRowCenter>
+          {/* <h3>Kasutusjuhend</h3>
+          <p>{data.example.productHowToUse}Get the best from your brew in 2 minutes, adding the tea bag first then water so the leaves can unleash their flavor</p> */}
+        {/* </ProductRowCenter> */}
       </BottomSectionWrapper>
+      <CarouselLipton/>
     </ProductContainer>
     </>
   );
