@@ -11,23 +11,26 @@ const TabStyle = createGlobalStyle`
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
-  background-image: url("https://www.unilever.pl/resources/7.16.54/images/phoenix/careers-swimlane-bg.png") !important;
+  /* background-image: url("https://www.unilever.pl/resources/7.16.54/images/phoenix/careers-swimlane-bg.png") !important; */
     @media(max-width:768px) {
       padding: 10px;
     }
 }
 .react-tabs__tab{
   padding:30px 25px !important;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   color:transparent;
   position:relative;
   font-weight:bold;
   transition:.4s;
+  border-radius: 5px 5px 0 0;
+  bottom: -7px !important;
     @media(max-width:768px){
-      padding:45px 25px !important;
+      /* padding:45px 25px !important; */
+      bottom: 0 !important;
     }
     &:hover{
-      transform: scale(1.18);
+      /* transform: scale(1.18); */
     }
     &:after{
       position:absolute;
@@ -55,31 +58,45 @@ const TabStyle = createGlobalStyle`
   display:flex;
   align-items:center;
   justify-content:center;
-  margin-top:10px;
-  padding-top: 30px;
+  margin:10px auto 40px;
+  padding-top: 50px;
   padding-bottom: 30px;
-  border-radius: 15px;
-  background: red;
-  width:80%;
+  border-radius: 0 0 15px 15px;
+  /* background: red; */
+  width:80vw;
   margin-left: 50%;
   transform: translateX(-50%);
+  height: 200px;
     @media (max-width:768px) {
-      width:100%;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      width:90.1vw;
+      background-position: 50%;
+      padding: 20px 10px !important;
+      height: 350px;
     }
   
   img{
-    margin-right:10px;
-    margin-left:10px;
+    margin: 0 10px;
     max-width:120px;
+    background: rgba(255,255,255,.5);
+    border-radius: 10px;
   }
   img:hover {
     transform: scale(1.1);
+  }
+  @media(max-width:768px){
+    img {
+      margin: 8px 0;
+    }
   }
 }
 .react-tabs__tab-list{
   border-bottom:0px !important;
   text-align:center;
   position:relative;
+  margin-bottom: -4px;
 
   @media(max-width:768px){
     display:flex;
@@ -88,52 +105,75 @@ const TabStyle = createGlobalStyle`
 }
 #react-tabs-0{
   background-size:cover !important;
-  width:18%;
-  height:auto;
-  margin-right:16px;
-  margin-left:16px;
+  width:20vw;
+  height:100px;
+  /* margin-right:16px;
+  margin-left:16px; */
+  &:hover {
+    background: rgb(0, 215, 197) !important;
+    p {color: #fff !important;}
+  }
+  a {
+    color: inherit;
+    text-decoration: none !important;
+  }
   @media(max-width:768px){
-   margin-left:15px;
-   margin-right:15px;
-   margin-top:10px;
-   width: fit-content;
+    /* margin-left:15px;
+    margin-right:15px; */
+    /* width: fit-content; */
+    margin:10px auto -20px;
+    width: 90vw;
   }
 }
 #react-tabs-2{
   background-size:cover !important;
-  width:18%;
-  height:auto;
-  margin-right:16px;
-  margin-left:16px;
+  width:20vw;
+  height:100px;
+  /* margin-right:16px;
+  margin-left:16px; */
+  &:hover {
+    background: rgb(255, 228, 3) !important;
+    p {color: #fff !important;}
+  }
   @media(max-width:768px){
-    margin-left:15px;
-    margin-top:10px;
-    width: 90%;
+    /* margin-left:15px;
+    margin-right:15px; */
+    margin:10px auto -20px;
+    width: 90vw;
    }
 }
 #react-tabs-4{
   background-size:cover !important;
-  width:18%;
-  height:auto;
-  margin-right:16px;
-  margin-left:16px;
+  width:20vw;
+  height:100px;
+  /* margin-right:16px;
+  margin-left:16px; */
+  &:hover {
+    background: rgb(255, 121, 198) !important;
+    p {color: #fff !important;}
+  }
   @media(max-width:768px){
-    margin-left:15px;
-    margin-top:10px;
-    width: 90%;
+    /* margin-left:15px;
+    margin-right:15px; */
+    margin:10px auto -20px;
+    width: 90vw;
    }
 }
 #react-tabs-6{
   background-size:cover !important;
-  width:18%;
-  height:auto;
-  margin-right:16px;
-  margin-left:16px;
+  width:20vw;
+  height:100px;
+  /* margin-right:16px;
+  margin-left:16px; */
+  &:hover {
+    background: rgb(0, 94, 238) !important;
+    p {color: #fff !important;}
+  }
   @media(max-width:768px){
-    margin-left:15px;
-    margin-right:15px;
-    margin-top:10px;
-    width: 90%;
+    /* margin-left:15px;
+    margin-right:15px; */
+    margin:10px auto -20px;
+    width: 90vw;
    }
 }
 .react-tabs__tab-list span{
@@ -143,6 +183,24 @@ const TabStyle = createGlobalStyle`
   font-weight:bold;
 }
 // end tabs
+
+.divAnchor {
+  @media(min-width:768px){
+    display: none;
+  }
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.react-tabs__tab:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
 `;
+
+
 
 export default TabStyle;
