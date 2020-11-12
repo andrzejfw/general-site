@@ -184,10 +184,11 @@ const UnileverFooter = styled.div`
     padding-left: 24%;
     display: flex;
     flex-direction: row;
-
-    @media (max-width:1600px){
+    justify-content: flex-end;
+    padding-right: 3%;
+    /* @media (max-width:1600px){
     padding-left: 12%;
-  }
+  } */
 
     @media (max-width:992px){
     flex-direction: column;

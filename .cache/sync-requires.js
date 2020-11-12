@@ -17,6 +17,7 @@ exports.components = {
   "component---src-pages-index-lipton-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\index-lipton.js"))),
   "component---src-pages-legal-notice-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\legal-notice.js"))),
   "component---src-pages-privacy-notice-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\privacy-notice.js"))),
+  "component---src-pages-purpose-lipton-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\purpose-lipton.js"))),
   "component---src-pages-sitemap-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\sitemap.js"))),
   "component---src-pages-sustainability-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\sustainability.js")))
 }

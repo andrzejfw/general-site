@@ -7,25 +7,27 @@ const BannerWithVideoLiptonWrapper = styled.div`
     height: 500px;
     background: url(${props => props.background});
     background-size: cover;
-    margin: 50px 0;
+    /* margin: 50px 0; */
 
     @media(max-width:992px){
       height: auto;
+      background: url(${props => props.backgroundMobile});
     }
 `;
 
 const BannerLiptonTitle = styled.h1`
     font-size: 2rem;
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
     font-weight: bold;
     padding: 40px 0 0;
-    text-shadow: 2px 2px 10px black;
+    /* text-shadow: 2px 2px 10px black; */
 `;
 
 const BannerLiptonContent = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    text-shadow: none;
 
     @media(max-width:992px){
       grid-template-columns: 1fr;
@@ -34,7 +36,7 @@ const BannerLiptonContent = styled.div`
 
 const BannerLiptonParagraph = styled.p`
     font-size: 1.5rem;
-    color: #fff;
+    /* color: #fff; */
     text-align: left;
     padding: 5% 5% 5% 20%;
 
@@ -67,8 +69,16 @@ const BannerLiptonVideoIframe = styled.iframe`
     }
 `;
 
-const BannerWithVideoLipton = ({title, paragraph, videoId, background}) => (
-    <BannerWithVideoLiptonWrapper background={background}>
+const BannerWithVideoLipton = ({title, paragraph, videoId, background, backgroundMobile, red, titleShadow, margin}) => (
+    <BannerWithVideoLiptonWrapper 
+      background={background} 
+      backgroundMobile={backgroundMobile}
+      style={{
+        color: red ? "#c8381d" : "#fff", 
+        textShadow: titleShadow ? "2px 2px 10px black" : "none",
+        margin: margin ? "50px 0" : "0",
+      }}
+    >
         <BannerLiptonTitle>{title}</BannerLiptonTitle>
         <BannerLiptonContent>
             <BannerLiptonParagraph>{paragraph}</BannerLiptonParagraph>
@@ -84,6 +94,10 @@ BannerWithVideoLipton.propTypes = {
     paragraph: PropTypes.string.isRequired,
     videoId: PropTypes.string.isRequired,
     background: PropTypes.string.isRequired,
+    backgroundMobile: PropTypes.string.isRequired,
+    red: PropTypes.string,
+    titleShadow: PropTypes.string,
+    margin: PropTypes.string,
 }
 
 export default BannerWithVideoLipton;
