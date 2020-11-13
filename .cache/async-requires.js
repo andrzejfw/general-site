@@ -14,6 +14,7 @@ exports.components = {
   "component---src-pages-index-lipton-js": () => import("./../../src/pages/index-lipton.js" /* webpackChunkName: "component---src-pages-index-lipton-js" */),
   "component---src-pages-legal-notice-js": () => import("./../../src/pages/legal-notice.js" /* webpackChunkName: "component---src-pages-legal-notice-js" */),
   "component---src-pages-privacy-notice-js": () => import("./../../src/pages/privacy-notice.js" /* webpackChunkName: "component---src-pages-privacy-notice-js" */),
+  "component---src-pages-purpose-lipton-js": () => import("./../../src/pages/purpose-lipton.js" /* webpackChunkName: "component---src-pages-purpose-lipton-js" */),
   "component---src-pages-sitemap-js": () => import("./../../src/pages/sitemap.js" /* webpackChunkName: "component---src-pages-sitemap-js" */),
   "component---src-pages-sustainability-js": () => import("./../../src/pages/sustainability.js" /* webpackChunkName: "component---src-pages-sustainability-js" */),
   "component---src-pages-sustainability-lipton-js": () => import("./../../src/pages/sustainability-lipton.js" /* webpackChunkName: "component---src-pages-sustainability-lipton-js" */)

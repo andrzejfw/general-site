@@ -78,8 +78,8 @@ const TabStyle = createGlobalStyle`
     }
   
   img{
-    margin: 0 10px;
-    max-width:120px;
+    margin: -15px 10px 0;
+    max-width:150px;
     background: rgba(255,255,255,.5);
     border-radius: 10px;
   }
@@ -89,6 +89,7 @@ const TabStyle = createGlobalStyle`
   @media(max-width:768px){
     img {
       margin: 8px 0;
+      max-width:120px;
     }
   }
 }
@@ -105,12 +106,13 @@ const TabStyle = createGlobalStyle`
 }
 #react-tabs-0{
   background-size:cover !important;
-  width:20vw;
+  width:19.6vw;
   height:100px;
+  margin-right:.5vw;
   /* margin-right:16px;
   margin-left:16px; */
   &:hover {
-    background: rgb(0, 215, 197) !important;
+    /* background: rgb(0, 94, 238) !important; */
     p {color: #fff !important;}
   }
   a {
@@ -120,19 +122,19 @@ const TabStyle = createGlobalStyle`
   @media(max-width:768px){
     /* margin-left:15px;
     margin-right:15px; */
-    /* width: fit-content; */
     margin:10px auto -20px;
     width: 90vw;
   }
 }
 #react-tabs-2{
   background-size:cover !important;
-  width:20vw;
+  width:19.6vw;
   height:100px;
+  margin-right:.5vw;
   /* margin-right:16px;
   margin-left:16px; */
   &:hover {
-    background: rgb(255, 228, 3) !important;
+    /* background: rgb(255, 84, 80) !important; */
     p {color: #fff !important;}
   }
   @media(max-width:768px){
@@ -144,12 +146,13 @@ const TabStyle = createGlobalStyle`
 }
 #react-tabs-4{
   background-size:cover !important;
-  width:20vw;
+  width:19.6vw;
   height:100px;
+  margin-right:.5vw;
   /* margin-right:16px;
   margin-left:16px; */
   &:hover {
-    background: rgb(255, 121, 198) !important;
+    /* background: rgb(255, 121, 198) !important; */
     p {color: #fff !important;}
   }
   @media(max-width:768px){
@@ -161,12 +164,12 @@ const TabStyle = createGlobalStyle`
 }
 #react-tabs-6{
   background-size:cover !important;
-  width:20vw;
+  width:19.6vw;
   height:100px;
   /* margin-right:16px;
   margin-left:16px; */
   &:hover {
-    background: rgb(0, 94, 238) !important;
+    /* background: rgb(0, 215, 197) !important; */
     p {color: #fff !important;}
   }
   @media(max-width:768px){

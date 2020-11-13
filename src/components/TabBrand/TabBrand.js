@@ -22,8 +22,8 @@ import Knorr from '../../assets/images/logo-knorr.png'
 import Hellmanns from '../../assets/images/hellmanns-logo.png'
 import Magnum from '../../assets/images/magnum-logo.png'
 import BenAndJerrys from '../../assets/images/ben-and-jerrys-logo.png'
-import Idull from '../../assets/images/ingman-logo.png'
-import SuperViva from '../../assets/images/ingman-logo.png'
+import Idull from '../../assets/images/idull-logo.png'
+import SuperViva from '../../assets/images/super-viva-logo.png'
 import Dove from '../../assets/images/dove-logo.png'
 import Rexona from '../../assets/images/rexona-logo.png'
 import Lbp from '../../assets/images/lbp-logo.png'
@@ -33,10 +33,10 @@ import SeventhGeneration from '../../assets/images/sevent-generation-logo.png'
 
 
 const TABS = [
-  { text: 'Toidukaubad', color_active: `rgb(0, 215, 197)`, color_inactive: `rgb(116, 233, 223)` },
-  { text: 'Jäätis', color_active: `rgb(255, 228, 3)`, color_inactive: `rgb(237, 230, 172)` },
-  { text: 'Ilu ja hügieen', color_active: `rgb(255, 121, 198)`, color_inactive: `rgb(239, 176, 212)` },
-  { text: 'Kodukeemia', color_active: `rgb(0, 94, 238)`, color_inactive: `rgb(122, 164, 228)` },
+  { text: 'Toidukaubad', color_active: `rgb(0, 94, 238)`, color_inactive: `rgb(0, 94, 238)` },
+  { text: 'Jäätis', color_active: `rgb(255, 84, 80)`, color_inactive: `rgb(255, 84, 80)` },
+  { text: 'Ilu ja hügieen', color_active: `rgb(255, 121, 198)`, color_inactive: `rgb(255, 121, 198)` },
+  { text: 'Kodukeemia', color_active: `rgb(0, 215, 197)`, color_inactive: `rgb(0, 215, 197)` },
 ]
 
 
@@ -63,7 +63,7 @@ export default class extends React.Component{
                     key={`tab-${i}`}
                     style={{ background: this.isTabActive(i) ? `${color_active}` : `${color_inactive}` }}
                   >
-                      <p style={{color: this.isTabActive(i) ? `#fff` : `#808080`, fontSize: `1.5rem`}} >
+                      <p style={{color: this.isTabActive(i) ? `#fff` : `#3f3f3f`, fontSize: `1.5rem`}} >
                         {text}
                       </p>
 
