@@ -13,28 +13,30 @@ import NavigationStyles from "../components/Header/NavigationStyles"
 import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
+import LiptonCategoriesStyles from "../components/LiptonCategories/LiptonCategoriesStyles"
 // import CustomerChat from "../components/Messenger/Messenger"
 
 
 const MainLayout = ( {children} ) => (
   <>
     <GlobalStyle />
-    {/* <Navigation />
-    <NavigationStyles/> */}
-    <NavigationLipton/>
-    <NavigationLiptonStyles/>
+    <Navigation />
+    <NavigationStyles/>
+    {/* <NavigationLipton/>
+    <NavigationLiptonStyles/> */}
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
     <QuotesStyles/>
     <CarouselStyle />
     <CarouselStyleLipton />
+    <LiptonCategoriesStyles/>
     <CarouselStyleLiptonRecipe />
     {children}
     {/* <CustomerChat /> */}
 
-    {/* <Footer/> */}
-    <FooterLipton/>
+    <Footer/>
+    {/* <FooterLipton/> */}
   </>
 )
 

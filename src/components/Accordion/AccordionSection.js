@@ -22,7 +22,7 @@ class AccordionSection extends Component {
           background: isOpen ? "#004cc2" : "#004cc2",
           border: "1px solid #004cc2",
           borderRadius: "14px",
-          color:"#c8381d",
+          color:"#fff",
           fontWeight: "bold",
           margin: "5px",
           padding: "15px 15px",
@@ -32,8 +32,8 @@ class AccordionSection extends Component {
         <div onClick={onClick} style={{ cursor: "pointer" }}>
           {label}
           <div style={{ float: "right" }}>
-            {!isOpen && <span style= {{ color: "#c8381d" }}>&#9660;</span>}
-            {isOpen && <span style = {{ color: "#c8381d" }}>&#9650;</span>}
+            {!isOpen && <span style= {{ color: "white" }}>&#9660;</span>}
+            {isOpen && <span style = {{ color: "white" }}>&#9650;</span>}
           </div>
         </div>
         {isOpen && (
