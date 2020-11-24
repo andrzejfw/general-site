@@ -26,7 +26,7 @@ const Privacy = () => {
   
     return (
      <>
-     <SEO title="Veebilehe reeglid" description=""/>
+     <SEO title="Veebilehe reeglid" description="Juriidiline teave. Veebilehel olev informatsioon ja kogu teave toodete, teenuste ja kampaaniate kohta kehtib ainult Eesti kohta ja ainult Eestis. Unilever."/>
       <Section>    
         <PrivacyStyle/>
         <div class="container">

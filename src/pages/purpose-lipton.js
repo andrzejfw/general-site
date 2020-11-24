@@ -19,7 +19,7 @@ const LiptonPurposeSection = styled.section`
 const LiptonPurposePage = () => {
     return (
       <>
-      <SEO title="Meie eesmärk" description=""/>
+      <SEO title="Meie eesmärk" description="Liptoni kaubamärgi eesmärk on äratada maailm kvaliteetsetele ühendustele, et võidelda varjatud üksindusega. Loe rohkem ning liitu meie liikumisega."/>
       <BannerWithVideoLipton 
         title="Meie eesmärk" 
         paragraph="Liptoni eesmärk on äratada maailm kvaliteetsetele ühendustele, et võidelda varjatud üksindusega." 

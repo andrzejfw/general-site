@@ -73,7 +73,7 @@ const ContactMap = styled.div`
 
 const ContactPage = () => (
   <>
-  <SEO title="Kontakt" description=""/>
+  <SEO title="Kontakt" description="Unilever Eesti AS. Kuidas meiega ühendust saada? Paldiski mnt 96, Tallinn, Eesti, 13552. Telefon: +372 612 0410. E-mail: info-estonia@unilever.com"/>
     <ContactSection>
       <ContactHeader>Unilever Eesti AS</ContactHeader>
       <ContactInformation>
