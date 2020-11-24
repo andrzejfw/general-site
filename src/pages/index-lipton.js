@@ -35,7 +35,7 @@ const SectionAccordion = styled.div`
 const IndexPage = () => {
   return (
    <>
-   <SEO title="Lipton" description=""/>
+   <SEO title="Lipton Page" description=""/>
     <Section> 
          
     {/* <SliderLipton></SliderLipton> */}
@@ -50,7 +50,7 @@ const IndexPage = () => {
       <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/"></LiptonCategoriesBox>
       <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/"></LiptonCategoriesBox>
     </LiptonCategories>
-    {/* <SectionAccordion>
+    <SectionAccordion>
     <Accordion>
         <div label={"cokolwiek"} isOpen>
           <p>
@@ -68,9 +68,9 @@ const IndexPage = () => {
               której sekret tkwi w głównym składniku BIG MILK, czyli świeżym mleku. Spróbuj i przekonaj się, jak smakuje BIG MILK Choco Intense!</p>
         </div>
       </Accordion>
-      </SectionAccordion>   */}
-      {/* <Link to="https://google.com" target="_blank" style={{ textDecoration: 'none' }}><Button>Read more</Button></Link> */}
-      {/* <SliderLiptonRecipe></SliderLiptonRecipe> */}
+      </SectionAccordion>
+      <Link to="https://google.com" target="_blank" style={{ textDecoration: 'none' }}><Button>Read more</Button></Link>
+      <SliderLiptonRecipe></SliderLiptonRecipe>
     </Section>
     </>
   )

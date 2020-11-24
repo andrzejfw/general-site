@@ -20,10 +20,10 @@ import LiptonCategoriesStyles from "../components/LiptonCategories/LiptonCategor
 const MainLayout = ( {children} ) => (
   <>
     <GlobalStyle />
-    <Navigation />
-    <NavigationStyles/>
-    {/* <NavigationLipton/>
-    <NavigationLiptonStyles/> */}
+    {/* <Navigation />
+    <NavigationStyles/> */}
+    <NavigationLipton/>
+    <NavigationLiptonStyles/>
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
@@ -32,11 +32,13 @@ const MainLayout = ( {children} ) => (
     <CarouselStyleLipton />
     <LiptonCategoriesStyles/>
     <CarouselStyleLiptonRecipe />
+    <CarouselStyleLiptonRecipe />
+    <LiptonCategoriesStyles/>
     {children}
     {/* <CustomerChat /> */}
 
-    <Footer/>
-    {/* <FooterLipton/> */}
+    {/* <Footer/> */}
+    <FooterLipton/>
   </>
 )
 

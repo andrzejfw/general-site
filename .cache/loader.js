@@ -264,7 +264,7 @@ export class BaseLoader {
           }
 
           return this.memoizedGet(
-            `${__PATH_PREFIX__}/page-data/sq/d/${staticQueryHash}.json`
+            `${__PATH_PREFIX__}/static/d/${staticQueryHash}.json`
           ).then(req => {
             const jsonPayload = JSON.parse(req.responseText)
             return { staticQueryHash, jsonPayload }
@@ -394,7 +394,7 @@ export class BaseLoader {
   isPageNotFound(rawPath) {
     const pagePath = findPath(rawPath)
     const page = this.pageDb.get(pagePath)
-    return !page || page.notFound
+    return page && page.notFound === true
   }
 
   loadAppData(retries = 0) {
