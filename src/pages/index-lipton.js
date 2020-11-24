@@ -16,6 +16,11 @@ import BannerWithVideoLipton from "../components/BannerWithVideoLipton/BannerWit
 import { Link } from "gatsby"
 import SEO from '../components/Seo/Seo'
 import BackgroundImage from '../assets/images/lipton-background.jpg'
+import LiptonCategories from '../components/LIptonCategories/LiptonCategories'
+import LiptonCategoriesBox from "../components/LIptonCategories/LiptonCategoriesBox"
+import BlackTea from '../assets/images/tea-black.png';
+import GreenTea from '../assets/images/tea-green.png';
+import FunctionalTea from '../assets/images/tea-fruit.png';
 
 
 const Section = styled.section`
@@ -40,6 +45,11 @@ const IndexPage = () => {
       videoId="HLtkjt0g0Z8" 
       background={BackgroundImage}>
     </BannerWithVideoLipton>
+    <LiptonCategories>
+      <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/"></LiptonCategoriesBox>
+    </LiptonCategories>
     <SectionAccordion>
     <Accordion>
         <div label={"cokolwiek"} isOpen>
