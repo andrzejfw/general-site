@@ -281,7 +281,7 @@ class BaseLoader {
           };
         }
 
-        return this.memoizedGet(`${__PATH_PREFIX__}/static/d/${staticQueryHash}.json`).then(req => {
+        return this.memoizedGet(`${__PATH_PREFIX__}/page-data/sq/d/${staticQueryHash}.json`).then(req => {
           const jsonPayload = JSON.parse(req.responseText);
           return {
             staticQueryHash,
@@ -410,7 +410,7 @@ class BaseLoader {
   isPageNotFound(rawPath) {
     const pagePath = (0, _findPath.findPath)(rawPath);
     const page = this.pageDb.get(pagePath);
-    return page && page.notFound === true;
+    return !page || page.notFound;
   }
 
   loadAppData(retries = 0) {
