@@ -41,7 +41,7 @@ const NavigationLipton = () => {
 
       <NavbarSection>
         <Navbar.Brand>
-          <Link to ="/"><ImgLogo src="https://asset-eu.unileversolutions.com/content/dam/unilever/lipton_international/global/logo/lipton_logo_2_tiff_90x90-1492630-png.png" /></Link>
+          <Link to ="/index-lipton"><ImgLogo src="https://asset-eu.unileversolutions.com/content/dam/unilever/lipton_international/global/logo/lipton_logo_2_tiff_90x90-1492630-png.png" /></Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav">

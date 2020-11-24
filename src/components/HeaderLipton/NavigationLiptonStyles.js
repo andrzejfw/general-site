@@ -17,8 +17,8 @@ const NavigationLiptonStyles = createGlobalStyle`
     font-size:20px;
   }
   .navbar-dark .navbar-nav .nav-link{
-    color:white !important;
-    text-shadow: 2px 2px 10px rgba(0,0,0,.4);
+    color:#c8381d !important;
+    // text-shadow: 2px 2px 10px rgba(0,0,0,.4);
     padding: 10px 50px;
   }
 
@@ -95,11 +95,14 @@ const NavigationLiptonStyles = createGlobalStyle`
       max-width:100vw;
     }
     .dropdown-menu a{
-        color:white !important;
+        color:#c8381d !important;
+        font-weight:bold;
     }
 
     .dropdown-item:hover {
         background-color: #c8381d !important;
+        color: white !important;
+        font-weight:bold;
     }
 
     .dropdown-menu.show{
