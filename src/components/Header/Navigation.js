@@ -47,7 +47,7 @@ const Navigation = () => {
 
           <Nav className="ml-auto">
             <Nav.Link Link href="/about">Ettevõttest</Nav.Link>
-            <Nav.Link Link href="/brands">Meie kaubamärgid</Nav.Link>
+            <Nav.Link Link href="/brands">Kaubamärgid</Nav.Link>
             <Nav.Link Link href="/sustainability">Meie eesmärk</Nav.Link>
             <Nav.Link Link href="/contact">Kontakt</Nav.Link>
 
