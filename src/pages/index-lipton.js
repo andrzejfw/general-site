@@ -16,6 +16,11 @@ import BannerWithVideoLipton from "../components/BannerWithVideoLipton/BannerWit
 import { Link } from "gatsby"
 import SEO from '../components/Seo/Seo'
 import BackgroundImage from '../assets/images/lipton-background.jpg'
+import LiptonCategories from '../components/LIptonCategories/LiptonCategories'
+import LiptonCategoriesBox from "../components/LIptonCategories/LiptonCategoriesBox"
+import BlackTea from '../assets/images/tea-black.png';
+import GreenTea from '../assets/images/tea-green.png';
+import FunctionalTea from '../assets/images/tea-fruit.png';
 
 
 const Section = styled.section`
@@ -30,16 +35,21 @@ const SectionAccordion = styled.div`
 const IndexPage = () => {
   return (
    <>
-   <SEO title="Lipton" description=""/>
+   <SEO title="Lipton Page" description=""/>
     <Section> 
          
-    <SliderLipton></SliderLipton>
+    {/* <SliderLipton></SliderLipton> */}
     <BannerWithVideoLipton 
       title="Brand Purpose Article" 
       paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
       videoId="HLtkjt0g0Z8" 
       background={BackgroundImage}>
     </BannerWithVideoLipton>
+    <LiptonCategories>
+      <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/"></LiptonCategoriesBox>
+    </LiptonCategories>
     <SectionAccordion>
     <Accordion>
         <div label={"cokolwiek"} isOpen>
@@ -58,7 +68,7 @@ const IndexPage = () => {
               której sekret tkwi w głównym składniku BIG MILK, czyli świeżym mleku. Spróbuj i przekonaj się, jak smakuje BIG MILK Choco Intense!</p>
         </div>
       </Accordion>
-      </SectionAccordion>  
+      </SectionAccordion>
       <Link to="https://google.com" target="_blank" style={{ textDecoration: 'none' }}><Button>Read more</Button></Link>
       <SliderLiptonRecipe></SliderLiptonRecipe>
     </Section>

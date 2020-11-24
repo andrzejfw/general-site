@@ -181,7 +181,7 @@ const FooterItemList = styled.li`
 const UnileverFooter = styled.div`
     z-index:2;
     background:#7f7f7f;
-    padding-left: 24%;
+    /* padding-left: 24%; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

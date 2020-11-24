@@ -63,7 +63,7 @@ const BannerLiptonVideoIframe = styled.iframe`
     border-radius: 20px;
 
     @media(max-width:992px){
-      min-width: 350px !important;
+      min-width: 300px !important;
       max-height: 190px !important;
       margin-bottom: 5%;
     }

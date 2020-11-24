@@ -46,15 +46,16 @@ const Navigation = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
 
           <Nav className="ml-auto">
-            <Nav.Link Link href="/about">About</Nav.Link>
-            <Nav.Link Link href="/brands">Brands</Nav.Link>
-            <Nav.Link Link href="/contact">Contact</Nav.Link>
+            <Nav.Link Link href="/about">Ettevõttest</Nav.Link>
+            <Nav.Link Link href="/brands">Kaubamärgid</Nav.Link>
+            <Nav.Link Link href="/sustainability">Meie eesmärk</Nav.Link>
+            <Nav.Link Link href="/contact">Kontakt</Nav.Link>
 
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item Link href="/about">Dropdown1</NavDropdown.Item>
               <NavDropdown.Item Link href="/brands">Dropdown1</NavDropdown.Item>
               <NavDropdown.Item Link href="/contact">Dropdown1</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </NavbarSection>
