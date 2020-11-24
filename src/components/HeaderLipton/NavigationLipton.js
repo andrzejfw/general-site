@@ -52,15 +52,15 @@ const NavigationLipton = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
 
           <Nav className="ml-lipton">
-          <NavDropdown title="Products" id="collasible-nav-dropdown">
+          <NavDropdown title="Tooted" id="collasible-nav-dropdown">
               <NavDropdown.Item  Link href="/about">Dropdown1</NavDropdown.Item>
               <NavDropdown.Item Link href="/brands">Dropdown1</NavDropdown.Item>
               <NavDropdown.Item Link href="/contact">Dropdown1</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link Link href="/index-lipton">Recipes</Nav.Link>
-            <Nav.Link Link href="/brands">Campaign</Nav.Link>
-            <Nav.Link Link href="/contact">Our Mission</Nav.Link>
+            <Nav.Link Link href="/purpose-lipton">Meie eesmärk</Nav.Link>
+            <Nav.Link Link href="/sustainability-lipton">Jätkusuutlik elu</Nav.Link>
+            <Nav.Link Link href="/contact">Kontakt</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
