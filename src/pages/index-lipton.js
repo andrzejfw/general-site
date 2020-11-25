@@ -91,6 +91,8 @@ const IndexPage = () => {
         backgroundMobile={backgroundMobile}
         red
         button
+        videoButtonCTA="Loe rohkem"
+        videoButtonLink="/purpose-lipton"
         >
     </BannerWithVideoLipton>
 

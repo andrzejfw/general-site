@@ -23,7 +23,7 @@ const NavigationLiptonStyles = createGlobalStyle`
   }
 
   .navbar-dark .navbar-nav .nav-link:hover {
-    color: #c8381d !important;
+    color: #e95c02 !important;
   }
   /* icon animated */
     .navbar-toggler {
@@ -139,7 +139,7 @@ const NavigationLiptonStyles = createGlobalStyle`
     }
 
     .bg-yellow {
-        background-color: #fade4c!important;
+        background-color: #ffe902 !important;
     }
 
     .ml-lipton {

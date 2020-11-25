@@ -40,7 +40,7 @@ const BannerLiptonParagraph = styled.p`
     font-size: 1.5rem;
     /* color: #fff; */
     text-align: left;
-    padding: 5% 5% 5% 20%;
+    padding: 5% 5% 5% 30%;
 
     @media(max-width:992px){
       font-size: 1.2rem;
@@ -55,6 +55,18 @@ const BannerLiptonParagraph = styled.p`
         margin: 20px auto 0 !important;
       }
     }
+
+    .button-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
 `;
 
 const BannerLiptonVideo = styled.div`
@@ -88,7 +100,9 @@ const BannerWithVideoLipton = ({
     red, 
     titleShadow, 
     margin, 
-    button
+    button,
+    videoButtonCTA,
+    videoButtonLink
 }) => (
     <BannerWithVideoLiptonWrapper 
       background={background} 
@@ -103,10 +117,10 @@ const BannerWithVideoLipton = ({
         <BannerLiptonContent>
             <BannerLiptonParagraph>
               {paragraph}
-              <div style={{display: button ? "inline" : "none"}}>
+              <div style={{display: button ? "block" : "none"}}>
               <ButtonRadius>
-                <Link className="categories-button-link" to="/">
-                  Loe rohkem
+                <Link className="button-link" to={videoButtonLink}>
+                  {videoButtonCTA}
                 </Link>
               </ButtonRadius>
               </div>
@@ -124,10 +138,12 @@ BannerWithVideoLipton.propTypes = {
     videoId: PropTypes.string.isRequired,
     background: PropTypes.string.isRequired,
     backgroundMobile: PropTypes.string.isRequired,
-    red: PropTypes.string,
     titleShadow: PropTypes.string,
-    margin: PropTypes.string,
-    button: PropTypes.string,
+    red: PropTypes.bool,
+    margin: PropTypes.bool,
+    button: PropTypes.bool,
+    videoButtonCTA: PropTypes.string,
+    videoButtonLink: PropTypes.string
 }
 
 export default BannerWithVideoLipton;

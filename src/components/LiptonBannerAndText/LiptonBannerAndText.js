@@ -24,7 +24,7 @@ LiptonBannerAndText.propTypes = {
     paragraphText: PropTypes.string.isRequired,
     buttonCTA: PropTypes.string.isRequired,
     buttonLink: PropTypes.string.isRequired,
-    second: PropTypes.string,
+    second: PropTypes.bool,
 }
 
 export default LiptonBannerAndText;

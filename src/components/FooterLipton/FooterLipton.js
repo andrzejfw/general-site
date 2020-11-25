@@ -8,7 +8,7 @@ import LadyWithTea from '../../assets/images/lady-with-tea.png';
 const Footercontainer = styled.div`
     height:20vh; 
     z-index:2;
-    background:#fade4c;
+    background:#ffd400;
 
     @media (max-width:1600px){
     height:25vh;
@@ -193,6 +193,7 @@ const UnileverFooter = styled.div`
     @media (max-width:992px){
     flex-direction: column;
     padding-left: 0;
+    padding-right: 0;
   }
 `;
 
