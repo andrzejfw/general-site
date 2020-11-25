@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import ButtonRadius from '../ButtonLipton';
+import { Link } from 'gatsby';
 
 const BannerWithVideoLiptonWrapper = styled.div`
     width:100%;
@@ -45,6 +47,14 @@ const BannerLiptonParagraph = styled.p`
       text-align: center;
       padding: 5%;
     }
+
+    .ButtonLipton__ButtonRadius-fxgQry {
+      margin: 20px 0 0 !important;
+
+      @media(max-width:992px){
+        margin: 20px auto 0 !important;
+      }
+    }
 `;
 
 const BannerLiptonVideo = styled.div`
@@ -69,7 +79,17 @@ const BannerLiptonVideoIframe = styled.iframe`
     }
 `;
 
-const BannerWithVideoLipton = ({title, paragraph, videoId, background, backgroundMobile, red, titleShadow, margin}) => (
+const BannerWithVideoLipton = ({
+    title, 
+    paragraph, 
+    videoId, 
+    background, 
+    backgroundMobile, 
+    red, 
+    titleShadow, 
+    margin, 
+    button
+}) => (
     <BannerWithVideoLiptonWrapper 
       background={background} 
       backgroundMobile={backgroundMobile}
@@ -81,7 +101,16 @@ const BannerWithVideoLipton = ({title, paragraph, videoId, background, backgroun
     >
         <BannerLiptonTitle>{title}</BannerLiptonTitle>
         <BannerLiptonContent>
-            <BannerLiptonParagraph>{paragraph}</BannerLiptonParagraph>
+            <BannerLiptonParagraph>
+              {paragraph}
+              <div style={{display: button ? "inline" : "none"}}>
+              <ButtonRadius>
+                <Link className="categories-button-link" to="/">
+                  Loe rohkem
+                </Link>
+              </ButtonRadius>
+              </div>
+            </BannerLiptonParagraph>
             <BannerLiptonVideo>
             <BannerLiptonVideoIframe width="600" height="350" src={`https://www.youtube.com/embed/${videoId}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></BannerLiptonVideoIframe>
             </BannerLiptonVideo>
@@ -98,6 +127,7 @@ BannerWithVideoLipton.propTypes = {
     red: PropTypes.string,
     titleShadow: PropTypes.string,
     margin: PropTypes.string,
+    button: PropTypes.string,
 }
 
 export default BannerWithVideoLipton;

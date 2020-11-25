@@ -14,6 +14,7 @@ import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
 import LiptonCategoriesStyles from "../components/LiptonCategories/LiptonCategoriesStyles"
+import LiptonBannerAndTextStyles from "../components/LiptonBannerAndText/LiptonBannerAndTextStyles"
 // import CustomerChat from "../components/Messenger/Messenger"
 
 
@@ -34,6 +35,7 @@ const MainLayout = ( {children} ) => (
     <CarouselStyleLiptonRecipe />
     <CarouselStyleLiptonRecipe />
     <LiptonCategoriesStyles/>
+    <LiptonBannerAndTextStyles/>
     {children}
     {/* <CustomerChat /> */}
 

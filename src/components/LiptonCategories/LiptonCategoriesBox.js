@@ -1,6 +1,7 @@
 import React from 'react';
 import ButtonRadius from '../ButtonLipton';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
 
 const LiptonCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => {
@@ -16,13 +17,19 @@ const LiptonCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => {
                     <div className="button-div">
                         <ButtonRadius>
                             <Link className="categories-button-link" to={categoryLink}>
-                                Loe rohkem
+                                Uuri rohkem
                             </Link>
                         </ButtonRadius>
                     </div>
                 </div>
         </>
     )
+}
+
+LiptonCategoriesBox.propTypes = {
+    categoryTitle: PropTypes.string.isRequired,
+    categoryImage: PropTypes.string.isRequired,
+    categoryLink: PropTypes.string.isRequired
 }
 
 export default LiptonCategoriesBox;

@@ -3,14 +3,13 @@ import { createGlobalStyle } from 'styled-components';
 const LiptonCategoriesStyles = createGlobalStyle`
 
 .categories-section {
-    /* max-width: 1200px; */
     margin: 50px auto;
 
     h2 {
         margin: 0 20px;
         color: #c8381d;
-    text-align: center;
-    font-weight: 700;
+        text-align: center;
+        font-weight: 700;
 
         @media(max-width:992px){
         width: 90vw;
@@ -69,21 +68,11 @@ const LiptonCategoriesStyles = createGlobalStyle`
     transition:.5s;
     
 
-    &:hover {
-        transform: scale(1.1);
-    }
-
-    @media(max-width:992px){
-        max-width: 250px;
+        &:hover {
+            transform: scale(1.1);
         }
-    
+        
     }
-}
-
-.categories-title {
-    color: #c8381d;
-    text-align: center;
-    font-weight: 700;
 }
 
 .button-div {
@@ -96,6 +85,7 @@ const LiptonCategoriesStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
     font-size: 1.5rem;
+    
 
     &:hover {
         text-decoration: none;

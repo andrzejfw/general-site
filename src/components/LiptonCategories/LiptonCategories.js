@@ -4,16 +4,17 @@ import PropTypes from "prop-types";
 class LiptonCategories extends Component {
     static propTypes = {
       children: PropTypes.instanceOf(Object).isRequired,
+      sectionTitle: PropTypes.string.isRequired
     };
 
     render() {
         const { 
-          props: { children },
+          props: { children, sectionTitle },
         } = this;
 
         return (
             <section className="categories-section">
-                <h2>Explore our categories</h2>
+                <h2>{sectionTitle}</h2>
                 <div className="boxes-section">
                     {children}
                 </div>

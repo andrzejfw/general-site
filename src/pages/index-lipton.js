@@ -15,16 +15,53 @@ import Button from "../components/ButtonLipton"
 import BannerWithVideoLipton from "../components/BannerWithVideoLipton/BannerWithVideoLipton"
 import { Link } from "gatsby"
 import SEO from '../components/Seo/Seo'
-import BackgroundImage from '../assets/images/lipton-background.jpg'
 import LiptonCategories from '../components/LIptonCategories/LiptonCategories'
 import LiptonCategoriesBox from "../components/LIptonCategories/LiptonCategoriesBox"
+import LiptonBannerAndText from '../components/LiptonBannerAndText/LiptonBannerAndText'
 import BlackTea from '../assets/images/tea-black.png';
 import GreenTea from '../assets/images/tea-green.png';
 import FunctionalTea from '../assets/images/tea-fruit.png';
+import HeroImage from '../assets/images/lipton-hero-image.jpg';
+import BackgroundImage from '../assets/images/lipton-cups.jpg'
+import backgroundMobile from '../assets/images/lipton-cups-mobile.jpg'
+import SustainabilityBanner from '../assets/images/world-tea-plantation-scene.jpg'
+
 
 
 const Section = styled.section`
     width:100%;
+`;
+
+const LiptonHeroImage = styled.img`
+    width: 100%;
+    object-fit:cover;
+
+    @media(max-width:992px){
+        width: auto;
+        height: 300px;
+        object-fit: cover;
+        object-position: -370px;
+    }
+`;
+
+const LiptonHpParagraphSection = styled.div`
+    margin: 50px auto 100px;
+
+    h2 {
+      margin: 50px 20px;
+      color: #c8381d;
+      text-align: center;
+      font-weight: 700;
+
+      @media(max-width:992px){
+        width: 90vw;
+        margin: 50px auto 20px;
+      }
+    }
+
+    @media(max-width:992px){
+        margin: 50px auto;
+      }
 `;
 
 const SectionAccordion = styled.div`
@@ -32,25 +69,52 @@ const SectionAccordion = styled.div`
   margin: 0 auto;
 `;
 
+
 const IndexPage = () => {
   return (
    <>
-   <SEO title="Lipton Page" description=""/>
+   <SEO title="Lipton Eesti" description="Liptoni tee on populaarne terves maailmas. Tutvu lähemalt meie musta tee, rohelise tee ja erinevate teiste teede valikuga. Mõnus maitseelamus kõigile!"/>
     <Section> 
-         
-    {/* <SliderLipton></SliderLipton> */}
-    <BannerWithVideoLipton 
-      title="Brand Purpose Article" 
-      paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
-      videoId="HLtkjt0g0Z8" 
-      background={BackgroundImage}>
-    </BannerWithVideoLipton>
-    <LiptonCategories>
+    <LiptonHeroImage src={HeroImage} alt="Lipton tee"/>     
+
+    <LiptonCategories sectionTitle="Meie kategooriaid">
       <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/"></LiptonCategoriesBox>
       <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/"></LiptonCategoriesBox>
       <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/"></LiptonCategoriesBox>
     </LiptonCategories>
-    <SectionAccordion>
+
+    <BannerWithVideoLipton 
+        title="Meie eesmärk" 
+        paragraph="Liptoni eesmärk on äratada maailm kvaliteetsetele ühendustele, et võidelda varjatud üksindusega." 
+        videoId="YVyLbd2UpJw" 
+        background={BackgroundImage}
+        backgroundMobile={backgroundMobile}
+        red
+        button
+        >
+    </BannerWithVideoLipton>
+
+    <LiptonHpParagraphSection>
+      <h2>Jätkusuutlikkus</h2>
+      <LiptonBannerAndText 
+        image={SustainabilityBanner}
+        paragraphText="Liptoni eesmärk on saavutada jätkusuutlik hankimine igal aastal toodetud 19 miljardile teepakile. Tee maitseb paremini, kui see on jätkusuutlikult hangitud."
+        buttonCTA="Loe rohkem"
+        buttonLink="/sustainability-lipton"
+        >
+      </LiptonBannerAndText>
+      {/* <LiptonBannerAndText 
+        image={SustainabilityBanner}
+        paragraphText="Liptoni eesmärk on saavutada jätkusuutlik hankimine igal aastal toodetud 19 miljardile teepakile. Tee maitseb paremini, kui see on jätkusuutlikult hangitud."
+        buttonCTA="Loe rohkem"
+        buttonLink="/sustainability-lipton"
+        second
+        >
+      </LiptonBannerAndText> */}
+    </LiptonHpParagraphSection>
+
+    
+    {/* <SectionAccordion>
     <Accordion>
         <div label={"cokolwiek"} isOpen>
           <p>
@@ -68,9 +132,10 @@ const IndexPage = () => {
               której sekret tkwi w głównym składniku BIG MILK, czyli świeżym mleku. Spróbuj i przekonaj się, jak smakuje BIG MILK Choco Intense!</p>
         </div>
       </Accordion>
-      </SectionAccordion>
-      <Link to="https://google.com" target="_blank" style={{ textDecoration: 'none' }}><Button>Read more</Button></Link>
-      <SliderLiptonRecipe></SliderLiptonRecipe>
+      </SectionAccordion> */}
+      {/* <SliderLipton></SliderLipton> */}
+      {/* <SliderLiptonRecipe></SliderLiptonRecipe> */}
+      {/* <Link to="https://google.com" target="_blank" style={{ textDecoration: 'none' }}><Button>Loe rohkem</Button></Link> */}
     </Section>
     </>
   )
