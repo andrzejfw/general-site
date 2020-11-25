@@ -26,7 +26,7 @@ const Privacy = () => {
   
     return (
      <>
-     <SEO title="Privaatsusteatis" description=""/>
+     <SEO title="Privaatsusteatis" description="Teame, et hoolite oma isiklikest andmetest ja sellest, kuidas neid kasutatakse. Kinnitame, et Unilever käsitseb teie isiklikke andmeid hoolsalt. Loe rohkem."/>
       <Section>    
         <PrivacyStyle/>
         <div class="container">

@@ -48,7 +48,7 @@ const SustainabilityParagraphMoreInfo = styled.p`
 
 const SustainabilityPage = () => (
   <>
-    <SEO title="Jätkusuutlik elu" description="Usume, et ärikasv ei tohiks toimuda inimeste ja planeedi arvelt."/>
+    <SEO title="Jätkusuutlik elu" description="Unilever Eesti jätkusuutliku elu plaani eesmärk on eraldada meie majanduskasv meie jalajäljest, suurendades samal ajal positiivset sotsiaalset mõju."/>
     <SustainabilityHeroImage src={SustainabilityHero} alt="sustainability hands"/>
     <SustainabilityContent>
         <SustainabilityHeader>Jätkusuutlik elu</SustainabilityHeader>

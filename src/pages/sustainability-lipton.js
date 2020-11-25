@@ -42,7 +42,7 @@ const SustainabilitySubHeader = styled.h2`
 
 const SustainabilityPage = () => (
   <>
-    <SEO title="Jätkusuutlikkus" description="Usume, et ärikasv ei tohiks toimuda inimeste ja planeedi arvelt."/>
+    <SEO title="Jätkusuutlikkus" description="Liptoni eesmärk on saavutada jätkusuutlik hankimine igal aastal toodetud 19 miljardile teepakile. Tee maitseb paremini, kui see on jätkusuutlikult hangitud."/>
     <SustainabilityHeroImage src={SustainabilityHero} alt="sustainability hands"/>
     <Section>
         <SustainabilityHeader>Jätkusuutlikkus</SustainabilityHeader>

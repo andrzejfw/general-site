@@ -109,7 +109,7 @@ const SiteMap = ({data}) => {
 
     return (
         <>
-        <SEO title="Saidi Kaart" description=""/>
+        <SEO title="Saidi Kaart" description="Kasuta Unileveri saidikaarti meie veebilehel navigeerimiseks. Tutvu erinevate brändidega ning loe, millega tegeleb Unilever Eestis ning ka üle maailma."/>
         <SiteMapHeader>Saidi Kaart</SiteMapHeader>
         <SiteMapWrapper>
             <SiteMapSection>

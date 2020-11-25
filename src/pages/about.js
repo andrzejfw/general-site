@@ -50,7 +50,7 @@ const Section = styled.section`
 const AboutPage = () => {
   return (
     <>
-    <SEO title="Ettevõttest" description=""/>
+    <SEO title="Ettevõttest" description="Unilever Eesti ettevõttest - muudame jätkusuutliku elu tavapäraseks. Oleme olnud teerajajad, innovaatorid ja tuleviku kujundajad juba üle 120 aasta."/>
      <Section>
        <h1>Ettevõttest</h1>
        <p>Unilever on oma äri loonud kindla eesmärgiga ning meie ainulaadne pärand kujundab veel tänapäevalgi äritegevuse viisi. Oleme olnud teerajajad, innovaatorid ja tuleviku kujundajad juba üle 120 aasta.</p>
