@@ -42,7 +42,6 @@ const DeliveryHeroImage = styled.img`
     object-fit:cover;
 
     @media(max-width:992px){
-        width: auto;
         height: 300px;
         object-fit: cover;
         object-position: -370px;
