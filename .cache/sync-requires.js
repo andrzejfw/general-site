@@ -13,6 +13,8 @@ exports.components = {
   "component---src-pages-brands-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\brands.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\contact.js"))),
   "component---src-pages-cookie-notice-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\cookie-notice.js"))),
+  "component---src-pages-delivery-magnum-img-on-text-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\delivery-magnum_img-on-text.js"))),
+  "component---src-pages-delivery-magnum-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\delivery-magnum.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\index.js"))),
   "component---src-pages-index-lipton-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\index-lipton.js"))),
   "component---src-pages-index-magnum-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\pages\\index-magnum.js"))),
