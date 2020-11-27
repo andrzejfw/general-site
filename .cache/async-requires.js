@@ -10,7 +10,6 @@ exports.components = {
   "component---src-pages-brands-js": () => import("./../../src/pages/brands.js" /* webpackChunkName: "component---src-pages-brands-js" */),
   "component---src-pages-contact-js": () => import("./../../src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-cookie-notice-js": () => import("./../../src/pages/cookie-notice.js" /* webpackChunkName: "component---src-pages-cookie-notice-js" */),
-  "component---src-pages-delivery-magnum-img-on-text-js": () => import("./../../src/pages/delivery-magnum_img-on-text.js" /* webpackChunkName: "component---src-pages-delivery-magnum-img-on-text-js" */),
   "component---src-pages-delivery-magnum-js": () => import("./../../src/pages/delivery-magnum.js" /* webpackChunkName: "component---src-pages-delivery-magnum-js" */),
   "component---src-pages-index-js": () => import("./../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-index-lipton-js": () => import("./../../src/pages/index-lipton.js" /* webpackChunkName: "component---src-pages-index-lipton-js" */),
