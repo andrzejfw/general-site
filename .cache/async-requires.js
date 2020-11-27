@@ -12,6 +12,7 @@ exports.components = {
   "component---src-pages-cookie-notice-js": () => import("./../../src/pages/cookie-notice.js" /* webpackChunkName: "component---src-pages-cookie-notice-js" */),
   "component---src-pages-index-js": () => import("./../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-index-lipton-js": () => import("./../../src/pages/index-lipton.js" /* webpackChunkName: "component---src-pages-index-lipton-js" */),
+  "component---src-pages-index-magnum-js": () => import("./../../src/pages/index-magnum.js" /* webpackChunkName: "component---src-pages-index-magnum-js" */),
   "component---src-pages-legal-notice-js": () => import("./../../src/pages/legal-notice.js" /* webpackChunkName: "component---src-pages-legal-notice-js" */),
   "component---src-pages-privacy-notice-js": () => import("./../../src/pages/privacy-notice.js" /* webpackChunkName: "component---src-pages-privacy-notice-js" */),
   "component---src-pages-purpose-lipton-js": () => import("./../../src/pages/purpose-lipton.js" /* webpackChunkName: "component---src-pages-purpose-lipton-js" */),
