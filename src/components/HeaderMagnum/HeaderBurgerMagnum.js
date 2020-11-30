@@ -56,8 +56,8 @@ const HeaderBurgerMagnum = () => {
       </div>
       <div className="magnum-navbox" style={{opacity: navbarOpen ? "1" : "0"}}>
           <Link className="magnum-navbox-item" to="/index-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Products</Link>
-          <Link className="magnum-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>About</Link>
-          <Link className="magnum-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Delivery Now</Link>
+          <Link className="magnum-navbox-item" to="/about-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>About</Link>
+          <Link className="magnum-navbox-item" to="/delivery-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Delivery Now</Link>
           <Link className="magnum-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Contact</Link>
         </div>
     </nav>

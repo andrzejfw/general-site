@@ -7,6 +7,7 @@ exports.components = {
   "component---src-layouts-pdp-lipton-js": () => import("./../../src/layouts/pdp-lipton.js" /* webpackChunkName: "component---src-layouts-pdp-lipton-js" */),
   "component---src-pages-404-js": () => import("./../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-js": () => import("./../../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
+  "component---src-pages-about-magnum-js": () => import("./../../src/pages/about-magnum.js" /* webpackChunkName: "component---src-pages-about-magnum-js" */),
   "component---src-pages-brands-js": () => import("./../../src/pages/brands.js" /* webpackChunkName: "component---src-pages-brands-js" */),
   "component---src-pages-contact-js": () => import("./../../src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-cookie-notice-js": () => import("./../../src/pages/cookie-notice.js" /* webpackChunkName: "component---src-pages-cookie-notice-js" */),

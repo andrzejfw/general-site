@@ -121,7 +121,7 @@ const MagnumDeliveryBoxLink = styled.section`
     }
 `;
 
-const IndexPage = () => {
+const DeliveryPage = () => {
   return (
    <>
    <SEO title="Telli jäätis kulleriga koju" description="Telli jäätis kulleriga koju! Oleme avanud Bolt Foodis ja Woltis virtuaalpoed Home of Ice Cream, kust saad tellida oma lemmiku jäätiste kulleriga koju!"/>
@@ -157,4 +157,4 @@ const IndexPage = () => {
     </>
   )
 }
-export default IndexPage
+export default DeliveryPage
