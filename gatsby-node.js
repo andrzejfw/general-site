@@ -92,7 +92,7 @@ exports.sourceNodes = async ({
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve(`src/layouts/pdp.js`);
+  const blogPostTemplate = path.resolve(`src/layouts/pdp-magnum.js`);
   const blogPostTemplateLipton = path.resolve(`src/layouts/pdp-lipton.js`);
   const resultSites = await graphql(`
   query MyQuery {

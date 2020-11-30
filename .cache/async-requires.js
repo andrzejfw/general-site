@@ -3,8 +3,8 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---cache-dev-404-page-js": () => import("./../../.cache/dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
-  "component---src-layouts-pdp-js": () => import("./../../src/layouts/pdp.js" /* webpackChunkName: "component---src-layouts-pdp-js" */),
   "component---src-layouts-pdp-lipton-js": () => import("./../../src/layouts/pdp-lipton.js" /* webpackChunkName: "component---src-layouts-pdp-lipton-js" */),
+  "component---src-layouts-pdp-magnum-js": () => import("./../../src/layouts/pdp-magnum.js" /* webpackChunkName: "component---src-layouts-pdp-magnum-js" */),
   "component---src-pages-404-js": () => import("./../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-js": () => import("./../../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
   "component---src-pages-about-magnum-js": () => import("./../../src/pages/about-magnum.js" /* webpackChunkName: "component---src-pages-about-magnum-js" */),
