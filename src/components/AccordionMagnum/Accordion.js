@@ -10,7 +10,7 @@ const AccordionMagnumTab = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;  
-  transition: 0.4s;
+  text-align: center;
   a {
     color:#4e2c1d;
     text-decoration: underline;
