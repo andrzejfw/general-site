@@ -8,6 +8,8 @@ import SEO from '../components/Seo/Seo'
 // import { Link } from 'gatsby';
 import Accordion from '../components/AccordionMagnum/Accordion'
 import { Link } from 'gatsby';
+import VideoMagnum from "../components/VideoMagnum/VideoMagnum"
+
 
 
 const Section = styled.section`
@@ -46,7 +48,7 @@ const AboutPage = () => {
     <h1></h1>
     <p>Tõelised nautlejad teavad, et õnn peitub väikestes asjades. Asjatundlikult valmistatud jäätis, krõmpsuv rikkaliku koostisega Belgia šokolaad, looduslik Madagaskari vanilje, krõbedad California mandlid ja vastutustundlikult kasvatatud kakao oad, mida toetab ka Rainforest Alliance. Täiuslik lisa hetkele iseendaga. Väljenda ennast, järgi enda stiili, leia inspiratsiooni!</p>
     <h2>On ju teada, et päev ilma naudingu hetketa on raisku läinud päev!</h2>
-    <p>Video</p>
+    <VideoMagnum videoId="sKZhcQmGQE8"></VideoMagnum>
     <p>Esimene Magnum premium pulgajäätis loodi aastal 1989 ning koheselt muutus see ka paljudele rõõmurituaali üheks osaks. Juba päris algusest peale on Magnum seadnud kõrgeid standardeid kvaliteetsetele koostisosadele ning mõelnud neid valides ka looduse peale. Tänapäeval on Magnum juhtiv rahvusvaheline kaubamärk, mida müüakse aastas üle miljardi tüki üle maailma. Magnum on Unileveri suurim jäätise bränd. Kõik meie jäätised on loodud kvaliteetsetest koostisosadest, et pakkuda esmaklassilist jäätist kõikidele klientidele.</p>
     <h2>Kvaliteet ja jätkusuutlikus</h2>
     <p>Magnumi kakaooad peavad läbima pika tee, enne kui neist saab Magnumi šokolaad. Teeme tihedat koostööd Rainforest Alliance’iga, et tagada meie jäätistes kasutatavate kakao ubade vastutustundlikest allikatest pärinemine. Kõik taandub kvaliteedile ja jätkusuutlikusele, tootmisteekonna algusest kuni lõpuni.</p>
