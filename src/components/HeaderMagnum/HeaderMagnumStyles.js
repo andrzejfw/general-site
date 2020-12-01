@@ -15,7 +15,11 @@ const HeaderMagnumStyles = createGlobalStyle`
         padding: 10px 15% 20px;
     }
 
-    @media(max-width:992px){
+    @media(max-width:1100px){
+        padding: 10px 20px 20px;
+    }
+
+    @media(max-width:692px){
         display: none;
     }
 
