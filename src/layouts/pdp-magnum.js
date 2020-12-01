@@ -91,15 +91,14 @@ const ProductBullets = styled.div`
     width: 100%;
     padding: 30px 0;
     margin: 0 auto 100px;
-    /* background: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%); */
     background: #5a301a;
     height: 174px;
     ul{
         max-width:1140px;
         /* color:#523022; */
         color: #fff9c7;
-        list-style: none;
-        text-align:center;
+        /* list-style: none; */
+        /* text-align:center; */
         z-index: 1;
         li{
         margin:4px;
@@ -107,8 +106,9 @@ const ProductBullets = styled.div`
     }
 
     @media(max-width:760px){
-        padding: 20px;
+        padding: 20px 50px;
         margin: 0 auto 20px;
+        height: 200px;
         li{
         margin:4px;
         }
@@ -121,7 +121,7 @@ const BackgroundImageOne = styled.img`
     left: 0;
 
     @media(max-width:780px){
-        height: 174px;
+        height: 200px;
         content: url(${MagnumBackgroundVertical});
     }
 `;
@@ -133,7 +133,7 @@ const BackgroundImageTwo = styled.img`
     transform: rotate(180deg);
 
     @media(max-width:780px){
-        height: 174px;
+        height: 200px;
         content: url(${MagnumBackgroundVertical});
         transform:scaleX(-1);
     }
@@ -143,22 +143,6 @@ const SectionAccordion = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 0 50px;
-
-    .bVGaxD {
-        border-radius: 6px !important;
-        /* border-top: 1px solid #523022;
-        border-bottom: 1px solid #523022;
-        background: #fff !important;
-        color: #523022 !important;
-
-        span {
-            color: #523022 !important;
-        } */
-
-        p {
-            font-weight: 500 !important;
-        }
-    }
 
     @media(max-width:780px){
         padding: 0;
@@ -231,7 +215,7 @@ const PostLayoutMagnum = ({ data }) => {
           <BackgroundImageOne src={MagnumBackground}/>
           <BackgroundImageTwo src={MagnumBackground}/>
           <ul>
-            <li>{data.example.feature1}The perfect balance </li>
+            <li>{data.example.feature1}The perfect balance</li>
             <li>{data.example.feature2}Classic taste</li>
             <li>{data.example.feature3}Velvety smooth</li>
             <li>{data.example.feature1}The perfect balance </li>
@@ -242,14 +226,14 @@ const PostLayoutMagnum = ({ data }) => {
               {/* Ingredients */}
               <AccordionTab label="Koostisosad" isOpen>
                 <p>
-                <p>{data.example.ingredients}Reconstituted skimmed MILK, sugar, cocoa butter¹, water, coconut oil, cocoa mass¹, glucose syrup, glucose-fructose syrup, whole MILK powder, whey solids (MILK), butter oil (MILK), emulsifiers (SOYBEAN lecithin, E476, E471), exhausted vanilla bean pieces, stabilisers (E407, E410, E412), natural vanilla flavouring¹, (with MILK), flavouring, colour (E160a). May contain: almonds. Gluten free. ¹Rainforest Alliance Certified™</p>
-                <p>{data.example.allergens}milk</p>
+                <p style={{fontWeight: "500"}}>{data.example.ingredients}Reconstituted skimmed MILK, sugar, cocoa butter¹, water, coconut oil, cocoa mass¹, glucose syrup, glucose-fructose syrup, whole MILK powder, whey solids (MILK), butter oil (MILK), emulsifiers (SOYBEAN lecithin, E476, E471), exhausted vanilla bean pieces, stabilisers (E407, E410, E412), natural vanilla flavouring¹, (with MILK), flavouring, colour (E160a). May contain: almonds. Gluten free. ¹Rainforest Alliance Certified™</p>
+                <p style={{fontWeight: "500"}}>{data.example.allergens}milk</p>
                 </p>
                 
               </AccordionTab>
               {/* nutritional information */}
               <AccordionTab label="Toitumisalane teave">
-              <p>{data.example.productHowToUse}Get the best from your brew in 2 minutes, adding the tea bag first then water so the leaves can unleash their flavor</p>
+              <p style={{fontWeight: "500"}}>{data.example.ingredients}Here will be nutritional information</p>
               </AccordionTab>
             </Accordion>
           </SectionAccordion>

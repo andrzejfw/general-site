@@ -31,7 +31,7 @@ const SliderTextCenter = styled.h3`
 `;
 
 const ImageSlider = styled.img`
-    border-radius:14px;
+    border-radius:6px;
     width: 100%;
     background:linear-gradient(60deg,#fff9c7 0,#fffef9 50%,#fffef9 55%,#fff9c7 100%);
     padding: 20px;
@@ -40,10 +40,11 @@ const ImageSlider = styled.img`
 const TextSlider = styled.div`
     color:#523022;
     font-size: 1.5rem;
+    margin-top: 10px;
     margin-bottom: 20px;
 
     @media(max-width:992px){
-        margin-bottom: 0;
+        margin-bottom: 15px;
     }
 `;
 
