@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from "gatsby"
-// import ButtonRadius from "../Button"
+//import ButtonRadius from "../Button"
 
 const Button = styled.a`
 font-size: 1em;
   padding: 10px;
-  color: #000;
+  color: #fff;
   border: 2px solid #06D85F;
   border-radius: 20px/50px;
   text-decoration: none;
@@ -40,7 +40,7 @@ const Popup = styled.div`
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 80%;
+    width: 220%;
     position: relative;
     transition: all 5s ease-in-out;
 `;
@@ -49,7 +49,7 @@ const Content = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 30%;
+    max-height: 60%;
     overflow: auto;
 `;
 
@@ -77,28 +77,27 @@ const Close = styled.a`
 
 
 const ButtonRadius = styled.a`
-  display:flex;
-  background:#005EEF;
-  opacity: 0.8;
-  border:none;
-  padding:10px 35px;
-  font-size:1.1em;
-  color:#fff;
-  text-transform:uppercase;  
-  border-radius:14px;
-  border:2px solid white;
-  transition:.5s;
-  font-weight:bold;
-  max-width:190px;
-  justify-content:center;
-  align-items:center; 
-  text-decoration:none;
-  &:hover{
-    background:#004cc2;
-    transform: scale(1.15);
-    opacity: 1;
-    color:#fff;
-    text-decoration:none;
+display:flex;
+background:#1f36c7;
+opacity: .9;
+border:none;
+padding:10px 55px;
+font-size:1.8em;
+color:#fff;
+text-transform:uppercase;
+margin:80px auto 0 auto;
+border-radius:5px;
+border:2px solid white;
+transition:.5s;
+font-weight:bold;
+&:hover{
+  background:#1f36c7;
+  transform: scale(1.1);
+  opacity: 1;
+}
+@media(max-width:992px){
+  padding:10px 25px;
+  opacity: 1;
   }
 `;
 
@@ -137,6 +136,18 @@ const BIN = () => {
         <PopupBox >
           <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
           {/* <ButtonRadius href={etailerUrlArr[0]} target="_blank">KUP TERAZ</ButtonRadius> */}
+        </PopupBox>
+        <PopupBox >
+          <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
+          {/* <ButtonRadius href={etailerUrlArr[1]} target="_blank" >KUP TERAZ</ButtonRadius> */}
+        </PopupBox>
+        <PopupBox >
+          <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
+          {/* <ButtonRadius href={etailerUrlArr[1]} target="_blank" >KUP TERAZ</ButtonRadius> */}
+        </PopupBox>
+        <PopupBox >
+          <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
+          {/* <ButtonRadius href={etailerUrlArr[1]} target="_blank" >KUP TERAZ</ButtonRadius> */}
         </PopupBox>
         <PopupBox >
           <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
