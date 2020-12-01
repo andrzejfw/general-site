@@ -14,7 +14,7 @@ const FooterMagnum = () => (
         <li className="footer-magnum-item-list">
             <div className="footer-magnum-image-containter">
             
-            <p><Link to ="https://www.facebook.com/LiptonEesti/" target="_blank" rel="noreferrer">
+            <p><Link to ="https://www.facebook.com/magnumeesti/" target="_blank" rel="noreferrer">
                 <img src={FacebookImage} alt="Facebook Icon" className="footer-magnum-social-image"/>
             </Link></p>
             </div>

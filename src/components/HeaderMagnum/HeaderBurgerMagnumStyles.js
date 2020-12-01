@@ -64,6 +64,11 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     font-size: 1.5rem;
     z-index: 6;
 
+    &:hover {
+        font-weight: 700;
+        color: #523022;
+    }
+
     /* @media (max-width: 350px) {
         padding: 15px 0;
         font-size: 1.3rem;
