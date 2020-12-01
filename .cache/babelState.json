@@ -11,6 +11,10 @@
           }
         },
         {
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+=======
+<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -20,12 +24,36 @@
         },
         {
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
+          "options": {}
+        },
+        {
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
+          "options": {}
+        },
+        {
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+>>>>>>> parent of 03e9aea... new product automation + filters
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
           "options": {}
         }
       ],
       "presets": [
         {
+<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+=======
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+>>>>>>> parent of 03e9aea... new product automation + filters
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
           "options": {
             "plugins": []
           }
@@ -39,6 +67,10 @@
     "develop-html": {
       "plugins": [
         {
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+=======
+<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -48,6 +80,22 @@
         },
         {
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
+          "options": {}
+        },
+        {
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
+          "options": {}
+        },
+        {
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+>>>>>>> parent of 03e9aea... new product automation + filters
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
           "options": {}
         },
         {
@@ -61,7 +109,15 @@
       ],
       "presets": [
         {
+<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+=======
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+>>>>>>> parent of 03e9aea... new product automation + filters
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
           "options": {
             "plugins": []
           }
@@ -75,6 +131,10 @@
     "build-html": {
       "plugins": [
         {
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+=======
+<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -84,6 +144,22 @@
         },
         {
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
+          "options": {}
+        },
+        {
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
+          "options": {}
+        },
+        {
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+>>>>>>> parent of 03e9aea... new product automation + filters
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
           "options": {}
         },
         {
@@ -97,7 +173,15 @@
       ],
       "presets": [
         {
+<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+=======
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+>>>>>>> parent of 03e9aea... new product automation + filters
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
           "options": {
             "plugins": []
           }
@@ -111,6 +195,10 @@
     "build-javascript": {
       "plugins": [
         {
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+=======
+<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -120,6 +208,22 @@
         },
         {
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
+          "options": {}
+        },
+        {
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
+          "options": {}
+        },
+        {
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
+>>>>>>> parent of 03e9aea... new product automation + filters
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
           "options": {}
         },
         {
@@ -133,7 +237,15 @@
       ],
       "presets": [
         {
+<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+=======
+<<<<<<< HEAD
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+=======
+          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
+>>>>>>> parent of 03e9aea... new product automation + filters
+>>>>>>> bf34846e54c6dc93186a5d409798b4109e591de1
           "options": {
             "plugins": []
           }
