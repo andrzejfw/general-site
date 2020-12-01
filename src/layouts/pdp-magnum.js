@@ -163,7 +163,7 @@ const SectionCarousel = styled.div`
 
 export const query = graphql`
 query MyQueryMagnum($slug: Int!) {
-  product(slug: { eq: $slug }) {
+  example(slug: { eq: $slug }) {
     id
     allergens
     brand
@@ -188,7 +188,6 @@ query MyQueryMagnum($slug: Int!) {
     volume
     slug
     ingredients
-    img
   }
 }
 
@@ -197,17 +196,18 @@ query MyQueryMagnum($slug: Int!) {
 const PostLayoutMagnum = ({ data }) => {
     return (
       <>
-      <SEO title={data.product.fullName} description={data.product.productShortDescription}/>
+      <SEO title={data.example.fullName} description={data.example.productShortDescription}/>
       <ProductContainer>
           <ProductFirstRow>
           <ProductImage>
-          <img src={data.product.img}></img>
+          <img src={MagnumIceCreamImage}></img>
           </ProductImage>
             <ProductMainInfo>
-              <h1>{data.product.fullName}</h1>
-              <p style={{fontSize: "90%"}}>{data.product.volume}</p>
-              {/* <p>{data.product.format}</p> */}
-              <p>{data.product.productDescription}</p>
+              <h1>{data.example.fullName} Magnum Classic Ice Cream</h1>
+              <p style={{fontSize: "90%"}}>{data.example.volume}</p>
+              {/* <p>{data.example.format}</p> */}
+              <p>{data.example.productDescription}The perfect balance of cracking Magnum chocolate and velvety smooth vanilla ice cream.
+              </p>
               <Button>osta kohe</Button>
             </ProductMainInfo>
           </ProductFirstRow>
@@ -215,10 +215,10 @@ const PostLayoutMagnum = ({ data }) => {
           <BackgroundImageOne src={MagnumBackground}/>
           <BackgroundImageTwo src={MagnumBackground}/>
           <ul>
-            <li>{data.product.feature1}</li>
-            <li>{data.product.feature2}</li>
-            <li>{data.product.feature3}</li>
-            <li>{data.product.feature1}</li>
+            <li>{data.example.feature1}The perfect balance</li>
+            <li>{data.example.feature2}Classic taste</li>
+            <li>{data.example.feature3}Velvety smooth</li>
+            <li>{data.example.feature1}The perfect balance </li>
           </ul>
         </ProductBullets>
           <SectionAccordion>
@@ -226,14 +226,14 @@ const PostLayoutMagnum = ({ data }) => {
               {/* Ingredients */}
               <AccordionTab label="Koostisosad" isOpen>
                 <p>
-                <p style={{fontWeight: "500"}}>{data.product.ingredients}</p>
-                <p style={{fontWeight: "500"}}>{data.product.allergens}</p>
+                <p style={{fontWeight: "500"}}>{data.example.ingredients}Reconstituted skimmed MILK, sugar, cocoa butter¹, water, coconut oil, cocoa mass¹, glucose syrup, glucose-fructose syrup, whole MILK powder, whey solids (MILK), butter oil (MILK), emulsifiers (SOYBEAN lecithin, E476, E471), exhausted vanilla bean pieces, stabilisers (E407, E410, E412), natural vanilla flavouring¹, (with MILK), flavouring, colour (E160a). May contain: almonds. Gluten free. ¹Rainforest Alliance Certified™</p>
+                <p style={{fontWeight: "500"}}>{data.example.allergens}milk</p>
                 </p>
                 
               </AccordionTab>
               {/* nutritional information */}
               <AccordionTab label="Toitumisalane teave">
-              <p style={{fontWeight: "500"}}>{data.product.ingredients}</p>
+              <p style={{fontWeight: "500"}}>{data.example.ingredients}Here will be nutritional information</p>
               </AccordionTab>
             </Accordion>
           </SectionAccordion>

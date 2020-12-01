@@ -1,4 +1,5 @@
 var plugins = [{
+<<<<<<< HEAD
       plugin: require('C:/Users/marcin.tuchalski/Desktop/baltic/general-site/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
@@ -6,6 +7,15 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('C:/Users/marcin.tuchalski/Desktop/baltic/general-site/node_modules/gatsby-plugin-layout/gatsby-ssr'),
+=======
+      plugin: require('C:/Users/roksana.rebiewska/Desktop/project/Baltics/general-site/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('C:/Users/roksana.rebiewska/Desktop/project/Baltics/general-site/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('C:/Users/roksana.rebiewska/Desktop/project/Baltics/general-site/node_modules/gatsby-plugin-layout/gatsby-ssr'),
+>>>>>>> parent of 03e9aea... new product automation + filters
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
