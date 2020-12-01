@@ -180,7 +180,7 @@ const AccordionTab = styled.div`
 
 export const query = graphql`
 query MyQuerLipton($slug: Int!) {
-  example(slug: { eq: $slug }) {
+  product(slug: { eq: $slug }) {
     id
     allergens
     brand
@@ -205,6 +205,7 @@ query MyQuerLipton($slug: Int!) {
     volume
     slug
     ingredients
+    img
   }
 }
 
@@ -214,36 +215,36 @@ const PostLayout = ({ data }) => {
   return (
    
     <>
-    <SEO title={data.example.fullName} description={data.example.productShortDescription}/>
+    <SEO title={data.product.fullName} description={data.product.productShortDescription}/>
     <ProductContainer>
       <TopSectionWrapper>
         <ProductFirstRow>
         <ProductImage>
-        <img src="https://asset-eu.unileversolutions.com/content/dam/unilever/lipton_international/poland/pack_shot/8711200353033_lipton_matcha_20_pyramidenbeutel_3_d_schraeg_de_ch-1731400-jpg.jpg.ulenscale.490x490.jpg"></img>
+        <img src={data.product.img}></img>
         </ProductImage>
           <ProductMainInfo>
-            <h1>{data.example.fullName} GREEN TEA</h1>
-            <p>{data.example.volume}</p>
-            {/* <p>{data.example.format}</p> */}
-            {/* <h2>{data.example.productShortDescription}Lipton's Magnificent Matcha blended with Green Tea delivers the smooth, earthy taste of matcha and the goodness of green tea</h2> */}
-            <p>{data.example.productDescription}Legend has it that Buddhist monks used Matcha to enhance their focus for long hours of meditation, and to be alert and present in the moment. Today's Matcha leaf comes from shade grown green tea whose chlorophyll-rich leaves are finely ground into a brilliant green powder, prized for its abilities.</p>
+            <h1>{data.product.fullName}</h1>
+            <p>{data.product.volume}</p>
+            {/* <p>{data.product.format}</p> */}
+            {/* <h2>{data.product.productShortDescription}Lipton's Magnificent Matcha blended with Green Tea delivers the smooth, earthy taste of matcha and the goodness of green tea</h2> */}
+            <p>{data.product.productDescription}</p>
             <BINLipton></BINLipton>
           </ProductMainInfo>
         </ProductFirstRow>
         <ProductRowCenter>
           {/* Product description */}
           {/* <h3>Tootekirjeldus</h3>
-          <p>{data.example.productDescription}Legend has it that Buddhist monks used Matcha to enhance their focus for long hours of meditation, and to be alert and present in the moment. Today's Matcha leaf comes from shade grown green tea whose chlorophyll-rich leaves are finely ground into a brilliant green powder, prized for its abilities.</p> */}
+          <p>{data.product.productDescription}Legend has it that Buddhist monks used Matcha to enhance their focus for long hours of meditation, and to be alert and present in the moment. Today's Matcha leaf comes from shade grown green tea whose chlorophyll-rich leaves are finely ground into a brilliant green powder, prized for its abilities.</p> */}
         </ProductRowCenter>
       </TopSectionWrapper>
       <ProductBullets>
         <ul>
-          <li>{data.example.feature1}Japanese Matcha blended with the goodness of green tea</li>
-          <li>{data.example.feature2}Feel awakened and enjoy a moment of feel good in the afternoon.</li>
-          <li>{data.example.feature3}Japanese Matcha blended with the goodness of green tea</li>
-          <li>{data.example.feature4}Feel awakened and enjoy a moment of feel good in the afternoon.</li>
-          <li>{data.example.feature5}Japanese Matcha blended with the goodness of green tea</li>
-          <li>{data.example.feature6}Feel awakened and enjoy a moment of feel good in the afternoon.</li>
+          <li>{data.product.feature1}</li>
+          <li>{data.product.feature2}</li>
+          <li>{data.product.feature3}</li>
+          <li>{data.product.feature4}</li>
+          <li>{data.product.feature5}</li>
+          <li>{data.product.feature6}</li>
         </ul>
       </ProductBullets>
       <BottomSectionWrapper>
@@ -252,25 +253,25 @@ const PostLayout = ({ data }) => {
             {/* Ingredients */}
             <AccordionTab label="Koostisosad">
               <p>
-              <p>{data.example.ingredients}green tea, matcha, aroma</p>
+              <p>{data.product.ingredients}</p>
               </p>
               
             </AccordionTab>
             {/* Usage instructions */}
             <AccordionTab label="Kasutusjuhend">
-            <p>{data.example.productHowToUse}Get the best from your brew in 2 minutes, adding the tea bag first then water so the leaves can unleash their flavor</p>
+            <p>{data.product.productHowToUse}</p>
             </AccordionTab>
           </Accordion>
         </SectionAccordion>
         {/* <ProductRowCenter> */}
           {/* Ingredients */}
           {/* <h3>Koostisosad</h3>
-          <p>{data.example.ingredients}green tea, matcha, aroma</p> */}
+          <p>{data.product.ingredients}green tea, matcha, aroma</p> */}
         {/* </ProductRowCenter>
         <ProductRowCenter> */}
           {/* Usage instructions */}
           {/* <h3>Kasutusjuhend</h3>
-          <p>{data.example.productHowToUse}Get the best from your brew in 2 minutes, adding the tea bag first then water so the leaves can unleash their flavor</p> */}
+          <p>{data.product.productHowToUse}Get the best from your brew in 2 minutes, adding the tea bag first then water so the leaves can unleash their flavor</p> */}
         {/* </ProductRowCenter> */}
       </BottomSectionWrapper>
       <CarouselLipton/>

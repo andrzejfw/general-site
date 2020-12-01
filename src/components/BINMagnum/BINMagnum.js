@@ -77,29 +77,33 @@ const Close = styled.a`
 
 
 const ButtonRadius = styled.a`
-  display:flex;
-  background:#c8381d;
-  opacity: 1;
-  border:none;
-  padding:10px 35px;
-  font-size:1.1em;
-  color:#fff;
-  text-transform:uppercase;  
-  border-radius:14px;
-  border:2px solid white;
-  transition:.5s;
-  font-weight:bold;
-  max-width:190px;
-  justify-content:center;
-  align-items:center; 
-  text-decoration:none;
-  &:hover{
-    background:#c8381d;
-    transform: scale(1.15);
+display:flex;
+background:linear-gradient(60deg,#c5923c 0,#edd496 40%,#edd496 60%,#c5923c 100%);
+border:none;
+padding:5px 40px;
+font-size:1.5rem;
+color:#523022;
+text-transform:none;
+margin:20px auto;
+border-radius:6px;
+transition:.5s;
+box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
+outline: none;
+text-decoration:none;
+text-transform: uppercase;
+transition: all .2s linear;
+
+&:hover{
+    background:linear-gradient(60deg,#d7ab5f 0,#f5e5ad 40%,#f5e5ad 60%,#d7ab5f 100%);
+    transform: scale(1.05);
     opacity: 1;
-    color:#fff;
+    border:none;
+    outline: none;
     text-decoration:none;
-  }
+}
+&:focus{
+    outline: none;
+}
 `;
 
  
