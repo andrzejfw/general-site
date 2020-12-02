@@ -6,6 +6,7 @@ import { auto } from "@popperjs/core";
 
 const AccordionMagnumTab = styled.div`
   margin: 0 auto;
+  margin-bottom:40px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -58,7 +58,7 @@ const MagnumDelivery = styled.section`
 
     @media(max-width:992px){
         flex-direction: column;
-        margin: 0;
+        margin: 30px 0 0 0;
         display: flex;
 
       }
@@ -137,7 +137,7 @@ const DeliveryPage = () => {
       <MagnumDeliveryBoxLink>
         <Link target="_blank" to="https://wolt.com/en/search?q=home%20of%20ice%20cream">
           <img src={IceCreamDelivery}></img>
-          <span>Home of Ice Cream Jõe</span>
+          <span>Home of Ice Cream</span>
           <WoltDelivery><img src={WoltBackground}></img></WoltDelivery>
         </Link>
       </MagnumDeliveryBoxLink>
@@ -146,7 +146,7 @@ const DeliveryPage = () => {
       <MagnumDeliveryBoxLink>
         <Link target="_blank" to="https://food.bolt.eu/en-us/">
           <img src={BoltBackground}></img>
-          <span>Tellimiseks klõpsake</span>
+          <span>Lisateave</span>
         </Link>
       </MagnumDeliveryBoxLink>
     </MagnumDeliveryBox>

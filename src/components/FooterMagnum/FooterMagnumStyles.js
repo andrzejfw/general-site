@@ -6,7 +6,12 @@ const FooterMagnumStyles = createGlobalStyle`
     z-index:2;
     background: linear-gradient(60deg,#431f13 0,#d4a65b 40%,#d4a65b 60%,#431f13 100%);
 
-    @media (max-width:992px){
+    @media (max-width:692px){
+    height:150px;
+    background: linear-gradient(60deg,#431f13 0,#d4a65b 45%,#d4a65b 50%,#431f13 100%)
+    }
+
+    @media (max-width:492px){
     height:280px;
     background: linear-gradient(60deg,#431f13 0,#d4a65b 45%,#d4a65b 50%,#431f13 100%)
     }
@@ -30,7 +35,7 @@ const FooterMagnumStyles = createGlobalStyle`
         max-width: 1000px;
     }
 
-    @media (max-width:992px){
+    @media (max-width:692px){
         height:100%;
         margin: 0 auto 5%;
         justify-content: center;
@@ -53,7 +58,7 @@ const FooterMagnumStyles = createGlobalStyle`
     justify-content:space-between;
     align-items:flex-start;
     
-    @media(max-width:500px){
+    @media(max-width:692px){
         display:flex;
         flex-direction:column;
         justify-content:center;
@@ -145,7 +150,7 @@ const FooterMagnumStyles = createGlobalStyle`
     }
     }
 
-    @media(max-width:992px){
+    @media(max-width:692px){
         margin:4px 0;
         justify-content:center;
         align-items:start;
@@ -175,7 +180,7 @@ const FooterMagnumStyles = createGlobalStyle`
 .mobile-magnum-footer-graphic-image {
     display: none;
 
-    @media (max-width:992px){
+    @media (max-width:500px){
         display: inline-block;
         /* transform: rotate(-90deg); */
         position: absolute;
@@ -202,7 +207,7 @@ const FooterMagnumStyles = createGlobalStyle`
     align-self: center;
     position: absolute;
 
-    @media (max-width:992px){
+    @media (max-width:1192px){
         display: none;
     }
 }
@@ -215,7 +220,7 @@ const FooterMagnumStyles = createGlobalStyle`
     justify-content: flex-end;
     padding-right: 3%;
 
-    @media (max-width:992px){
+    @media (max-width:692px){
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
@@ -230,7 +235,7 @@ const FooterMagnumStyles = createGlobalStyle`
     justify-content:center;
     align-items:center;
 
-    @media(max-width:992px){
+    @media(max-width:692px){
       margin: 5px auto 0;
     }
 }
@@ -241,7 +246,7 @@ const FooterMagnumStyles = createGlobalStyle`
     align-self: center;
     padding-left: 10px;
 
-    @media (max-width:992px){
+    @media (max-width:692px){
     padding-bottom: 10px;
     padding-left: 0;
     }

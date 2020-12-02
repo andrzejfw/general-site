@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import { graphql } from 'gatsby';
-import BINLipton from "../components/BINLipton/BINLipton"
+import BINMagnum from "../components/BINMagnum/BINMagnum"
 import SEO from '../components/Seo/Seo'
 import CarouselMagnum from '../components/CarouselMagnum/CarouselMagnum'
 import Accordion from "../components/AccordionMagnum/Accordion"
@@ -208,7 +208,7 @@ const PostLayoutMagnum = ({ data }) => {
               <p style={{fontSize: "90%"}}>{data.product.volume}</p>
               {/* <p>{data.product.format}</p> */}
               <p>{data.product.productDescription}</p>
-              <Button>osta kohe</Button>
+              <BINMagnum></BINMagnum>
             </ProductMainInfo>
           </ProductFirstRow>
         <ProductBullets>

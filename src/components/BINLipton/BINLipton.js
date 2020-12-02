@@ -128,19 +128,15 @@ const BINLipton = () => {
       
       <BIN1>
         
-      <ButtonRadius href="#popup1">BUY IT NOW</ButtonRadius>
+      <ButtonRadius href="#popup1">OSTA KOHE</ButtonRadius>
       <Overlay id="popup1" >
     <Popup >
-      <h2>Lorem ipsum</h2>
+      <h2>Vali Pod:</h2>
       <Close  href="#">&times;</Close>
       <Content class="content">
         <PopupBox >
           <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
           {/* <ButtonRadius href={etailerUrlArr[0]} target="_blank">KUP TERAZ</ButtonRadius> */}
-        </PopupBox>
-        <PopupBox >
-          <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
-          {/* <ButtonRadius href={etailerUrlArr[1]} target="_blank" >KUP TERAZ</ButtonRadius> */}
         </PopupBox>
         
       </Content>

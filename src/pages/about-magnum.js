@@ -23,6 +23,10 @@ const MagnumAboutSection = styled.section`
     width: 90vw;
     margin: 20px auto;
     max-width: 1200px;
+    margin-top:20px;
+    @media(max-width:992px){
+        margin-top:70px;
+    }
 `;
 
 // const DeliveryHeroImage = styled.img`
@@ -62,7 +66,7 @@ const AboutPage = () => {
       </div>
 
       <div label={"Kust leian informatsiooni koostisosade ja toitumisalase teabe kohta?"}>
-        <p>Palun külastage meie tootelehekülge (LINK TO PRODUCTS), iga toote all on kõik vajalik informatsioon olemas. </p>
+        <p>Palun külastage meie <Link to="./products-magnum">tootelehekülge</Link>, iga toote all on kõik vajalik informatsioon olemas. </p>
       </div>
 
       <div label={"Kas Magnumi jäätises sisalduv vanillimaitse pärineb Madagaskarilt? Mis selles erilist on?"}>

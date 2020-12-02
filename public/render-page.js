@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -628,7 +628,7 @@ var ensureComponentInBundle = function ensureComponentInBundle(chunkName) {
     } // Tell the server the user wants to visit this page
     // to trigger it compiling the page component's code.
     //
-    // Try for 10 seconds and then error.
+    // Try for 30 seconds and then error.
 
 
     var checkCount = 0;
@@ -636,8 +636,8 @@ var ensureComponentInBundle = function ensureComponentInBundle(chunkName) {
     var checkForBundle = function checkForBundle() {
       checkCount += 1;
 
-      if (checkCount > 99) {
-        reject("Loading the page component " + chunkName + " timed out after 5 seconds");
+      if (checkCount > 299) {
+        reject("Loading the page component " + chunkName + " timed out after 30 seconds");
       } // Check if the bundle is included and return.
 
 
@@ -6775,11 +6775,11 @@ exports.navigateTo = exports.replace = exports.push = exports.navigate = exports
 
 var _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutPropertiesLoose */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"));
 
-var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/extends.js"));
-
 var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/assertThisInitialized.js"));
 
 var _inheritsLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/inheritsLoose.js"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/extends.js"));
 
 var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
 
@@ -6883,6 +6883,15 @@ var createIntersectionObserver = function createIntersectionObserver(el, cb) {
   };
 };
 
+function GatsbyLinkLocationWrapper(props) {
+  return /*#__PURE__*/_react.default.createElement(_router.Location, null, function (_ref2) {
+    var location = _ref2.location;
+    return /*#__PURE__*/_react.default.createElement(GatsbyLink, (0, _extends2.default)({}, props, {
+      _location: location
+    }));
+  });
+}
+
 var GatsbyLink = /*#__PURE__*/function (_React$Component) {
   (0, _inheritsLoose2.default)(GatsbyLink, _React$Component);
 
@@ -6891,9 +6900,9 @@ var GatsbyLink = /*#__PURE__*/function (_React$Component) {
 
     _this = _React$Component.call(this, props) || this; // Default to no support for IntersectionObserver
 
-    _this.defaultGetProps = function (_ref2) {
-      var isPartiallyCurrent = _ref2.isPartiallyCurrent,
-          isCurrent = _ref2.isCurrent;
+    _this.defaultGetProps = function (_ref3) {
+      var isPartiallyCurrent = _ref3.isPartiallyCurrent,
+          isCurrent = _ref3.isCurrent;
 
       if (_this.props.partiallyActive ? isPartiallyCurrent : isCurrent) {
         return {
@@ -6920,17 +6929,33 @@ var GatsbyLink = /*#__PURE__*/function (_React$Component) {
 
   var _proto = GatsbyLink.prototype;
 
+  _proto._prefetch = function _prefetch() {
+    var currentPath = window.location.pathname; // reach router should have the correct state
+
+    if (this.props._location && this.props._location.pathname) {
+      currentPath = this.props._location.pathname;
+    }
+
+    var rewrittenPath = rewriteLinkPath(this.props.to, currentPath);
+    var newPathName = (0, _parsePath.parsePath)(rewrittenPath).pathname; // Prefech is used to speed up next navigations. When you use it on the current navigation,
+    // there could be a race-condition where Chrome uses the stale data instead of waiting for the network to complete
+
+    if (currentPath !== newPathName) {
+      ___loader.enqueue(newPathName);
+    }
+  };
+
   _proto.componentDidUpdate = function componentDidUpdate(prevProps, prevState) {
     // Preserve non IO functionality if no support
     if (this.props.to !== prevProps.to && !this.state.IOSupported) {
-      ___loader.enqueue((0, _parsePath.parsePath)(rewriteLinkPath(this.props.to, window.location.pathname)).pathname);
+      this._prefetch();
     }
   };
 
   _proto.componentDidMount = function componentDidMount() {
     // Preserve non IO functionality if no support
     if (!this.state.IOSupported) {
-      ___loader.enqueue((0, _parsePath.parsePath)(rewriteLinkPath(this.props.to, window.location.pathname)).pathname);
+      this._prefetch();
     }
   };
 
@@ -6958,7 +6983,7 @@ var GatsbyLink = /*#__PURE__*/function (_React$Component) {
     if (this.state.IOSupported && ref) {
       // If IO supported and element reference found, setup Observer functionality
       this.io = createIntersectionObserver(ref, function () {
-        ___loader.enqueue((0, _parsePath.parsePath)(rewriteLinkPath(_this2.props.to, window.location.pathname)).pathname);
+        _this2._prefetch();
       });
     }
   };
@@ -6978,59 +7003,63 @@ var GatsbyLink = /*#__PURE__*/function (_React$Component) {
         partiallyActive = _this$props.partiallyActive,
         state = _this$props.state,
         replace = _this$props.replace,
-        rest = (0, _objectWithoutPropertiesLoose2.default)(_this$props, ["to", "getProps", "onClick", "onMouseEnter", "activeClassName", "activeStyle", "innerRef", "partiallyActive", "state", "replace"]);
+        _location = _this$props._location,
+        rest = (0, _objectWithoutPropertiesLoose2.default)(_this$props, ["to", "getProps", "onClick", "onMouseEnter", "activeClassName", "activeStyle", "innerRef", "partiallyActive", "state", "replace", "_location"]);
 
     if ( true && !isLocalLink(to)) {
       console.warn("External link " + to + " was detected in a Link component. Use the Link component only for internal links. See: https://gatsby.dev/internal-links");
     }
 
-    return /*#__PURE__*/_react.default.createElement(_router.Location, null, function (_ref3) {
-      var location = _ref3.location;
-      var prefixedTo = rewriteLinkPath(to, location.pathname);
-      return isLocalLink(prefixedTo) ? /*#__PURE__*/_react.default.createElement(_router.Link, (0, _extends2.default)({
-        to: prefixedTo,
-        state: state,
-        getProps: getProps,
-        innerRef: _this3.handleRef,
-        onMouseEnter: function onMouseEnter(e) {
-          if (_onMouseEnter) {
-            _onMouseEnter(e);
-          }
+    var prefixedTo = rewriteLinkPath(to, _location.pathname);
 
-          ___loader.hovering((0, _parsePath.parsePath)(prefixedTo).pathname);
-        },
-        onClick: function onClick(e) {
-          if (_onClick) {
-            _onClick(e);
-          }
-
-          if (e.button === 0 && // ignore right clicks
-          !_this3.props.target && // let browser handle "target=_blank"
-          !e.defaultPrevented && // onClick prevented default
-          !e.metaKey && // ignore clicks with modifier keys...
-          !e.altKey && !e.ctrlKey && !e.shiftKey) {
-            e.preventDefault();
-            var shouldReplace = replace;
-            var isCurrent = encodeURI(prefixedTo) === window.location.pathname;
-
-            if (typeof replace !== "boolean" && isCurrent) {
-              shouldReplace = true;
-            } // Make sure the necessary scripts and data are
-            // loaded before continuing.
-
-
-            window.___navigate(prefixedTo, {
-              state: state,
-              replace: shouldReplace
-            });
-          }
-
-          return true;
-        }
-      }, rest)) : /*#__PURE__*/_react.default.createElement("a", (0, _extends2.default)({
+    if (!isLocalLink(prefixedTo)) {
+      return /*#__PURE__*/_react.default.createElement("a", (0, _extends2.default)({
         href: prefixedTo
       }, rest));
-    });
+    }
+
+    return /*#__PURE__*/_react.default.createElement(_router.Link, (0, _extends2.default)({
+      to: prefixedTo,
+      state: state,
+      getProps: getProps,
+      innerRef: this.handleRef,
+      onMouseEnter: function onMouseEnter(e) {
+        if (_onMouseEnter) {
+          _onMouseEnter(e);
+        }
+
+        ___loader.hovering((0, _parsePath.parsePath)(prefixedTo).pathname);
+      },
+      onClick: function onClick(e) {
+        if (_onClick) {
+          _onClick(e);
+        }
+
+        if (e.button === 0 && // ignore right clicks
+        !_this3.props.target && // let browser handle "target=_blank"
+        !e.defaultPrevented && // onClick prevented default
+        !e.metaKey && // ignore clicks with modifier keys...
+        !e.altKey && !e.ctrlKey && !e.shiftKey) {
+          e.preventDefault();
+          var shouldReplace = replace;
+
+          var isCurrent = encodeURI(prefixedTo) === _location.pathname;
+
+          if (typeof replace !== "boolean" && isCurrent) {
+            shouldReplace = true;
+          } // Make sure the necessary scripts and data are
+          // loaded before continuing.
+
+
+          window.___navigate(prefixedTo, {
+            state: state,
+            replace: shouldReplace
+          });
+        }
+
+        return true;
+      }
+    }, rest));
   };
 
   return GatsbyLink;
@@ -7048,7 +7077,7 @@ var showDeprecationWarning = function showDeprecationWarning(functionName, altFu
 };
 
 var _default = /*#__PURE__*/_react.default.forwardRef(function (props, ref) {
-  return /*#__PURE__*/_react.default.createElement(GatsbyLink, (0, _extends2.default)({
+  return /*#__PURE__*/_react.default.createElement(GatsbyLinkLocationWrapper, (0, _extends2.default)({
     innerRef: ref
   }, props));
 });
@@ -7163,7 +7192,7 @@ try {
   Layout = preferDefault(__webpack_require__(/*! ./src/layouts/index */ "./src/layouts/index.js"));
 } catch (e) {
   if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
+    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
   } else {
     // Logging the error for debugging older browsers as there is no way
     // to wrap the thrown error in a try/catch.
@@ -49353,7 +49382,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.footer-magnum-container{\n    height: 180px;\n    z-index:2;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 40%,#d4a65b 60%,#431f13 100%);\n\n    @media (max-width:992px){\n    height:280px;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 45%,#d4a65b 50%,#431f13 100%)\n    }\n}\n\n.footer-magnum-nav-wrapper {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items:center;\n    background-color: transparent;\n    position: relative;\n    justify-content: space-between;\n    text-transform: uppercase;\n    margin: 0 37% 0 22%;\n    z-index: 2;\n    align-self: center;\n    \n    @media (max-width:1600px){\n        margin: 0;\n        padding: 0 10%;\n        max-width: 1000px;\n    }\n\n    @media (max-width:992px){\n        height:100%;\n        margin: 0 auto 5%;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    @media (max-width: 500px) {\n        display:flex;\n        flex-direction:column;\n        margin: 0;\n        padding-bottom: 5%;\n    }   \n}\n\n.footer-magnum-list {\n    margin:0;\n    padding:0;\n    display:flex;\n    list-style:none;\n    display:flex;\n    justify-content:space-between;\n    align-items:flex-start;\n    \n    @media(max-width:500px){\n        display:flex;\n        flex-direction:column;\n        justify-content:center;\n        align-items:left;\n    }\n}\n\n.footer-magnum-section {\n    display:flex;\n    justify-content: space-between;\n}\n\n.footer-magnum-image-containter {\n    display:flex;\n}\n\n.footer-magnum-item {\n    line-height:1.2em;\n    text-decoration: none;\n    color: #523022;\n    /* font-weight:bold; */\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw; \n    position: relative;  \n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    transition: all .2s linear;\n\n    p{\n        font-size:12px;\n        color: #523022;\n    }\n    a{\n        text-decoration:none;\n        color: #523022;\n        &:hover {\n        font-weight:bold;\n    }\n    }\n\n    &:hover {\n        font-weight:bold;\n    \n    }\n    @media(max-width:500px){\n        margin:8px 0;\n        color: #fff;\n\n        p{\n        font-size:12px;\n        color: #fff;\n        }\n        a{\n            text-decoration:none;\n            color: #fff;\n        }\n    }\n}\n\n.footer-magnum-item-list {\n    text-decoration: none;\n    color: #523022 !important;\n    /* font-weight:bold; */\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    flex-direction:column;  \n    align-items:center; \n    transition: all .2s linear;\n\n    p{\n        font-size:12px;\n        color: #523022;\n    }\n    a{\n        text-decoration:none;\n        color: #523022;\n        &:hover {\n        font-weight:bold;\n    \n    }\n    }\n\n    @media(max-width:992px){\n        margin:4px 0;\n        justify-content:center;\n        align-items:start;\n\n        p{\n        font-size:12px;\n        color: #fff;\n        }\n        a{\n            text-decoration:none;\n            color: #fff;  \n        }  \n    }\n}\n\n.footer-magnum-social-image {\n    width:auto;\n    height:50px;\n    margin:55px 50px;\n\n    @media (max-width:500px){\n        height: 30px;\n        margin: 20px 10px 0 0;\n  }\n}\n\n.mobile-magnum-footer-graphic-image {\n    display: none;\n\n    @media (max-width:992px){\n        display: inline-block;\n        /* transform: rotate(-90deg); */\n        position: absolute;\n        top: -280px;\n        left: 210px;\n        height: 352px;\n        margin: 0;\n    }\n\n    @media (max-width:400px){\n        left: 170px;\n    }\n\n    @media (max-width:350px){\n        left: 140px;\n    }\n}\n\n.desktop-magnum-footer-graphic-image {\n    width:auto;\n    height:250px;\n    top: -95px;\n    left: 30px;\n    align-self: center;\n    position: absolute;\n\n    @media (max-width:992px){\n        display: none;\n    }\n}\n\n.footer-magnum-unilever-div {\n    z-index:2;\n    background:#331603;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    padding-right: 3%;\n\n    @media (max-width:992px){\n    flex-direction: column;\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n.footer-magnum-unilever-logo {\n    width:50px;\n    height:auto;\n    display:flex;\n    flex-direction:column;\n    justify-content:center;\n    align-items:center;\n\n    @media(max-width:992px){\n      margin: 5px auto 0;\n    }\n}\n\n.footer-magnum-unilever-copyright {\n    font-size: .8rem;\n    color: #fff;\n    align-self: center;\n    padding-left: 10px;\n\n    @media (max-width:992px){\n    padding-bottom: 10px;\n    padding-left: 0;\n    }\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.footer-magnum-container{\n    height: 180px;\n    z-index:2;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 40%,#d4a65b 60%,#431f13 100%);\n\n    @media (max-width:692px){\n    height:150px;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 45%,#d4a65b 50%,#431f13 100%)\n    }\n\n    @media (max-width:492px){\n    height:280px;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 45%,#d4a65b 50%,#431f13 100%)\n    }\n}\n\n.footer-magnum-nav-wrapper {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items:center;\n    background-color: transparent;\n    position: relative;\n    justify-content: space-between;\n    text-transform: uppercase;\n    margin: 0 37% 0 22%;\n    z-index: 2;\n    align-self: center;\n    \n    @media (max-width:1600px){\n        margin: 0;\n        padding: 0 10%;\n        max-width: 1000px;\n    }\n\n    @media (max-width:692px){\n        height:100%;\n        margin: 0 auto 5%;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    @media (max-width: 500px) {\n        display:flex;\n        flex-direction:column;\n        margin: 0;\n        padding-bottom: 5%;\n    }   \n}\n\n.footer-magnum-list {\n    margin:0;\n    padding:0;\n    display:flex;\n    list-style:none;\n    display:flex;\n    justify-content:space-between;\n    align-items:flex-start;\n    \n    @media(max-width:692px){\n        display:flex;\n        flex-direction:column;\n        justify-content:center;\n        align-items:left;\n    }\n}\n\n.footer-magnum-section {\n    display:flex;\n    justify-content: space-between;\n}\n\n.footer-magnum-image-containter {\n    display:flex;\n}\n\n.footer-magnum-item {\n    line-height:1.2em;\n    text-decoration: none;\n    color: #523022;\n    /* font-weight:bold; */\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw; \n    position: relative;  \n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    transition: all .2s linear;\n\n    p{\n        font-size:12px;\n        color: #523022;\n    }\n    a{\n        text-decoration:none;\n        color: #523022;\n        &:hover {\n        font-weight:bold;\n    }\n    }\n\n    &:hover {\n        font-weight:bold;\n    \n    }\n    @media(max-width:500px){\n        margin:8px 0;\n        color: #fff;\n\n        p{\n        font-size:12px;\n        color: #fff;\n        }\n        a{\n            text-decoration:none;\n            color: #fff;\n        }\n    }\n}\n\n.footer-magnum-item-list {\n    text-decoration: none;\n    color: #523022 !important;\n    /* font-weight:bold; */\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    flex-direction:column;  \n    align-items:center; \n    transition: all .2s linear;\n\n    p{\n        font-size:12px;\n        color: #523022;\n    }\n    a{\n        text-decoration:none;\n        color: #523022;\n        &:hover {\n        font-weight:bold;\n    \n    }\n    }\n\n    @media(max-width:692px){\n        margin:4px 0;\n        justify-content:center;\n        align-items:start;\n\n        p{\n        font-size:12px;\n        color: #fff;\n        }\n        a{\n            text-decoration:none;\n            color: #fff;  \n        }  \n    }\n}\n\n.footer-magnum-social-image {\n    width:auto;\n    height:50px;\n    margin:55px 50px;\n\n    @media (max-width:500px){\n        height: 30px;\n        margin: 20px 10px 0 0;\n  }\n}\n\n.mobile-magnum-footer-graphic-image {\n    display: none;\n\n    @media (max-width:500px){\n        display: inline-block;\n        /* transform: rotate(-90deg); */\n        position: absolute;\n        top: -280px;\n        left: 210px;\n        height: 352px;\n        margin: 0;\n    }\n\n    @media (max-width:400px){\n        left: 170px;\n    }\n\n    @media (max-width:350px){\n        left: 140px;\n    }\n}\n\n.desktop-magnum-footer-graphic-image {\n    width:auto;\n    height:250px;\n    top: -95px;\n    left: 30px;\n    align-self: center;\n    position: absolute;\n\n    @media (max-width:1192px){\n        display: none;\n    }\n}\n\n.footer-magnum-unilever-div {\n    z-index:2;\n    background:#331603;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    padding-right: 3%;\n\n    @media (max-width:692px){\n    flex-direction: column;\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n.footer-magnum-unilever-logo {\n    width:50px;\n    height:auto;\n    display:flex;\n    flex-direction:column;\n    justify-content:center;\n    align-items:center;\n\n    @media(max-width:692px){\n      margin: 5px auto 0;\n    }\n}\n\n.footer-magnum-unilever-copyright {\n    font-size: .8rem;\n    color: #fff;\n    align-self: center;\n    padding-left: 10px;\n\n    @media (max-width:692px){\n    padding-bottom: 10px;\n    padding-left: 0;\n    }\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49634,7 +49663,8 @@ var HeaderBurgerMagnum = function HeaderBurgerMagnum() {
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "magnum-navbox",
     style: {
-      opacity: navbarOpen ? "1" : "0"
+      opacity: navbarOpen ? "1" : "0",
+      display: navbarOpen ? "flex" : "none"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "magnum-navbox-item",
@@ -49681,7 +49711,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.magnum-burger-menu {\n    display: none;    \n\n    @media (max-width: 992px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n        height: 8vh;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 10px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 30px;\n        z-index: 9999;\n    }\n}\n\n.magnum-toggle {\n    display: none;\n    height: auto;\n    padding: 0 10vw;\n    display: flex;\n    position: absolute;\n    top: 4vh;\n    right: 10px;\n}\n\n.magnum-navbox {\n    display: flex;\n    height: 100%;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: auto;\n    padding: 0;\n    justify-content: flex-start;\n    top: 8vh;\n    transition: all .1s ease-in;\n    z-index: 0;\n}\n\n.magnum-navbox-item {\n    text-decoration: none;\n    color: #523022;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    transition: all .2s ease-in;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #523022;\n    }\n\n    /* @media (max-width: 350px) {\n        padding: 15px 0;\n        font-size: 1.3rem;\n        z-index: 6;\n    } */\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.magnum-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n        height: 8vh;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 10px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 30px;\n        z-index: 9999;\n    }\n}\n\n.magnum-toggle {\n    display: none;\n    height: auto;\n    padding: 0 10vw;\n    display: flex;\n    position: absolute;\n    top: 4vh;\n    right: 10px;\n}\n\n.magnum-navbox {\n    display: flex;\n    height: 100%;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: auto;\n    padding: 0;\n    justify-content: flex-start;\n    top: 8vh;\n    transition: all .1s ease-in;\n    z-index: 0;\n}\n\n.magnum-navbox-item {\n    text-decoration: none;\n    color: #523022;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    transition: all .2s ease-in;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #523022;\n    }\n\n    /* @media (max-width: 350px) {\n        padding: 15px 0;\n        font-size: 1.3rem;\n        z-index: 6;\n    } */\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49720,7 +49750,7 @@ var HeaderMagnum = function HeaderMagnum() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "links-section"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/index-magnum",
+    to: "/products-magnum",
     activeStyle: {
       fontWeight: "700"
     }
@@ -49765,7 +49795,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.header-magnum-nav {\n    position: sticky;\n    top: 0;\n    left: 0;\n    z-index: 99;\n    box-shadow: 0 0 12px 2px #8888;\n    padding: 10px 20% 20px;\n    text-align: center;\n    background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n\n    @media(max-width:1600px){\n        padding: 10px 15% 20px;\n    }\n\n    @media(max-width:992px){\n        display: none;\n    }\n\n    img {\n        height: 40px;\n        margin-top: -20px;\n    }\n}\n\n.links-section {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 20px 0 10px;\n    transition: all .2s linear;\n\n    a {\n        color: #523022;\n        align-self: center;\n        font-size: 1.2rem;\n\n        &:hover {\n            font-weight: 700;\n            transition: all .2s linear;\n        }\n    }\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.header-magnum-nav {\n    position: sticky;\n    top: 0;\n    left: 0;\n    z-index: 99;\n    box-shadow: 0 0 12px 2px #8888;\n    padding: 10px 20% 20px;\n    text-align: center;\n    background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n\n    @media(max-width:1600px){\n        padding: 10px 15% 20px;\n    }\n\n    @media(max-width:1100px){\n        padding: 10px 20px 20px;\n    }\n\n    @media(max-width:692px){\n        display: none;\n    }\n\n    img {\n        height: 40px;\n        margin-top: -20px;\n    }\n}\n\n.links-section {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 20px 0 10px;\n    transition: all .2s linear;\n\n    a {\n        color: #523022;\n        align-self: center;\n        font-size: 1.2rem;\n\n        &:hover {\n            font-weight: 700;\n            transition: all .2s linear;\n        }\n    }\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -50023,9 +50053,9 @@ var MainLayout = function MainLayout(_ref) {
 /***/ }),
 
 /***/ "@reach/router":
-/*!***************************************************************************************************************!*\
-  !*** external "C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\@reach\\router\\index.js" ***!
-  \***************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\@reach\\router\\index.js" ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -50034,9 +50064,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!*****************************************************************************************************************************!*\
-  !*** external "C:\\Users\\Andrzej\\Desktop\\balticHUB\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js" ***!
-  \*****************************************************************************************************************************/
+/*!**********************************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\Baltics\\general-site\\node_modules\\gatsby\\node_modules\\lodash\\merge.js" ***!
+  \**********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
