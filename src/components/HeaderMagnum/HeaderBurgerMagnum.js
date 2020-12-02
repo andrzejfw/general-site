@@ -54,13 +54,8 @@ const HeaderBurgerMagnum = () => {
       >
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </div>
-<<<<<<< HEAD
       <div className="magnum-navbox" style={{opacity: navbarOpen ? "1" : "0", display: navbarOpen ? "flex" : "none"}}>
           <Link className="magnum-navbox-item" to="/index-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Products</Link>
-=======
-      <div className="magnum-navbox" style={{opacity: navbarOpen ? "1" : "0"}}>
-          <Link className="magnum-navbox-item" to="/products-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Products</Link>
->>>>>>> 0b94fc7c7b2f1df1635e2a692a2673e8064ff531
           <Link className="magnum-navbox-item" to="/about-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>About</Link>
           <Link className="magnum-navbox-item" to="/delivery-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Delivery Now</Link>
           <Link className="magnum-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Contact</Link>
