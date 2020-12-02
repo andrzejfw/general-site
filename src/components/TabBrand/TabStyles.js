@@ -8,10 +8,9 @@ const TabStyle = createGlobalStyle`
   margin-top:20px;
   padding:35px;
   position:relative;
-  width: 100vw;
+  width: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
-  /* background-image: url("https://www.unilever.pl/resources/7.16.54/images/phoenix/careers-swimlane-bg.png") !important; */
     @media(max-width:768px) {
       padding: 10px;
     }

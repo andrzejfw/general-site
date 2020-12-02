@@ -22,7 +22,11 @@ import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
 import LiptonCategoriesStyles from "../components/LiptonCategories/LiptonCategoriesStyles"
+import MagnumCategoriesStyles from "../components/MagnumCategories/MagnumCategoriesStyles"
 import LiptonBannerAndTextStyles from "../components/LiptonBannerAndText/LiptonBannerAndTextStyles"
+import MagnumBannerAndTextStyles from "../components/MagnumBannerAndText/MagnumBannerAndTextStyles"
+import BannerWithVideoMagnumStyles from "../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles"
+import BannerWithVideoLiptonStyles from "../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles"
 // import CustomerChat from "../components/Messenger/Messenger"
 
 
@@ -45,10 +49,14 @@ const MainLayout = ( {children} ) => (
     <CarouselStyleLipton />
     <CarouselStyleMagnum />
     <LiptonCategoriesStyles/>
+    <MagnumCategoriesStyles/>
     <CarouselStyleLiptonRecipe />
     <CarouselStyleLiptonRecipe />
     <LiptonCategoriesStyles/>
     <LiptonBannerAndTextStyles/>
+    <MagnumBannerAndTextStyles/>
+    <BannerWithVideoMagnumStyles/>
+    <BannerWithVideoLiptonStyles/>
     {children}
     {/* <CustomerChat /> */}
 

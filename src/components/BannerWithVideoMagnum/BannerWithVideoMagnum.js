@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import ButtonRadius from '../ButtonLipton';
+import ButtonRadius from '../ButtonMagnum';
 import { Link } from 'gatsby';
 
 const BannerWithVideoLiptonWrapper = styled.div`
@@ -16,13 +16,13 @@ const BannerWithVideoLiptonWrapper = styled.div`
     }
 `;
 
-const BannerWithVideoLipton = ({
+
+const BannerWithVideoMagnum = ({
     title, 
     paragraph, 
     videoId, 
     background, 
     backgroundMobile, 
-    red, 
     titleShadow, 
     margin, 
     button,
@@ -33,14 +33,13 @@ const BannerWithVideoLipton = ({
       background={background} 
       backgroundMobile={backgroundMobile}
       style={{
-        color: red ? "#c8381d" : "#fff", 
         textShadow: titleShadow ? "2px 2px 10px black" : "none",
         margin: margin ? "50px 0" : "0",
       }}
     >
-        <h1 className="banner-lipton-title">{title}</h1>
-        <div className="banner-lipton-content">
-            <p className="banner-lipton-paragraph">
+        <h1 className="banner-magnum-title">{title}</h1>
+        <div className="banner-magnum-content">
+            <p className="banner-magnum-paragraph">
               {paragraph}
               <div style={{display: button ? "block" : "none"}}>
               <ButtonRadius>
@@ -50,25 +49,24 @@ const BannerWithVideoLipton = ({
               </ButtonRadius>
               </div>
             </p>
-            <div className="banner-lipton-video-div">
-            <iframe className="banner-lipton-video-iframe" width="600" height="350" src={`https://www.youtube.com/embed/${videoId}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            <div className="banner-magnum-video-div">
+            <iframe className="magnum-video-iframe" width="600" height="350" src={`https://www.youtube.com/embed/${videoId}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
             </div>
         </div>
     </BannerWithVideoLiptonWrapper>
 );
 
-BannerWithVideoLipton.propTypes = {
+BannerWithVideoMagnum.propTypes = {
     title: PropTypes.string.isRequired,
     paragraph: PropTypes.string.isRequired,
     videoId: PropTypes.string.isRequired,
     background: PropTypes.string.isRequired,
     backgroundMobile: PropTypes.string.isRequired,
     titleShadow: PropTypes.string,
-    red: PropTypes.bool,
     margin: PropTypes.bool,
     button: PropTypes.bool,
     videoButtonCTA: PropTypes.string,
     videoButtonLink: PropTypes.string
 }
 
-export default BannerWithVideoLipton;
+export default BannerWithVideoMagnum;
