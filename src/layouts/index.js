@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer.js"
 import FooterLipton from "../components/FooterLipton/FooterLipton.js"
 import FooterMagnum from "../components/FooterMagnum/FooterMagnum.js"
 import FooterMagnumStyles from "../components/FooterMagnum/FooterMagnumStyles.js"
+import FooterDomestos from "../components/FooterDomestos/FooterDomestos.js"
 import GlobalStyle from "../assets/styles/globalStyles.js"
 import TabStyle from "../components/TabBrand/TabStyles.js"
 import CarouselStyle from "../components/Carousel/CarouselStyles.js"
@@ -53,8 +54,9 @@ const MainLayout = ( {children} ) => (
 
     {/* <Footer/> */}
     {/* <FooterLipton/> */}
-    <FooterMagnum/>
-    <FooterMagnumStyles/>
+    {/* <FooterMagnum/>
+    <FooterMagnumStyles/> */}
+    <FooterDomestos/>
   </>
 )
 

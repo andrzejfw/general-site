@@ -40,9 +40,10 @@ const LiptonCategoriesStyles = createGlobalStyle`
 
     h3 {
         text-align: center;
-        color:white;
-        font-size: 1.5rem;
-        text-shadow: 2px 2px 10px black;
+        color:#c8381d;
+        font-size: 26px;
+        font-weight:700;
+        /* text-shadow: 2px 2px 10px black; */
         height: 3.5rem;
         display: flex;
         justify-content: center;

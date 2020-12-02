@@ -19,6 +19,7 @@ const AccordionMagnumTab = styled.div`
   a:hover {
     color: #FFF9C7;
     -webkit-text-stroke: 1px #4e2c1d;
+    transition: 0.5s;
   }
 `;
 

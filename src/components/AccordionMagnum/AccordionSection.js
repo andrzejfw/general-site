@@ -32,7 +32,7 @@ class AccordionSection extends Component {
     const { onClick, props: { isOpen, label } } = this;
 
     return (
-      <AccordionSectionMagnum style={{background: isOpen ? "linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%)"  : "linear-gradient(60deg,#431f13 0,#d4a65b 40%,#d4a65b 60%,#431f13 100%)",}}>
+      <AccordionSectionMagnum style={{background: isOpen ? "linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%)"  : "linear-gradient(60deg,#431f13 0,#d4a65b 18%,#d4a65b 88%,#431f13 100%)",}}>
         <div onClick={onClick} style={{ cursor: "pointer", fontWeight: "bold" }}>
           {label}
           <div style={{ float: "right", }}>

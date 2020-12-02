@@ -8,11 +8,11 @@ const LiptonCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => {
     return (
         <>
                 <div className="category-box">
-                    <Link to={categoryLink}>
-                        <img className="categories-img" src={categoryImage}/>
+                <Link to={categoryLink}>
+                        <h3 className="categories-h3">{categoryTitle}</h3>
                     </Link>
                     <Link to={categoryLink}>
-                        <h3 className="categories-h3">{categoryTitle}</h3>
+                        <img className="categories-img" src={categoryImage}/>
                     </Link>
                     <div className="button-div">
                         <ButtonRadius>

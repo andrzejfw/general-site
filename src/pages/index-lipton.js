@@ -74,14 +74,6 @@ const IndexPage = () => {
    <>
    <SEO title="Lipton Eesti" description="Liptoni tee on populaarne terves maailmas. Tutvu lähemalt meie musta tee, rohelise tee ja erinevate teiste teede valikuga. Mõnus maitseelamus kõigile!"/>
     <Section> 
-    <LiptonHeroImage src={HeroImage} alt="Lipton tee"/>     
-
-    <LiptonCategories sectionTitle="Meie kategooriaid">
-      <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/"></LiptonCategoriesBox>
-      <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/"></LiptonCategoriesBox>
-      <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/"></LiptonCategoriesBox>
-    </LiptonCategories>
-
     <BannerWithVideoLipton 
         title="Meie eesmärk" 
         paragraph="Liptoni eesmärk on äratada maailm kvaliteetsetele ühendustele, et võidelda varjatud üksindusega." 
@@ -94,6 +86,14 @@ const IndexPage = () => {
         videoButtonLink="/purpose-lipton"
         >
     </BannerWithVideoLipton>
+
+    <LiptonCategories sectionTitle="Meie kategooriaid">
+      <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/"></LiptonCategoriesBox>
+    </LiptonCategories>
+    <LiptonHeroImage src={HeroImage} alt="Lipton tee"/>     
+
 
     <LiptonHpParagraphSection>
       <h2>Jätkusuutlikkus</h2>
