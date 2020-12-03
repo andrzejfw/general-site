@@ -71,16 +71,10 @@ const MainLayout = ( {children} ) => (
 
     {/* <Footer/> */}
     {/* <FooterLipton/> */}
-<<<<<<< HEAD
     {/* <FooterMagnum/>
     <FooterMagnumStyles/> */}
     <FooterDomestos/>
     <FooterDomestosStyles/>
-=======
-    <FooterMagnum/>
-    <FooterMagnumStyles/>
-    {/* <FooterDomestos/> */}
->>>>>>> 7e8c2809e49c5bce6577f92707edfbaafcb31d9e
   </>
 )
 
