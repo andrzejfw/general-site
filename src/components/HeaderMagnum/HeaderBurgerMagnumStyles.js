@@ -48,7 +48,7 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     padding: 0;
     justify-content: flex-start;
     top: 8vh;
-    transition: all .1s ease-in;
+    transition: all 1s ease-in;
     z-index: 0;
 }
 

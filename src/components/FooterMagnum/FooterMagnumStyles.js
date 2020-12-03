@@ -135,7 +135,6 @@ const FooterMagnumStyles = createGlobalStyle`
     display:flex;
     flex-direction:column;  
     align-items:center; 
-    transition: all .2s linear;
 
     p{
         font-size:12px;
@@ -144,6 +143,7 @@ const FooterMagnumStyles = createGlobalStyle`
     a{
         text-decoration:none;
         color: #523022;
+        transition: all .3s linear;
         &:hover {
         font-weight:bold;
     

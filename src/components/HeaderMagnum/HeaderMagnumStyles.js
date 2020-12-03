@@ -40,10 +40,10 @@ const HeaderMagnumStyles = createGlobalStyle`
         color: #523022;
         align-self: center;
         font-size: 1.2rem;
+        transition: all .3s linear;
 
         &:hover {
             font-weight: 700;
-            transition: all .2s linear;
         }
     }
 }

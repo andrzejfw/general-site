@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 
 const BannerWithVideoLiptonWrapper = styled.div`
     width:100%;
-    height: 500px;
+    /* height: 500px; */
     background: url(${props => props.background});
     background-size: cover;
 
