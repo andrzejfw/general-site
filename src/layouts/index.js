@@ -62,9 +62,9 @@ const MainLayout = ( {children} ) => (
 
     {/* <Footer/> */}
     {/* <FooterLipton/> */}
-    {/* <FooterMagnum/>
-    <FooterMagnumStyles/> */}
-    <FooterDomestos/>
+    <FooterMagnum/>
+    <FooterMagnumStyles/>
+    {/* <FooterDomestos/> */}
   </>
 )
 
