@@ -6,6 +6,7 @@ import FooterLipton from "../components/FooterLipton/FooterLipton.js"
 import FooterMagnum from "../components/FooterMagnum/FooterMagnum.js"
 import FooterMagnumStyles from "../components/FooterMagnum/FooterMagnumStyles.js"
 import FooterDomestos from "../components/FooterDomestos/FooterDomestos.js"
+import FooterDomestosStyles from "../components/FooterDomestos/FooterDomestosStyles.js"
 import GlobalStyle from "../assets/styles/globalStyles.js"
 import TabStyle from "../components/TabBrand/TabStyles.js"
 import CarouselStyle from "../components/Carousel/CarouselStyles.js"
@@ -18,6 +19,10 @@ import HeaderMagnum from "../components/HeaderMagnum/HeaderMagnum"
 import HeaderMagnumStyles from "../components/HeaderMagnum/HeaderMagnumStyles"
 import HeaderBurgerMagnum from "../components/HeaderMagnum/HeaderBurgerMagnum"
 import HeaderBurgerMagnumStyles from "../components/HeaderMagnum/HeaderBurgerMagnumStyles"
+import HeaderDomestos from "../components/HeaderDomestos/HeaderDomestos"
+import HeaderDomestosStyles from "../components/HeaderDomestos/HeaderDomestosStyles"
+import HeaderBurgerDomestos from "../components/HeaderDomestos/HeaderBurgerDomestos"
+import HeaderBurgerDomestosStyles from "../components/HeaderDomestos/HeaderBurgerDomestosStyles"
 import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
@@ -37,10 +42,14 @@ const MainLayout = ( {children} ) => (
     <NavigationStyles/> */}
     {/* <NavigationLipton/>
     <NavigationLiptonStyles/> */}
-    <HeaderMagnum/>
+    {/* <HeaderMagnum/>
     <HeaderMagnumStyles/>
     <HeaderBurgerMagnum/>
-    <HeaderBurgerMagnumStyles/>
+    <HeaderBurgerMagnumStyles/> */}
+    <HeaderDomestos/>
+    <HeaderDomestosStyles/>
+    <HeaderBurgerDomestos/>
+    <HeaderBurgerDomestosStyles/>
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
@@ -65,6 +74,7 @@ const MainLayout = ( {children} ) => (
     {/* <FooterMagnum/>
     <FooterMagnumStyles/> */}
     <FooterDomestos/>
+    <FooterDomestosStyles/>
   </>
 )
 

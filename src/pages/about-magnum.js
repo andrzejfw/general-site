@@ -58,7 +58,7 @@ const AboutPage = () => {
     <p>Magnumi kakaooad peavad läbima pika tee, enne kui neist saab Magnumi šokolaad. Teeme tihedat koostööd Rainforest Alliance’iga, et tagada meie jäätistes kasutatavate kakao ubade vastutustundlikest allikatest pärinemine. Kõik taandub kvaliteedile ja jätkusuutlikusele, tootmisteekonna algusest kuni lõpuni.</p>
     <Accordion>
       <div label={"Mis maitseid müüte?"} isOpen>
-            <p>Meie tootevalik muutub sageli, et pakkuda teile parimaid maitseelamusi. Palun külastage meie tootelehekülge (LINK TO PRODUCTS), et tutvuda meie aktiivse tootevalikuga. Samuti saate sealt näha, mis kauplustes toodet müüakse.</p>
+            <p>Meie tootevalik muutub sageli, et pakkuda teile parimaid maitseelamusi. Palun külastage meie <Link to="../products-magnum">tootelehekülge</Link>, et tutvuda meie aktiivse tootevalikuga. Samuti saate sealt näha, mis kauplustes toodet müüakse.</p>
       </div>
 
       <div label={"Mulle maitsevad Magnumi tooted ning soovin olla kursis Magnumi uudistega. Kuidas seda teha?"}>
