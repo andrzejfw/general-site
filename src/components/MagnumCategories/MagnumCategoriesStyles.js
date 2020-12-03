@@ -11,13 +11,13 @@ const MagnumCategoriesStyles = createGlobalStyle`
         text-align: center;
         font-weight: 700;
 
-        @media(max-width:992px){
+        @media(max-width:692px){
         width: 90vw;
         margin: 0 auto 20px;
       }
     }
 
-    @media(max-width:992px){
+    @media(max-width:692px){
         margin: 50px auto;
       }
 }
@@ -28,7 +28,7 @@ const MagnumCategoriesStyles = createGlobalStyle`
     flex-direction: row;
     justify-content: center;
 
-    @media(max-width:992px){
+    @media(max-width:692px){
         flex-direction: column;
         margin: 0;
       }
@@ -39,7 +39,7 @@ const MagnumCategoriesStyles = createGlobalStyle`
     margin: 0 20px;
     text-align: center;
 
-    @media(max-width:992px){
+    @media(max-width:692px){
         margin: 10px auto 40px;
         max-width: 100%;
         width: 90vw;

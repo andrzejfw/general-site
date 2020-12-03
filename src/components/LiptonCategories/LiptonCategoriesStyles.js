@@ -11,7 +11,7 @@ const LiptonCategoriesStyles = createGlobalStyle`
         text-align: center;
         font-weight: 700;
 
-        @media(max-width:992px){
+        @media(max-width:692px){
         width: 90vw;
         margin: 0 auto 20px;
       }
@@ -24,7 +24,7 @@ const LiptonCategoriesStyles = createGlobalStyle`
     flex-direction: row;
     justify-content: center;
 
-    @media(max-width:992px){
+    @media(max-width:692px){
         flex-direction: column;
         margin: 0;
       }
@@ -49,12 +49,12 @@ const LiptonCategoriesStyles = createGlobalStyle`
         justify-content: center;
         align-items: center;
 
-        @media(max-width:992px){
+        @media(max-width:692px){
         height: auto;
         }
     }
 
-    @media(max-width:992px){
+    @media(max-width:692px){
         margin: 10px auto;
         max-width: 100%;
         width: 90vw;
