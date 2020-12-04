@@ -48864,6 +48864,17 @@ module.exports = warning;
 
 /***/ }),
 
+/***/ "./src/assets/images/domestos-toilet.png":
+/*!***********************************************!*\
+  !*** ./src/assets/images/domestos-toilet.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/domestos-toilet-e421e029dcb19a0695b0527865be43b9.png";
+
+/***/ }),
+
 /***/ "./src/assets/images/facebook-icon-white.png":
 /*!***************************************************!*\
   !*** ./src/assets/images/facebook-icon-white.png ***!
@@ -48905,6 +48916,17 @@ module.exports = __webpack_require__.p + "static/footer-image-9fb63689d9bbd02f1d
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/lady-with-tea-20b85bbb8d0ed1bcb77fe078f24f3468.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/lipton-logo-header.png":
+/*!**************************************************!*\
+  !*** ./src/assets/images/lipton-logo-header.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
 
 /***/ }),
 
@@ -48978,6 +49000,64 @@ function _templateObject() {
 
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
 /* harmony default export */ __webpack_exports__["default"] = (GlobalStyle);
+
+/***/ }),
+
+/***/ "./src/components/BannerWithVideoLipton/BannerWithVideoLiptonStyles.js":
+/*!*****************************************************************************!*\
+  !*** ./src/components/BannerWithVideoLipton/BannerWithVideoLiptonStyles.js ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteralLoose */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.banner-lipton-title {\n    font-size: 2rem;\n    text-align: center;\n    font-weight: bold;\n    padding: 40px 0 0;\n}\n\n.banner-lipton-content {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    text-shadow: none;\n\n    @media(max-width:992px){\n      grid-template-columns: 1fr;\n    }\n}\n\n.banner-lipton-paragraph {\n    font-size: 1.5rem;\n    text-align: left;\n    padding: 5% 5% 5% 30%;\n\n    @media(max-width:992px){\n      font-size: 1.2rem;\n      text-align: center;\n      padding: 5%;\n    }\n\n    .dFxbOM {\n      margin: 20px 0 0 !important;\n\n      @media(max-width:992px){\n        margin: 20px auto 0 !important;\n      }\n    }\n\n    .button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n        &:hover {\n            text-decoration: none;\n            color: inherit;\n        }\n    }\n}\n\n.banner-lipton-video-div {\n    margin: 6% 10% 6% 0;\n    max-width: 600px;\n\n    @media(max-width:992px){\n      margin: 0 auto;\n    }\n}\n\n.banner-lipton-video-iframe {\n    width: 100% !important;\n    max-height: 300px !important;\n    border: 2px solid #fade4c;\n    border-radius: 20px;\n\n    @media(max-width:992px){\n      min-width: 300px !important;\n      max-height: 190px !important;\n      margin-bottom: 5%;\n    }\n}\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var BannerWithVideoLiptonStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+/* harmony default export */ __webpack_exports__["default"] = (BannerWithVideoLiptonStyles);
+
+/***/ }),
+
+/***/ "./src/components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles.js":
+/*!*****************************************************************************!*\
+  !*** ./src/components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles.js ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteralLoose */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.banner-magnum-title {\n    font-size: 2rem;\n    text-align: center;\n    font-weight: bold;\n    color: #fff;\n    padding: 40px 0 0;\n}\n\n.banner-magnum-content {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    text-shadow: none;\n\n    @media(max-width:692px){\n      grid-template-columns: 1fr;\n    }\n}\n\n.banner-magnum-paragraph {\n    font-size: 1.4rem;\n    text-align: left;\n    color: #fff;\n    padding: 5% 5% 5% 18vw;\n\n    @media(max-width:692px){\n      font-size: 1.2rem;\n      text-align: center;\n      padding: 5%;\n    }\n\n    .ifUilS {\n      margin: 20px 0 0 !important;\n\n      @media(max-width:692px){\n        margin: 20px auto 0 !important;\n      }\n    }\n\n    .button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.2rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n}\n\n.banner-magnum-video-div {\n    margin: 6% 10% 6% 0;\n    max-width: 600px;\n\n    @media(max-width:692px){\n      margin: 0 auto;\n    }\n}\n\n.magnum-video-iframe {\n    width: 33vw !important;\n    max-height: 350px !important;\n    border: 2px solid #4e2c1d;\n    border-radius: 6px;\n\n    @media(max-width:1600px){\n        height: 250px;\n    }\n\n    @media(max-width:692px){\n        min-width: 85vw !important;\n        max-height: 190px !important;\n        margin-bottom: 5%;\n    }\n}\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var BannerWithVideoMagnumStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+/* harmony default export */ __webpack_exports__["default"] = (BannerWithVideoMagnumStyles);
 
 /***/ }),
 
@@ -49184,6 +49264,100 @@ var Footer = function Footer() {
 
 /***/ }),
 
+/***/ "./src/components/FooterDomestos/FooterDomestos.js":
+/*!*********************************************************!*\
+  !*** ./src/components/FooterDomestos/FooterDomestos.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/unilever-logo-white.png */ "./src/assets/images/unilever-logo-white.png");
+/* harmony import */ var _assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_images_facebook_icon_white_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/facebook-icon-white.png */ "./src/assets/images/facebook-icon-white.png");
+/* harmony import */ var _assets_images_facebook_icon_white_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_facebook_icon_white_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_images_domestos_toilet_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/domestos-toilet.png */ "./src/assets/images/domestos-toilet.png");
+/* harmony import */ var _assets_images_domestos_toilet_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_domestos_toilet_png__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+ // import DomestosBottle from '../../assets/images/domestos-footer.png';
+
+
+var Footercontainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "FooterDomestos__Footercontainer"
+})(["height:20vh;z-index:2;background:#1B8B35;@media (max-width:1600px){height:25vh;}@media (max-width:992px){height:100%;}"]);
+var SocialImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
+  displayName: "FooterDomestos__SocialImage"
+})(["width:auto;height:50px;margin:55px 20px;@media (max-width:500px){height:30px;margin:20px 10px 0;}"]);
+var GraphicImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
+  displayName: "FooterDomestos__GraphicImage"
+})(["width:auto;height:250px;position:absolute;bottom:0;right:-20%;@media (max-width:1600px){bottom:-5vh;}@media (max-width:1100px){display:none;}"]);
+var FooterWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].nav.withConfig({
+  displayName: "FooterDomestos__FooterWrapper"
+})(["height:20vh;display:grid;grid-template-columns:1fr 3fr;align-items:center;background-color:transparent;position:relative;justify-content:space-between;text-transform:uppercase;margin:0 30% 0 15%;padding:0 8%;z-index:2;align-self:center;@media (max-width:1600px){margin:0;padding:0 10%;max-width:1000px;}@media (max-width:992px){height:100%;margin:0 auto 5%;}@media (max-width:500px){display:flex;flex-direction:column;margin:0;padding-bottom:5%;}"]);
+var FooterList = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].ul.withConfig({
+  displayName: "FooterDomestos__FooterList"
+})(["margin:0;padding:0;display:flex;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;@media(max-width:500px){display:flex;flex-direction:column;justify-content:center;align-items:center;}"]);
+var FooterImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "FooterDomestos__FooterImageContainer"
+})(["display:flex;"]);
+var FooterSection = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "FooterDomestos__FooterSection"
+})(["display:flex;justify-content:space-between;"]);
+var FooterItem = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].li.withConfig({
+  displayName: "FooterDomestos__FooterItem"
+})(["line-height:1.2em;text-decoration:none;color:#fff;font-weight:bold;display:inline-block;white-space:nowrap;margin:0 1vw;position:relative;text-transform:capitalize;list-style:none;text-decoration:none;display:flex;p{font-size:12px;color:#fff;}a{text-decoration:none;color:#fff;:hover{color:#000000;transition:0.5s;}}:hover{color:#e95c02;}@media(max-width:500px){margin:8px;}"]);
+var FooterItemList = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].li.withConfig({
+  displayName: "FooterDomestos__FooterItemList"
+})(["text-decoration:none;color:#c8381d !important;font-weight:bold;display:inline-block;white-space:nowrap;margin:0 1vw;position:relative;text-transform:capitalize;list-style:none;text-decoration:none;display:flex;flex-direction:column;align-items:center;p{font-size:12px;color:#fff;}a{text-decoration:none;color:#fff;:hover{color:#000000;transition:all 0.5s;}}@media(max-width:500px){margin:4px;justify-content:center;align-items:center;}"]);
+var UnileverFooter = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "FooterDomestos__UnileverFooter"
+})(["z-index:2;background:#7f7f7f;display:flex;flex-direction:row;justify-content:flex-end;padding-right:3%;@media (max-width:992px){flex-direction:column;padding-left:0;padding-right:0;}"]);
+var LogoImage = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
+  displayName: "FooterDomestos__LogoImage"
+})(["width:50px;height:auto;display:flex;flex-direction:column;justify-content:center;align-items:center;@media(max-width:992px){margin:5px auto 0;}"]);
+var FooterCopyright = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "FooterDomestos__FooterCopyright"
+})(["font-size:.8rem;color:#fff;align-self:center;padding-left:10px;@media (max-width:992px){padding-bottom:10px;padding-left:0;}"]);
+
+var FooterDomestos = function FooterDomestos() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Footercontainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterSection, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterItemList, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterImageContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "https://et-ee.facebook.com/DomestosSA/",
+    target: "_blank",
+    rel: "noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SocialImage, {
+    src: _assets_images_facebook_icon_white_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "Facebook Icon"
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterList, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterItem, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/sitemap"
+  }, "saidi kaart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterItem, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/contact"
+  }, "kontakt")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterItemList, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/cookie-notice"
+  }, "k\xFCpsise-eeskirjad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/privacy-notice"
+  }, "privaatsuspoliitika"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/legal-notice"
+  }, "juriidiline teave"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(GraphicImage, {
+    src: _assets_images_domestos_toilet_png__WEBPACK_IMPORTED_MODULE_5___default.a
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UnileverFooter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LogoImage, {
+    src: _assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_3___default.a
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterCopyright, null, "\xA9 Unilever 2020")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FooterDomestos);
+
+/***/ }),
+
 /***/ "./src/components/FooterLipton/FooterLipton.js":
 /*!*****************************************************!*\
   !*** ./src/components/FooterLipton/FooterLipton.js ***!
@@ -49382,7 +49556,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.footer-magnum-container{\n    height: 180px;\n    z-index:2;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 40%,#d4a65b 60%,#431f13 100%);\n\n    @media (max-width:692px){\n    height:150px;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 45%,#d4a65b 50%,#431f13 100%)\n    }\n\n    @media (max-width:492px){\n    height:280px;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 45%,#d4a65b 50%,#431f13 100%)\n    }\n}\n\n.footer-magnum-nav-wrapper {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items:center;\n    background-color: transparent;\n    position: relative;\n    justify-content: space-between;\n    text-transform: uppercase;\n    margin: 0 37% 0 22%;\n    z-index: 2;\n    align-self: center;\n    \n    @media (max-width:1600px){\n        margin: 0;\n        padding: 0 10%;\n        max-width: 1000px;\n    }\n\n    @media (max-width:692px){\n        height:100%;\n        margin: 0 auto 5%;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    @media (max-width: 500px) {\n        display:flex;\n        flex-direction:column;\n        margin: 0;\n        padding-bottom: 5%;\n    }   \n}\n\n.footer-magnum-list {\n    margin:0;\n    padding:0;\n    display:flex;\n    list-style:none;\n    display:flex;\n    justify-content:space-between;\n    align-items:flex-start;\n    \n    @media(max-width:692px){\n        display:flex;\n        flex-direction:column;\n        justify-content:center;\n        align-items:left;\n    }\n}\n\n.footer-magnum-section {\n    display:flex;\n    justify-content: space-between;\n}\n\n.footer-magnum-image-containter {\n    display:flex;\n}\n\n.footer-magnum-item {\n    line-height:1.2em;\n    text-decoration: none;\n    color: #523022;\n    /* font-weight:bold; */\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw; \n    position: relative;  \n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    transition: all .2s linear;\n\n    p{\n        font-size:12px;\n        color: #523022;\n    }\n    a{\n        text-decoration:none;\n        color: #523022;\n        &:hover {\n        font-weight:bold;\n    }\n    }\n\n    &:hover {\n        font-weight:bold;\n    \n    }\n    @media(max-width:500px){\n        margin:8px 0;\n        color: #fff;\n\n        p{\n        font-size:12px;\n        color: #fff;\n        }\n        a{\n            text-decoration:none;\n            color: #fff;\n        }\n    }\n}\n\n.footer-magnum-item-list {\n    text-decoration: none;\n    color: #523022 !important;\n    /* font-weight:bold; */\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    flex-direction:column;  \n    align-items:center; \n    transition: all .2s linear;\n\n    p{\n        font-size:12px;\n        color: #523022;\n    }\n    a{\n        text-decoration:none;\n        color: #523022;\n        &:hover {\n        font-weight:bold;\n    \n    }\n    }\n\n    @media(max-width:692px){\n        margin:4px 0;\n        justify-content:center;\n        align-items:start;\n\n        p{\n        font-size:12px;\n        color: #fff;\n        }\n        a{\n            text-decoration:none;\n            color: #fff;  \n        }  \n    }\n}\n\n.footer-magnum-social-image {\n    width:auto;\n    height:50px;\n    margin:55px 50px;\n\n    @media (max-width:500px){\n        height: 30px;\n        margin: 20px 10px 0 0;\n  }\n}\n\n.mobile-magnum-footer-graphic-image {\n    display: none;\n\n    @media (max-width:500px){\n        display: inline-block;\n        /* transform: rotate(-90deg); */\n        position: absolute;\n        top: -280px;\n        left: 210px;\n        height: 352px;\n        margin: 0;\n    }\n\n    @media (max-width:400px){\n        left: 170px;\n    }\n\n    @media (max-width:350px){\n        left: 140px;\n    }\n}\n\n.desktop-magnum-footer-graphic-image {\n    width:auto;\n    height:250px;\n    top: -95px;\n    left: 30px;\n    align-self: center;\n    position: absolute;\n\n    @media (max-width:1192px){\n        display: none;\n    }\n}\n\n.footer-magnum-unilever-div {\n    z-index:2;\n    background:#331603;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    padding-right: 3%;\n\n    @media (max-width:692px){\n    flex-direction: column;\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n.footer-magnum-unilever-logo {\n    width:50px;\n    height:auto;\n    display:flex;\n    flex-direction:column;\n    justify-content:center;\n    align-items:center;\n\n    @media(max-width:692px){\n      margin: 5px auto 0;\n    }\n}\n\n.footer-magnum-unilever-copyright {\n    font-size: .8rem;\n    color: #fff;\n    align-self: center;\n    padding-left: 10px;\n\n    @media (max-width:692px){\n    padding-bottom: 10px;\n    padding-left: 0;\n    }\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.footer-magnum-container{\n    height: 180px;\n    z-index:2;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 40%,#d4a65b 60%,#431f13 100%);\n\n    @media (max-width:692px){\n    height:150px;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 45%,#d4a65b 50%,#431f13 100%)\n    }\n\n    @media (max-width:492px){\n    height:280px;\n    background: linear-gradient(60deg,#431f13 0,#d4a65b 45%,#d4a65b 50%,#431f13 100%)\n    }\n}\n\n.footer-magnum-nav-wrapper {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items:center;\n    background-color: transparent;\n    position: relative;\n    justify-content: space-between;\n    text-transform: uppercase;\n    margin: 0 37% 0 22%;\n    z-index: 2;\n    align-self: center;\n    \n    @media (max-width:1600px){\n        margin: 0;\n        padding: 0 10%;\n        max-width: 1000px;\n    }\n\n    @media (max-width:692px){\n        height:100%;\n        margin: 0 auto 5%;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    @media (max-width: 500px) {\n        display:flex;\n        flex-direction:column;\n        margin: 0;\n        padding-bottom: 5%;\n    }   \n}\n\n.footer-magnum-list {\n    margin:0;\n    padding:0;\n    display:flex;\n    list-style:none;\n    display:flex;\n    justify-content:space-between;\n    align-items:flex-start;\n    \n    @media(max-width:692px){\n        display:flex;\n        flex-direction:column;\n        justify-content:center;\n        align-items:left;\n    }\n}\n\n.footer-magnum-section {\n    display:flex;\n    justify-content: space-between;\n}\n\n.footer-magnum-image-containter {\n    display:flex;\n}\n\n.footer-magnum-item {\n    line-height:1.2em;\n    text-decoration: none;\n    color: #523022;\n    /* font-weight:bold; */\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw; \n    position: relative;  \n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    transition: all .2s linear;\n\n    p{\n        font-size:12px;\n        color: #523022;\n    }\n    a{\n        text-decoration:none;\n        color: #523022;\n        &:hover {\n        font-weight:bold;\n    }\n    }\n\n    &:hover {\n        font-weight:bold;\n    \n    }\n    @media(max-width:500px){\n        margin:8px 0;\n        color: #fff;\n\n        p{\n        font-size:12px;\n        color: #fff;\n        }\n        a{\n            text-decoration:none;\n            color: #fff;\n        }\n    }\n}\n\n.footer-magnum-item-list {\n    text-decoration: none;\n    color: #523022 !important;\n    /* font-weight:bold; */\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    flex-direction:column;  \n    align-items:center; \n\n    p{\n        font-size:12px;\n        color: #523022;\n    }\n    a{\n        text-decoration:none;\n        color: #523022;\n        transition: all .3s linear;\n        &:hover {\n        font-weight:bold;\n    \n    }\n    }\n\n    @media(max-width:692px){\n        margin:4px 0;\n        justify-content:center;\n        align-items:start;\n\n        p{\n        font-size:12px;\n        color: #fff;\n        }\n        a{\n            text-decoration:none;\n            color: #fff;  \n        }  \n    }\n}\n\n.footer-magnum-social-image {\n    width:auto;\n    height:50px;\n    margin:55px 50px;\n\n    @media (max-width:500px){\n        height: 30px;\n        margin: 20px 10px 0 0;\n  }\n}\n\n.mobile-magnum-footer-graphic-image {\n    display: none;\n\n    @media (max-width:500px){\n        display: inline-block;\n        /* transform: rotate(-90deg); */\n        position: absolute;\n        top: -280px;\n        left: 210px;\n        height: 352px;\n        margin: 0;\n    }\n\n    @media (max-width:400px){\n        left: 170px;\n    }\n\n    @media (max-width:350px){\n        left: 140px;\n    }\n}\n\n.desktop-magnum-footer-graphic-image {\n    width:auto;\n    height:250px;\n    top: -95px;\n    left: 30px;\n    align-self: center;\n    position: absolute;\n\n    @media (max-width:1192px){\n        display: none;\n    }\n}\n\n.footer-magnum-unilever-div {\n    z-index:2;\n    background:#331603;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    padding-right: 3%;\n\n    @media (max-width:692px){\n    flex-direction: column;\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n.footer-magnum-unilever-logo {\n    width:50px;\n    height:auto;\n    display:flex;\n    flex-direction:column;\n    justify-content:center;\n    align-items:center;\n\n    @media(max-width:692px){\n      margin: 5px auto 0;\n    }\n}\n\n.footer-magnum-unilever-copyright {\n    font-size: .8rem;\n    color: #fff;\n    align-self: center;\n    padding-left: 10px;\n\n    @media (max-width:692px){\n    padding-bottom: 10px;\n    padding-left: 0;\n    }\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49511,7 +49685,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var _assets_images_lipton_logo_header_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/lipton-logo-header.png */ "./src/assets/images/lipton-logo-header.png");
+/* harmony import */ var _assets_images_lipton_logo_header_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_lipton_logo_header_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
 
 
 
@@ -49525,17 +49702,17 @@ var NavbarSection = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].se
 })(["width:100% !important;max-width:1200px;margin:auto;display:flex;@media(max-width:992px){justify-content:space-between;align-items:center;flex-wrap:wrap;.ml-auto.navbar-nav{height:90vh !important;align-items:center;justify-content:center;}}"]);
 
 var NavigationLipton = function NavigationLipton() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Navbar"], {
     className: "Navbartwo",
     collapseOnSelect: true,
     expand: "lg",
     bg: "yellow",
     variant: "dark"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavbarSection, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"].Brand, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavbarSection, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Navbar"].Brand, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/index-lipton"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgLogo, {
-    src: "https://asset-eu.unileversolutions.com/content/dam/unilever/lipton_international/global/logo/lipton_logo_2_tiff_90x90-1492630-png.png"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"].Toggle, {
+    src: _assets_images_lipton_logo_header_png__WEBPACK_IMPORTED_MODULE_4___default.a
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Navbar"].Toggle, {
     "aria-controls": "responsive-navbar-nav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "icon-bar top-bar"
@@ -49543,29 +49720,29 @@ var NavigationLipton = function NavigationLipton() {
     className: "icon-bar middle-bar"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "icon-bar bottom-bar"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"].Collapse, {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Navbar"].Collapse, {
     id: "responsive-navbar-nav"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"], {
     className: "ml-lipton"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NavDropdown"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NavDropdown"], {
     title: "Tooted",
     id: "collasible-nav-dropdown"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NavDropdown"].Item, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NavDropdown"].Item, {
     Link: true,
     href: "/about"
-  }, "Dropdown1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NavDropdown"].Item, {
+  }, "Dropdown1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NavDropdown"].Item, {
     Link: true,
     href: "/brands"
-  }, "Dropdown1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NavDropdown"].Item, {
+  }, "Dropdown1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NavDropdown"].Item, {
     Link: true,
     href: "/contact"
-  }, "Dropdown1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"].Link, {
+  }, "Dropdown1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"].Link, {
     Link: true,
     href: "/purpose-lipton"
-  }, "Meie eesm\xE4rk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"].Link, {
+  }, "Meie eesm\xE4rk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"].Link, {
     Link: true,
     href: "/sustainability-lipton"
-  }, "J\xE4tkusuutlik elu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"].Link, {
+  }, "J\xE4tkusuutlik elu"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"].Link, {
     Link: true,
     href: "/contact"
   }, "Kontakt"))))));
@@ -49672,25 +49849,25 @@ var HeaderBurgerMagnum = function HeaderBurgerMagnum() {
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Products"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "magnum-navbox-item",
     to: "/about-magnum",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "Ettev\xF5ttest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "magnum-navbox-item",
     to: "/delivery-magnum",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Delivery Now"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "Telli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "magnum-navbox-item",
-    to: "/",
+    to: "/contact",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Contact")));
+  }, "Kontakt")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HeaderBurgerMagnum);
@@ -49711,7 +49888,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.magnum-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n        height: 8vh;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 10px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 30px;\n        z-index: 9999;\n    }\n}\n\n.magnum-toggle {\n    display: none;\n    height: auto;\n    padding: 0 10vw;\n    display: flex;\n    position: absolute;\n    top: 4vh;\n    right: 10px;\n}\n\n.magnum-navbox {\n    display: flex;\n    height: 100%;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: auto;\n    padding: 0;\n    justify-content: flex-start;\n    top: 8vh;\n    transition: all .1s ease-in;\n    z-index: 0;\n}\n\n.magnum-navbox-item {\n    text-decoration: none;\n    color: #523022;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    transition: all .2s ease-in;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #523022;\n    }\n\n    /* @media (max-width: 350px) {\n        padding: 15px 0;\n        font-size: 1.3rem;\n        z-index: 6;\n    } */\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.magnum-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n        height: 8vh;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 10px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 30px;\n        z-index: 9999;\n    }\n}\n\n.magnum-toggle {\n    display: none;\n    height: auto;\n    padding: 0 10vw;\n    display: flex;\n    position: absolute;\n    top: 4vh;\n    right: 10px;\n}\n\n.magnum-navbox {\n    display: flex;\n    height: 100%;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: auto;\n    padding: 0;\n    justify-content: flex-start;\n    top: 8vh;\n    transition: all 1s ease-in;\n    z-index: 0;\n}\n\n.magnum-navbox-item {\n    text-decoration: none;\n    color: #523022;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    transition: all .2s ease-in;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #523022;\n    }\n\n    /* @media (max-width: 350px) {\n        padding: 15px 0;\n        font-size: 1.3rem;\n        z-index: 6;\n    } */\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49754,12 +49931,12 @@ var HeaderMagnum = function HeaderMagnum() {
     activeStyle: {
       fontWeight: "700"
     }
-  }, "Products"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/about-magnum",
     activeStyle: {
       fontWeight: "700"
     }
-  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "Ettev\xF5ttest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/index-magnum"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _assets_images_magnum_logo_brown_png__WEBPACK_IMPORTED_MODULE_2___default.a,
@@ -49769,12 +49946,12 @@ var HeaderMagnum = function HeaderMagnum() {
     activeStyle: {
       fontWeight: "700"
     }
-  }, "Delivery Now"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/",
+  }, "Telli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/contact",
     activeStyle: {
       fontWeight: "700"
     }
-  }, "Contact"))));
+  }, "Kontakt"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HeaderMagnum);
@@ -49795,7 +49972,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.header-magnum-nav {\n    position: sticky;\n    top: 0;\n    left: 0;\n    z-index: 99;\n    box-shadow: 0 0 12px 2px #8888;\n    padding: 10px 20% 20px;\n    text-align: center;\n    background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n\n    @media(max-width:1600px){\n        padding: 10px 15% 20px;\n    }\n\n    @media(max-width:1100px){\n        padding: 10px 20px 20px;\n    }\n\n    @media(max-width:692px){\n        display: none;\n    }\n\n    img {\n        height: 40px;\n        margin-top: -20px;\n    }\n}\n\n.links-section {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 20px 0 10px;\n    transition: all .2s linear;\n\n    a {\n        color: #523022;\n        align-self: center;\n        font-size: 1.2rem;\n\n        &:hover {\n            font-weight: 700;\n            transition: all .2s linear;\n        }\n    }\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.header-magnum-nav {\n    position: sticky;\n    top: 0;\n    left: 0;\n    z-index: 99;\n    box-shadow: 0 0 12px 2px #8888;\n    padding: 10px 20% 20px;\n    text-align: center;\n    background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n\n    @media(max-width:1600px){\n        padding: 10px 15% 20px;\n    }\n\n    @media(max-width:1100px){\n        padding: 10px 20px 20px;\n    }\n\n    @media(max-width:692px){\n        display: none;\n    }\n\n    img {\n        height: 40px;\n        margin-top: -20px;\n    }\n}\n\n.links-section {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    padding: 20px 0 10px;\n    transition: all .2s linear;\n\n    a {\n        color: #523022;\n        align-self: center;\n        font-size: 1.2rem;\n        transition: all .3s linear;\n\n        &:hover {\n            font-weight: 700;\n        }\n    }\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49853,7 +50030,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.categories-section {\n    margin: 50px auto;\n\n    h2 {\n        margin: 0 20px;\n        color: #c8381d;\n        text-align: center;\n        font-weight: 700;\n\n        @media(max-width:992px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n}\n\n.boxes-section {\n    margin: 50px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n\n    @media(max-width:992px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.category-box {\n    background: linear-gradient(180deg,#fff001,#ffca00);\n    padding: 30px 50px;\n    border-radius: 14px;\n    margin: 0 20px;\n    max-width: 300px;\n    text-align: center;\n\n    h3 {\n        text-align: center;\n        color:white;\n        font-size: 1.5rem;\n        text-shadow: 2px 2px 10px black;\n        height: 3.5rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        @media(max-width:992px){\n        height: auto;\n        }\n    }\n\n    @media(max-width:992px){\n        margin: 10px auto;\n        max-width: 100%;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 200px;\n    transition:.5s;\n    \n\n        &:hover {\n            transform: scale(1.1);\n        }\n        \n    }\n}\n\n.button-div {\n    margin: -50px -20px -30px;\n\n    \n}\n\n.categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.categories-section {\n    margin: 50px auto;\n\n    h2 {\n        margin: 0 20px;\n        color: #c8381d;\n        text-align: center;\n        font-weight: 700;\n\n        @media(max-width:692px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n}\n\n.boxes-section {\n    margin: 50px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n\n    @media(max-width:692px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.category-box {\n    background: linear-gradient(180deg,#fff001,#ffca00);\n    padding: 30px 50px;\n    border-radius: 14px;\n    margin: 0 20px;\n    max-width: 300px;\n    text-align: center;\n\n    h3 {\n        text-align: center;\n        color:#c8381d;\n        font-size: 26px;\n        font-weight:700;\n        /* text-shadow: 2px 2px 10px black; */\n        height: 3.5rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        @media(max-width:692px){\n        height: auto;\n        }\n    }\n\n    @media(max-width:692px){\n        margin: 10px auto;\n        max-width: 100%;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 200px;\n    transition:.5s;\n    \n\n        &:hover {\n            transform: scale(1.1);\n        }\n        \n    }\n}\n\n.button-div {\n    margin: -50px -20px -30px;\n\n    \n}\n\n.categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49865,6 +50042,64 @@ function _templateObject() {
 
 var LiptonCategoriesStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
 /* harmony default export */ __webpack_exports__["default"] = (LiptonCategoriesStyles);
+
+/***/ }),
+
+/***/ "./src/components/MagnumBannerAndText/MagnumBannerAndTextStyles.js":
+/*!*************************************************************************!*\
+  !*** ./src/components/MagnumBannerAndText/MagnumBannerAndTextStyles.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteralLoose */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.magnum-bannerandtext-section {\n    max-width: 64vw;\n    margin: 50px auto;\n    display: flex;\n    flex-direction: row;\n\n    @media(max-width:692px){\n        max-width: 100vw;\n        flex-direction: column !important;\n    }\n}\n\n.magnum-image-section {\n\n    img {\n        width: 33vw;\n        height: 350px;\n        object-fit: cover;\n        border-radius: 6px;\n        border: 2px solid #4e2c1d;\n\n        @media(max-width:1600px){\n            height: 250px;\n        }\n\n        @media(max-width:692px){\n            width: 85vw;\n            height: 190px;\n        }\n    }\n\n    @media(max-width:692px){\n        margin: 0 auto 25px;\n    }\n}\n\n.magnum-paragraph-section {\n    margin: 0 50px;\n\n        p {\n            font-size: 1.3rem;\n            color: #523022;\n\n            @media(max-width:1600px){\n                font-size: 1.2rem;\n            }\n\n            @media(max-width:692px){\n                text-align: center !important;\n                font-size: 1.1rem;\n            }\n        }\n\n        @media(max-width:1200px){\n                margin: 0 10px 0 20px;\n            }\n\n        @media(max-width:692px){\n            width: 290px;\n            margin: 0 auto;\n            text-align: center;\n        }\n}\n\n.ifUilS {\n    margin: 0 !important;\n    display: inline-block;\n\n    @media(max-width:692px){\n        margin: 0 auto !important;\n        display: block;\n    }\n}\n\n.magnum-bannerandtext-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.2rem;\n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var MagnumBannerAndTextStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+/* harmony default export */ __webpack_exports__["default"] = (MagnumBannerAndTextStyles);
+
+/***/ }),
+
+/***/ "./src/components/MagnumCategories/MagnumCategoriesStyles.js":
+/*!*******************************************************************!*\
+  !*** ./src/components/MagnumCategories/MagnumCategoriesStyles.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteralLoose */ "./node_modules/gatsby/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.magnum-categories-section {\n    margin: 50px auto 100px;\n\n    h2 {\n        margin: 0 20px;\n        color: #523022;\n        text-align: center;\n        font-weight: 700;\n\n        @media(max-width:692px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n\n    @media(max-width:692px){\n        margin: 50px auto;\n      }\n}\n\n.magnum-boxes-section {\n    margin: 50px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n\n    @media(max-width:692px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.magnum-category-box {\n    border-radius: 14px;\n    margin: 0 20px;\n    text-align: center;\n\n    @media(max-width:692px){\n        margin: 10px auto 40px;\n        max-width: 100%;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 300px;\n    border-radius: 6px;\n    /* transition:.5s; */\n    \n\n        /* &:hover {\n            transform: scale(1.1);\n        } */\n        \n    }\n}\n\n.magnum-button-div {\n    margin: -25px -20px -30px;\n\n    .ifUilS {\n        display: inline !important;\n    }\n}\n\n.magnum-categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.2rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var MagnumCategoriesStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+/* harmony default export */ __webpack_exports__["default"] = (MagnumCategoriesStyles);
 
 /***/ }),
 
@@ -49969,7 +50204,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.react-tabs{\n  margin:auto;\n  background:transparent;\n  border-radius:0px;\n  margin-top:20px;\n  padding:35px;\n  position:relative;\n  width: 100vw;\n  margin-left: 50%;\n  transform: translateX(-50%);\n  /* background-image: url(\"https://www.unilever.pl/resources/7.16.54/images/phoenix/careers-swimlane-bg.png\") !important; */\n    @media(max-width:768px) {\n      padding: 10px;\n    }\n}\n.react-tabs__tab{\n  padding:30px 25px !important;\n  /* transform: scale(1.1); */\n  color:transparent;\n  position:relative;\n  font-weight:bold;\n  transition:.4s;\n  border-radius: 5px 5px 0 0;\n  bottom: -7px !important;\n    @media(max-width:768px){\n      /* padding:45px 25px !important; */\n      bottom: 0 !important;\n    }\n    &:hover{\n      /* transform: scale(1.18); */\n    }\n    &:after{\n      position:absolute;\n      content:\"\";\n      left:0;\n      top:0;\n      width:100%;\n      height:100%;\n    }\n}\n.react-tabs__tab--selected{\n    background: transparent;\n    border:none;\n  &:after{\n    position:absolute;\n    content:\"\";\n    left:0;\n    top:0;\n    width:100%;\n    height:100%;\n    background-color:rgba(0, 0, 0, 0) !important;\n  }\n}\n.react-tabs__tab-panel--selected{\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  margin:10px auto 40px;\n  padding-top: 50px;\n  padding-bottom: 30px;\n  border-radius: 0 0 15px 15px;\n  /* background: red; */\n  width:80vw;\n  margin-left: 50%;\n  transform: translateX(-50%);\n  height: 200px;\n    @media (max-width:768px) {\n      display:grid;\n      grid-template-columns: 1fr 1fr;\n      justify-items: center;\n      width:90.1vw;\n      background-position: 50%;\n      padding: 20px 10px !important;\n      height: 350px;\n    }\n  \n  img{\n    margin: -15px 10px 0;\n    max-width:150px;\n    background: rgba(255,255,255,.5);\n    border-radius: 10px;\n  }\n  img:hover {\n    transform: scale(1.1);\n  }\n  @media(max-width:768px){\n    img {\n      margin: 8px 0;\n      max-width:120px;\n    }\n  }\n}\n.react-tabs__tab-list{\n  border-bottom:0px !important;\n  text-align:center;\n  position:relative;\n  margin-bottom: -4px;\n\n  @media(max-width:768px){\n    display:flex;\n    flex-direction:column;\n  }\n}\n#react-tabs-0{\n  background-size:cover !important;\n  width:19.6vw;\n  height:100px;\n  margin-right:.5vw;\n  /* margin-right:16px;\n  margin-left:16px; */\n  &:hover {\n    /* background: rgb(0, 94, 238) !important; */\n    p {color: #fff !important;}\n  }\n  a {\n    color: inherit;\n    text-decoration: none !important;\n  }\n  @media(max-width:768px){\n    /* margin-left:15px;\n    margin-right:15px; */\n    margin:10px auto -20px;\n    width: 90vw;\n  }\n}\n#react-tabs-2{\n  background-size:cover !important;\n  width:19.6vw;\n  height:100px;\n  margin-right:.5vw;\n  /* margin-right:16px;\n  margin-left:16px; */\n  &:hover {\n    /* background: rgb(255, 84, 80) !important; */\n    p {color: #fff !important;}\n  }\n  @media(max-width:768px){\n    /* margin-left:15px;\n    margin-right:15px; */\n    margin:10px auto -20px;\n    width: 90vw;\n   }\n}\n#react-tabs-4{\n  background-size:cover !important;\n  width:19.6vw;\n  height:100px;\n  margin-right:.5vw;\n  /* margin-right:16px;\n  margin-left:16px; */\n  &:hover {\n    /* background: rgb(255, 121, 198) !important; */\n    p {color: #fff !important;}\n  }\n  @media(max-width:768px){\n    /* margin-left:15px;\n    margin-right:15px; */\n    margin:10px auto -20px;\n    width: 90vw;\n   }\n}\n#react-tabs-6{\n  background-size:cover !important;\n  width:19.6vw;\n  height:100px;\n  /* margin-right:16px;\n  margin-left:16px; */\n  &:hover {\n    /* background: rgb(0, 215, 197) !important; */\n    p {color: #fff !important;}\n  }\n  @media(max-width:768px){\n    /* margin-left:15px;\n    margin-right:15px; */\n    margin:10px auto -20px;\n    width: 90vw;\n   }\n}\n.react-tabs__tab-list span{\n  position:absolute;\n  top:-20%;\n  transform: translateX(40%);\n  font-weight:bold;\n}\n// end tabs\n\n.divAnchor {\n  @media(min-width:768px){\n    display: none;\n  }\n}\n\na:hover {\n  text-decoration: none !important;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: none !important;\n  border-color: transparent !important;\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.react-tabs{\n  margin:auto;\n  background:transparent;\n  border-radius:0px;\n  margin-top:20px;\n  padding:35px;\n  position:relative;\n  width: 100%;\n  margin-left: 50%;\n  transform: translateX(-50%);\n    @media(max-width:768px) {\n      padding: 10px;\n    }\n}\n.react-tabs__tab{\n  padding:30px 25px !important;\n  /* transform: scale(1.1); */\n  color:transparent;\n  position:relative;\n  font-weight:bold;\n  transition:.4s;\n  border-radius: 5px 5px 0 0;\n  bottom: -7px !important;\n    @media(max-width:768px){\n      /* padding:45px 25px !important; */\n      bottom: 0 !important;\n    }\n    &:hover{\n      /* transform: scale(1.18); */\n    }\n    &:after{\n      position:absolute;\n      content:\"\";\n      left:0;\n      top:0;\n      width:100%;\n      height:100%;\n    }\n}\n.react-tabs__tab--selected{\n    background: transparent;\n    border:none;\n  &:after{\n    position:absolute;\n    content:\"\";\n    left:0;\n    top:0;\n    width:100%;\n    height:100%;\n    background-color:rgba(0, 0, 0, 0) !important;\n  }\n}\n.react-tabs__tab-panel--selected{\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  margin:10px auto 40px;\n  padding-top: 50px;\n  padding-bottom: 30px;\n  border-radius: 0 0 15px 15px;\n  /* background: red; */\n  width:80vw;\n  margin-left: 50%;\n  transform: translateX(-50%);\n  height: 200px;\n    @media (max-width:768px) {\n      display:grid;\n      grid-template-columns: 1fr 1fr;\n      justify-items: center;\n      width:90.1vw;\n      background-position: 50%;\n      padding: 20px 10px !important;\n      height: 350px;\n    }\n  \n  img{\n    margin: -15px 10px 0;\n    max-width:150px;\n    background: rgba(255,255,255,.5);\n    border-radius: 10px;\n  }\n  img:hover {\n    transform: scale(1.1);\n  }\n  @media(max-width:768px){\n    img {\n      margin: 8px 0;\n      max-width:120px;\n    }\n  }\n}\n.react-tabs__tab-list{\n  border-bottom:0px !important;\n  text-align:center;\n  position:relative;\n  margin-bottom: -4px;\n\n  @media(max-width:768px){\n    display:flex;\n    flex-direction:column;\n  }\n}\n#react-tabs-0{\n  background-size:cover !important;\n  width:19.6vw;\n  height:100px;\n  margin-right:.5vw;\n  /* margin-right:16px;\n  margin-left:16px; */\n  &:hover {\n    /* background: rgb(0, 94, 238) !important; */\n    p {color: #fff !important;}\n  }\n  a {\n    color: inherit;\n    text-decoration: none !important;\n  }\n  @media(max-width:768px){\n    /* margin-left:15px;\n    margin-right:15px; */\n    margin:10px auto -20px;\n    width: 90vw;\n  }\n}\n#react-tabs-2{\n  background-size:cover !important;\n  width:19.6vw;\n  height:100px;\n  margin-right:.5vw;\n  /* margin-right:16px;\n  margin-left:16px; */\n  &:hover {\n    /* background: rgb(255, 84, 80) !important; */\n    p {color: #fff !important;}\n  }\n  @media(max-width:768px){\n    /* margin-left:15px;\n    margin-right:15px; */\n    margin:10px auto -20px;\n    width: 90vw;\n   }\n}\n#react-tabs-4{\n  background-size:cover !important;\n  width:19.6vw;\n  height:100px;\n  margin-right:.5vw;\n  /* margin-right:16px;\n  margin-left:16px; */\n  &:hover {\n    /* background: rgb(255, 121, 198) !important; */\n    p {color: #fff !important;}\n  }\n  @media(max-width:768px){\n    /* margin-left:15px;\n    margin-right:15px; */\n    margin:10px auto -20px;\n    width: 90vw;\n   }\n}\n#react-tabs-6{\n  background-size:cover !important;\n  width:19.6vw;\n  height:100px;\n  /* margin-right:16px;\n  margin-left:16px; */\n  &:hover {\n    /* background: rgb(0, 215, 197) !important; */\n    p {color: #fff !important;}\n  }\n  @media(max-width:768px){\n    /* margin-left:15px;\n    margin-right:15px; */\n    margin:10px auto -20px;\n    width: 90vw;\n   }\n}\n.react-tabs__tab-list span{\n  position:absolute;\n  top:-20%;\n  transform: translateX(40%);\n  font-weight:bold;\n}\n// end tabs\n\n.divAnchor {\n  @media(min-width:768px){\n    display: none;\n  }\n}\n\na:hover {\n  text-decoration: none !important;\n}\n\n.react-tabs__tab:focus {\n  box-shadow: none !important;\n  border-color: transparent !important;\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -50001,23 +50236,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_FooterLipton_FooterLipton_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/FooterLipton/FooterLipton.js */ "./src/components/FooterLipton/FooterLipton.js");
 /* harmony import */ var _components_FooterMagnum_FooterMagnum_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/FooterMagnum/FooterMagnum.js */ "./src/components/FooterMagnum/FooterMagnum.js");
 /* harmony import */ var _components_FooterMagnum_FooterMagnumStyles_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/FooterMagnum/FooterMagnumStyles.js */ "./src/components/FooterMagnum/FooterMagnumStyles.js");
-/* harmony import */ var _assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/styles/globalStyles.js */ "./src/assets/styles/globalStyles.js");
-/* harmony import */ var _components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/TabBrand/TabStyles.js */ "./src/components/TabBrand/TabStyles.js");
-/* harmony import */ var _components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Carousel/CarouselStyles.js */ "./src/components/Carousel/CarouselStyles.js");
-/* harmony import */ var _components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/CarouselLipton/CarouselStyles.js */ "./src/components/CarouselLipton/CarouselStyles.js");
-/* harmony import */ var _components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/CarouselMagnum/CarouselMagnumStyles.js */ "./src/components/CarouselMagnum/CarouselMagnumStyles.js");
-/* harmony import */ var _components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js */ "./src/components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js");
-/* harmony import */ var _components_HeaderLipton_NavigationLiptonStyles__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/HeaderLipton/NavigationLiptonStyles */ "./src/components/HeaderLipton/NavigationLiptonStyles.js");
-/* harmony import */ var _components_Header_NavigationStyles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Header/NavigationStyles */ "./src/components/Header/NavigationStyles.js");
-/* harmony import */ var _components_HeaderMagnum_HeaderMagnum__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderMagnum */ "./src/components/HeaderMagnum/HeaderMagnum.js");
-/* harmony import */ var _components_HeaderMagnum_HeaderMagnumStyles__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderMagnumStyles */ "./src/components/HeaderMagnum/HeaderMagnumStyles.js");
-/* harmony import */ var _components_HeaderMagnum_HeaderBurgerMagnum__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderBurgerMagnum */ "./src/components/HeaderMagnum/HeaderBurgerMagnum.js");
-/* harmony import */ var _components_HeaderMagnum_HeaderBurgerMagnumStyles__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderBurgerMagnumStyles */ "./src/components/HeaderMagnum/HeaderBurgerMagnumStyles.js");
-/* harmony import */ var _components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/Modal/ModalStyles */ "./src/components/Modal/ModalStyles.js");
-/* harmony import */ var _components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/Popup/PopupStyles */ "./src/components/Popup/PopupStyles.js");
-/* harmony import */ var _components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../components/Quotes/QuotesStyles */ "./src/components/Quotes/QuotesStyles.js");
-/* harmony import */ var _components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../components/LiptonCategories/LiptonCategoriesStyles */ "./src/components/LiptonCategories/LiptonCategoriesStyles.js");
-/* harmony import */ var _components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../components/LiptonBannerAndText/LiptonBannerAndTextStyles */ "./src/components/LiptonBannerAndText/LiptonBannerAndTextStyles.js");
+/* harmony import */ var _components_FooterDomestos_FooterDomestos_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/FooterDomestos/FooterDomestos.js */ "./src/components/FooterDomestos/FooterDomestos.js");
+/* harmony import */ var _assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/styles/globalStyles.js */ "./src/assets/styles/globalStyles.js");
+/* harmony import */ var _components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/TabBrand/TabStyles.js */ "./src/components/TabBrand/TabStyles.js");
+/* harmony import */ var _components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Carousel/CarouselStyles.js */ "./src/components/Carousel/CarouselStyles.js");
+/* harmony import */ var _components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/CarouselLipton/CarouselStyles.js */ "./src/components/CarouselLipton/CarouselStyles.js");
+/* harmony import */ var _components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/CarouselMagnum/CarouselMagnumStyles.js */ "./src/components/CarouselMagnum/CarouselMagnumStyles.js");
+/* harmony import */ var _components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js */ "./src/components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js");
+/* harmony import */ var _components_HeaderLipton_NavigationLiptonStyles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/HeaderLipton/NavigationLiptonStyles */ "./src/components/HeaderLipton/NavigationLiptonStyles.js");
+/* harmony import */ var _components_Header_NavigationStyles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/Header/NavigationStyles */ "./src/components/Header/NavigationStyles.js");
+/* harmony import */ var _components_HeaderMagnum_HeaderMagnum__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderMagnum */ "./src/components/HeaderMagnum/HeaderMagnum.js");
+/* harmony import */ var _components_HeaderMagnum_HeaderMagnumStyles__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderMagnumStyles */ "./src/components/HeaderMagnum/HeaderMagnumStyles.js");
+/* harmony import */ var _components_HeaderMagnum_HeaderBurgerMagnum__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderBurgerMagnum */ "./src/components/HeaderMagnum/HeaderBurgerMagnum.js");
+/* harmony import */ var _components_HeaderMagnum_HeaderBurgerMagnumStyles__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderBurgerMagnumStyles */ "./src/components/HeaderMagnum/HeaderBurgerMagnumStyles.js");
+/* harmony import */ var _components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/Modal/ModalStyles */ "./src/components/Modal/ModalStyles.js");
+/* harmony import */ var _components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../components/Popup/PopupStyles */ "./src/components/Popup/PopupStyles.js");
+/* harmony import */ var _components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../components/Quotes/QuotesStyles */ "./src/components/Quotes/QuotesStyles.js");
+/* harmony import */ var _components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../components/LiptonCategories/LiptonCategoriesStyles */ "./src/components/LiptonCategories/LiptonCategoriesStyles.js");
+/* harmony import */ var _components_MagnumCategories_MagnumCategoriesStyles__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../components/MagnumCategories/MagnumCategoriesStyles */ "./src/components/MagnumCategories/MagnumCategoriesStyles.js");
+/* harmony import */ var _components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../components/LiptonBannerAndText/LiptonBannerAndTextStyles */ "./src/components/LiptonBannerAndText/LiptonBannerAndTextStyles.js");
+/* harmony import */ var _components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../components/MagnumBannerAndText/MagnumBannerAndTextStyles */ "./src/components/MagnumBannerAndText/MagnumBannerAndTextStyles.js");
+/* harmony import */ var _components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles */ "./src/components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles.js");
+/* harmony import */ var _components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles */ "./src/components/BannerWithVideoLipton/BannerWithVideoLiptonStyles.js");
+
+
+
+
+
 
 
 
@@ -50045,7 +50290,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var MainLayout = function MainLayout(_ref) {
   var children = _ref.children;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderMagnum_HeaderMagnum__WEBPACK_IMPORTED_MODULE_15__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderMagnum_HeaderMagnumStyles__WEBPACK_IMPORTED_MODULE_16__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderMagnum_HeaderBurgerMagnum__WEBPACK_IMPORTED_MODULE_17__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderMagnum_HeaderBurgerMagnumStyles__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_19__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_20__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_21__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_22__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_12__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_12__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_22__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_23__["default"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterMagnum_FooterMagnum_js__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterMagnum_FooterMagnumStyles_js__WEBPACK_IMPORTED_MODULE_6__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderMagnum_HeaderMagnum__WEBPACK_IMPORTED_MODULE_16__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderMagnum_HeaderMagnumStyles__WEBPACK_IMPORTED_MODULE_17__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderMagnum_HeaderBurgerMagnum__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderMagnum_HeaderBurgerMagnumStyles__WEBPACK_IMPORTED_MODULE_19__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_20__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_21__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_22__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_12__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_23__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumCategories_MagnumCategoriesStyles__WEBPACK_IMPORTED_MODULE_24__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_13__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_13__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_23__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_25__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_26__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_27__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_28__["default"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterMagnum_FooterMagnum_js__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterMagnum_FooterMagnumStyles_js__WEBPACK_IMPORTED_MODULE_6__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MainLayout);
