@@ -168,7 +168,7 @@ const FooterDomestosStyles = createGlobalStyle`
 
     @media (max-width:500px){
         height: 30px;
-        margin: 20px 10px 0 0;
+        margin: 20px 0 0;
   }
 }
 
@@ -202,6 +202,10 @@ const FooterDomestosStyles = createGlobalStyle`
 
     @media (max-width:1192px){
         display: none;
+    }
+
+    @media (max-width:1600px){
+        right: -15%;
     }
 }
 
