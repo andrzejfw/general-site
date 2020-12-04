@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import DomestosLogo from '../../assets/images/domestos-logo.png'
+import DomestosLogo from '../../assets/images/domestos-logo2.png'
 
 const Hamburger = styled.div`
-  background-color: #523022;
+  background-color: #fff;
   width: 30px;
   height: 3px;
   transition: all .3s linear;
@@ -17,7 +17,7 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: #523022;
+    background-color: #fff;
     content: "";
     position: absolute;
     transition: all 0.3s linear;
@@ -36,32 +36,33 @@ const Hamburger = styled.div`
   }
 `
 
-const HeaderBurgerMagnum = () => {
+const HeaderBurgerDomestos = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <nav className="magnum-burger-menu" 
+    <nav className="domestos-burger-menu" 
         style={{
             height: navbarOpen ? "400px" : "8vh", 
-            transition: "all .2s linear", 
-            borderRadius: navbarOpen ? "0 0 50% 50%" : "0"
+            transition: "all .5s ease", 
+            // borderRadius: navbarOpen ? "0 0 50% 50%" : "0"
+
     }}>
-      <Link to="/index-magnum"><img src={DomestosLogo} alt="Magnum logo"/></Link>
+      <Link to="/index-domestos"><img src={DomestosLogo} alt="domestos logo"/></Link>
       <div 
-        className="magnum-toggle"
+        className="domestos-toggle"
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </div>
-      <div className="magnum-navbox" style={{opacity: navbarOpen ? "1" : "0", display: navbarOpen ? "flex" : "none"}}>
-          <Link className="magnum-navbox-item" to="/index-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="magnum-navbox-item" to="/about-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="magnum-navbox-item" to="/delivery-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
-          <Link className="magnum-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
+      <div className="domestos-navbox" style={{opacity: navbarOpen ? "1" : "0", display: navbarOpen ? "flex" : "none"}}>
+          <Link className="domestos-navbox-item" to="/index-domestos" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="domestos-navbox-item" to="/about-domestos" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
+          <Link className="domestos-navbox-item" to="/delivery-domestos" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
+          <Link className="domestos-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>
   )
 }
 
-export default HeaderBurgerMagnum;
+export default HeaderBurgerDomestos;

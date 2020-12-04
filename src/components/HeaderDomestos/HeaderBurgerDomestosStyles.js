@@ -1,14 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 
-const HeaderBurgerMagnumStyles = createGlobalStyle`
-.magnum-burger-menu {
+const HeaderBurgerDomestosStyles = createGlobalStyle`
+.domestos-burger-menu {
     display: none;    
 
     @media (max-width: 692px) {
         display: block;
         position: fixed;
         z-index: 99;
-        background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);
+        background:radial-gradient(circle at 20% 15%,#123c7b,#06154b 61%);
         height: 8vh;
         top: 0;
         left: 0;
@@ -18,15 +18,14 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
 
     img {
         position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translate(-50%);
-        height: 30px;
+        top: 0;
+        left: 0;
+        height: 80px;
         z-index: 9999;
     }
 }
 
-.magnum-toggle {
+.domestos-toggle {
     display: none;
     height: auto;
     padding: 0 10vw;
@@ -36,7 +35,7 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     right: 10px;
 }
 
-.magnum-navbox {
+.domestos-navbox {
     display: flex;
     height: 100%;
     justify-content: flex-end;
@@ -52,21 +51,21 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     z-index: 0;
 }
 
-.magnum-navbox-item {
+.domestos-navbox-item {
     text-decoration: none;
-    color: #523022;
+    color: #fff;
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw;
     transition: all .2s ease-in;
     position: relative;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 1.5rem;
     z-index: 6;
 
     &:hover {
         font-weight: 700;
-        color: #523022;
+        color: #fff;
     }
 
     /* @media (max-width: 350px) {
@@ -77,4 +76,4 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
 }
 `;
 
-export default HeaderBurgerMagnumStyles;
+export default HeaderBurgerDomestosStyles;
