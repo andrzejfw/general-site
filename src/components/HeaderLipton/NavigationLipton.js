@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import styled from "styled-components"
 import { Link } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LiptonLogoHeader from '../../assets/images/lipton-logo-header.png'
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
 
 
@@ -41,7 +42,7 @@ const NavigationLipton = () => {
 
       <NavbarSection>
         <Navbar.Brand>
-          <Link to ="/index-lipton"><ImgLogo src="https://asset-eu.unileversolutions.com/content/dam/unilever/lipton_international/global/logo/lipton_logo_2_tiff_90x90-1492630-png.png" /></Link>
+          <Link to ="/index-lipton"><ImgLogo src={LiptonLogoHeader} /></Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
