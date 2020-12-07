@@ -41,8 +41,8 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
 #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 51px;
+  height: 51px;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -79,6 +79,7 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
 .hamburger {
     margin-left:10px;
     margin-top:10px;
+    position: absolute;
 }
 .current {
     color: gray;
@@ -99,7 +100,7 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
   position: absolute;
   width: 200px;
   padding: 20px 20px 20px;
-  margin-top: 17px;
+  margin-top: 60px;
   background: #113877;
   
   list-style-type: none;
