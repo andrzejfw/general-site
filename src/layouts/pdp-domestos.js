@@ -16,7 +16,7 @@ const ProductFirstRow = styled.div`
     justify-content:center;
     align-items:center;
     max-width:1200px;
-    margin:0 auto;  
+    margin: 60px auto 0;  
     width:96%;
     
     @media(max-width:780px){
