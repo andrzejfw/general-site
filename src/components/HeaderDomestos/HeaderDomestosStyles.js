@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 const HeaderDomestosStyles = createGlobalStyle`
 .menu-animation {
-  text-align: center;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
@@ -55,14 +54,16 @@ const HeaderDomestosStyles = createGlobalStyle`
   width: 100%;
 }
 .header-domestos-nav {
-    position: sticky;
+    position: fixed;
+    display:flex;
     top: 0;
     left: 0;
+    right:0;
     z-index: 99;
     box-shadow: 0 0 12px 2px #8888;
     padding: 10px 20% 20px;
-    text-align: center;
     background:radial-gradient(circle at 20% 15%,#123c7b,#06154b 61%);
+    justify-content: space-around;
 
     @media(max-width:1600px){
         padding: 10px 15% 20px;
@@ -72,15 +73,18 @@ const HeaderDomestosStyles = createGlobalStyle`
         padding: 10px 20px 20px;
     }
 
-    @media(max-width:692px){
+    @media(max-width:950px){
         display: none;
     }
 
     img {
-        height: 150px;
-        top: 0;
+        display:flex;
+        height: 120px;
         position: absolute;
-        left: 20%;
+        top:0;
+        @media(max-width:1400px) and (min-width:950px){
+        left:50px;
+    }
     }
 }
 
