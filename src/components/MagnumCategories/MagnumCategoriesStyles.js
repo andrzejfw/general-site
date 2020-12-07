@@ -18,7 +18,7 @@ const MagnumCategoriesStyles = createGlobalStyle`
     }
 
     @media(max-width:692px){
-        margin: 50px auto;
+        margin: 30px auto;
       }
 }
 
