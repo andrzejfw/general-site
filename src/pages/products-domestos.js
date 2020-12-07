@@ -50,6 +50,10 @@ const AboutPage = () => {
    {/* <DeliveryHeroImage src={HeroImage} alt="Magnum delivery"/> */}
    <DomestosAboutSection>
     <h1></h1>
+    <h2>On ju teada, et päev ilma naudingu hetketa on raisku läinud päev!</h2><p>Tõelised nautlejad teavad, et õnn peitub väikestes asjades. Asjatundlikult valmistatud jäätis, krõmpsuv rikkaliku koostisega Belgia šokolaad, looduslik Madagaskari vanilje, krõbedad California mandlid ja vastutustundlikult kasvatatud kakao oad, mida toetab ka Rainforest Alliance. Täiuslik lisa hetkele iseendaga. Väljenda ennast, järgi enda stiili, leia inspiratsiooni!</p>
+
+    <h2>On ju teada, et päev ilma naudingu hetketa on raisku läinud päev!</h2><p>Tõelised nautlejad teavad, et õnn peitub väikestes asjades. Asjatundlikult valmistatud jäätis, krõmpsuv rikkaliku koostisega Belgia šokolaad, looduslik Madagaskari vanilje, krõbedad California mandlid ja vastutustundlikult kasvatatud kakao oad, mida toetab ka Rainforest Alliance. Täiuslik lisa hetkele iseendaga. Väljenda ennast, järgi enda stiili, leia inspiratsiooni!</p>
+
     <p>Tõelised nautlejad teavad, et õnn peitub väikestes asjades. Asjatundlikult valmistatud jäätis, krõmpsuv rikkaliku koostisega Belgia šokolaad, looduslik Madagaskari vanilje, krõbedad California mandlid ja vastutustundlikult kasvatatud kakao oad, mida toetab ka Rainforest Alliance. Täiuslik lisa hetkele iseendaga. Väljenda ennast, järgi enda stiili, leia inspiratsiooni!</p>
     <h2>On ju teada, et päev ilma naudingu hetketa on raisku läinud päev!</h2>
     <p>Tõelised nautlejad teavad, et õnn peitub väikestes asjades. Asjatundlikult valmistatud jäätis, krõmpsuv rikkaliku koostisega Belgia šokolaad, looduslik Madagaskari vanilje, krõbedad California mandlid ja vastutustundlikult kasvatatud kakao oad, mida toetab ka Rainforest Alliance. Täiuslik lisa hetkele iseendaga. Väljenda ennast, järgi enda stiili, leia inspiratsiooni!</p>
