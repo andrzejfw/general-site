@@ -12,6 +12,7 @@ import TabStyle from "../components/TabBrand/TabStyles.js"
 import CarouselStyle from "../components/Carousel/CarouselStyles.js"
 import CarouselStyleLipton from "../components/CarouselLipton/CarouselStyles.js"
 import CarouselStyleMagnum from "../components/CarouselMagnum/CarouselMagnumStyles.js"
+import CarouselStyleDomestos from "../components/CarouselDomestos/CarouselDomestosStyles.js"
 import CarouselStyleLiptonRecipe from "../components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js"
 import NavigationLiptonStyles from "../components/HeaderLipton/NavigationLiptonStyles"
 import NavigationStyles from "../components/Header/NavigationStyles"
@@ -57,6 +58,7 @@ const MainLayout = ( {children} ) => (
     <CarouselStyle />
     <CarouselStyleLipton />
     <CarouselStyleMagnum />
+    <CarouselStyleDomestos />
     <LiptonCategoriesStyles/>
     <MagnumCategoriesStyles/>
     <CarouselStyleLiptonRecipe />

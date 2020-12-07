@@ -4,20 +4,22 @@ const slugify = require('slugify');
 const fs = require('fs').promises; 
 
 const API = 'https://cl.estorecontent.com/api/v2/'
-const LANGUAGE = 'pl'
+const LANGUAGE = 'et'
 const MANUFACTURER = '634'
 const TOKEN = 'd834cd2d30ab68adcfe288ee245bc3a33db05d6f'
-const BLOCKS_INDEX = 1;
+const BLOCKS_INDEX = 2;
 const FILE = `${__dirname}/data/ids.csv`
 
 const TEMPLATES = {
-  BK_TEA: path.resolve(`src/layouts/pdp-lipton.js`),
-  MWO: path.resolve(`src/layouts/pdp-magnum.js`)
+  Lipton: path.resolve(`src/layouts/pdp-lipton.js`),
+  Magnum: path.resolve(`src/layouts/pdp-magnum.js`),
+  Domestos: path.resolve(`src/layouts/pdp-domestos.js`)
 }
 
 const PATHS = {
-  BK_TEA: 'lipton/',
-  MWO: 'magnum/'
+  Lipton: 'lipton/',
+  Magnum: 'magnum/',
+  Domestos: 'domestos/'
 }
 
 exports.sourceNodes = async ({
