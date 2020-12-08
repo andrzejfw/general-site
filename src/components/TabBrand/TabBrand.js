@@ -73,29 +73,29 @@ export default class extends React.Component{
             </Link>
 
             <TabPanel style={{backgroundImage: `url(${Spoon})`}}>
-                <Link to="/lipton-index"><img src={Lipton} alt="Lipton Logo"></img></Link>
-                <Link to="/"><img src={Knorr} alt="Knorr Logo"></img></Link>
-                <Link to="/"><img src={Hellmanns} alt="Hellmann's Logo"></img></Link>
-                <Link to="/"><img src={Pukka} alt="Pukka Logo"></img></Link>
+                <Link to="/index-lipton"><img src={Lipton} alt="Lipton Eesti logo"></img></Link>
+                <Link to="/"><img src={Knorr} alt="Knorr Eesti logo"></img></Link>
+                <Link to="/"><img src={Hellmanns} alt="Hellmann's Eesti logo"></img></Link>
+                <Link to="/"><img src={Pukka} alt="Pukka tee Eesti logo"></img></Link>
             </TabPanel>
 
             <TabPanel style={{backgroundImage: `url(${Sun})`}}>
-                <Link to="/"><img src={Magnum} alt="Magnum Logo"></img></Link>
-                <Link to="/"><img src={BenAndJerrys} alt="Ben and Jerry's Logo"></img></Link>
-                <Link to="/"><img src={Idull} alt="Idüll Logo"></img></Link>
-                <Link to="/"><img src={SuperViva} alt="Super Viva Logo"></img></Link>
+                <Link to="/index-magnum"><img src={Magnum} alt="Magnum Eestis jäätis logo"></img></Link>
+                <Link to="/"><img src={BenAndJerrys} alt="Ben&Jerry's jäätis logo"></img></Link>
+                <Link to="/"><img src={Idull} alt="Idüll Eesti jäätis logo"></img></Link>
+                <Link to="/"><img src={SuperViva} alt="Super Viva Eesti jäätis logo"></img></Link>
             </TabPanel>
 
             <TabPanel style={{backgroundImage: `url(${Bird})`}}>
-                <Link to="/"><img src={Dove} alt="Dove Logo"></img></Link>
-                <Link to="/"><img src={Rexona} alt="Rexona Logo"></img></Link>
-                <Link to="/"><img src={Lbp} alt="Love Beauty and Planet Logo"></img></Link>
+                <Link to="/"><img src={Dove} alt="Dove Eesti logo"></img></Link>
+                <Link to="/"><img src={Rexona} alt="Rexona Eesti logo"></img></Link>
+                <Link to="/"><img src={Lbp} alt="Love Beauty & Planet Eesti logo"></img></Link>
             </TabPanel>
 
             <TabPanel style={{backgroundImage: `url(${Clothes})`}}>
-                <Link to="/"><img src={Domestos} alt="Domestos Logo"></img></Link>
-                <Link to="/"><img src={Cif} alt="Cif Logo"></img></Link>
-                <Link to="/"><img src={SeventhGeneration} alt="Seventh Generation Logo"></img></Link>
+                <Link to="/index-domestos"><img src={Domestos} alt="Domestos Eesti WC-puhastusvahendid logo"></img></Link>
+                <Link to="/"><img src={Cif} alt="Cif Eesti kodukeemia logo"></img></Link>
+                <Link to="/"><img src={SeventhGeneration} alt="Seventh Generation Eesti logo"></img></Link>
             </TabPanel>
         </Tabs>
       );

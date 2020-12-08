@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Quotesimg from "../../assets/images/quotes.png"
-import Person from "../../assets/images/bii-gates.jpg"
+// import Person from "../../assets/images/bii-gates.jpg"
 
 
 const QuotesDiv = styled.div`
@@ -104,7 +104,7 @@ function SampleNextArrow(props) {
                                   <img src={Quotesimg} alt="Quotesimg" />
                                 </div>
                                 <div className="col-lg-4 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 order-1 right-quotes-section">
-                                  <img src={Person} alt="Person" />
+                                  {/* <img src={Person} alt="Person" /> */}
                                 </div>
                             </div>
                         </div>

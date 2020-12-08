@@ -7,7 +7,7 @@ const HeaderDomestos = () => {
     return (
         <>
         <nav className="header-domestos-nav">
-                <a href="/index-domestos"><img src={DomestosLogo} alt="Domestos Logo"/></a>
+                <a href="/index-domestos"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></a>
                 <ul className="menu-animation">
                 <li><Link activeClassName="current" to="/index-domestos">Home</Link></li>
                 <li><Link activeClassName="current" to="/products-domestos">Tooted</Link></li>

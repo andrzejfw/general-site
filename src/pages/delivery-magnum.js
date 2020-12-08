@@ -126,7 +126,7 @@ const DeliveryPage = () => {
    <>
    <SEO title="Telli jäätis kulleriga koju" description="Telli jäätis kulleriga koju! Oleme avanud Bolt Foodis ja Woltis virtuaalpoed Home of Ice Cream, kust saad tellida oma lemmiku jäätiste kulleriga koju!"/>
    <Section> 
-   <DeliveryHeroImage src={HeroImage} alt="Magnum delivery"/>
+   <DeliveryHeroImage src={HeroImage} alt="Telli Magnumi jäätis kulleriga koju"/>
    <MagnumDeliverySection>
     <h1>Telli jäätis kulleriga koju</h1>
     <p>Oleme avanud Bolt Foodi ja Wolti platvormil virtuaalpoed, kust saad tellida oma lemmiku jäätiste kulleriga koju!</p>
@@ -136,16 +136,16 @@ const DeliveryPage = () => {
       <MagnumDeliveryBox><p>Jäätisepoed Wolti platvormil on aktiivsed Tallinnas ja Tartus</p>
       <MagnumDeliveryBoxLink>
         <Link target="_blank" to="https://wolt.com/en/search?q=home%20of%20ice%20cream">
-          <img src={IceCreamDelivery}></img>
+          <img src={IceCreamDelivery} alt="Telli Magnumi jäätis koju"></img>
           <span>Home of Ice Cream</span>
-          <WoltDelivery><img src={WoltBackground}></img></WoltDelivery>
+          <WoltDelivery><img src={WoltBackground} alt="Telli jäätis koju Wolt kullerteenusega"></img></WoltDelivery>
         </Link>
       </MagnumDeliveryBoxLink>
       </MagnumDeliveryBox>
     <MagnumDeliveryBox><p>Jäätisepoed Bolti Foodi platvormil on aktiivsed Tallinnas, Tartus ja Pärnus ning peagi Narvas. Jättisepoed Bolt Foodi platvormil on nähtavad ainult Bolt Foodi telefonirakendusest.</p>
       <MagnumDeliveryBoxLink>
         <Link target="_blank" to="https://food.bolt.eu/en-us/">
-          <img src={BoltBackground}></img>
+          <img src={BoltBackground} alt="Telli jäätis koju Bolt Foodist"></img>
           <span>Lisateave</span>
         </Link>
       </MagnumDeliveryBoxLink>

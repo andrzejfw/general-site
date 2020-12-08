@@ -35,10 +35,10 @@ const IndexPageMagnum = () => {
         <>
         <SEO title="Magnum Eesti" description="Magnum jäätis – naudingule truu. Me usume, et päev ilma tõeliste naudinguteta, on kaotsi läinud päev. Tutvu Magnumi tuntud brändi ja maitsva jäätisevalikuga!"/>
         <SectionMagnumHP>
-            <MagnumHeroImage src={MagnumHeroImg} alt="Magnum image"/> 
+            <MagnumHeroImage src={MagnumHeroImg} alt="Magnum jäätis"/> 
             <MagnumCategories sectionTitle="Magnum jäätis">
-                <MagnumCategoriesBox categoryTitle="Pulgajäätised" categoryImage={MagnumIceCreamStick} categoryLink="/index-magnum"></MagnumCategoriesBox>
-                <MagnumCategoriesBox categoryTitle="Perejäätised" categoryImage={MagnumIceCreamBox} categoryLink="/index-magnum"></MagnumCategoriesBox>
+                <MagnumCategoriesBox categoryTitle="Pulgajäätised" categoryImage={MagnumIceCreamStick} categoryLink="/index-magnum" alt="Haara Magnumi jäätis"></MagnumCategoriesBox>
+                <MagnumCategoriesBox categoryTitle="Perejäätised" categoryImage={MagnumIceCreamBox} categoryLink="/index-magnum" alt="Magnum Eesti"></MagnumCategoriesBox>
             </MagnumCategories>
             <BannerWithVideoMagnum 
                 title="Magnum – naudingule truu" 

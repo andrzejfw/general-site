@@ -15,7 +15,7 @@ const FooterDomestos = () => (
             <div className="footer-domestos-image-containter">
             
             <p><Link to ="https://www.facebook.com/domestoseesti/" target="_blank" rel="noreferrer">
-                <img src={FacebookImage} alt="Facebook Icon" className="footer-domestos-social-image"/>
+                <img src={FacebookImage} alt="Facebook ikoon" className="footer-domestos-social-image"/>
             </Link></p>
             </div>
         </li>
@@ -34,7 +34,7 @@ const FooterDomestos = () => (
   </div>
   <div className="footer-domestos-unilever-div">
     <Link to ="/">
-        <img src={UnileverLogoWhite} alt="Unilever logo" className="footer-domestos-unilever-logo"/>
+        <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-domestos-unilever-logo"/>
     </Link>
     <div className="footer-domestos-unilever-copyright">© Unilever 2020</div>
   </div>

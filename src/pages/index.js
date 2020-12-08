@@ -77,7 +77,7 @@ const IndexPage = () => {
    <SEO title="Unilever Eesti" description=""/>
     <Section>    
       <HeroSection>
-        <HeroImage src={Hero}></HeroImage>
+        <HeroImage src={Hero} alt="Unilever Eesti AS avaleht"></HeroImage>
         <ButtonSection>
           <ButtonRadius><Link to="/about">Ettevõttest</Link></ButtonRadius>
         </ButtonSection>
@@ -87,7 +87,7 @@ const IndexPage = () => {
       <Heading>Meie kaubamärgid</Heading>
       <Tabs></Tabs>
       {/* below hero image as placeholder for animated chart */}
-      <HeroImage src={Image}></HeroImage>
+      <HeroImage src={Image} alt="Unilever Eesti jätkusuutlikus"></HeroImage>
 
 
 

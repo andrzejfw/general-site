@@ -43,7 +43,7 @@ const SustainabilitySubHeader = styled.h2`
 const SustainabilityPage = () => (
   <>
     <SEO title="Jätkusuutlikkus" description="Liptoni eesmärk on saavutada jätkusuutlik hankimine igal aastal toodetud 19 miljardile teepakile. Tee maitseb paremini, kui see on jätkusuutlikult hangitud."/>
-    <SustainabilityHeroImage src={SustainabilityHero} alt="sustainability hands"/>
+    <SustainabilityHeroImage src={SustainabilityHero} alt="Lipton Eesti jätkusuutlik tee"/>
     <Section>
         <SustainabilityHeader>Jätkusuutlikkus</SustainabilityHeader>
         <p>Alates aastast 1880 on loodus olnud meie teevabrik. Iga tass Liptoni teed kasvatatakse loodusliku vihma, tuule ja päikese käes, et anda teile meie allkirjaga rikkalik maitse ja aroom. Veelgi enam, usume, et iga tassitäis Liptoni teed ei peaks aitama valgustada mitte ainult teie päeva, vaid ka kõigi meie teekasvatajate ja nende perede päeva. Ning loomulikult peaks see valgustama ka meie planeedi tulevikku.</p>

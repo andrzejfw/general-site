@@ -46,7 +46,7 @@ const HeaderBurgerMagnum = () => {
             transition: "all .2s linear", 
             borderRadius: navbarOpen ? "0 0 50% 50%" : "0"
     }}>
-      <Link to="/index-magnum"><img src={MagnumLogo} alt="Magnum logo"/></Link>
+      <Link to="/index-magnum"><img src={MagnumLogo} alt="Magnum Eesti jäätis logo"/></Link>
       <div 
         className="magnum-toggle"
         navbarOpen={navbarOpen}

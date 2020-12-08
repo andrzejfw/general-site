@@ -88,9 +88,9 @@ const IndexPage = () => {
     </BannerWithVideoLipton>
 
     <LiptonCategories sectionTitle="Meie kategooriaid">
-      <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/"></LiptonCategoriesBox>
-      <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/"></LiptonCategoriesBox>
-      <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/" alt="Lipton must tee kategooria"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/" alt="Lipton roheline tee kategooria"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/" alt="Lipton funktsionaalne tee, taimetee, infusioontee kategooria"></LiptonCategoriesBox>
     </LiptonCategories>
     <LiptonHeroImage src={HeroImage} alt="Lipton tee"/>     
 

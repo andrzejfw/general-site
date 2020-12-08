@@ -60,7 +60,7 @@ const AboutPage = () => {
        <p>1890. aastatel pani Lever Brothersi asutaja William Hesketh Level kirja oma ideed Sunlight seebi loomisest, millest valmis revolutsiooniline uus toode, mis aitas populariseerida puhtust ja hügieeni kuninganna Victoria valitsemisajal Inglismaal.</p>
        <p>Toote eesmärk oli muuta puhtus tavapäraseks, vähendada naiste tööd, edendada tervist ning tõsta isiklikku atraktiivsust, et elu oleks Unileveri tooteid kasutavatele inimestele nauditavam ja rahuldavam.</p>
        <p>See eesmärgi- ja missioonitunne on alati olnud osa Unileveri kultuurist. Ka täna aitame inimestel endliselt hea välja näha, end hästi tunda ja elust rohkem kasu saada. Ning seetõttu on meie eesmärgiks muuta jätkusuutlik elu tavapäraseks (making sustainable living commonplace).</p>
-       <ImageMan src={Image1} alt="man with a seedling"/>
+       <ImageMan src={Image1} alt="Unilever Eesti ettevõttest"/>
        <h2>Unilever kogu maailmas</h2>
        <ul>
          <li><b>2,5 miljardit</b> inimest kasutab igapäevaselt meie tooteid.</li>
