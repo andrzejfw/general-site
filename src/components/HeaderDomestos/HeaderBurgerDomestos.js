@@ -16,7 +16,7 @@ const HeaderBurgerDomestos = () => {
                 <li><a activeClassName="current" href="/about-domestos">Ettevõttest</a></li>
                 <li><a activeClassName="current" href="/sustainability-domestos">Sustainability</a></li>
                 <li><a activeClassName="current" href="/blog-domestos">Blog</a></li>
-                <li><a activeClassName="current" href="/constact-domestos">Kontakt</a></li>
+                <li><a activeClassName="current" href="/contact-domestos">Kontakt</a></li>
     </ul>
   </div>
 </nav>

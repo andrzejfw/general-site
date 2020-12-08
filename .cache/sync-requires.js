@@ -13,6 +13,7 @@ exports.components = {
   "component---src-pages-about-magnum-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\about-magnum.js"))),
   "component---src-pages-blog-domestos-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\blog-domestos.js"))),
   "component---src-pages-brands-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\brands.js"))),
+  "component---src-pages-contact-domestos-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\contact-domestos.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\contact.js"))),
   "component---src-pages-cookie-notice-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\cookie-notice.js"))),
   "component---src-pages-delivery-magnum-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\delivery-magnum.js"))),

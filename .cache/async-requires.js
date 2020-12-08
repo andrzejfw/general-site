@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-about-magnum-js": () => import("./../../src/pages/about-magnum.js" /* webpackChunkName: "component---src-pages-about-magnum-js" */),
   "component---src-pages-blog-domestos-js": () => import("./../../src/pages/blog-domestos.js" /* webpackChunkName: "component---src-pages-blog-domestos-js" */),
   "component---src-pages-brands-js": () => import("./../../src/pages/brands.js" /* webpackChunkName: "component---src-pages-brands-js" */),
+  "component---src-pages-contact-domestos-js": () => import("./../../src/pages/contact-domestos.js" /* webpackChunkName: "component---src-pages-contact-domestos-js" */),
   "component---src-pages-contact-js": () => import("./../../src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-cookie-notice-js": () => import("./../../src/pages/cookie-notice.js" /* webpackChunkName: "component---src-pages-cookie-notice-js" */),
   "component---src-pages-delivery-magnum-js": () => import("./../../src/pages/delivery-magnum.js" /* webpackChunkName: "component---src-pages-delivery-magnum-js" */),
