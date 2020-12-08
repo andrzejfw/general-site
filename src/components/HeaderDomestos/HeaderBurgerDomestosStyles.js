@@ -37,64 +37,82 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
   color: grey;
 }
 
-
-#menuToggle input
-{
-  display: block;
-  width: 51px;
-  height: 51px;
+#menuToggle .toggler {
   position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0;
+  top: 0;
+  left: 0;
   z-index: 2;
-  
-  -webkit-touch-callout: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
 }
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #fff;
-  margin: 6px 0;
-  transition: 0.4s;
+#menuToggle .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+/* Hamburger Line */
+#menuToggle .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
 }
 
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+/* Hamburger Lines - Top & Bottom */
+#menuToggle .hamburger > div::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+#menuToggle .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+/* Toggler Animation */
+#menuToggle .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
 }
 
-.hamburger {
-    margin-left:10px;
-    margin-top:10px;
-    position: absolute;
-    top: 50%;
-    transform: translate(50%,-50%);
+/* Turns Lines Into X */
+#menuToggle .toggler:checked + .hamburger > div:before,
+#menuToggle .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
 }
+
+/* Rotate On Hover When Checked */
+#menuToggle .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+
 .current {
     color: gray;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
 }
 
 #menu

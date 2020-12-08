@@ -20,7 +20,7 @@ const HeaderDomestosStyles = createGlobalStyle`
 }
 .menu-animation a {
   padding: 0.3em 0;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
   position: relative;
   text-decoration: none;
   display: inline-block;

@@ -8,12 +8,8 @@ const HeaderBurgerDomestos = () => {
   return (
     <nav role="navigation">
     <div id="menuToggle">
-    <input type="checkbox" />
-    <div className="hamburger">
-    <div className="bar1"></div>
-    <div className="bar2"></div>
-    <div className="bar3"></div>
-    </div>
+    <input type="checkbox" className="toggler"/>
+    <div class="hamburger"><div></div></div>
     <a href="/index-domestos"><img src={DomestosLogo} alt="domestos logo"/></a>
     <ul id="menu">
                 <li><a activeClassName="current" href="/index-domestos">Home</a></li>
