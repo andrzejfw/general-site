@@ -9,11 +9,11 @@ const HeaderDomestos = () => {
         <nav className="header-domestos-nav">
                 <a href="/index-domestos"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></a>
                 <ul className="menu-animation">
-                <li><Link activeClassName="current" to="/index-domestos">Home</Link></li>
                 <li><Link activeClassName="current" to="/products-domestos">Tooted</Link></li>
                 <li><Link activeClassName="current" to="/about-domestos">Ettevõttest</Link></li>
                 <li><Link activeClassName="current" to="/sustainability-domestos">Sustainability</Link></li>
                 <li><Link activeClassName="current" to="/blog-domestos">Blog</Link></li>
+                <li><Link activeClassName="current" to="/contact-domestos">Kontakt</Link></li>
                 </ul>
         </nav>
         </>
