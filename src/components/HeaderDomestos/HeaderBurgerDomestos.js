@@ -14,7 +14,7 @@ const HeaderBurgerDomestos = () => {
     <div className="bar2"></div>
     <div className="bar3"></div>
     </div>
-    <a href="/index-domestos"><img src={DomestosLogo} alt="domestos logo"/></a>
+    <a href="/index-domestos"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></a>
     <ul id="menu">
                 <li><a activeClassName="current" href="/index-domestos">Home</a></li>
                 <li><a activeClassName="current" href="/products-domestos">Tooted</a></li>

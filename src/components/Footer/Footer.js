@@ -229,7 +229,7 @@ const FooterItemList = styled.li`
 const Footer = () => (
   <Footercontainer>
     <FooterWrapper>
-         <FooterItemList><Link to ="/"><Img src={LogoImage} /></Link><p>© Unilever 2020</p></FooterItemList>
+         <FooterItemList><Link to ="/"><Img src={LogoImage} alt="Unilever Eesti logo - must valge"/></Link><p>© Unilever 2020</p></FooterItemList>
         <FooterList>
         <FooterItemList><Link to="/contact">Kontakt</Link></FooterItemList>
         <FooterItemList>
@@ -244,7 +244,7 @@ const Footer = () => (
         <FooterItemList>Sotsiaalmeedia<FooterImageContainer>
           <p>
             <Link to ="https://www.facebook.com/unilever" target="_blank">
-            <ImageFacebook src={FacebookImage} alt="Facebook Icon"/></Link>
+            <ImageFacebook src={FacebookImage} alt="Facebook ikoon"/></Link>
               </p>
         {/* <p>
           <Link to ="/"><Image src="https://www.unilever.pl/resources/7.16.54/images/phoenix/twitter-purple-royal.svg" />
@@ -256,7 +256,7 @@ const Footer = () => (
         <FooterItemList>
           <Link to="/sitemap">Saidikaart</Link>
           </FooterItemList>
-          <ImageFooter src={WomenImage} alt="Women with furry hairs"/>
+          <ImageFooter src={WomenImage} alt="Unilever ikoon jalus"/>
         </FooterList>
     </FooterWrapper>
     </Footercontainer>

@@ -15,7 +15,7 @@ const FooterMagnum = () => (
             <div className="footer-magnum-image-containter">
             
             <p><Link to ="https://www.facebook.com/magnumeesti/" target="_blank" rel="noreferrer">
-                <img src={FacebookImage} alt="Facebook Icon" className="footer-magnum-social-image"/>
+                <img src={FacebookImage} alt="Facebook ikoon" className="footer-magnum-social-image"/>
             </Link></p>
             </div>
         </li>
@@ -29,15 +29,15 @@ const FooterMagnum = () => (
                     <a href="/privacy-notice">privaatsuspoliitika</a>
                     <a href="/legal-notice">juriidiline teave</a></li>
                 <li className="footer-magnum-item">
-                <img src={MagnumIceCreamMobile} className="mobile-magnum-footer-graphic-image" alt="Magnum Ice Cream"/>
-                <img src={MagnumIceCreamDesktop} className="desktop-magnum-footer-graphic-image" alt="Magnum Ice Cream"/>
+                <img src={MagnumIceCreamMobile} className="mobile-magnum-footer-graphic-image" alt="Magnum pulgajäätis ikoon"/>
+                <img src={MagnumIceCreamDesktop} className="desktop-magnum-footer-graphic-image" alt="Magnum pint jäätis ikoon"/>
             </li>           
             </ul>
     </nav>
   </div>
   <div className="footer-magnum-unilever-div">
     <Link to ="/">
-        <img src={UnileverLogoWhite} alt="Unilever logo" className="footer-magnum-unilever-logo"/>
+        <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-magnum-unilever-logo"/>
     </Link>
     <div className="footer-magnum-unilever-copyright">© Unilever 2020</div>
   </div>

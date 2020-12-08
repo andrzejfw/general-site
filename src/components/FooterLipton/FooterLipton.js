@@ -232,7 +232,7 @@ const FooterLipton = () => (
         <FooterItemList>
             <FooterImageContainer>
             <p><Link to ="https://www.facebook.com/LiptonEesti/" target="_blank" rel="noreferrer">
-                <SocialImage src={FacebookImage} alt="Facebook Icon"/>
+                <SocialImage src={FacebookImage} alt="Facebook ikoon"/>
             </Link></p>
             </FooterImageContainer>
         </FooterItemList>
@@ -242,11 +242,11 @@ const FooterLipton = () => (
                 <FooterItem><Link to="/contact">kontakt</Link></FooterItem>
                 <FooterItemList><a href="/cookie-notice">küpsise-eeskirjad</a><a href="/privacy-notice">privaatsuspoliitika</a><a href="/legal-notice">juriidiline teave</a></FooterItemList>           
             </FooterList>
-        <GraphicImage src={LadyWithTea}/>
+        <GraphicImage src={LadyWithTea} alt="Lipton ikoon jalus"/>
     </FooterWrapper>
   </Footercontainer>
   <UnileverFooter>
-    <Link to ="/"><LogoImage src={UnileverLogoWhite} /></Link><FooterCopyright>© Unilever 2020</FooterCopyright>
+    <Link to ="/"><LogoImage src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge"/></Link><FooterCopyright>© Unilever 2020</FooterCopyright>
   </UnileverFooter>
   </>
 );
