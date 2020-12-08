@@ -11,7 +11,7 @@ const HeaderDomestos = () => {
                 <ul className="menu-animation">
                 <li><Link activeClassName="current" to="/products-domestos">Tooted</Link></li>
                 <li><Link activeClassName="current" to="/about-domestos">Ettevõttest</Link></li>
-                <li><Link activeClassName="current" to="/sustainability-domestos">Sustainability</Link></li>
+                <li><Link activeClassName="current" to="/sustainability-domestos">Jätkusuutlikkus</Link></li>
                 <li><Link activeClassName="current" to="/blog-domestos">Blog</Link></li>
                 <li><Link activeClassName="current" to="/contact-domestos">Kontakt</Link></li>
                 </ul>
