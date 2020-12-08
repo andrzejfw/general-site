@@ -81,6 +81,7 @@ const TabStyle = createGlobalStyle`
     max-width:150px;
     background: rgba(255,255,255,.5);
     border-radius: 10px;
+    transition: all .3s ease-in;
   }
   img:hover {
     transform: scale(1.1);
