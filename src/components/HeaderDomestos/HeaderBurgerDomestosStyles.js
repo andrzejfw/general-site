@@ -61,7 +61,7 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
   justify-content: center;
 }
 
-/* Hamburger Line */
+/* Hamburger Line div */
 #menuToggle .hamburger > div {
   position: relative;
   flex: none;
@@ -74,7 +74,7 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
   transition: all 0.4s ease;
 }
 
-/* Hamburger Lines - Top & Bottom */
+/* Hamburger Lines - Top */
 #menuToggle .hamburger > div::before {
   content: '';
   position: absolute;
@@ -84,6 +84,7 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
   height: 2px;
   background: inherit;
 }
+/* Hamburger Lines - Bottom */
 #menuToggle .hamburger > div::after {
   content: '';
   position: absolute;
