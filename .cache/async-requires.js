@@ -25,6 +25,7 @@ exports.components = {
   "component---src-pages-purpose-lipton-js": () => import("./../../src/pages/purpose-lipton.js" /* webpackChunkName: "component---src-pages-purpose-lipton-js" */),
   "component---src-pages-sitemap-js": () => import("./../../src/pages/sitemap.js" /* webpackChunkName: "component---src-pages-sitemap-js" */),
   "component---src-pages-sustainability-domestos-js": () => import("./../../src/pages/sustainability-domestos.js" /* webpackChunkName: "component---src-pages-sustainability-domestos-js" */),
+  "component---src-pages-sustainability-hellmanns-js": () => import("./../../src/pages/sustainability-hellmanns.js" /* webpackChunkName: "component---src-pages-sustainability-hellmanns-js" */),
   "component---src-pages-sustainability-js": () => import("./../../src/pages/sustainability.js" /* webpackChunkName: "component---src-pages-sustainability-js" */),
   "component---src-pages-sustainability-lipton-js": () => import("./../../src/pages/sustainability-lipton.js" /* webpackChunkName: "component---src-pages-sustainability-lipton-js" */)
 }

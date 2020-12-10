@@ -11,7 +11,7 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
   right: 0;
   height: 60px;
   top:0;
-  z-index: 1;
+  z-index: 3;
   
   -webkit-user-select: none;
   user-select: none;
@@ -119,7 +119,6 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
 #menu
 {
   position: absolute;
-  width: 200px;
   padding: 20px 20px 20px;
   margin-top: 60px;
   background: #113877;

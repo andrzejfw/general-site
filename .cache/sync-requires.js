@@ -28,6 +28,7 @@ exports.components = {
   "component---src-pages-purpose-lipton-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\purpose-lipton.js"))),
   "component---src-pages-sitemap-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\sitemap.js"))),
   "component---src-pages-sustainability-domestos-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\sustainability-domestos.js"))),
+  "component---src-pages-sustainability-hellmanns-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\sustainability-hellmanns.js"))),
   "component---src-pages-sustainability-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\sustainability.js"))),
   "component---src-pages-sustainability-lipton-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\sustainability-lipton.js")))
 }
