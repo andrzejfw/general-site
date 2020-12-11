@@ -52,12 +52,10 @@ const FooterHellmannsStyles = createGlobalStyle`
     padding:0;
     display:flex;
     list-style:none;
-    display:flex;
     justify-content:space-between;
     align-items:flex-start;
     
     @media(max-width:692px){
-        display:flex;
         flex-direction:column;
         justify-content:center;
         align-items:left;
@@ -75,7 +73,6 @@ const FooterHellmannsStyles = createGlobalStyle`
 
 .footer-hellmanns-item {
     line-height:1.2em;
-    text-decoration: none;
     color: #fff;
     display: inline-block;
     white-space: nowrap;
@@ -87,22 +84,16 @@ const FooterHellmannsStyles = createGlobalStyle`
     display:flex;
     transition: all .2s linear;
 
-    p{
-        font-size:12px;
-        color: #fff;
-    }
     a{
         text-decoration:none;
         color: #fff;
-        &:hover {
         font-weight:bold;
+        transition: all .3s linear;
+        &:hover {
+        color: #ffc72e;
     }
     }
 
-    &:hover {
-        font-weight:bold;
-    
-    }
     @media(max-width:500px){
         margin:8px 0;
         color: #fff;
@@ -119,7 +110,6 @@ const FooterHellmannsStyles = createGlobalStyle`
 }
 
 .footer-hellmanns-item-list {
-    text-decoration: none;
     color: #fff !important;
     display: inline-block;
     white-space: nowrap;
@@ -127,21 +117,17 @@ const FooterHellmannsStyles = createGlobalStyle`
     position: relative;
     text-transform:capitalize;
     list-style:none;
-    text-decoration:none;
     display:flex;
     flex-direction:column;  
     align-items:center; 
 
-    p{
-        font-size:12px;
-        color: #fff;
-    }
     a{
         text-decoration:none;
         color: #fff;
         transition: all .3s linear;
-        &:hover {
         font-weight:bold;
+        &:hover {
+        color: #ffc72e;
     
     }
     }
@@ -156,7 +142,6 @@ const FooterHellmannsStyles = createGlobalStyle`
         color: #fff;
         }
         a{
-            text-decoration:none;
             color: #fff;  
         }  
     }

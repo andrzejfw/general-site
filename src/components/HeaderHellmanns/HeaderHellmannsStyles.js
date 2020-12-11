@@ -41,15 +41,15 @@ const HeaderHellmannsStyles = createGlobalStyle`
         color: #004976;
         align-self: center;
         font-size: 1.2rem;
-        transition: all .1s ease-in;
+        transition: all .2s ease;
         height: 2rem;
-
+        padding: 0 10px;
+        
         &:hover {
-            border-bottom: 3px solid #004976;
+            border-bottom: 15px solid #ffc72e;
         }
     }
 }
-
 `;
 
 export default HeaderHellmannsStyles;

@@ -8,11 +8,11 @@ const HeaderHellmanns = () => {
         <>
         <nav className="header-hellmanns-nav">
             <div className="links-section">
-                <Link to="/" activeStyle={{fontWeight: "700"}}>Tooted</Link>
-                <Link to="/" activeStyle={{fontWeight: "700"}}>Ettevõttest</Link>
+                <Link to="/">Tooted</Link>
+                <Link to="/">Ettevõttest</Link>
                 <Link to="/index-hellmanns"><img src={HellmannsLogo} alt="Hellmann's Eesti logo"/></Link>
-                <Link to="/" activeStyle={{fontWeight: "700"}}>Ajalugu</Link>
-                <Link to="/" activeStyle={{fontWeight: "700"}}>Kontakt</Link>
+                <Link to="/">Ajalugu</Link>
+                <Link to="/">Kontakt</Link>
             </div>
         </nav>
         </>
