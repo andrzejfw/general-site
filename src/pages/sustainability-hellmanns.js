@@ -27,7 +27,6 @@ const Hero = styled.section`
     height: 500px;
     object-fit: cover;
 
-    margin-top: 80px;
     @media(max-width:992px){
     height: 250px;
     margin-top: 60px;
@@ -43,9 +42,9 @@ const HellmannsSustainabilitySectionContent = styled.section`
     max-width: 1200px;
     background: #FDF6E8;
     @media(max-width:992px){
+    padding-bottom:20px;
     }
-    position: relative;
-    padding: 20px 0 40px;
+    padding: 20px 0 50px;
     color: #004976;
     h1 {margin-bottom:40px;}
 `;

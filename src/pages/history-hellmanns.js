@@ -19,7 +19,6 @@ const Section = styled.section`
 
 const Hero = styled.section`
       position:relative;
-      margin-top: 60px;
       width:100%;
 `;
 const HellmannsAboutSection = styled.section`
@@ -33,18 +32,20 @@ const HellmannsAboutSectionContent = styled.section`
     max-width: 1200px;
     background: #FDF6E8;
     color: #004976;
+    padding: 0 0 50px;
     @media(max-width:992px){
+    padding: 0 0 20px;
     }
-    position: relative;
-    padding: 0 0 40px;
 `;
 
 const ImagewithText = styled.section`
+    text-align: left;
     display: flex;
     position:relative;
     width: 100%;
     justify-content: space-between;
     @media(max-width:992px){
+    padding-left:30px;
     flex-wrap: wrap;
     }
     :before {
@@ -58,11 +59,14 @@ const ImagewithText = styled.section`
     width: 6px;
     background: #004976;
     @media(max-width:992px){
-    left:-10px;    
+    left:0px;    
     }
 }
 `;
 const ImagewithTextOposite = styled.section`
+    @media(min-width:993px){
+      text-align: right;
+    }
     display: flex;
     position:relative;
     width: 100%;
@@ -78,21 +82,25 @@ const ImagewithTextOposite = styled.section`
     width: 6px;
     background: #004976;
     @media(max-width:992px){
-    left:-10px;    
+    left:0px; 
     }
 }
     @media(min-width:993px){
     img{order:1;}
-    div{order:2;}
+    div{
+      order:2;
+      }
     }
     @media(max-width:992px){
     flex-wrap: wrap;
+    text-align: left;
+    padding-left:30px;
     }
   h2:before {
     left: auto !important;
     right: -21px !important;
     @media(max-width:992px){
-    left:-10px !important;    
+    left:-28px !important;    
     }
     }
 `;
@@ -129,11 +137,12 @@ const Text = styled.section`
     content: '';
     position: absolute;
     left: -21px;
-    width: 12vw;
+    width: 1vw;
     height: 6px;
     top: 19px;
     @media(max-width:992px){
-    left:-10px;    
+    left:-28px;
+    width: 3vw;  
     }
 }
 `;
@@ -141,6 +150,7 @@ const Text = styled.section`
 const HistoryHeroImage = styled.img`
     width: 100%;
     object-fit:cover;
+    height: 550px;
 
     @media(max-width:992px){
         height: 250px;

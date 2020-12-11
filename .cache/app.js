@@ -8,33 +8,17 @@ import emitter from "./emitter"
 import { apiRunner, apiRunnerAsync } from "./api-runner-browser"
 import { setLoader, publicLoader } from "./loader"
 import DevLoader from "./dev-loader"
+import syncRequires from "$virtual/sync-requires"
 // Generated during bootstrap
 import matchPaths from "$virtual/match-paths.json"
 
 window.___emitter = emitter
 
-let pageComponentRequires
-if (process.env.GATSBY_EXPERIMENTAL_LAZY_DEVJS) {
-  pageComponentRequires = require(`$virtual/lazy-client-sync-requires`)
-} else {
-  pageComponentRequires = require(`$virtual/sync-requires`)
-}
-
-const loader = new DevLoader(pageComponentRequires, matchPaths)
+const loader = new DevLoader(syncRequires, matchPaths)
 setLoader(loader)
 loader.setApiRunner(apiRunner)
 
 window.___loader = publicLoader
-
-// Do dummy dynamic import so the jsonp __webpack_require__.e is added to the commons.js
-// bundle. This ensures hot reloading doesn't break when someone first adds
-// a dynamic import.
-//
-// Without this, the runtime breaks with a
-// "TypeError: __webpack_require__.e is not a function"
-// error.
-// eslint-disable-next-line
-import("./dummy")
 
 // Let the site/plugins run code very early.
 apiRunnerAsync(`onClientEntry`).then(() => {
@@ -50,45 +34,24 @@ apiRunnerAsync(`onClientEntry`).then(() => {
     .then(res => res.json())
     .then(services => {
       if (services.developstatusserver) {
-        let isRestarting = false
         const parentSocket = io(
-          `${window.location.protocol}//${window.location.hostname}:${services.developstatusserver.port}`
+          `http://${window.location.hostname}:${services.developstatusserver.port}`
         )
 
-        parentSocket.on(`structured-log`, msg => {
+        parentSocket.on(`develop:needs-restart`, msg => {
           if (
-            !isRestarting &&
-            msg.type === `LOG_ACTION` &&
-            msg.action.type === `DEVELOP` &&
-            msg.action.payload === `RESTART_REQUIRED` &&
             window.confirm(
-              `The develop process needs to be restarted for the changes to ${msg.action.dirtyFile} to be applied.\nDo you want to restart the develop process now?`
+              `The develop process needs to be restarted for the changes to ${msg.dirtyFile} to be applied.\nDo you want to restart the develop process now?`
             )
           ) {
-            isRestarting = true
-            parentSocket.emit(`develop:restart`, () => {
+            parentSocket.once(`develop:is-starting`, msg => {
               window.location.reload()
             })
+            parentSocket.once(`develop:started`, msg => {
+              window.location.reload()
+            })
+            parentSocket.emit(`develop:restart`)
           }
-
-          if (
-            isRestarting &&
-            msg.type === `LOG_ACTION` &&
-            msg.action.type === `SET_STATUS` &&
-            msg.action.payload === `SUCCESS`
-          ) {
-            isRestarting = false
-            window.location.reload()
-          }
-        })
-
-        // Prevents certain browsers spamming XHR 'ERR_CONNECTION_REFUSED'
-        // errors within the console, such as when exiting the develop process.
-        parentSocket.on(`disconnect`, () => {
-          console.warn(
-            `[socket.io] Disconnected. Unable to perform health-check.`
-          )
-          parentSocket.close()
         })
       }
     })
@@ -117,8 +80,6 @@ apiRunnerAsync(`onClientEntry`).then(() => {
   const renderer = apiRunner(
     `replaceHydrateFunction`,
     undefined,
-    // TODO replace with hydrate once dev SSR is ready
-    // but only for SSRed pages.
     ReactDOM.render
   )[0]
 
@@ -128,7 +89,7 @@ apiRunnerAsync(`onClientEntry`).then(() => {
     loader.loadPage(window.location.pathname),
   ]).then(() => {
     const preferDefault = m => (m && m.default) || m
-    const Root = preferDefault(require(`./root`))
+    let Root = preferDefault(require(`./root`))
     domReady(() => {
       renderer(<Root />, rootElement, () => {
         apiRunner(`onInitialClientRender`)
