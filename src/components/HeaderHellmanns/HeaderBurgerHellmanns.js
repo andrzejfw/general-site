@@ -60,10 +60,10 @@ const HeaderBurgerHellmanns = () => {
           opacity: navbarOpen ? "1" : "0", 
           display: navbarOpen ? "flex" : "none", 
           padding: navbarOpen ? "40px 0" : "0"}}>
-          <Link className="hellmanns-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="hellmanns-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="hellmanns-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
-          <Link className="hellmanns-navbox-item" to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
+          <Link className="hellmanns-navbox-item" to="/products-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="hellmanns-navbox-item" to="/sustainability-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
+          <Link className="hellmanns-navbox-item" to="/history-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
+          <Link className="hellmanns-navbox-item" to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>
   )
