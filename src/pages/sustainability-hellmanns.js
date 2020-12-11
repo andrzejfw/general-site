@@ -18,47 +18,35 @@ const Section = styled.section`
 
 const Hero = styled.section`
       position:relative;
-      margin-top: 60px;
+      
+      margin-bottom: -5px;
       width:100%;
   .hero-video {
     position: relative;
     width: 100%;
     height: 500px;
     object-fit: cover;
-    z-index: -1;
+
+    margin-top: 80px;
     @media(max-width:992px){
     height: 250px;
+    margin-top: 60px;
     }
   }
 `;
 const HellmannsAboutSection = styled.section`
-    background: url(${BgContent}) repeat left top 50px;
-    :before {
-    content: '';
-    position: absolute;
-    top: 540px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 50px;
-    z-index: -1;
-    background: url(${BgFooter}) repeat-x left top;
-    @media(max-width:992px){
-      top: 298px;
-    }
-
-}
+    background: #FDF6E8;
 `;
-const HellmannsAboutSectionContent = styled.section`
+const HellmannsSustainabilitySectionContent = styled.section`
     width: 90vw;
     margin: 0px auto;
     max-width: 1200px;
+    background: #FDF6E8;
     @media(max-width:992px){
     }
     position: relative;
     padding: 20px 0 40px;
-    z-index: 5;
-    color: #fff;
+    color: #004976;
     h1 {margin-bottom:40px;}
 `;
 
@@ -92,7 +80,6 @@ const Image = styled.img`
     background-size: cover;
     box-shadow: 2px 2px 8px black;
     height: 100%;
-    z-index: 1;
     margin: auto 0;
     @media(max-width:992px){
     width:100%;
@@ -101,7 +88,7 @@ const Image = styled.img`
 `;
 const Text = styled.section`
     font-size: 20px;
-    color: #fff;
+    color: #004976;
     width: 48%;
     -ms-flex-item-align: center;
     align-self: center;
@@ -126,7 +113,7 @@ const SustainabilityPage = () => {
       </video>
   </Hero>
    <HellmannsAboutSection>
-   <HellmannsAboutSectionContent>
+   <HellmannsSustainabilitySectionContent>
         <h1>SUSTAINABLY SOURCED INGREDIENTS<br></br>
         WE CARE ABOUT SUSTAINABILITY
         </h1>
@@ -160,7 +147,7 @@ const SustainabilityPage = () => {
       <p>Me usume, et tomatid on ideaalse ketšupi saladuseks. Ja hoolitseme selle eest, et meie tooted oleksid vaid kõrgeima kvaliteediga! Samuti me teame, et parima maitsega tomatid pärinevad parimatest kasvukohtadest. Seetõttu oleme pühendunud oma ketšupite valmistamisel säästlikult kasvatatud ja korjatud tomatite kasutamisele. Lisaks nende kõrgele kvaliteedile kaitseb selline tarneahel jätkusuutlikku põllumajandust ka tulevaste põlvkondade jaoks.</p>
     </Text>
     </ImagewithTextOposite>
-    </HellmannsAboutSectionContent>
+    </HellmannsSustainabilitySectionContent>
     </HellmannsAboutSection>
     </Section>
     </>

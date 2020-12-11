@@ -24,7 +24,6 @@ function uncheckAll(divid) {
                 <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/products-domestos">Tooted</Link></li>
                 <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/about-domestos">Ettevõttest</Link></li>
                 <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/sustainability-domestos">Jätkusuutlikkus</Link></li>
-                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/blog-domestos">Blog</Link></li>
                 <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/contact-domestos">Kontakt</Link></li>
     </ul>
   </div>

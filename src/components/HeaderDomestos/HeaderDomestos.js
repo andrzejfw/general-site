@@ -12,7 +12,6 @@ const HeaderDomestos = () => {
                 <li><Link activeClassName="current" to="/products-domestos">Tooted</Link></li>
                 <li><Link activeClassName="current" to="/about-domestos">Ettevõttest</Link></li>
                 <li><Link activeClassName="current" to="/sustainability-domestos">Jätkusuutlikkus</Link></li>
-                <li><Link activeClassName="current" to="/blog-domestos">Blog</Link></li>
                 <li><Link activeClassName="current" to="/contact-domestos">Kontakt</Link></li>
                 </ul>
         </nav>

@@ -14,6 +14,7 @@ exports.components = {
   "component---src-pages-contact-js": () => import("./../../src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-cookie-notice-js": () => import("./../../src/pages/cookie-notice.js" /* webpackChunkName: "component---src-pages-cookie-notice-js" */),
   "component---src-pages-delivery-magnum-js": () => import("./../../src/pages/delivery-magnum.js" /* webpackChunkName: "component---src-pages-delivery-magnum-js" */),
+  "component---src-pages-history-hellmanns-js": () => import("./../../src/pages/history-hellmanns.js" /* webpackChunkName: "component---src-pages-history-hellmanns-js" */),
   "component---src-pages-index-domestos-js": () => import("./../../src/pages/index-domestos.js" /* webpackChunkName: "component---src-pages-index-domestos-js" */),
   "component---src-pages-index-js": () => import("./../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-index-lipton-js": () => import("./../../src/pages/index-lipton.js" /* webpackChunkName: "component---src-pages-index-lipton-js" */),
