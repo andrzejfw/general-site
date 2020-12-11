@@ -7,6 +7,8 @@ import FooterMagnum from "../components/FooterMagnum/FooterMagnum.js"
 import FooterMagnumStyles from "../components/FooterMagnum/FooterMagnumStyles.js"
 import FooterDomestos from "../components/FooterDomestos/FooterDomestos.js"
 import FooterDomestosStyles from "../components/FooterDomestos/FooterDomestosStyles.js"
+import FooterHellmanns from "../components/FooterHellmanns/FooterHellmanns.js"
+import FooterHellmannsStyles from "../components/FooterHellmanns/FooterHellmannsStyles.js"
 import GlobalStyle from "../assets/styles/globalStyles.js"
 import TabStyle from "../components/TabBrand/TabStyles.js"
 import CarouselStyle from "../components/Carousel/CarouselStyles.js"
@@ -24,6 +26,10 @@ import HeaderDomestos from "../components/HeaderDomestos/HeaderDomestos"
 import HeaderDomestosStyles from "../components/HeaderDomestos/HeaderDomestosStyles"
 import HeaderBurgerDomestos from "../components/HeaderDomestos/HeaderBurgerDomestos"
 import HeaderBurgerDomestosStyles from "../components/HeaderDomestos/HeaderBurgerDomestosStyles"
+import HeaderHellmanns from "../components/HeaderHellmanns/HeaderHellmanns"
+import HeaderHellmannsStyles from "../components/HeaderHellmanns/HeaderHellmannsStyles"
+import HeaderBurgerHellmanns from "../components/HeaderHellmanns/HeaderBurgerHellmanns"
+import HeaderBurgerHellmannsStyles from "../components/HeaderHellmanns/HeaderBurgerHellmannsStyles"
 import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
@@ -47,10 +53,14 @@ const MainLayout = ( {children} ) => (
     <HeaderMagnumStyles/>
     <HeaderBurgerMagnum/>
     <HeaderBurgerMagnumStyles/> */}
-    <HeaderDomestos/>
+    {/* <HeaderDomestos/>
     <HeaderDomestosStyles/>
     <HeaderBurgerDomestos/>
-    <HeaderBurgerDomestosStyles/>
+    <HeaderBurgerDomestosStyles/> */}
+    <HeaderHellmanns/>
+    <HeaderHellmannsStyles/>
+    <HeaderBurgerHellmanns/>
+    <HeaderBurgerHellmannsStyles/>
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
@@ -75,8 +85,10 @@ const MainLayout = ( {children} ) => (
     {/* <FooterLipton/> */}
     {/* <FooterMagnum/>
     <FooterMagnumStyles/> */}
-    <FooterDomestos/>
-    <FooterDomestosStyles/>
+    {/* <FooterDomestos/>
+    <FooterDomestosStyles/> */}
+    <FooterHellmanns/>
+    <FooterHellmannsStyles/>
   </>
 )
 
