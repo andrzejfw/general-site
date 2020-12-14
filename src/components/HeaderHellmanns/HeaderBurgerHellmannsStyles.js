@@ -4,7 +4,7 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
 .hellmanns-burger-menu {
     display: none;    
 
-    @media (max-width: 692px) {
+    @media (max-width: 992px) {
         display: block;
         position: fixed;
         z-index: 99;
