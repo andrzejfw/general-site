@@ -27,7 +27,6 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
 }
 
 .magnum-toggle {
-    display: none;
     height: auto;
     padding: 0 10vw;
     display: flex;
@@ -48,7 +47,6 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     padding: 0;
     justify-content: flex-start;
     top: 8vh;
-    transition: all 1s ease-in;
     z-index: 0;
 }
 
@@ -58,7 +56,6 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw;
-    transition: all .2s ease-in;
     position: relative;
     padding: 20px 0;
     font-size: 1.5rem;

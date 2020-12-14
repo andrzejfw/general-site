@@ -10,7 +10,6 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
         z-index: 99;
         background: #fdf6e8;
         border-bottom: 3px solid #004976;
-        /* box-shadow: 0 0 10px #004976; */
         top: 0;
         left: 0;
         right: 0;
@@ -47,11 +46,11 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     height: auto;
     padding: 0;
     justify-content: flex-start;
-    top: 8vh;
-    transition: all 1s ease-in;
+    top: 70px;
     z-index: 0;
     text-transform: uppercase;
     font-weight: 700;
+    transition: opacity .2s linear .2s;
 }
 
 .hellmanns-navbox-item {
@@ -60,7 +59,6 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw;
-    transition: all .2s ease-in;
     position: relative;
     padding: 20px 0;
     font-size: 1.5rem;

@@ -42,10 +42,10 @@ const HeaderBurgerHellmanns = () => {
   return (
     <nav className="hellmanns-burger-menu" 
         style={{
-            height: navbarOpen ? "430px" : "70px", 
-            transition: "all .2s linear", 
+            height: navbarOpen ? "100vh" : "70px", 
+            transition: "all .5s linear", 
     }}>
-      <Link to="/index-hellmanns"><img src={HellmannsLogo} alt="Hellmann's Eesti logo"/></Link>
+      <Link onClick={() => setNavbarOpen(false)} to="/index-hellmanns"><img src={HellmannsLogo} alt="Hellmann's Eesti logo"/></Link>
       <div 
         className="hellmanns-toggle"
         navbarOpen={navbarOpen}
@@ -58,12 +58,12 @@ const HeaderBurgerHellmanns = () => {
         className="hellmanns-navbox" 
         style={{
           opacity: navbarOpen ? "1" : "0", 
-          display: navbarOpen ? "flex" : "none", 
-          padding: navbarOpen ? "40px 0" : "0"}}>
-          <Link className="hellmanns-navbox-item" to="/products-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="hellmanns-navbox-item" to="/sustainability-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="hellmanns-navbox-item" to="/history-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
-          <Link className="hellmanns-navbox-item" to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
+          padding: navbarOpen ? "20px 0" : "0",
+          }}>
+          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/products-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/sustainability-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
+          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/history-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
+          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>
   )
