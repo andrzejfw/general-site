@@ -34,7 +34,8 @@ const FooterHellmanns = () => (
                     <a href="/privacy-notice">privaatsuspoliitika</a>
                     <a href="/legal-notice">juriidiline teave</a></li>
                 <li className="footer-hellmanns-item">
-                <img src={HellmannsJar} className="hellmanns-footer-graphic-image" alt=""/>
+                <img src={HellmannsJar} className="hellmanns-footer-graphic-image" alt="Hellmann's ikoon jalus
+"/>
             </li>           
             </ul>
     </nav>

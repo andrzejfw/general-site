@@ -62,7 +62,7 @@ const HeaderBurgerHellmanns = () => {
           }}>
           <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/products-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
           <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/sustainability-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/history-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
+          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/history-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Ajalugu</Link>
           <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>

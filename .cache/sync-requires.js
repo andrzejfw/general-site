@@ -31,6 +31,7 @@ exports.components = {
   "component---src-pages-products-hellmanns-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\products-hellmanns.js"))),
   "component---src-pages-products-magnum-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\products-magnum.js"))),
   "component---src-pages-purpose-lipton-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\purpose-lipton.js"))),
+  "component---src-pages-purpose-one-hellmanns-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\purpose-one-hellmanns.js"))),
   "component---src-pages-sitemap-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\sitemap.js"))),
   "component---src-pages-sustainability-domestos-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\sustainability-domestos.js"))),
   "component---src-pages-sustainability-hellmanns-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\sustainability-hellmanns.js"))),
