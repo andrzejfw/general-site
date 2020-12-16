@@ -36,6 +36,7 @@ import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
 import LiptonCategoriesStyles from "../components/LiptonCategories/LiptonCategoriesStyles"
 import MagnumCategoriesStyles from "../components/MagnumCategories/MagnumCategoriesStyles"
+import HellmannsCategoriesStyles from "../components/HellmannsCategories/HellmannsCategoriesStyles"
 import LiptonBannerAndTextStyles from "../components/LiptonBannerAndText/LiptonBannerAndTextStyles"
 import MagnumBannerAndTextStyles from "../components/MagnumBannerAndText/MagnumBannerAndTextStyles"
 import BannerWithVideoMagnumStyles from "../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles"
@@ -77,6 +78,7 @@ const MainLayout = ( {children} ) => (
     <CarouselStyleLiptonRecipe />
     <CarouselStyleLiptonRecipe />
     <LiptonCategoriesStyles/>
+    <HellmannsCategoriesStyles/>
     <LiptonBannerAndTextStyles/>
     <MagnumBannerAndTextStyles/>
     <BannerWithVideoMagnumStyles/>
