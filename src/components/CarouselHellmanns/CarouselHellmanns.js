@@ -14,7 +14,7 @@ const SliderTextCenter = styled.h3`
     margin-right:10px;
     margin-left:10px;
     padding:0;
-    color:#004cc2;
+    color:#004976;
     transition:.2s;
     position:relative;
     &:hover{
@@ -33,7 +33,7 @@ const ImageSlider = styled.img`
 `;
 
 const TextSlider = styled.div`
-    color:#06154b;
+    color:#004976;
     font-size: 1.5rem;
     margin-top: 10px;
     margin-bottom: 20px;

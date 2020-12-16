@@ -32,6 +32,7 @@ class DevLoader extends _loader.BaseLoader {
     const loadComponent = chunkName => Promise.resolve(syncRequires.components[chunkName]);
 
     super(loadComponent, matchPaths);
+<<<<<<< HEAD
     const socket = (0, _socketIo.default)();
     this.notFoundPagePathsInCaches = new Set();
 
@@ -48,6 +49,8 @@ class DevLoader extends _loader.BaseLoader {
     } else if (process.env.NODE_ENV !== `test`) {
       console.warn(`Could not get web socket`);
     }
+=======
+>>>>>>> master
   }
 
   loadPage(pagePath) {
@@ -75,6 +78,7 @@ class DevLoader extends _loader.BaseLoader {
   }
 
   doPrefetch(pagePath) {
+<<<<<<< HEAD
     if (process.env.GATSBY_EXPERIMENTAL_QUERY_ON_DEMAND) {
       return Promise.resolve();
     }
@@ -175,6 +179,9 @@ class DevLoader extends _loader.BaseLoader {
         });
       }
     });
+=======
+    return Promise.resolve(require(`./socketIo`).getPageData(pagePath));
+>>>>>>> master
   }
 
 }
