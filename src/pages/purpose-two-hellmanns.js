@@ -60,7 +60,7 @@ const HellmannsPurposePage = () => {
       <>
       <SEO title="Plastiku Revolutsioon" description="Hellmann'si platsiku revolutsioon. Vähem raiskamist, rohkem maitset! Aastaks 2025 on kõik Hellmann’si tooted pakendatud ümbertöödeldavatesse pakenditesse."/>
         <HellmannsPurposeDiv>
-            <img src={HellmannsHeroImg}/>
+            <img src={HellmannsHeroImg} />
             <HellmannsPurposeSection>
                 <h1>PLASTIKU REVOLUTSIOON</h1>
                 <h2>VÄHEM RAISKAMIST – ROHKEM MAITSET</h2>

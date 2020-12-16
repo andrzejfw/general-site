@@ -12,15 +12,12 @@ import syncRequires from "$virtual/sync-requires"
 // Generated during bootstrap
 import matchPaths from "$virtual/match-paths.json"
 
-<<<<<<< HEAD
 if (process.env.GATSBY_HOT_LOADER === `fast-refresh` && module.hot) {
   module.hot.accept(`$virtual/sync-requires`, () => {
     // Manually reload
   })
 }
 
-=======
->>>>>>> master
 window.___emitter = emitter
 
 const loader = new DevLoader(syncRequires, matchPaths)

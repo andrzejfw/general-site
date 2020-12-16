@@ -25,7 +25,6 @@ class DevLoader extends BaseLoader {
   constructor(syncRequires, matchPaths) {
     const loadComponent = chunkName =>
       Promise.resolve(syncRequires.components[chunkName])
-<<<<<<< HEAD
 
     super(loadComponent, matchPaths)
 
@@ -46,9 +45,6 @@ class DevLoader extends BaseLoader {
     } else if (process.env.NODE_ENV !== `test`) {
       console.warn(`Could not get web socket`)
     }
-=======
-    super(loadComponent, matchPaths)
->>>>>>> master
   }
 
   loadPage(pagePath) {
@@ -83,7 +79,6 @@ class DevLoader extends BaseLoader {
   }
 
   doPrefetch(pagePath) {
-<<<<<<< HEAD
     if (process.env.GATSBY_EXPERIMENTAL_QUERY_ON_DEMAND) {
       return Promise.resolve()
     }
@@ -186,9 +181,6 @@ class DevLoader extends BaseLoader {
         })
       }
     })
-=======
-    return Promise.resolve(require(`./socketIo`).getPageData(pagePath))
->>>>>>> master
   }
 }
 
