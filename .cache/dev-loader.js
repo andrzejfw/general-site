@@ -5,30 +5,7 @@ class DevLoader extends BaseLoader {
   constructor(syncRequires, matchPaths) {
     const loadComponent = chunkName =>
       Promise.resolve(syncRequires.components[chunkName])
-<<<<<<< HEAD
     super(loadComponent, matchPaths)
-=======
-
-    super(loadComponent, matchPaths)
-
-    const socket = getSocket()
-
-    this.notFoundPagePathsInCaches = new Set()
-
-    if (socket) {
-      socket.on(`message`, msg => {
-        if (msg.type === `staticQueryResult`) {
-          this.handleStaticQueryResultHotUpdate(msg)
-        } else if (msg.type === `pageQueryResult`) {
-          this.handlePageQueryResultHotUpdate(msg)
-        } else if (msg.type === `stalePageData`) {
-          this.handleStalePageDataMessage(msg)
-        }
-      })
-    } else if (process.env.NODE_ENV !== `test`) {
-      console.warn(`Could not get web socket`)
-    }
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
   }
 
   loadPage(pagePath) {
@@ -61,112 +38,7 @@ class DevLoader extends BaseLoader {
   }
 
   doPrefetch(pagePath) {
-<<<<<<< HEAD
     return Promise.resolve(require(`./socketIo`).getPageData(pagePath))
-=======
-    if (process.env.GATSBY_EXPERIMENTAL_QUERY_ON_DEMAND) {
-      return Promise.resolve()
-    }
-    return super.doPrefetch(pagePath).then(result => result.payload)
-  }
-
-  handleStaticQueryResultHotUpdate(msg) {
-    const newResult = msg.payload.result
-
-    const cacheKey = msg.payload.id
-    const cachedResult = this.staticQueryDb[cacheKey]
-    if (!isEqual(newResult, cachedResult)) {
-      this.staticQueryDb[cacheKey] = newResult
-      ___emitter.emit(`staticQueryResult`, newResult)
-    }
-  }
-
-  handlePageQueryResultHotUpdate(msg) {
-    const newPageData = msg.payload.result
-
-    const pageDataDbCacheKey = normalizePagePath(msg.payload.id)
-    const cachedPageData = this.pageDataDb.get(pageDataDbCacheKey)?.payload
-
-    if (!isEqual(newPageData, cachedPageData)) {
-      // TODO: if this is update for current page and there are any new static queries added
-      // that are not yet cached, there is currently no trigger to fetch them (yikes)
-      // always update canonical key for pageDataDb
-      this.pageDataDb.set(pageDataDbCacheKey, {
-        pagePath: pageDataDbCacheKey,
-        payload: newPageData,
-        status: `success`,
-      })
-
-      const cachedPage = this.pageDb.get(pageDataDbCacheKey)
-      if (cachedPage) {
-        this.pageDb.set(
-          pageDataDbCacheKey,
-          mergePageEntry(cachedPage, newPageData)
-        )
-      }
-
-      // Additionally if those are query results for "/404.html"
-      // we have to update all paths user wanted to visit, but didn't have
-      // page for it, because we do store them under (normalized) path
-      // user wanted to visit
-      if (pageDataDbCacheKey === `/404.html`) {
-        this.notFoundPagePathsInCaches.forEach(notFoundPath => {
-          const previousPageDataEntry = this.pageDataDb.get(notFoundPath)
-          if (previousPageDataEntry) {
-            this.pageDataDb.set(notFoundPath, {
-              ...previousPageDataEntry,
-              payload: newPageData,
-            })
-          }
-
-          const previousPageEntry = this.pageDb.get(notFoundPath)
-          if (previousPageEntry) {
-            this.pageDb.set(
-              notFoundPath,
-              mergePageEntry(previousPageEntry, newPageData)
-            )
-          }
-        })
-      }
-
-      ___emitter.emit(`pageQueryResult`, newPageData)
-    }
-  }
-
-  handleStalePageDataMessage(msg) {
-    msg.payload.stalePageDataPaths.forEach(dirtyQueryId => {
-      if (dirtyQueryId === `/dev-404-page/` || dirtyQueryId === `/404.html`) {
-        // those pages are not on demand so skipping
-        return
-      }
-
-      const normalizedId = normalizePagePath(dirtyQueryId)
-
-      // We can't just delete items in caches, because then
-      // using history.back() would show dev-404 page
-      // due to our special handling of it in root.js (loader.isPageNotFound check)
-      // so instead we mark it as stale and instruct loader's async methods
-      // to refetch resources if they are marked as stale
-
-      const cachedPageData = this.pageDataDb.get(normalizedId)
-      if (cachedPageData) {
-        // if we have page data in cache, mark it as stale
-        this.pageDataDb.set(normalizedId, {
-          ...cachedPageData,
-          stale: true,
-        })
-      }
-
-      const cachedPage = this.pageDb.get(normalizedId)
-      if (cachedPage) {
-        // if we have page data in cache, mark it as stale
-        this.pageDb.set(normalizedId, {
-          ...cachedPage,
-          payload: { ...cachedPage.payload, stale: true },
-        })
-      }
-    })
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
   }
 }
 

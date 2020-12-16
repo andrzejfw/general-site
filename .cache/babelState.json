@@ -7,16 +7,10 @@
           "stage": "develop",
           "options": {
             "plugins": [],
-            "displayName": true,
-            "fileName": true,
-            "minify": true,
-            "transpileTemplateLiterals": true,
-            "pure": false,
             "ssr": false
           }
         },
         {
-<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
           "options": {}
         },
@@ -26,27 +20,12 @@
         },
         {
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
-=======
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
           "options": {}
         }
       ],
       "presets": [
         {
-<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-=======
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
           "options": {
             "plugins": []
           }
@@ -64,23 +43,11 @@
           "options": {}
         },
         {
-<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
           "options": {}
         },
         {
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
-=======
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
           "options": {}
         },
         {
@@ -88,22 +55,13 @@
           "stage": "develop-html",
           "options": {
             "plugins": [],
-            "displayName": true,
-            "fileName": true,
-            "minify": true,
-            "transpileTemplateLiterals": true,
-            "pure": false,
             "ssr": false
           }
         }
       ],
       "presets": [
         {
-<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-=======
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
           "options": {
             "plugins": []
           }
@@ -121,23 +79,11 @@
           "options": {}
         },
         {
-<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
           "options": {}
         },
         {
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
-=======
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
           "options": {}
         },
         {
@@ -145,22 +91,13 @@
           "stage": "build-html",
           "options": {
             "plugins": [],
-            "displayName": true,
-            "fileName": true,
-            "minify": true,
-            "transpileTemplateLiterals": true,
-            "pure": false,
             "ssr": true
           }
         }
       ],
       "presets": [
         {
-<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-=======
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
           "options": {
             "plugins": []
           }
@@ -178,23 +115,11 @@
           "options": {}
         },
         {
-<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
           "options": {}
         },
         {
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
-=======
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-nullish-coalescing-operator\\lib\\index.js",
-          "options": {}
-        },
-        {
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\plugin-proposal-numeric-separator\\lib\\index.js",
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
           "options": {}
         },
         {
@@ -202,22 +127,13 @@
           "stage": "build-javascript",
           "options": {
             "plugins": [],
-            "displayName": true,
-            "fileName": true,
-            "minify": true,
-            "transpileTemplateLiterals": true,
-            "pure": false,
             "ssr": true
           }
         }
       ],
       "presets": [
         {
-<<<<<<< HEAD
           "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
-=======
-          "name": "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@babel\\preset-typescript\\lib\\index.js",
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
           "options": {
             "plugins": []
           }

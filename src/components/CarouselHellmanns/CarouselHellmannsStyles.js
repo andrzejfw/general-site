@@ -8,21 +8,21 @@ const CarouselStyleHellmanns = createGlobalStyle`
   }
 
   .carousel-hellmanns h2 {
-    color: #06154b;
+    color: #004976;
     font-weight: 700;
   }
 
   .carousel-hellmanns .slick-dots li button:before{
       font-size:10px !important;
       color: white !important;
-      border: solid 2px #06154b;
+      border: solid 2px #004976;
       border-radius: 50%;
       z-index: 9;
     }
     
     .carousel-hellmanns .slick-dots li.slick-active button:before{
-      color: #06154b !important;
-      background: #06154b !important;
+      color: #004976 !important;
+      background: #004976 !important;
       opacity: 1 !important;
     }
 
@@ -31,7 +31,7 @@ const CarouselStyleHellmanns = createGlobalStyle`
     }
 
     .carousel-hellmanns .slick-prev:before, .carousel-hellmanns .slick-next:before{
-      color: #06154b;
+      color: #004976;
       opacity: 1 !important;
       font-size: 40px !important;
     }

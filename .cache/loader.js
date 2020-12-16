@@ -190,14 +190,7 @@ export class BaseLoader {
   loadPageDataJson(rawPath) {
     const pagePath = findPath(rawPath)
     if (this.pageDataDb.has(pagePath)) {
-<<<<<<< HEAD
       return Promise.resolve(this.pageDataDb.get(pagePath))
-=======
-      const pageData = this.pageDataDb.get(pagePath)
-      if (process.env.BUILD_STAGE !== `develop` || !pageData.stale) {
-        return Promise.resolve(pageData)
-      }
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
     }
 
     return this.fetchPageDataJson({ pagePath }).then(pageData => {
@@ -216,13 +209,7 @@ export class BaseLoader {
     const pagePath = findPath(rawPath)
     if (this.pageDb.has(pagePath)) {
       const page = this.pageDb.get(pagePath)
-<<<<<<< HEAD
       return Promise.resolve(page.payload)
-=======
-      if (process.env.BUILD_STAGE !== `develop` || !page.payload.stale) {
-        return Promise.resolve(page.payload)
-      }
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
     }
 
     if (this.inFlightDb.has(pagePath)) {

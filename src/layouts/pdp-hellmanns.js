@@ -6,6 +6,8 @@ import SEO from '../components/Seo/Seo'
 import CarouselHellmanns from '../components/CarouselHellmanns/CarouselHellmanns'
 import Accordion from "../components/AccordionHellmanns/AccordionHellmanns"
 import Button from "../components/ButtonHellmanns"
+import HellmannsBulletsCenter from '../assets/images/hellmanns-bg-content.png'
+import HellmannsBulletsBigMobile from '../assets/images/hellmanns-video-bg-mobile.png'
 
 const ProductContainer = styled.div`
     background:#fdf6e8;
@@ -78,6 +80,7 @@ const ProductMainInfo = styled.div`
     }
 `;
 
+
 const ProductBullets = styled.div`
     position: relative;
     display: flex;  
@@ -86,7 +89,14 @@ const ProductBullets = styled.div`
     width: 100%;
     padding: 30px 0;
     margin: 0 auto 50px;
-    background: #004976;
+    background: url(${HellmannsBulletsCenter});
+    &ProductBullets::after{
+    width: 16px;
+    position: absolute;
+    left: -16px;
+    top: -6px;
+    height:20px;
+    }
     ul{
         max-width:1200px;
         color: #fdf6e8;
@@ -99,8 +109,10 @@ const ProductBullets = styled.div`
     @media(max-width:760px){
         padding: 20px 50px;
         margin: 0 auto 20px;
+        background: url(${HellmannsBulletsBigMobile});
         li{
         margin:4px;
+        
         }
     }
 `;
