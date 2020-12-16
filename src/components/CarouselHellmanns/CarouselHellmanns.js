@@ -10,7 +10,7 @@ const SliderDiv = styled.div`
 
 const SliderTextCenter = styled.h3`
     text-align:center;
-    background:white;
+    background: transparent;
     margin-right:10px;
     margin-left:10px;
     padding:0;
@@ -106,26 +106,26 @@ function SampleNextArrow(props) {
           <SliderHellmanns {...settings}>
             <SliderDiv>
               <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/packshots/packshot/image/36/14/1f/36141f85222bdfd0.png"/>
-                <TextSlider>Domestos Power 5+ Active Blue Water Ocean WC-värskendaja 53 g</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/cache/e1/5d/e15d5773dfcb0071edd017cc3c2aa836.png"/>
+                <TextSlider>Majonees super extra 10kg</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/packshots/packshot/image/36/14/1f/36141f85222bdfd0.png"/>
-                <TextSlider>Domestos Power 5+ Active Blue Water Ocean WC-värskendaja 53 g</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/cache/9c/c1/9cc12b545162bb9880eaf07313ee17f4.png"/>
+                <TextSlider>Ketšup more red than tomatoes 3kg</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/packshots/packshot/image/36/14/1f/36141f85222bdfd0.png"/>
-                <TextSlider>Domestos Power 5+ Active Blue Water Ocean WC-värskendaja 53 g</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/cache/c0/d2/c0d2c830019d025df547558327e75283.png"/>
+                <TextSlider>Kastmed the best ever made 200g</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/packshots/packshot/image/36/14/1f/36141f85222bdfd0.png"/>
-                <TextSlider>Domestos Power 5+ Active Blue Water Ocean WC-värskendaja 53 g</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/cache/49/78/497854acb797aa49c0ac99c165436f61.png"/>
+                <TextSlider>Garlic Sauce which you won't be able to stop eating 1kg</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
           </SliderHellmanns>

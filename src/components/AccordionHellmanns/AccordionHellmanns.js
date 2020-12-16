@@ -12,16 +12,9 @@ const AccordionHellmannsTab = styled.div`
     justify-content: center;
     align-items: center;  
     text-align: center;
-    transition: 0.5s all;
-
     a {
         color:#004976;
         text-decoration: underline;
-    }
-    a:hover {
-        color: #004976;
-        -webkit-text-stroke: 1px #004976;
-        transition: 0.5s;
     }
 `;
 

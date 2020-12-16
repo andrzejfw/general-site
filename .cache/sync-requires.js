@@ -1,7 +1,7 @@
 const { hot } = require("react-hot-loader/root")
 
 // prefer default export if available
-const preferDefault = m => m && m.default || m
+const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
@@ -19,6 +19,7 @@ exports.components = {
   "component---src-pages-contact-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\contact.js"))),
   "component---src-pages-cookie-notice-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\cookie-notice.js"))),
   "component---src-pages-delivery-magnum-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\delivery-magnum.js"))),
+  "component---src-pages-graph-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\graph.js"))),
   "component---src-pages-history-hellmanns-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\history-hellmanns.js"))),
   "component---src-pages-index-domestos-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\index-domestos.js"))),
   "component---src-pages-index-hellmanns-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\index-hellmanns.js"))),

@@ -3,7 +3,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('C:/Users/marcin.tuchalski/Desktop/baltic/general-site/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"transpileTemplateLiterals":true,"pure":false},
     },{
       plugin: require('C:/Users/marcin.tuchalski/Desktop/baltic/general-site/node_modules/gatsby-plugin-layout/gatsby-ssr'),
       options: {"plugins":[]},

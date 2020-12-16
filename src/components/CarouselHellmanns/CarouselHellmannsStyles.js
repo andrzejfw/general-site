@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const CarouselStyleHellmanns = createGlobalStyle`
 .carousel-hellmanns {
-    margin:50px auto 75px;
+    margin:0 auto 75px;
     max-width: 1000px;
     text-align: center;
   }
