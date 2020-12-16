@@ -1,5 +1,7 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 exports.__esModule = true;
 exports.default = void 0;
 
@@ -7,13 +9,29 @@ var _loader = require("./loader");
 
 var _findPath = require("./find-path");
 
+var _socketIo = _interopRequireDefault(require("./socketIo"));
+
+var _normalizePagePath = _interopRequireDefault(require("./normalize-page-path"));
+
+var _isEqual = _interopRequireDefault(require("lodash/isEqual"));
+
+// TODO move away from lodash
+function mergePageEntry(cachedPage, newPageData) {
+  return { ...cachedPage,
+    payload: { ...cachedPage.payload,
+      json: newPageData.result,
+      page: { ...cachedPage.payload.page,
+        staticQueryResults: newPageData.staticQueryResults
+      }
+    }
+  };
+}
+
 class DevLoader extends _loader.BaseLoader {
   constructor(syncRequires, matchPaths) {
     const loadComponent = chunkName => Promise.resolve(syncRequires.components[chunkName]);
 
     super(loadComponent, matchPaths);
-<<<<<<< HEAD
-=======
     const socket = (0, _socketIo.default)();
     this.notFoundPagePathsInCaches = new Set();
 
@@ -30,12 +48,17 @@ class DevLoader extends _loader.BaseLoader {
     } else if (process.env.NODE_ENV !== `test`) {
       console.warn(`Could not get web socket`);
     }
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
   }
 
   loadPage(pagePath) {
     const realPath = (0, _findPath.findPath)(pagePath);
-    return super.loadPage(realPath).then(result => require(`./socketIo`).getPageData(realPath).then(() => result));
+    return super.loadPage(realPath).then(result => {
+      if (this.isPageNotFound(realPath)) {
+        this.notFoundPagePathsInCaches.add(realPath);
+      }
+
+      return result;
+    });
   }
 
   loadPageDataJson(rawPath) {
@@ -52,9 +75,6 @@ class DevLoader extends _loader.BaseLoader {
   }
 
   doPrefetch(pagePath) {
-<<<<<<< HEAD
-    return Promise.resolve(require(`./socketIo`).getPageData(pagePath));
-=======
     if (process.env.GATSBY_EXPERIMENTAL_QUERY_ON_DEMAND) {
       return Promise.resolve();
     }
@@ -155,7 +175,6 @@ class DevLoader extends _loader.BaseLoader {
         });
       }
     });
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
   }
 
 }

@@ -1,13 +1,30 @@
 import { BaseLoader, PageResourceStatus } from "./loader"
 import { findPath } from "./find-path"
 
+import getSocket from "./socketIo"
+import normalizePagePath from "./normalize-page-path"
+
+// TODO move away from lodash
+import isEqual from "lodash/isEqual"
+
+function mergePageEntry(cachedPage, newPageData) {
+  return {
+    ...cachedPage,
+    payload: {
+      ...cachedPage.payload,
+      json: newPageData.result,
+      page: {
+        ...cachedPage.payload.page,
+        staticQueryResults: newPageData.staticQueryResults,
+      },
+    },
+  }
+}
+
 class DevLoader extends BaseLoader {
   constructor(syncRequires, matchPaths) {
     const loadComponent = chunkName =>
       Promise.resolve(syncRequires.components[chunkName])
-<<<<<<< HEAD
-    super(loadComponent, matchPaths)
-=======
 
     super(loadComponent, matchPaths)
 
@@ -28,16 +45,17 @@ class DevLoader extends BaseLoader {
     } else if (process.env.NODE_ENV !== `test`) {
       console.warn(`Could not get web socket`)
     }
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
   }
 
   loadPage(pagePath) {
     const realPath = findPath(pagePath)
-    return super.loadPage(realPath).then(result =>
-      require(`./socketIo`)
-        .getPageData(realPath)
-        .then(() => result)
-    )
+    return super.loadPage(realPath).then(result => {
+      if (this.isPageNotFound(realPath)) {
+        this.notFoundPagePathsInCaches.add(realPath)
+      }
+
+      return result
+    })
   }
 
   loadPageDataJson(rawPath) {
@@ -61,9 +79,6 @@ class DevLoader extends BaseLoader {
   }
 
   doPrefetch(pagePath) {
-<<<<<<< HEAD
-    return Promise.resolve(require(`./socketIo`).getPageData(pagePath))
-=======
     if (process.env.GATSBY_EXPERIMENTAL_QUERY_ON_DEMAND) {
       return Promise.resolve()
     }
@@ -166,7 +181,6 @@ class DevLoader extends BaseLoader {
         })
       }
     })
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
   }
 }
 

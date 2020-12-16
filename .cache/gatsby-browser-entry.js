@@ -71,11 +71,7 @@ useStaticQuery(graphql\`${query}\`);
 `)
   }
 
-<<<<<<< HEAD
-  if (context?.[query]?.data) {
-=======
   if (context[query]?.data) {
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
     return context[query].data
   } else {
     throw new Error(

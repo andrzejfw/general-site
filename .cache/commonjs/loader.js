@@ -206,15 +206,11 @@ class BaseLoader {
     const pagePath = (0, _findPath.findPath)(rawPath);
 
     if (this.pageDataDb.has(pagePath)) {
-<<<<<<< HEAD
-      return Promise.resolve(this.pageDataDb.get(pagePath));
-=======
       const pageData = this.pageDataDb.get(pagePath);
 
       if (process.env.BUILD_STAGE !== `develop` || !pageData.stale) {
         return Promise.resolve(pageData);
       }
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
     }
 
     return this.fetchPageDataJson({
@@ -235,14 +231,10 @@ class BaseLoader {
 
     if (this.pageDb.has(pagePath)) {
       const page = this.pageDb.get(pagePath);
-<<<<<<< HEAD
-      return Promise.resolve(page.payload);
-=======
 
       if (process.env.BUILD_STAGE !== `develop` || !page.payload.stale) {
         return Promise.resolve(page.payload);
       }
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
     }
 
     if (this.inFlightDb.has(pagePath)) {
@@ -296,7 +288,7 @@ class BaseLoader {
           };
         }
 
-        return this.memoizedGet(`${__PATH_PREFIX__}/static/d/${staticQueryHash}.json`).then(req => {
+        return this.memoizedGet(`${__PATH_PREFIX__}/page-data/sq/d/${staticQueryHash}.json`).then(req => {
           const jsonPayload = JSON.parse(req.responseText);
           return {
             staticQueryHash,
@@ -403,7 +395,13 @@ class BaseLoader {
   }
 
   doPrefetch(pagePath) {
-    throw new Error(`doPrefetch not implemented`);
+    const pageDataUrl = createPageDataUrl(pagePath);
+    return (0, _prefetch.default)(pageDataUrl, {
+      crossOrigin: `anonymous`,
+      as: `fetch`
+    }).then(() => // This was just prefetched, so will return a response from
+    // the cache instead of making another request to the server
+    this.loadPageDataJson(pagePath));
   }
 
   hovering(rawPath) {
@@ -425,7 +423,7 @@ class BaseLoader {
   isPageNotFound(rawPath) {
     const pagePath = (0, _findPath.findPath)(rawPath);
     const page = this.pageDb.get(pagePath);
-    return page && page.notFound === true;
+    return !page || page.notFound;
   }
 
   loadAppData(retries = 0) {
@@ -474,13 +472,7 @@ class ProdLoader extends BaseLoader {
   }
 
   doPrefetch(pagePath) {
-    const pageDataUrl = createPageDataUrl(pagePath);
-    return (0, _prefetch.default)(pageDataUrl, {
-      crossOrigin: `anonymous`,
-      as: `fetch`
-    }).then(() => // This was just prefetched, so will return a response from
-    // the cache instead of making another request to the server
-    this.loadPageDataJson(pagePath)).then(result => {
+    return super.doPrefetch(pagePath).then(result => {
       if (result.status !== PageResourceStatus.Success) {
         return Promise.resolve();
       }
@@ -554,5 +546,9 @@ var _default = publicLoader;
 exports.default = _default;
 
 function getStaticQueryResults() {
-  return instance.staticQueryDb;
+  if (instance) {
+    return instance.staticQueryDb;
+  } else {
+    return {};
+  }
 }

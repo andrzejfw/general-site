@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-import * as ReactRefreshErrorOverlay from "@pmmmwh/react-refresh-webpack-plugin/src/overlay"
-import * as ReactErrorOverlay from "react-error-overlay"
-=======
 const overlayPackage =
   process.env.GATSBY_HOT_LOADER !== `fast-refresh`
     ? require(`react-error-overlay`)
     : require(`@pmmmwh/react-refresh-webpack-plugin/overlay`)
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
 
 const ErrorOverlay = {
   showCompileError:

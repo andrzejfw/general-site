@@ -113,7 +113,6 @@ const navigate = (to, options = {}) => {
           })
         }
 
-        console.log(`Site has changed on server. Reloading browser`)
         window.location = pathname
       }
     }
@@ -222,34 +221,20 @@ class RouteUpdates extends React.Component {
     onRouteUpdate(this.props.location, null)
   }
 
-<<<<<<< HEAD
-  componentDidUpdate(prevProps, prevState, shouldFireRouteUpdate) {
-    if (shouldFireRouteUpdate) {
-      onRouteUpdate(this.props.location, prevProps.location)
-    }
-  }
-
-  getSnapshotBeforeUpdate(prevProps) {
-    if (this.props.location.pathname !== prevProps.location.pathname) {
-=======
   shouldComponentUpdate(prevProps) {
     if (compareLocationProps(prevProps.location, this.props.location)) {
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
       onPreRouteUpdate(this.props.location, prevProps.location)
       return true
     }
     return false
   }
 
-<<<<<<< HEAD
-=======
   componentDidUpdate(prevProps) {
     if (compareLocationProps(prevProps.location, this.props.location)) {
       onRouteUpdate(this.props.location, prevProps.location)
     }
   }
 
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
   render() {
     return (
       <React.Fragment>

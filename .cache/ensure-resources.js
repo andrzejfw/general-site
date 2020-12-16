@@ -47,8 +47,6 @@ class EnsureResources extends React.Component {
       return false
     }
 
-<<<<<<< HEAD
-=======
     if (
       process.env.BUILD_STAGE === `develop` &&
       nextState.pageResources.stale
@@ -57,7 +55,6 @@ class EnsureResources extends React.Component {
       return false
     }
 
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
     // Check if the component or json have changed.
     if (this.state.pageResources !== nextState.pageResources) {
       return true

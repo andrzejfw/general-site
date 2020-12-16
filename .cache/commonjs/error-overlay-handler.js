@@ -2,15 +2,7 @@
 
 exports.__esModule = true;
 exports.errorMap = exports.reportError = exports.clearError = void 0;
-<<<<<<< HEAD
-
-var ReactRefreshErrorOverlay = _interopRequireWildcard(require("@pmmmwh/react-refresh-webpack-plugin/src/overlay"));
-
-var ReactErrorOverlay = _interopRequireWildcard(require("react-error-overlay"));
-
-=======
 const overlayPackage = process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? require(`react-error-overlay`) : require(`@pmmmwh/react-refresh-webpack-plugin/overlay`);
->>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
 const ErrorOverlay = {
   showCompileError: process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? overlayPackage.reportBuildError : overlayPackage.showCompileError,
   clearCompileError: process.env.GATSBY_HOT_LOADER !== `fast-refresh` ? overlayPackage.dismissBuildError : overlayPackage.clearCompileError
