@@ -40,6 +40,7 @@ import LiptonBannerAndTextStyles from "../components/LiptonBannerAndText/LiptonB
 import MagnumBannerAndTextStyles from "../components/MagnumBannerAndText/MagnumBannerAndTextStyles"
 import BannerWithVideoMagnumStyles from "../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles"
 import BannerWithVideoLiptonStyles from "../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles"
+import VideoHellmannsStyles from "../components/VideoHellmanns/VideoHellmannsStyles"
 // import CustomerChat from "../components/Messenger/Messenger"
 
 
@@ -80,6 +81,7 @@ const MainLayout = ( {children} ) => (
     <MagnumBannerAndTextStyles/>
     <BannerWithVideoMagnumStyles/>
     <BannerWithVideoLiptonStyles/>
+    <VideoHellmannsStyles/>
     {children}
     {/* <CustomerChat /> */}
 

@@ -25,6 +25,14 @@ var _syncRequires = _interopRequireDefault(require("$virtual/sync-requires"));
 var _matchPaths = _interopRequireDefault(require("$virtual/match-paths.json"));
 
 // Generated during bootstrap
+<<<<<<< HEAD
+=======
+if (process.env.GATSBY_HOT_LOADER === `fast-refresh` && module.hot) {
+  module.hot.accept(`$virtual/sync-requires`, () => {// Manually reload
+  });
+}
+
+>>>>>>> 421348c237c3172ad8d47ea64031fbed1e820d33
 window.___emitter = _emitter.default;
 const loader = new _devLoader.default(_syncRequires.default, _matchPaths.default);
 (0, _loader.setLoader)(loader);
