@@ -7,10 +7,12 @@ import CarouselHellmanns from '../components/CarouselHellmanns/CarouselHellmanns
 import Accordion from "../components/AccordionHellmanns/AccordionHellmanns"
 import Button from "../components/ButtonHellmanns"
 import HellmannsBulletsCenter from '../assets/images/hellmanns-bg-content.png'
-import HellmannsBulletsBigMobile from '../assets/images/hellmanns-video-bg-mobile.png'
+import BUp from '../assets/images/hellmanns-bg-footer.png'
+import BDown from '../assets/images/hellmanns-bg-footer.png'
 
 const ProductContainer = styled.div`
     background:#fdf6e8;
+
 `;
 
 const ProductFirstRow = styled.div`
@@ -19,14 +21,14 @@ const ProductFirstRow = styled.div`
     align-items:center;
     max-width:1200px;
     margin: 0px auto 0;  
-    width:96%;
+    width:100%;
     
     @media(max-width:780px){
         flex-direction: column;
-        margin: 30px auto 0;
     }
     @media(max-width:1264px){
         justify-content:space-between;
+        padding:30px 0 50px 0;
     }
 `;
 
@@ -80,7 +82,6 @@ const ProductMainInfo = styled.div`
     }
 `;
 
-
 const ProductBullets = styled.div`
     position: relative;
     display: flex;  
@@ -88,7 +89,7 @@ const ProductBullets = styled.div`
     align-items: center;
     width: 100%;
     padding: 30px 0;
-    margin: 0 auto 50px;
+    margin: 0 auto;
     background: url(${HellmannsBulletsCenter});
     &ProductBullets::after{
     width: 16px;
@@ -106,10 +107,10 @@ const ProductBullets = styled.div`
         }
     }
 
-    @media(max-width:760px){
+    @media(max-width:1264px){
         padding: 20px 50px;
-        margin: 0 auto 20px;
-        background: url(${HellmannsBulletsBigMobile});
+        margin: 0 auto;
+        background: url(${HellmannsBulletsCenter});
         li{
         margin:4px;
         
@@ -117,10 +118,22 @@ const ProductBullets = styled.div`
     }
 `;
 
+const BulletsUp = styled.div`
+  background-image: url(${BUp});
+  width:100%;
+  margin-bottom:-2px;
+`
+const BulletsDown = styled.div`
+    background: url(${BDown});
+    width:100%;
+    transform: rotate(180deg) scaleX(-1);
+    margin-bottom:50px;
+    margin-top:-2px;
+`
+
 const SectionAccordion = styled.div`
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 0 20px;
 
     @media(max-width:780px){
         padding: 0;
@@ -136,8 +149,9 @@ const SectionCarousel = styled.div`
     color: #fdf6e8;
 
     @media(max-width:780px){
-        margin: 50px auto;
+        margin: 0px auto;
         color: #fdf6e8;
+        padding-bottom:20px;
     }
 `;
 
@@ -190,6 +204,7 @@ const PostLayoutHellmanns = ({ data }) => {
               <Button>OSTA KOHE</Button>
             </ProductMainInfo>
           </ProductFirstRow>
+        <BulletsUp><img></img></BulletsUp>
         <ProductBullets>
           <ul>
             <li>{data.product.feature1}</li>
@@ -200,6 +215,7 @@ const PostLayoutHellmanns = ({ data }) => {
             <li>{data.product.feature6}</li>
           </ul>
         </ProductBullets>
+        <BulletsDown><img></img></BulletsDown>
           <SectionAccordion>
             <Accordion>
               {/* Ingredients */}

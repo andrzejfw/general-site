@@ -40,8 +40,8 @@ class AccordionHellmannsSection extends Component {
     const { onClick, props: { isOpen, label } } = this;
 
     return (
-      <AccordionDivHellmanns style={{background: isOpen ? "#004976"  : "#fdf6e8", color: isOpen ? "#fdf6e8"  : "#004976", transition: isOpen ? "0.2s all"  : "0.2s all",}}>
-        <div onClick={onClick} style={{ cursor: "pointer", fontWeight: "bold", transition: "0.2s all" }}>
+      <AccordionDivHellmanns style={{background: isOpen ? "#004976"  : "#fdf6e8", color: isOpen ? "#fdf6e8"  : "#004976",}}>
+        <div onClick={onClick} style={{ cursor: "pointer", fontWeight: "bold",}}>
           {label}
           <div style={{ float: "right", }}>
             {!isOpen && <span style= {{ color: "#004976"}}>&#9660;</span>}
@@ -54,7 +54,6 @@ class AccordionHellmannsSection extends Component {
               background: "transparent",
               marginTop: 10,
               padding: "0px 5px",
-              transition: "0.2s all"
             }}
           >
             {this.props.children}

@@ -52,6 +52,13 @@
       "plugins": [
         {
           "name": "babel-plugin-lodash",
+<<<<<<< HEAD
+          "options": {}
+        },
+        {
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+=======
+>>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
           "options": {}
         },
         {
@@ -100,6 +107,13 @@
       "plugins": [
         {
           "name": "babel-plugin-lodash",
+<<<<<<< HEAD
+          "options": {}
+        },
+        {
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+=======
+>>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
           "options": {}
         },
         {
@@ -148,6 +162,13 @@
       "plugins": [
         {
           "name": "babel-plugin-lodash",
+<<<<<<< HEAD
+          "options": {}
+        },
+        {
+          "name": "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@babel\\plugin-proposal-optional-chaining\\lib\\index.js",
+=======
+>>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
           "options": {}
         },
         {

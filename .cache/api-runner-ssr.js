@@ -2,7 +2,11 @@ var plugins = [{
       plugin: require('C:/Users/roksana.rebiewska/Desktop/project/New-baltyki/general-site/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+<<<<<<< HEAD
+      plugin: require('C:/Users/marcin.tuchalski/Desktop/baltic/general-site/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+=======
       plugin: require('C:/Users/roksana.rebiewska/Desktop/project/New-baltyki/general-site/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+>>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"transpileTemplateLiterals":true,"pure":false},
     },{
       plugin: require('C:/Users/roksana.rebiewska/Desktop/project/New-baltyki/general-site/node_modules/gatsby-plugin-layout/gatsby-ssr'),
