@@ -25,6 +25,7 @@ const HellmannsAboutSection = styled.section`
     background: #FDF6E8;
     color: #004976;
     h1 {margin-bottom:40px;}
+    padding-bottom:40px;
 `;
 const HellmannsAboutSectionContent = styled.section`
     width: 90vw;
@@ -164,41 +165,41 @@ const SustainabilityPage = () => {
    <SEO title="Hellmann’si ajalugu" description="Hellmann's majoneesi ajalugu. Asutaja Richard Hellmanni loodud majoneesi hakati tootma juba 1920. aastal, mis on tänapäevaks jõudnud paljude toidulauale!"/>
    <Section> 
    <Hero>
-   <HistoryHeroImage src={HeroImage} alt="Hellmanns History"/>
+   <HistoryHeroImage src={HeroImage} alt="Hellmann's ajalugu"/>
   </Hero>
    <HellmannsAboutSection>
    <h1>Ajalugu</h1>
    <HellmannsAboutSectionContent>
     <ImagewithText>
-    <Image src={Img1} alt="Eggs"></Image>
+    <Image src={Img1} alt="Richard Hellmann - Hellmann's kaubamärgi asutaja"></Image>
     <Text>
       <h2>1903</h2>
       <p>Noor Richard Hellmann oli juba 14-aastasena leidnud armastuse toidu vastu ning praktiseeris oma oskuseid kohalikul toiduturul. Edu hakkas teda saatma alles siis, kui kolis New Yorki.</p>
     </Text>
     </ImagewithText>
     <ImagewithTextOposite>
-    <Image src={Img2} alt="Eggs"></Image>
+    <Image src={Img2} alt="Hellmann's Delicatessen poe ajalugu"></Image>
     <Text>
       <h2>1913</h2>
       <p>Richard kohtas oma tulevast naist, Margareti, kelle isa oli kahe restorani omanik. Samal aastal Richard ja Maragaret abiellussid ning viisid ellu oma suure unistuse. Nad avasid oma poe ning sellega sündis Hellmann’s Delicatessen kaubamärk.</p>
     </Text>
     </ImagewithTextOposite>
     <ImagewithText>
-    <Image src={Img3} alt="Eggs"></Image>
+    <Image src={Img3} alt="Hellmann's majoneesi ajalugu"></Image>
     <Text>
       <h2>1920</h2>
       <p>Meie sünnikohaks olev deli avas uksed otse New Yorgi südames: Columbuse avenüül, Manhattanil, kus Richard alustas oma nüüdseks legendaarse majoneesi loomist. Purgid täideti ääreni maitsvate koostisosade seguga, mis olid valitud saavutamaks maksimaalselt kreemjat tekstuuri ja suurepärast maitset.</p>
     </Text>
     </ImagewithText>
     <ImagewithTextOposite>
-    <Image src={Img4} alt="Eggs"></Image>
+    <Image src={Img4} alt="Hellmann's majoneesi kvaliteet"></Image>
     <Text>
       <h2>1921</h2>
       <p>Toodet täiustati kuni Richard, Margaret ning nende kliendid uskusid, et see ongi parim võimalik majonees. Olles uhke oma toote üle, sidus Richard sinise lindi ümber majoneesi purkidega, et sellega kinnistada kõrgeimat kvaliteedi märki. Sinise lindi standard kehtib tänaseni.</p>
     </Text>
     </ImagewithTextOposite>
     <ImagewithText>
-    <Image src={Img5} alt="Eggs"></Image>
+    <Image src={Img5} alt="Hellmann'si majoneesi tehase avamine"></Image>
     <Text>
       <h2>1922</h2>
       <p>Richard avas San Franciscos majonees tehase ning maailma suurima majonees tootmise Long Island City’s, New Yorkis. 1922.a. avaldati Behrmani kirjastuses Chicagos esimene Hellmann`s majoneesi kokaraamat. Vähem kui 15 aastaga ehitas Richard Hellmann üles täiesti uue tööstuse, mida kunagi varem polnud. Rekordilise ajaga sai Hellmann`s maailma lemmikuks oma eksimatult imelise maitse ja tõelise naudingu poolest, mida ta suutis kõikjal inimeste toidulauale tuua. Richard uskus, et nauding on oluline ja see uskumus kujundab siiani meie igapäevast tööd.</p>

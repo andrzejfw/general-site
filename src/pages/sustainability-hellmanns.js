@@ -35,6 +35,7 @@ const Hero = styled.section`
 `;
 const HellmannsAboutSection = styled.section`
     background: #FDF6E8;
+    padding-bottom:40px;
 `;
 const HellmannsSustainabilitySectionContent = styled.section`
     width: 90vw;
@@ -103,7 +104,7 @@ const Text = styled.section`
 const SustainabilityPage = () => {
   return (
    <>
-   <SEO title="Telli jäätis kulleriga koju" description="Telli jäätis kulleriga koju! Oleme avanud Bolt Foodis ja Woltis virtuaalpoed Home of Ice Cream, kust saad tellida oma lemmiku jäätiste kulleriga koju!"/>
+   <SEO title="Jätkusuutlikult hangitud koostisosad" description="Hellmann'si jätkusuutlikult hangitud koostisosad. Valmistame tooteid, mis mitte ainult ei maitse hästi, vaid teevad head ka meie klientidele ja planeedile."/>
    <Section> 
    {/* <DeliveryHeroImage src={HeroImage} alt="Magnum delivery"/> */}
    <Hero>
@@ -113,34 +114,33 @@ const SustainabilityPage = () => {
   </Hero>
    <HellmannsAboutSection>
    <HellmannsSustainabilitySectionContent>
-        <h1>SUSTAINABLY SOURCED INGREDIENTS<br></br>
-        WE CARE ABOUT SUSTAINABILITY
-        </h1>
+        <h1>Jätkusuutlikult hangitud koostisosad</h1>
     <ImagewithText>
-    <Image src={Img1} alt="Eggs"></Image>
+    <Image src={Img1} alt="Me hoolime jätkusuutlikkusest"></Image>
     <Text>
-      <p>More than 100 years after Richard Hellmann opened his Deli in New York, we continue to use “Blue Ribbon Quality” ingredients to bring out the best in our mayonnaise, sauces and ketchup. We are committed to sourcing our ingredients from sustainable sources because we know that we need to make products that not only taste good, but do good for our customers and our planet.</p>
+      <h2>Me hoolime jätkusuutlikkusest</h2>
+      <p>Kuigi sellest on juba üle 100 aasta möödas, kui Richard Hellmann avas New Yorkis oma esimese restorani, jätkame me nüüdki kõrge kvaliteediga koostisosade kasutamist, et tuua oma majoneesides, kastmetes ja ketšupites välja just parim. Hangime koostisosasi jätkusuutlikest allikatest, sest tahame, et meie tooted mitte üksnes ei maitseks hästi, vaid teeks head ka meie klientidele ja plaanidele.</p>
     </Text>
     </ImagewithText>
     <ImagewithTextOposite>
-    <Image src={Img2} alt="Eggs"></Image>
+    <Image src={Img2} alt="Hellmann’si majoneesis kasutatakse õrrekanade mune"></Image>
     <Text>
-      <h2>Õrrekanade monad (cage free eggs)</h2>
+      <h2>Õrrekanade monad</h2>
       <p>Me valmistame igal aastal suures koguses majoneesi. See tähendab, et me kasutame palju mune. Ja meie pühendumus kasutada vaid puurivabasid mune muudab sõna otseses mõttes miljonite kanade elukvaliteeti väga palju. Nii et võime uhkusega öelda: oleme saavutanud oma eesmärgi kasutada õrrekanade mune. Oleme ka ainus kaubamärk, mis kasutab munapulbri asemel ehtsat munakollast
       </p>
     </Text>
     </ImagewithTextOposite>
     <ImagewithText>
-    <Image src={Img3} alt="Eggs"></Image>
+    <Image src={Img3} alt="Hellmann’s kasutatab vastutustundikult hangitud õlisid"></Image>
     <Text>
-      <h2>Vastutustundlikult hangitud õlid (sustainably sourced oils)</h2>
+      <h2>Vastutustundlikult hangitud õlid</h2>
       <p>Meie tarnijate valik põhineb sellel, kuidas nad oma saaki kasvatavad ja korjavad. Ja teeme kõik endast oleneva tagamaks, et meid õliga varustavad farmid on pühendunud vastutustundlikele põllumajandustavadele säilitamaks ja kaitsmaks oma maad tulevastele põlvkondadele.</p>
     </Text>
     </ImagewithText>
     <ImagewithTextOposite>
-    <Image src={Img4} alt="Eggs"></Image>
+    <Image src={Img4} alt="Hellmann’si ketšupis kasutatakse jätkusuutlikult korjatud tomateid."></Image>
     <Text>
-      <h2>Jätkusuutlikult korjatud tomatid (sustainably sourced tomatoes)</h2>
+      <h2>Jätkusuutlikult korjatud tomatid</h2>
       <p>Kõik Hellmann`s ketšupid on valmistatud säästlikult hangitud tomatitest, tooted ei sisalda säilitusaineid ning on valmistatud ehtsatest ja puhastest koostisosadest.
       </p>
       <p>Me usume, et tomatid on ideaalse ketšupi saladuseks. Ja hoolitseme selle eest, et meie tooted oleksid vaid kõrgeima kvaliteediga! Samuti me teame, et parima maitsega tomatid pärinevad parimatest kasvukohtadest. Seetõttu oleme pühendunud oma ketšupite valmistamisel säästlikult kasvatatud ja korjatud tomatite kasutamisele. Lisaks nende kõrgele kvaliteedile kaitseb selline tarneahel jätkusuutlikku põllumajandust ka tulevaste põlvkondade jaoks.</p>

@@ -12,7 +12,7 @@ const HeaderHellmannsStyles = createGlobalStyle`
     text-align: center;
     background: #fdf6e8;
 
-    @media(max-width:692px){
+    @media(max-width:992px){
         display: none;
     }
 
