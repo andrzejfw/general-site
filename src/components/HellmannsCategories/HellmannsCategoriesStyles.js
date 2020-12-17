@@ -28,7 +28,7 @@ const HellmannsCategoriesStyles = createGlobalStyle`
     flex-direction: row;
     justify-content: center;
 
-    @media(max-width:692px){
+    @media(max-width:992px){
         flex-direction: column;
         margin: 0;
       }
@@ -51,12 +51,12 @@ const HellmannsCategoriesStyles = createGlobalStyle`
         align-items: center;
         height: 2rem;
 
-        @media(max-width:692px){
+        @media(max-width:992px){
         height: auto;
         }
     }
 
-    @media(max-width:692px){
+    @media(max-width:992px){
         margin: 10px auto;
         max-width: 100%;
         width: 90vw;
@@ -82,7 +82,7 @@ const HellmannsCategoriesStyles = createGlobalStyle`
     background: linear-gradient(180deg, transparent 20%,20%, #ffc72e 80%,80%, transparent 100%);
     margin: 0 -20px;
 
-    @media(max-width:692px){
+    @media(max-width:992px){
         margin: 0;
     }   
 }
