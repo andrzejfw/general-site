@@ -39,8 +39,10 @@ import MagnumCategoriesStyles from "../components/MagnumCategories/MagnumCategor
 import HellmannsCategoriesStyles from "../components/HellmannsCategories/HellmannsCategoriesStyles"
 import LiptonBannerAndTextStyles from "../components/LiptonBannerAndText/LiptonBannerAndTextStyles"
 import MagnumBannerAndTextStyles from "../components/MagnumBannerAndText/MagnumBannerAndTextStyles"
+import HellmannsBannerAndTextStyles from "../components/HellmannsBannerAndText/HellmannsBannerAndTextStyles"
 import BannerWithVideoMagnumStyles from "../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles"
 import BannerWithVideoLiptonStyles from "../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles"
+import BannerWithVideoHellmannsStyles from "../components/BannerWithVideoHellmanns/BannerWithVideoHellmannsStyles"
 import VideoHellmannsStyles from "../components/VideoHellmanns/VideoHellmannsStyles"
 // import CustomerChat from "../components/Messenger/Messenger"
 
@@ -81,8 +83,10 @@ const MainLayout = ( {children} ) => (
     <HellmannsCategoriesStyles/>
     <LiptonBannerAndTextStyles/>
     <MagnumBannerAndTextStyles/>
+    <HellmannsBannerAndTextStyles/>
     <BannerWithVideoMagnumStyles/>
     <BannerWithVideoLiptonStyles/>
+    <BannerWithVideoHellmannsStyles/>
     <VideoHellmannsStyles/>
     {children}
     {/* <CustomerChat /> */}

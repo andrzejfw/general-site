@@ -79,7 +79,12 @@ const HellmannsCategoriesStyles = createGlobalStyle`
 }
 
 .hellmanns-img-div {
-    background: linear-gradient(180deg, transparent 20%,20%, #ffc72e 80%,80%, transparent 100%);   
+    background: linear-gradient(180deg, transparent 20%,20%, #ffc72e 80%,80%, transparent 100%);
+    margin: 0 -20px;
+
+    @media(max-width:692px){
+        margin: 0;
+    }   
 }
 
 .hellmanns-button-div {

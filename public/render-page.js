@@ -1,14 +1,5 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-<<<<<<< HEAD
-		module.exports = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
-	else if(typeof define === 'function' && define.amd)
-		define("lib", ["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
-	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
-	else
-		root["lib"] = factory(root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
-=======
 		module.exports = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
 		define("lib", ["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
@@ -16,7 +7,6 @@
 		exports["lib"] = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
 		root["lib"] = factory(root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -7395,11 +7385,7 @@ try {
   Layout = preferDefault(__webpack_require__(/*! ./src/layouts/index */ "./src/layouts/index.js"));
 } catch (e) {
   if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-<<<<<<< HEAD
-    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
-=======
     throw new Error("Couldn't find layout component at \"" + "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
   } else {
     // Logging the error for debugging older browsers as there is no way
     // to wrap the thrown error in a try/catch.
@@ -47781,7 +47767,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.carousel-hellmanns {\n    margin:50px auto 75px;\n    max-width: 1000px;\n    text-align: center;\n  }\n\n  .carousel-hellmanns h2 {\n    color: #004976;\n    font-weight: 700;\n  }\n\n  .carousel-hellmanns .slick-dots li button:before{\n      font-size:10px !important;\n      color: white !important;\n      border: solid 2px #004976;\n      border-radius: 50%;\n      z-index: 9;\n    }\n    \n    .carousel-hellmanns .slick-dots li.slick-active button:before{\n      color: #004976 !important;\n      background: #004976 !important;\n      opacity: 1 !important;\n    }\n\n    .slick-prev {\n        left: -50px !important;\n    }\n\n    .carousel-hellmanns .slick-prev:before, .carousel-hellmanns .slick-next:before{\n      color: #004976;\n      opacity: 1 !important;\n      font-size: 40px !important;\n    }\n    .carousel-hellmanns .Carousel__SliderDiv-dxiygc{\n      margin:0 10px;\n      @media(max-width:992px){\n        margin: 0 !important;\n      }\n    }\n    /* .carousel-lipton .slick-prev, .carousel-lipton .slick-next{\n      z-index:99;\n    } */\n\n    .carousel-hellmanns .slick-slider{\n        margin:40px auto;\n      }\n\n    @media(max-width:1470px){\n      .carousel-hellmanns .slick-slider{\n        max-width:1100px; \n      }\n    }\n    \n    @media(max-width:1170px){.carousel-hellmanns .slick-slider{max-width:768px !important;}}\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.carousel-hellmanns {\n    margin:0 auto 75px;\n    max-width: 1000px;\n    text-align: center;\n  }\n\n  .carousel-hellmanns h2 {\n    color: #004976;\n    font-weight: 700;\n  }\n\n  .carousel-hellmanns .slick-dots li button:before{\n      font-size:10px !important;\n      color: white !important;\n      border: solid 2px #004976;\n      border-radius: 50%;\n      z-index: 9;\n    }\n    \n    .carousel-hellmanns .slick-dots li.slick-active button:before{\n      color: #004976 !important;\n      background: #004976 !important;\n      opacity: 1 !important;\n    }\n\n    .slick-prev {\n        left: -50px !important;\n    }\n\n    .carousel-hellmanns .slick-prev:before, .carousel-hellmanns .slick-next:before{\n      color: #004976;\n      opacity: 1 !important;\n      font-size: 40px !important;\n    }\n    .carousel-hellmanns .Carousel__SliderDiv-dxiygc{\n      margin:0 10px;\n      @media(max-width:992px){\n        margin: 0 !important;\n      }\n    }\n    /* .carousel-lipton .slick-prev, .carousel-lipton .slick-next{\n      z-index:99;\n    } */\n\n    .carousel-hellmanns .slick-slider{\n        margin:40px auto;\n      }\n\n    @media(max-width:1470px){\n      .carousel-hellmanns .slick-slider{\n        max-width:1100px; \n      }\n    }\n    \n    @media(max-width:1170px){.carousel-hellmanns .slick-slider{max-width:768px !important;}}\n  "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49242,6 +49228,35 @@ var HeaderMagnumStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["
 
 /***/ }),
 
+/***/ "./src/components/HellmannsCategories/HellmannsCategoriesStyles.js":
+/*!*************************************************************************!*\
+  !*** ./src/components/HellmannsCategories/HellmannsCategoriesStyles.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteralLoose */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.hellmanns-categories-section {\n    margin: 50px auto;\n\n    h2 {\n        margin: 0 auto;\n        color: #004976;\n        text-align: center;\n        font-weight: 700;\n        text-transform: uppercase;\n        border-bottom: 15px solid #ffc72e;\n        width: 350px;\n        height: 2.5rem;\n\n        @media(max-width:692px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n}\n\n.hellmanns-boxes-section {\n    margin: 20px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n\n    @media(max-width:692px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.hellmanns-category-box {\n    padding: 30px 50px;\n    margin: 0 20px;\n    max-width: 350px;\n    text-align: center;\n\n    h3 {\n        color:#004976;\n        text-align: center;\n        font-size: 26px;\n        font-weight:700;\n        text-transform: uppercase;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 2rem;\n\n        @media(max-width:692px){\n        height: auto;\n        }\n    }\n\n    @media(max-width:692px){\n        margin: 10px auto;\n        max-width: 100%;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 200px;\n    transition:.5s;\n     \n\n        &:hover {\n            transform: scale(1.1);\n        }\n        \n    }\n}\n\n.hellmanns-img-div {\n    background: linear-gradient(180deg, transparent 20%,20%, #ffc72e 80%,80%, transparent 100%);   \n}\n\n.hellmanns-button-div {\n    margin: 10px -20px -30px;\n\n    \n}\n\n.hellmanns-categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var HellmannsCategoriesStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+/* harmony default export */ __webpack_exports__["default"] = (HellmannsCategoriesStyles);
+
+/***/ }),
+
 /***/ "./src/components/LiptonBannerAndText/LiptonBannerAndTextStyles.js":
 /*!*************************************************************************!*\
   !*** ./src/components/LiptonBannerAndText/LiptonBannerAndTextStyles.js ***!
@@ -49551,11 +49566,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../components/Quotes/QuotesStyles */ "./src/components/Quotes/QuotesStyles.js");
 /* harmony import */ var _components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../components/LiptonCategories/LiptonCategoriesStyles */ "./src/components/LiptonCategories/LiptonCategoriesStyles.js");
 /* harmony import */ var _components_MagnumCategories_MagnumCategoriesStyles__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../components/MagnumCategories/MagnumCategoriesStyles */ "./src/components/MagnumCategories/MagnumCategoriesStyles.js");
-/* harmony import */ var _components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../components/LiptonBannerAndText/LiptonBannerAndTextStyles */ "./src/components/LiptonBannerAndText/LiptonBannerAndTextStyles.js");
-/* harmony import */ var _components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../components/MagnumBannerAndText/MagnumBannerAndTextStyles */ "./src/components/MagnumBannerAndText/MagnumBannerAndTextStyles.js");
-/* harmony import */ var _components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles */ "./src/components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles.js");
-/* harmony import */ var _components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles */ "./src/components/BannerWithVideoLipton/BannerWithVideoLiptonStyles.js");
-/* harmony import */ var _components_VideoHellmanns_VideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../components/VideoHellmanns/VideoHellmannsStyles */ "./src/components/VideoHellmanns/VideoHellmannsStyles.js");
+/* harmony import */ var _components_HellmannsCategories_HellmannsCategoriesStyles__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../components/HellmannsCategories/HellmannsCategoriesStyles */ "./src/components/HellmannsCategories/HellmannsCategoriesStyles.js");
+/* harmony import */ var _components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../components/LiptonBannerAndText/LiptonBannerAndTextStyles */ "./src/components/LiptonBannerAndText/LiptonBannerAndTextStyles.js");
+/* harmony import */ var _components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../components/MagnumBannerAndText/MagnumBannerAndTextStyles */ "./src/components/MagnumBannerAndText/MagnumBannerAndTextStyles.js");
+/* harmony import */ var _components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles */ "./src/components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles.js");
+/* harmony import */ var _components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles */ "./src/components/BannerWithVideoLipton/BannerWithVideoLiptonStyles.js");
+/* harmony import */ var _components_VideoHellmanns_VideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../components/VideoHellmanns/VideoHellmannsStyles */ "./src/components/VideoHellmanns/VideoHellmannsStyles.js");
+
 
 
 
@@ -49602,7 +49619,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var MainLayout = function MainLayout(_ref) {
   var children = _ref.children;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderHellmanns_HeaderHellmanns__WEBPACK_IMPORTED_MODULE_29__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderHellmanns_HeaderHellmannsStyles__WEBPACK_IMPORTED_MODULE_30__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderHellmanns_HeaderBurgerHellmanns__WEBPACK_IMPORTED_MODULE_31__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderHellmanns_HeaderBurgerHellmannsStyles__WEBPACK_IMPORTED_MODULE_32__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_12__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_33__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_34__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_35__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_13__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_14__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_15__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselDomestos_CarouselDomestosStyles_js__WEBPACK_IMPORTED_MODULE_16__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselHellmanns_CarouselHellmannsStyles_js__WEBPACK_IMPORTED_MODULE_17__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_36__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumCategories_MagnumCategoriesStyles__WEBPACK_IMPORTED_MODULE_37__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_36__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_38__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_39__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_40__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_41__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_VideoHellmanns_VideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_42__["default"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterHellmanns_FooterHellmanns_js__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterHellmanns_FooterHellmannsStyles_js__WEBPACK_IMPORTED_MODULE_10__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderHellmanns_HeaderHellmanns__WEBPACK_IMPORTED_MODULE_29__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderHellmanns_HeaderHellmannsStyles__WEBPACK_IMPORTED_MODULE_30__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderHellmanns_HeaderBurgerHellmanns__WEBPACK_IMPORTED_MODULE_31__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderHellmanns_HeaderBurgerHellmannsStyles__WEBPACK_IMPORTED_MODULE_32__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_12__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_33__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_34__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_35__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_13__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_14__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_15__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselDomestos_CarouselDomestosStyles_js__WEBPACK_IMPORTED_MODULE_16__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselHellmanns_CarouselHellmannsStyles_js__WEBPACK_IMPORTED_MODULE_17__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_36__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumCategories_MagnumCategoriesStyles__WEBPACK_IMPORTED_MODULE_37__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_36__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HellmannsCategories_HellmannsCategoriesStyles__WEBPACK_IMPORTED_MODULE_38__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_39__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_40__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_41__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_42__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_VideoHellmanns_VideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_43__["default"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterHellmanns_FooterHellmanns_js__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterHellmanns_FooterHellmannsStyles_js__WEBPACK_IMPORTED_MODULE_10__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MainLayout);
@@ -49610,15 +49627,9 @@ var MainLayout = function MainLayout(_ref) {
 /***/ }),
 
 /***/ "@reach/router":
-<<<<<<< HEAD
-/*!*********************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js" ***!
-  \*********************************************************************************************************************/
-=======
 /*!************************************************************************************************************************************!*\
   !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js" ***!
   \************************************************************************************************************************************/
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -49627,15 +49638,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ }),
 
 /***/ "@reach/router/lib/history":
-<<<<<<< HEAD
-/*!****************************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
-  \****************************************************************************************************************************/
-=======
 /*!*******************************************************************************************************************************************!*\
   !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
   \*******************************************************************************************************************************************/
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -49644,15 +49649,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__;
 /***/ }),
 
 /***/ "lodash/merge":
-<<<<<<< HEAD
-/*!*************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js" ***!
-  \*************************************************************************************************************/
-=======
 /*!****************************************************************************************************************************!*\
   !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js" ***!
   \****************************************************************************************************************************/
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
 /*! no static exports found */
 /***/ (function(module, exports) {
 
