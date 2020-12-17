@@ -8,7 +8,6 @@ exports.components = {
   "component---src-layouts-pdp-magnum-js": () => import("./../../../src/layouts/pdp-magnum.js" /* webpackChunkName: "component---src-layouts-pdp-magnum-js" */),
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-domestos-js": () => import("./../../../src/pages/about-domestos.js" /* webpackChunkName: "component---src-pages-about-domestos-js" */),
-  "component---src-pages-about-hellmanns-js": () => import("./../../../src/pages/about-hellmanns.js" /* webpackChunkName: "component---src-pages-about-hellmanns-js" */),
   "component---src-pages-about-js": () => import("./../../../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
   "component---src-pages-about-magnum-js": () => import("./../../../src/pages/about-magnum.js" /* webpackChunkName: "component---src-pages-about-magnum-js" */),
   "component---src-pages-blog-domestos-js": () => import("./../../../src/pages/blog-domestos.js" /* webpackChunkName: "component---src-pages-blog-domestos-js" */),

@@ -11,7 +11,6 @@ exports.components = {
   "component---src-layouts-pdp-magnum-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\pdp-magnum.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\404.js"))),
   "component---src-pages-about-domestos-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\about-domestos.js"))),
-  "component---src-pages-about-hellmanns-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\about-hellmanns.js"))),
   "component---src-pages-about-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\about.js"))),
   "component---src-pages-about-magnum-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\about-magnum.js"))),
   "component---src-pages-blog-domestos-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\blog-domestos.js"))),
