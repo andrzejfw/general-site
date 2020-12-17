@@ -1,6 +1,5 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-<<<<<<< HEAD
 		module.exports = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
 		define("lib", ["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
@@ -8,15 +7,6 @@
 		exports["lib"] = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
 		root["lib"] = factory(root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
-=======
-		module.exports = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
-	else if(typeof define === 'function' && define.amd)
-		define("lib", ["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
-	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
-	else
-		root["lib"] = factory(root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -7395,11 +7385,7 @@ try {
   Layout = preferDefault(__webpack_require__(/*! ./src/layouts/index */ "./src/layouts/index.js"));
 } catch (e) {
   if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-<<<<<<< HEAD
     throw new Error("Couldn't find layout component at \"" + "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
-=======
-    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
   } else {
     // Logging the error for debugging older browsers as there is no way
     // to wrap the thrown error in a try/catch.
@@ -47781,7 +47767,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.carousel-hellmanns {\n    margin:50px auto 75px;\n    max-width: 1000px;\n    text-align: center;\n  }\n\n  .carousel-hellmanns h2 {\n    color: #004976;\n    font-weight: 700;\n  }\n\n  .carousel-hellmanns .slick-dots li button:before{\n      font-size:10px !important;\n      color: white !important;\n      border: solid 2px #004976;\n      border-radius: 50%;\n      z-index: 9;\n    }\n    \n    .carousel-hellmanns .slick-dots li.slick-active button:before{\n      color: #004976 !important;\n      background: #004976 !important;\n      opacity: 1 !important;\n    }\n\n    .slick-prev {\n        left: -50px !important;\n    }\n\n    .carousel-hellmanns .slick-prev:before, .carousel-hellmanns .slick-next:before{\n      color: #004976;\n      opacity: 1 !important;\n      font-size: 40px !important;\n    }\n    .carousel-hellmanns .Carousel__SliderDiv-dxiygc{\n      margin:0 10px;\n      @media(max-width:992px){\n        margin: 0 !important;\n      }\n    }\n    /* .carousel-lipton .slick-prev, .carousel-lipton .slick-next{\n      z-index:99;\n    } */\n\n    .carousel-hellmanns .slick-slider{\n        margin:40px auto;\n      }\n\n    @media(max-width:1470px){\n      .carousel-hellmanns .slick-slider{\n        max-width:1100px; \n      }\n    }\n    \n    @media(max-width:1170px){.carousel-hellmanns .slick-slider{max-width:768px !important;}}\n  "]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.carousel-hellmanns {\n    margin:0 auto 75px;\n    max-width: 1000px;\n    text-align: center;\n  }\n\n  .carousel-hellmanns h2 {\n    color: #004976;\n    font-weight: 700;\n  }\n\n  .carousel-hellmanns .slick-dots li button:before{\n      font-size:10px !important;\n      color: white !important;\n      border: solid 2px #004976;\n      border-radius: 50%;\n      z-index: 9;\n    }\n    \n    .carousel-hellmanns .slick-dots li.slick-active button:before{\n      color: #004976 !important;\n      background: #004976 !important;\n      opacity: 1 !important;\n    }\n\n    .slick-prev {\n        left: -50px !important;\n    }\n\n    .carousel-hellmanns .slick-prev:before, .carousel-hellmanns .slick-next:before{\n      color: #004976;\n      opacity: 1 !important;\n      font-size: 40px !important;\n    }\n    .carousel-hellmanns .Carousel__SliderDiv-dxiygc{\n      margin:0 10px;\n      @media(max-width:992px){\n        margin: 0 !important;\n      }\n    }\n    /* .carousel-lipton .slick-prev, .carousel-lipton .slick-next{\n      z-index:99;\n    } */\n\n    .carousel-hellmanns .slick-slider{\n        margin:40px auto;\n      }\n\n    @media(max-width:1470px){\n      .carousel-hellmanns .slick-slider{\n        max-width:1100px; \n      }\n    }\n    \n    @media(max-width:1170px){.carousel-hellmanns .slick-slider{max-width:768px !important;}}\n  "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49610,15 +49596,9 @@ var MainLayout = function MainLayout(_ref) {
 /***/ }),
 
 /***/ "@reach/router":
-<<<<<<< HEAD
 /*!*********************************************************************************************************************!*\
   !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js" ***!
   \*********************************************************************************************************************/
-=======
-/*!************************************************************************************************************************************!*\
-  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js" ***!
-  \************************************************************************************************************************************/
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -49627,15 +49607,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ }),
 
 /***/ "@reach/router/lib/history":
-<<<<<<< HEAD
 /*!****************************************************************************************************************************!*\
   !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
   \****************************************************************************************************************************/
-=======
-/*!*******************************************************************************************************************************************!*\
-  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
-  \*******************************************************************************************************************************************/
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -49644,15 +49618,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__;
 /***/ }),
 
 /***/ "lodash/merge":
-<<<<<<< HEAD
 /*!*************************************************************************************************************!*\
   !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js" ***!
   \*************************************************************************************************************/
-=======
-/*!****************************************************************************************************************************!*\
-  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js" ***!
-  \****************************************************************************************************************************/
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
 /*! no static exports found */
 /***/ (function(module, exports) {
 

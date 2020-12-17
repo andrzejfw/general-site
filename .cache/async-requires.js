@@ -8,6 +8,7 @@ exports.components = {
   "component---src-layouts-pdp-magnum-js": () => import("./../../../src/layouts/pdp-magnum.js" /* webpackChunkName: "component---src-layouts-pdp-magnum-js" */),
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-domestos-js": () => import("./../../../src/pages/about-domestos.js" /* webpackChunkName: "component---src-pages-about-domestos-js" */),
+  "component---src-pages-about-hellmanns-js": () => import("./../../../src/pages/about-hellmanns.js" /* webpackChunkName: "component---src-pages-about-hellmanns-js" */),
   "component---src-pages-about-js": () => import("./../../../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
   "component---src-pages-about-magnum-js": () => import("./../../../src/pages/about-magnum.js" /* webpackChunkName: "component---src-pages-about-magnum-js" */),
   "component---src-pages-blog-domestos-js": () => import("./../../../src/pages/blog-domestos.js" /* webpackChunkName: "component---src-pages-blog-domestos-js" */),
@@ -16,10 +17,7 @@ exports.components = {
   "component---src-pages-contact-js": () => import("./../../../src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-cookie-notice-js": () => import("./../../../src/pages/cookie-notice.js" /* webpackChunkName: "component---src-pages-cookie-notice-js" */),
   "component---src-pages-delivery-magnum-js": () => import("./../../../src/pages/delivery-magnum.js" /* webpackChunkName: "component---src-pages-delivery-magnum-js" */),
-<<<<<<< HEAD
   "component---src-pages-graph-js": () => import("./../../../src/pages/graph.js" /* webpackChunkName: "component---src-pages-graph-js" */),
-=======
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
   "component---src-pages-history-hellmanns-js": () => import("./../../../src/pages/history-hellmanns.js" /* webpackChunkName: "component---src-pages-history-hellmanns-js" */),
   "component---src-pages-index-domestos-js": () => import("./../../../src/pages/index-domestos.js" /* webpackChunkName: "component---src-pages-index-domestos-js" */),
   "component---src-pages-index-hellmanns-js": () => import("./../../../src/pages/index-hellmanns.js" /* webpackChunkName: "component---src-pages-index-hellmanns-js" */),
@@ -33,10 +31,7 @@ exports.components = {
   "component---src-pages-products-magnum-js": () => import("./../../../src/pages/products-magnum.js" /* webpackChunkName: "component---src-pages-products-magnum-js" */),
   "component---src-pages-purpose-lipton-js": () => import("./../../../src/pages/purpose-lipton.js" /* webpackChunkName: "component---src-pages-purpose-lipton-js" */),
   "component---src-pages-purpose-one-hellmanns-js": () => import("./../../../src/pages/purpose-one-hellmanns.js" /* webpackChunkName: "component---src-pages-purpose-one-hellmanns-js" */),
-<<<<<<< HEAD
-=======
   "component---src-pages-purpose-two-hellmanns-js": () => import("./../../../src/pages/purpose-two-hellmanns.js" /* webpackChunkName: "component---src-pages-purpose-two-hellmanns-js" */),
->>>>>>> ce7445be892b299ecde304d6663ee41c5fa2fd95
   "component---src-pages-sitemap-js": () => import("./../../../src/pages/sitemap.js" /* webpackChunkName: "component---src-pages-sitemap-js" */),
   "component---src-pages-sustainability-domestos-js": () => import("./../../../src/pages/sustainability-domestos.js" /* webpackChunkName: "component---src-pages-sustainability-domestos-js" */),
   "component---src-pages-sustainability-hellmanns-js": () => import("./../../../src/pages/sustainability-hellmanns.js" /* webpackChunkName: "component---src-pages-sustainability-hellmanns-js" */),
