@@ -58,7 +58,7 @@ const IndexPageHellmanns = () => {
         backgroundMobile={backgroundMobile}
         button
         videoButtonCTA="Loe lähemalt"
-        videoButtonLink="/"
+        videoButtonLink="/sustainability-hellmanns"
         mobileHeight="700px"
         >
     </BannerWithVideoHellmanns>
