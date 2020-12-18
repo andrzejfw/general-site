@@ -9,7 +9,7 @@ const DomestosCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => 
         <>
                 <div className="domestos-category-box">
                 <Link to={categoryLink}>
-                        <h3 className="domestos-categories-h3">{categoryTitle}</h3>
+                        <h2 className="domestos-categories-h3">{categoryTitle}</h2>
                     </Link>
                     <Link to={categoryLink}>
                         <div className="domestos-img-div">

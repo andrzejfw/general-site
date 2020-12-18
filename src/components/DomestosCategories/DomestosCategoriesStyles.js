@@ -1,19 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
+import Background from '../../assets/images/category-domestos-background.png'
 
 const DomestosCategoriesStyles = createGlobalStyle`
+
 
 .domestos-categories-section {
     margin: 50px auto;
 
-    h2 {
+    h1 {
         margin: 0 auto;
-        color: #004976;
+        color: #06154b;
         text-align: center;
         font-weight: 700;
         text-transform: uppercase;
-        border-bottom: 15px solid #ffc72e;
-        width: 350px;
-        height: 2.5rem;
 
         @media(max-width:692px){
         width: 90vw;
@@ -40,8 +39,8 @@ const DomestosCategoriesStyles = createGlobalStyle`
     max-width: 350px;
     text-align: center;
 
-    h3 {
-        color:#004976;
+    h2 {
+        color:#06154b;
         text-align: center;
         font-size: 26px;
         font-weight:700;
@@ -79,13 +78,29 @@ const DomestosCategoriesStyles = createGlobalStyle`
 }
 
 .domestos-img-div {
-    background: linear-gradient(180deg, transparent 20%,20%, #ffc72e 80%,80%, transparent 100%);
     margin: 0 -20px;
-
+    position:relative;
+    padding:20px;
     @media(max-width:992px){
         margin: 0;
-    }   
+    }
+    transition: background-color 0.5s ease-out;
 }
+.domestos-img-div:after {
+    content:'';
+    background: #06154b no-repeat center center;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.1;
+}
+.domestos-img-div:hover {
+    background: #b5b9c9;
+    }
+
 
 .domestos-button-div {
     margin: 10px -20px -30px;

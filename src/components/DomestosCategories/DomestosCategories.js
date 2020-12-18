@@ -14,7 +14,7 @@ class DomestosCategories extends Component {
 
         return (
             <section className="domestos-categories-section">
-                <h2>{sectionTitle}</h2>
+                <h1>{sectionTitle}</h1>
                 <div className="domestos-boxes-section">
                     {children}
                 </div>

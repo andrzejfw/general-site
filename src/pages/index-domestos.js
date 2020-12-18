@@ -7,9 +7,9 @@ import Accordion from "../components/AccordionDomestos/AccordionDomestos"
 import VideoHero from '../assets/videos/domestos-homepage.mp4';
 import DomestosCategories from '../components/DomestosCategories/DomestosCategories'
 import DomestosCategoriesBox from '../components/DomestosCategories/DomestosCategoriesBox'
-import Mayo from '../assets/images/hellmanns-mayo.png'
-import Sauce from '../assets/images/hellmanns-sauce.png'
-import Ketchup from '../assets/images/hellmanns-ketchup.png'
+import Bottle from '../assets/images/domestos-bottle.png'
+import Blocks from '../assets/images/domestos-blocks.png'
+import Bottle2 from '../assets/images/domestos-bottle2.png'
 
 const Section = styled.section`
     width:100%;
@@ -17,10 +17,10 @@ const Section = styled.section`
     margin-bottom:30px;
 `;
 
-const DomestosAboutSection = styled.section`
+const DomestosIndexSection = styled.section`
     width: 90vw;
     max-width: 1200px;
-    padding-top:80px;
+    
     margin: 0 auto;
     ul {
       padding-left:20px;
@@ -30,7 +30,7 @@ const DomestosAboutSection = styled.section`
       margin-bottom:10px;
     }
     @media(max-width:992px){
-    padding-top:80px;
+ 
     }
 `;
 const Hero = styled.section`
@@ -55,42 +55,6 @@ const Hero = styled.section`
     }
   }
 `;
-const SectionAccordion = styled.div`
-    max-width: 1000px;
-    margin: 0 auto;
-    @media(max-width:992px){
-    padding:0px;
-    }
-    img {
-    max-width: 40vw;
-    padding: 20px;
-    @media(max-width:992px){
-    width:100%;
-    max-width:100%;
-    padding:0px;
-    }
-    }
-    &Accordion {
-      padding: 15px 0px;
-    }
-`;
-
-const AccordionTab = styled.div`
-    max-width:1240px;  
-`;
-// const DeliveryHeroImage = styled.img`
-//     width: 100%;
-//     object-fit:cover;
-
-//     @media(max-width:992px){
-//         height: 300px;
-//         object-fit: cover;
-//         object-position: -370px;
-//     }
-// `;
-
-
-
 const IndexPage = () => {
   return (
    <>
@@ -103,53 +67,13 @@ const IndexPage = () => {
    <Section> 
    {/* <DeliveryHeroImage src={HeroImage} alt="Magnum delivery"/> */}
    {/* <AboutHeroImage src={HeroBanner} alt="Lipton Eesti jätkusuutlik tee"/> */}
-   <DomestosAboutSection>
+   <DomestosIndexSection>
    <DomestosCategories sectionTitle="Meie kategooriaid">
-      <DomestosCategoriesBox categoryTitle="Majonees" categoryImage={Mayo} categoryLink="/" alt="Hellmann's Majonees"></DomestosCategoriesBox>
-      <DomestosCategoriesBox categoryTitle="Ketšup" categoryImage={Ketchup} categoryLink="/" alt="Hellmann's Ketšup"></DomestosCategoriesBox>
-      <DomestosCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/" alt="Hellmann's Kastmed"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="Bottle" categoryImage={Bottle} categoryLink="/" alt="Hellmann's Majonees"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="Blocks" categoryImage={Blocks} categoryLink="/" alt="Hellmann's Ketšup"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="Fresh" categoryImage={Bottle2} categoryLink="/" alt="Hellmann's Kastmed"></DomestosCategoriesBox>
     </DomestosCategories>
-    <h1>Jätkusuutlikult hangitud koostisosad</h1>
-    <p>Kujundame uut koristamise tulevikku ja see algab sajanditevanuse keemiaajaloo uuesti leiutamisest. Miljardid inimesed üle kogu maailma soovivad tooteid, mis on mikroobidele ja plekkidele veelgi vastupidavamad ning mida on veelgi mugavam kasutada. Küll aga soovivad ka inimesed, et need tooted oleksid planeedi suhtes hoolivamavad. Teadus ja tehnoloogia on jõudnud nii kaugele, et see on nüüd võimalik!</p>
-    <img src={HeroBanner} alt=""></img>
-    <p>Põlvkondade vältel oleme aidanud eemaldada mustust ja plekke, mis aitavad inimestel elada tervislikumalt ja nauditavamalt.</p>
-    <p>Meie jõupingutused keskkonnamõju vähendamiseks on olnud märkimisväärsed ja mõningal määral murrangulised, kuid teame, et peame tegema veelgi rohkem. Veel suuremas mastaabis ja veel kiiremini. See kõik algab koostisosadest, mida kasutame. Koostisosad põhjustavad kasvuhoonegaaside ja heitkoguste suurima osa kogu meie kodukeemia tootmisprotsessi vältel ning peame seda muutma.</p>
-    <p>Nii oleme välja pakkunud uue strateegia – puhas tulevik ja nii muudame mõned maailma kõige populaarsemad koristus- ja pesupesemisbrändid palju jätkusuutlikumaks kui varem. Võtame kasutusse taastuvaid ja ringlussevõetud süsinikuallikaid, et peatada sõltuvus asendamatutest fosiilkütustest maapõuest. Kasutades jätkusuutlikke aineid, saame mängida oma osa võitluses kliimamuutusega ja aidata säilitada, taastada ja uuendada planeedi loodusvarasid.</p>
-    <h2>Innovatsioon revolutsiooni taga</h2>
-    <p>Muudame kõike alates koostisosade valmisest kuni puhastus- ja pesutoodete pakendamiseni. Puhta tuleviku kaudu püüame aastaks 2030 asendada 100% fosiilkütustest pärinevast süsinikust kodukeemia toodete formulatsioonides taastuva või ringlussevõetud süsinikuga.</p>
-    <p>Kuid see pole veel kõik, Unileveris oleme pühendunud saavutamaks järgmised eesmärgid:
-      <ul>
-        <li>Metsaraiest vaba tarneahelda saavutamine aastaks 2023.</li>
-        <li>Tagame täielikult süsinikust heitgaasidevaba tootmise aastaks 2039.</li>
-        <li>Vähendame meie toodete mõjul tekkivate kasvuhoonegaaside hulka poole võrra aastaks 2030.</li>
-        <li>Muudame meie tootepreparaadid biolagunevateks aastaks 2030.</li>
-        <li>Vähendame esmakordse plastpakendi kasutamist poolt võrra. Tagame, et kõik meie plastpakendid on 2025. aastaks korduvkasutatavad, ringlussevõetavad või komposteeritavad ning aastaks 2025 on pakendites kasutatud vähemalt 25% ringlussevõetud plastikut.</li>
-      </ul>
-    </p>
-    <SectionAccordion>
-            <Accordion>
-              {/* Ingredients */}
-              <AccordionTab label="Taastuvad ja ringlussevõetud koostisosad.">
-                <p>Kui sillutame teed oma tooteformulatsioonide vabastamiseks süsinikdioksiidist, peame mitmekesistama kasutatavaid süsinikuallikaid. Näiteks võtma süsnikku taimedelt (roheline süsinik), atmosfäärist (lilla süsinik), mereallikatest nagu vetikad (sinine süsinik) või jäätmetest nagu plast (hall süsinik). Me nimetame seda süsiniku vikerkaareks.</p>
-                <img src={AccordionImage} alt=""></img>
-                <p>Unilever on Renewable Carbon Initiative (RCI) asutuse juhatuseliige. See asutus on hiljuti loodud koalitsioon, mille eesmärk on tuua taastuv süsinik poliitilisele areenile ning arendada ja rakendada jätkusuutlikku tulevikku keemia- ja plastitööstusele.</p>
-              </AccordionTab>
-              {/* Allergens */}
-              <AccordionTab label="Biolagunduvus vee säilitamiseks on suur.">
-                <p>Töötame koos oma innovatsioonipartneritega, et luua uue põlvkonna puhastuspolümeerid ja lõhnaained. Töötame selle nimel, et meie tooted ei jätaks keskkonda jalajälgi ning edeneme selles suunas hästi.</p>
-              </AccordionTab>
-              <AccordionTab label="Kompaktne ja kontsentreeritud valem väiksema süsinikujalajälje saamiseks.">
-                <p>Et vähendada kodukeemiatoodete kasvuhoonegaaside heitkoguseid, kavandame oma tooteid vähema arvu, kuid paremini toimivate koostisosadega. Samuti loome palju mugavamaid formaate nagu on näiteks pesukapslitel. Täitepakid, mis on palju säästlikumad, aitavad vähendada plastikureostust ja kasvuhoonegaase. Samuti loome suure kontsentratsiooniga vedelikke ja pulbreid. Neid tegevusi tehes oleme juba praeguseks suutnud vähendada süsiniku jalajälge mõningatel toodetel juba üle 66%.</p>
-              </AccordionTab>
-              <AccordionTab label="Jäätmevaba maailma jaoks mõeldud pakendid.">
-                <p>Saame kõrvaldada plastiku jäätmed, kui tegutseme kiiresti ja radikaalselt tsükli kõikides punktides. See nõuab meie pakenditele ja toodetele lähenemisel põhjalikku ümbermõtestamist, enneolematu kiiruse ja intensiivsusega uute ja uuenduslike materjalidega tutvustamist ning uute ärimudelite laiendamist.</p>
-              </AccordionTab>
-              <AccordionTab label="Tooted, mis aitavad kasutamise ajal energiat ja vett vähendada.">
-                <p>Kuigi teeme palju tööd pakendite ja koostisosade loomiseks vajaliku energia ja vee vähendamiseks, on sellel, kui meie tooteid kasutatakse inimeste kodudes, ka märkimisväärne keskkonnamõju. Nii töötame välja uusi lahendusi, mis toimivad hästi ka madalatel temperatuuridel, vajavad loputamiseks vähem vett või isegi üldse mitte vett. Oma toodetega julgustame inimesi ka vee ja energia säästmiseks valima kiire pesutsükli.</p>
-              </AccordionTab>
-            </Accordion>
-          </SectionAccordion>
-    </DomestosAboutSection>
+    </DomestosIndexSection>
     </Section>
     </>
   )
