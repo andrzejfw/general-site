@@ -24,13 +24,27 @@ const DomestosAboutSection = styled.section`
     img {
       width: 100%;
       margin-bottom:10px;
+      object-fit: cover;
+    width: 100%;
+    height: 450px;
+    @media(max-width:992px){
+    height:auto;
+    }
     }
     @media(max-width:992px){
     padding-top:80px;
     }
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 10px 0;
+      color: #06154b;
+    }
+    h2 {
+      color: #06154b;
+    }
 `;
 const SectionAccordion = styled.div`
-    max-width: 1000px;
     margin: 0 auto;
     @media(max-width:992px){
     padding:0px;
@@ -73,7 +87,7 @@ const AboutPage = () => {
    {/* <DeliveryHeroImage src={HeroImage} alt="Magnum delivery"/> */}
    {/* <AboutHeroImage src={HeroBanner} alt="Lipton Eesti jätkusuutlik tee"/> */}
    <DomestosAboutSection>
-    <h1>Jätkusuutlikult hangitud koostisosad</h1>
+    <h1>Puhas kodu. Puhas planeet. Puhas tulevik.</h1>
     <p>Kujundame uut koristamise tulevikku ja see algab sajanditevanuse keemiaajaloo uuesti leiutamisest. Miljardid inimesed üle kogu maailma soovivad tooteid, mis on mikroobidele ja plekkidele veelgi vastupidavamad ning mida on veelgi mugavam kasutada. Küll aga soovivad ka inimesed, et need tooted oleksid planeedi suhtes hoolivamavad. Teadus ja tehnoloogia on jõudnud nii kaugele, et see on nüüd võimalik!</p>
     <img src={HeroBanner} alt=""></img>
     <p>Põlvkondade vältel oleme aidanud eemaldada mustust ja plekke, mis aitavad inimestel elada tervislikumalt ja nauditavamalt.</p>

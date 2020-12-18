@@ -5,9 +5,11 @@ import HeroBanner from '../assets/images/hellmanns-about.jpg';
 import AccordionImage from '../assets/images/hellmanns-accordion-about.jpg';
 import Accordion from "../components/AccordionDomestos/AccordionDomestos"
 import VideoHero from '../assets/videos/domestos-homepage.mp4';
-
-
-
+import DomestosCategories from '../components/DomestosCategories/DomestosCategories'
+import DomestosCategoriesBox from '../components/DomestosCategories/DomestosCategoriesBox'
+import Mayo from '../assets/images/hellmanns-mayo.png'
+import Sauce from '../assets/images/hellmanns-sauce.png'
+import Ketchup from '../assets/images/hellmanns-ketchup.png'
 
 const Section = styled.section`
     width:100%;
@@ -102,7 +104,11 @@ const IndexPage = () => {
    {/* <DeliveryHeroImage src={HeroImage} alt="Magnum delivery"/> */}
    {/* <AboutHeroImage src={HeroBanner} alt="Lipton Eesti jätkusuutlik tee"/> */}
    <DomestosAboutSection>
-
+   <DomestosCategories sectionTitle="Meie kategooriaid">
+      <DomestosCategoriesBox categoryTitle="Majonees" categoryImage={Mayo} categoryLink="/" alt="Hellmann's Majonees"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="Ketšup" categoryImage={Ketchup} categoryLink="/" alt="Hellmann's Ketšup"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/" alt="Hellmann's Kastmed"></DomestosCategoriesBox>
+    </DomestosCategories>
     <h1>Jätkusuutlikult hangitud koostisosad</h1>
     <p>Kujundame uut koristamise tulevikku ja see algab sajanditevanuse keemiaajaloo uuesti leiutamisest. Miljardid inimesed üle kogu maailma soovivad tooteid, mis on mikroobidele ja plekkidele veelgi vastupidavamad ning mida on veelgi mugavam kasutada. Küll aga soovivad ka inimesed, et need tooted oleksid planeedi suhtes hoolivamavad. Teadus ja tehnoloogia on jõudnud nii kaugele, et see on nüüd võimalik!</p>
     <img src={HeroBanner} alt=""></img>

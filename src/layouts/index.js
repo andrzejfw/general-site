@@ -35,6 +35,7 @@ import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
 import LiptonCategoriesStyles from "../components/LiptonCategories/LiptonCategoriesStyles"
+import DomestosCategoriesStyles from "../components/DomestosCategories/DomestosCategoriesStyles"
 import MagnumCategoriesStyles from "../components/MagnumCategories/MagnumCategoriesStyles"
 import HellmannsCategoriesStyles from "../components/HellmannsCategories/HellmannsCategoriesStyles"
 import LiptonBannerAndTextStyles from "../components/LiptonBannerAndText/LiptonBannerAndTextStyles"
@@ -80,6 +81,7 @@ const MainLayout = ( {children} ) => (
     <CarouselStyleLiptonRecipe />
     <CarouselStyleLiptonRecipe />
     <LiptonCategoriesStyles/>
+    <DomestosCategoriesStyles/>
     <HellmannsCategoriesStyles/>
     <LiptonBannerAndTextStyles/>
     <MagnumBannerAndTextStyles/>
