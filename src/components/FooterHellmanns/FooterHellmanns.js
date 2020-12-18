@@ -44,7 +44,7 @@ const FooterHellmanns = () => (
     <Link to ="/">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-hellmanns-unilever-logo"/>
     </Link>
-    <div className="footer-hellmanns-unilever-copyright">© Unilever 2020</div>
+    <div className="footer-hellmanns-unilever-copyright">© Unilever</div>
   </div>
   </>
 );

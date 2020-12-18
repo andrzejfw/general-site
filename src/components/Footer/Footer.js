@@ -229,7 +229,7 @@ const FooterItemList = styled.li`
 const Footer = () => (
   <Footercontainer>
     <FooterWrapper>
-         <FooterItemList><Link to ="/"><Img src={LogoImage} alt="Unilever Eesti logo - must valge"/></Link><p>© Unilever 2020</p></FooterItemList>
+         <FooterItemList><Link to ="/"><Img src={LogoImage} alt="Unilever Eesti logo - must valge"/></Link><p>© Unilever</p></FooterItemList>
         <FooterList>
         <FooterItemList><Link to="/contact">Kontakt</Link></FooterItemList>
         <FooterItemList>

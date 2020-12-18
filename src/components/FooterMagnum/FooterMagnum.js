@@ -39,7 +39,7 @@ const FooterMagnum = () => (
     <Link to ="/">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-magnum-unilever-logo"/>
     </Link>
-    <div className="footer-magnum-unilever-copyright">© Unilever 2020</div>
+    <div className="footer-magnum-unilever-copyright">© Unilever</div>
   </div>
   </>
 );
