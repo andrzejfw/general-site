@@ -83,8 +83,12 @@ const HellmannsCategoriesStyles = createGlobalStyle`
     margin: 0 -20px;
 
     @media(max-width:992px){
+        margin: 0 120px;
+    }
+
+    @media(max-width:692px){
         margin: 0;
-    }   
+    }    
 }
 
 .hellmanns-button-div {
