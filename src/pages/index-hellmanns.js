@@ -20,7 +20,10 @@ const Section = styled.section`
     padding-bottom:30px;
     text-align: center;
     background: #fdf6e8;
-    /* padding-top: 50px; */
+
+    @media (max-width: 692px) {
+      margin-bottom: -50px;
+    }
 `;
 
 const HellmannsHeroImage = styled.img`
