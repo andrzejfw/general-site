@@ -22,6 +22,15 @@ const AccordionDivHellmanns = styled.div`
     @media (max-width: 992px){
     width:90vw;
     }
+    
+    .div-content {
+
+      @media (max-width: 992px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
 `;
 
 class AccordionHellmannsSection extends Component {
@@ -41,9 +50,9 @@ class AccordionHellmannsSection extends Component {
 
     return (
       <AccordionDivHellmanns style={{background: isOpen ? "#004976"  : "#fdf6e8", color: isOpen ? "#fdf6e8"  : "#004976",}}>
-        <div onClick={onClick} style={{ cursor: "pointer", fontWeight: "bold",}}>
+        <div className="div-content" onClick={onClick} style={{ cursor: "pointer", fontWeight: "bold",}}>
           {label}
-          <div style={{ float: "right", }}>
+          <div style={{float: "right"}}>
             {!isOpen && <span style= {{ color: "#004976"}}>&#9660;</span>}
             {isOpen && <span style = {{ color: "#fdf6e8"}}>&#9650;</span>}
           </div>
@@ -53,7 +62,7 @@ class AccordionHellmannsSection extends Component {
             style={{
               background: "transparent",
               marginTop: 10,
-              padding: "0px 5px",
+              padding: "0px",
             }}
           >
             {this.props.children}

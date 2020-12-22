@@ -22,6 +22,10 @@ const AccordionDomestosTab = styled.div`
         -webkit-text-stroke: 1px #06154b;
         transition: 0.5s;
     }
+
+    @media (max-width: 992px){
+      text-align: left;
+    }
 `;
 
 class AccordionDomestos extends Component {

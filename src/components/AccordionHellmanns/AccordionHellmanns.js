@@ -16,6 +16,10 @@ const AccordionHellmannsTab = styled.div`
         color:#004976;
         text-decoration: underline;
     }
+
+    @media (max-width: 992px){
+      text-align: left;
+    }
 `;
 
 class AccordionHellmanns extends Component {

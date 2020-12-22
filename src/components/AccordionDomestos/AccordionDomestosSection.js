@@ -22,6 +22,14 @@ const AccordionDivDomestos = styled.div`
     @media (max-width: 992px){
     width:90vw;
     }
+
+    .div-content {
+      @media (max-width: 992px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
 `;
 
 class AccordionDomestosSection extends Component {
@@ -41,11 +49,11 @@ class AccordionDomestosSection extends Component {
 
     return (
       <AccordionDivDomestos style={{background: isOpen ? "#fff"  : "#fff",}}>
-        <div onClick={onClick} style={{ cursor: "pointer", fontWeight: "bold" }}>
+        <div className="div-content"  onClick={onClick} style={{ cursor: "pointer", fontWeight: "bold" }}>
           {label}
           <div style={{ float: "right", }}>
-            {!isOpen && <span style= {{ color: "#06154b" }}>&#9660;</span>}
-            {isOpen && <span style = {{ color: "#06154b" }}>&#9650;</span>}
+            {!isOpen && <span style= {{ color: "#06154b", fontSize: "1.2rem" }}>&#9660;</span>}
+            {isOpen && <span style = {{ color: "#06154b", fontSize: "1.2rem" }}>&#9650;</span>}
           </div>
         </div>
         {isOpen && (
@@ -53,7 +61,7 @@ class AccordionDomestosSection extends Component {
             style={{
               background: "transparent",
               marginTop: 10,
-              padding: "0px 5px",
+              padding: "0px",
             }}
           >
             {this.props.children}
