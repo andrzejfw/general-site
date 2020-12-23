@@ -89,7 +89,7 @@ const AboutPage = () => {
    <DomestosAboutSection>
     <h1>Puhas kodu. Puhas planeet. Puhas tulevik.</h1>
     <p>Kujundame uut koristamise tulevikku ja see algab sajanditevanuse keemiaajaloo uuesti leiutamisest. Miljardid inimesed üle kogu maailma soovivad tooteid, mis on mikroobidele ja plekkidele veelgi vastupidavamad ning mida on veelgi mugavam kasutada. Küll aga soovivad ka inimesed, et need tooted oleksid planeedi suhtes hoolivamavad. Teadus ja tehnoloogia on jõudnud nii kaugele, et see on nüüd võimalik!</p>
-    <img src={HeroBanner} alt=""></img>
+    <img src={HeroBanner} alt="Domestos puhastusvahendid. Puhas kodu. Puhas planeet."></img>
     <p>Põlvkondade vältel oleme aidanud eemaldada mustust ja plekke, mis aitavad inimestel elada tervislikumalt ja nauditavamalt.</p>
     <p>Meie jõupingutused keskkonnamõju vähendamiseks on olnud märkimisväärsed ja mõningal määral murrangulised, kuid teame, et peame tegema veelgi rohkem. Veel suuremas mastaabis ja veel kiiremini. See kõik algab koostisosadest, mida kasutame. Koostisosad põhjustavad kasvuhoonegaaside ja heitkoguste suurima osa kogu meie kodukeemia tootmisprotsessi vältel ning peame seda muutma.</p>
     <p>Nii oleme välja pakkunud uue strateegia – puhas tulevik ja nii muudame mõned maailma kõige populaarsemad koristus- ja pesupesemisbrändid palju jätkusuutlikumaks kui varem. Võtame kasutusse taastuvaid ja ringlussevõetud süsinikuallikaid, et peatada sõltuvus asendamatutest fosiilkütustest maapõuest. Kasutades jätkusuutlikke aineid, saame mängida oma osa võitluses kliimamuutusega ja aidata säilitada, taastada ja uuendada planeedi loodusvarasid.</p>
@@ -109,7 +109,7 @@ const AboutPage = () => {
               {/* Ingredients */}
               <AccordionTab label="Taastuvad ja ringlussevõetud koostisosad.">
                 <p>Kui sillutame teed oma tooteformulatsioonide vabastamiseks süsinikdioksiidist, peame mitmekesistama kasutatavaid süsinikuallikaid. Näiteks võtma süsnikku taimedelt (roheline süsinik), atmosfäärist (lilla süsinik), mereallikatest nagu vetikad (sinine süsinik) või jäätmetest nagu plast (hall süsinik). Me nimetame seda süsiniku vikerkaareks.</p>
-                <img src={AccordionImage} alt=""></img>
+                <img src={AccordionImage} alt="Domestose jätkusuutlik areng keemiatööstuses"></img>
                 <p>Unilever on Renewable Carbon Initiative (RCI) asutuse juhatuseliige. See asutus on hiljuti loodud koalitsioon, mille eesmärk on tuua taastuv süsinik poliitilisele areenile ning arendada ja rakendada jätkusuutlikku tulevikku keemia- ja plastitööstusele.</p>
               </AccordionTab>
               {/* Allergens */}
