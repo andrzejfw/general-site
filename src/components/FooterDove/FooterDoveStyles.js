@@ -1,17 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 
-const FooterHellmannsStyles = createGlobalStyle`
-.footer-hellmanns-container{
+const FooterDoveStyles = createGlobalStyle`
+.footer-dove-container{
     height: 180px;
     z-index:2;
     margin-top: -10px;
+    background-color: #f4f4f4;
 
     @media (max-width: 500px) {
         height: 250px;
     } 
 }
 
-.footer-hellmanns-nav-wrapper {
+.footer-dove-nav-wrapper {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items:center;
@@ -19,12 +20,12 @@ const FooterHellmannsStyles = createGlobalStyle`
     position: relative;
     justify-content: space-between;
     text-transform: uppercase;
-    margin: 0 35% 0 22%;
+    margin: 0 32% 0 22%;
     z-index: 2;
     align-self: center;
     
     @media (max-width:1600px){
-        margin: 0;
+        margin: 0 10% 0 5%;
         padding: 0 10%;
         max-width: 1000px;
     }
@@ -47,7 +48,7 @@ const FooterHellmannsStyles = createGlobalStyle`
     }   
 }
 
-.footer-hellmanns-list {
+.footer-dove-list {
     margin:0;
     padding:0;
     display:flex;
@@ -62,18 +63,18 @@ const FooterHellmannsStyles = createGlobalStyle`
     }
 }
 
-.footer-hellmanns-section {
+.footer-dove-section {
     display:flex;
     justify-content: space-between;
 }
 
-.footer-hellmanns-image-containter {
+.footer-dove-image-containter {
     display:flex;
 }
 
-.footer-hellmanns-item {
+.footer-dove-item {
     line-height:1.2em;
-    color: #fff;
+    color: #054281;
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw; 
@@ -86,26 +87,21 @@ const FooterHellmannsStyles = createGlobalStyle`
 
     a{
         text-decoration:none;
-        color: #fff;
-        font-weight:bold;
+        color: #054281;
         transition: all .3s linear;
         &:hover {
-        color: #ffc72e;
+        color: #054281;
+        font-weight:bold;
     }
     }
 
     @media(max-width:500px){
         margin:8px 0;
-        color: #fff;
-
-        p{
-        font-size:12px;
-        }
     }
 }
 
-.footer-hellmanns-item-list {
-    color: #fff !important;
+.footer-dove-item-list {
+    color: #054281 !important;
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw;
@@ -118,12 +114,11 @@ const FooterHellmannsStyles = createGlobalStyle`
 
     a{
         text-decoration:none;
-        color: #fff;
+        color: #054281;
         transition: all .3s linear;
-        font-weight:bold;
         &:hover {
-        color: #ffc72e;
-    
+        color: #054281;
+        font-weight:bold;
     }
     }
 
@@ -131,14 +126,10 @@ const FooterHellmannsStyles = createGlobalStyle`
         margin:4px 0;
         justify-content:center;
         align-items:start;
-
-        p{
-        font-size:12px;
-        }
     }
 }
 
-.footer-hellmanns-social-image {
+.footer-dove-social-image {
     width:auto;
     height:50px;
     margin:55px 50px;
@@ -149,7 +140,7 @@ const FooterHellmannsStyles = createGlobalStyle`
   }
 }
 
-.footer-hellmanns-unilever-div {
+.footer-dove-unilever-div {
     z-index:2;
     background:#7f7f7f;
     display: flex;
@@ -164,7 +155,7 @@ const FooterHellmannsStyles = createGlobalStyle`
   }
 }
 
-.footer-hellmanns-unilever-logo {
+.footer-dove-unilever-logo {
     width:50px;
     height:auto;
     display:flex;
@@ -177,7 +168,7 @@ const FooterHellmannsStyles = createGlobalStyle`
     }
 }
 
-.footer-hellmanns-unilever-copyright {
+.footer-dove-unilever-copyright {
     font-size: .8rem;
     color: #fff;
     align-self: center;
@@ -189,45 +180,43 @@ const FooterHellmannsStyles = createGlobalStyle`
     }
 }
 
-.hellmanns-footer-graphic-image {
+.dove-footer-graphic-image {
     width:auto;
-    height:300px;
-    top: -138px;
+    height:200px;
+    top: -68px;
     left: 0;
     align-self: center;
     position: absolute;
 
     @media (max-width:1200px){
-        left: -100px;
+        top: -30px;
+        left: 50px;
+        height: 150px;
     }
 
     @media (max-width:800px){
         display: inline-block;
-        position: absolute;
-        top: -50px;
-        left: -50px;
-        height: 200px;
         margin: 0;
     }
 
     @media (max-width:500px){
-        top: -191px;
-        left: 190px;
+        top: -210px;
+        left: 245px;
         height: 200px;
         margin: 0;
     }
 
     @media (max-width:400px){
-        left: 160px;
+        left: 220px;
     }
 
     @media (max-width:350px){
-        left: 130px;
-        top: -170px;
-        width: 150px;
+        left: 180px;
+        top: -193px;
+        width: 70px;
         height: auto;
     }
 }
 `;
 
-export default FooterHellmannsStyles;
+export default FooterDoveStyles;

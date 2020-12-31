@@ -19,6 +19,7 @@ exports.components = {
   "component---src-pages-graph-js": () => import("./../../../src/pages/graph.js" /* webpackChunkName: "component---src-pages-graph-js" */),
   "component---src-pages-history-hellmanns-js": () => import("./../../../src/pages/history-hellmanns.js" /* webpackChunkName: "component---src-pages-history-hellmanns-js" */),
   "component---src-pages-index-domestos-js": () => import("./../../../src/pages/index-domestos.js" /* webpackChunkName: "component---src-pages-index-domestos-js" */),
+  "component---src-pages-index-dove-js": () => import("./../../../src/pages/index-dove.js" /* webpackChunkName: "component---src-pages-index-dove-js" */),
   "component---src-pages-index-hellmanns-js": () => import("./../../../src/pages/index-hellmanns.js" /* webpackChunkName: "component---src-pages-index-hellmanns-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-index-lipton-js": () => import("./../../../src/pages/index-lipton.js" /* webpackChunkName: "component---src-pages-index-lipton-js" */),

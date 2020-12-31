@@ -22,6 +22,7 @@ exports.components = {
   "component---src-pages-graph-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\graph.js"))),
   "component---src-pages-history-hellmanns-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\history-hellmanns.js"))),
   "component---src-pages-index-domestos-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-domestos.js"))),
+  "component---src-pages-index-dove-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-dove.js"))),
   "component---src-pages-index-hellmanns-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-hellmanns.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index.js"))),
   "component---src-pages-index-lipton-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-lipton.js"))),

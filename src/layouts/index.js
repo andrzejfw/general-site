@@ -9,6 +9,8 @@ import FooterDomestos from "../components/FooterDomestos/FooterDomestos.js"
 import FooterDomestosStyles from "../components/FooterDomestos/FooterDomestosStyles.js"
 import FooterHellmanns from "../components/FooterHellmanns/FooterHellmanns.js"
 import FooterHellmannsStyles from "../components/FooterHellmanns/FooterHellmannsStyles.js"
+import FooterDove from "../components/FooterDove/FooterDove.js"
+import FooterDoveStyles from "../components/FooterDove/FooterDoveStyles.js"
 import GlobalStyle from "../assets/styles/globalStyles.js"
 import TabStyle from "../components/TabBrand/TabStyles.js"
 import CarouselStyle from "../components/Carousel/CarouselStyles.js"
@@ -31,6 +33,10 @@ import HeaderHellmanns from "../components/HeaderHellmanns/HeaderHellmanns"
 import HeaderHellmannsStyles from "../components/HeaderHellmanns/HeaderHellmannsStyles"
 import HeaderBurgerHellmanns from "../components/HeaderHellmanns/HeaderBurgerHellmanns"
 import HeaderBurgerHellmannsStyles from "../components/HeaderHellmanns/HeaderBurgerHellmannsStyles"
+import HeaderDove from "../components/HeaderDove/HeaderDove"
+import HeaderDoveStyles from "../components/HeaderDove/HeaderDoveStyles"
+import HeaderBurgerDove from "../components/HeaderDove/HeaderBurgerDove"
+import HeaderBurgerDoveStyles from "../components/HeaderDove/HeaderBurgerDoveStyles"
 import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
@@ -63,10 +69,14 @@ const MainLayout = ( {children} ) => (
     <HeaderDomestosStyles/>
     <HeaderBurgerDomestos/>
     <HeaderBurgerDomestosStyles/> */}
-    <HeaderHellmanns/>
+    {/* <HeaderHellmanns/>
     <HeaderHellmannsStyles/>
     <HeaderBurgerHellmanns/>
-    <HeaderBurgerHellmannsStyles/>
+    <HeaderBurgerHellmannsStyles/> */}
+    <HeaderDove/>
+    <HeaderDoveStyles/>
+    <HeaderBurgerDove/>
+    <HeaderBurgerDoveStyles/>
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
@@ -99,8 +109,10 @@ const MainLayout = ( {children} ) => (
     <FooterMagnumStyles/> */}
     {/* <FooterDomestos/>
     <FooterDomestosStyles/> */}
-    <FooterHellmanns/>
-    <FooterHellmannsStyles/>
+    {/* <FooterHellmanns/>
+    <FooterHellmannsStyles/> */}
+    <FooterDove/>
+    <FooterDoveStyles/>
   </>
 )
 
