@@ -51,13 +51,13 @@ const HeaderDoveStyles = createGlobalStyle`
 .links-section-dove {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    transition: all .2s linear;
 
     a {
         color: #054281;
         align-self: center;
         font-size: 1.2rem;
         transition: all .3s linear;
+        margin: 0 auto;
 
         &:hover {
             font-weight: 700;
