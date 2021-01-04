@@ -47487,6 +47487,17 @@ module.exports = __webpack_require__.p + "static/domestos-logo2-4f7290d12ad04344
 
 /***/ }),
 
+/***/ "./src/assets/images/dove-global-nav-logo-bg.png":
+/*!*******************************************************!*\
+  !*** ./src/assets/images/dove-global-nav-logo-bg.png ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
 /***/ "./src/assets/images/dove-logo-main.png":
 /*!**********************************************!*\
   !*** ./src/assets/images/dove-logo-main.png ***!
@@ -49030,7 +49041,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.dove-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-color: #fff;\n        border-bottom: solid 1px #ccc;\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 15px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 40px;\n        z-index: 9999;\n        margin-left: 5px;\n    }\n}\n\n.dove-burger-menu::after {\n    content: '';\n    background: url(https://www.dove.com/etc/ui/dove/clientlibs/core/core/images/global-nav/global-nav-logo-bg.png) top center no-repeat;\n    background-size: cover;\n    height: 20px;\n    width: 100px;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    top: 59px;\n    margin: 0 auto;\n}\n\n.dove-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.dove-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 20% 0;\n    justify-content: flex-start;\n    top: 8vh;\n    z-index: 0;\n    background-color: rgb(0 38 99 / .95);\n}\n\n.dove-navbox-item {\n    text-decoration: none;\n    color: #fff;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #fff;\n    }\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.dove-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-color: #fff;\n        border-bottom: solid 1px #ccc;\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 15px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 40px;\n        z-index: 9999;\n        margin-left: 5px;\n    }\n}\n\n.dove-burger-menu::after {\n    content: '';\n    background: url(https://www.dove.com/etc/ui/dove/clientlibs/core/core/images/global-nav/global-nav-logo-bg.png) top center no-repeat;\n    background-size: cover;\n    height: 20px;\n    width: 100px;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    top: 59px;\n    margin: 0 auto;\n}\n\n.dove-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.dove-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 20% 0;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(0 38 99 / .95);\n}\n\n.dove-navbox-item {\n    text-decoration: none;\n    color: #fff;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #fff;\n    }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49057,8 +49068,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _assets_images_dove_logo_main_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/dove-logo-main.png */ "./src/assets/images/dove-logo-main.png");
-/* harmony import */ var _assets_images_dove_logo_main_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_dove_logo_main_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_images_dove_global_nav_logo_bg_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/dove-global-nav-logo-bg.png */ "./src/assets/images/dove-global-nav-logo-bg.png");
+/* harmony import */ var _assets_images_dove_global_nav_logo_bg_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_dove_global_nav_logo_bg_png__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
@@ -49081,7 +49092,7 @@ var HeaderDove = function HeaderDove() {
   }, "Ettev\xF5ttest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/index-dove"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_dove_logo_main_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    src: _assets_images_dove_global_nav_logo_bg_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     alt: "Dove Eesti j\xE4\xE4tis logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/delivery-magnum",

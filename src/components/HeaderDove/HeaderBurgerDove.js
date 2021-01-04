@@ -56,9 +56,9 @@ const HeaderBurgerDove = () => {
         transition: "all .3s linear",
         left: navbarOpen ? "0" : "-100%",
         }}>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .2s", left: navbarOpen ? "0" : "-100%",}} to="/index-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .3s", left: navbarOpen ? "0" : "-100%",}} to="/about-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .4s", left: navbarOpen ? "0" : "-100%",}} to="/delivery-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
+          <Link className="dove-navbox-item" style={{transition: "all .4s linear .2s", left: navbarOpen ? "0" : "-100%",}} to="/products-dove" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="dove-navbox-item" style={{transition: "all .4s linear .3s", left: navbarOpen ? "0" : "-100%",}} to="/sustainability-dove" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
+          <Link className="dove-navbox-item" style={{transition: "all .4s linear .4s", left: navbarOpen ? "0" : "-100%",}} to="/purpose-dove" onClick={() => setNavbarOpen(!navbarOpen)}>Meie eesmärk</Link>
           <Link className="dove-navbox-item" style={{transition: "all .4s linear .5s", left: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>
