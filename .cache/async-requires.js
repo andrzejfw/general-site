@@ -3,8 +3,8 @@ const preferDefault = m => (m && m.default) || m
 
 exports.components = {
   "component---cache-dev-404-page-js": () => import("./../../dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
-  "component---src-layouts-pdp-dove-js": () => import("./../../../src/layouts/pdp-dove.js" /* webpackChunkName: "component---src-layouts-pdp-dove-js" */),
   "component---src-layouts-pdp-hellmanns-js": () => import("./../../../src/layouts/pdp-hellmanns.js" /* webpackChunkName: "component---src-layouts-pdp-hellmanns-js" */),
+  "component---src-layouts-pdp-lipton-js": () => import("./../../../src/layouts/pdp-lipton.js" /* webpackChunkName: "component---src-layouts-pdp-lipton-js" */),
   "component---src-layouts-pdp-magnum-js": () => import("./../../../src/layouts/pdp-magnum.js" /* webpackChunkName: "component---src-layouts-pdp-magnum-js" */),
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-domestos-js": () => import("./../../../src/pages/about-domestos.js" /* webpackChunkName: "component---src-pages-about-domestos-js" */),
@@ -27,6 +27,7 @@ exports.components = {
   "component---src-pages-index-magnum-js": () => import("./../../../src/pages/index-magnum.js" /* webpackChunkName: "component---src-pages-index-magnum-js" */),
   "component---src-pages-legal-notice-js": () => import("./../../../src/pages/legal-notice.js" /* webpackChunkName: "component---src-pages-legal-notice-js" */),
   "component---src-pages-privacy-notice-js": () => import("./../../../src/pages/privacy-notice.js" /* webpackChunkName: "component---src-pages-privacy-notice-js" */),
+  "component---src-pages-products-cif-js": () => import("./../../../src/pages/products-cif.js" /* webpackChunkName: "component---src-pages-products-cif-js" */),
   "component---src-pages-products-domestos-js": () => import("./../../../src/pages/products-domestos.js" /* webpackChunkName: "component---src-pages-products-domestos-js" */),
   "component---src-pages-products-dove-js": () => import("./../../../src/pages/products-dove.js" /* webpackChunkName: "component---src-pages-products-dove-js" */),
   "component---src-pages-products-hellmanns-js": () => import("./../../../src/pages/products-hellmanns.js" /* webpackChunkName: "component---src-pages-products-hellmanns-js" */),

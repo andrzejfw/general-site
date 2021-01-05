@@ -32,20 +32,35 @@ const HeaderDoveStyles = createGlobalStyle`
 .links-section-cif {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: -25px;
+    margin-top: -30px;
 
     a {
         color: #fff;
         align-self: center;
         font-size: 1.2rem;
-        transition: all .2s linear;
+        transition: all .3s ease;
+        padding: 5px 20px;
         margin: 0 auto;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        border-radius: 45%;
 
         &:hover {
-            font-weight: 700;
-            color: #004521;
+            border-bottom: 3px solid #2fa354;
+            border-left: 3px solid #2fa354;
+            border-radius: 50%;
+            width: auto;
+            padding: 5px 20px;
         }
     }
+}
+
+a.active {
+    border-bottom: 3px solid #2fa354;
+    border-left: 3px solid #2fa354;
+    border-radius: 50%;
+    width: auto;
+    padding: 5px 20px;
 }
 
 `;

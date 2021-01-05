@@ -25,7 +25,7 @@ const FooterDoveStyles = createGlobalStyle`
     align-self: center;
     
     @media (max-width:1600px){
-        margin: 0 10% 0 5%;
+        margin: 0 17% 0 8%;
         padding: 0 10%;
         max-width: 1000px;
     }
@@ -90,8 +90,7 @@ const FooterDoveStyles = createGlobalStyle`
         color: #fff;
         transition: all .2s linear;
         &:hover {
-        color: #004521;
-        font-weight:bold;
+            font-weight: 700;
     }
     }
 
@@ -117,8 +116,7 @@ const FooterDoveStyles = createGlobalStyle`
         color: #fff;
         transition: all .2s linear;
         &:hover {
-        color: #004521;
-        font-weight:bold;
+        font-weight: 700;
     }
     }
 
@@ -183,7 +181,7 @@ const FooterDoveStyles = createGlobalStyle`
 .cif-footer-graphic-image {
     width:auto;
     height:200px;
-    top: -68px;
+    top: -72px;
     left: 0;
     align-self: center;
     position: absolute;

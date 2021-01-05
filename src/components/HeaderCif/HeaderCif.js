@@ -9,10 +9,10 @@ const HeaderCif = () => {
         <nav className="header-cif-nav">
             <div className="links-section-cif">
                 <Link to="/index-cif"><img src={CifLogo} alt="Cif Eesti jäätis logo"/></Link>
-                <Link to="/" activeStyle={{fontWeight: "700"}}>Tooted</Link>
-                <Link to="/" activeStyle={{fontWeight: "700"}}>Ettevõttest</Link>
-                <Link to="/" activeStyle={{fontWeight: "700"}}>Meie eesmärk</Link>
-                <Link to="/contact" activeStyle={{fontWeight: "700"}}>Kontakt</Link>
+                <Link to="/products-cif" activeClassName="active">Tooted</Link>
+                <Link to="/" activeClassName="active">Ettevõttest</Link>
+                <Link to="/" activeClassName="active">Meie eesmärk</Link>
+                <Link to="/contact" activeClassName="active">Kontakt</Link>
             </div>
         </nav>
         </>

@@ -46,6 +46,10 @@ const HeaderDoveStyles = createGlobalStyle`
     transform: translateX(-50%);
     top: 59px;
     margin: 0 auto;
+
+    @media(max-width:1100px){
+        top: 58px;
+    }
 }
 
 .links-section-dove {
