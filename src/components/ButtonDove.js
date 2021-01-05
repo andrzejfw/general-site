@@ -17,16 +17,15 @@ const Button = styled.button`
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s all;
-    border-color: #dbc081;
     color: #054281;
     background-color: #fff;
     border: 1px solid;
-    border-color: #b78938;
+    border-color: #666;
 
     &:hover{
-      border-color: #b78938;
+      border-color: #666;
       color: #fff;
-      background-color: #dbc081;
+      background-color: #666;
       text-decoration:none;
       outline:none;
       

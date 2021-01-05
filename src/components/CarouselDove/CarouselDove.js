@@ -14,7 +14,7 @@ const SliderTextCenter = styled.h3`
     margin-right:10px;
     margin-left:10px;
     padding:0;
-    color:#004976;
+    color:#666;
     transition:.2s;
     position:relative;
     &:hover{
@@ -33,7 +33,7 @@ const ImageSlider = styled.img`
 `;
 
 const TextSlider = styled.div`
-    color:#004976;
+    color:#666;
     font-size: 1.5rem;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -106,26 +106,26 @@ function SampleNextArrow(props) {
           <SliderDove {...settings}>
             <SliderDiv>
               <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/cache/e1/5d/e15d5773dfcb0071edd017cc3c2aa836.png"/>
-                <TextSlider>Majonees super extra 10kg</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/cache/fb/73/fb73a2a42f71cdf427b0de4311ff833b.png"/>
+                <TextSlider>Dove Shower</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/cache/9c/c1/9cc12b545162bb9880eaf07313ee17f4.png"/>
-                <TextSlider>Ketšup more red than tomatoes 3kg</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/cache/57/60/5760bc2f51183bffa52cf619531dd351.png"/>
+                <TextSlider>Dove shower gel for men</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/cache/c0/d2/c0d2c830019d025df547558327e75283.png"/>
-                <TextSlider>Kastmed the best ever made 200g</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/cache/d7/53/d753abf36f99fcdf77eadc8b3d794b2f.png"/>
+                <TextSlider>Dove shower gel</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/cache/49/78/497854acb797aa49c0ac99c165436f61.png"/>
-                <TextSlider>Garlic Sauce which you won't be able to stop eating 1kg</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/cache/39/21/39217c6c1da0c1ecf0142dccadaab6cb.png"/>
+                <TextSlider>Dove soap bar</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
           </SliderDove>
