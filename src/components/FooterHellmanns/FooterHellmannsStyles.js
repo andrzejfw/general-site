@@ -100,11 +100,6 @@ const FooterHellmannsStyles = createGlobalStyle`
 
         p{
         font-size:12px;
-        color: #fff;
-        }
-        a{
-            text-decoration:none;
-            color: #fff;
         }
     }
 }
@@ -139,11 +134,7 @@ const FooterHellmannsStyles = createGlobalStyle`
 
         p{
         font-size:12px;
-        color: #fff;
         }
-        a{
-            color: #fff;  
-        }  
     }
 }
 

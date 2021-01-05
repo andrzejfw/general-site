@@ -3,8 +3,8 @@ const preferDefault = m => (m && m.default) || m
 
 exports.components = {
   "component---cache-dev-404-page-js": () => import("./../../dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
+  "component---src-layouts-pdp-dove-js": () => import("./../../../src/layouts/pdp-dove.js" /* webpackChunkName: "component---src-layouts-pdp-dove-js" */),
   "component---src-layouts-pdp-hellmanns-js": () => import("./../../../src/layouts/pdp-hellmanns.js" /* webpackChunkName: "component---src-layouts-pdp-hellmanns-js" */),
-  "component---src-layouts-pdp-lipton-js": () => import("./../../../src/layouts/pdp-lipton.js" /* webpackChunkName: "component---src-layouts-pdp-lipton-js" */),
   "component---src-layouts-pdp-magnum-js": () => import("./../../../src/layouts/pdp-magnum.js" /* webpackChunkName: "component---src-layouts-pdp-magnum-js" */),
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-domestos-js": () => import("./../../../src/pages/about-domestos.js" /* webpackChunkName: "component---src-pages-about-domestos-js" */),
@@ -19,6 +19,7 @@ exports.components = {
   "component---src-pages-graph-js": () => import("./../../../src/pages/graph.js" /* webpackChunkName: "component---src-pages-graph-js" */),
   "component---src-pages-history-hellmanns-js": () => import("./../../../src/pages/history-hellmanns.js" /* webpackChunkName: "component---src-pages-history-hellmanns-js" */),
   "component---src-pages-index-domestos-js": () => import("./../../../src/pages/index-domestos.js" /* webpackChunkName: "component---src-pages-index-domestos-js" */),
+  "component---src-pages-index-dove-js": () => import("./../../../src/pages/index-dove.js" /* webpackChunkName: "component---src-pages-index-dove-js" */),
   "component---src-pages-index-hellmanns-js": () => import("./../../../src/pages/index-hellmanns.js" /* webpackChunkName: "component---src-pages-index-hellmanns-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-index-lipton-js": () => import("./../../../src/pages/index-lipton.js" /* webpackChunkName: "component---src-pages-index-lipton-js" */),

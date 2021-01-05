@@ -92,7 +92,6 @@ const FooterMagnumStyles = createGlobalStyle`
 
     p{
         font-size:12px;
-        color: #523022;
     }
     a{
         text-decoration:none;
@@ -112,10 +111,8 @@ const FooterMagnumStyles = createGlobalStyle`
 
         p{
         font-size:12px;
-        color: #fff;
         }
         a{
-            text-decoration:none;
             color: #fff;
         }
     }
@@ -138,7 +135,6 @@ const FooterMagnumStyles = createGlobalStyle`
 
     p{
         font-size:12px;
-        color: #523022;
     }
     a{
         text-decoration:none;
