@@ -3,8 +3,8 @@ const preferDefault = m => (m && m.default) || m
 
 exports.components = {
   "component---cache-dev-404-page-js": () => import("./../../dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
+  "component---src-layouts-pdp-dove-js": () => import("./../../../src/layouts/pdp-dove.js" /* webpackChunkName: "component---src-layouts-pdp-dove-js" */),
   "component---src-layouts-pdp-hellmanns-js": () => import("./../../../src/layouts/pdp-hellmanns.js" /* webpackChunkName: "component---src-layouts-pdp-hellmanns-js" */),
-  "component---src-layouts-pdp-lipton-js": () => import("./../../../src/layouts/pdp-lipton.js" /* webpackChunkName: "component---src-layouts-pdp-lipton-js" */),
   "component---src-layouts-pdp-magnum-js": () => import("./../../../src/layouts/pdp-magnum.js" /* webpackChunkName: "component---src-layouts-pdp-magnum-js" */),
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-domestos-js": () => import("./../../../src/pages/about-domestos.js" /* webpackChunkName: "component---src-pages-about-domestos-js" */),

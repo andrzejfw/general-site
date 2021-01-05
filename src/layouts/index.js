@@ -20,6 +20,7 @@ import CarouselStyleLipton from "../components/CarouselLipton/CarouselStyles.js"
 import CarouselStyleMagnum from "../components/CarouselMagnum/CarouselMagnumStyles.js"
 import CarouselStyleDomestos from "../components/CarouselDomestos/CarouselDomestosStyles.js"
 import CarouselStyleHellmanns from "../components/CarouselHellmanns/CarouselHellmannsStyles.js"
+import CarouselStyleDove from "../components/CarouselDove/CarouselDoveStyles.js"
 import CarouselStyleLiptonRecipe from "../components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js"
 import NavigationLiptonStyles from "../components/HeaderLipton/NavigationLiptonStyles"
 import NavigationStyles from "../components/Header/NavigationStyles"
@@ -96,6 +97,7 @@ const MainLayout = ( {children} ) => (
     <CarouselStyleMagnum />
     <CarouselStyleDomestos />
     <CarouselStyleHellmanns />
+    <CarouselStyleDove />
     <LiptonCategoriesStyles/>
     <MagnumCategoriesStyles/>
     <CarouselStyleLiptonRecipe />
