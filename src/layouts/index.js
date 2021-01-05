@@ -11,6 +11,8 @@ import FooterHellmanns from "../components/FooterHellmanns/FooterHellmanns.js"
 import FooterHellmannsStyles from "../components/FooterHellmanns/FooterHellmannsStyles.js"
 import FooterDove from "../components/FooterDove/FooterDove.js"
 import FooterDoveStyles from "../components/FooterDove/FooterDoveStyles.js"
+import FooterCif from "../components/FooterCif/FooterCif.js"
+import FooterCifStyles from "../components/FooterCif/FooterCifStyles.js"
 import GlobalStyle from "../assets/styles/globalStyles.js"
 import TabStyle from "../components/TabBrand/TabStyles.js"
 import CarouselStyle from "../components/Carousel/CarouselStyles.js"
@@ -37,6 +39,10 @@ import HeaderDove from "../components/HeaderDove/HeaderDove"
 import HeaderDoveStyles from "../components/HeaderDove/HeaderDoveStyles"
 import HeaderBurgerDove from "../components/HeaderDove/HeaderBurgerDove"
 import HeaderBurgerDoveStyles from "../components/HeaderDove/HeaderBurgerDoveStyles"
+import HeaderCif from "../components/HeaderCif/HeaderCif"
+import HeaderCifStyles from "../components/HeaderCif/HeaderCifStyles"
+import HeaderBurgerCif from "../components/HeaderCif/HeaderBurgerCif"
+import HeaderBurgerCifStyles from "../components/HeaderCif/HeaderBurgerCifStyles"
 import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
@@ -73,10 +79,14 @@ const MainLayout = ( {children} ) => (
     <HeaderHellmannsStyles/>
     <HeaderBurgerHellmanns/>
     <HeaderBurgerHellmannsStyles/> */}
-    <HeaderDove/>
+    {/* <HeaderDove/>
     <HeaderDoveStyles/>
     <HeaderBurgerDove/>
-    <HeaderBurgerDoveStyles/>
+    <HeaderBurgerDoveStyles/> */}
+    <HeaderCif/>
+    <HeaderCifStyles/>
+    <HeaderBurgerCif/>
+    <HeaderBurgerCifStyles/>
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
@@ -111,8 +121,10 @@ const MainLayout = ( {children} ) => (
     <FooterDomestosStyles/> */}
     {/* <FooterHellmanns/>
     <FooterHellmannsStyles/> */}
-    <FooterDove/>
-    <FooterDoveStyles/>
+    {/* <FooterDove/>
+    <FooterDoveStyles/> */}
+    <FooterCif/>
+    <FooterCifStyles/>
   </>
 )
 
