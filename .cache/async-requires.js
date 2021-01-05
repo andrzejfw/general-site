@@ -18,6 +18,7 @@ exports.components = {
   "component---src-pages-delivery-magnum-js": () => import("./../../../src/pages/delivery-magnum.js" /* webpackChunkName: "component---src-pages-delivery-magnum-js" */),
   "component---src-pages-graph-js": () => import("./../../../src/pages/graph.js" /* webpackChunkName: "component---src-pages-graph-js" */),
   "component---src-pages-history-hellmanns-js": () => import("./../../../src/pages/history-hellmanns.js" /* webpackChunkName: "component---src-pages-history-hellmanns-js" */),
+  "component---src-pages-index-cif-js": () => import("./../../../src/pages/index-cif.js" /* webpackChunkName: "component---src-pages-index-cif-js" */),
   "component---src-pages-index-domestos-js": () => import("./../../../src/pages/index-domestos.js" /* webpackChunkName: "component---src-pages-index-domestos-js" */),
   "component---src-pages-index-dove-js": () => import("./../../../src/pages/index-dove.js" /* webpackChunkName: "component---src-pages-index-dove-js" */),
   "component---src-pages-index-hellmanns-js": () => import("./../../../src/pages/index-hellmanns.js" /* webpackChunkName: "component---src-pages-index-hellmanns-js" */),
