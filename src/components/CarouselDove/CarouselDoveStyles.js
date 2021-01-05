@@ -8,21 +8,21 @@ const CarouselStyleDove = createGlobalStyle`
   }
 
   .carousel-dove h2 {
-    color: #004976;
+    color: #054281;
     font-weight: 700;
   }
 
   .carousel-dove .slick-dots li button:before{
       font-size:10px !important;
       color: white !important;
-      border: solid 2px #004976;
+      border: solid 2px #666;
       border-radius: 50%;
       z-index: 9;
     }
     
     .carousel-dove .slick-dots li.slick-active button:before{
-      color: #004976 !important;
-      background: #004976 !important;
+      color: #f4f4f4 !important;
+      background: #f4f4f4 !important;
       opacity: 1 !important;
     }
 
@@ -31,7 +31,7 @@ const CarouselStyleDove = createGlobalStyle`
     }
 
     .carousel-dove .slick-prev:before, .carousel-dove .slick-next:before{
-      color: #004976;
+      color: #666;
       opacity: 1 !important;
       font-size: 40px !important;
     }

@@ -5,8 +5,7 @@ import AccordionDoveSection from "./AccordionDoveSection";
 import { auto } from "@popperjs/core";
 
 const AccordionDoveTab = styled.div`
-    margin: 0 auto;
-    margin-bottom:40px;
+    margin: 20px auto 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
