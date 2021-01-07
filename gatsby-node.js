@@ -13,13 +13,13 @@ const FILE = `${__dirname}/data/ids.csv`
 const TEMPLATES = {
   Lipton: path.resolve(`src/layouts/pdp-dove.js`),
   Magnum: path.resolve(`src/layouts/pdp-magnum.js`),
-  Domestos: path.resolve(`src/layouts/pdp-hellmanns.js`),
+  Domestos: path.resolve(`src/layouts/pdp-cif.js`),
 }
 
 const PATHS = {
   Lipton: 'dove/',
   Magnum: 'magnum/',
-  Domestos: 'hellmanns/',
+  Domestos: 'cif/',
 }
 
 exports.sourceNodes = async ({

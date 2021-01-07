@@ -44,15 +44,17 @@ const HeaderDoveStyles = createGlobalStyle`
         border-bottom: 3px solid transparent;
         border-left: 3px solid transparent;
         border-radius: 45%;
+    }
+}
 
-        &:hover {
+.link-cif {
+    &:hover {
             border-bottom: 3px solid #2fa354;
             border-left: 3px solid #2fa354;
             border-radius: 50%;
             width: auto;
             padding: 5px 20px;
         }
-    }
 }
 
 a.active {

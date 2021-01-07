@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { default as SliderDove } from 'react-slick'; 
+import { default as SliderCif } from 'react-slick'; 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -10,11 +10,11 @@ const SliderDiv = styled.div`
 
 const SliderTextCenter = styled.h3`
     text-align:center;
-    background: transparent;
+    background:white;
     margin-right:10px;
     margin-left:10px;
     padding:0;
-    color:#666;
+    color:#165648;
     transition:.2s;
     position:relative;
     &:hover{
@@ -33,7 +33,7 @@ const ImageSlider = styled.img`
 `;
 
 const TextSlider = styled.div`
-    color:#054281;
+    color:#165648;
     font-size: 1.5rem;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -101,34 +101,34 @@ function SampleNextArrow(props) {
           ]
       };
       return (
-        <div className="carousel-dove">
+        <div className="carousel-cif">
           <h2>Other products you may like</h2>
-          <SliderDove {...settings}>
+          <SliderCif {...settings}>
             <SliderDiv>
               <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/cache/fb/73/fb73a2a42f71cdf427b0de4311ff833b.png"/>
-                <TextSlider>Dove Shower</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/packshots/packshot/image/36/14/1f/36141f85222bdfd0.png"/>
+                <TextSlider>Domestos Power 5+ Active Blue Water Ocean WC-värskendaja 53 g</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/cache/57/60/5760bc2f51183bffa52cf619531dd351.png"/>
-                <TextSlider>Dove shower gel for men</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/packshots/packshot/image/36/14/1f/36141f85222bdfd0.png"/>
+                <TextSlider>Domestos Power 5+ Active Blue Water Ocean WC-värskendaja 53 g</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/cache/d7/53/d753abf36f99fcdf77eadc8b3d794b2f.png"/>
-                <TextSlider>Dove shower gel</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/packshots/packshot/image/36/14/1f/36141f85222bdfd0.png"/>
+                <TextSlider>Domestos Power 5+ Active Blue Water Ocean WC-värskendaja 53 g</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
-                <ImageSlider src="https://media.estorecontent.com/cache/39/21/39217c6c1da0c1ecf0142dccadaab6cb.png"/>
-                <TextSlider>Dove soap bar</TextSlider>
+                <ImageSlider src="https://media.estorecontent.com/packshots/packshot/image/36/14/1f/36141f85222bdfd0.png"/>
+                <TextSlider>Domestos Power 5+ Active Blue Water Ocean WC-värskendaja 53 g</TextSlider>
               </SliderTextCenter>
             </SliderDiv>
-          </SliderDove>
+          </SliderCif>
         </div>
       );
     }
