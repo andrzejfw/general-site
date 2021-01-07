@@ -35,6 +35,11 @@ const CarouselStyleDove = createGlobalStyle`
       opacity: 1 !important;
       font-size: 40px !important;
     }
+    .slick-next, .slick-prev {
+      @media (max-width:870px){
+        display: none !important;
+      }
+    }
     .carousel-dove .Carousel__SliderDiv-dxiygc{
       margin:0 10px;
       @media(max-width:992px){
