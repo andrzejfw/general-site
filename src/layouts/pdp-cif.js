@@ -92,9 +92,15 @@ const ProductBullets = styled.div`
         }
     }
 
-    @media(max-width:760px){
+    @media(max-width:800px){
         padding: 20px 50px;
         margin: 0 auto 20px;
+        li{
+        margin:4px 4px 4px 40px;
+        }
+    }
+
+    @media(max-width:660px){
         li{
         margin:4px;
         }
