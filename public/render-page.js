@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -7385,7 +7385,7 @@ try {
   Layout = preferDefault(__webpack_require__(/*! ./src/layouts/index */ "./src/layouts/index.js"));
 } catch (e) {
   if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
+    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
   } else {
     // Logging the error for debugging older browsers as there is no way
     // to wrap the thrown error in a try/catch.
@@ -47663,6 +47663,28 @@ module.exports = __webpack_require__.p + "static/magnum-logo-brown-f8548004ac1b2
 
 /***/ }),
 
+/***/ "./src/assets/images/rexona-logo2.png":
+/*!********************************************!*\
+  !*** ./src/assets/images/rexona-logo2.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAVt3pUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjarZpndhu7loX/YxQ9BOQwHMS1egY9/P42igqW7Gv73ScuiVSxWAWcsANAs//vf4/5H35SqdFE/uaWs+Untth850W1z0+7f52N9+/9ifn1nvvxuHl/w3Mo8Byef0t/nd85nj4+8HYPN348burrHV9fF3LvF74/QXfW6/V5kBz3z3EXXxdq+3mRWy2fhzpeF5qvE+9QXr/xfViv6fK/+eFAIUorcaPg/Q4u2Pu3PiMI+nWh86y/LjivV5HXPkTDUwr5dTEC8sP03p6t/RygH4L89sp8jf77qy/B9/11PHyJ5StZhhc/fcOlL8fD+2385xuH9xH5H9/IzqVv03n9nrPqOfuZXY+ZiOZXRd1gu7fLcOIg5OF+LPMo/CZel/toPKrtdpLyZacdPKZrzpOVY1x0y3V33L7P002GGP32hWfvJ4nSsRqKb36GJ0883PEltLBCJWfTbxMCh/37WNy9b7v3m65y5+U41Tsu5vjILx/mn978m4c5ZypEztb3WDEur7pmGMqc/nIWCXHnlbd0A/z2eKXffqofSpUMphvmygS7Hc8lRnIftRVungPnJZ6fFnKmrNcFCBH3TgyG4o+OOgjJZWeL98U54lhJUGfk9IMfZMCl5BeD9DGE7E3x1evefKa4e65PPnsdBptIBA0UCrlpoZOsGBP1U2KlhnoKKaaUciqpmtRSzyHHnHLOJQvkegklllRyKaWWVnoNNdZUcy211lZ78y2AganlVlptrfXuTedGnWt1zu8cGX6EEUcaeZRRRxt9Uj4zzjTzLLPONvvyKyxgYuVVVl1t9e3MBil23GnnXXbdbfdDrZ1w4kknn3Lqaae/Z+2V1W+Pv8iae2XN30zpvPKeNY6aUt4u4QQnSTkjYz46Ml6UAQraK2e2uhi9Mqec2eZpiuQZZFJuzHLKGCmM2/l03HvuPjL3R3kzqf5R3vzvMmeUuv9G5gyp+563n2RtiefmzdjThYqpDXQf53RfDb/W8uffPv/qQn2snc5quy1bWz99b2qg1pGXPWGSQxdWcc2Xfmw5vpvJDFyG/xcT96fWEDsB6dWV4XYse8QV01gU1a6r3luBe/eOXQT9ejZfD/ynz4bi7W1MchryXqORljgXkSb98RDqnM4pk9GHaN3Op9cyE0nrc6Q85vBl5ZOjafkEZbbxTybpfVDglFMJnAuvQCiJmUa9WrYUPfsEZOqdSmMSGdrAmXYc5UIdHZ/P3mE0ndJ2zdyaYHsOnt3zWJQjFZdVFtMSvbTWiWHtcrYr1uwWzoGS9PHZ4r3j9r6lomu0uKcDt9bUaYAoAb9nSp/58+lGpqVML2Y7+wBE125nxa4i3NZTkD6MzZgVK10gndb2yn7FMc8KzSc0Hi3qnUmoIp9tm5sI9Jb3SESshNmc+oC5uDXo1woarHuxGsv0p6Tt10o9wbdcDOkHHFQ7+fCeGhVDC8OGeeb0IyVXk6dtXRsw7awn5VO924EQ21JnOIP485uMPUMVXPY8OzLfHJgF0w6hlDWT01AdfenHKl53CGlbqvmUGs5efLaGXs4yLfDfCHMfctD8raU1Dh2NWBtVvdsXXev6iDuENhoA1NzaIz8dNTyjdtEkqUn+/Nvn14WgusRIA3NkZO7MCtJ0MIpRzzK8gjx2OJciIYdIU95CUTkRpT0Mff1USHYdVC1jPrXkQ99jPCmnzc9BhC7BOKUc4wBswYRCRLlwpHBAyLwYIIifSg+Fmh2jdpIy+YDvfboV4mnBx+rq5u9MpS1PZHOYJQMvYQNy08A2BUUMBMYAAqmjUFyJW4HuC2AOuQc44QC0ikjazq1+Y5Mk19+ezdcD/+FzMmD87ewHL/AgFzEgkNHQg6FQBTO0rvqA5I66J5SEYt9UhvcxT7jIh2Zsh6M8wQiu+JKhq0XZtxMo4UboqB1iPWxpgz58S8vcHVFY+s5ukGWXO0yb8j5jgxx7J/olo3wGfDWbpKzwZIQ9NokZqM4NPyVJJZoIhQwhzl5xMdNQ4VyZW0PV+bToxbRpDfJ3p9p8Xf1iFGcqGzcX6nTA5uxTdCegwFS6mazHtOKsu5a4260jJkwr3JNnB5xmVlpJO2rodgYcN+IHdJu/w/gsizlp+8rUekJtE8pxRj/mNGqI6Nnj6ppR+JU9sJsJ16J7w3C1AmK0dD8N1grUE3I+owDyDXOPRPeY20h1lZTsDKHPRpNTtKGTskYdJmBhXEAd4Ew4M1fwh7JfizasRZ+dLTEiCxrXxlkVLEy376wg/si+0cjOF9XTwX0E9fC2GcoB2mjEXPhcDu70afqeENN4n+trqvTSof7KzZx3+uDxiTHQ+NtfyO2ulqeYp0WNPIM9NBZddxkCR7KfhFcH/TF2J7rgFuQfxTOYb/82X/PTCWt632Z854tZLRwG4sFLzfstHOZzPEZgSMEyVXotbJkvx4wzIitwhTX3QFrwPElYFuajwIC/CdTTa7iHYblw5fhpwHeGG8sgxGo3aACKd9QmLQL1VQBmk+NEAwIqdlPkdXdrDlcFy1YJibYcsaD5DnwFcjKLybWg61YKbe4QfdWrAZFpW9fuvdcBfMgdlWz9YFSn5gSkFNAj+X5CF/EJbMCM2pZDQWEUm3iRnh4UJJQ7o78khcg0dU4aPyE+EC0TrcBHgYLVcJBTgiXPtVBqDUmaqM7qgRl9xHmO0bnYJaAUeWwzYhoqiahSyNFxHGSHBjuwihbHxEppd6+CH6iLkKYGBKo9ogeagEeQfn3dekVepQEuzSOl3QTNyNwV89ryaKVhu6m2ujOqAEHpB3GjBECRdbufN+APdEVGRhI88NG/cSjS/4+l35cDG72SqSb/sB3NTkeRQwklMc2t+NI7IFBznDlaWJX5ZoOPiFLE08F3JA9yQgG0QfU5EKCg1hEod4Al+A8BnRBh7RORGJhE6wJUIgGCEsKSpygZSpzLn4a0o7bQE7At1qgB3xQiYwAeOZEoNnjibNMBrYwNqZrQSgxADuOEXbr/G3Yz/3QCDTyEGZYeII3xCAQzWcbvYE5IOs6oIXFLXkadhSAF9sCtlVEAaCoUL8ZswYQV7EeCLUvvhTEpeZQz4m5UKTzUAYWcCpVj0l5EFTuFcVubFlT3+nCIq/xjLinQiR4ETiW6hsUMwVKtqBKv4BUE8Qpw/6STM22EXC+10yU/ThCcr1ZYgOLs0FqesQ1oPNC/bhaAE/+p5jEbEp8TaBBCDkGqdDPxQIIixDkKEUQ0eiPjm3at0AqslJivgzznnLXHNk1mDFtxAR7mA/1EgviER27NW4IzqaLg49738rIpaN2US7ypV+aNUg+n2hoEcb7hU2Q9/t4d/eKNX7ZKgvoS75IGj8VDrvRCPVCQcjUg/7jicg0AfDGsDcrh2L0WAdtEeLdT6W2wkqBR8IXPBzCmYySvkDNrYu+/yd0sggLygxCRKtlyCoHkvRuFNWGQYh0+KAO+x7SaVIWI8gmcIrf6tRZ1xVjz7NGmamUJDigMssmLu8jAM3gQ6Eb86kRTJkMPdxCeOlnDttjxu4sKZ5SVyS9PHux1FX5oPSNseHHdnOA4+SnlmY+J9d/7WfllEHI3V+cYHp2Z0Gs419lLRdHshDDdF4jxr4DIujXV4WDNFM9GhYMqmLA9TRiMUINXAWN4gNvTcp8oSdJVpxqS6rfI8lbmoCjbAM4t9b3PS7zRM9isL4sHDnG4g3gwIFLwGdBBp59Jkw3tERlNL0aug4Ii/Oham1EjO/rL/mgqBDKqAZ4FK19Sog1sAZKtcBJ9drQaEz9eHocus/+9tZGJrHGOGo6QHC2Bcwe94Xy0JABxUl1XVTVU2tW6adW7lADl0eNd4UZ8+tzl+3GunIoMEX5IyDGRtOvYSBbK9cqVRMeg5CBOSg6dhaLHbOEx0RC0PKkyuKxR+i0qOEFCERlPdTSnGtkg4ER7rwfpKHwRyYuI/MgCyHH9rlFWpNYe6ttjbrUtjfIpI79JyFJCjDzl7zLyJwE3f5CRfOUxYj9fbEIHX3NL6X56izo6b+9k4Dag8L6GNer9nXrZTmS6xVgRfp9LVumikfeG3g7f7OCPoVHaP0JzPCpBigudfjW4v4VhoLy7XgOBFvSXAA18qfglVKDXYgTmxS//8RJLg876ioXmN2sDDqr14BPm2B671hI1tqptCJTF1rLHTguKMTsiihkNDawVMOpUpUStw+daoIrNVmqeeqYcGvVcmAvnd39mmo81TPIiuBU8wfWFqH549OD4Sg9V21YNSazFrt4ApN21OqsVG5JRieN+otMYqQ/miGjvioNY4JGXr3OeM95O4G0oL9eO/6BcMSIJOkFHAbck3DAdikHrzzGhQpHxovQt774DDFbTsbowXV2lJBpIXuTV+3ColhIX5+fdjC/0DbOAwAOhyOTbY9d3mwgUBIxDYkxPulboWiijjZNrMDrkQkNOuW/MSze+Z5fb7IFBj+AhFkIhNkfVgYLn6cGOaGxXRF/fhRCnswAZj0PddfrdjW4ILjvE/BIKAesoqhszn4EFyhKY1VXXlGDADeFtMDx4sxmzQ/cAYtYh2C3kiJqZdVhEFTZjEA2y1BDa4FSTc99YypEIBTbGaZmgw5awxqSj1l24RUTEnyyZ/BN8vPcIAgMPHWQAyzT7WTwVAE3hx3Za6JHl21tF5Qo4xvAGimOMS8q4PcnB5LeW+GwYOPdkQLmwU61aykg20gnYs8mFIGWr5VNQ8KnfpheO0SL4G43RJ16nJK3eodYMnocao1m3I/tVBVi/fnRhZ8L2tC5mFl1wCg4PG7zAaRBF/gk1gouvCrsP2G63tUgZugeE0K0YgE6p1rHktYgp3i3TLJTRhKIzzhJbMmXCjYxlpJ1QQN+niE5zKF6nLWwmQYMjhbmatm+Sc2gtZAkqpwYqG5OmZWyvSN9O446WpsNVPwuEPT4fzJr09pH+0wTByIb6RGXfCZp0Z9gokVqY4MyuwvquFswM/RWo9xEnNOAhMgTFhfKuUv8C/qECzloN93EGmI62eCAeGNHyjLq7AiSoCdKN3A52qcDWs6BZeeCqfDRnMKuVpy3H3p0UGpFQnaq1in6lFLF1vyUb8+0NKGNSLLDxmQB0lMdh0AH3Thd3FU2fWirHByVMXExwt+0IdoC9B5JVcHjaGdHyCU3OlNGjfmYtVFNApWCIZQeT63UifN3C+pedRR9aG4FS5cHBdDzAQqZhLBpWH7xF5lr63c0gz213Rq4iSHKOA94bUJsDyXbS1ofJnkag3g8eFJUYdcHmdqK6Mqki0gz+uKmlWCabuC0IiJiBs0LUMOE3KhgHSb47deq0PI9eLBCHj017XlehgCHoIT7vtKMmHu4qsHmXiLBhTjtnBcymeqEFX9AswDu4dPfDaUMoHdHnoRGKsle3IpydKlfHGMMtc9mYuAh9R4EYDCsD5nJcPsDrQ6sn1HIbE6ZV7zePLQOlsFZrNkSMoOZRRU415ETO1mjZjK7TKkUuB+LUjj3yfzw7rcMlhho3jqEMt1oEF5PT/K4wbliNR7cb7cv8pGg/SvZW7G7rN/VvbgPgfRwjK3ftrTjsk9b37X7p8Tjjnxs/ySDcelG5tHuogDiIuQX15zZ+tw1hHs2B4ZjP6iK4SBoeE5ilCTz8xD3QBXCulgFjzxTX4ytBnhiRoisYic7HblaAMMDzG1PLPB9KKc6NNy3kZvxQIFod/yxA4P6Zx1UgSxWs+ZWhxSgphbHEG01mHd/aEHcVnjvlZAeN2rnwuqndJTRTGK4H7lQ2Fg21tVjgbvwtGjFAJuCjVv4joL8FLkQwzgpCtPYsgCV0ugEqx0PydWmVdFDkWMQUoakxUGRorF5Q1a23JPNQQqzzbYcAtEWK9ra9oatDcvRO5s1VNzJvnZxHpaAdRF9alUn3OM3iu9Yuu7ZlJ4QZmVeJGBGF1TDOEvHChQFE1A04roUK8T0Ugiik/mAs8AJXDMSgBMjJA4TjIA5RIvRtJ9iM/a68YjpRm/sKEqcFwkkI2jwIT8oIDc4UbmFyQ9pOq1kJmgML4hwUZJlHq5Ulow45GWkVtWVMijp0sis4APw6hPrMRZtBON9hR11Bu6go1q2l/Y3L9pmGx3OiBtIde9aeQO+tdYf3BUB2vcjUW9ZXtqZEZmwrt6rVxeghqwyLxI5MRicKZyU1FiWah4RCK8G72l2jSiNKqbrMXRDWWIniRq+4rztp11MxtBIBqzCHRwVhyXpPo1NrUNDUtxDc3UVAatHR6EqwKKJ2MwgLJ+NsCuYG6YLyD1o0GXDO0vrvxDcMdPJUJeMg47qlEwl0mmmhRdEW2jHmtqQ1bFxFpu6NX1rAQ8X5Wuc8jpRFfZfJOgSCRzpkbWgAKJxGeEPE5be8tLdFOeWaUTURvDVYLadp1bsNZVeg0hYUjYRBBpGkizMg1IhAqlaUkr54IWi7IgMFtIV7RvgGqAd3TZOVMinPznZ5nZjlIUofsz1O26FGC7FnmkjlF+Rt4zHDL7r2Mi3UDcK7ZpjWJ7T+Bl2VOVTMjkDHaEVQ6iaaJnj8OmaQ1mmGmNFZoWr7vEozayJIIuQ+PmPNxwDjq8aU04te69mYGkvb3vFpfQAuNg7zRNQ84udoa9aCq3ArAmsho522QbcUGHQwJPOgpKzvmaQqVYrqdhB4HdnE5hDM8L31Sn7GP9AYXctu3q3tpN2coENf5nIvVde61pgBltlKQlugATDHtpaa9U2ao8rWFxALwjShUlEIugCsBCxW8JfDFXAVP/CK6LXBnWTJnFn34nWXdnWLZr6dfRY2tYU1CKrcjFWw0I767ghKQV+dyxQTF61ijmJsJJHHadsazTOrtlFssKXqWwPfbrDPzy8fl9F+Q19an0GNUYweSR1holH1VYKW3YiRlrt3cPpqZcXuaq2XlkHsoHtwq2M409C0uEQYqEiXqZXxby1owRERh4RADmc/Z5HY8VpPO8k9NuxzMsxPsvFpPogrrWveL8IpMlFbEBupE55vc+T6VmXml2U20o9jr2CphqCUFhx9f1bcmIJGUU3rI0MFcOXAVNKZWd92iQgYIoWty4B+QxqGEoBGpKnTOmnWdqPaLBB1Ojw1AwRyJzKCC/FF+98x6xsFM8sxMXanagBfuZyDYqx4+vVFFTmJBRhyj2FGLUoz/UALpAxMaf/1EsPozfo9gZaJ/MbVa0GfC86n+JnZe7wl2F/1r73NZ7aviCdPwgBEfWckM6ytugA2r2kCa1bYQm/QDrCD+0V+4NesFEiKNgBwxe3pgX4+3RZjQnuhJvE4fIicLPAQFsn6XM6oX+qieFSt7PONmhaaEZRV1fqOG9a+pVTfSL1JZWTfW9r8qorQ8yKYcSlDeEw3a7uga4cK02oFkX5ipCtiszmjKVlkhfocpZTumnIA3bfWc8ZL3IGYR2v4BPX/ARgiHNRBBKHvAAABhmlDQ1BJQ0MgcHJvZmlsZQAAeJx9kT1Iw1AUhU9TpaIVBzuIiGSogmBBVMRRqlgEC6Wt0KqDyUv/oElDkuLiKLgWHPxZrDq4OOvq4CoIgj8gbm5Oii5S4n1JoUWMFx7v47x7Du/dBwj1MlPNjglA1SwjGYuKmeyqGHiFDz0IYgzDEjP1eGoxDc/6uqduqrsIz/Lu+7N6lZzJAJ9IPMd0wyLeIJ7ZtHTO+8QhVpQU4nPicYMuSPzIddnlN84FhwWeGTLSyXniELFYaGO5jVnRUImnicOKqlG+kHFZ4bzFWS1XWfOe/IXBnLaS4jqtIcSwhDgSECGjihLKsBChXSPFRJLOox7+QcefIJdMrhIYORZQgQrJ8YP/we/ZmvmpSTcpGAU6X2z7YwQI7AKNmm1/H9t24wTwPwNXWstfqQOzn6TXWlr4COjbBi6uW5q8B1zuAANPumRIjuSnJeTzwPsZfVMW6L8FutfcuTXPcfoApGlWyzfAwSEwWqDsdY93d7XP7d+e5vx+AHnmcqrGWfkOAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5QELDRg5tfoNIgAABxRJREFUeNrtm3uwVVMcxz/73F70WkZS/BGRR7ljYZA01DSMjBgSymsmBhmTydKYUCnvsobxByFKmSIJU0PueDUlz2ENPRCTGFHUXeVVbt3jj/3bc7c959xude4595y7v/+cOWuv1/7u3++3fuv3WwtSpEiRIkWKQkJpc/a+ts1UMCljgX0mpk2FknIDcAfQNyWmgZRbgceAod7ZbalBCUm5RGmTVdrM3N++MhVEynDgFWADMCYlJiTlFGAOUA9M8c7W7W+fQQWQ0htYC7QDVnlnqwvRb6bMSekBvCOkAJxTqL4zZUxKAMwCjpCiKd7ZXwvVfzkv13OA84AsUAs8UcjOM2UqLXcAV8bs5FTv7OZCjhGUISmDgPdiRau9sycUepxMmZHSB3g7UXxVc4yVKSNSugCvAlWx4poA1rRqYsTY9kuUTax19t9WS4zSZhJwUaL4Ze/sJ801ZqYMSBkMTEwU/wnc0pzjZlo4KW2B13L4W3OA35pz7KCFk/IxcFLiURY41ju7rmwlRmkzSFz3fcGDOUgBmNncpBRDleqAj5Q2J+4loecAJsejemBsMSS2WYlpkwlWAuuBFUqbyU0k5RhgcZ7H93lndxSDmKAItqIa+AToICGCy7yzW/PUPRBYDpyc47EHTiuGGhVlVfLOfgU8KX+HAOuUNjflqX5/HlIAaopFSlFXJaXNJqB7rOht4GLv7J/y/BLCmG0+HO6d3Vis+VYVa6AOPQb8Alwc+xi9gZEdegz4qUOPAf8CbwLt8zSf6Z2dV0x3oZgO3kLgp0TZkcACYBXQJU+7HcDDxfajikaMd3YnudMaVWKY82E5YUqESpUYvLNvAEv2stmMQqRDymGvdCuws4l1f/bOLirFlqQUxKwnDDg1BaNLtVcrOjHe2WyOMEIurOH/sd2Klxi8s98BDzVSJQssKIVtaQnxmKnAz41sPheWMuxRMmK8s//IViGb4/EH3tnVrZIYwePArhzlY0o8r9IS4539I0d8ZaV39ptWTYyQM0O2BBGeogWgpQTDJ4mt+V22ACVHSzntsBT4EfjOO7s+lZj/r1AXANeRIkWKSkKjMV+lTT/g6USYYLcsr295Z5e2VmLOAFbK3/ocBvsDYIhE5yoKTV2V6oHpwBWEMZIoIXZmjLiKQpu9IGaFdzYKS85S2swGrgWqlTZne2eXiZR1A64GOgLfAgu9s/VKm17AQbI3WhdJmdLmYKCX9LvBO7tFadNR+u4KfEGYU6pPSHN3YDigCJNxC7yzWxJ1NDAIOEB28i+La9CsDt4jMvkq4ChgmdLGArcl6m1U2gwDugFvSdnNNCThPgT6SKjhYKWNkb7j+FppM9w7u0ZpM1A2n8mE/xNKm0eB8d7Z3UqbGcCNiTrPKW3u985OLpQq5UI8J7VdLk5FpLwubv5m4DDgQ+9sjXi4IOkQpc0oIRXCM7tHx0hZCkwGNgHHAa8qbTLiCEakzAbuJEzBAIyLkdEJmE8YLbyH8EhJFTBJaTOlUMZ3F2HWcImUt5NA0jBRsxNk4M7ALO/saKnXRchpL/apRvZDGeAZ4HhgIPC+d3aw0mYeMFK2Bn2kj5PFyAfAGcAIYIJ4zEFsrsulr/eAc72zu3K8z/PANaLi/b2ztYVQpXoR857AUBpuj00TNYiyiHOFkED6X02Yjz7JO/uS0uZGIeX62Eo3Xn6jq3rx6N1mYBtwaEy6cmGtENMt0gSlzXEiQadLWTepexhhgq8gxOwEDqTh3EodcJd3drrS5lQhIgu8m6f9QfL7ksRgqkW0n/LOfhabMMBfsXZ1MQIPIXfEj5ivFQBZpc2FotKR71UHtJX/HWm4mLHfxBzgnb1XaXMRcArwN7AooZKBiP0/iRcIRHIgTLnGr+R93wzuRRCzO6vEzmwBBovtCxoheJ9XpXGEJxW6Ekb6R8jLRgON9c5+3kj7s0TkI0xT2syVmyPbpN92iTlGxNcCh+9hfnVioCPVHu2d/VRUq7PMMyj4quSdXR5Tl0uVNud7Z78EooPIY/IY8s5yHm+uFDkxghBe7iTmLMaJ6ySivxv4YS/8rqSKRSqFkFNwiQG4PKYO85Q2h4gRngpcLyej5svgfYHbgXPF4PaUdkOBUbI8D1faHC2+zVDgLKXNAxLNmyir3WZRiwv2MLe24plHkvGK0macqFJ1U9SoKRITxAjMxKRme8xf6Ep4Nu5ewjO5yAsvJkzgT5Ov3i8WiHpMVOdZYKv0/6L4LovEKE8A3pAl+m9x3LY38jGrYsRkxD34XXyjxSKN06XeHs8F7UliNgB3i5okLzPMlQE6i4NXFcCILJxKeCOku7zQx/LCvUU6dgLPCcHblDZXiFHMiP0YRXgk7XJRobXAC7HMQY3YkaSdWEJ4KHpTAPW1zi5Q2qwUZ7C/EJYVddohHyRFihQpUrQk/AfkIzXzk995SgAAAABJRU5ErkJggg=="
+
+/***/ }),
+
+/***/ "./src/assets/images/rexona-product.png":
+/*!**********************************************!*\
+  !*** ./src/assets/images/rexona-product.png ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/rexona-product-9aefab898e29dd2ba96bc95e43dba6e5.png";
+
+/***/ }),
+
 /***/ "./src/assets/images/unilever-logo-white.png":
 /*!***************************************************!*\
   !*** ./src/assets/images/unilever-logo-white.png ***!
@@ -48815,6 +48837,119 @@ function _templateObject() {
 
 var FooterMagnumStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
 /* harmony default export */ __webpack_exports__["default"] = (FooterMagnumStyles);
+
+/***/ }),
+
+/***/ "./src/components/FooterRexona/FooterRexona.js":
+/*!*****************************************************!*\
+  !*** ./src/components/FooterRexona/FooterRexona.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/unilever-logo-white.png */ "./src/assets/images/unilever-logo-white.png");
+/* harmony import */ var _assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_images_facebook_icon_white_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/facebook-icon-white.png */ "./src/assets/images/facebook-icon-white.png");
+/* harmony import */ var _assets_images_facebook_icon_white_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_facebook_icon_white_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_images_rexona_product_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/rexona-product.png */ "./src/assets/images/rexona-product.png");
+/* harmony import */ var _assets_images_rexona_product_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_rexona_product_png__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+var FooterRexona = function FooterRexona() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-rexona-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "footer-rexona-nav-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-rexona-section"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "footer-rexona-item-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-rexona-image-containter"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "https://www.facebook.com/doveeesti/",
+    target: "_blank",
+    rel: "noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_facebook_icon_white_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "Facebook ikoon",
+    className: "footer-rexona-social-image"
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "footer-rexona-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "footer-rexona-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/sitemap"
+  }, "saidi kaart")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "footer-rexona-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/contact"
+  }, "kontakt")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "footer-rexona-item-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/cookie-notice"
+  }, "k\xFCpsise-eeskirjad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/privacy-notice"
+  }, "privaatsuspoliitika"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/legal-notice"
+  }, "juriidiline teave")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "footer-rexona-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_rexona_product_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    className: "rexona-footer-graphic-image",
+    alt: "Dove ikoon jalus"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-rexona-unilever-div"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "Unilever Eesti logo - must valge",
+    className: "footer-rexona-unilever-logo"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-rexona-unilever-copyright"
+  }, "\xA9 Unilever")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FooterRexona);
+
+/***/ }),
+
+/***/ "./src/components/FooterRexona/FooterRexonaStyles.js":
+/*!***********************************************************!*\
+  !*** ./src/components/FooterRexona/FooterRexonaStyles.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteralLoose */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.footer-rexona-container{\n    height: 180px;\n    z-index:2;\n    margin-top: -10px;\n    background: #103073;\n\n    @media (max-width: 500px) {\n        height: 250px;\n    } \n}\n\n.footer-rexona-nav-wrapper {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items:center;\n    background-color: transparent;\n    position: relative;\n    justify-content: space-between;\n    text-transform: uppercase;\n    margin: 0 32% 0 22%;\n    z-index: 2;\n    align-self: center;\n    \n    @media (max-width:1600px){\n        margin: 0 17% 0 8%;\n        padding: 0 10%;\n        max-width: 1000px;\n    }\n\n    @media (max-width:1200px){\n        padding: 0 15% 0 0;\n    }\n\n    @media (max-width:692px){\n        padding: 0 10%;\n        height:100%;\n        margin: 0 auto 5%;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    @media (max-width: 500px) {\n        display:flex;\n        flex-direction:column;\n        margin: 0;\n    }   \n}\n\n.footer-rexona-list {\n    margin:0;\n    padding:0;\n    display:flex;\n    list-style:none;\n    justify-content:space-between;\n    align-items:flex-start;\n    \n    @media(max-width:692px){\n        flex-direction:column;\n        justify-content:center;\n        align-items:left;\n    }\n}\n\n.footer-rexona-section {\n    display:flex;\n    justify-content: space-between;\n}\n\n.footer-rexona-image-containter {\n    display:flex;\n}\n\n.footer-rexona-item {\n    line-height:1.2em;\n    color: #fff;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw; \n    position: relative;  \n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    transition: all .2s linear;\n\n    a{\n        text-decoration:none;\n        color: #fff;\n        transition: all .2s linear;\n        &:hover {\n            font-weight: 700;\n    }\n    }\n\n    @media(max-width:500px){\n        margin:8px 0;\n    }\n}\n\n.footer-rexona-item-list {\n    color: #fff !important;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    text-transform:capitalize;\n    list-style:none;\n    display:flex;\n    flex-direction:column;  \n    align-items:center; \n\n    a{\n        text-decoration:none;\n        color: #fff;\n        transition: all .2s linear;\n        &:hover {\n        font-weight: 700;\n    }\n    }\n\n    @media(max-width:992px){\n        margin:4px 0;\n        justify-content:center;\n        align-items:start;\n    }\n}\n\n.footer-rexona-social-image {\n    width:auto;\n    height:50px;\n    margin:55px 50px;\n\n    @media (max-width:500px){\n        height: 30px;\n        margin: 20px 10px 0 0;\n  }\n}\n\n.footer-rexona-unilever-div {\n    z-index:2;\n    background:#7f7f7f;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    padding-right: 3%;\n\n    @media (max-width:992px){\n    flex-direction: column;\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n.footer-rexona-unilever-logo {\n    width:50px;\n    height:auto;\n    display:flex;\n    flex-direction:column;\n    justify-content:center;\n    align-items:center;\n\n    @media(max-width:992px){\n      margin: 5px auto 0;\n    }\n}\n\n.footer-rexona-unilever-copyright {\n    font-size: .8rem;\n    color: #fff;\n    align-self: center;\n    padding-left: 10px;\n\n    @media (max-width:992px){\n    padding-bottom: 10px;\n    padding-left: 0;\n    }\n}\n\n.rexona-footer-graphic-image {\n    width:auto;\n    height:200px;\n    top: -72px;\n    left: 0;\n    align-self: center;\n    position: absolute;\n\n    @media (max-width:1200px){\n        top: -30px;\n        left: 50px;\n        height: 150px;\n    }\n\n    @media (max-width:800px){\n        display: inline-block;\n        margin: 0;\n    }\n\n    @media (max-width:500px){\n        top: -210px;\n        left: 245px;\n        height: 200px;\n        margin: 0;\n    }\n\n    @media (max-width:400px){\n        left: 220px;\n    }\n\n    @media (max-width:350px){\n        left: 180px;\n        top: -193px;\n        width: 70px;\n        height: auto;\n    }\n}\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var FooterRexonaStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+/* harmony default export */ __webpack_exports__["default"] = (FooterRexonaStyles);
 
 /***/ }),
 
@@ -50081,6 +50216,197 @@ var HeaderMagnumStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["
 
 /***/ }),
 
+/***/ "./src/components/HeaderRexona/HeaderBurgerRexona.js":
+/*!***********************************************************!*\
+  !*** ./src/components/HeaderRexona/HeaderBurgerRexona.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _assets_images_rexona_logo2_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/rexona-logo2.png */ "./src/assets/images/rexona-logo2.png");
+/* harmony import */ var _assets_images_rexona_logo2_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_rexona_logo2_png__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+var Hamburger = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "HeaderBurgerRexona__Hamburger"
+})(["background-color:#103073;width:30px;height:3px;transition:all .3s linear;align-self:center;position:absolute;z-index:999;transform:", ";::before,::after{width:30px;height:3px;background-color:#103073;content:\"\";position:absolute;transition:all 0.3s linear;}::before{transform:", ";top:-10px;}::after{opacity:", ";transform:", ";top:10px;}"], function (props) {
+  return props.open ? "rotate(-45deg)" : "inherit";
+}, function (props) {
+  return props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)";
+}, function (props) {
+  return props.open ? "0" : "1";
+}, function (props) {
+  return props.open ? "rotate(90deg) " : "rotate(0deg)";
+});
+
+var HeaderBurgerRexona = function HeaderBurgerRexona() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      navbarOpen = _useState[0],
+      setNavbarOpen = _useState[1];
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "rexona-burger-menu",
+    style: {
+      transition: "all .3s linear"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    onClick: function onClick() {
+      return setNavbarOpen(false);
+    },
+    to: "/index-rexona"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_rexona_logo2_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "rexona Eesti j\xE4\xE4tis logo"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rexona-toggle",
+    navbarOpen: navbarOpen,
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, navbarOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, {
+    open: true
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rexona-navbox",
+    style: {
+      transition: "all .3s",
+      right: navbarOpen ? "0" : "-100%"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "rexona-navbox-item",
+    style: {
+      transition: "all .3s",
+      left: navbarOpen ? "0" : "-100%"
+    },
+    to: "/products-rexona",
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "rexona-navbox-item",
+    style: {
+      transition: "all .3s",
+      left: navbarOpen ? "0" : "-100%"
+    },
+    to: "/contact",
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, "Kontakt")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (HeaderBurgerRexona);
+
+/***/ }),
+
+/***/ "./src/components/HeaderRexona/HeaderBurgerRexonaStyles.js":
+/*!*****************************************************************!*\
+  !*** ./src/components/HeaderRexona/HeaderBurgerRexonaStyles.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteralLoose */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.rexona-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background: #fff;\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n        border-bottom: 2px solid #103073;\n    }\n\n    img {\n        position: absolute;\n        left: 5px;\n        height: 60px;\n        z-index: 9999;\n    }\n}\n\n.rexona-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.rexona-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 5% 20px 5% 15px;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    background-color: #fff;\n    border-left: 2px solid #103073;\n    border-bottom: 2px solid #103073;\n    width: auto;\n    height: auto;\n}\n\n.rexona-navbox-item {\n    text-decoration: none;\n    color: #103073;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    margin: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #103073;\n    }\n}\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var HeaderBurgerRexonaStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+/* harmony default export */ __webpack_exports__["default"] = (HeaderBurgerRexonaStyles);
+
+/***/ }),
+
+/***/ "./src/components/HeaderRexona/HeaderRexona.js":
+/*!*****************************************************!*\
+  !*** ./src/components/HeaderRexona/HeaderRexona.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _assets_images_rexona_logo2_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/rexona-logo2.png */ "./src/assets/images/rexona-logo2.png");
+/* harmony import */ var _assets_images_rexona_logo2_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_rexona_logo2_png__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+var HeaderRexona = function HeaderRexona() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "header-rexona-nav"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "links-section-rexona"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/index-rexona"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_rexona_logo2_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "rexona Eesti j\xE4\xE4tis logo"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/products-rexona",
+    activeClassName: "active",
+    className: "link-rexona hover"
+  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/contact",
+    activeClassName: "active",
+    className: "link-rexona"
+  }, "Kontakt"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (HeaderRexona);
+
+/***/ }),
+
+/***/ "./src/components/HeaderRexona/HeaderRexonaStyles.js":
+/*!***********************************************************!*\
+  !*** ./src/components/HeaderRexona/HeaderRexonaStyles.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteralLoose */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteralLoose.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.header-rexona-nav {\n    position: sticky;\n    top: 0;\n    left: 0;\n    z-index: 99;\n    height: 70px;\n    padding: 10px 20%;\n    text-align: center;\n    background: #fff;\n    border-bottom: 2px solid #103073;\n    box-shadow: 0px 1px 8px 0px #103073;\n\n    @media(max-width:1600px){\n        padding: 10px 15%;\n    }\n\n    @media(max-width:1100px){\n        padding: 10px 20px;\n    }\n\n    @media(max-width:692px){\n        display: none;\n    }\n\n    img {\n        z-index: 999; \n    }\n}\n\n.links-section-rexona {\n    display: grid;\n    grid-template-rows: 50px;\n    grid-template-columns: repeat(5, 1fr);\n    \n    a {\n        color: #103073;\n        align-self: center;\n        font-size: 1.2rem;\n        transition: all .3s;\n        padding: 5px 20px;\n        margin: 0 auto;\n    }\n}\n\n.link-rexona {\n    position: relative;\n        \n}\n.link-rexona:after{\n  content: '';\n  position: absolute;\n  width: 0; height: 3px;\n  display: block;\n  margin-top: 5px;\n  right: 0;\n  background: #103073;\n  transition: width .2s ease;\n  -webkit-transition: width .2s ease;\n}\n \n.link-rexona:hover:after{\n  width: 100%;\n  left: 0;\n  background: #103073;\n}\n\na.active {\n    border-bottom: 3px solid #103073;\n    width: auto;\n    padding: 5px 20px;\n}\n\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+var HeaderRexonaStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject());
+/* harmony default export */ __webpack_exports__["default"] = (HeaderRexonaStyles);
+
+/***/ }),
+
 /***/ "./src/components/HellmannsBannerAndText/HellmannsBannerAndTextStyles.js":
 /*!*******************************************************************************!*\
   !*** ./src/components/HellmannsBannerAndText/HellmannsBannerAndTextStyles.js ***!
@@ -50425,52 +50751,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_FooterDove_FooterDoveStyles_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/FooterDove/FooterDoveStyles.js */ "./src/components/FooterDove/FooterDoveStyles.js");
 /* harmony import */ var _components_FooterCif_FooterCif_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/FooterCif/FooterCif.js */ "./src/components/FooterCif/FooterCif.js");
 /* harmony import */ var _components_FooterCif_FooterCifStyles_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/FooterCif/FooterCifStyles.js */ "./src/components/FooterCif/FooterCifStyles.js");
-/* harmony import */ var _assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../assets/styles/globalStyles.js */ "./src/assets/styles/globalStyles.js");
-/* harmony import */ var _components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/TabBrand/TabStyles.js */ "./src/components/TabBrand/TabStyles.js");
-/* harmony import */ var _components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/Carousel/CarouselStyles.js */ "./src/components/Carousel/CarouselStyles.js");
-/* harmony import */ var _components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/CarouselLipton/CarouselStyles.js */ "./src/components/CarouselLipton/CarouselStyles.js");
-/* harmony import */ var _components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/CarouselMagnum/CarouselMagnumStyles.js */ "./src/components/CarouselMagnum/CarouselMagnumStyles.js");
-/* harmony import */ var _components_CarouselDomestos_CarouselDomestosStyles_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/CarouselDomestos/CarouselDomestosStyles.js */ "./src/components/CarouselDomestos/CarouselDomestosStyles.js");
-/* harmony import */ var _components_CarouselCif_CarouselCifStyles_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../components/CarouselCif/CarouselCifStyles.js */ "./src/components/CarouselCif/CarouselCifStyles.js");
-/* harmony import */ var _components_CarouselHellmanns_CarouselHellmannsStyles_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../components/CarouselHellmanns/CarouselHellmannsStyles.js */ "./src/components/CarouselHellmanns/CarouselHellmannsStyles.js");
-/* harmony import */ var _components_CarouselDove_CarouselDoveStyles_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../components/CarouselDove/CarouselDoveStyles.js */ "./src/components/CarouselDove/CarouselDoveStyles.js");
-/* harmony import */ var _components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js */ "./src/components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js");
-/* harmony import */ var _components_HeaderLipton_NavigationLiptonStyles__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../components/HeaderLipton/NavigationLiptonStyles */ "./src/components/HeaderLipton/NavigationLiptonStyles.js");
-/* harmony import */ var _components_Header_NavigationStyles__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../components/Header/NavigationStyles */ "./src/components/Header/NavigationStyles.js");
-/* harmony import */ var _components_HeaderMagnum_HeaderMagnum__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderMagnum */ "./src/components/HeaderMagnum/HeaderMagnum.js");
-/* harmony import */ var _components_HeaderMagnum_HeaderMagnumStyles__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderMagnumStyles */ "./src/components/HeaderMagnum/HeaderMagnumStyles.js");
-/* harmony import */ var _components_HeaderMagnum_HeaderBurgerMagnum__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderBurgerMagnum */ "./src/components/HeaderMagnum/HeaderBurgerMagnum.js");
-/* harmony import */ var _components_HeaderMagnum_HeaderBurgerMagnumStyles__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderBurgerMagnumStyles */ "./src/components/HeaderMagnum/HeaderBurgerMagnumStyles.js");
-/* harmony import */ var _components_HeaderDomestos_HeaderDomestos__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../components/HeaderDomestos/HeaderDomestos */ "./src/components/HeaderDomestos/HeaderDomestos.js");
-/* harmony import */ var _components_HeaderDomestos_HeaderDomestosStyles__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../components/HeaderDomestos/HeaderDomestosStyles */ "./src/components/HeaderDomestos/HeaderDomestosStyles.js");
-/* harmony import */ var _components_HeaderDomestos_HeaderBurgerDomestos__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../components/HeaderDomestos/HeaderBurgerDomestos */ "./src/components/HeaderDomestos/HeaderBurgerDomestos.js");
-/* harmony import */ var _components_HeaderDomestos_HeaderBurgerDomestosStyles__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../components/HeaderDomestos/HeaderBurgerDomestosStyles */ "./src/components/HeaderDomestos/HeaderBurgerDomestosStyles.js");
-/* harmony import */ var _components_HeaderHellmanns_HeaderHellmanns__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../components/HeaderHellmanns/HeaderHellmanns */ "./src/components/HeaderHellmanns/HeaderHellmanns.js");
-/* harmony import */ var _components_HeaderHellmanns_HeaderHellmannsStyles__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../components/HeaderHellmanns/HeaderHellmannsStyles */ "./src/components/HeaderHellmanns/HeaderHellmannsStyles.js");
-/* harmony import */ var _components_HeaderHellmanns_HeaderBurgerHellmanns__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../components/HeaderHellmanns/HeaderBurgerHellmanns */ "./src/components/HeaderHellmanns/HeaderBurgerHellmanns.js");
-/* harmony import */ var _components_HeaderHellmanns_HeaderBurgerHellmannsStyles__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../components/HeaderHellmanns/HeaderBurgerHellmannsStyles */ "./src/components/HeaderHellmanns/HeaderBurgerHellmannsStyles.js");
-/* harmony import */ var _components_HeaderDove_HeaderDove__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../components/HeaderDove/HeaderDove */ "./src/components/HeaderDove/HeaderDove.js");
-/* harmony import */ var _components_HeaderDove_HeaderDoveStyles__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../components/HeaderDove/HeaderDoveStyles */ "./src/components/HeaderDove/HeaderDoveStyles.js");
-/* harmony import */ var _components_HeaderDove_HeaderBurgerDove__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../components/HeaderDove/HeaderBurgerDove */ "./src/components/HeaderDove/HeaderBurgerDove.js");
-/* harmony import */ var _components_HeaderDove_HeaderBurgerDoveStyles__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../components/HeaderDove/HeaderBurgerDoveStyles */ "./src/components/HeaderDove/HeaderBurgerDoveStyles.js");
-/* harmony import */ var _components_HeaderCif_HeaderCif__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../components/HeaderCif/HeaderCif */ "./src/components/HeaderCif/HeaderCif.js");
-/* harmony import */ var _components_HeaderCif_HeaderCifStyles__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../components/HeaderCif/HeaderCifStyles */ "./src/components/HeaderCif/HeaderCifStyles.js");
-/* harmony import */ var _components_HeaderCif_HeaderBurgerCif__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../components/HeaderCif/HeaderBurgerCif */ "./src/components/HeaderCif/HeaderBurgerCif.js");
-/* harmony import */ var _components_HeaderCif_HeaderBurgerCifStyles__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../components/HeaderCif/HeaderBurgerCifStyles */ "./src/components/HeaderCif/HeaderBurgerCifStyles.js");
-/* harmony import */ var _components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../components/Modal/ModalStyles */ "./src/components/Modal/ModalStyles.js");
-/* harmony import */ var _components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../components/Popup/PopupStyles */ "./src/components/Popup/PopupStyles.js");
-/* harmony import */ var _components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../components/Quotes/QuotesStyles */ "./src/components/Quotes/QuotesStyles.js");
-/* harmony import */ var _components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../components/LiptonCategories/LiptonCategoriesStyles */ "./src/components/LiptonCategories/LiptonCategoriesStyles.js");
-/* harmony import */ var _components_DomestosCategories_DomestosCategoriesStyles__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../components/DomestosCategories/DomestosCategoriesStyles */ "./src/components/DomestosCategories/DomestosCategoriesStyles.js");
-/* harmony import */ var _components_MagnumCategories_MagnumCategoriesStyles__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../components/MagnumCategories/MagnumCategoriesStyles */ "./src/components/MagnumCategories/MagnumCategoriesStyles.js");
-/* harmony import */ var _components_HellmannsCategories_HellmannsCategoriesStyles__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../components/HellmannsCategories/HellmannsCategoriesStyles */ "./src/components/HellmannsCategories/HellmannsCategoriesStyles.js");
-/* harmony import */ var _components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../components/LiptonBannerAndText/LiptonBannerAndTextStyles */ "./src/components/LiptonBannerAndText/LiptonBannerAndTextStyles.js");
-/* harmony import */ var _components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../components/MagnumBannerAndText/MagnumBannerAndTextStyles */ "./src/components/MagnumBannerAndText/MagnumBannerAndTextStyles.js");
-/* harmony import */ var _components_HellmannsBannerAndText_HellmannsBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../components/HellmannsBannerAndText/HellmannsBannerAndTextStyles */ "./src/components/HellmannsBannerAndText/HellmannsBannerAndTextStyles.js");
-/* harmony import */ var _components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles */ "./src/components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles.js");
-/* harmony import */ var _components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles */ "./src/components/BannerWithVideoLipton/BannerWithVideoLiptonStyles.js");
-/* harmony import */ var _components_BannerWithVideoHellmanns_BannerWithVideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../components/BannerWithVideoHellmanns/BannerWithVideoHellmannsStyles */ "./src/components/BannerWithVideoHellmanns/BannerWithVideoHellmannsStyles.js");
-/* harmony import */ var _components_VideoHellmanns_VideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../components/VideoHellmanns/VideoHellmannsStyles */ "./src/components/VideoHellmanns/VideoHellmannsStyles.js");
+/* harmony import */ var _components_FooterRexona_FooterRexona_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/FooterRexona/FooterRexona.js */ "./src/components/FooterRexona/FooterRexona.js");
+/* harmony import */ var _components_FooterRexona_FooterRexonaStyles_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/FooterRexona/FooterRexonaStyles.js */ "./src/components/FooterRexona/FooterRexonaStyles.js");
+/* harmony import */ var _assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/styles/globalStyles.js */ "./src/assets/styles/globalStyles.js");
+/* harmony import */ var _components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/TabBrand/TabStyles.js */ "./src/components/TabBrand/TabStyles.js");
+/* harmony import */ var _components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/Carousel/CarouselStyles.js */ "./src/components/Carousel/CarouselStyles.js");
+/* harmony import */ var _components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/CarouselLipton/CarouselStyles.js */ "./src/components/CarouselLipton/CarouselStyles.js");
+/* harmony import */ var _components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../components/CarouselMagnum/CarouselMagnumStyles.js */ "./src/components/CarouselMagnum/CarouselMagnumStyles.js");
+/* harmony import */ var _components_CarouselDomestos_CarouselDomestosStyles_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../components/CarouselDomestos/CarouselDomestosStyles.js */ "./src/components/CarouselDomestos/CarouselDomestosStyles.js");
+/* harmony import */ var _components_CarouselCif_CarouselCifStyles_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../components/CarouselCif/CarouselCifStyles.js */ "./src/components/CarouselCif/CarouselCifStyles.js");
+/* harmony import */ var _components_CarouselHellmanns_CarouselHellmannsStyles_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../components/CarouselHellmanns/CarouselHellmannsStyles.js */ "./src/components/CarouselHellmanns/CarouselHellmannsStyles.js");
+/* harmony import */ var _components_CarouselDove_CarouselDoveStyles_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../components/CarouselDove/CarouselDoveStyles.js */ "./src/components/CarouselDove/CarouselDoveStyles.js");
+/* harmony import */ var _components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js */ "./src/components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js");
+/* harmony import */ var _components_HeaderLipton_NavigationLiptonStyles__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../components/HeaderLipton/NavigationLiptonStyles */ "./src/components/HeaderLipton/NavigationLiptonStyles.js");
+/* harmony import */ var _components_Header_NavigationStyles__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../components/Header/NavigationStyles */ "./src/components/Header/NavigationStyles.js");
+/* harmony import */ var _components_HeaderMagnum_HeaderMagnum__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderMagnum */ "./src/components/HeaderMagnum/HeaderMagnum.js");
+/* harmony import */ var _components_HeaderMagnum_HeaderMagnumStyles__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderMagnumStyles */ "./src/components/HeaderMagnum/HeaderMagnumStyles.js");
+/* harmony import */ var _components_HeaderMagnum_HeaderBurgerMagnum__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderBurgerMagnum */ "./src/components/HeaderMagnum/HeaderBurgerMagnum.js");
+/* harmony import */ var _components_HeaderMagnum_HeaderBurgerMagnumStyles__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../components/HeaderMagnum/HeaderBurgerMagnumStyles */ "./src/components/HeaderMagnum/HeaderBurgerMagnumStyles.js");
+/* harmony import */ var _components_HeaderDomestos_HeaderDomestos__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../components/HeaderDomestos/HeaderDomestos */ "./src/components/HeaderDomestos/HeaderDomestos.js");
+/* harmony import */ var _components_HeaderDomestos_HeaderDomestosStyles__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../components/HeaderDomestos/HeaderDomestosStyles */ "./src/components/HeaderDomestos/HeaderDomestosStyles.js");
+/* harmony import */ var _components_HeaderDomestos_HeaderBurgerDomestos__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../components/HeaderDomestos/HeaderBurgerDomestos */ "./src/components/HeaderDomestos/HeaderBurgerDomestos.js");
+/* harmony import */ var _components_HeaderDomestos_HeaderBurgerDomestosStyles__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../components/HeaderDomestos/HeaderBurgerDomestosStyles */ "./src/components/HeaderDomestos/HeaderBurgerDomestosStyles.js");
+/* harmony import */ var _components_HeaderHellmanns_HeaderHellmanns__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../components/HeaderHellmanns/HeaderHellmanns */ "./src/components/HeaderHellmanns/HeaderHellmanns.js");
+/* harmony import */ var _components_HeaderHellmanns_HeaderHellmannsStyles__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../components/HeaderHellmanns/HeaderHellmannsStyles */ "./src/components/HeaderHellmanns/HeaderHellmannsStyles.js");
+/* harmony import */ var _components_HeaderHellmanns_HeaderBurgerHellmanns__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../components/HeaderHellmanns/HeaderBurgerHellmanns */ "./src/components/HeaderHellmanns/HeaderBurgerHellmanns.js");
+/* harmony import */ var _components_HeaderHellmanns_HeaderBurgerHellmannsStyles__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../components/HeaderHellmanns/HeaderBurgerHellmannsStyles */ "./src/components/HeaderHellmanns/HeaderBurgerHellmannsStyles.js");
+/* harmony import */ var _components_HeaderDove_HeaderDove__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../components/HeaderDove/HeaderDove */ "./src/components/HeaderDove/HeaderDove.js");
+/* harmony import */ var _components_HeaderDove_HeaderDoveStyles__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../components/HeaderDove/HeaderDoveStyles */ "./src/components/HeaderDove/HeaderDoveStyles.js");
+/* harmony import */ var _components_HeaderDove_HeaderBurgerDove__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../components/HeaderDove/HeaderBurgerDove */ "./src/components/HeaderDove/HeaderBurgerDove.js");
+/* harmony import */ var _components_HeaderDove_HeaderBurgerDoveStyles__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../components/HeaderDove/HeaderBurgerDoveStyles */ "./src/components/HeaderDove/HeaderBurgerDoveStyles.js");
+/* harmony import */ var _components_HeaderCif_HeaderCif__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../components/HeaderCif/HeaderCif */ "./src/components/HeaderCif/HeaderCif.js");
+/* harmony import */ var _components_HeaderCif_HeaderCifStyles__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../components/HeaderCif/HeaderCifStyles */ "./src/components/HeaderCif/HeaderCifStyles.js");
+/* harmony import */ var _components_HeaderCif_HeaderBurgerCif__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../components/HeaderCif/HeaderBurgerCif */ "./src/components/HeaderCif/HeaderBurgerCif.js");
+/* harmony import */ var _components_HeaderCif_HeaderBurgerCifStyles__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../components/HeaderCif/HeaderBurgerCifStyles */ "./src/components/HeaderCif/HeaderBurgerCifStyles.js");
+/* harmony import */ var _components_HeaderRexona_HeaderRexona__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../components/HeaderRexona/HeaderRexona */ "./src/components/HeaderRexona/HeaderRexona.js");
+/* harmony import */ var _components_HeaderRexona_HeaderRexonaStyles__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../components/HeaderRexona/HeaderRexonaStyles */ "./src/components/HeaderRexona/HeaderRexonaStyles.js");
+/* harmony import */ var _components_HeaderRexona_HeaderBurgerRexona__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../components/HeaderRexona/HeaderBurgerRexona */ "./src/components/HeaderRexona/HeaderBurgerRexona.js");
+/* harmony import */ var _components_HeaderRexona_HeaderBurgerRexonaStyles__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../components/HeaderRexona/HeaderBurgerRexonaStyles */ "./src/components/HeaderRexona/HeaderBurgerRexonaStyles.js");
+/* harmony import */ var _components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../components/Modal/ModalStyles */ "./src/components/Modal/ModalStyles.js");
+/* harmony import */ var _components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../components/Popup/PopupStyles */ "./src/components/Popup/PopupStyles.js");
+/* harmony import */ var _components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../components/Quotes/QuotesStyles */ "./src/components/Quotes/QuotesStyles.js");
+/* harmony import */ var _components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../components/LiptonCategories/LiptonCategoriesStyles */ "./src/components/LiptonCategories/LiptonCategoriesStyles.js");
+/* harmony import */ var _components_DomestosCategories_DomestosCategoriesStyles__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ../components/DomestosCategories/DomestosCategoriesStyles */ "./src/components/DomestosCategories/DomestosCategoriesStyles.js");
+/* harmony import */ var _components_MagnumCategories_MagnumCategoriesStyles__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ../components/MagnumCategories/MagnumCategoriesStyles */ "./src/components/MagnumCategories/MagnumCategoriesStyles.js");
+/* harmony import */ var _components_HellmannsCategories_HellmannsCategoriesStyles__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../components/HellmannsCategories/HellmannsCategoriesStyles */ "./src/components/HellmannsCategories/HellmannsCategoriesStyles.js");
+/* harmony import */ var _components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../components/LiptonBannerAndText/LiptonBannerAndTextStyles */ "./src/components/LiptonBannerAndText/LiptonBannerAndTextStyles.js");
+/* harmony import */ var _components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ../components/MagnumBannerAndText/MagnumBannerAndTextStyles */ "./src/components/MagnumBannerAndText/MagnumBannerAndTextStyles.js");
+/* harmony import */ var _components_HellmannsBannerAndText_HellmannsBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ../components/HellmannsBannerAndText/HellmannsBannerAndTextStyles */ "./src/components/HellmannsBannerAndText/HellmannsBannerAndTextStyles.js");
+/* harmony import */ var _components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles */ "./src/components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles.js");
+/* harmony import */ var _components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles */ "./src/components/BannerWithVideoLipton/BannerWithVideoLiptonStyles.js");
+/* harmony import */ var _components_BannerWithVideoHellmanns_BannerWithVideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ../components/BannerWithVideoHellmanns/BannerWithVideoHellmannsStyles */ "./src/components/BannerWithVideoHellmanns/BannerWithVideoHellmannsStyles.js");
+/* harmony import */ var _components_VideoHellmanns_VideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ../components/VideoHellmanns/VideoHellmannsStyles */ "./src/components/VideoHellmanns/VideoHellmannsStyles.js");
+
+
+
+
+
+
 
 
 
@@ -50535,7 +50873,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var MainLayout = function MainLayout(_ref) {
   var children = _ref.children;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_15__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderCif_HeaderCif__WEBPACK_IMPORTED_MODULE_43__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderCif_HeaderCifStyles__WEBPACK_IMPORTED_MODULE_44__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderCif_HeaderBurgerCif__WEBPACK_IMPORTED_MODULE_45__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderCif_HeaderBurgerCifStyles__WEBPACK_IMPORTED_MODULE_46__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_16__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_47__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_48__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_49__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_17__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_19__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselDomestos_CarouselDomestosStyles_js__WEBPACK_IMPORTED_MODULE_20__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselCif_CarouselCifStyles_js__WEBPACK_IMPORTED_MODULE_21__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselHellmanns_CarouselHellmannsStyles_js__WEBPACK_IMPORTED_MODULE_22__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselDove_CarouselDoveStyles_js__WEBPACK_IMPORTED_MODULE_23__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_50__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumCategories_MagnumCategoriesStyles__WEBPACK_IMPORTED_MODULE_52__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_24__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_24__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_50__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DomestosCategories_DomestosCategoriesStyles__WEBPACK_IMPORTED_MODULE_51__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HellmannsCategories_HellmannsCategoriesStyles__WEBPACK_IMPORTED_MODULE_53__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_54__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_55__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HellmannsBannerAndText_HellmannsBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_56__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_57__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_58__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoHellmanns_BannerWithVideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_59__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_VideoHellmanns_VideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_60__["default"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterCif_FooterCif_js__WEBPACK_IMPORTED_MODULE_13__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterCif_FooterCifStyles_js__WEBPACK_IMPORTED_MODULE_14__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_assets_styles_globalStyles_js__WEBPACK_IMPORTED_MODULE_17__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderRexona_HeaderRexona__WEBPACK_IMPORTED_MODULE_49__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderRexona_HeaderRexonaStyles__WEBPACK_IMPORTED_MODULE_50__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderRexona_HeaderBurgerRexona__WEBPACK_IMPORTED_MODULE_51__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HeaderRexona_HeaderBurgerRexonaStyles__WEBPACK_IMPORTED_MODULE_52__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TabBrand_TabStyles_js__WEBPACK_IMPORTED_MODULE_18__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Modal_ModalStyles__WEBPACK_IMPORTED_MODULE_53__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Popup_PopupStyles__WEBPACK_IMPORTED_MODULE_54__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Quotes_QuotesStyles__WEBPACK_IMPORTED_MODULE_55__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Carousel_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_19__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLipton_CarouselStyles_js__WEBPACK_IMPORTED_MODULE_20__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselMagnum_CarouselMagnumStyles_js__WEBPACK_IMPORTED_MODULE_21__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselDomestos_CarouselDomestosStyles_js__WEBPACK_IMPORTED_MODULE_22__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselCif_CarouselCifStyles_js__WEBPACK_IMPORTED_MODULE_23__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselHellmanns_CarouselHellmannsStyles_js__WEBPACK_IMPORTED_MODULE_24__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselDove_CarouselDoveStyles_js__WEBPACK_IMPORTED_MODULE_25__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_56__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumCategories_MagnumCategoriesStyles__WEBPACK_IMPORTED_MODULE_58__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_26__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CarouselLiptonRecipe_CarouselLiptonRecipeStyles_js__WEBPACK_IMPORTED_MODULE_26__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonCategories_LiptonCategoriesStyles__WEBPACK_IMPORTED_MODULE_56__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_DomestosCategories_DomestosCategoriesStyles__WEBPACK_IMPORTED_MODULE_57__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HellmannsCategories_HellmannsCategoriesStyles__WEBPACK_IMPORTED_MODULE_59__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_LiptonBannerAndText_LiptonBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_60__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MagnumBannerAndText_MagnumBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_61__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_HellmannsBannerAndText_HellmannsBannerAndTextStyles__WEBPACK_IMPORTED_MODULE_62__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoMagnum_BannerWithVideoMagnumStyles__WEBPACK_IMPORTED_MODULE_63__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoLipton_BannerWithVideoLiptonStyles__WEBPACK_IMPORTED_MODULE_64__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_BannerWithVideoHellmanns_BannerWithVideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_65__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_VideoHellmanns_VideoHellmannsStyles__WEBPACK_IMPORTED_MODULE_66__["default"], null), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterRexona_FooterRexona_js__WEBPACK_IMPORTED_MODULE_15__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FooterRexona_FooterRexonaStyles_js__WEBPACK_IMPORTED_MODULE_16__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MainLayout);
@@ -50543,9 +50881,9 @@ var MainLayout = function MainLayout(_ref) {
 /***/ }),
 
 /***/ "@reach/router":
-/*!************************************************************************************************************************************!*\
-  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js" ***!
-  \************************************************************************************************************************************/
+/*!*********************************************************************************************************************!*\
+  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js" ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -50554,9 +50892,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ }),
 
 /***/ "@reach/router/lib/history":
-/*!*******************************************************************************************************************************************!*\
-  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
-  \*******************************************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -50565,9 +50903,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!****************************************************************************************************************************!*\
-  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js" ***!
-  \****************************************************************************************************************************/
+/*!*************************************************************************************************************!*\
+  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js" ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
