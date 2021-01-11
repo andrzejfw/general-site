@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import UnileverLogoWhite from '../../assets/images/unilever-logo-white.png';
 import FacebookImage from '../../assets/images/facebook-icon-white.png';
-import CifProduct from '../../assets/images/cif-product.png';
+import CifFooter from '../../assets/images/cif-footer-icon.png';
+import CifFooterMobile from '../../assets/images/cif-footer-icon-mobile.png';
 
 
 const FooterCif = () => (
@@ -28,9 +29,10 @@ const FooterCif = () => (
                     <a href="/privacy-notice">privaatsuspoliitika</a>
                     <a href="/legal-notice">juriidiline teave</a></li>
                 <li className="footer-cif-item">
-                <img src={CifProduct} className="cif-footer-graphic-image" alt="Dove ikoon jalus"/>
+                <img src={CifFooter} className="cif-footer-graphic-image-desktop" alt="Cif ikoon jalus"/>
             </li>           
             </ul>
+            <img src={CifFooterMobile} className="cif-footer-graphic-image-mobile" alt="Cif ikoon jalus"/>
     </nav>
   </div>
   <div className="footer-cif-unilever-div">
