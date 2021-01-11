@@ -101,18 +101,38 @@ const ProductBullets = styled.div`
     }
 `;
 
-const SectionAccordion = styled.div`
+// const SectionAccordion = styled.div`
+//     max-width: 1000px;
+//     margin: 0 auto;
+//     padding: 0 0 20px;
+
+//     @media(max-width:780px){
+//         padding: 0;
+//     }
+// `;
+
+// const AccordionTab = styled.div`
+//     max-width:1240px;  
+// `;
+
+const IngredientsDiv = styled.div`
     max-width: 1000px;
+    padding: 0 20px;
     margin: 0 auto;
-    padding: 0 0 20px;
+    text-align: center;
 
-    @media(max-width:780px){
-        padding: 0;
+    h3 {
+        border-top: 3px solid #2fa354;
+        border-right: 3px solid #2fa354;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+        width: 14rem;
+        padding: 20px;
+        color: #165648;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
     }
-`;
-
-const AccordionTab = styled.div`
-    max-width:1240px;  
 `;
 
 const SectionCarousel = styled.div`
@@ -158,19 +178,19 @@ query MyQueryCif($slug: Int!) {
 
 const PostLayoutCif = ({ data }) => {
     return (
-      <>
-      <SEO title={data.product.fullName} description={data.product.productShortDescription}/>
-      <ProductContainer>
-          <ProductFirstRow>
-          <ProductImage>
-          <img src={data.product.img}></img>
-          </ProductImage>
+    <>
+    <SEO title={data.product.fullName} description={data.product.productShortDescription}/>
+    <ProductContainer>
+        <ProductFirstRow>
+            <ProductImage>
+                <img src={data.product.img}></img>
+            </ProductImage>
             <ProductMainInfo>
-              <h1>{data.product.fullName}</h1>
-              <p>{data.product.productDescription}</p>
-              <Button>OSTA KOHE</Button>
+                <h1>{data.product.fullName}</h1>
+                <p>{data.product.productDescription}</p>
+                <Button>OSTA KOHE</Button>
             </ProductMainInfo>
-          </ProductFirstRow>
+        </ProductFirstRow>
         <ProductBullets>
           <ul>
             <li>{data.product.feature1}</li>
@@ -181,23 +201,15 @@ const PostLayoutCif = ({ data }) => {
             <li>{data.product.feature6}</li>
           </ul>
         </ProductBullets>
-          <SectionAccordion>
-            <Accordion>
-              {/* Ingredients */}
-              <AccordionTab label="Koostisosad">
-                <p>{data.product.allergens}</p>
-              </AccordionTab>
-              {/* Allergens */}
-              <AccordionTab label="Allergeenid">
-                <p>{data.product.allergens}</p>
-              </AccordionTab>
-            </Accordion>
-          </SectionAccordion>
-          <SectionCarousel>
-              <CarouselCif/>
-          </SectionCarousel>
-      </ProductContainer>
-      </>
+        <IngredientsDiv>
+            <h3>Koostisosad</h3>
+            <p>{data.product.allergens}</p>
+        </IngredientsDiv>
+        <SectionCarousel>
+            <CarouselCif/>
+        </SectionCarousel>
+    </ProductContainer>
+    </>
     );
   };
   

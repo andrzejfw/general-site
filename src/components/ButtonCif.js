@@ -16,19 +16,27 @@ const Button = styled.button`
     cursor: pointer;
     text-transform: uppercase;
     white-space: nowrap;
-    transition: 0.3s all;
+    transition: all .2s ease;
     color: #165648;
     background-color: #fff;
     border: 1px solid;
-    border-color: #165648;
+    border-color: transparent;
     font-weight: 700;
+    border-bottom: 3px solid #2fa354;
+    border-left: 3px solid #2fa354;
+    border-radius: 50%;
 
     &:hover{
-      border-color: #165648;
-      color: #fff;
-      background-color: #165648;
-      text-decoration:none;
-      outline:none;
+        /* border-color: #165648;
+        color: #fff;
+        background-color: #165648; */
+        text-decoration:none;
+        outline:none;
+        /* transform: scale(1.05); */
+        border-bottom: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-top: 3px solid #2fa354;
+        border-right: 3px solid #2fa354;
       
     }
     &:focus{

@@ -5,10 +5,11 @@ import styled from 'styled-components';
 const AccordionDivCif = styled.div`
     color: #165648;
     margin: 5px;
-    padding: 15px 15px;
+    padding: 25px;
     width: 100%;
-    border-bottom: 1px solid #165648;
-    border-top: 1px solid #165648;
+    border-bottom: 3px solid #2fa354;
+    border-left: 3px solid #2fa354;
+    border-radius: 50px;
     text-transform: uppercase;
     font-weight: 700;
 

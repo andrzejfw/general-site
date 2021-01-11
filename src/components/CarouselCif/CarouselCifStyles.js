@@ -15,14 +15,14 @@ const CarouselStyleCif = createGlobalStyle`
   .carousel-cif .slick-dots li button:before{
       font-size:10px !important;
       color: white !important;
-      border: solid 2px #165648;
+      border: solid 2px #ed1c24;
       border-radius: 50%;
       z-index: 9;
     }
     
     .carousel-cif .slick-dots li.slick-active button:before{
-      color: #165648 !important;
-      background: #165648 !important;
+      color: #ed1c24 !important;
+      background: #ed1c24 !important;
       opacity: 1 !important;
     }
 
@@ -31,7 +31,7 @@ const CarouselStyleCif = createGlobalStyle`
     }
 
     .carousel-cif .slick-prev:before, .carousel-cif .slick-next:before{
-      color: #165648;
+      color: #ed1c24;
       opacity: 1 !important;
       font-size: 40px !important;
     }
