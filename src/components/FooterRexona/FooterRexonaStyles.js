@@ -120,8 +120,7 @@ const FooterRexonaStyles = createGlobalStyle`
     }
     }
 
-    @media(max-width:992px){
-        margin:4px 0;
+    @media(max-width:500px){
         justify-content:center;
         align-items:start;
     }
