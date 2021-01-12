@@ -14,7 +14,7 @@ const FooterCif = () => (
         <li className="footer-cif-item-list">
             <div className="footer-cif-image-containter">
             
-            <p><Link to ="https://www.facebook.com/doveeesti/" target="_blank" rel="noreferrer">
+            <p><Link to ="https://www.facebook.com/CifGlobal" target="_blank" rel="noreferrer">
                 <img src={FacebookImage} alt="Facebook ikoon" className="footer-cif-social-image"/>
             </Link></p>
             </div>

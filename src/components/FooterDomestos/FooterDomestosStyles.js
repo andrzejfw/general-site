@@ -72,7 +72,6 @@ const FooterDomestosStyles = createGlobalStyle`
 }
 
 .footer-domestos-item {
-    line-height:1.2em;
     text-decoration: none;
     color: #fff;
     /* font-weight:bold; */
@@ -103,7 +102,6 @@ const FooterDomestosStyles = createGlobalStyle`
     
     }
     @media(max-width:500px){
-        margin:8px 0;
         color: #fff;
 
         p{
@@ -147,7 +145,6 @@ const FooterDomestosStyles = createGlobalStyle`
     }
 
     @media(max-width:692px){
-        margin:4px 0;
         justify-content:center;
         align-items: center;
         p{

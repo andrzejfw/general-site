@@ -72,7 +72,6 @@ const FooterHellmannsStyles = createGlobalStyle`
 }
 
 .footer-hellmanns-item {
-    line-height:1.2em;
     color: #fff;
     display: inline-block;
     white-space: nowrap;
@@ -95,7 +94,6 @@ const FooterHellmannsStyles = createGlobalStyle`
     }
 
     @media(max-width:500px){
-        margin:8px 0;
         color: #fff;
 
         p{
@@ -128,7 +126,6 @@ const FooterHellmannsStyles = createGlobalStyle`
     }
 
     @media(max-width:992px){
-        margin:4px 0;
         justify-content:center;
         align-items:start;
 
@@ -211,7 +208,7 @@ const FooterHellmannsStyles = createGlobalStyle`
     }
 
     @media (max-width:500px){
-        top: -191px;
+        top: -180px;
         left: 190px;
         height: 200px;
         margin: 0;
@@ -223,7 +220,7 @@ const FooterHellmannsStyles = createGlobalStyle`
 
     @media (max-width:350px){
         left: 130px;
-        top: -170px;
+        top: -162px;
         width: 150px;
         height: auto;
     }

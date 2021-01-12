@@ -59,7 +59,7 @@ const ImageFooter = styled.img`
     position: absolute;
     right: 0;
     z-index: -1;
-    @media (max-width:992px){
+    @media (max-width:1092px){
       display:none;
     }
 `;
