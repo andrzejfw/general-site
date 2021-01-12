@@ -73,7 +73,6 @@ const FooterRexonaStyles = createGlobalStyle`
 }
 
 .footer-rexona-item {
-    line-height:1.2em;
     color: #fff;
     display: inline-block;
     white-space: nowrap;
@@ -94,8 +93,7 @@ const FooterRexonaStyles = createGlobalStyle`
     }
     }
 
-    @media(max-width:500px){
-        margin:8px 0;
+    @media(max-width:500px){        
     }
 }
 
@@ -120,8 +118,7 @@ const FooterRexonaStyles = createGlobalStyle`
     }
     }
 
-    @media(max-width:992px){
-        margin:4px 0;
+    @media(max-width:500px){
         justify-content:center;
         align-items:start;
     }

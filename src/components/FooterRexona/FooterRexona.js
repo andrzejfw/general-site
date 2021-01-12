@@ -26,7 +26,8 @@ const FooterRexona = () => (
                 <li className="footer-rexona-item-list">
                     <a href="/cookie-notice">küpsise-eeskirjad</a>
                     <a href="/privacy-notice">privaatsuspoliitika</a>
-                    <a href="/legal-notice">juriidiline teave</a></li>
+                    <a href="/legal-notice">juriidiline teave</a>
+                  </li>
                 <li className="footer-rexona-item">
                 <img src={RexonaProduct} className="rexona-footer-graphic-image" alt="Dove ikoon jalus"/>
             </li>           
