@@ -195,7 +195,7 @@ const FooterRexonaStyles = createGlobalStyle`
     }
 
     @media (max-width:500px){
-        top: -210px;
+        top: -200px;
         left: 245px;
         height: 200px;
         margin: 0;
@@ -208,7 +208,7 @@ const FooterRexonaStyles = createGlobalStyle`
     @media (max-width:350px){
         left: 180px;
         top: -193px;
-        width: 70px;
+        width: 49px;
         height: auto;
     }
 }

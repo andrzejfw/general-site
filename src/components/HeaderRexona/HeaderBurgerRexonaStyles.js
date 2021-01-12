@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import RexonaNav from '../../assets/images/rexona-nav4.png'
+
 
 const HeaderBurgerRexonaStyles = createGlobalStyle`
 .rexona-burger-menu {
@@ -41,26 +43,32 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
     flex-direction: column;
     position: fixed;
     width: 100%;
-    height: 100%;
-    padding: 5% 20px 5% 15px;
+    height: 40vh;
     justify-content: flex-start;
     top: 60px;
     z-index: 0;
-    background-color: #103073;
-    border-left: 2px solid #103073;
-    border-bottom: 2px solid #103073;
-    width: auto;
-    height: auto;
+    background-color:#fff;
 }
+.rexona-navbox:after {
+    background: url(${RexonaNav}) no-repeat;
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-size: 100%;
+    margin-top: 0;
+    bottom: 0;
+    background-position: bottom;
+    }
 
 .rexona-navbox-item {
     text-decoration: none;
-    color: #fff;
+    color: #103073;
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw;
     position: relative;
-    margin: 20px 0;
+    margin: 20px 20px;
     font-size: 1.5rem;
     z-index: 6;
 

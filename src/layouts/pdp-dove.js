@@ -108,8 +108,8 @@ const ProductBullets = styled.div`
         background-size: 40px;
         }
 
-    @media(max-width:1264px){
-        padding: 20px 50px;
+    @media(max-width:992px){
+        width: 90vw;
         margin: 0 auto;
         li{
         margin:4px;

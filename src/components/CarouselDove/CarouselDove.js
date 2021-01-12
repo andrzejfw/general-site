@@ -34,7 +34,7 @@ const ImageSlider = styled.img`
 
 const TextSlider = styled.div`
     color:#054281;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 10px;
     margin-bottom: 20px;
 
