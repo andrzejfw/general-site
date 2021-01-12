@@ -5,6 +5,7 @@ import SEO from '../components/Seo/Seo'
 import CarouselCif from '../components/CarouselCif/CarouselCif'
 import Accordion from "../components/AccordionCif/AccordionCif"
 import Button from "../components/ButtonCif"
+import CifBullets from '../assets/images/cif-white-shape-small.png'
 
 const ProductContainer = styled.div`
     background:#fff;
@@ -61,6 +62,11 @@ const ProductMainInfo = styled.div`
         color: #165648;
         font-weight: 700;
     }
+    h2{
+        font-size:1.5rem;
+        color: #165648;
+        font-weight: 400;
+    }
     
     @media(max-width:860px){
         margin-top:1em;
@@ -87,13 +93,23 @@ const ProductBullets = styled.div`
         max-width:1200px;
         color: #fff;
         z-index: 1;
-        li{
+        /* li{
         margin:4px;
-        }
+        } */
     }
 
+    li {
+        margin: 0;
+        padding: 7px 0 10px 20px;
+        list-style: none;
+        background-image: url(${CifBullets});
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 10px;
+        }
+
     @media(max-width:800px){
-        padding: 20px 50px;
+        padding: 20px 30px;
         margin: 0 auto 20px;
         li{
         margin:4px 4px 4px 40px;
@@ -107,38 +123,18 @@ const ProductBullets = styled.div`
     }
 `;
 
-// const SectionAccordion = styled.div`
-//     max-width: 1000px;
-//     margin: 0 auto;
-//     padding: 0 0 20px;
-
-//     @media(max-width:780px){
-//         padding: 0;
-//     }
-// `;
-
-// const AccordionTab = styled.div`
-//     max-width:1240px;  
-// `;
-
-const IngredientsDiv = styled.div`
+const SectionAccordion = styled.div`
     max-width: 1000px;
-    padding: 0 20px;
     margin: 0 auto;
-    text-align: center;
+    padding: 0 0 20px;
 
-    h3 {
-        border-top: 3px solid #2fa354;
-        border-right: 3px solid #2fa354;
-        border-radius: 50%;
-        margin: 0 auto 10px;
-        width: 14rem;
-        padding: 20px;
-        color: #165648;
-        font-weight: bold;
-        font-size: 1rem;
-        text-transform: uppercase;
+    @media(max-width:780px){
+        padding: 0;
     }
+`;
+
+const AccordionTab = styled.div`
+    max-width:1240px;  
 `;
 
 const SectionCarousel = styled.div`
@@ -193,6 +189,7 @@ const PostLayoutCif = ({ data }) => {
             </ProductImage>
             <ProductMainInfo>
                 <h1>{data.product.fullName}</h1>
+                <h2>{data.product.volume}</h2>
                 <p>{data.product.productDescription}</p>
                 <Button>OSTA KOHE</Button>
             </ProductMainInfo>
@@ -207,10 +204,18 @@ const PostLayoutCif = ({ data }) => {
             <li>{data.product.feature6}</li>
           </ul>
         </ProductBullets>
-        <IngredientsDiv>
-            <h3>Koostisosad</h3>
-            <p>{data.product.allergens}</p>
-        </IngredientsDiv>
+        <SectionAccordion>
+            <Accordion>
+              {/* Ingredients */}
+              <AccordionTab label="Koostisosad">
+                <p>{data.product.allergens}</p>
+              </AccordionTab>
+              {/* Safety warnings */}
+              <AccordionTab label="Safety warnings">
+                <p>{data.product.ingredients}</p>
+              </AccordionTab>
+            </Accordion>
+          </SectionAccordion>
         <SectionCarousel>
             <CarouselCif/>
         </SectionCarousel>

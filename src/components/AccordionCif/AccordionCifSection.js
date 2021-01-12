@@ -8,8 +8,6 @@ const AccordionDivCif = styled.div`
     padding: 25px;
     width: 100%;
     border-bottom: 3px solid #2fa354;
-    border-left: 3px solid #2fa354;
-    border-radius: 50px;
     text-transform: uppercase;
     font-weight: 700;
 
@@ -18,6 +16,7 @@ const AccordionDivCif = styled.div`
         text-transform: none;
         font-weight: 500;
         margin-bottom: 10px !important;
+        font-size: .8rem;
     }
 
     @media (max-width: 992px){
@@ -50,7 +49,7 @@ class AccordionCifSection extends Component {
     const { onClick, props: { isOpen, label } } = this;
 
     return (
-      <AccordionDivCif style={{background: isOpen ? "#fff"  : "#fff", color: isOpen ? "#165648"  : "#165648",}}>
+      <AccordionDivCif style={{background: isOpen ? "rgb(47 163 84 / .1)"  : "rgb(47 163 84 / .1)", color: isOpen ? "#165648"  : "#165648",}}>
         <div className="div-content" onClick={onClick} style={{ cursor: "pointer", fontWeight: "bold",}}>
           {label}
           <div style={{float: "right"}}>
