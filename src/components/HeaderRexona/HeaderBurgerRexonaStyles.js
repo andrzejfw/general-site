@@ -46,7 +46,7 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
     justify-content: flex-start;
     top: 60px;
     z-index: 0;
-    background-color: #fff;
+    background-color: #103073;
     border-left: 2px solid #103073;
     border-bottom: 2px solid #103073;
     width: auto;
@@ -55,7 +55,7 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
 
 .rexona-navbox-item {
     text-decoration: none;
-    color: #103073;
+    color: #fff;
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw;
@@ -66,7 +66,7 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
 
     &:hover {
         font-weight: 700;
-        color: #103073;
+        color: #fff;
     }
 }
 `;
