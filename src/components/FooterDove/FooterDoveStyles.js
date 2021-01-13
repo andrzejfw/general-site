@@ -73,7 +73,6 @@ const FooterDoveStyles = createGlobalStyle`
 }
 
 .footer-dove-item {
-    line-height:1.2em;
     color: #054281;
     display: inline-block;
     white-space: nowrap;
@@ -93,10 +92,6 @@ const FooterDoveStyles = createGlobalStyle`
         color: #054281;
         font-weight:bold;
     }
-    }
-
-    @media(max-width:500px){
-        margin:8px 0;
     }
 }
 
@@ -123,7 +118,6 @@ const FooterDoveStyles = createGlobalStyle`
     }
 
     @media(max-width:992px){
-        margin:4px 0;
         justify-content:center;
         align-items:start;
     }
@@ -200,7 +194,7 @@ const FooterDoveStyles = createGlobalStyle`
     }
 
     @media (max-width:500px){
-        top: -210px;
+        top: -200px;
         left: 245px;
         height: 200px;
         margin: 0;
@@ -212,7 +206,7 @@ const FooterDoveStyles = createGlobalStyle`
 
     @media (max-width:350px){
         left: 180px;
-        top: -193px;
+        top: -184px;
         width: 70px;
         height: auto;
     }

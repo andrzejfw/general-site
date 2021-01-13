@@ -14,6 +14,10 @@ const Footercontainer = styled.div`
     height:25vh;
   }
 
+  @media (max-width:1200px){
+    height:20vh;
+  }
+
     @media (max-width:992px){
     height:100%;
   }
@@ -70,8 +74,13 @@ const FooterWrapper = styled.nav`
 
   @media (max-width:992px){
     height:100%;
+  }
+
+  @media (max-width:692px){
+    height:100%;
     margin: 0 auto 5%;
   }
+
   @media (max-width: 500px) {
     display:flex;
     flex-direction:column;
@@ -107,7 +116,6 @@ const FooterSection = styled.div`
 `;
 
 const FooterItem = styled.li`
-  line-height:1.2em;
   text-decoration: none;
   color: #c8381d;
   font-weight:bold;
@@ -135,12 +143,7 @@ const FooterItem = styled.li`
   :hover {
     color: #e95c02;
    
-  }
-  @media(max-width:500px){
-    margin:8px;
-  }
-
-  
+  }  
 `;
 
 const FooterItemList = styled.li`
@@ -172,7 +175,6 @@ const FooterItemList = styled.li`
   }
 
   @media(max-width:500px){
-    margin:4px;
     justify-content:center;
     align-items:center;   
   }  
@@ -181,14 +183,10 @@ const FooterItemList = styled.li`
 const UnileverFooter = styled.div`
     z-index:2;
     background:#7f7f7f;
-    /* padding-left: 24%; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 3%;
-    /* @media (max-width:1600px){
-    padding-left: 12%;
-  } */
 
     @media (max-width:992px){
     flex-direction: column;

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const FooterDoveStyles = createGlobalStyle`
+const FooterCifStyles = createGlobalStyle`
 .footer-cif-container{
     height: 180px;
     z-index:2;
@@ -35,7 +35,7 @@ const FooterDoveStyles = createGlobalStyle`
     }
 
     @media (max-width:692px){
-        padding: 0 10%;
+        padding: 0 10% 0 7%;
         height:100%;
         margin: 0 auto 5%;
         justify-content: center;
@@ -73,7 +73,6 @@ const FooterDoveStyles = createGlobalStyle`
 }
 
 .footer-cif-item {
-    line-height:1.2em;
     color: #fff;
     display: inline-block;
     white-space: nowrap;
@@ -92,10 +91,6 @@ const FooterDoveStyles = createGlobalStyle`
         &:hover {
             font-weight: 700;
     }
-    }
-
-    @media(max-width:500px){
-        margin:8px 0;
     }
 }
 
@@ -126,7 +121,6 @@ const FooterDoveStyles = createGlobalStyle`
     }
 
     @media(max-width:692px){
-        margin:4px 0;
         justify-content:center;
         align-items:start;
     }
@@ -227,4 +221,4 @@ const FooterDoveStyles = createGlobalStyle`
 }
 `;
 
-export default FooterDoveStyles;
+export default FooterCifStyles;

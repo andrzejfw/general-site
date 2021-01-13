@@ -38,6 +38,7 @@ const FooterMagnumStyles = createGlobalStyle`
     @media (max-width:692px){
         height:100%;
         margin: 0 auto 5%;
+        padding: 0 10% 0 8%;
         justify-content: center;
         align-items: flex-start;
     }
@@ -76,10 +77,8 @@ const FooterMagnumStyles = createGlobalStyle`
 }
 
 .footer-magnum-item {
-    line-height:1.2em;
     text-decoration: none;
     color: #523022;
-    /* font-weight:bold; */
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw; 
@@ -106,7 +105,6 @@ const FooterMagnumStyles = createGlobalStyle`
     
     }
     @media(max-width:500px){
-        margin:8px 0;
         color: #fff;
 
         p{
@@ -121,7 +119,6 @@ const FooterMagnumStyles = createGlobalStyle`
 .footer-magnum-item-list {
     text-decoration: none;
     color: #523022 !important;
-    /* font-weight:bold; */
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw;
@@ -147,7 +144,6 @@ const FooterMagnumStyles = createGlobalStyle`
     }
 
     @media(max-width:692px){
-        margin:4px 0;
         justify-content:center;
         align-items:start;
 
@@ -178,7 +174,6 @@ const FooterMagnumStyles = createGlobalStyle`
 
     @media (max-width:500px){
         display: inline-block;
-        /* transform: rotate(-90deg); */
         position: absolute;
         top: -280px;
         left: 210px;
@@ -191,7 +186,7 @@ const FooterMagnumStyles = createGlobalStyle`
     }
 
     @media (max-width:350px){
-        left: 140px;
+        left: 131px;
     }
 }
 
