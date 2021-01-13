@@ -56,9 +56,9 @@ const HeaderBurgerRexona = () => {
         transition: "all .3s",
         right: navbarOpen ? "0" : "-100%",
         }}>
-          <Link className="rexona-navbox-item" style={{transition: "all .3s", left: navbarOpen ? "0" : "-100%",}} to="/index-rexona" onClick={() => setNavbarOpen(!navbarOpen)}>Homepage</Link>
-          <Link className="rexona-navbox-item" style={{transition: "all .3s", left: navbarOpen ? "0" : "-100%",}} to="/products-rexona" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="rexona-navbox-item" style={{transition: "all .3s", left: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
+          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/index-rexona" onClick={() => setNavbarOpen(!navbarOpen)}>Homepage</Link>
+          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/products-rexona" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>
   )

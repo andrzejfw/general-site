@@ -137,10 +137,10 @@ const MainLayout = ( {children} ) => (
     <FooterHellmannsStyles/> */}
     {/* <FooterDove/>
     <FooterDoveStyles/> */}
-    {/* <FooterCif/>
-    <FooterCifStyles/> */}
-    <FooterRexona/>
-    <FooterRexonaStyles/>
+    <FooterCif/>
+    <FooterCifStyles/>
+    {/* <FooterRexona/>
+    <FooterRexonaStyles/> */}
   </>
 )
 

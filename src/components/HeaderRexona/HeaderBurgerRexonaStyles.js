@@ -47,7 +47,6 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
     justify-content: flex-start;
     top: 60px;
     z-index: 0;
-    background-color:#fff;
 }
 .rexona-navbox:after {
     background: url(${RexonaNav}) no-repeat;
