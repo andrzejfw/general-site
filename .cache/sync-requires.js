@@ -26,6 +26,7 @@ exports.components = {
   "component---src-pages-index-dove-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-dove.js"))),
   "component---src-pages-index-hellmanns-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-hellmanns.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index.js"))),
+  "component---src-pages-index-knorr-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-knorr.js"))),
   "component---src-pages-index-lipton-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-lipton.js"))),
   "component---src-pages-index-magnum-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-magnum.js"))),
   "component---src-pages-index-rexona-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\index-rexona.js"))),

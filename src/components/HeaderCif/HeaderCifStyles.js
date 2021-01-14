@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const HeaderDoveStyles = createGlobalStyle`
+const HeaderCifStyles = createGlobalStyle`
 .header-cif-nav {
     position: sticky;
     top: 0;
@@ -47,14 +47,17 @@ const HeaderDoveStyles = createGlobalStyle`
     }
 }
 
-.link-cif {
-    &:hover {
-            border-bottom: 3px solid #2fa354;
-            border-left: 3px solid #2fa354;
-            border-radius: 50%;
-            width: auto;
-            padding: 5px 20px;
-        }
+.link-cif:hover {
+    border-bottom: 3px solid #2fa354;
+    border-left: 3px solid #2fa354;
+    border-radius: 50%;
+    width: auto;
+    padding: 5px 20px;
+
+    @media(max-width:939px){
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
 }
 
 a.active {
@@ -63,8 +66,13 @@ a.active {
     border-radius: 50%;
     width: auto;
     padding: 5px 20px;
+
+    @media(max-width:939px){
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
 }
 
 `;
 
-export default HeaderDoveStyles;
+export default HeaderCifStyles;

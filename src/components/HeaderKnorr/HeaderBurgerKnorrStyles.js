@@ -1,16 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
-import DoveHeaderBackground from '../../assets/images/dove-global-nav-logo-bg.png'
+import KnorrWave from '../../assets/images/knorr-bg-wave.png'
 
-const HeaderBurgerDoveStyles = createGlobalStyle`
-.dove-burger-menu {
+const HeaderBurgerCifStyles = createGlobalStyle`
+.knorr-burger-menu {
     display: none;    
 
     @media (max-width: 692px) {
         display: block;
         position: fixed;
         z-index: 99;
-        background-color: #fff;
-        border-bottom: solid 1px #ccc;
+        background: rgba(255,255,255,.7);
         height: 60px;
         top: 0;
         left: 0;
@@ -20,29 +19,15 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
 
     img {
         position: absolute;
-        top: 15px;
+        top: -10px;
         left: 50%;
-        transform: translate(-50%);
-        height: 40px;
+        transform: translateX(-50%);
+        height: 80px;
         z-index: 9999;
-        margin-left: 5px;
     }
 }
 
-.dove-burger-menu::after {
-    content: '';
-    background: url(${DoveHeaderBackground}) top center no-repeat;
-    background-size: cover;
-    height: 20px;
-    width: 100px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 58px;
-    margin: 0 auto;
-}
-
-.dove-toggle {
+.knorr-toggle {
     height: auto;
     padding: 0 35px;
     display: flex;
@@ -51,23 +36,26 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
     right: 10px;
 }
 
-.dove-navbox {
+.knorr-navbox {
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     flex-direction: column;
     position: fixed;
-    width: 100%;
-    height: 100%;
-    padding: 20% 0;
-    justify-content: flex-start;
+    padding: 0 20px 30% 15px;
+    text-align: center;
+    justify-content: center;
     top: 60px;
     z-index: 0;
-    background-color: rgb(0 38 99 / .95);
+    background-color: rgb(0 122 51 / .9);
+    background: url(${KnorrWave});
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    opacity: .9;
 }
 
-.dove-navbox-item {
+.knorr-navbox-item {
     text-decoration: none;
     color: #fff;
     display: inline-block;
@@ -80,9 +68,9 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
 
     &:hover {
         font-weight: 700;
-        color: #fff;
+        color: #17594a;
     }
 }
 `;
 
-export default HeaderBurgerDoveStyles;
+export default HeaderBurgerCifStyles;

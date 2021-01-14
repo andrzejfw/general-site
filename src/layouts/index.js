@@ -15,6 +15,8 @@ import FooterCif from "../components/FooterCif/FooterCif.js"
 import FooterCifStyles from "../components/FooterCif/FooterCifStyles.js"
 import FooterRexona from "../components/FooterRexona/FooterRexona.js"
 import FooterRexonaStyles from "../components/FooterRexona/FooterRexonaStyles.js"
+import FooterKnorr from "../components/FooterKnorr/FooterKnorr.js"
+import FooterKnorrStyles from "../components/FooterKnorr/FooterKnorrStyles.js"
 import GlobalStyle from "../assets/styles/globalStyles.js"
 import TabStyle from "../components/TabBrand/TabStyles.js"
 import CarouselStyle from "../components/Carousel/CarouselStyles.js"
@@ -51,6 +53,10 @@ import HeaderRexona from "../components/HeaderRexona/HeaderRexona"
 import HeaderRexonaStyles from "../components/HeaderRexona/HeaderRexonaStyles"
 import HeaderBurgerRexona from "../components/HeaderRexona/HeaderBurgerRexona"
 import HeaderBurgerRexonaStyles from "../components/HeaderRexona/HeaderBurgerRexonaStyles"
+import HeaderKnorr from "../components/HeaderKnorr/HeaderKnorr"
+import HeaderKnorrStyles from "../components/HeaderKnorr/HeaderKnorrStyles"
+import HeaderBurgerKnorr from "../components/HeaderKnorr/HeaderBurgerKnorr"
+import HeaderBurgerKnorrStyles from "../components/HeaderKnorr/HeaderBurgerKnorrStyles"
 import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
@@ -91,14 +97,18 @@ const MainLayout = ( {children} ) => (
     <HeaderDoveStyles/>
     <HeaderBurgerDove/>
     <HeaderBurgerDoveStyles/> */}
-    <HeaderCif/>
+    {/* <HeaderCif/>
     <HeaderCifStyles/>
     <HeaderBurgerCif/>
-    <HeaderBurgerCifStyles/>
+    <HeaderBurgerCifStyles/> */}
     {/* <HeaderRexona/>
     <HeaderRexonaStyles/>
     <HeaderBurgerRexona/>
     <HeaderBurgerRexonaStyles/> */}
+    <HeaderKnorr/>
+    <HeaderKnorrStyles/>
+    <HeaderBurgerKnorr/>
+    <HeaderBurgerKnorrStyles/>
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
@@ -137,10 +147,12 @@ const MainLayout = ( {children} ) => (
     <FooterHellmannsStyles/> */}
     {/* <FooterDove/>
     <FooterDoveStyles/> */}
-    <FooterCif/>
-    <FooterCifStyles/>
+    {/* <FooterCif/>
+    <FooterCifStyles/> */}
     {/* <FooterRexona/>
     <FooterRexonaStyles/> */}
+    <FooterKnorr/>
+    <FooterKnorrStyles/>
   </>
 )
 

@@ -23,6 +23,7 @@ exports.components = {
   "component---src-pages-index-dove-js": () => import("./../../../src/pages/index-dove.js" /* webpackChunkName: "component---src-pages-index-dove-js" */),
   "component---src-pages-index-hellmanns-js": () => import("./../../../src/pages/index-hellmanns.js" /* webpackChunkName: "component---src-pages-index-hellmanns-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-index-knorr-js": () => import("./../../../src/pages/index-knorr.js" /* webpackChunkName: "component---src-pages-index-knorr-js" */),
   "component---src-pages-index-lipton-js": () => import("./../../../src/pages/index-lipton.js" /* webpackChunkName: "component---src-pages-index-lipton-js" */),
   "component---src-pages-index-magnum-js": () => import("./../../../src/pages/index-magnum.js" /* webpackChunkName: "component---src-pages-index-magnum-js" */),
   "component---src-pages-index-rexona-js": () => import("./../../../src/pages/index-rexona.js" /* webpackChunkName: "component---src-pages-index-rexona-js" */),
