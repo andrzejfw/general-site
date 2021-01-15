@@ -48,6 +48,8 @@ const HeaderDoveStyles = createGlobalStyle`
 .link-knorr {
     &:hover {
         font-weight: 700;
+        font-size: 1.3rem;
+        margin-bottom: .2rem;
     }
 }
 

@@ -9,7 +9,7 @@ const HeaderKnorr = () => {
         <nav className="header-knorr-nav">
             <div className="links-section-knorr">
                 <Link to="/index-knorr"><img src={KnorrLogo} alt="Knorr Eesti jäätis logo"/></Link>
-                <Link to="/products-cif" activeClassName="active" className="link-knorr">Tooted</Link>
+                <Link to="/products-knorr" activeClassName="active" className="link-knorr">Tooted</Link>
                 <Link to="/" activeClassName="active" className="link-knorr">Ettevõttest</Link>
                 <Link to="/" activeClassName="active" className="link-knorr">Meie eesmärk</Link>
                 <Link to="/contact" activeClassName="active" className="link-knorr">Kontakt</Link>

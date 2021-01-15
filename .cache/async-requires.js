@@ -33,6 +33,7 @@ exports.components = {
   "component---src-pages-products-domestos-js": () => import("./../../../src/pages/products-domestos.js" /* webpackChunkName: "component---src-pages-products-domestos-js" */),
   "component---src-pages-products-dove-js": () => import("./../../../src/pages/products-dove.js" /* webpackChunkName: "component---src-pages-products-dove-js" */),
   "component---src-pages-products-hellmanns-js": () => import("./../../../src/pages/products-hellmanns.js" /* webpackChunkName: "component---src-pages-products-hellmanns-js" */),
+  "component---src-pages-products-knorr-js": () => import("./../../../src/pages/products-knorr.js" /* webpackChunkName: "component---src-pages-products-knorr-js" */),
   "component---src-pages-products-magnum-js": () => import("./../../../src/pages/products-magnum.js" /* webpackChunkName: "component---src-pages-products-magnum-js" */),
   "component---src-pages-products-rexona-js": () => import("./../../../src/pages/products-rexona.js" /* webpackChunkName: "component---src-pages-products-rexona-js" */),
   "component---src-pages-purpose-dove-js": () => import("./../../../src/pages/purpose-dove.js" /* webpackChunkName: "component---src-pages-purpose-dove-js" */),
