@@ -25,7 +25,7 @@ const FooterKnorrStyles = createGlobalStyle`
     align-self: center;
     
     @media (max-width:1600px){
-        margin: 0 27% 0 3%;
+        margin: 0 30% 0 0;
         padding: 0 10%;
         max-width: 1000px;
     }
@@ -76,7 +76,7 @@ const FooterKnorrStyles = createGlobalStyle`
     color: #fff;
     display: inline-block;
     white-space: nowrap;
-    margin: 0 1vw; 
+    margin: 0 1.2vw; 
     position: relative;  
     text-transform:capitalize;
     list-style:none;
@@ -98,7 +98,7 @@ const FooterKnorrStyles = createGlobalStyle`
     color: #fff !important;
     display: inline-block;
     white-space: nowrap;
-    margin: 0 1vw;
+    margin: 0 1.2vw;
     position: relative;
     text-transform:capitalize;
     list-style:none;
@@ -134,6 +134,17 @@ const FooterKnorrStyles = createGlobalStyle`
     @media (max-width:500px){
         height: 30px;
         margin: 20px 10px 0 0;
+  }
+}
+
+.footer-knorr-ufs-image {
+    width:auto;
+    height:52px;
+    margin:55px 20px;
+
+    @media (max-width:500px){
+        height: 31px;
+        margin: 20px 10px 0 10px;
   }
 }
 
@@ -180,7 +191,7 @@ const FooterKnorrStyles = createGlobalStyle`
 .knorr-footer-graphic-image-desktop {
     width:auto;
     height:225px;
-    top: -97px;
+    top: -98px;
     left: 0;
     align-self: center;
     position: absolute;
@@ -199,7 +210,7 @@ const FooterKnorrStyles = createGlobalStyle`
 .knorr-footer-graphic-image-mobile {
     display: none;
 
-    @media (max-width:800px){
+    @media (max-width:500px){
         position: absolute;
         display: inline-block;
         height: 210px;

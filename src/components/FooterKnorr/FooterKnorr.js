@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import UnileverLogoWhite from '../../assets/images/unilever-logo-white.png';
 import FacebookImage from '../../assets/images/facebook-icon-white.png';
+import UFSImage from '../../assets/images/UFS-Logo.png';
 import KnorrFooter from '../../assets/images/knorr-footer-image.png';
 import KnorrFooterMobile from '../../assets/images/knorr-footer-image-mobile.png';
 
@@ -16,6 +17,9 @@ const FooterKnorr = () => (
             
             <p><Link to ="https://www.facebook.com/KnorrWorldwide/" target="_blank" rel="noreferrer">
                 <img src={FacebookImage} alt="Facebook ikoon" className="footer-knorr-social-image"/>
+            </Link></p>
+            <p><Link to ="https://www.unileverfoodsolutionsbaltics.com/et/home.html" target="_blank" rel="noreferrer">
+                <img src={UFSImage} alt="Facebook ikoon" className="footer-knorr-ufs-image"/>
             </Link></p>
             </div>
         </li>

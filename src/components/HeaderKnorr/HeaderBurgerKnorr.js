@@ -56,7 +56,7 @@ const HeaderBurgerKnorr = () => {
         transition: "all .3s linear",
         left: navbarOpen ? "0" : "-100%",
         }}>
-          <Link className="knorr-navbox-item" style={{transition: "all .3s linear .1s", left: navbarOpen ? "0" : "-100%",}} to="/products-cif" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="knorr-navbox-item" style={{transition: "all .3s linear .1s", left: navbarOpen ? "0" : "-100%",}} to="/products-knorr" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
           <Link className="knorr-navbox-item" style={{transition: "all .3s linear .2s", left: navbarOpen ? "0" : "-100%",}} to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
           <Link className="knorr-navbox-item" style={{transition: "all .3s linear .3s", left: navbarOpen ? "0" : "-100%",}} to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Meie eesmärk</Link>
           <Link className="knorr-navbox-item" style={{transition: "all .3s linear .4s", left: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>

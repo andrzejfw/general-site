@@ -19,10 +19,10 @@ const HeaderBurgerCifStyles = createGlobalStyle`
 
     img {
         position: absolute;
-        top: -10px;
+        top: -15px;
         left: 50%;
         transform: translateX(-50%);
-        height: 80px;
+        height: 90px;
         z-index: 9999;
     }
 }
