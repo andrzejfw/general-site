@@ -102,14 +102,14 @@ const MainLayout = ( {children} ) => (
     <HeaderCifStyles/>
     <HeaderBurgerCif/>
     <HeaderBurgerCifStyles/> */}
-    <HeaderRexona/>
+    {/* <HeaderRexona/>
     <HeaderRexonaStyles/>
     <HeaderBurgerRexona/>
-    <HeaderBurgerRexonaStyles/>
-    {/* <HeaderKnorr/>
+    <HeaderBurgerRexonaStyles/> */}
+    <HeaderKnorr/>
     <HeaderKnorrStyles/>
     <HeaderBurgerKnorr/>
-    <HeaderBurgerKnorrStyles/> */}
+    <HeaderBurgerKnorrStyles/>
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
@@ -151,10 +151,10 @@ const MainLayout = ( {children} ) => (
     <FooterDoveStyles/> */}
     {/* <FooterCif/>
     <FooterCifStyles/> */}
-    <FooterRexona/>
-    <FooterRexonaStyles/>
-    {/* <FooterKnorr/>
-    <FooterKnorrStyles/> */}
+    {/* <FooterRexona/>
+    <FooterRexonaStyles/> */}
+    <FooterKnorr/>
+    <FooterKnorrStyles/>
   </>
 )
 
