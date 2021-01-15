@@ -67,7 +67,7 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
     white-space: nowrap;
     margin: 0 1vw;
     position: relative;
-    margin: 20px 20px;
+    margin: 20px 20px 20px 9px;
     font-size: 1.5rem;
     z-index: 6;
 
