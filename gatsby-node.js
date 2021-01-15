@@ -11,13 +11,13 @@ const BLOCKS_INDEX = 2;
 const FILE = `${__dirname}/data/ids.csv`
 
 const TEMPLATES = {
-  Lipton: path.resolve(`src/layouts/pdp-dove.js`),
+  Lipton: path.resolve(`src/layouts/pdp-rexona.js`),
   Magnum: path.resolve(`src/layouts/pdp-magnum.js`),
   Domestos: path.resolve(`src/layouts/pdp-cif.js`),
 }
 
 const PATHS = {
-  Lipton: 'dove/',
+  Lipton: 'rexona/',
   Magnum: 'magnum/',
   Domestos: 'cif/',
 }
