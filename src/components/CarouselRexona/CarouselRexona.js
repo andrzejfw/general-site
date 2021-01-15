@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const SliderDiv = styled.div`
     outline:none;
-    background: linear-gradient(0deg, #d9e6f0 50%, transparent 50%);
+    background: linear-gradient(180deg, rgba(217,230,240,0) 40%, rgba(217,230,240,1) 100%);
     width: 90% !important;
 `;
 
@@ -38,9 +38,11 @@ const TextSlider = styled.div`
     color:#000;
     font-size: 1.2rem;
     margin-bottom: 20px;
+    min-height: 50px;
 
     @media(max-width:992px){
         margin-bottom: 15px;
+        
     }
 `;
 

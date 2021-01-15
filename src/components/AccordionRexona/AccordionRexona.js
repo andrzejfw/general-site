@@ -16,7 +16,7 @@ const AccordionRexonaTab = styled.div`
         text-decoration: underline;
     }
 
-    @media (max-width: 992px){
+    @media (max-width: 1080px){
       text-align: left;
       padding:10px 20px 10px 20px;
     }
