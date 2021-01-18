@@ -27,6 +27,7 @@ import CarouselStyleCif from "../components/CarouselCif/CarouselCifStyles.js"
 import CarouselStyleHellmanns from "../components/CarouselHellmanns/CarouselHellmannsStyles.js"
 import CarouselStyleDove from "../components/CarouselDove/CarouselDoveStyles.js"
 import CarouselStyleRexona from "../components/CarouselRexona/CarouselRexonaStyles.js"
+import CarouselStyleKnorr from "../components/CarouselKnorr/CarouselKnorrStyles.js"
 import CarouselStyleLiptonRecipe from "../components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js"
 import NavigationLiptonStyles from "../components/HeaderLipton/NavigationLiptonStyles"
 import NavigationStyles from "../components/Header/NavigationStyles"
@@ -102,14 +103,14 @@ const MainLayout = ( {children} ) => (
     <HeaderCifStyles/>
     <HeaderBurgerCif/>
     <HeaderBurgerCifStyles/> */}
-    <HeaderRexona/>
+    {/* <HeaderRexona/>
     <HeaderRexonaStyles/>
     <HeaderBurgerRexona/>
-    <HeaderBurgerRexonaStyles/>
-    {/* <HeaderKnorr/>
+    <HeaderBurgerRexonaStyles/> */}
+    <HeaderKnorr/>
     <HeaderKnorrStyles/>
     <HeaderBurgerKnorr/>
-    <HeaderBurgerKnorrStyles/> */}
+    <HeaderBurgerKnorrStyles/>
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
@@ -122,6 +123,7 @@ const MainLayout = ( {children} ) => (
     <CarouselStyleHellmanns />
     <CarouselStyleDove />
     <CarouselStyleRexona />
+    <CarouselStyleKnorr />
     <LiptonCategoriesStyles/>
     <MagnumCategoriesStyles/>
     <CarouselStyleLiptonRecipe />
@@ -151,10 +153,10 @@ const MainLayout = ( {children} ) => (
     <FooterDoveStyles/> */}
     {/* <FooterCif/>
     <FooterCifStyles/> */}
-    <FooterRexona/>
-    <FooterRexonaStyles/>
-    {/* <FooterKnorr/>
-    <FooterKnorrStyles/> */}
+    {/* <FooterRexona/>
+    <FooterRexonaStyles/> */}
+    <FooterKnorr/>
+    <FooterKnorrStyles/>
   </>
 )
 
