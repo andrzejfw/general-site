@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -7385,7 +7385,7 @@ try {
   Layout = preferDefault(__webpack_require__(/*! ./src/layouts/index */ "./src/layouts/index.js"));
 } catch (e) {
   if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
+    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
   } else {
     // Logging the error for debugging older browsers as there is no way
     // to wrap the thrown error in a try/catch.
@@ -51483,9 +51483,9 @@ var MainLayout = function MainLayout(_ref) {
 /***/ }),
 
 /***/ "@reach/router":
-/*!*********************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js" ***!
-  \*********************************************************************************************************************/
+/*!************************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js" ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -51494,9 +51494,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ }),
 
 /***/ "@reach/router/lib/history":
-/*!****************************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
-  \****************************************************************************************************************************/
+/*!*******************************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
+  \*******************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -51505,9 +51505,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!*************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js" ***!
-  \*************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js" ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

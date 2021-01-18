@@ -60,6 +60,11 @@ const FooterKnorrStyles = createGlobalStyle`
         flex-direction:column;
         justify-content:center;
         align-items:left;
+        padding-top: 20px;
+    }
+
+    @media(max-width:501px){
+        padding-top: 0;
     }
 }
 
@@ -202,7 +207,13 @@ const FooterKnorrStyles = createGlobalStyle`
         height: 200px;
     }
 
-    @media (max-width:800px){
+    @media (max-width:1140px){
+        top: -72px;
+        left: -10px;
+        height: 200px;
+    }
+
+    @media (max-width:950px){
         display: none;
     }
 }
