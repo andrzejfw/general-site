@@ -5,7 +5,7 @@ const HeaderBurgerCifStyles = createGlobalStyle`
 .knorr-burger-menu {
     display: none;    
 
-    @media (max-width: 692px) {
+    @media (max-width: 710px) {
         display: block;
         position: fixed;
         z-index: 99;
@@ -53,6 +53,9 @@ const HeaderBurgerCifStyles = createGlobalStyle`
     width: 100%;
     height: 90%;
     opacity: .9;
+    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
+    padding: 20px 0;
+}
 }
 
 .knorr-navbox-item {
@@ -70,6 +73,9 @@ const HeaderBurgerCifStyles = createGlobalStyle`
         font-weight: 700;
         color: #17594a;
     }
+    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
+    padding:10px 0;
+}
 }
 `;
 

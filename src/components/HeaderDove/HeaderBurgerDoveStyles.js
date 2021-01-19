@@ -5,7 +5,7 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
 .dove-burger-menu {
     display: none;    
 
-    @media (max-width: 710px) {
+    @media (max-width: 710px) { 
         display: block;
         position: fixed;
         z-index: 99;

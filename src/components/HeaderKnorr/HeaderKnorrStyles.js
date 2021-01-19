@@ -19,7 +19,7 @@ const HeaderDoveStyles = createGlobalStyle`
         padding: 10px 20px;
     }
 
-    @media(max-width:692px){
+    @media(max-width:710px){
         display: none;
     }
 

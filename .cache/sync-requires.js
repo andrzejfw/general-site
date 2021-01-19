@@ -7,8 +7,8 @@ const preferDefault = m => (m && m.default) || m
 exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\.cache\\dev-404-page.js"))),
   "component---src-layouts-pdp-cif-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\pdp-cif.js"))),
-  "component---src-layouts-pdp-knorr-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\pdp-knorr.js"))),
   "component---src-layouts-pdp-magnum-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\pdp-magnum.js"))),
+  "component---src-layouts-pdp-rexona-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\pdp-rexona.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\404.js"))),
   "component---src-pages-about-domestos-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\about-domestos.js"))),
   "component---src-pages-about-js": hot(preferDefault(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\pages\\about.js"))),

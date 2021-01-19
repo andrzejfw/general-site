@@ -47,6 +47,7 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
     justify-content: flex-start;
     top: 60px;
     z-index: 0;
+    margin-top:20px;
 }
 .rexona-navbox:after {
     background: url(${RexonaNav}) no-repeat;
@@ -67,7 +68,7 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
     white-space: nowrap;
     margin: 0 1vw;
     position: relative;
-    margin: 40px 20px 20px 9px;
+    margin: 10px 20px 20px 9px;
     font-size: 1.5rem;
     z-index: 6;
 
