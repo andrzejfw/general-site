@@ -13,7 +13,7 @@ const FooterRexona = () => (
         <li className="footer-rexona-item-list">
             <div className="footer-rexona-image-containter">
             
-            <p><Link to ="https://www.facebook.com/doveeesti/" target="_blank" rel="noreferrer">
+            <p><Link to ="https://www.facebook.com/RexonaEE/" target="_blank" rel="noreferrer">
                 <img src={FacebookImage} alt="Facebook ikoon" className="footer-rexona-social-image"/>
             </Link></p>
             </div>

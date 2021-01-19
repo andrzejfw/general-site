@@ -6,7 +6,7 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
 .rexona-burger-menu {
     display: none;    
 
-    @media (max-width: 692px) {
+    @media (max-width: 500px) {
         display: block;
         position: fixed;
         z-index: 99;

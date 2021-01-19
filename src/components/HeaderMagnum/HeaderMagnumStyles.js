@@ -19,7 +19,7 @@ const HeaderMagnumStyles = createGlobalStyle`
         padding: 10px 20px 20px;
     }
 
-    @media(max-width:692px){
+    @media(max-width:500px){
         display: none;
     }
 

@@ -5,7 +5,7 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
 .dove-burger-menu {
     display: none;    
 
-    @media (max-width: 692px) {
+    @media (max-width: 710px) {
         display: block;
         position: fixed;
         z-index: 99;
@@ -65,7 +65,11 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
     top: 60px;
     z-index: 0;
     background-color: rgb(0 38 99 / .95);
+    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
+    padding: 20px 0;
 }
+}
+
 
 .dove-navbox-item {
     text-decoration: none;
@@ -82,6 +86,9 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
         font-weight: 700;
         color: #fff;
     }
+    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
+    padding:10px 0;
+}
 }
 `;
 

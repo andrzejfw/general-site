@@ -94,11 +94,11 @@ const MainLayout = ( {children} ) => (
     {/* <HeaderHellmanns/>
     <HeaderHellmannsStyles/>
     <HeaderBurgerHellmanns/>
-    <HeaderBurgerHellmannsStyles/> */}
-    {/* <HeaderDove/>
+    <HeaderBurgerHellmannsStyles/>   */}
+    <HeaderDove/>
     <HeaderDoveStyles/>
     <HeaderBurgerDove/>
-    <HeaderBurgerDoveStyles/> */}
+    <HeaderBurgerDoveStyles/>
     {/* <HeaderCif/>
     <HeaderCifStyles/>
     <HeaderBurgerCif/>
@@ -107,10 +107,10 @@ const MainLayout = ( {children} ) => (
     <HeaderRexonaStyles/>
     <HeaderBurgerRexona/>
     <HeaderBurgerRexonaStyles/> */}
-    <HeaderKnorr/>
+    {/* <HeaderKnorr/>
     <HeaderKnorrStyles/>
     <HeaderBurgerKnorr/>
-    <HeaderBurgerKnorrStyles/>
+    <HeaderBurgerKnorrStyles/> */}
     <TabStyle />
     <ModalStyles/>
     <PopupStyles/>
