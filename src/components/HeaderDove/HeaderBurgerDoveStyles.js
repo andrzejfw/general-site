@@ -86,7 +86,7 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
         font-weight: 700;
         color: #fff;
     }
-    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
+    @media screen and (min-device-width: 500px) and (max-device-width: 692px) {
     padding:10px 0;
 }
 }

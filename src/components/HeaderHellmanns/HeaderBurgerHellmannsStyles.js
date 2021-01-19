@@ -68,6 +68,9 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
         font-weight: 700;
         color: #004976;
     }
+    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
+    padding:10px 0;
+}
 }
 `;
 

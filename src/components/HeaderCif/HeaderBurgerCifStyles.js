@@ -49,6 +49,7 @@ const HeaderBurgerCifStyles = createGlobalStyle`
     background-color: rgb(227 232 220 / 95%);
     width: auto;
     height: auto;
+    
 }
 
 .cif-navbox-item {
@@ -66,6 +67,9 @@ const HeaderBurgerCifStyles = createGlobalStyle`
         font-weight: 700;
         color: #17594a;
     }
+    @media screen and (min-device-width: 500px) and (max-device-width: 692px) {
+    padding:10px 0;
+}
 }
 `;
 

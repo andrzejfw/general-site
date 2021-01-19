@@ -24,6 +24,11 @@ const NavbarSection = styled.section`
       justify-content:center;
     }
   }
+  @media screen and (min-device-width: 500px) and (max-device-width: 692px) {
+    .ml-auto.navbar-nav{
+      height:60vh !important;
+    }
+}
 `;
 
 
