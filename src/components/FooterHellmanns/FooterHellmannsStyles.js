@@ -34,13 +34,14 @@ const FooterHellmannsStyles = createGlobalStyle`
     }
 
     @media (max-width:692px){
-        padding: 0 10%;
+        padding: 2% 10%;
         height:100%;
         margin: 0 auto 5%;
         justify-content: center;
         align-items: flex-start;
     }
     @media (max-width: 500px) {
+        padding: 0 10%;
         display:flex;
         flex-direction:column;
         margin: 0;
@@ -205,6 +206,11 @@ const FooterHellmannsStyles = createGlobalStyle`
         left: -50px;
         height: 200px;
         margin: 0;
+    }
+
+    @media (max-width:700px){
+        top: -130px;
+        left: 180px;
     }
 
     @media (max-width:500px){
