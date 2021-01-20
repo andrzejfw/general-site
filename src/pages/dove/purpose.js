@@ -13,11 +13,13 @@ const Section = styled.section`
     h1 {
       margin: 30px 0 20px;
       text-align: center;
+      color: #054281;
     }
 
     h2 {
       font-size: 1rem;
       font-weight: bold;
+      color: #054281;
     }
 
     ul {
@@ -96,7 +98,7 @@ const PurposePageDove = () => {
       <h2>Dove enesehinnangu projekt</h2>
       <p>Alates sotsiaalmeedia kuulsustest kuni täiusliku moemaailmani pommitavad meid ebareaalsed iluideed, mis võivad põhjustada madala enesehinnangu ja ärevuse tundemärke. Selle tõttu asutati Dove’i enesehinnangu projekti 2004. aastal, et aidata järgmiste põlvkondade naistel kasvatada rõõmu ja enesekindlust oma välimuse osas. Projekt pakub enesehinnangu õpet 8-17 aastaste noortele (peamiselt tüdrukutele) erinevate koolitundide, töötubade ja veebikanalite kaudu. Aastaks 2020 oleme jõudnud 60 miljoni nooreni, kes on saavutanud oma eesmärgi, kuid paljude noorteni on veel vaja jõuda. Iga kord, kui valite Dove’i toote, aitate järgmistel noortel jõuda enesekindlust suurendava tõe poole.</p>
       <p>Kõike meie enesehinnangu ressursid on välja töötatud ekspertidega konsulteerides. Teeme koostööd partnerorganisatsioonidega, kellel on ühised eesmärgid tüdrukute ja naiste enesekindluse tõstmiseks.</p>
-      <p style={{textAlign: "center", fontWeight: "bold", fontSize: "1.2rem"}}>Aitame noortel mõista, et nad on ilusad just sellisena, nagu nad on</p>
+      <p style={{textAlign: "center", fontWeight: "bold", fontSize: "1.2rem", color: "#054281"}}>Aitame noortel mõista, et nad on ilusad just sellisena, nagu nad on</p>
     </Section>
     </>
   )

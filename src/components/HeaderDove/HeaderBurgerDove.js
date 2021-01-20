@@ -58,7 +58,7 @@ const HeaderBurgerDove = () => {
         }}>
           <Link className="dove-navbox-item" style={{transition: "all .4s linear .2s", left: navbarOpen ? "0" : "-100%",}} to="/dove/products" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
           <Link className="dove-navbox-item" style={{transition: "all .4s linear .3s", left: navbarOpen ? "0" : "-100%",}} to="/dove/sustainability" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .4s", left: navbarOpen ? "0" : "-100%",}} to="/dove/purpose" onClick={() => setNavbarOpen(!navbarOpen)}>Meie eesmärk</Link>
+          <Link className="dove-navbox-item" style={{transition: "all .4s linear .4s", left: navbarOpen ? "0" : "-100%",}} to="/dove/purpose" onClick={() => setNavbarOpen(!navbarOpen)}>Jätkusuutlikkus</Link>
           <Link className="dove-navbox-item" style={{transition: "all .4s linear .5s", left: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>
