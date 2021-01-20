@@ -47,12 +47,11 @@ const HeaderBurgerCifStyles = createGlobalStyle`
     justify-content: center;
     top: 60px;
     z-index: 0;
-    background-color: rgb(0 122 51 / .9);
+    background-color: rgb(0 122 51);
     background: url(${KnorrWave});
     background-size: cover;
     width: 100%;
     height: 90%;
-    opacity: .9;
     @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
     padding: 20px 0;
 }
