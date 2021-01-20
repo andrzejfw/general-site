@@ -29,6 +29,8 @@ import HeaderBurgerDomestos from "../components/HeaderDomestos/HeaderBurgerDomes
 import HeaderBurgerDomestosStyles from "../components/HeaderDomestos/HeaderBurgerDomestosStyles"
 import CarouselStyleDomestos from "../components/CarouselDomestos/CarouselDomestosStyles.js"
 import DomestosCategoriesStyles from '../components/DomestosCategories/DomestosCategoriesStyles'
+import BannerWithVideoDomestosStyles from "../components/BannerWithVideoDomestos/BannerWithVideoDomestosStyles"
+
 
 //magnum
 import FooterMagnum from "../components/FooterMagnum/FooterMagnum.js"
@@ -239,6 +241,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <DomestosCategoriesStyles />
+      <BannerWithVideoDomestosStyles />
       </>
     }
     {location.pathname.match('lipton') && 
