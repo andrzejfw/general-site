@@ -81,7 +81,7 @@ export default class extends React.Component{
 
             <TabPanel style={{backgroundImage: `url(${Sun})`}}>
                 <Link to="/magnum"><img src={Magnum} alt="Magnum Eestis jäätis logo"></img></Link>
-                <Link to="/Benandjerrys"><img src={BenAndJerrys} alt="Ben&Jerry's jäätis logo"></img></Link>
+                <Link to="/benandjerrys"><img src={BenAndJerrys} alt="Ben&Jerry's jäätis logo"></img></Link>
                 <Link to="/idull"><img src={Idull} alt="Idüll Eesti jäätis logo"></img></Link>
                 <Link to="/superviva"><img src={SuperViva} alt="Super Viva Eesti jäätis logo"></img></Link>
             </TabPanel>
