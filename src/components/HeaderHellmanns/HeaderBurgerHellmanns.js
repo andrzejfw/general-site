@@ -45,7 +45,7 @@ const HeaderBurgerHellmanns = () => {
             height: navbarOpen ? "100vh" : "70px", 
             transition: "all .5s linear", 
     }}>
-      <Link onClick={() => setNavbarOpen(false)} to="/index-hellmanns"><img src={HellmannsLogo} alt="Hellmann's Eesti logo"/></Link>
+      <Link onClick={() => setNavbarOpen(false)} to="/hellmanns"><img src={HellmannsLogo} alt="Hellmann's Eesti logo"/></Link>
       <div 
         className="hellmanns-toggle"
         navbarOpen={navbarOpen}
@@ -60,9 +60,9 @@ const HeaderBurgerHellmanns = () => {
           opacity: navbarOpen ? "1" : "0", 
           padding: navbarOpen ? "20px 0" : "0",
           }}>
-          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/products-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/sustainability-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/history-hellmanns" onClick={() => setNavbarOpen(!navbarOpen)}>Ajalugu</Link>
+          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/hellmanns/products" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/hellmanns/sustainability" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
+          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/hellmanns/history" onClick={() => setNavbarOpen(!navbarOpen)}>Ajalugu</Link>
           <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>

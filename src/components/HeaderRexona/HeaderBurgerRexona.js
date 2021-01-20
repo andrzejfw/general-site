@@ -44,7 +44,7 @@ const HeaderBurgerRexona = () => {
         style={{
             transition: "all .3s linear",
     }}>
-      <Link onClick={() => setNavbarOpen(false)} to="/index-rexona"><img src={rexonaLogo} alt="rexona Eesti jäätis logo"/></Link>
+      <Link onClick={() => setNavbarOpen(false)} to="/rexona"><img src={rexonaLogo} alt="rexona Eesti jäätis logo"/></Link>
       <div 
         className="rexona-toggle"
         navbarOpen={navbarOpen}
@@ -56,8 +56,8 @@ const HeaderBurgerRexona = () => {
         transition: "all .3s",
         right: navbarOpen ? "0" : "-100%",
         }}>
-          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/index-rexona" onClick={() => setNavbarOpen(!navbarOpen)}>Homepage</Link>
-          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/products-rexona" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/rexona" onClick={() => setNavbarOpen(!navbarOpen)}>Homepage</Link>
+          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/rexona/products" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
           <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>

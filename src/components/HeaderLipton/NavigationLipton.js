@@ -42,7 +42,7 @@ const NavigationLipton = () => {
 
       <NavbarSection>
         <Navbar.Brand>
-          <Link to ="/index-lipton"><ImgLogo src={LiptonLogoHeader} /></Link>
+          <Link to ="/lipton"><ImgLogo src={LiptonLogoHeader} /></Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav">
@@ -54,13 +54,13 @@ const NavigationLipton = () => {
 
           <Nav className="ml-lipton">
           <NavDropdown title="Tooted" id="collasible-nav-dropdown">
-              <NavDropdown.Item  Link href="/about">Dropdown1</NavDropdown.Item>
-              <NavDropdown.Item Link href="/brands">Dropdown1</NavDropdown.Item>
+              <NavDropdown.Item  Link href="/lipton/about">Dropdown1</NavDropdown.Item>
+              <NavDropdown.Item Link href="/lipton/brands">Dropdown1</NavDropdown.Item>
               <NavDropdown.Item Link href="/contact">Dropdown1</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link Link href="/purpose-lipton">Meie eesmärk</Nav.Link>
-            <Nav.Link Link href="/sustainability-lipton">Jätkusuutlik elu</Nav.Link>
+            <Nav.Link Link href="/lipton/purpose">Meie eesmärk</Nav.Link>
+            <Nav.Link Link href="/lipton/sustainability">Jätkusuutlik elu</Nav.Link>
             <Nav.Link Link href="/contact">Kontakt</Nav.Link>
 
           </Nav>

@@ -8,10 +8,10 @@ const HeaderHellmanns = () => {
         <>
         <nav className="header-hellmanns-nav">
             <div className="links-section">
-                <Link to="/products-hellmanns">Tooted</Link>
-                <Link to="/sustainability-hellmanns">Ettevõttest</Link>
-                <Link to="/index-hellmanns"><img src={HellmannsLogo} alt="Hellmann's Eesti logo"/></Link>
-                <Link to="/history-hellmanns">Ajalugu</Link>
+                <Link to="/hellmanns/products">Tooted</Link>
+                <Link to="/hellmanns/sustainability">Ettevõttest</Link>
+                <Link to="/hellmanns"><img src={HellmannsLogo} alt="Hellmann's Eesti logo"/></Link>
+                <Link to="/hellmanns/history">Ajalugu</Link>
                 <Link to="/contact">Kontakt</Link>
             </div>
         </nav>

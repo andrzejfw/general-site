@@ -44,7 +44,7 @@ const HeaderBurgerDove = () => {
         style={{
             transition: "all .2s linear",
     }}>
-      <Link onClick={() => setNavbarOpen(false)} to="/index-dove"><img src={DoveLogo} alt="Dove Eesti jäätis logo"/></Link>
+      <Link onClick={() => setNavbarOpen(false)} to="/dove"><img src={DoveLogo} alt="Dove Eesti jäätis logo"/></Link>
       <div 
         className="dove-toggle"
         navbarOpen={navbarOpen}
@@ -56,9 +56,9 @@ const HeaderBurgerDove = () => {
         transition: "all .3s linear",
         left: navbarOpen ? "0" : "-100%",
         }}>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .2s", left: navbarOpen ? "0" : "-100%",}} to="/products-dove" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .3s", left: navbarOpen ? "0" : "-100%",}} to="/sustainability-dove" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .4s", left: navbarOpen ? "0" : "-100%",}} to="/purpose-dove" onClick={() => setNavbarOpen(!navbarOpen)}>Meie eesmärk</Link>
+          <Link className="dove-navbox-item" style={{transition: "all .4s linear .2s", left: navbarOpen ? "0" : "-100%",}} to="/dove/products" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="dove-navbox-item" style={{transition: "all .4s linear .3s", left: navbarOpen ? "0" : "-100%",}} to="/dove/sustainability" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
+          <Link className="dove-navbox-item" style={{transition: "all .4s linear .4s", left: navbarOpen ? "0" : "-100%",}} to="/dove/purpose" onClick={() => setNavbarOpen(!navbarOpen)}>Meie eesmärk</Link>
           <Link className="dove-navbox-item" style={{transition: "all .4s linear .5s", left: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>

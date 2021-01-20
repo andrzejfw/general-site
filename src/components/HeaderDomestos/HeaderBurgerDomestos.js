@@ -19,12 +19,12 @@ function uncheckAll(divid) {
     <div id="menuToggle">
     <input type="checkbox" className="toggler"/>
     <div class="hamburger"><div></div></div>
-    <a href="/index-domestos"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></a>
+    <a href="/domestos"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></a>
     <ul id="menu">
-                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/products-domestos">Tooted</Link></li>
-                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/about-domestos">Ettevõttest</Link></li>
-                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/sustainability-domestos">Jätkusuutlikkus</Link></li>
-                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/contact-domestos">Kontakt</Link></li>
+                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/domestos/products">Tooted</Link></li>
+                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/domestos/about">Ettevõttest</Link></li>
+                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/domestos/sustainability">Jätkusuutlikkus</Link></li>
+                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/contact">Kontakt</Link></li>
     </ul>
   </div>
 </nav>

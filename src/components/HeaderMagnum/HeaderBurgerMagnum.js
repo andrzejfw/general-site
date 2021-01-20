@@ -46,7 +46,7 @@ const HeaderBurgerMagnum = () => {
             transition: "all .2s linear", 
             borderRadius: navbarOpen ? "0 0 50% 50%" : "0"
     }}>
-      <Link onClick={() => setNavbarOpen(false)} to="/index-magnum"><img src={MagnumLogo} alt="Magnum Eesti jäätis logo"/></Link>
+      <Link onClick={() => setNavbarOpen(false)} to="/magnum"><img src={MagnumLogo} alt="Magnum Eesti jäätis logo"/></Link>
       <div 
         className="magnum-toggle"
         navbarOpen={navbarOpen}
@@ -58,9 +58,9 @@ const HeaderBurgerMagnum = () => {
         opacity: navbarOpen ? "1" : "0", 
         transition: "opacity .2s linear .2s"
         }}>
-          <Link className="magnum-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/index-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="magnum-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/about-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="magnum-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/delivery-magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
+          <Link className="magnum-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/magnum" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
+          <Link className="magnum-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/magnum/about" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
+          <Link className="magnum-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/magnum/delivery" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
           <Link className="magnum-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>

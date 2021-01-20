@@ -7,12 +7,12 @@ const HeaderDomestos = () => {
     return (
         <>
         <nav className="header-domestos-nav">
-                <a href="/index-domestos"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></a>
+                <a href="/domestos"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></a>
                 <ul className="menu-animation">
-                <li><Link activeClassName="current" to="/products-domestos">Tooted</Link></li>
-                <li><Link activeClassName="current" to="/about-domestos">Ettevõttest</Link></li>
-                <li><Link activeClassName="current" to="/sustainability-domestos">Jätkusuutlikkus</Link></li>
-                <li><Link activeClassName="current" to="/contact-domestos">Kontakt</Link></li>
+                <li><Link activeClassName="current" to="/domestos/products">Tooted</Link></li>
+                <li><Link activeClassName="current" to="/domestos/about">Ettevõttest</Link></li>
+                <li><Link activeClassName="current" to="/domestos/sustainability">Jätkusuutlikkus</Link></li>
+                <li><Link activeClassName="current" to="/contact">Kontakt</Link></li>
                 </ul>
         </nav>
         </>

@@ -8,10 +8,10 @@ const HeaderMagnum = () => {
         <>
         <nav className="header-magnum-nav">
             <div className="links-section">
-                <Link to="/products-magnum" activeStyle={{fontWeight: "700"}}>Tooted</Link>
-                <Link to="/about-magnum" activeStyle={{fontWeight: "700"}}>Ettevõttest</Link>
-                <Link to="/index-magnum"><img src={MagnumLogo} alt="Magnum Eesti jäätis logo"/></Link>
-                <Link to="/delivery-magnum" activeStyle={{fontWeight: "700"}}>Telli</Link>
+                <Link to="/magnum/products" activeStyle={{fontWeight: "700"}}>Tooted</Link>
+                <Link to="/magnum/about" activeStyle={{fontWeight: "700"}}>Ettevõttest</Link>
+                <Link to="/magnum"><img src={MagnumLogo} alt="Magnum Eesti jäätis logo"/></Link>
+                <Link to="/magnum/delivery" activeStyle={{fontWeight: "700"}}>Telli</Link>
                 <Link to="/contact" activeStyle={{fontWeight: "700"}}>Kontakt</Link>
             </div>
         </nav>

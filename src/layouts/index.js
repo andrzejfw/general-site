@@ -87,7 +87,7 @@ import HeaderBurgerRexona from "../components/HeaderRexona/HeaderBurgerRexona"
 import HeaderBurgerRexonaStyles from "../components/HeaderRexona/HeaderBurgerRexonaStyles"
 const MainLayout = ({ children, location }) => (
   <>
-    {location.pathname.match('corporate') && 
+    {location.pathname === ['/','/about','/404','/brands','/contact','cookie-notice','/legal-notice','/privacy-notice','/sitemap','/sustainability'] &&
       <>
       <Navigation/>
       <NavigationStyles/>
@@ -229,10 +229,12 @@ const MainLayout = ({ children, location }) => (
       <CarouselStyle/>
       </>
     }
+    
     {/* children */}
     {children}
     {/* children */}
-    {location.pathname.match('corporate') && 
+
+    {location.pathname === ['/','/about','/404','/brands','/contact','cookie-notice','/legal-notice','/privacy-notice','/sitemap','/sustainability'] &&
       <>
       <Footer/>
       <GlobalStyle />
