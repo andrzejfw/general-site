@@ -10,6 +10,8 @@ import MagnumHeroImgMobile from '../../assets/images/magnum-hero-image-mobile.jp
 import MagnumVideoBackground from '../../assets/images/magnum-video-background.jpg'
 import MagnumIceCreamStick from '../../assets/images/magnum-on-stick.jpg'
 import MagnumIceCreamBox from '../../assets/images/magnum-in-box.jpg'
+import MagnumDeliver from '../../assets/images/magnum-deliver-now.jpg'
+MagnumDeliver
 
 const SectionMagnumHP = styled.section`
     width: 100%;
@@ -53,7 +55,7 @@ const IndexPageMagnum = () => {
                 >
             </BannerWithVideoMagnum>
             <MagnumBannerAndText 
-                image="https://image.shutterstock.com/image-photo/fast-free-delivery-food-by-600w-1556713718.jpg"
+                image={MagnumDeliver}
                 paragraphText="Oleme avanud Bolt Foodi ja Wolti platvormil virtuaalpoed, kust saad tellida oma lemmiku jäätiste kulleriga koju!"
                 buttonCTA="Loe rohkem"
                 buttonLink="/delivery-magnum"

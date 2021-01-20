@@ -233,7 +233,7 @@ const FooterKnorrStyles = createGlobalStyle`
     @media (max-width:500px){
         bottom: 0;
         right: 0;
-        height: 200px;
+        height: 170px;
         margin: 0;
     }
 

@@ -208,7 +208,7 @@ const FooterCifStyles = createGlobalStyle`
         right: -207px;
     }
 
-    @media (max-width:500px){
+    @media (max-width:700px){
         bottom: 0;
         right: 0;
         height: 200px;

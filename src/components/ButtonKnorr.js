@@ -22,10 +22,7 @@ const Button = styled.button`
     transition: all .2s ease-in-out;
 
     &:hover{
-      border-color: #ffd32e;
     text-decoration: none;
-    color: #fff;
-    background-color: #ffd32e;
       transform: scale(1.1);
       
     }

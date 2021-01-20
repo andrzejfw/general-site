@@ -193,6 +193,11 @@ const FooterDoveStyles = createGlobalStyle`
         margin: 0;
     }
 
+    @media (max-width:700px){
+        top: -110px;
+        left: 200px;
+    }
+
     @media (max-width:500px){
         top: -200px;
         left: 245px;
