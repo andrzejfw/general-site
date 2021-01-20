@@ -87,7 +87,115 @@ import HeaderBurgerRexona from "../components/HeaderRexona/HeaderBurgerRexona"
 import HeaderBurgerRexonaStyles from "../components/HeaderRexona/HeaderBurgerRexonaStyles"
 const MainLayout = ({ children, location }) => (
   <>
-    {location.pathname === ['/','/about','/404','/brands','/contact','cookie-notice','/legal-notice','/privacy-notice','/sitemap','/sustainability'] &&
+    {location.pathname === '/' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      </>
+    }
+    {location.pathname === '/about' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      </>
+    }
+    {location.pathname === '/404' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      </>
+    }
+    {location.pathname === '/brands' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      </>
+    }
+    {location.pathname === '/contact' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      </>
+    }
+    {location.pathname === '/cookie-notice' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      </>
+    }
+    {location.pathname === '/legal-notice' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      </>
+    }
+    {location.pathname === '/privacy-notice' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      </>
+    }
+    {location.pathname === '/sitemap' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      </>
+    }
+    {location.pathname === '/sustainability' && 
       <>
       <Navigation/>
       <NavigationStyles/>
@@ -234,15 +342,54 @@ const MainLayout = ({ children, location }) => (
     {children}
     {/* children */}
 
-    {location.pathname === ['/','/about','/404','/brands','/contact','cookie-notice','/legal-notice','/privacy-notice','/sitemap','/sustainability'] &&
+    {location.pathname === '/' &&
       <>
       <Footer/>
-      <GlobalStyle />
-      <TabStyle />
-      <ModalStyles/>
-      <PopupStyles/>
-      <QuotesStyles/>
-      <CarouselStyle/>
+      </>
+    }
+    {location.pathname === '/about' &&
+      <>
+      <Footer/>
+      </>
+    }
+    {location.pathname === '/404' &&
+      <>
+      <Footer/>
+      </>
+    }
+    {location.pathname === '/brands' &&
+      <>
+      <Footer/>
+      </>
+    }
+    {location.pathname === '/contact' &&
+      <>
+      <Footer/>
+      </>
+    }
+    {location.pathname === '/cookie-notice' &&
+      <>
+      <Footer/>
+      </>
+    }
+    {location.pathname === '/legal-notice' &&
+      <>
+      <Footer/>
+      </>
+    }
+    {location.pathname === '/privacy-notice' &&
+      <>
+      <Footer/>
+      </>
+    }
+    {location.pathname === '/sitemap' &&
+      <>
+      <Footer/>
+      </>
+    }
+    {location.pathname === '/sustainability' &&
+      <>
+      <Footer/>
       </>
     }
     {location.pathname.match('magnum') && 
