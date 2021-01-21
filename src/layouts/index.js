@@ -11,6 +11,8 @@ import QuotesStyles from "../components/Quotes/QuotesStyles"
 import Footer from "../components/Footer/Footer.js"
 import Navigation from "../components/Header/Navigation.js"
 import NavigationStyles from "../components/Header/NavigationStyles"
+import FaviconUni from "../components/Favicon/FaviconUni"
+
 //lipton
 import FooterLipton from "../components/FooterLipton/FooterLipton.js"
 import NavigationLipton from "../components/HeaderLipton/NavigationLipton.js"
@@ -20,6 +22,8 @@ import NavigationLiptonStyles from "../components/HeaderLipton/NavigationLiptonS
 import LiptonCategoriesStyles from "../components/LiptonCategories/LiptonCategoriesStyles"
 import LiptonBannerAndTextStyles from "../components/LiptonBannerAndText/LiptonBannerAndTextStyles"
 import BannerWithVideoLiptonStyles from "../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles"
+import FaviconLipton from "../components/Favicon/FaviconLipton"
+
 //domestos
 import FooterDomestos from "../components/FooterDomestos/FooterDomestos.js"
 import FooterDomestosStyles from "../components/FooterDomestos/FooterDomestosStyles.js"
@@ -30,7 +34,7 @@ import HeaderBurgerDomestosStyles from "../components/HeaderDomestos/HeaderBurge
 import CarouselStyleDomestos from "../components/CarouselDomestos/CarouselDomestosStyles.js"
 import DomestosCategoriesStyles from '../components/DomestosCategories/DomestosCategoriesStyles'
 import BannerWithVideoDomestosStyles from "../components/BannerWithVideoDomestos/BannerWithVideoDomestosStyles"
-
+import FaviconDomestos from "../components/Favicon/FaviconDomestos"
 
 //magnum
 import FooterMagnum from "../components/FooterMagnum/FooterMagnum.js"
@@ -43,6 +47,8 @@ import CarouselStyleMagnum from "../components/CarouselMagnum/CarouselMagnumStyl
 import MagnumCategoriesStyles from "../components/MagnumCategories/MagnumCategoriesStyles"
 import MagnumBannerAndTextStyles from "../components/MagnumBannerAndText/MagnumBannerAndTextStyles"
 import BannerWithVideoMagnumStyles from "../components/BannerWithVideoMagnum/BannerWithVideoMagnumStyles"
+import FaviconMagnum from "../components/Favicon/FaviconMagnum"
+
 //cif
 import FooterCif from "../components/FooterCif/FooterCif.js"
 import FooterCifStyles from "../components/FooterCif/FooterCifStyles.js"
@@ -51,6 +57,8 @@ import HeaderCif from "../components/HeaderCif/HeaderCif"
 import HeaderCifStyles from "../components/HeaderCif/HeaderCifStyles"
 import HeaderBurgerCif from "../components/HeaderCif/HeaderBurgerCif"
 import HeaderBurgerCifStyles from "../components/HeaderCif/HeaderBurgerCifStyles"
+import FaviconCif from "../components/Favicon/FaviconCif"
+
 //dove
 import FooterDove from "../components/FooterDove/FooterDove.js"
 import FooterDoveStyles from "../components/FooterDove/FooterDoveStyles.js"
@@ -59,6 +67,8 @@ import HeaderDove from "../components/HeaderDove/HeaderDove"
 import HeaderDoveStyles from "../components/HeaderDove/HeaderDoveStyles"
 import HeaderBurgerDove from "../components/HeaderDove/HeaderBurgerDove"
 import HeaderBurgerDoveStyles from "../components/HeaderDove/HeaderBurgerDoveStyles"
+import FaviconDove from "../components/Favicon/FaviconDove"
+
 //hellmanns
 import FooterHellmanns from "../components/FooterHellmanns/FooterHellmanns.js"
 import FooterHellmannsStyles from "../components/FooterHellmanns/FooterHellmannsStyles.js"
@@ -71,6 +81,8 @@ import HellmannsCategoriesStyles from "../components/HellmannsCategories/Hellman
 import HellmannsBannerAndTextStyles from "../components/HellmannsBannerAndText/HellmannsBannerAndTextStyles"
 import VideoHellmannsStyles from "../components/VideoHellmanns/VideoHellmannsStyles"
 import BannerWithVideoHellmannsStyles from "../components/BannerWithVideoHellmanns/BannerWithVideoHellmannsStyles"
+import FaviconHellmanns from "../components/Favicon/FaviconHellmanns"
+
 //knorr
 import FooterKnorr from "../components/FooterKnorr/FooterKnorr.js"
 import FooterKnorrStyles from "../components/FooterKnorr/FooterKnorrStyles.js"
@@ -79,6 +91,8 @@ import HeaderKnorr from "../components/HeaderKnorr/HeaderKnorr"
 import HeaderKnorrStyles from "../components/HeaderKnorr/HeaderKnorrStyles"
 import HeaderBurgerKnorr from "../components/HeaderKnorr/HeaderBurgerKnorr"
 import HeaderBurgerKnorrStyles from "../components/HeaderKnorr/HeaderBurgerKnorrStyles"
+import FaviconKnorr from "../components/Favicon/FaviconKnorr"
+
 //rexona
 import FooterRexona from "../components/FooterRexona/FooterRexona.js"
 import FooterRexonaStyles from "../components/FooterRexona/FooterRexonaStyles.js"
@@ -87,6 +101,8 @@ import HeaderRexona from "../components/HeaderRexona/HeaderRexona"
 import HeaderRexonaStyles from "../components/HeaderRexona/HeaderRexonaStyles"
 import HeaderBurgerRexona from "../components/HeaderRexona/HeaderBurgerRexona"
 import HeaderBurgerRexonaStyles from "../components/HeaderRexona/HeaderBurgerRexonaStyles"
+import FaviconRexona from "../components/Favicon/FaviconRexona"
+
 const MainLayout = ({ children, location }) => (
   <>
     {location.pathname === '/' && 
@@ -99,6 +115,8 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
+
       </>
     }
     {location.pathname === '/about' && 
@@ -111,6 +129,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
       </>
     }
     {location.pathname === '/404' && 
@@ -123,6 +142,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
       </>
     }
     {location.pathname === '/brands' && 
@@ -135,6 +155,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
       </>
     }
     {location.pathname === '/contact' && 
@@ -147,6 +168,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
       </>
     }
     {location.pathname === '/cookie-notice' && 
@@ -159,6 +181,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
       </>
     }
     {location.pathname === '/legal-notice' && 
@@ -171,6 +194,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
       </>
     }
     {location.pathname === '/privacy-notice' && 
@@ -183,6 +207,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
       </>
     }
     {location.pathname === '/sitemap' && 
@@ -195,6 +220,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
       </>
     }
     {location.pathname === '/sustainability' && 
@@ -207,6 +233,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconUni/>
       </>
     }
     {location.pathname.match('magnum') && 
@@ -225,6 +252,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconMagnum/>
       </>
     }
     {location.pathname.match('domestos') && 
@@ -242,6 +270,7 @@ const MainLayout = ({ children, location }) => (
       <CarouselStyle />
       <DomestosCategoriesStyles />
       <BannerWithVideoDomestosStyles />
+      <FaviconDomestos/>
       </>
     }
     {location.pathname.match('lipton') && 
@@ -259,6 +288,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle />
+      <FaviconLipton/>
       </>
     }
     {location.pathname.match('cif') && 
@@ -274,6 +304,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle/>
+      <FaviconCif/>
       </>
     }
     {location.pathname.match('dove') && 
@@ -289,6 +320,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle/>
+      <FaviconDove/>
       </>
     }
     {location.pathname .match('hellmanns') &&
@@ -308,6 +340,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle/>
+      <FaviconHellmanns/>
       </>
     }
     {location.pathname.match('knorr') && 
@@ -323,6 +356,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle/>
+      <FaviconKnorr/>
       </>
     }
     {location.pathname.match('rexona') && 
@@ -338,6 +372,7 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle/>
+      <FaviconRexona/>
       </>
     }
     

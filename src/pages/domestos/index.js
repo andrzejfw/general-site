@@ -60,15 +60,13 @@ const IndexPage = () => {
    <DomestosHeroImage src={HeroBanner} alt="Magnum jäätis"/> 
    <DomestosIndexSection>
    <DomestosCategories sectionTitle="Meie kategooriaid">
-      <DomestosCategoriesBox categoryTitle="Liquid cleaners" categoryImage={Bottle} categoryLink="/" alt="Hellmann's Majonees"></DomestosCategoriesBox>
-      <DomestosCategoriesBox categoryTitle="Toilet Blocks" categoryImage={Blocks} categoryLink="/" alt="Hellmann's Ketšup"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="Liquid cleaners" categoryImage={Bottle} categoryLink="/domestos" alt="Hellmann's Majonees"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="Toilet Blocks" categoryImage={Blocks} categoryLink="/domestos" alt="Hellmann's Ketšup"></DomestosCategoriesBox>
     </DomestosCategories>
     <BannerWithVideoDomestos 
                 title="Puhas kodu. Puhas planeet. Puhas tulevik" 
                 paragraph="Põlvkondade vältel oleme aidanud eemaldada mustust ja plekke, mis aitavad inimestel elada tervislikumalt ja nauditavamalt." 
                 videoId="I_Sst3p19Ek" 
-                // background={MagnumVideoBackground}
-                // backgroundMobile={MagnumVideoBackground}
                 button
                 videoButtonCTA="Loe rohkem"
                 videoButtonLink="/domestos/about"
