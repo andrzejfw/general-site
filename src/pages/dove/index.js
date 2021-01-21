@@ -1,18 +1,43 @@
 import React from "react"
 import styled from 'styled-components'
 import SEO from '../../components/Seo/Seo'
-import DoveHeroImg from '../../assets/images/dove-hero-hp.jpg'
+import DoveHomepageHeroImg from '../../assets/images/dove-hero-hp.jpg'
+import DoveHomepageHeroImgMobile from '../../assets/images/dove-hero-hp.jpg'
+import DoveCategories from '../../components/DoveCategories/DoveCategories'
+import DoveCategoriesBox from '../../components/DoveCategories/DoveCategoriesBox'
+import Mayo from '../../assets/images/hellmanns-mayo.png'
+import Sauce from '../../assets/images/hellmanns-sauce.png'
+import Ketchup from '../../assets/images/hellmanns-ketchup.png'
+import DoveBannerAndText from '../../components/DoveBannerAndText/DoveBannerAndText'
+import DoveSustainabilityHeroImg from '../../assets/images/dove-sustainability-hero.jpg'
+import DoveSustainabilityHeroImgMobile from '../../assets/images/dove-sustainability-hero-mobile.jpg'
+import DovePurposeHeroImg from '../../assets/images/dove-purpose-hero.jpg'
+import DovePurposeHeroImgMobile from '../../assets/images/dove-purpose-hero-mobile.jpg'
+
 
 
 const Section = styled.section`
-    width:100%;
-    margin:auto;
-    padding-bottom:30px;
-    text-align: center;
+    max-width: 1200px;
+    margin:10px auto;
+    padding: 0 20px 30px;
 
-    @media (max-width: 692px) {
-      margin-bottom: -50px;
+    h1 {
+      margin: 30px 0 20px;
+      text-align: center;
+      color: #054281;
     }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #054281;
+    }
+
+    ul {
+      margin: 0 0 20px 20px;
+    }
+
+    
 `;
 
 const DoveHeroImage = styled.img`
@@ -21,23 +46,77 @@ const DoveHeroImage = styled.img`
     object-fit: cover;
 
     @media (max-width: 1200px) {
-        height: 400px;
+      height: 400px;
     }
 
     @media (max-width: 692px) {
-        margin-top: 50px;
+      margin-top: 50px;
+      content: url(${DoveHomepageHeroImgMobile});
     }
 `;
 
-const IndexPageHellmanns = () => {
+const ImageSection = styled.div`
+  position: relative;
+
+  &:after {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      border-radius: 100%;
+      height: 80px;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -40px;
+    }
+
+    @media (max-width: 692px) {
+      &:after {
+        height: 40px;
+        bottom: -20px;
+      }
+    }
+`;
+
+const SustainabilityPageDove = () => {
   return (
    <>
-   <SEO title="Dove Eesti" description="Dove Eesti."/>
-   <Section> 
-    <DoveHeroImage src={DoveHeroImg} alt="Dove"/> 
-    <p style={{margin: "50px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </Section>
+   <SEO title="Dove jätkusuutlikkus" description="Dove jätkusuutlikkus. Dove avaldab parimad võimalikku mõju nii keskkonnale, kust meie tooted pärinevad, kui ka inimestele, kes nendesse panustavad."/>
+   <ImageSection>
+      <DoveHeroImage src={DoveHomepageHeroImg} alt="Dove"/>
+   </ImageSection>
+   <Section>
+   <DoveCategories sectionTitle="Meie kategooriaid">
+      <DoveCategoriesBox categoryTitle="Majonees" categoryImage={"https://www.dove.com/content/dam/unilever/dove/bulgaria/pack_shot/8710908285127-1906602-png.png"} categoryLink="/" alt="Hellmann's Majonees"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Ketšup" categoryImage={'https://www.dove.com/content/dam/unilever/dove/bulgaria/pack_shot/8710847972751-1969561-png.png'} categoryLink="/" alt="Hellmann's Ketšup"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Kastmed" categoryImage={'https://www.dove.com/content/dam/unilever/dove/bulgaria/pack_shot/front/skin_care/hand_and_body_care/dove_hb_lot_rimoist_baby_200ml_cee_l16/dove_rich_moisture_lotion_200ml_fop_cl2-793680.png'} categoryLink="/" alt="Hellmann's Kastmed"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Ketšup" categoryImage={'https://www.dove.com/content/dam/unilever/dove/bulgaria/pack_shot/front/skin_cleansing/skin_cleansing/dove_men_zel_cool_fre_12x250ml/dove_men_care_cool_fresh_body_and_face_wash_fop_250ml_8710908317361_pl-706073-png.png'} categoryLink="/" alt="Hellmann's Ketšup"></DoveCategoriesBox>
+      {/* <DoveCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/" alt="Hellmann's Kastmed"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Majonees" categoryImage={Mayo} categoryLink="/" alt="Hellmann's Majonees"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Ketšup" categoryImage={Ketchup} categoryLink="/" alt="Hellmann's Ketšup"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/" alt="Hellmann's Kastmed"></DoveCategoriesBox> */}
+    </DoveCategories>
+    <DoveBannerAndText 
+        image={DoveSustainabilityHeroImg}
+        imagemobile={DoveSustainabilityHeroImgMobile}
+        title="Dove jätkusuutlikkus"
+        paragraphText="Short copy for Sustainability"
+        buttonCTA="Loe rohkem"
+        buttonLink="/dove/sustainability"
+        >
+      </DoveBannerAndText>
+      <DoveBannerAndText 
+        image={DovePurposeHeroImg}
+        imagemobile={DovePurposeHeroImgMobile}
+        title="Meie eesmärk"
+        paragraphText="Short copy for purpose"
+        buttonCTA="Loe rohkem"
+        buttonLink="/dove/purpose"
+        second
+        >
+      </DoveBannerAndText>
+      </Section>
     </>
   )
 }
-export default IndexPageHellmanns
+export default SustainabilityPageDove

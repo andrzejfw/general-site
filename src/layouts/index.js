@@ -68,6 +68,9 @@ import HeaderDoveStyles from "../components/HeaderDove/HeaderDoveStyles"
 import HeaderBurgerDove from "../components/HeaderDove/HeaderBurgerDove"
 import HeaderBurgerDoveStyles from "../components/HeaderDove/HeaderBurgerDoveStyles"
 import FaviconDove from "../components/Favicon/FaviconDove"
+import DoveCategoriesStyles from "../components/DoveCategories/DoveCategoriesStyles"
+import DoveBannerAndTextStyles from "../components/DoveBannerAndText/DoveBannerAndTextStyles"
+
 
 //hellmanns
 import FooterHellmanns from "../components/FooterHellmanns/FooterHellmanns.js"
@@ -321,6 +324,8 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle/>
       <FaviconDove/>
+      <DoveCategoriesStyles/>
+      <DoveBannerAndTextStyles/>
       </>
     }
     {location.pathname .match('hellmanns') &&

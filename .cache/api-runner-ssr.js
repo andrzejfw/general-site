@@ -7,9 +7,6 @@ var plugins = [{
     },{
       plugin: require('C:/Users/marcin.tuchalski/Desktop/baltic/general-site/node_modules/gatsby-plugin-layout/gatsby-ssr'),
       options: {"plugins":[]},
-    },{
-      plugin: require('C:/Users/marcin.tuchalski/Desktop/baltic/general-site/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"icon":"src/assets/images/favicon-unilever.ico","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"10ca1272806c00d19989761586aa7ba1"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
