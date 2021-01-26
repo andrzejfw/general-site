@@ -35,8 +35,7 @@ const DoveCategoriesStyles = createGlobalStyle`
 }
 
 .dove-category-box {
-    padding: 30px 50px;
-    margin: 0 20px;
+    padding: 30px 40px;
     max-width: 350px;
     text-align: center;
 
