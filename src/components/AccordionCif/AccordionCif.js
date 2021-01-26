@@ -5,19 +5,29 @@ import AccordionCifSection from "./AccordionCifSection";
 import { auto } from "@popperjs/core";
 
 const AccordionCifTab = styled.div`
-    margin: 20px auto 60px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
     text-align: center;
+    ul {
+        text-align:left;
+        padding-left:60px;
+        padding-right:60px;
+     @media (max-width: 992px){
+      padding:0 20px;
+      }
+    }
     a {
         color:#165648;
         text-decoration: underline;
     }
-
     @media (max-width: 992px){
       text-align: left;
+      p {
+      padding:0;
+    }
     }
 `;
 

@@ -47970,7 +47970,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.banner-domestos-title {\n    font-size: 2rem;\n    text-align: center;\n    font-weight: bold;\n    padding: 40px 0 0;\n    color: #06154b;\n}\n\n.banner-domestos-content {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    text-shadow: none;\n    color: #06154b;\n\n\n    @media(max-width:992px){\n      grid-template-columns: 1fr;\n    }\n}\n\n.banner-domestos-paragraph {\n    font-size: 1.5rem;\n    text-align: left;\n    padding: 5% 5% 5% 35%;\n\n    @media(max-width:1600px){\n      padding: 5% 5% 5% 15%;\n    }\n\n    @media(max-width:992px){\n      font-size: 1.2rem;\n      text-align: center;\n      padding: 5%;\n    }\n\n    .cKwoza {\n      margin: 20px 0 0 !important;\n\n      @media(max-width:992px){\n        margin: 20px auto 0 !important;\n      }\n    }\n\n    .button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n        &:hover {\n            text-decoration: none;\n            color: inherit;\n        }\n    }\n}\n\n.banner-domestos-video-div {\n    margin: 6% 10% 6% 0;\n    max-width: 600px;\n\n    @media(max-width:992px){\n      margin: 0 auto;\n    }\n}\n\n.banner-domestos-video-iframe {\n    width: 100% !important;\n    max-height: 300px !important;\n    border: 4px solid #06154b;\n\n    @media(max-width:692px){\n        width: 300px;\n        height: 200px;\n    }\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.banner-domestos-title {\n    font-size: 2rem;\n    text-align: center;\n    font-weight: bold;\n    padding: 40px 0 0;\n    color: #06154b;\n    @media(max-width:992px){\n      padding: 5% 5% 0 5%;\n    }\n}\n\n.banner-domestos-content {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    text-shadow: none;\n    color: #06154b;\n\n\n    @media(max-width:992px){\n      grid-template-columns: 1fr;\n    }\n}\n\n.banner-domestos-paragraph {\n    font-size: 1.5rem;\n    text-align: left;\n    padding: 5% 5% 5% 35%;\n\n    @media(max-width:1600px){\n      padding: 5% 5% 5% 15%;\n    }\n\n    @media(max-width:992px){\n      font-size: 1.2rem;\n      text-align: center;\n      padding: 5%;\n    }\n\n    .cKwoza {\n      margin: 20px 0 0 !important;\n\n      @media(max-width:992px){\n        margin: 20px auto 0 !important;\n      }\n    }\n\n    .button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n        &:hover {\n            text-decoration: none;\n            color: inherit;\n        }\n    }\n}\n\n.banner-domestos-video-div {\n    margin: 6% 10% 6% 0;\n    max-width: 600px;\n\n    @media(max-width:992px){\n      margin: 0 auto;\n    }\n}\n\n.banner-domestos-video-iframe {\n    width: 100% !important;\n    max-height: 300px !important;\n    border: 4px solid #06154b;\n\n    @media(max-width:692px){\n        width: 300px;\n        height: 200px;\n    }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49928,6 +49928,16 @@ var HeaderBurgerCif = function HeaderBurgerCif() {
       transition: "all .3s linear",
       left: navbarOpen ? "0" : "-100%"
     },
+    to: "/cif/about",
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, "Ettev\xF5ttest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "cif-navbox-item",
+    style: {
+      transition: "all .3s linear",
+      left: navbarOpen ? "0" : "-100%"
+    },
     to: "/contact",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
@@ -50001,6 +50011,10 @@ var HeaderCif = function HeaderCif() {
     activeClassName: "active",
     className: "link-cif"
   }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/cif/about",
+    activeClassName: "active",
+    className: "link-cif"
+  }, "Ettev\xF5ttest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/contact",
     activeClassName: "active",
     className: "link-cif"

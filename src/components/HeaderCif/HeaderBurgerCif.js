@@ -44,7 +44,7 @@ const HeaderBurgerCif = () => {
         style={{
             transition: "all .2s linear",
     }}>
-      <Link onClick={() => setNavbarOpen(false)} to="/index-cif"><img src={CifLogo} alt="Cif Eesti jäätis logo"/></Link>
+      <Link onClick={() => setNavbarOpen(false)} to="/cif"><img src={CifLogo} alt="Cif Eesti jäätis logo"/></Link>
       <div 
         className="cif-toggle"
         navbarOpen={navbarOpen}
@@ -57,8 +57,8 @@ const HeaderBurgerCif = () => {
         left: navbarOpen ? "0" : "-100%",
         }}>
           <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/cif/products" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          {/* <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Meie eesmärk</Link> */}
+          <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/cif/about" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
+          {/* <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Meie eesmärk</Link> */}
           <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
         </div>
     </nav>
