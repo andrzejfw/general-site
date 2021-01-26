@@ -4,7 +4,7 @@ const DoveBannerAndTextStyles = createGlobalStyle`
 
 .dove-bannerandtext-section {
     max-width: 65vw;
-    margin: 50px auto;
+    margin: 80px auto;
     display: flex;
     flex-direction: row;
 
@@ -80,6 +80,13 @@ const DoveBannerAndTextStyles = createGlobalStyle`
             @media(max-width:992px){
                 text-align: center !important;
                 font-size: 1.1rem;
+            }
+        }
+        button {
+            @media(max-width:992px){
+                text-align: center !important;
+                margin: 0 auto;
+                display: flex;
             }
         }
 
