@@ -55,13 +55,13 @@ const DomestosHeroImage = styled.img`
 const IndexPage = () => {
   return (
    <>
-     <SEO title="Puhas kodu. Puhas planeet. Puhas tulevik." description="Domestos kodukeemia puhastusvahenid. Puhas kodu. Puhas planeet. Puhas tulevik. Vaata lähemalt meie tooteid ning tutvu meie puhastusvahenditega."/>
+     <SEO title="Domestos - tapab 99,9% bakteritest" description="Domestos kodukeemia puhastusvahenid. Puhas kodu. Puhas planeet. Puhas tulevik. Vaata lähemalt meie tooteid ning tutvu meie puhastusvahenditega."/>
    <Section> 
-   <DomestosHeroImage src={HeroBanner} alt="Magnum jäätis"/> 
+   <DomestosHeroImage src={HeroBanner} alt="Domestos WC puhastusvahendid avaleht"/> 
    <DomestosIndexSection>
    <DomestosCategories sectionTitle="Meie kategooriaid">
-      <DomestosCategoriesBox categoryTitle="Liquid cleaners" categoryImage={Bottle} categoryLink="/domestos" alt="Hellmann's Majonees"></DomestosCategoriesBox>
-      <DomestosCategoriesBox categoryTitle="Toilet Blocks" categoryImage={Blocks} categoryLink="/domestos" alt="Hellmann's Ketšup"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="WC-puhastusvahendid" categoryImage={Bottle} categoryLink="/domestos" alt="WC-puhastusvahendid"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="WC-värskendajad" categoryImage={Blocks} categoryLink="/domestos" alt="WC-värskendajad"></DomestosCategoriesBox>
     </DomestosCategories>
     <BannerWithVideoDomestos 
                 title="Puhas kodu. Puhas planeet. Puhas tulevik" 

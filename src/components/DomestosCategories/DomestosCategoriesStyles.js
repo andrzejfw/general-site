@@ -38,7 +38,9 @@ const DomestosCategoriesStyles = createGlobalStyle`
     margin: 0 20px;
     max-width: 350px;
     text-align: center;
-
+    @media(min-width:993px){
+    min-width: 450px;
+    }
     h2 {
         color:#06154b;
         text-align: center;
@@ -48,7 +50,6 @@ const DomestosCategoriesStyles = createGlobalStyle`
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 2rem;
 
         @media(max-width:992px){
         height: auto;
@@ -57,7 +58,7 @@ const DomestosCategoriesStyles = createGlobalStyle`
 
     @media(max-width:992px){
         margin: 10px auto;
-        max-width: 100%;
+        max-width: 500px;
         width: 90vw;
 
         h3 {
