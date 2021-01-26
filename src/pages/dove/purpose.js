@@ -84,7 +84,7 @@ const PurposePageDove = () => {
    <>
    <SEO title="Meie eesmärk" description="Dove usub, et ilu peaks olema naiste enesekindluse allikas, mitte looma neis ärevust. Aitame noortel mõista, et nad on ilusad just sellisena, nagu nad on."/>
    <ImageSection>
-      <DoveHeroImage src={DovePurposeHeroImg} alt="Dove"/>
+      <DoveHeroImage src={DovePurposeHeroImg} alt="Dove eesmärk - ilu on enesekindluse allikas"/>
    </ImageSection>
    <Section> 
       <h1>Meie eesmärk</h1> 

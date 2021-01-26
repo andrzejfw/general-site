@@ -75,7 +75,7 @@ const SustainabilityPageDove = () => {
    <>
    <SEO title="Dove jätkusuutlikkus" description="Dove jätkusuutlikkus. Dove avaldab parimad võimalikku mõju nii keskkonnale, kust meie tooted pärinevad, kui ka inimestele, kes nendesse panustavad."/>
    <ImageSection>
-      <DoveHeroImage src={DoveSustainabilityHeroImg} alt="Dove"/>
+      <DoveHeroImage src={DoveSustainabilityHeroImg} alt="Dove jätkusuutlikkus"/>
    </ImageSection>
    <Section> 
       <h1>Dove jätkusuutlikkus</h1> 
