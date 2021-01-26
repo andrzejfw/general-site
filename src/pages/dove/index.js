@@ -81,7 +81,7 @@ const ImageSection = styled.div`
 const SustainabilityPageDove = () => {
   return (
    <>
-   <SEO title="Dove jätkusuutlikkus" description="Dove jätkusuutlikkus. Dove avaldab parimad võimalikku mõju nii keskkonnale, kust meie tooted pärinevad, kui ka inimestele, kes nendesse panustavad."/>
+   <SEO title="Dove kehahooldus" description="Dove kehahooldus ja nahahooldus. Tutvu Dove kaubamärgiga. Vaata lähemalt Dove tootevalikut või tutvu meie kaubamärgi eesmärkide ning jätkusuutlikkusega."/>
    <ImageSection>
       <DoveHeroImage src={DoveHomepageHeroImg} alt="Dove"/>
    </ImageSection>
@@ -100,7 +100,7 @@ const SustainabilityPageDove = () => {
         image={DoveSustainabilityHeroImg}
         imagemobile={DoveSustainabilityHeroImgMobile}
         title="Dove jätkusuutlikkus"
-        paragraphText="Short copy for Sustainability"
+        paragraphText="Kui hoolite meie planeedist ja inimestest, on meil midagi ühist. Dove on täielikult pühendnud jätkusuutlike ja eetliste toodete loomisele."
         buttonCTA="Loe rohkem"
         buttonLink="/dove/sustainability"
         >
@@ -109,7 +109,7 @@ const SustainabilityPageDove = () => {
         image={DovePurposeHeroImg}
         imagemobile={DovePurposeHeroImgMobile}
         title="Meie eesmärk"
-        paragraphText="Short copy for purpose"
+        paragraphText="Dove usub, et ilu peab olema naiste enesekindluse allikas, mitte looma neis ärevust. Aitame noortel mõista, et nad on ilusad just sellisena, nagu nad on."
         buttonCTA="Loe rohkem"
         buttonLink="/dove/purpose"
         second
