@@ -126,18 +126,6 @@ const AboutPage = () => {
               </AccordionTab>
             </Accordion>
           </SectionAccordion>
-    <h2>Innovatsioon revolutsiooni taga</h2>
-    <p>Muudame kõike alates koostisosade valmisest kuni puhastus- ja pesutoodete pakendamiseni. Puhta tuleviku kaudu püüame aastaks 2030 asendada 100% fosiilkütustest pärinevast süsinikust kodukeemia toodete formulatsioonides taastuva või ringlussevõetud süsinikuga.</p>
-    <p>Kuid see pole veel kõik, Unileveris oleme pühendunud saavutamaks järgmised eesmärgid:</p>
-    <p className="pbullets">
-      <ul className="bullets">
-        <li>Metsaraiest vaba tarneahelda saavutamine aastaks 2023.</li>
-        <li>Tagame täielikult süsinikust heitgaasidevaba tootmise aastaks 2039.</li>
-        <li>Vähendame meie toodete mõjul tekkivate kasvuhoonegaaside hulka poole võrra aastaks 2030.</li>
-        <li>Muudame meie tootepreparaadid biolagunevateks aastaks 2030.</li>
-        <li>Vähendame esmakordse plastpakendi kasutamist poolt võrra. Tagame, et kõik meie plastpakendid on 2025. aastaks korduvkasutatavad, ringlussevõetavad või komposteeritavad ning aastaks 2025 on pakendites kasutatud vähemalt 25% ringlussevõetud plastikut.</li>
-      </ul>
-    </p>
     </CifAboutSection>
     </Section>
     </>

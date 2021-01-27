@@ -49894,7 +49894,7 @@ var HeaderBurgerCif = function HeaderBurgerCif() {
     onClick: function onClick() {
       return setNavbarOpen(false);
     },
-    to: "/index-cif"
+    to: "/cif"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _assets_images_cif_logo_png__WEBPACK_IMPORTED_MODULE_3___default.a,
     alt: "Cif Eesti j\xE4\xE4tis logo"
@@ -49963,7 +49963,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.cif-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background: linear-gradient(to right,#165648,#20856e);\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: -5px;\n        left: 5px;\n        height: 70px;\n        z-index: 9999;\n    }\n}\n\n.cif-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.cif-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 5% 20px 5% 15px;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(227 232 220 / 95%);\n    width: auto;\n    height: auto;\n    \n}\n\n.cif-navbox-item {\n    text-decoration: none;\n    color: #17594a;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #17594a;\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 692px) {\n    padding:10px 0;\n}\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.cif-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: sticky;\n        z-index: 99;\n        background: linear-gradient(to right,#165648,#20856e);\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: -5px;\n        left: 5px;\n        height: 70px;\n        z-index: 9999;\n    }\n}\n\n.cif-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.cif-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 5% 20px 5% 15px;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(227 232 220 / 95%);\n    width: auto;\n    height: auto;\n    \n}\n\n.cif-navbox-item {\n    text-decoration: none;\n    color: #17594a;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #17594a;\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 692px) {\n    padding:10px 0;\n}\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
