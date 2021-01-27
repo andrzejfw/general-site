@@ -148,6 +148,19 @@ const MainLayout = ({ children, location }) => (
       <FaviconUni/>
       </>
     }
+    {location.pathname === '/500' && 
+      <>
+      <Navigation/>
+      <NavigationStyles/>
+      <GlobalStyle />
+      <TabStyle />
+      <ModalStyles/>
+      <PopupStyles/>
+      <QuotesStyles/>
+      <CarouselStyle />
+      <FaviconUni/>
+      </>
+    }
     {location.pathname === '/brands' && 
       <>
       <Navigation/>
@@ -396,6 +409,11 @@ const MainLayout = ({ children, location }) => (
       </>
     }
     {location.pathname === '/404' &&
+      <>
+      <Footer/>
+      </>
+    }
+    {location.pathname === '/500' &&
       <>
       <Footer/>
       </>
