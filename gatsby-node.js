@@ -133,3 +133,17 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 };
+
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+
+  if (page.path.match(/^\/[a-z]{3,15}\/404\/$/)) {
+    const oldPage = { ...page }
+
+    const brand = page.path.split(`/`)[1]
+    page.matchPath = `/${brand}/*`
+
+    deletePage(oldPage)
+    createPage(page)
+  }
+}

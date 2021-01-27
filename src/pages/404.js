@@ -4,6 +4,10 @@ import SEO from '../components/Seo/Seo'
 import styled from 'styled-components'
 import ButtonRadius from "../components/Button"
 import Image from '../assets/images/lady-with-bag.png'
+import Footer from "../components/Footer/Footer.js"
+import Navigation from "../components/Header/Navigation.js"
+import NavigationStyles from "../components/Header/NavigationStyles"
+import FaviconUni from "../components/Favicon/FaviconUni"
 
 const Section = styled.div`
   max-width: 1200px;
@@ -54,6 +58,9 @@ const Section = styled.div`
 const NotFoundPage = () => (
   <>
     <SEO title="Lehekülge ei leitud. Viga 404" description="Lehekülge ei leitud! Viga 404. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele."/>
+    <Navigation/>
+    <NavigationStyles/>
+    <FaviconUni/>
     <Section>
       <div>
         <img src={Image}/>
@@ -64,6 +71,7 @@ const NotFoundPage = () => (
         <ButtonRadius><Link to="/">AVALEHELE</Link></ButtonRadius>
       </div>
     </Section>
+    <Footer/>
   </>
 )
 

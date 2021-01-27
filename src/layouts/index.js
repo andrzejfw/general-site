@@ -135,7 +135,7 @@ const MainLayout = ({ children, location }) => (
       <FaviconUni/>
       </>
     }
-    {location.pathname === '/404' && 
+    {/* {location.pathname === '/404' && 
       <>
       <Navigation/>
       <NavigationStyles/>
@@ -160,7 +160,7 @@ const MainLayout = ({ children, location }) => (
       <CarouselStyle />
       <FaviconUni/>
       </>
-    }
+    } */}
     {location.pathname === '/brands' && 
       <>
       <Navigation/>
@@ -408,7 +408,7 @@ const MainLayout = ({ children, location }) => (
       <Footer/>
       </>
     }
-    {location.pathname === '/404' &&
+    {/* {location.pathname === '/404' &&
       <>
       <Footer/>
       </>
@@ -417,7 +417,7 @@ const MainLayout = ({ children, location }) => (
       <>
       <Footer/>
       </>
-    }
+    } */}
     {location.pathname === '/brands' &&
       <>
       <Footer/>
