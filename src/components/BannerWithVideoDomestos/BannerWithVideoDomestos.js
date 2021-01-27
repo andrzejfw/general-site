@@ -6,13 +6,13 @@ import { Link } from 'gatsby';
 
 const BannerWithVideoDomestosWrapper = styled.div`
     width:100%;
-    height: 500px;
     background: #06154b24;    
     background-size: cover;
 
     @media(max-width:992px){
       height: ${props => props.mobileHeight};
-      background: url(${props => props.backgroundMobile});
+      background: #06154b24;
+      padding-bottom:40px;
     }
 `;
 

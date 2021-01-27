@@ -6,7 +6,7 @@ const HeaderBurgerCifStyles = createGlobalStyle`
 
     @media (max-width: 692px) {
         display: block;
-        position: fixed;
+        position: sticky;
         z-index: 99;
         background: linear-gradient(to right,#165648,#20856e);
         height: 60px;

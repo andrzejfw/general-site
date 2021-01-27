@@ -15,6 +15,7 @@ exports.components = {
   "component---src-pages-brands-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\brands.js"))),
   "component---src-pages-cif-404-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\cif\\404.js"))),
   "component---src-pages-cif-500-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\cif\\500.js"))),
+  "component---src-pages-cif-about-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\cif\\about.js"))),
   "component---src-pages-cif-index-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\cif\\index.js"))),
   "component---src-pages-cif-products-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\cif\\products.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\pages\\contact.js"))),

@@ -12,6 +12,7 @@ exports.components = {
   "component---src-pages-brands-js": () => import("./../../../src/pages/brands.js" /* webpackChunkName: "component---src-pages-brands-js" */),
   "component---src-pages-cif-404-js": () => import("./../../../src/pages/cif/404.js" /* webpackChunkName: "component---src-pages-cif-404-js" */),
   "component---src-pages-cif-500-js": () => import("./../../../src/pages/cif/500.js" /* webpackChunkName: "component---src-pages-cif-500-js" */),
+  "component---src-pages-cif-about-js": () => import("./../../../src/pages/cif/about.js" /* webpackChunkName: "component---src-pages-cif-about-js" */),
   "component---src-pages-cif-index-js": () => import("./../../../src/pages/cif/index.js" /* webpackChunkName: "component---src-pages-cif-index-js" */),
   "component---src-pages-cif-products-js": () => import("./../../../src/pages/cif/products.js" /* webpackChunkName: "component---src-pages-cif-products-js" */),
   "component---src-pages-contact-js": () => import("./../../../src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),

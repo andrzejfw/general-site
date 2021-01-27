@@ -18,11 +18,9 @@ import MagnumVideoBackground from '../../assets/images/magnum-video-background.j
 const Section = styled.section`
     width:100%;
     margin:auto;
-    margin-bottom:30px;
 `;
 
 const DomestosIndexSection = styled.section`
-    width: 90vw;
     max-width: 1200px;
     
     margin: 0 auto;

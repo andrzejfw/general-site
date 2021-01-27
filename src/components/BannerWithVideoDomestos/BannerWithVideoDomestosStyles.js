@@ -7,6 +7,9 @@ const BannerWithVideoDomestosStyles = createGlobalStyle`
     font-weight: bold;
     padding: 40px 0 0;
     color: #06154b;
+    @media(max-width:992px){
+      padding: 5% 5% 0 5%;
+    }
 }
 
 .banner-domestos-content {
