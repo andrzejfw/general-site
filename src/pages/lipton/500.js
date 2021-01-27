@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import SEO from '../components/Seo/Seo'
+import SEO from '../../components/Seo/Seo'
 import styled from 'styled-components'
-import ButtonRadius from "../components/Button"
-import Image from '../assets/images/lady-with-bag.png'
+import ButtonRadius from "../../components/ButtonLipton"
+import Image from '../../assets/images/lady-with-bag.png'
 
 const Section = styled.div`
   max-width: 1200px;
@@ -35,14 +35,14 @@ const Section = styled.div`
 
   h1 {
     padding-top: 150px;
-    color: #1f36c7;
+    color: #c8381d;
 
     @media(max-width:992px){
       padding-top: 30px;
     }
   }
 
-  .ikYqST {
+  .jdziKH {
     margin: 30px 0;
 
     @media(max-width:992px){
@@ -53,15 +53,15 @@ const Section = styled.div`
 
 const NotFoundPage = () => (
   <>
-    <SEO title="Lehekülge ei leitud. Viga 404" description="Lehekülge ei leitud! Viga 404. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele."/>
+    <SEO title="Midagi läks valesti. Viga 500" description="Viga ühenduse loomisel. Viga 500. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele."/>
     <Section>
       <div>
         <img src={Image}/>
       </div>
       <div>
-        <h1>Lehekülge ei leitud! Viga 404</h1>
-        <p>Otsitavat lehekülge ei leitud. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele</p>
-        <ButtonRadius><Link to="/">AVALEHELE</Link></ButtonRadius>
+        <h1>Midagi läks valesti! Viga 500</h1>
+        <p>Viga ühenduse loomisel. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele</p>
+        <ButtonRadius><Link to="/lipton">AVALEHELE</Link></ButtonRadius>
       </div>
     </Section>
   </>

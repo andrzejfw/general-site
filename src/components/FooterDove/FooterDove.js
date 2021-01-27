@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import UnileverLogoWhite from '../../assets/images/unilever-logo-white.png';
 import FacebookImage from '../../assets/images/facebook-icon-blue.png';
-import DoveProduct from '../../assets/images/dove-product.png';
+import DoveFooter from '../../assets/images/mirror-lady.png';
+import DoveFooterMobile from '../../assets/images/mirror-lady-cut.png';
 
 
 const FooterDove = () => (
@@ -28,9 +29,10 @@ const FooterDove = () => (
                     <a href="/privacy-notice">privaatsuspoliitika</a>
                     <a href="/legal-notice">juriidiline teave</a></li>
                 <li className="footer-dove-item">
-                <img src={DoveProduct} className="dove-footer-graphic-image" alt="Dove ikoon jalus"/>
+                <img src={DoveFooter} className="dove-footer-graphic-image" alt="Dove ikoon jalus"/>
             </li>           
             </ul>
+            <img src={DoveFooterMobile} className="dove-footer-graphic-image-mobile" alt="Dove ikoon jalus"/>
     </nav>
   </div>
   <div className="footer-dove-unilever-div">

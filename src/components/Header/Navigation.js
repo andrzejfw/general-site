@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Logo from '../../assets/images/unilever-logo-blue.png'
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
 
 const ImgLogo = styled.img`
@@ -40,7 +41,7 @@ const Navigation = () => {
 
       <NavbarSection>
         <Navbar.Brand>
-          <Link to ="/"><ImgLogo src="https://cdn.freebiesupply.com/logos/large/2x/unilever-2-logo-png-transparent.png" /></Link>
+          <Link to ="/"><ImgLogo src={Logo} /></Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav">

@@ -176,44 +176,37 @@ const FooterDoveStyles = createGlobalStyle`
 
 .dove-footer-graphic-image {
     width:auto;
-    height:200px;
-    top: -68px;
+    height:220px;
+    top: -92px;
     left: 0;
     align-self: center;
     position: absolute;
 
-    @media (max-width:1200px){
-        top: -30px;
-        left: 50px;
-        height: 150px;
+    @media (max-width:800px){
+        height:150px;
+        top: -23px;
+        left: 15px;
     }
 
-    @media (max-width:800px){
+    @media (max-width:701px){
+        display: none;
+    }
+}
+
+.dove-footer-graphic-image-mobile {
+    display: none;
+
+    @media (max-width:700px){
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 200px;
         display: inline-block;
         margin: 0;
     }
 
-    @media (max-width:700px){
-        top: -110px;
-        left: 200px;
-    }
-
-    @media (max-width:500px){
-        top: -200px;
-        left: 245px;
-        height: 200px;
-        margin: 0;
-    }
-
-    @media (max-width:400px){
-        left: 220px;
-    }
-
     @media (max-width:350px){
-        left: 180px;
-        top: -184px;
-        width: 70px;
-        height: auto;
+        height: 150px;
     }
 }
 `;

@@ -53,14 +53,14 @@ const Section = styled.div`
 
 const NotFoundPage = () => (
   <>
-    <SEO title="Lehekülge ei leitud. Viga 404" description="Lehekülge ei leitud! Viga 404. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele."/>
+    <SEO title="Midagi läks valesti. Viga 500" description="Viga ühenduse loomisel. Viga 500. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele."/>
     <Section>
       <div>
         <img src={Image}/>
       </div>
       <div>
-        <h1>Lehekülge ei leitud! Viga 404</h1>
-        <p>Otsitavat lehekülge ei leitud. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele</p>
+        <h1>Midagi läks valesti! Viga 500</h1>
+        <p>Viga ühenduse loomisel. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele</p>
         <ButtonRadius><Link to="/">AVALEHELE</Link></ButtonRadius>
       </div>
     </Section>

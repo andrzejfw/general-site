@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -7385,7 +7385,7 @@ try {
   Layout = preferDefault(__webpack_require__(/*! ./src/layouts/index */ "./src/layouts/index.js"));
 } catch (e) {
   if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
+    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
   } else {
     // Logging the error for debugging older browsers as there is no way
     // to wrap the thrown error in a try/catch.
@@ -47586,17 +47586,6 @@ module.exports = __webpack_require__.p + "static/dove-logo-main-b8dd58de6fe3a8b8
 
 /***/ }),
 
-/***/ "./src/assets/images/dove-product.png":
-/*!********************************************!*\
-  !*** ./src/assets/images/dove-product.png ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/dove-product-7bf6b445843aef9e3848385407768f9f.png";
-
-/***/ }),
-
 /***/ "./src/assets/images/facebook-icon-blue.png":
 /*!**************************************************!*\
   !*** ./src/assets/images/facebook-icon-blue.png ***!
@@ -47872,6 +47861,28 @@ module.exports = __webpack_require__.p + "static/magnum-logo-brown-f8548004ac1b2
 
 /***/ }),
 
+/***/ "./src/assets/images/mirror-lady-cut.png":
+/*!***********************************************!*\
+  !*** ./src/assets/images/mirror-lady-cut.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/mirror-lady-cut-2b9fcd333b1e2006f3095687e145c76f.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/mirror-lady.png":
+/*!*******************************************!*\
+  !*** ./src/assets/images/mirror-lady.png ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/mirror-lady-01b524d22d6133e440f0299d9906d0bf.png";
+
+/***/ }),
+
 /***/ "./src/assets/images/rexona-carousel-dot.png":
 /*!***************************************************!*\
   !*** ./src/assets/images/rexona-carousel-dot.png ***!
@@ -47913,6 +47924,17 @@ module.exports = __webpack_require__.p + "static/rexona-nav4-febe08391a430766e02
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/rexona-product-9aefab898e29dd2ba96bc95e43dba6e5.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/unilever-logo-blue.png":
+/*!**************************************************!*\
+  !*** ./src/assets/images/unilever-logo-blue.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/unilever-logo-blue-ed63f9ec44fa8734cd8a1fc5ff277ef0.png";
 
 /***/ }),
 
@@ -48391,7 +48413,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n\n.domestos-categories-section {\n    margin: 50px auto;\n\n    h1 {\n        margin: 0 auto;\n        color: #06154b;\n        text-align: center;\n        font-weight: 700;\n        text-transform: uppercase;\n\n        @media(max-width:692px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n}\n\n.domestos-boxes-section {\n    margin: 20px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n\n    @media(max-width:992px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.domestos-category-box {\n    padding: 30px 50px;\n    margin: 0 20px;\n    max-width: 350px;\n    text-align: center;\n\n    h2 {\n        color:#06154b;\n        text-align: center;\n        font-size: 26px;\n        font-weight:700;\n        text-transform: uppercase;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 2rem;\n\n        @media(max-width:992px){\n        height: auto;\n        }\n    }\n\n    @media(max-width:992px){\n        margin: 10px auto;\n        max-width: 100%;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 200px;\n    transition:.5s;\n     \n\n        &:hover {\n            transform: scale(1.1);\n        }\n        \n    }\n}\n\n.domestos-img-div {\n    margin: 0 -20px;\n    position:relative;\n    padding:20px;\n    @media(max-width:992px){\n        margin: 0;\n    }\n    transition: background-color 0.5s ease-out;\n}\n.domestos-img-div:after {\n    content:'';\n    background: #06154b no-repeat center center;\n    position: absolute;\n    top:0px;\n    left: 0px;\n    width:100%;\n    height:100%;\n    z-index:-1;\n    opacity: 0.1;\n}\n.domestos-img-div:hover {\n    background: #b5b9c9;\n    }\n\n\n.domestos-button-div {\n    margin: 10px -20px -30px;\n\n    \n}\n\n.domestos-categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n\n.domestos-categories-section {\n    margin: 50px auto;\n\n    h1 {\n        margin: 0 auto;\n        color: #06154b;\n        text-align: center;\n        font-weight: 700;\n        text-transform: uppercase;\n\n        @media(max-width:692px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n}\n\n.domestos-boxes-section {\n    margin: 20px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n\n    @media(max-width:992px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.domestos-category-box {\n    padding: 30px 50px;\n    margin: 0 20px;\n    max-width: 350px;\n    text-align: center;\n    @media(min-width:993px){\n    min-width: 450px;\n    }\n    h2 {\n        color:#06154b;\n        text-align: center;\n        font-size: 26px;\n        font-weight:700;\n        text-transform: uppercase;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        @media(max-width:992px){\n        height: auto;\n        }\n    }\n\n    @media(max-width:992px){\n        margin: 10px auto;\n        max-width: 500px;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 200px;\n    transition:.5s;\n     \n\n        &:hover {\n            transform: scale(1.1);\n        }\n        \n    }\n}\n\n.domestos-img-div {\n    margin: 0 -20px;\n    position:relative;\n    padding:20px;\n    @media(max-width:992px){\n        margin: 0;\n    }\n    transition: background-color 0.5s ease-out;\n}\n.domestos-img-div:after {\n    content:'';\n    background: #06154b no-repeat center center;\n    position: absolute;\n    top:0px;\n    left: 0px;\n    width:100%;\n    height:100%;\n    z-index:-1;\n    opacity: 0.1;\n}\n.domestos-img-div:hover {\n    background: #b5b9c9;\n    }\n\n\n.domestos-button-div {\n    margin: 10px -20px -30px;\n\n    \n}\n\n.domestos-categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49073,8 +49095,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_unilever_logo_white_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _assets_images_facebook_icon_blue_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/facebook-icon-blue.png */ "./src/assets/images/facebook-icon-blue.png");
 /* harmony import */ var _assets_images_facebook_icon_blue_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_images_facebook_icon_blue_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _assets_images_dove_product_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/dove-product.png */ "./src/assets/images/dove-product.png");
-/* harmony import */ var _assets_images_dove_product_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_dove_product_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_images_mirror_lady_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/mirror-lady.png */ "./src/assets/images/mirror-lady.png");
+/* harmony import */ var _assets_images_mirror_lady_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_mirror_lady_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_images_mirror_lady_cut_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/mirror-lady-cut.png */ "./src/assets/images/mirror-lady-cut.png");
+/* harmony import */ var _assets_images_mirror_lady_cut_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_images_mirror_lady_cut_png__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -49121,10 +49146,14 @@ var FooterDove = function FooterDove() {
   }, "juriidiline teave")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "footer-dove-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _assets_images_dove_product_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    src: _assets_images_mirror_lady_png__WEBPACK_IMPORTED_MODULE_4___default.a,
     className: "dove-footer-graphic-image",
     alt: "Dove ikoon jalus"
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_images_mirror_lady_cut_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+    className: "dove-footer-graphic-image-mobile",
+    alt: "Dove ikoon jalus"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-dove-unilever-div"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/"
@@ -49155,7 +49184,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.footer-dove-container{\n    height: 180px;\n    z-index:2;\n    margin-top: -10px;\n    background-color: #f4f4f4;\n\n    @media (max-width: 500px) {\n        height: 250px;\n    } \n}\n\n.footer-dove-nav-wrapper {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items:center;\n    background-color: transparent;\n    position: relative;\n    justify-content: space-between;\n    text-transform: uppercase;\n    margin: 0 32% 0 22%;\n    z-index: 2;\n    align-self: center;\n    \n    @media (max-width:1600px){\n        margin: 0 10% 0 5%;\n        padding: 0 10%;\n        max-width: 1000px;\n    }\n\n    @media (max-width:1200px){\n        padding: 0 15% 0 0;\n    }\n\n    @media (max-width:692px){\n        padding: 0 10%;\n        height:100%;\n        margin: 0 auto 5%;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    @media (max-width: 500px) {\n        display:flex;\n        flex-direction:column;\n        margin: 0;\n    }   \n}\n\n.footer-dove-list {\n    margin:0;\n    padding:0;\n    display:flex;\n    list-style:none;\n    justify-content:space-between;\n    align-items:flex-start;\n    \n    @media(max-width:692px){\n        flex-direction:column;\n        justify-content:center;\n        align-items:left;\n    }\n}\n\n.footer-dove-section {\n    display:flex;\n    justify-content: space-between;\n}\n\n.footer-dove-image-containter {\n    display:flex;\n}\n\n.footer-dove-item {\n    color: #054281;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw; \n    position: relative;  \n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    transition: all .2s linear;\n\n    a{\n        text-decoration:none;\n        color: #054281;\n        transition: all .3s linear;\n        &:hover {\n        color: #054281;\n        font-weight:bold;\n    }\n    }\n}\n\n.footer-dove-item-list {\n    color: #054281 !important;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    text-transform:capitalize;\n    list-style:none;\n    display:flex;\n    flex-direction:column;  \n    align-items:center; \n\n    a{\n        text-decoration:none;\n        color: #054281;\n        transition: all .3s linear;\n        &:hover {\n        color: #054281;\n        font-weight:bold;\n    }\n    }\n\n    @media(max-width:992px){\n        justify-content:center;\n        align-items:start;\n    }\n}\n\n.footer-dove-social-image {\n    width:auto;\n    height:50px;\n    margin:55px 50px;\n\n    @media (max-width:500px){\n        height: 30px;\n        margin: 20px 10px 0 0;\n  }\n}\n\n.footer-dove-unilever-div {\n    z-index:2;\n    background:#7f7f7f;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    padding-right: 3%;\n\n    @media (max-width:992px){\n    flex-direction: column;\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n.footer-dove-unilever-logo {\n    width:50px;\n    height:auto;\n    display:flex;\n    flex-direction:column;\n    justify-content:center;\n    align-items:center;\n\n    @media(max-width:992px){\n      margin: 5px auto 0;\n    }\n}\n\n.footer-dove-unilever-copyright {\n    font-size: .8rem;\n    color: #fff;\n    align-self: center;\n    padding-left: 10px;\n\n    @media (max-width:992px){\n    padding-bottom: 10px;\n    padding-left: 0;\n    }\n}\n\n.dove-footer-graphic-image {\n    width:auto;\n    height:200px;\n    top: -68px;\n    left: 0;\n    align-self: center;\n    position: absolute;\n\n    @media (max-width:1200px){\n        top: -30px;\n        left: 50px;\n        height: 150px;\n    }\n\n    @media (max-width:800px){\n        display: inline-block;\n        margin: 0;\n    }\n\n    @media (max-width:700px){\n        top: -110px;\n        left: 200px;\n    }\n\n    @media (max-width:500px){\n        top: -200px;\n        left: 245px;\n        height: 200px;\n        margin: 0;\n    }\n\n    @media (max-width:400px){\n        left: 220px;\n    }\n\n    @media (max-width:350px){\n        left: 180px;\n        top: -184px;\n        width: 70px;\n        height: auto;\n    }\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.footer-dove-container{\n    height: 180px;\n    z-index:2;\n    margin-top: -10px;\n    background-color: #f4f4f4;\n\n    @media (max-width: 500px) {\n        height: 250px;\n    } \n}\n\n.footer-dove-nav-wrapper {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items:center;\n    background-color: transparent;\n    position: relative;\n    justify-content: space-between;\n    text-transform: uppercase;\n    margin: 0 32% 0 22%;\n    z-index: 2;\n    align-self: center;\n    \n    @media (max-width:1600px){\n        margin: 0 10% 0 5%;\n        padding: 0 10%;\n        max-width: 1000px;\n    }\n\n    @media (max-width:1200px){\n        padding: 0 15% 0 0;\n    }\n\n    @media (max-width:692px){\n        padding: 0 10%;\n        height:100%;\n        margin: 0 auto 5%;\n        justify-content: center;\n        align-items: flex-start;\n    }\n    @media (max-width: 500px) {\n        display:flex;\n        flex-direction:column;\n        margin: 0;\n    }   \n}\n\n.footer-dove-list {\n    margin:0;\n    padding:0;\n    display:flex;\n    list-style:none;\n    justify-content:space-between;\n    align-items:flex-start;\n    \n    @media(max-width:692px){\n        flex-direction:column;\n        justify-content:center;\n        align-items:left;\n    }\n}\n\n.footer-dove-section {\n    display:flex;\n    justify-content: space-between;\n}\n\n.footer-dove-image-containter {\n    display:flex;\n}\n\n.footer-dove-item {\n    color: #054281;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw; \n    position: relative;  \n    text-transform:capitalize;\n    list-style:none;\n    text-decoration:none;\n    display:flex;\n    transition: all .2s linear;\n\n    a{\n        text-decoration:none;\n        color: #054281;\n        transition: all .3s linear;\n        &:hover {\n        color: #054281;\n        font-weight:bold;\n    }\n    }\n}\n\n.footer-dove-item-list {\n    color: #054281 !important;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    text-transform:capitalize;\n    list-style:none;\n    display:flex;\n    flex-direction:column;  \n    align-items:center; \n\n    a{\n        text-decoration:none;\n        color: #054281;\n        transition: all .3s linear;\n        &:hover {\n        color: #054281;\n        font-weight:bold;\n    }\n    }\n\n    @media(max-width:992px){\n        justify-content:center;\n        align-items:start;\n    }\n}\n\n.footer-dove-social-image {\n    width:auto;\n    height:50px;\n    margin:55px 50px;\n\n    @media (max-width:500px){\n        height: 30px;\n        margin: 20px 10px 0 0;\n  }\n}\n\n.footer-dove-unilever-div {\n    z-index:2;\n    background:#7f7f7f;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n    padding-right: 3%;\n\n    @media (max-width:992px){\n    flex-direction: column;\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n.footer-dove-unilever-logo {\n    width:50px;\n    height:auto;\n    display:flex;\n    flex-direction:column;\n    justify-content:center;\n    align-items:center;\n\n    @media(max-width:992px){\n      margin: 5px auto 0;\n    }\n}\n\n.footer-dove-unilever-copyright {\n    font-size: .8rem;\n    color: #fff;\n    align-self: center;\n    padding-left: 10px;\n\n    @media (max-width:992px){\n    padding-bottom: 10px;\n    padding-left: 0;\n    }\n}\n\n.dove-footer-graphic-image {\n    width:auto;\n    height:220px;\n    top: -92px;\n    left: 0;\n    align-self: center;\n    position: absolute;\n\n    @media (max-width:800px){\n        height:150px;\n        top: -23px;\n        left: 15px;\n    }\n\n    @media (max-width:701px){\n        display: none;\n    }\n}\n\n.dove-footer-graphic-image-mobile {\n    display: none;\n\n    @media (max-width:700px){\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        height: 200px;\n        display: inline-block;\n        margin: 0;\n    }\n\n    @media (max-width:350px){\n        height: 150px;\n    }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49765,7 +49794,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var _assets_images_unilever_logo_blue_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/unilever-logo-blue.png */ "./src/assets/images/unilever-logo-blue.png");
+/* harmony import */ var _assets_images_unilever_logo_blue_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_unilever_logo_blue_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
 
 
 
@@ -49779,17 +49811,17 @@ var NavbarSection = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].se
 })(["width:100% !important;max-width:1200px;margin:auto;display:flex;@media(max-width:992px){justify-content:space-between;align-items:center;flex-wrap:wrap;.ml-auto.navbar-nav{height:90vh !important;align-items:center;justify-content:center;}}@media screen and (min-device-width:500px) and (max-device-width:692px){.ml-auto.navbar-nav{height:60vh !important;}}"]);
 
 var Navigation = function Navigation() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Navbar"], {
     className: "Navbartwo",
     collapseOnSelect: true,
     expand: "lg",
     bg: "light",
     variant: "dark"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavbarSection, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"].Brand, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavbarSection, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Navbar"].Brand, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ImgLogo, {
-    src: "https://cdn.freebiesupply.com/logos/large/2x/unilever-2-logo-png-transparent.png"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"].Toggle, {
+    src: _assets_images_unilever_logo_blue_png__WEBPACK_IMPORTED_MODULE_4___default.a
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Navbar"].Toggle, {
     "aria-controls": "responsive-navbar-nav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "icon-bar top-bar"
@@ -49797,20 +49829,20 @@ var Navigation = function Navigation() {
     className: "icon-bar middle-bar"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "icon-bar bottom-bar"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Navbar"].Collapse, {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Navbar"].Collapse, {
     id: "responsive-navbar-nav"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"], {
     className: "ml-auto"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"].Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"].Link, {
     Link: true,
     href: "/about"
-  }, "Ettev\xF5ttest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"].Link, {
+  }, "Ettev\xF5ttest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"].Link, {
     Link: true,
     href: "/brands"
-  }, "Kaubam\xE4rgid"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"].Link, {
+  }, "Kaubam\xE4rgid"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"].Link, {
     Link: true,
     href: "/sustainability"
-  }, "Meie eesm\xE4rk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Nav"].Link, {
+  }, "Meie eesm\xE4rk"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Nav"].Link, {
     Link: true,
     href: "/contact"
   }, "Kontakt"))))));
@@ -51919,9 +51951,9 @@ var MainLayout = function MainLayout(_ref) {
 /***/ }),
 
 /***/ "@reach/router":
-/*!*********************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js" ***!
-  \*********************************************************************************************************************/
+/*!************************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js" ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -51930,9 +51962,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ }),
 
 /***/ "@reach/router/lib/history":
-/*!****************************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
-  \****************************************************************************************************************************/
+/*!*******************************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
+  \*******************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -51941,9 +51973,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!*************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js" ***!
-  \*************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js" ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
