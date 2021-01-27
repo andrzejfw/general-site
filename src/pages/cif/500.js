@@ -48,7 +48,7 @@ const NotFoundPage = () => (
     <SEO title="Midagi läks valesti. Viga 500" description="Viga ühenduse loomisel. Viga 500. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele."/>
     <Section>
       <div>
-        <img src={Image}/>
+        <img src={Image} alt="Tagasi avalehele"/>
       </div>
       <div>
         <h1>Midagi läks valesti! Viga 500</h1>

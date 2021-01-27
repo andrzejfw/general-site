@@ -57,7 +57,7 @@ const NotFoundPage = () => (
     <Wrapper>
       <Section>
         <div>
-          <img src={Image}/>
+          <img src={Image} alt="Tagasi avalehele"/>
         </div>
         <div>
           <h1>Midagi läks valesti! Viga 500</h1>

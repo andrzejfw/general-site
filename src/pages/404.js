@@ -63,7 +63,7 @@ const NotFoundPage = () => (
     <FaviconUni/>
     <Section>
       <div>
-        <img src={Image}/>
+        <img src={Image} alt="Tagasi avalehele"/>
       </div>
       <div>
         <h1>Lehekülge ei leitud! Viga 404</h1>

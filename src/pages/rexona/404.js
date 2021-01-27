@@ -56,7 +56,7 @@ const NotFoundPage = () => (
     <SEO title="Lehekülge ei leitud. Viga 404" description="Lehekülge ei leitud! Viga 404. Palun kasutage menüüd leheküljel navigeerimiseks või minge tagasi avalehele."/>
     <Section>
       <div>
-        <img src={Image}/>
+        <img src={Image} alt="Tagasi avalehele"/>
       </div>
       <div>
         <h1>Lehekülge ei leitud! Viga 404</h1>
