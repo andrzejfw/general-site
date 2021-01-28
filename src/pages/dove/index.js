@@ -13,14 +13,13 @@ import DoveSustainabilityHeroImg from '../../assets/images/dove-sustainability-h
 import DoveSustainabilityHeroImgMobile from '../../assets/images/dove-sustainability-hero-mobile.jpg'
 import DovePurposeHeroImg from '../../assets/images/dove-purpose-hero.jpg'
 import DovePurposeHeroImgMobile from '../../assets/images/dove-purpose-hero-mobile.jpg'
+import BUp from '../../assets/images/happy-shadow-tabl.png'
 
 
 
 const Section = styled.section`
     max-width: 1200px;
     margin:10px auto;
-    padding: 0 20px 30px;
-
     h1 {
       margin: 30px 0 20px;
       text-align: center;
@@ -36,8 +35,19 @@ const Section = styled.section`
     ul {
       margin: 0 0 20px 20px;
     }
+`;
 
-    
+const DoveBannerAndTextSection = styled.div`
+  padding: 0 20px 30px;
+;`
+
+const BulletsUp = styled.div`
+  background-image: url(${BUp});
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  padding-top: 50px;
+    background-size: 1200px;
 `;
 
 const DoveHeroImage = styled.img`
@@ -96,7 +106,9 @@ const SustainabilityPageDove = () => {
       <DoveCategoriesBox categoryTitle="Ketšup" categoryImage={Ketchup} categoryLink="/" alt="Hellmann's Ketšup"></DoveCategoriesBox>
       <DoveCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/" alt="Hellmann's Kastmed"></DoveCategoriesBox> */}
     </DoveCategories>
-    <DoveBannerAndText 
+    <BulletsUp><img></img></BulletsUp>
+    <DoveBannerAndTextSection>
+    <DoveBannerAndText
         image={DoveSustainabilityHeroImg}
         imagemobile={DoveSustainabilityHeroImgMobile}
         title="Dove jätkusuutlikkus"
@@ -105,7 +117,7 @@ const SustainabilityPageDove = () => {
         buttonLink="/dove/sustainability"
         >
       </DoveBannerAndText>
-      <DoveBannerAndText 
+      <DoveBannerAndText
         image={DovePurposeHeroImg}
         imagemobile={DovePurposeHeroImgMobile}
         title="Meie eesmärk"
@@ -115,6 +127,7 @@ const SustainabilityPageDove = () => {
         second
         >
       </DoveBannerAndText>
+      </DoveBannerAndTextSection>
       </Section>
     </>
   )
