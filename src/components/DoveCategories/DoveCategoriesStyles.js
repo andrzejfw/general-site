@@ -27,16 +27,17 @@ const DoveCategoriesStyles = createGlobalStyle`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 
-    @media(max-width:992px){
+    @media(max-width:767px){
         flex-direction: column;
         margin: 0;
       }
 }
 
 .dove-category-box {
-    padding: 30px 40px;
-    max-width: 350px;
+    padding: 30px 30px;
+    max-width: 240px;
     text-align: center;
 
     h3 {
@@ -50,12 +51,12 @@ const DoveCategoriesStyles = createGlobalStyle`
         align-items: center;
         height: 2rem;
 
-        @media(max-width:992px){
+        @media(max-width:767px){
         height: auto;
         }
     }
 
-    @media(max-width:992px){
+    @media(max-width:767px){
         margin: 10px auto;
         max-width: 100%;
         width: 90vw;
@@ -80,8 +81,9 @@ const DoveCategoriesStyles = createGlobalStyle`
 .dove-img-div {
     background: linear-gradient(180deg, rgb(0 73 118 / 0%) 50%, rgb(204 210 214 / 48%) 100%);
     margin: 0 -20px;
+    padding: 20px 0;
 
-    @media(max-width:992px){
+    @media(max-width:767px){
         margin: 0 120px;
     }
 

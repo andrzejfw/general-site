@@ -31,7 +31,11 @@ const DoveBannerAndTextStyles = createGlobalStyle`
             height: 250px;
         }
 
-        @media(max-width:992px){
+        @media(max-width:767px){
+            width: 100%;
+        }
+        @media(max-width:992px) and (min-width:768px){
+            height:400px;
             width: 100%;
         }
       
@@ -90,7 +94,7 @@ const DoveBannerAndTextStyles = createGlobalStyle`
             }
         }
 
-        @media(max-width:992px){
+        @media(max-width:767px){
             width: 290px;
             margin: 0 auto;
             text-align: center;
