@@ -145,9 +145,7 @@ exports.onCreatePage = async ({ page, actions }) => {
 
     deletePage(oldPage)
     createPage(page)
-  }
-
-  if (page.path.match(/^\/[a-z]{3,15}\/500\/$/)) {
+  } else if (page.path.match(/^\/[a-z]{3,15}\/500\/$/)) {
     const oldPage = { ...page }
 
     const brand = page.path.split(`/`)[1]
