@@ -141,12 +141,6 @@ const Filter = styled.button`
         color: #523022;
         font-weight: bold;
       }
-    .active {
-        outline: none;
-        background: linear-gradient(60deg,#4e2c1d 0,#c5923c 40%,#c5923c 60%,#4e2c1d 100%);
-        color: #523022;
-        font-weight: bold;
-    }
 `;
 const ProductsUl = styled.ul`
     display: grid;
