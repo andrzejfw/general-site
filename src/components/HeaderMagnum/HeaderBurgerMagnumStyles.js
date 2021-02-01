@@ -50,6 +50,21 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     z-index: 0;
 }
 
+.magnum-products {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    justify-content: flex-start;
+    top: 8vh;
+    z-index: 0;
+}
+
 .magnum-navbox-item {
     text-decoration: none;
     color: #523022;

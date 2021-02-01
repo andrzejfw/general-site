@@ -39,8 +39,8 @@ const IndexPageMagnum = () => {
         <SectionMagnumHP>
             <MagnumHeroImage src={MagnumHeroImg} alt="Magnum jäätis"/> 
             <MagnumCategories sectionTitle="Magnum jäätis">
-                <MagnumCategoriesBox categoryTitle="Pulgajäätised" categoryImage={MagnumIceCreamStick} categoryLink="/index-magnum" alt="Haara Magnumi jäätis"></MagnumCategoriesBox>
-                <MagnumCategoriesBox categoryTitle="Perejäätised" categoryImage={MagnumIceCreamBox} categoryLink="/index-magnum" alt="Magnum Eesti"></MagnumCategoriesBox>
+                <MagnumCategoriesBox categoryTitle="Pulgajäätised" categoryImage={MagnumIceCreamStick} categoryLink="/magnum/products?filter=pulgajaatised" alt="Haara Magnumi jäätis"></MagnumCategoriesBox>
+                <MagnumCategoriesBox categoryTitle="Perejäätised" categoryImage={MagnumIceCreamBox} categoryLink="/magnum/products?filter=perejaatised" alt="Magnum Eesti"></MagnumCategoriesBox>
             </MagnumCategories>
             <BannerWithVideoMagnum 
                 title="Magnum – naudingule truu" 

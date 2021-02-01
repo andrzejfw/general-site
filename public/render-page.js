@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -7385,7 +7385,7 @@ try {
   Layout = preferDefault(__webpack_require__(/*! ./src/layouts/index */ "./src/layouts/index.js"));
 } catch (e) {
   if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
+    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
   } else {
     // Logging the error for debugging older browsers as there is no way
     // to wrap the thrown error in a try/catch.
@@ -51046,6 +51046,10 @@ var HeaderBurgerMagnum = function HeaderBurgerMagnum() {
       navbarOpen = _useState[0],
       setNavbarOpen = _useState[1];
 
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      productsOpen = _useState2[0],
+      setProductsOpen = _useState2[1];
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "magnum-burger-menu",
     style: {
@@ -51065,7 +51069,7 @@ var HeaderBurgerMagnum = function HeaderBurgerMagnum() {
     className: "magnum-toggle",
     navbarOpen: navbarOpen,
     onClick: function onClick() {
-      return setNavbarOpen(!navbarOpen);
+      setNavbarOpen(!navbarOpen), setProductsOpen(false);
     }
   }, navbarOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, {
     open: true
@@ -51075,19 +51079,18 @@ var HeaderBurgerMagnum = function HeaderBurgerMagnum() {
       opacity: navbarOpen ? "1" : "0",
       transition: "opacity .2s linear .2s"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "magnum-navbox-item",
     style: {
-      display: navbarOpen ? "flex" : "none"
+      display: navbarOpen ? productsOpen ? "none" : "flex" : "none"
     },
-    to: "/magnum",
     onClick: function onClick() {
-      return setNavbarOpen(!navbarOpen);
+      return setProductsOpen(!productsOpen);
     }
-  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "Tooted  \u276F"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "magnum-navbox-item",
     style: {
-      display: navbarOpen ? "flex" : "none"
+      display: navbarOpen ? productsOpen ? "none" : "flex" : "none"
     },
     to: "/magnum/about",
     onClick: function onClick() {
@@ -51096,7 +51099,7 @@ var HeaderBurgerMagnum = function HeaderBurgerMagnum() {
   }, "Ettev\xF5ttest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "magnum-navbox-item",
     style: {
-      display: navbarOpen ? "flex" : "none"
+      display: navbarOpen ? productsOpen ? "none" : "flex" : "none"
     },
     to: "/magnum/delivery",
     onClick: function onClick() {
@@ -51105,13 +51108,46 @@ var HeaderBurgerMagnum = function HeaderBurgerMagnum() {
   }, "Telli"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "magnum-navbox-item",
     style: {
-      display: navbarOpen ? "flex" : "none"
+      display: navbarOpen ? productsOpen ? "none" : "flex" : "none"
     },
     to: "/contact",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Kontakt")));
+  }, "Kontakt")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "magnum-products",
+    style: {
+      opacity: productsOpen ? "1" : "0",
+      transition: "opacity .2s linear .2s"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "magnum-navbox-item",
+    style: {
+      display: productsOpen ? "flex" : "none",
+      marginBottom: "-20px"
+    },
+    onClick: function onClick() {
+      setNavbarOpen(true), setProductsOpen(false);
+    }
+  }, "\u276E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "magnum-navbox-item",
+    style: {
+      display: productsOpen ? "flex" : "none"
+    },
+    to: "/magnum/products?filter=pulgajaatised",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Pulgaj\xE4\xE4tised"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "magnum-navbox-item",
+    style: {
+      display: productsOpen ? "flex" : "none"
+    },
+    to: "/magnum/products?filter=perejaatised",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Perej\xE4\xE4tised")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HeaderBurgerMagnum);
@@ -51132,7 +51168,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.magnum-burger-menu {\n    display: none;    \n\n    @media (max-width: 500px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n        height: 8vh;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 10px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 30px;\n        z-index: 9999;\n    }\n}\n\n.magnum-toggle {\n    height: auto;\n    padding: 0 10vw;\n    display: flex;\n    position: absolute;\n    top: 4vh;\n    right: 10px;\n}\n\n.magnum-navbox {\n    display: flex;\n    height: 100%;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: auto;\n    padding: 0;\n    justify-content: flex-start;\n    top: 8vh;\n    z-index: 0;\n}\n\n.magnum-navbox-item {\n    text-decoration: none;\n    color: #523022;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #523022;\n    }\n\n    /* @media (max-width: 350px) {\n        padding: 15px 0;\n        font-size: 1.3rem;\n        z-index: 6;\n    } */\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.magnum-burger-menu {\n    display: none;    \n\n    @media (max-width: 500px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-image: linear-gradient(60deg,#d6a95d 0,#fff9c7 40%,#fff9c7 60%,#d6a95d 100%);\n        height: 8vh;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 10px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 30px;\n        z-index: 9999;\n    }\n}\n\n.magnum-toggle {\n    height: auto;\n    padding: 0 10vw;\n    display: flex;\n    position: absolute;\n    top: 4vh;\n    right: 10px;\n}\n\n.magnum-navbox {\n    display: flex;\n    height: 100%;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: auto;\n    padding: 0;\n    justify-content: flex-start;\n    top: 8vh;\n    z-index: 0;\n}\n\n.magnum-products {\n    display: flex;\n    height: 100%;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: auto;\n    padding: 0;\n    justify-content: flex-start;\n    top: 8vh;\n    z-index: 0;\n}\n\n.magnum-navbox-item {\n    text-decoration: none;\n    color: #523022;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #523022;\n    }\n\n    /* @media (max-width: 350px) {\n        padding: 15px 0;\n        font-size: 1.3rem;\n        z-index: 6;\n    } */\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -51598,7 +51634,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.magnum-categories-section {\n    margin: 50px auto 100px;\n\n    h2 {\n        margin: 0 20px;\n        color: #523022;\n        text-align: center;\n        font-weight: 700;\n\n        @media(max-width:692px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n\n    @media(max-width:692px){\n        margin: 30px auto;\n      }\n}\n\n.magnum-boxes-section {\n    margin: 50px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n\n    @media(max-width:692px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.magnum-category-box {\n    border-radius: 14px;\n    margin: 0 20px;\n    text-align: center;\n\n    @media(max-width:692px){\n        margin: 10px auto 40px;\n        max-width: 100%;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 300px;\n    border-radius: 6px;\n    /* transition:.5s; */\n    \n\n        /* &:hover {\n            transform: scale(1.1);\n        } */\n        \n    }\n}\n\n.magnum-button-div {\n    margin: -25px -20px -30px;\n\n    .ifUilS {\n        display: inline !important;\n    }\n}\n\n.magnum-categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.2rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.magnum-categories-section {\n    margin: 50px auto 100px;\n\n    h2 {\n        margin: 0 20px;\n        color: #523022;\n        text-align: center;\n        font-weight: 700;\n\n        @media(max-width:692px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n\n    @media(max-width:692px){\n        margin: 30px auto;\n      }\n}\n\n.magnum-boxes-section {\n    margin: 50px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n\n    @media(max-width:692px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.magnum-category-box {\n    border-radius: 14px;\n    margin: 0 20px;\n    text-align: center;\n\n    @media(max-width:692px){\n        margin: 10px auto 40px;\n        max-width: 100%;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 300px;\n    border-radius: 6px;\n    position: relative;\n    z-index: -1;\n    /* transition:.5s; */\n    \n\n        /* &:hover {\n            transform: scale(1.1);\n        } */\n        \n    }\n}\n\n.magnum-button-div {\n    margin: -25px -20px -30px;\n\n    .ifUilS {\n        display: inline !important;\n    }\n}\n\n.magnum-categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.2rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -51965,9 +52001,9 @@ var MainLayout = function MainLayout(_ref) {
 /***/ }),
 
 /***/ "@reach/router":
-/*!*********************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\index.js" ***!
-  \*********************************************************************************************************************/
+/*!************************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js" ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -51976,9 +52012,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ }),
 
 /***/ "@reach/router/lib/history":
-/*!****************************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
-  \****************************************************************************************************************************/
+/*!*******************************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
+  \*******************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -51987,9 +52023,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!*************************************************************************************************************!*\
-  !*** external "C:\\Users\\marcin.tuchalski\\Desktop\\baltic\\general-site\\node_modules\\lodash\\merge.js" ***!
-  \*************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js" ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

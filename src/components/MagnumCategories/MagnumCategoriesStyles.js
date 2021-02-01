@@ -52,6 +52,8 @@ const MagnumCategoriesStyles = createGlobalStyle`
     img {
     max-width: 300px;
     border-radius: 6px;
+    position: relative;
+    z-index: -1;
     /* transition:.5s; */
     
 
