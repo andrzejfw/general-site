@@ -95,8 +95,8 @@ const CifHeroImage = styled.img`
 const AboutPage = () => {
   return (
    <>
-     <SEO title="About cif" description="Cif puhastusvahendid. Cif usub, et ilusad ja puhtad kodud teevad meid õnnelikumaks ning omavad suurt rolli vaimse tervise heaolus. Tutvu meie kaubamärgiga!"/>
-      <CifHeroImage src={CifPurposeHeroImg} alt="Dove eesmärk - ilu on enesekindluse allikas"/>
+     <SEO title="Cif kodukeemia brändist" description="Cif puhastusvahendid. Cif usub, et ilusad ja puhtad kodud teevad meid õnnelikumaks ning omavad suurt rolli vaimse tervise heaolus. Tutvu meie kaubamärgiga!"/>
+      <CifHeroImage src={CifPurposeHeroImg} alt="Cif kodukeemia brändist"/>
    <Section> 
    <CifAboutSection>
     <h1>1969. aastal käivitatud ja majapidamises kasutatavad Cifi puhastusvahendid muutsid kodukoristust täielikult.</h1>

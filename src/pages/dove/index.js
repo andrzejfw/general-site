@@ -5,9 +5,11 @@ import DoveHomepageHeroImg from '../../assets/images/dove-hero-hp.jpg'
 import DoveHomepageHeroImgMobile from '../../assets/images/dove-hero-hp.jpg'
 import DoveCategories from '../../components/DoveCategories/DoveCategories'
 import DoveCategoriesBox from '../../components/DoveCategories/DoveCategoriesBox'
-import Mayo from '../../assets/images/hellmanns-mayo.png'
-import Sauce from '../../assets/images/hellmanns-sauce.png'
-import Ketchup from '../../assets/images/hellmanns-ketchup.png'
+import creams from '../../assets/images/dove-creams.png'
+import deos from '../../assets/images/dove-deos.png'
+import hair from '../../assets/images/dove-hair.png'
+import showergel from '../../assets/images/dove-shower-gel.png'
+import soap from '../../assets/images/dove-soap.png'
 import DoveBannerAndText from '../../components/DoveBannerAndText/DoveBannerAndText'
 import DoveSustainabilityHeroImg from '../../assets/images/dove-sustainability-hero.jpg'
 import DoveSustainabilityHeroImgMobile from '../../assets/images/dove-sustainability-hero-mobile.jpg'
@@ -97,14 +99,11 @@ const SustainabilityPageDove = () => {
    </ImageSection>
    <Section>
    <DoveCategories sectionTitle="Meie kategooriaid">
-      <DoveCategoriesBox categoryTitle="Majonees" categoryImage={"https://www.dove.com/content/dam/unilever/dove/bulgaria/pack_shot/8710908285127-1906602-png.png"} categoryLink="/" alt="Hellmann's Majonees"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Ketšup" categoryImage={'https://www.dove.com/content/dam/unilever/dove/bulgaria/pack_shot/8710847972751-1969561-png.png'} categoryLink="/" alt="Hellmann's Ketšup"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Kastmed" categoryImage={'https://www.dove.com/content/dam/unilever/dove/bulgaria/pack_shot/front/skin_care/hand_and_body_care/dove_hb_lot_rimoist_baby_200ml_cee_l16/dove_rich_moisture_lotion_200ml_fop_cl2-793680.png'} categoryLink="/" alt="Hellmann's Kastmed"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Ketšup" categoryImage={'https://www.dove.com/content/dam/unilever/dove/bulgaria/pack_shot/front/skin_cleansing/skin_cleansing/dove_men_zel_cool_fre_12x250ml/dove_men_care_cool_fresh_body_and_face_wash_fop_250ml_8710908317361_pl-706073-png.png'} categoryLink="/" alt="Hellmann's Ketšup"></DoveCategoriesBox>
-      {/* <DoveCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/" alt="Hellmann's Kastmed"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Majonees" categoryImage={Mayo} categoryLink="/" alt="Hellmann's Majonees"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Ketšup" categoryImage={Ketchup} categoryLink="/" alt="Hellmann's Ketšup"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/" alt="Hellmann's Kastmed"></DoveCategoriesBox> */}
+      <DoveCategoriesBox categoryTitle="Šampoonid ja palsamid" categoryImage={hair} categoryLink="/" alt="Šampoonid ja palsamid"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Dušigeelid" categoryImage={showergel} categoryLink="/" alt="Dušigeelid"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Deodorandid" categoryImage={deos} categoryLink="/" alt="Deodorandid"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Seebid" categoryImage={soap} categoryLink="/" alt="Seebid"></DoveCategoriesBox>
+      <DoveCategoriesBox categoryTitle="Kreemid ja muu" categoryImage={creams} categoryLink="/" alt="Kreemid ja muu"></DoveCategoriesBox>
     </DoveCategories>
     <BulletsUp><img></img></BulletsUp>
     <DoveBannerAndTextSection>
