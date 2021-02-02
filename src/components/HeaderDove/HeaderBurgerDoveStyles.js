@@ -52,7 +52,6 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
 }
 
 .dove-navbox {
-    position: absolute;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -67,7 +66,25 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
     background-color: rgb(0 38 99 / .95);
     @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
     padding: 20px 0;
+    }
 }
+
+.dove-products {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 15% 0;
+    justify-content: flex-start;
+    top: 60px;
+    z-index: 0;
+    /* background-color: rgb(0 38 99 / .95); */
+    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
+    padding: 20px 0;
+    }
 }
 
 
@@ -87,8 +104,12 @@ const HeaderBurgerDoveStyles = createGlobalStyle`
         color: #fff;
     }
     @media screen and (min-device-width: 500px) and (max-device-width: 692px) {
-    padding:10px 0;
-}
+    padding: 10px 0;
+    }
+
+    @media (max-width: 350px) {
+    padding: 15px 0;
+    }
 }
 `;
 

@@ -42,9 +42,9 @@ const HeaderBurgerCifStyles = createGlobalStyle`
     justify-content: flex-end;
     flex-direction: column;
     position: fixed;
-    padding: 0 20px 30% 15px;
+    padding: 50px 20px 30% 15px;
     text-align: center;
-    justify-content: center;
+    justify-content: start;
     top: 60px;
     z-index: 0;
     background-color: rgb(0 122 51);
@@ -54,7 +54,28 @@ const HeaderBurgerCifStyles = createGlobalStyle`
     height: 90%;
     @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
     padding: 20px 0;
+    }
 }
+
+.knorr-products {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: fixed;
+    padding: 50px 20px 30% 15px;
+    text-align: center;
+    justify-content: start;
+    top: 60px;
+    z-index: 0;
+    background-color: rgb(0 122 51);
+    background: url(${KnorrWave});
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
+    padding: 20px 0;
+    }
 }
 
 .knorr-navbox-item {
@@ -74,7 +95,15 @@ const HeaderBurgerCifStyles = createGlobalStyle`
     }
     @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
     padding:10px 0;
+    }
 }
+
+.inside {
+    padding: 10px 0;
+
+    @media (max-width: 350px) {
+        padding: 5px 0;
+    }
 }
 `;
 

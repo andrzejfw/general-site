@@ -23,10 +23,6 @@ const DoveHeroImage = styled.img`
     @media (max-width: 1200px) {
         height: 400px;
     }
-
-    @media (max-width: 692px) {
-        margin-top: 50px;
-    }
 `;
 
 const ProductsPageCif = () => {

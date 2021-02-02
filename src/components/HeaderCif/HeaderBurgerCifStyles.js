@@ -66,10 +66,19 @@ const HeaderBurgerCifStyles = createGlobalStyle`
     &:hover {
         font-weight: 700;
         color: #17594a;
+
+        @media (max-width: 692px) {
+        font-weight: 400;
+        }
     }
     @media screen and (min-device-width: 500px) and (max-device-width: 692px) {
-    padding:10px 0;
+        padding:10px 0;
+    }
 }
+
+.inside {
+    padding: 5px 0;
+    font-size: 1.2rem;
 }
 `;
 

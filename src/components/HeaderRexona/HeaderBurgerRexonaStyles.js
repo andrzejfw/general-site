@@ -61,6 +61,20 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
     background-position: bottom;
     }
 
+.rexona-products {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 40vh;
+    justify-content: flex-start;
+    top: 60px;
+    z-index: 0;
+    margin-top:20px;
+}
+
 .rexona-navbox-item {
     text-decoration: none;
     color: #103073;
@@ -74,7 +88,15 @@ const HeaderBurgerRexonaStyles = createGlobalStyle`
 
     &:hover {
         font-weight: 700;
-        color: #fff;
+        /* color: #fff; */
+    }
+}
+
+.inside {
+    margin: 10px 20px 0 9px;
+
+    @media (max-width: 350px) {
+        margin: 0 20px 0 9px;
     }
 }
 `;

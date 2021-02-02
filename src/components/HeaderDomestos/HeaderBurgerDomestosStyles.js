@@ -144,6 +144,20 @@ const HeaderBurgerDomestosStyles = createGlobalStyle`
 {
   transform: none;
 }
+
+#productCat {
+  display: none;
+  margin-bottom: 15px;
+}
+
+#productCat li {
+  font-size: 1rem;
+}
+
+
+.show {
+  display: inline-block !important;
+}
 `;
 
 export default HeaderBurgerDomestosStyles;

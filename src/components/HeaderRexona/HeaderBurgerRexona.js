@@ -38,6 +38,7 @@ const Hamburger = styled.div`
 
 const HeaderBurgerRexona = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const [productsOpen, setProductsOpen] = useState(false)
 
   return (
     <nav className="rexona-burger-menu" 
@@ -48,7 +49,7 @@ const HeaderBurgerRexona = () => {
       <div 
         className="rexona-toggle"
         navbarOpen={navbarOpen}
-        onClick={() => setNavbarOpen(!navbarOpen)}
+        onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(false)}}
       >
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </div>
@@ -56,10 +57,101 @@ const HeaderBurgerRexona = () => {
         transition: "all .3s",
         right: navbarOpen ? "0" : "-100%",
         }}>
-          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/rexona" onClick={() => setNavbarOpen(!navbarOpen)}>Homepage</Link>
-          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/rexona/products" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="rexona-navbox-item" style={{transition: "all .3s", right: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
+          <Link className="rexona-navbox-item" 
+            style={{
+              transition: "right .3s, opacity .2s", 
+              right: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%",
+              opacity: navbarOpen ? (productsOpen ? "-0" : "1") : "0",
+            }} 
+            to="/rexona" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Homepage
+          </Link>
+          <div className="rexona-navbox-item" 
+            style={{
+              transition: "right .3s, opacity .2s", 
+              right: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%",
+              opacity: navbarOpen ? (productsOpen ? "-0" : "1") : "0",
+            }} 
+            onClick={() => setProductsOpen(!productsOpen)}>
+            Tooted  &#10095;
+          </div>
+          <Link className="rexona-navbox-item" 
+            style={{
+              transition: "right .3s, opacity .2s", 
+              right: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%",
+              opacity: navbarOpen ? (productsOpen ? "-0" : "1") : "0",
+            }} 
+            to="/contact" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Kontakt
+          </Link>
         </div>
+
+        <div class="rexona-products"  style={{
+          left: productsOpen ? "0" : "-100%",
+        }}>
+        <div className="rexona-navbox-item" 
+          style={{
+            left: productsOpen ? "0" : "-100%", 
+            border: "1px solid #103073", 
+            borderRadius: "20px", 
+            padding: "7px 15px", 
+            fontSize: "80%", 
+            marginBottom: "20px",
+            width: "90px",
+            left: productsOpen ? "0" : "-100%",
+            transition: "all .3s", 
+          }} 
+          onClick={() => {setNavbarOpen(true), setProductsOpen(false)}}>
+            &#10094; Tagasi
+        </div>
+        <Link className="rexona-navbox-item inside" 
+          style={{
+            left: productsOpen ? "0" : "-100%",
+            transition: "all .3s", 
+          }} 
+          to="/rexona/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            All
+        </Link>
+        <Link className="rexona-navbox-item inside" 
+          style={{
+            left: productsOpen ? "0" : "-100%",
+            transition: "all .3s", 
+          }} 
+          to="/rexona/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            Category 1
+        </Link>
+        <Link className="rexona-navbox-item inside" 
+          style={{
+            left: productsOpen ? "0" : "-100%",
+            transition: "all .3s", 
+          }} 
+          to="/rexona/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            Category 2
+        </Link>
+        <Link className="rexona-navbox-item inside" 
+          style={{
+            left: productsOpen ? "0" : "-100%",
+            transition: "all .3s", 
+          }} 
+          to="/rexona/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            Category 3
+        </Link>
+        <Link className="rexona-navbox-item inside" 
+          style={{
+            left: productsOpen ? "0" : "-100%",
+            transition: "all .3s", 
+          }} 
+          to="/rexona/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            Category 4
+        </Link>
+      </div>
     </nav>
   )
 }

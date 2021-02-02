@@ -70,7 +70,12 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     }
     @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
     padding:10px 0;
+    }
 }
+
+.inside {
+    padding: 5px 0;
+    font-size: 1.3rem;
 }
 `;
 

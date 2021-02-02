@@ -38,6 +38,7 @@ const Hamburger = styled.div`
 
 const HeaderBurgerHellmanns = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const [productsOpen, setProductsOpen] = useState(false)
 
   return (
     <nav className="hellmanns-burger-menu" 
@@ -49,7 +50,7 @@ const HeaderBurgerHellmanns = () => {
       <div 
         className="hellmanns-toggle"
         navbarOpen={navbarOpen}
-        onClick={() => setNavbarOpen(!navbarOpen)}
+        onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(false)}}
       >
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </div>
@@ -60,10 +61,75 @@ const HeaderBurgerHellmanns = () => {
           opacity: navbarOpen ? "1" : "0", 
           padding: navbarOpen ? "20px 0" : "0",
           }}>
-          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/hellmanns/products" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/hellmanns/sustainability" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/hellmanns/history" onClick={() => setNavbarOpen(!navbarOpen)}>Ajalugu</Link>
-          <Link className="hellmanns-navbox-item" style={{display: navbarOpen ? "flex" : "none"}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
+          <div className="hellmanns-navbox-item" 
+            style={{
+              display: navbarOpen ? "flex" : "none",
+              marginLeft: "30px",
+            }} 
+            onClick={() => {setProductsOpen(!productsOpen)}}>
+              Tooted 
+              <span style={{
+                marginLeft: "10px"}}>
+                  {productsOpen ? <span>&#9652;</span> : <span>&#9662;</span>}
+              </span>
+          </div>
+
+          <div 
+            style={{
+              display: productsOpen ? (!navbarOpen ? "none" : "flex") : "none",
+              flexDirection: "column",
+              alignItems: "center",
+              margin: "-10px auto 30px"
+            }}>
+            <Link className="hellmanns-navbox-item inside"
+              style={{
+                display: productsOpen ? (!navbarOpen ? "none" : "flex") : "none",
+              }} 
+              to="/hellmanns/products" 
+              onClick={() => setNavbarOpen(!navbarOpen)}>
+                All
+            </Link>
+            <Link className="hellmanns-navbox-item inside" 
+              to="/hellmanns/products" 
+              onClick={() => setNavbarOpen(!navbarOpen)}>
+                Majonees
+            </Link>
+            <Link className="hellmanns-navbox-item inside" 
+              to="/hellmanns/products" 
+              onClick={() => setNavbarOpen(!navbarOpen)}>
+                Ketšup
+            </Link>
+            <Link className="hellmanns-navbox-item inside" 
+              to="/hellmanns/products" 
+              onClick={() => setNavbarOpen(!navbarOpen)}>
+                Kastmed
+            </Link>
+          </div>
+          
+          <Link className="hellmanns-navbox-item" 
+            style={{
+              display: navbarOpen ? "flex" : "none"
+            }} 
+            to="/hellmanns/sustainability" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Ettevõttest
+          </Link>
+          <Link className="hellmanns-navbox-item" 
+            style={{
+              display: navbarOpen ? "flex" : "none"
+            }} 
+            to="/hellmanns/history" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Ajalugu
+          </Link>
+          <Link className="hellmanns-navbox-item" 
+            style={{
+              display: navbarOpen ? "flex" : "none"
+            }} 
+            to="/contact" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Kontakt
+          </Link>
         </div>
     </nav>
   )

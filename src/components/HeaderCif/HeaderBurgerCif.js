@@ -38,6 +38,7 @@ const Hamburger = styled.div`
 
 const HeaderBurgerCif = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const [productsOpen, setProductsOpen] = useState(false)
 
   return (
     <nav className="cif-burger-menu" 
@@ -48,7 +49,7 @@ const HeaderBurgerCif = () => {
       <div 
         className="cif-toggle"
         navbarOpen={navbarOpen}
-        onClick={() => setNavbarOpen(!navbarOpen)}
+        onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(false)}}
       >
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </div>
@@ -56,10 +57,69 @@ const HeaderBurgerCif = () => {
         transition: "all .3s linear",
         left: navbarOpen ? "0" : "-100%",
         }}>
-          <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/cif/products" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/cif/about" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          {/* <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/" onClick={() => setNavbarOpen(!navbarOpen)}>Meie eesmärk</Link> */}
-          <Link className="cif-navbox-item" style={{transition: "all .3s linear", left: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
+          <div className="cif-navbox-item" 
+            style={{
+              transition: "all .3s linear", 
+              left: navbarOpen ? "0" : "-100%",
+            }} 
+            onClick={() => {setProductsOpen(!productsOpen)}}>
+              Tooted
+              <span style={{
+                marginLeft: "10px"}}>
+                  {productsOpen ? <span>&#9652;</span> : <span>&#9662;</span>}
+              </span>
+          </div>
+
+          <div 
+            style={{
+              display: productsOpen ? (!navbarOpen ? "none" : "flex") : "none",
+              flexDirection: "column",
+              alignItems: "start",
+              margin: "-15px 0 20px",
+            }}>
+            <Link className="cif-navbox-item inside"
+              style={{
+                display: productsOpen ? (!navbarOpen ? "none" : "flex") : "none",
+              }} 
+              to="/cif/products" 
+              onClick={() => setNavbarOpen(!navbarOpen)}>
+                All
+            </Link>
+            <Link className="cif-navbox-item inside" 
+              to="/cif/products" 
+              onClick={() => setNavbarOpen(!navbarOpen)}>
+                Category 1
+            </Link>
+            <Link className="cif-navbox-item inside" 
+              to="/cif/products" 
+              onClick={() => setNavbarOpen(!navbarOpen)}>
+                Category 2
+            </Link>
+            <Link className="cif-navbox-item inside" 
+              to="/cif/products" 
+              onClick={() => setNavbarOpen(!navbarOpen)}>
+                Category 3
+            </Link>
+          </div>
+
+          <Link className="cif-navbox-item" 
+            style={{
+              transition: "all .3s linear", 
+              left: navbarOpen ? "0" : "-100%",
+            }} 
+            to="/cif/about" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Ettevõttest
+          </Link>
+          <Link className="cif-navbox-item" 
+            style={{
+              transition: "all .3s linear", 
+              left: navbarOpen ? "0" : "-100%",
+            }} 
+            to="/contact" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Kontakt
+          </Link>
         </div>
     </nav>
   )

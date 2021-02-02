@@ -14,6 +14,15 @@ function uncheckAll(divid) {
         }
     }
 }
+
+function showProducts() {
+  document.querySelector("#productCat").classList.toggle("show");
+}
+
+function hideOnClick() {
+  document.querySelector("#productCat").classList.remove("show");
+}
+
   return (
     <nav role="navigation">
     <div id="menuToggle">
@@ -21,10 +30,17 @@ function uncheckAll(divid) {
     <div class="hamburger"><div></div></div>
     <a href="/domestos"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></a>
     <ul id="menu">
-                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/domestos/products">Tooted</Link></li>
-                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/domestos/about">Ettevõttest</Link></li>
-                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/domestos/sustainability">Jätkusuutlikkus</Link></li>
-                <li><Link id="uncheckAll" onclick={uncheckAll('menuToggle')} activeClassName="current" to="/contact">Kontakt</Link></li>
+      <li><div id="uncheckAll" onClick={() => {showProducts();}} activeClassName="current">Tooted &nbsp; &#10095;</div></li>
+
+      <div id="productCat">
+      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}} activeClassName="current" to="/domestos/products">All</Link></li>
+      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/products">Category 1</Link></li>
+      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/products">Category 2</Link></li>
+      </div>
+
+      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/about">Ettevõttest</Link></li>
+      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/sustainability">Jätkusuutlikkus</Link></li>
+      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/contact">Kontakt</Link></li>
     </ul>
   </div>
 </nav>

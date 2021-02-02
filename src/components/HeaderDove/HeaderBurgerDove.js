@@ -38,6 +38,7 @@ const Hamburger = styled.div`
 
 const HeaderBurgerDove = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const [productsOpen, setProductsOpen] = useState(false)
 
   return (
     <nav className="dove-burger-menu" 
@@ -48,19 +49,120 @@ const HeaderBurgerDove = () => {
       <div 
         className="dove-toggle"
         navbarOpen={navbarOpen}
-        onClick={() => setNavbarOpen(!navbarOpen)}
+        onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(false)}}
       >
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </div>
+
       <div className="dove-navbox" style={{
         transition: "all .3s linear",
         left: navbarOpen ? "0" : "-100%",
         }}>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .2s", left: navbarOpen ? "0" : "-100%",}} to="/dove/products" onClick={() => setNavbarOpen(!navbarOpen)}>Tooted</Link>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .3s", left: navbarOpen ? "0" : "-100%",}} to="/dove/sustainability" onClick={() => setNavbarOpen(!navbarOpen)}>Jätkusuutlikkus</Link>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .4s", left: navbarOpen ? "0" : "-100%",}} to="/dove/purpose" onClick={() => setNavbarOpen(!navbarOpen)}>Meie eesmärk</Link>
-          <Link className="dove-navbox-item" style={{transition: "all .4s linear .5s", left: navbarOpen ? "0" : "-100%",}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
+        <div className="dove-navbox-item" 
+          style={{
+            transition: "all .4s linear .2s", 
+            left: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%", 
+            display: productsOpen ? "none" : "flex"
+          }} 
+          onClick={() => setProductsOpen(!productsOpen)}>
+            Tooted  &#10095;
         </div>
+        <Link className="dove-navbox-item" 
+          style={{
+            transition: "all .4s linear .3s", 
+            left: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%", 
+            display: productsOpen ? "none" : "flex"
+          }} 
+          to="/dove/sustainability" 
+          onClick={() => setNavbarOpen(!navbarOpen)}>
+            Jätkusuutlikkus
+        </Link>
+        <Link className="dove-navbox-item" 
+          style={{
+            transition: "all .4s linear .4s", 
+            left: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%", 
+            display: productsOpen ? "none" : "flex"
+          }} 
+          to="/dove/purpose" 
+          onClick={() => setNavbarOpen(!navbarOpen)}>
+            Meie eesmärk
+        </Link>
+        <Link className="dove-navbox-item" 
+          style={{
+            transition: "all .4s linear .5s", 
+            left: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%", 
+            display: productsOpen ? "none" : "flex"
+          }} 
+          to="/contact" 
+          onClick={() => setNavbarOpen(!navbarOpen)}>
+            Kontakt
+        </Link>
+      </div>
+
+      <div class="dove-products"  style={{
+          left: productsOpen ? "0" : "-100%",
+        }}>
+        <div className="dove-navbox-item" 
+          style={{
+            left: productsOpen ? "0" : "-100%", 
+            border: "1px solid #fff", 
+            borderRadius: "20px", 
+            padding: "7px 15px", 
+            fontSize: "80%", 
+            marginBottom: "20px"
+          }} 
+          onClick={() => {setNavbarOpen(true), setProductsOpen(false)}}>
+            &#10094; Tagasi
+        </div>
+        <Link className="dove-navbox-item" 
+          style={{
+            left: productsOpen ? "0" : "-100%"
+          }} 
+          to="/dove/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            All
+        </Link>
+        <Link className="dove-navbox-item" 
+          style={{
+            left: productsOpen ? "0" : "-100%"
+          }} 
+          to="/dove/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            Šampoonid ja palsamid
+        </Link>
+        <Link className="dove-navbox-item" 
+          style={{
+            left: productsOpen ? "0" : "-100%"
+          }} 
+          to="/dove/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            Dušigeelid
+        </Link>
+        <Link className="dove-navbox-item" 
+          style={{
+            left: productsOpen ? "0" : "-100%"
+          }} 
+          to="/dove/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            Deodorandid
+        </Link>
+        <Link className="dove-navbox-item" 
+          style={{
+            left: productsOpen ? "0" : "-100%"
+          }} 
+          to="/dove/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            Seebid
+        </Link>
+        <Link className="dove-navbox-item" 
+          style={{
+            left: productsOpen ? "0" : "-100%"
+          }} 
+          to="/dove/products" 
+          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+            Kreemid ja muu
+        </Link>
+      </div>
     </nav>
   )
 }

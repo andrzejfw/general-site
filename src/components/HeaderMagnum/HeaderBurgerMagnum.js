@@ -59,19 +59,78 @@ const HeaderBurgerMagnum = () => {
         opacity: navbarOpen ? "1" : "0", 
         transition: "opacity .2s linear .2s"
         }}>
-          <div className="magnum-navbox-item" style={{display: navbarOpen ? (productsOpen ? "none" : "flex") : "none"}} onClick={() => setProductsOpen(!productsOpen)}>Tooted  &#10095;</div>
-          <Link className="magnum-navbox-item" style={{display: navbarOpen ? (productsOpen ? "none" : "flex") : "none"}} to="/magnum/about" onClick={() => setNavbarOpen(!navbarOpen)}>Ettevõttest</Link>
-          <Link className="magnum-navbox-item" style={{display: navbarOpen ? (productsOpen ? "none" : "flex") : "none"}} to="/magnum/delivery" onClick={() => setNavbarOpen(!navbarOpen)}>Telli</Link>
-          <Link className="magnum-navbox-item" style={{display: navbarOpen ? (productsOpen ? "none" : "flex") : "none"}} to="/contact" onClick={() => setNavbarOpen(!navbarOpen)}>Kontakt</Link>
+          <div className="magnum-navbox-item" 
+            style={{
+              display: navbarOpen ? (productsOpen ? "none" : "flex") : "none"
+            }} 
+            onClick={() => setProductsOpen(!productsOpen)}>
+              Tooted  &#10095;
+          </div>
+          <Link className="magnum-navbox-item" 
+            style={{
+              display: navbarOpen ? (productsOpen ? "none" : "flex") : "none"
+            }} 
+            to="/magnum/about" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Ettevõttest
+          </Link>
+          <Link className="magnum-navbox-item" 
+            style={{
+              display: navbarOpen ? (productsOpen ? "none" : "flex") : "none"
+            }} 
+            to="/magnum/delivery" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Telli
+          </Link>
+          <Link className="magnum-navbox-item" 
+            style={{display: navbarOpen ? (productsOpen ? "none" : "flex") : "none"
+          }} 
+          to="/contact"
+          onClick={() => setNavbarOpen(!navbarOpen)}>
+            Kontakt
+          </Link>
         </div>
+
         <div class="magnum-products"  style={{
         opacity: productsOpen ? "1" : "0", 
         transition: "opacity .2s linear .2s"
         }}>
-          <div className="magnum-navbox-item" style={{display: productsOpen ? "flex" : "none", marginBottom: "-20px"}} onClick={() => {setNavbarOpen(true), setProductsOpen(false)}}>&#10094;</div>
-          <Link className="magnum-navbox-item" style={{display: productsOpen ? "flex" : "none"}} to="/magnum/products" onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>Kogu jäätis</Link>
-          <Link className="magnum-navbox-item" style={{display: productsOpen ? "flex" : "none"}} to="/magnum/products?filter=pulgajaatised" onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>Pulgajäätised</Link>
-          <Link className="magnum-navbox-item" style={{display: productsOpen ? "flex" : "none"}} to="/magnum/products?filter=perejaatised" onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>Perejäätised</Link>
+          <div className="magnum-navbox-item" 
+            style={{
+              display: productsOpen ? "flex" : "none", 
+              border: "1px solid #523022", 
+              borderRadius: "20px", 
+              padding: "7px 15px", 
+              fontSize: "80%", 
+              marginTop: "10px"
+            }} 
+            onClick={() => {setNavbarOpen(true), setProductsOpen(false)}}>
+              &#10094; Tagasi
+          </div>
+          <Link className="magnum-navbox-item" 
+            style={{
+              display: productsOpen ? "flex" : "none"
+            }} 
+            to="/magnum/products" 
+            onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+              Kogu jäätis
+          </Link>
+          <Link className="magnum-navbox-item" 
+            style={{
+              display: productsOpen ? "flex" : "none"
+            }} 
+            to="/magnum/products?filter=pulgajaatised" 
+            onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+              Pulgajäätised
+          </Link>
+          <Link className="magnum-navbox-item" 
+            style={{
+              display: productsOpen ? "flex" : "none"
+            }} 
+            to="/magnum/products?filter=perejaatised" 
+            onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
+              Perejäätised
+          </Link>
         </div>
     </nav>
   )
