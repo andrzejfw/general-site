@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\index.js", "C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\lib\\history.js", "C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\lodash\\merge.js", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\index.js"), require("C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\lib\\history.js"), require("C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\lodash\\merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
+		root["lib"] = factory(root["C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\index.js"], root["C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\lib\\history.js"], root["C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\lodash\\merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -7385,7 +7385,7 @@ try {
   Layout = preferDefault(__webpack_require__(/*! ./src/layouts/index */ "./src/layouts/index.js"));
 } catch (e) {
   if (e.toString().indexOf("Error: Cannot find module") !== -1) {
-    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
+    throw new Error("Couldn't find layout component at \"" + "C:\\Users\\Andrzej\\Desktop\\general-site\\src\\layouts\\index" + ".\n\n" + "Please create layout component in that location or specify path to layout component in gatsby-config.js");
   } else {
     // Logging the error for debugging older browsers as there is no way
     // to wrap the thrown error in a try/catch.
@@ -48443,7 +48443,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.dove-bannerandtext-section {\n    max-width: 65vw;\n    margin: 80px auto;\n    display: flex;\n    flex-direction: row;\n\n    @media(max-width:1600px){\n        max-width: 85vw;\n    }\n\n    @media(max-width:992px){\n        max-width: 100vw;\n        flex-direction: column !important;\n    }\n}\n\n.dove-image-section {\n\n    img {\n        width: 35vw;\n        height: 350px;\n        object-fit: cover;\n        border-radius: 10px 100px / 120px;\n        box-shadow: 0px 2px 6px 0px;\n        @media(max-width:1600px){\n            width: 40vw;\n            height: 250px;\n        }\n\n        @media(max-width:992px){\n            width: 100%;\n        }\n      \n    }\n\n    @media(max-width:992px){\n        margin: 0 auto 25px;\n    }\n.imagepc {\n    @media(max-width:1200px){\n        display:none;\n    }\n}\n.imagemobile {\n    @media(min-width:1201px){\n        display:none;\n    }\n}\n}\n\n.dove-paragraph-section {\n    margin: 0 50px;\n\n        h2 {\n            font-size: 1.7rem;\n            color: #004976;\n            font-weight: bold;\n\n            @media(max-width:1600px){\n                font-size: 1.5rem;\n            }\n\n            @media(max-width:992px){\n                text-align: center !important;\n            }\n        }\n\n        p {\n            font-size: 1.3rem;\n            color: #004976;\n\n            @media(max-width:1600px){\n                font-size: 1.2rem;\n            }\n\n            @media(max-width:992px){\n                text-align: center !important;\n                font-size: 1.1rem;\n            }\n        }\n        button {\n            @media(max-width:992px){\n                text-align: center !important;\n                margin: 0 auto;\n                display: flex;\n            }\n        }\n\n        @media(max-width:992px){\n            width: 290px;\n            margin: 0 auto;\n            text-align: center;\n        }\n}\n\n.dove-paragraph-section .Buttondove__Button-bmjmnS {\n    margin: 0 !important;\n    display: inline-block;\n\n    @media(max-width:992px){\n        margin: 0 auto !important;\n        display: block;\n    }\n}\n\n.dove-bannerandtext-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.dove-bannerandtext-section {\n    max-width: 65vw;\n    margin: 80px auto;\n    display: flex;\n    flex-direction: row;\n\n    @media(max-width:1600px){\n        max-width: 85vw;\n    }\n\n    @media(max-width:992px){\n        max-width: 100vw;\n        flex-direction: column !important;\n    }\n}\n\n.dove-image-section {\n\n    img {\n        width: 35vw;\n        height: 350px;\n        object-fit: cover;\n        border-radius: 10px 100px / 120px;\n        box-shadow: 0px 2px 6px 0px;\n        @media(max-width:1600px){\n            width: 40vw;\n            height: 250px;\n        }\n\n        @media(max-width:767px){\n            width: 100%;\n        }\n        @media(max-width:992px) and (min-width:768px){\n            height:400px;\n            width: 100%;\n        }\n      \n    }\n\n    @media(max-width:992px){\n        margin: 0 auto 25px;\n    }\n.imagepc {\n    @media(max-width:1200px){\n        display:none;\n    }\n}\n.imagemobile {\n    @media(min-width:1201px){\n        display:none;\n    }\n}\n}\n\n.dove-paragraph-section {\n    margin: 0 50px;\n\n        h2 {\n            font-size: 1.7rem;\n            color: #004976;\n            font-weight: bold;\n\n            @media(max-width:1600px){\n                font-size: 1.5rem;\n            }\n\n            @media(max-width:992px){\n                text-align: center !important;\n            }\n        }\n\n        p {\n            font-size: 1.3rem;\n            color: #004976;\n\n            @media(max-width:1600px){\n                font-size: 1.2rem;\n            }\n\n            @media(max-width:992px){\n                text-align: center !important;\n                font-size: 1.1rem;\n            }\n        }\n        button {\n            @media(max-width:992px){\n                text-align: center !important;\n                margin: 0 auto;\n                display: flex;\n            }\n        }\n\n        @media(max-width:767px){\n            width: 290px;\n            margin: 0 auto;\n            text-align: center;\n        }\n}\n\n.dove-paragraph-section .Buttondove__Button-bmjmnS {\n    margin: 0 !important;\n    display: inline-block;\n\n    @media(max-width:992px){\n        margin: 0 auto !important;\n        display: block;\n    }\n}\n\n.dove-bannerandtext-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -48472,7 +48472,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.dove-categories-section {\n    margin: 50px auto;\n\n    h2 {\n        margin: 0 auto;\n        color: #054281;\n        text-align: center;\n        font-weight: 700;\n        text-transform: uppercase;\n        border-bottom: 15px solid rgb(204 210 214 / 48%);\n        width: 350px;\n        height: 2.5rem;\n\n        @media(max-width:692px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n}\n\n.dove-boxes-section {\n    margin: 20px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    flex-wrap: wrap;\n\n    @media(max-width:992px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.dove-category-box {\n    padding: 30px 30px;\n    max-width: 240px;\n    text-align: center;\n\n    h3 {\n        color:#054281;\n        text-align: center;\n        font-size: 26px;\n        font-weight:700;\n        text-transform: uppercase;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 4rem;\n\n        @media(max-width:992px){\n        height: auto;\n        }\n    }\n\n    @media(max-width:992px){\n        margin: 10px auto;\n        max-width: 100%;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 200px;\n    transition:.5s;\n     \n\n        &:hover {\n            transform: scale(1.1);\n        }\n        \n    }\n}\n\n.dove-img-div {\n    background: linear-gradient(180deg, rgb(0 73 118 / 0%) 50%, rgb(204 210 214 / 48%) 100%);\n    margin: 0 -20px;\n\n    @media(max-width:992px){\n        margin: 0 120px;\n    }\n\n    @media(max-width:692px){\n        margin: 0;\n    }    \n}\n\n.dove-button-div {\n    margin: 10px -20px -30px;\n\n    \n}\n\n.dove-categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n.dove-categories-section {\n    margin: 50px auto;\n\n    h2 {\n        margin: 0 auto;\n        color: #054281;\n        text-align: center;\n        font-weight: 700;\n        text-transform: uppercase;\n        border-bottom: 15px solid rgb(204 210 214 / 48%);\n        width: 350px;\n        height: 2.5rem;\n\n        @media(max-width:692px){\n        width: 90vw;\n        margin: 0 auto 20px;\n      }\n    }\n}\n\n.dove-boxes-section {\n    margin: 20px auto 0;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    flex-wrap: wrap;\n\n    @media(max-width:767px){\n        flex-direction: column;\n        margin: 0;\n      }\n}\n\n.dove-category-box {\n    padding: 30px 30px;\n    max-width: 240px;\n    text-align: center;\n\n    h3 {\n        color:#054281;\n        text-align: center;\n        font-size: 26px;\n        font-weight:700;\n        text-transform: uppercase;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 2rem;\n\n        @media(max-width:767px){\n        height: auto;\n        }\n    }\n\n    @media(max-width:767px){\n        margin: 10px auto;\n        max-width: 100%;\n        width: 90vw;\n\n        h3 {\n            font-size: 2rem;\n        }\n      }\n\n    img {\n    max-width: 200px;\n    transition:.5s;\n     \n\n        &:hover {\n            transform: scale(1.1);\n        }\n        \n    }\n}\n\n.dove-img-div {\n    background: linear-gradient(180deg, rgb(0 73 118 / 0%) 50%, rgb(204 210 214 / 48%) 100%);\n    margin: 0 -20px;\n    padding: 20px 0;\n\n    @media(max-width:767px){\n        margin: 0 120px;\n    }\n\n    @media(max-width:692px){\n        margin: 0;\n    }    \n}\n\n.dove-button-div {\n    margin: 10px -20px -30px;\n\n    \n}\n\n.dove-categories-button-link {\n    text-decoration: none;\n    color: inherit;\n    font-size: 1.5rem;\n    \n\n    &:hover {\n        text-decoration: none;\n        color: inherit;\n    }\n}\n\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -49917,6 +49917,10 @@ var HeaderBurgerCif = function HeaderBurgerCif() {
       navbarOpen = _useState[0],
       setNavbarOpen = _useState[1];
 
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      productsOpen = _useState2[0],
+      setProductsOpen = _useState2[1];
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "cif-burger-menu",
     style: {
@@ -49934,7 +49938,7 @@ var HeaderBurgerCif = function HeaderBurgerCif() {
     className: "cif-toggle",
     navbarOpen: navbarOpen,
     onClick: function onClick() {
-      return setNavbarOpen(!navbarOpen);
+      setNavbarOpen(!navbarOpen), setProductsOpen(false);
     }
   }, navbarOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, {
     open: true
@@ -49944,17 +49948,54 @@ var HeaderBurgerCif = function HeaderBurgerCif() {
       transition: "all .3s linear",
       left: navbarOpen ? "0" : "-100%"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cif-navbox-item",
     style: {
       transition: "all .3s linear",
       left: navbarOpen ? "0" : "-100%"
     },
+    onClick: function onClick() {
+      setProductsOpen(!productsOpen);
+    }
+  }, "Tooted", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    style: {
+      marginLeft: "10px"
+    }
+  }, productsOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u25B4") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u25BE"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      display: productsOpen ? !navbarOpen ? "none" : "flex" : "none",
+      flexDirection: "column",
+      alignItems: "start",
+      margin: "-15px 0 20px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "cif-navbox-item inside",
+    style: {
+      display: productsOpen ? !navbarOpen ? "none" : "flex" : "none"
+    },
     to: "/cif/products",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "All"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "cif-navbox-item inside",
+    to: "/cif/products",
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, "Category 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "cif-navbox-item inside",
+    to: "/cif/products",
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, "Category 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "cif-navbox-item inside",
+    to: "/cif/products",
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, "Category 3")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "cif-navbox-item",
     style: {
       transition: "all .3s linear",
@@ -49995,7 +50036,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.cif-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: sticky;\n        z-index: 99;\n        background: linear-gradient(to right,#165648,#20856e);\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: -5px;\n        left: 5px;\n        height: 70px;\n        z-index: 9999;\n    }\n}\n\n.cif-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.cif-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 5% 20px 5% 15px;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(227 232 220 / 95%);\n    width: auto;\n    height: auto;\n    \n}\n\n.cif-navbox-item {\n    text-decoration: none;\n    color: #17594a;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #17594a;\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 692px) {\n    padding:10px 0;\n}\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.cif-burger-menu {\n    display: none;    \n\n    @media (max-width: 692px) {\n        display: block;\n        position: sticky;\n        z-index: 99;\n        background: linear-gradient(to right,#165648,#20856e);\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: -5px;\n        left: 5px;\n        height: 70px;\n        z-index: 9999;\n    }\n}\n\n.cif-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.cif-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 5% 20px 5% 15px;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(227 232 220 / 95%);\n    width: auto;\n    height: auto;\n    \n}\n\n.cif-navbox-item {\n    text-decoration: none;\n    color: #17594a;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #17594a;\n\n        @media (max-width: 692px) {\n        font-weight: 400;\n        }\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 692px) {\n        padding:10px 0;\n    }\n}\n\n.inside {\n    padding: 5px 0;\n    font-size: 1.2rem;\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -50120,6 +50161,22 @@ var HeaderBurgerDomestos = function HeaderBurgerDomestos() {
     }
   }
 
+  function showProducts() {
+    document.querySelector("#productCat").classList.toggle("show");
+  }
+
+  function hideOnClick() {
+    document.querySelector("#productCat").classList.remove("show");
+  }
+
+  function showArrow() {
+    if (document.querySelector("#productCat").classList == "show") {
+      document.querySelector("#arrow").innerHTML = "&#9652;";
+    } else {
+      document.querySelector("#arrow").innerHTML = "&#9662;";
+    }
+  }
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     role: "navigation"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -50136,24 +50193,63 @@ var HeaderBurgerDomestos = function HeaderBurgerDomestos() {
     alt: "Domestos Eesti WC-puhastusvahendid logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     id: "menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "uncheckAll",
+    onClick: function onClick() {
+      showProducts();
+      showArrow();
+    },
+    activeClassName: "current"
+  }, "Tooted ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    id: "arrow"
+  }, "\u25BE"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "productCat"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     id: "uncheckAll",
-    onclick: uncheckAll('menuToggle'),
+    onClick: function onClick() {
+      uncheckAll('menuToggle');
+      hideOnClick();
+    },
     activeClassName: "current",
     to: "/domestos/products"
-  }, "Tooted")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "All")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     id: "uncheckAll",
-    onclick: uncheckAll('menuToggle'),
+    onClick: function onClick() {
+      uncheckAll('menuToggle');
+      hideOnClick();
+    },
+    activeClassName: "current",
+    to: "/domestos/products"
+  }, "Category 1")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    id: "uncheckAll",
+    onClick: function onClick() {
+      uncheckAll('menuToggle');
+      hideOnClick();
+    },
+    activeClassName: "current",
+    to: "/domestos/products"
+  }, "Category 2"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    id: "uncheckAll",
+    onClick: function onClick() {
+      uncheckAll('menuToggle');
+      hideOnClick();
+    },
     activeClassName: "current",
     to: "/domestos/about"
   }, "Ettev\xF5ttest")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     id: "uncheckAll",
-    onclick: uncheckAll('menuToggle'),
+    onClick: function onClick() {
+      uncheckAll('menuToggle');
+      hideOnClick();
+    },
     activeClassName: "current",
     to: "/domestos/sustainability"
   }, "J\xE4tkusuutlikkus")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     id: "uncheckAll",
-    onclick: uncheckAll('menuToggle'),
+    onClick: function onClick() {
+      uncheckAll('menuToggle');
+      hideOnClick();
+    },
     activeClassName: "current",
     to: "/contact"
   }, "Kontakt")))));
@@ -50177,7 +50273,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n\n#menuToggle\n{\n  display: block;\n  position: fixed;\n  left: 0;\n  right: 0;\n  height: 60px;\n  top:0;\n  z-index: 3;\n  \n  -webkit-user-select: none;\n  user-select: none;\n  background:radial-gradient(circle at 20% 15%,#123c7b,#06154b 61%);\n  img {\n    position: fixed;\n    right: 0;\n    top: 0;\n    height: 90px;\n  }\n}\n\n#menuToggle a\n{\n  text-decoration: none;\n  color: #232323;\n  \n  transition: color 0.3s ease;\n}\n\n#menuToggle a:hover\n{\n  color: grey;\n}\n\n#menuToggle .toggler {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 2;\n  cursor: pointer;\n  width: 50px;\n  height: 50px;\n  opacity: 0;\n}\n#menuToggle .hamburger {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1;\n  width: 60px;\n  height: 60px;\n  padding: 1rem;\n  background: var(--primary-color);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n/* Hamburger Line div */\n#menuToggle .hamburger > div {\n  position: relative;\n  flex: none;\n  width: 100%;\n  height: 2px;\n  background: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  transition: all 0.4s ease;\n}\n\n/* Hamburger Lines - Top */\n#menuToggle .hamburger > div::before {\n  content: '';\n  position: absolute;\n  z-index: 1;\n  top: 10px;\n  width: 100%;\n  height: 2px;\n  background: inherit;\n}\n/* Hamburger Lines - Bottom */\n#menuToggle .hamburger > div::after {\n  content: '';\n  position: absolute;\n  z-index: 1;\n  top: -10px;\n  width: 100%;\n  height: 2px;\n  background: inherit;\n}\n/* Toggler Animation */\n#menuToggle .toggler:checked + .hamburger > div {\n  transform: rotate(135deg);\n}\n\n/* Turns Lines Into X */\n#menuToggle .toggler:checked + .hamburger > div:before,\n#menuToggle .toggler:checked + .hamburger > div:after {\n  top: 0;\n  transform: rotate(90deg);\n}\n\n/* Rotate On Hover When Checked */\n#menuToggle .toggler:checked:hover + .hamburger > div {\n  transform: rotate(225deg);\n}\n\n\n.current {\n    color: gray;\n}\n\n#menu\n{\n  position: absolute;\n  padding: 20px 20px 20px;\n  margin-top: 60px;\n  background: #113877;\n  \n  list-style-type: none;\n  -webkit-font-smoothing: antialiased;\n  transform-origin: 0% 0%;\n  transform: translate(-100%, 0);\n  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n}\n\n#menu li\n{\n  padding: 10px 0 0 10px;\n  font-size: 22px;\n  color:#fff;\n  a {\n    color:#fff;\n  }\n}\n\n#menuToggle input:checked ~ ul\n{\n  transform: none;\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n\n\n#menuToggle\n{\n  display: block;\n  position: fixed;\n  left: 0;\n  right: 0;\n  height: 60px;\n  top:0;\n  z-index: 3;\n  \n  -webkit-user-select: none;\n  user-select: none;\n  background:radial-gradient(circle at 20% 15%,#123c7b,#06154b 61%);\n  img {\n    position: fixed;\n    right: 0;\n    top: 0;\n    height: 90px;\n  }\n}\n\n#menuToggle a\n{\n  text-decoration: none;\n  color: #232323;\n  \n  transition: color 0.3s ease;\n}\n\n#menuToggle a:hover\n{\n  color: grey;\n}\n\n#menuToggle .toggler {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 2;\n  cursor: pointer;\n  width: 50px;\n  height: 50px;\n  opacity: 0;\n}\n#menuToggle .hamburger {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1;\n  width: 60px;\n  height: 60px;\n  padding: 1rem;\n  background: var(--primary-color);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n/* Hamburger Line div */\n#menuToggle .hamburger > div {\n  position: relative;\n  flex: none;\n  width: 100%;\n  height: 2px;\n  background: #fff;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  transition: all 0.4s ease;\n}\n\n/* Hamburger Lines - Top */\n#menuToggle .hamburger > div::before {\n  content: '';\n  position: absolute;\n  z-index: 1;\n  top: 10px;\n  width: 100%;\n  height: 2px;\n  background: inherit;\n}\n/* Hamburger Lines - Bottom */\n#menuToggle .hamburger > div::after {\n  content: '';\n  position: absolute;\n  z-index: 1;\n  top: -10px;\n  width: 100%;\n  height: 2px;\n  background: inherit;\n}\n/* Toggler Animation */\n#menuToggle .toggler:checked + .hamburger > div {\n  transform: rotate(135deg);\n}\n\n/* Turns Lines Into X */\n#menuToggle .toggler:checked + .hamburger > div:before,\n#menuToggle .toggler:checked + .hamburger > div:after {\n  top: 0;\n  transform: rotate(90deg);\n}\n\n/* Rotate On Hover When Checked */\n#menuToggle .toggler:checked:hover + .hamburger > div {\n  transform: rotate(225deg);\n}\n\n\n.current {\n    color: gray;\n}\n\n#menu\n{\n  position: absolute;\n  padding: 20px 20px 20px;\n  margin-top: 60px;\n  background: #113877;\n  \n  list-style-type: none;\n  -webkit-font-smoothing: antialiased;\n  transform-origin: 0% 0%;\n  transform: translate(-100%, 0);\n  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);\n}\n\n#menu li\n{\n  padding: 10px 0 0 10px;\n  font-size: 22px;\n  color:#fff;\n  a {\n    color:#fff;\n  }\n}\n\n#menuToggle input:checked ~ ul\n{\n  transform: none;\n}\n\n#productCat {\n  display: none;\n  margin-bottom: 15px;\n}\n\n#productCat li {\n  font-size: 1rem;\n}\n\n\n.show {\n  display: inline-block !important;\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -50304,6 +50400,10 @@ var HeaderBurgerDove = function HeaderBurgerDove() {
       navbarOpen = _useState[0],
       setNavbarOpen = _useState[1];
 
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      productsOpen = _useState2[0],
+      setProductsOpen = _useState2[1];
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "dove-burger-menu",
     style: {
@@ -50321,7 +50421,7 @@ var HeaderBurgerDove = function HeaderBurgerDove() {
     className: "dove-toggle",
     navbarOpen: navbarOpen,
     onClick: function onClick() {
-      return setNavbarOpen(!navbarOpen);
+      setNavbarOpen(!navbarOpen), setProductsOpen(false);
     }
   }, navbarOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, {
     open: true
@@ -50331,21 +50431,22 @@ var HeaderBurgerDove = function HeaderBurgerDove() {
       transition: "all .3s linear",
       left: navbarOpen ? "0" : "-100%"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dove-navbox-item",
     style: {
       transition: "all .4s linear .2s",
-      left: navbarOpen ? "0" : "-100%"
+      left: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%",
+      display: productsOpen ? "none" : "flex"
     },
-    to: "/dove/products",
     onClick: function onClick() {
-      return setNavbarOpen(!navbarOpen);
+      return setProductsOpen(!productsOpen);
     }
-  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "Tooted  \u276F"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "dove-navbox-item",
     style: {
       transition: "all .4s linear .3s",
-      left: navbarOpen ? "0" : "-100%"
+      left: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%",
+      display: productsOpen ? "none" : "flex"
     },
     to: "/dove/sustainability",
     onClick: function onClick() {
@@ -50355,7 +50456,8 @@ var HeaderBurgerDove = function HeaderBurgerDove() {
     className: "dove-navbox-item",
     style: {
       transition: "all .4s linear .4s",
-      left: navbarOpen ? "0" : "-100%"
+      left: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%",
+      display: productsOpen ? "none" : "flex"
     },
     to: "/dove/purpose",
     onClick: function onClick() {
@@ -50365,13 +50467,86 @@ var HeaderBurgerDove = function HeaderBurgerDove() {
     className: "dove-navbox-item",
     style: {
       transition: "all .4s linear .5s",
-      left: navbarOpen ? "0" : "-100%"
+      left: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%",
+      display: productsOpen ? "none" : "flex"
     },
     to: "/contact",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Kontakt")));
+  }, "Kontakt")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "dove-products",
+    style: {
+      left: productsOpen ? "0" : "-100%"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "dove-navbox-item",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      border: "1px solid #fff",
+      borderRadius: "20px",
+      padding: "7px 15px",
+      fontSize: "80%",
+      marginBottom: "20px"
+    },
+    onClick: function onClick() {
+      setNavbarOpen(true), setProductsOpen(false);
+    }
+  }, "\u276E Tagasi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "dove-navbox-item",
+    style: {
+      left: productsOpen ? "0" : "-100%"
+    },
+    to: "/dove/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "All"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "dove-navbox-item",
+    style: {
+      left: productsOpen ? "0" : "-100%"
+    },
+    to: "/dove/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "\u0160ampoonid ja palsamid"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "dove-navbox-item",
+    style: {
+      left: productsOpen ? "0" : "-100%"
+    },
+    to: "/dove/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Du\u0161igeelid"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "dove-navbox-item",
+    style: {
+      left: productsOpen ? "0" : "-100%"
+    },
+    to: "/dove/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Deodorandid"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "dove-navbox-item",
+    style: {
+      left: productsOpen ? "0" : "-100%"
+    },
+    to: "/dove/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Seebid"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "dove-navbox-item",
+    style: {
+      left: productsOpen ? "0" : "-100%"
+    },
+    to: "/dove/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Kreemid ja muu")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HeaderBurgerDove);
@@ -50394,7 +50569,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.dove-burger-menu {\n    display: none;    \n\n    @media (max-width: 710px) { \n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-color: #fff;\n        border-bottom: solid 1px #ccc;\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 15px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 40px;\n        z-index: 9999;\n        margin-left: 5px;\n    }\n}\n\n.dove-burger-menu::after {\n    content: '';\n    background: url(", ") top center no-repeat;\n    background-size: cover;\n    height: 20px;\n    width: 100px;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    top: 58px;\n    margin: 0 auto;\n}\n\n.dove-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.dove-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 20% 0;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(0 38 99 / .95);\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding: 20px 0;\n}\n}\n\n\n.dove-navbox-item {\n    text-decoration: none;\n    color: #fff;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #fff;\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 692px) {\n    padding:10px 0;\n}\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.dove-burger-menu {\n    display: none;    \n\n    @media (max-width: 710px) { \n        display: block;\n        position: fixed;\n        z-index: 99;\n        background-color: #fff;\n        border-bottom: solid 1px #ccc;\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 15px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 40px;\n        z-index: 9999;\n        margin-left: 5px;\n    }\n}\n\n.dove-burger-menu::after {\n    content: '';\n    background: url(", ") top center no-repeat;\n    background-size: cover;\n    height: 20px;\n    width: 100px;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    top: 58px;\n    margin: 0 auto;\n}\n\n.dove-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.dove-navbox {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 20% 0;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(0 38 99 / .95);\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding: 20px 0;\n    }\n}\n\n.dove-products {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 100%;\n    padding: 15% 0;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    /* background-color: rgb(0 38 99 / .95); */\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding: 20px 0;\n    }\n}\n\n\n.dove-navbox-item {\n    text-decoration: none;\n    color: #fff;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #fff;\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 692px) {\n    padding: 10px 0;\n    }\n\n    @media (max-width: 350px) {\n    padding: 15px 0;\n    }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -50533,6 +50708,10 @@ var HeaderBurgerHellmanns = function HeaderBurgerHellmanns() {
       navbarOpen = _useState[0],
       setNavbarOpen = _useState[1];
 
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      productsOpen = _useState2[0],
+      setProductsOpen = _useState2[1];
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "hellmanns-burger-menu",
     style: {
@@ -50551,7 +50730,7 @@ var HeaderBurgerHellmanns = function HeaderBurgerHellmanns() {
     className: "hellmanns-toggle",
     navbarOpen: navbarOpen,
     onClick: function onClick() {
-      return setNavbarOpen(!navbarOpen);
+      setNavbarOpen(!navbarOpen), setProductsOpen(false);
     }
   }, navbarOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, {
     open: true
@@ -50561,16 +50740,54 @@ var HeaderBurgerHellmanns = function HeaderBurgerHellmanns() {
       opacity: navbarOpen ? "1" : "0",
       padding: navbarOpen ? "20px 0" : "0"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "hellmanns-navbox-item",
     style: {
-      display: navbarOpen ? "flex" : "none"
+      display: navbarOpen ? "flex" : "none",
+      marginLeft: "30px"
+    },
+    onClick: function onClick() {
+      setProductsOpen(!productsOpen);
+    }
+  }, "Tooted", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    style: {
+      marginLeft: "10px"
+    }
+  }, productsOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u25B4") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u25BE"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      display: productsOpen ? !navbarOpen ? "none" : "flex" : "none",
+      flexDirection: "column",
+      alignItems: "center",
+      margin: "-10px auto 30px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "hellmanns-navbox-item inside",
+    style: {
+      display: productsOpen ? !navbarOpen ? "none" : "flex" : "none"
     },
     to: "/hellmanns/products",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "All"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "hellmanns-navbox-item inside",
+    to: "/hellmanns/products",
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, "Majonees"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "hellmanns-navbox-item inside",
+    to: "/hellmanns/products",
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, "Ket\u0161up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "hellmanns-navbox-item inside",
+    to: "/hellmanns/products",
+    onClick: function onClick() {
+      return setNavbarOpen(!navbarOpen);
+    }
+  }, "Kastmed")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "hellmanns-navbox-item",
     style: {
       display: navbarOpen ? "flex" : "none"
@@ -50618,7 +50835,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.hellmanns-burger-menu {\n    display: none;    \n\n    @media (max-width: 992px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background: #fdf6e8;\n        border-bottom: 3px solid #004976;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 5px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 65px;\n        z-index: 9999;\n    }\n}\n\n.hellmanns-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 35px;\n    right: 10px;\n}\n\n.hellmanns-navbox {\n    display: flex;\n    height: 100%;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: auto;\n    padding: 0;\n    justify-content: flex-start;\n    top: 70px;\n    z-index: 0;\n    text-transform: uppercase;\n    font-weight: 700;\n    transition: opacity .2s linear .2s;\n}\n\n.hellmanns-navbox-item {\n    text-decoration: none;\n    color: #004976;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #004976;\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding:10px 0;\n}\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.hellmanns-burger-menu {\n    display: none;    \n\n    @media (max-width: 992px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background: #fdf6e8;\n        border-bottom: 3px solid #004976;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: 5px;\n        left: 50%;\n        transform: translate(-50%);\n        height: 65px;\n        z-index: 9999;\n    }\n}\n\n.hellmanns-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 35px;\n    right: 10px;\n}\n\n.hellmanns-navbox {\n    display: flex;\n    height: 100%;\n    justify-content: flex-end;\n    align-items: center;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: auto;\n    padding: 0;\n    justify-content: flex-start;\n    top: 70px;\n    z-index: 0;\n    text-transform: uppercase;\n    font-weight: 700;\n    transition: opacity .2s linear .2s;\n}\n\n.hellmanns-navbox-item {\n    text-decoration: none;\n    color: #004976;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #004976;\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding:10px 0;\n    }\n}\n\n.inside {\n    padding: 5px 0;\n    font-size: 1.3rem;\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -50741,6 +50958,10 @@ var HeaderBurgerKnorr = function HeaderBurgerKnorr() {
       navbarOpen = _useState[0],
       setNavbarOpen = _useState[1];
 
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      productsOpen = _useState2[0],
+      setProductsOpen = _useState2[1];
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "knorr-burger-menu",
     style: {
@@ -50758,7 +50979,7 @@ var HeaderBurgerKnorr = function HeaderBurgerKnorr() {
     className: "knorr-toggle",
     navbarOpen: navbarOpen,
     onClick: function onClick() {
-      return setNavbarOpen(!navbarOpen);
+      setNavbarOpen(!navbarOpen), setProductsOpen(false);
     }
   }, navbarOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, {
     open: true
@@ -50768,27 +50989,105 @@ var HeaderBurgerKnorr = function HeaderBurgerKnorr() {
       transition: "all .3s linear",
       left: navbarOpen ? "0" : "-100%"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "knorr-navbox-item",
     style: {
       transition: "all .3s linear .1s",
-      left: navbarOpen ? "0" : "-100%"
+      left: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%"
     },
-    to: "/knorr/products",
+    onClick: function onClick() {
+      return setProductsOpen(!productsOpen);
+    }
+  }, "Tooted \u276F"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "knorr-navbox-item",
+    style: {
+      transition: "all .3s linear .2s",
+      left: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%"
+    },
+    to: "/knorr",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "Placeholder"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "knorr-navbox-item",
     style: {
-      transition: "all .3s linear .4s",
-      left: navbarOpen ? "0" : "-100%"
+      transition: "all .3s linear .3s",
+      left: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%"
     },
     to: "/contact",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Kontakt")));
+  }, "Kontakt")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "knorr-products",
+    style: {
+      left: productsOpen ? "0" : "-100%"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "knorr-navbox-item",
+    style: {
+      border: "1px solid #fff",
+      borderRadius: "20px",
+      padding: "7px 15px",
+      fontSize: "80%",
+      margin: "0 auto 20px",
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    onClick: function onClick() {
+      setNavbarOpen(true), setProductsOpen(false);
+    }
+  }, "\u276E Tagasi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "knorr-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/knorr/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "All"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "knorr-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/knorr/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Category 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "knorr-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/knorr/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Category 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "knorr-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/knorr/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Category 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "knorr-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/knorr/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Category 4")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HeaderBurgerKnorr);
@@ -50811,7 +51110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.knorr-burger-menu {\n    display: none;    \n\n    @media (max-width: 710px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background: rgba(255,255,255,.7);\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: -15px;\n        left: 50%;\n        transform: translateX(-50%);\n        height: 90px;\n        z-index: 9999;\n    }\n}\n\n.knorr-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.knorr-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    padding: 0 20px 30% 15px;\n    text-align: center;\n    justify-content: center;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(0 122 51);\n    background: url(", ");\n    background-size: cover;\n    width: 100%;\n    height: 90%;\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding: 20px 0;\n}\n}\n\n.knorr-navbox-item {\n    text-decoration: none;\n    color: #fff;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #17594a;\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding:10px 0;\n}\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.knorr-burger-menu {\n    display: none;    \n\n    @media (max-width: 710px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background: rgba(255,255,255,.7);\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n    }\n\n    img {\n        position: absolute;\n        top: -15px;\n        left: 50%;\n        transform: translateX(-50%);\n        height: 90px;\n        z-index: 9999;\n    }\n}\n\n.knorr-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.knorr-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    padding: 50px 20px 30% 15px;\n    text-align: center;\n    justify-content: start;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(0 122 51);\n    background: url(", ");\n    background-size: cover;\n    width: 100%;\n    height: 90%;\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding: 20px 0;\n    }\n}\n\n.knorr-products {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    padding: 50px 20px 30% 15px;\n    text-align: center;\n    justify-content: start;\n    top: 60px;\n    z-index: 0;\n    background-color: rgb(0 122 51);\n    background: url(", ");\n    background-size: cover;\n    width: 100%;\n    height: 90%;\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding: 20px 0;\n    }\n}\n\n.knorr-navbox-item {\n    text-decoration: none;\n    color: #fff;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    padding: 20px 0;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #17594a;\n    }\n    @media screen and (min-device-width: 500px) and (max-device-width: 710px) {\n    padding:10px 0;\n    }\n}\n\n.inside {\n    padding: 10px 0;\n\n    @media (max-width: 350px) {\n        padding: 5px 0;\n    }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -50822,7 +51121,7 @@ function _templateObject() {
 
 
 
-var HeaderBurgerCifStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject(), _assets_images_knorr_bg_wave_png__WEBPACK_IMPORTED_MODULE_2___default.a);
+var HeaderBurgerCifStyles = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject(), _assets_images_knorr_bg_wave_png__WEBPACK_IMPORTED_MODULE_2___default.a, _assets_images_knorr_bg_wave_png__WEBPACK_IMPORTED_MODULE_2___default.a);
 /* harmony default export */ __webpack_exports__["default"] = (HeaderBurgerCifStyles);
 
 /***/ }),
@@ -51124,12 +51423,25 @@ var HeaderBurgerMagnum = function HeaderBurgerMagnum() {
     className: "magnum-navbox-item",
     style: {
       display: productsOpen ? "flex" : "none",
-      marginBottom: "-20px"
+      border: "1px solid #523022",
+      borderRadius: "20px",
+      padding: "7px 15px",
+      fontSize: "80%",
+      marginTop: "10px"
     },
     onClick: function onClick() {
       setNavbarOpen(true), setProductsOpen(false);
     }
-  }, "\u276E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "\u276E Tagasi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "magnum-navbox-item",
+    style: {
+      display: productsOpen ? "flex" : "none"
+    },
+    to: "/magnum/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Kogu j\xE4\xE4tis"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "magnum-navbox-item",
     style: {
       display: productsOpen ? "flex" : "none"
@@ -51299,9 +51611,15 @@ var Hamburger = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
 });
 
 var HeaderBurgerRexona = function HeaderBurgerRexona() {
+  var _ref;
+
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       navbarOpen = _useState[0],
       setNavbarOpen = _useState[1];
+
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      productsOpen = _useState2[0],
+      setProductsOpen = _useState2[1];
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "rexona-burger-menu",
@@ -51320,7 +51638,7 @@ var HeaderBurgerRexona = function HeaderBurgerRexona() {
     className: "rexona-toggle",
     navbarOpen: navbarOpen,
     onClick: function onClick() {
-      return setNavbarOpen(!navbarOpen);
+      setNavbarOpen(!navbarOpen), setProductsOpen(false);
     }
   }, navbarOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Hamburger, {
     open: true
@@ -51333,34 +51651,105 @@ var HeaderBurgerRexona = function HeaderBurgerRexona() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "rexona-navbox-item",
     style: {
-      transition: "all .3s",
-      right: navbarOpen ? "0" : "-100%"
+      transition: "right .3s, opacity .2s",
+      right: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%",
+      opacity: navbarOpen ? productsOpen ? "-0" : "1" : "0"
     },
     to: "/rexona",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Homepage"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "Homepage"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "rexona-navbox-item",
     style: {
-      transition: "all .3s",
-      right: navbarOpen ? "0" : "-100%"
+      transition: "right .3s, opacity .2s",
+      right: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%",
+      opacity: navbarOpen ? productsOpen ? "-0" : "1" : "0"
     },
-    to: "/rexona/products",
     onClick: function onClick() {
-      return setNavbarOpen(!navbarOpen);
+      return setProductsOpen(!productsOpen);
     }
-  }, "Tooted"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+  }, "Tooted  \u276F"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
     className: "rexona-navbox-item",
     style: {
-      transition: "all .3s",
-      right: navbarOpen ? "0" : "-100%"
+      transition: "right .3s, opacity .2s",
+      right: navbarOpen ? productsOpen ? "-100%" : "0" : "-100%",
+      opacity: navbarOpen ? productsOpen ? "-0" : "1" : "0"
     },
     to: "/contact",
     onClick: function onClick() {
       return setNavbarOpen(!navbarOpen);
     }
-  }, "Kontakt")));
+  }, "Kontakt")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "rexona-products",
+    style: {
+      left: productsOpen ? "0" : "-100%"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rexona-navbox-item",
+    style: (_ref = {
+      left: productsOpen ? "0" : "-100%",
+      border: "1px solid #103073",
+      borderRadius: "20px",
+      padding: "7px 15px",
+      fontSize: "80%",
+      marginBottom: "20px",
+      width: "90px"
+    }, _ref["left"] = productsOpen ? "0" : "-100%", _ref.transition = "all .3s", _ref),
+    onClick: function onClick() {
+      setNavbarOpen(true), setProductsOpen(false);
+    }
+  }, "\u276E Tagasi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "rexona-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/rexona/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "All"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "rexona-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/rexona/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Category 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "rexona-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/rexona/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Category 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "rexona-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/rexona/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Category 3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "rexona-navbox-item inside",
+    style: {
+      left: productsOpen ? "0" : "-100%",
+      transition: "all .3s"
+    },
+    to: "/rexona/products",
+    onClick: function onClick() {
+      setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen);
+    }
+  }, "Category 4")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HeaderBurgerRexona);
@@ -51383,7 +51772,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.rexona-burger-menu {\n    display: none;    \n\n    @media (max-width: 500px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background: #fff;\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n        border-bottom: 2px solid #103073;\n    }\n\n    img {\n        position: absolute;\n        left: 5px;\n        height: 60px;\n        z-index: 9999;\n    }\n}\n\n.rexona-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.rexona-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 40vh;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    margin-top:20px;\n}\n.rexona-navbox:after {\n    background: url(", ") no-repeat;\n    content: '';\n    height: 100%;\n    width: 100%;\n    position: fixed;\n    background-size: 100%;\n    margin-top: 0;\n    bottom: 0;\n    background-position: bottom;\n    }\n\n.rexona-navbox-item {\n    text-decoration: none;\n    color: #103073;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    margin: 10px 20px 20px 9px;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        color: #fff;\n    }\n}\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteralLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n.rexona-burger-menu {\n    display: none;    \n\n    @media (max-width: 500px) {\n        display: block;\n        position: fixed;\n        z-index: 99;\n        background: #fff;\n        height: 60px;\n        top: 0;\n        left: 0;\n        right: 0;\n        left: 0;\n        border-bottom: 2px solid #103073;\n    }\n\n    img {\n        position: absolute;\n        left: 5px;\n        height: 60px;\n        z-index: 9999;\n    }\n}\n\n.rexona-toggle {\n    height: auto;\n    padding: 0 35px;\n    display: flex;\n    position: absolute;\n    top: 28px;\n    right: 10px;\n}\n\n.rexona-navbox {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 40vh;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    margin-top:20px;\n}\n.rexona-navbox:after {\n    background: url(", ") no-repeat;\n    content: '';\n    height: 100%;\n    width: 100%;\n    position: fixed;\n    background-size: 100%;\n    margin-top: 0;\n    bottom: 0;\n    background-position: bottom;\n    }\n\n.rexona-products {\n    position: absolute;\n    display: flex;\n    justify-content: flex-end;\n    flex-direction: column;\n    position: fixed;\n    width: 100%;\n    height: 40vh;\n    justify-content: flex-start;\n    top: 60px;\n    z-index: 0;\n    margin-top:20px;\n}\n\n.rexona-navbox-item {\n    text-decoration: none;\n    color: #103073;\n    display: inline-block;\n    white-space: nowrap;\n    margin: 0 1vw;\n    position: relative;\n    margin: 10px 20px 20px 9px;\n    font-size: 1.5rem;\n    z-index: 6;\n\n    &:hover {\n        font-weight: 700;\n        /* color: #fff; */\n    }\n}\n\n.inside {\n    margin: 10px 20px 0 9px;\n\n    @media (max-width: 350px) {\n        margin: 0 20px 0 9px;\n    }\n}\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -52001,9 +52390,9 @@ var MainLayout = function MainLayout(_ref) {
 /***/ }),
 
 /***/ "@reach/router":
-/*!************************************************************************************************************************************!*\
-  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\index.js" ***!
-  \************************************************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** external "C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\index.js" ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -52012,9 +52401,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
 /***/ }),
 
 /***/ "@reach/router/lib/history":
-/*!*******************************************************************************************************************************************!*\
-  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
-  \*******************************************************************************************************************************************/
+/*!***********************************************************************************************************!*\
+  !*** external "C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\@reach\\router\\lib\\history.js" ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -52023,9 +52412,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router_lib_history__;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!****************************************************************************************************************************!*\
-  !*** external "C:\\Users\\roksana.rebiewska\\Desktop\\project\\New-baltyki\\general-site\\node_modules\\lodash\\merge.js" ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** external "C:\\Users\\Andrzej\\Desktop\\general-site\\node_modules\\lodash\\merge.js" ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

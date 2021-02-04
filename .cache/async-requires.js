@@ -4,8 +4,8 @@ const preferDefault = m => (m && m.default) || m
 exports.components = {
   "component---cache-dev-404-page-js": () => import("./../../dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-layouts-pdp-cif-js": () => import("./../../../src/layouts/pdp-cif.js" /* webpackChunkName: "component---src-layouts-pdp-cif-js" */),
+  "component---src-layouts-pdp-lipton-js": () => import("./../../../src/layouts/pdp-lipton.js" /* webpackChunkName: "component---src-layouts-pdp-lipton-js" */),
   "component---src-layouts-pdp-magnum-js": () => import("./../../../src/layouts/pdp-magnum.js" /* webpackChunkName: "component---src-layouts-pdp-magnum-js" */),
-  "component---src-layouts-pdp-rexona-js": () => import("./../../../src/layouts/pdp-rexona.js" /* webpackChunkName: "component---src-layouts-pdp-rexona-js" */),
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-500-js": () => import("./../../../src/pages/500.js" /* webpackChunkName: "component---src-pages-500-js" */),
   "component---src-pages-about-js": () => import("./../../../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
@@ -48,6 +48,7 @@ exports.components = {
   "component---src-pages-lipton-404-js": () => import("./../../../src/pages/lipton/404.js" /* webpackChunkName: "component---src-pages-lipton-404-js" */),
   "component---src-pages-lipton-500-js": () => import("./../../../src/pages/lipton/500.js" /* webpackChunkName: "component---src-pages-lipton-500-js" */),
   "component---src-pages-lipton-index-js": () => import("./../../../src/pages/lipton/index.js" /* webpackChunkName: "component---src-pages-lipton-index-js" */),
+  "component---src-pages-lipton-products-js": () => import("./../../../src/pages/lipton/products.js" /* webpackChunkName: "component---src-pages-lipton-products-js" */),
   "component---src-pages-lipton-purpose-js": () => import("./../../../src/pages/lipton/purpose.js" /* webpackChunkName: "component---src-pages-lipton-purpose-js" */),
   "component---src-pages-lipton-sustainability-js": () => import("./../../../src/pages/lipton/sustainability.js" /* webpackChunkName: "component---src-pages-lipton-sustainability-js" */),
   "component---src-pages-magnum-404-js": () => import("./../../../src/pages/magnum/404.js" /* webpackChunkName: "component---src-pages-magnum-404-js" */),

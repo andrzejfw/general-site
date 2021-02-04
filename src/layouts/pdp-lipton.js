@@ -48,7 +48,7 @@ const ProductImage = styled.div`
    display:flex;
    max-width:600px;
    max-height:550px;
-   padding: 100px;
+   padding: 30px;
   img{
     max-width: 100%;
   }
@@ -168,6 +168,51 @@ const ProductBullets = styled.div`
   }
 `;
 
+const VariantList = styled.ul `
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none;
+    justify-items: center;
+    
+    @media (max-width: 692px) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+`;
+
+const VariantButton = styled.button `
+    padding: 14px 10px 14px 10px;
+    border: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+    background:#C8381D;
+    border:none;
+    text-transform:none;
+    transition:.5s;
+    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
+    outline: none;
+    text-decoration:none;
+    text-align: center;
+    a {
+      color: white;
+    }
+    &:hover{
+      background:#BA2318;
+      transform: scale(1.15);
+      opacity: 1;
+      border:none;
+      outline: none;
+      text-decoration:none;
+    }
+    &:focus{
+      outline: none;
+      background: #ffe902;
+      color: #c8381d;
+      font-weight: bold;
+    }
+`;
+
 const SectionAccordion = styled.div`
     max-width: 980px;
     margin: 0 auto;
@@ -206,12 +251,15 @@ query MyQuerLipton($slug: Int!) {
     slug
     ingredients
     img
+    variant
   }
 }
 
 `;
 
-const PostLayout = ({ data }) => {
+const PostLayout = ({ data, pageContext }) => {
+  // const {product}=data;
+  console.log (pageContext)
   return (
    
     <>
@@ -219,22 +267,28 @@ const PostLayout = ({ data }) => {
     <ProductContainer>
       <TopSectionWrapper>
         <ProductFirstRow>
+        <VariantList>
+            {pageContext.variant.map(({id, size}) => 
+            <li>
+              <VariantButton>
+              <a href={`/lipton/products/${id}`}>{size}</a>
+              </VariantButton>
+            </li>
+            )}
+        </VariantList>
         <ProductImage>
         <img src={data.product.img}></img>
         </ProductImage>
           <ProductMainInfo>
             <h1>{data.product.fullName}</h1>
-            <p>{data.product.volume}</p>
-            {/* <p>{data.product.format}</p> */}
-            {/* <h2>{data.product.productShortDescription}Lipton's Magnificent Matcha blended with Green Tea delivers the smooth, earthy taste of matcha and the goodness of green tea</h2> */}
-            <p>{data.product.productDescription}</p>
+            <p>{data.product.productLine}</p>
             <BINLipton></BINLipton>
+            
           </ProductMainInfo>
         </ProductFirstRow>
         <ProductRowCenter>
           {/* Product description */}
-          {/* <h3>Tootekirjeldus</h3>
-          <p>{data.product.productDescription}Legend has it that Buddhist monks used Matcha to enhance their focus for long hours of meditation, and to be alert and present in the moment. Today's Matcha leaf comes from shade grown green tea whose chlorophyll-rich leaves are finely ground into a brilliant green powder, prized for its abilities.</p> */}
+          {/* <h3>Tootekirjeldus</h3> */}
         </ProductRowCenter>
       </TopSectionWrapper>
       <ProductBullets>
@@ -265,13 +319,11 @@ const PostLayout = ({ data }) => {
         </SectionAccordion>
         {/* <ProductRowCenter> */}
           {/* Ingredients */}
-          {/* <h3>Koostisosad</h3>
-          <p>{data.product.ingredients}green tea, matcha, aroma</p> */}
+          {/* <h3>Koostisosad</h3> */}
         {/* </ProductRowCenter>
         <ProductRowCenter> */}
           {/* Usage instructions */}
-          {/* <h3>Kasutusjuhend</h3>
-          <p>{data.product.productHowToUse}Get the best from your brew in 2 minutes, adding the tea bag first then water so the leaves can unleash their flavor</p> */}
+          {/* <h3>Kasutusjuhend</h3> */}
         {/* </ProductRowCenter> */}
       </BottomSectionWrapper>
       <CarouselLipton/>
