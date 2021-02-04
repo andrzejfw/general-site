@@ -57,6 +57,8 @@ import HeaderCif from "../components/HeaderCif/HeaderCif"
 import HeaderCifStyles from "../components/HeaderCif/HeaderCifStyles"
 import HeaderBurgerCif from "../components/HeaderCif/HeaderBurgerCif"
 import HeaderBurgerCifStyles from "../components/HeaderCif/HeaderBurgerCifStyles"
+import CifCategoriesStyles from "../components/CifCategories/CifCategoriesStyles"
+import CifBannerAndTextStyles from "../components/CifBannerAndText/CifBannerAndTextStyles"
 import FaviconCif from "../components/Favicon/FaviconCif"
 
 //dove
@@ -320,6 +322,8 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle/>
+      <CifCategoriesStyles/>
+      <CifBannerAndTextStyles/>
       <FaviconCif/>
       </>
     }
