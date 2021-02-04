@@ -82,6 +82,16 @@ const HeaderBurgerRexona = () => {
               right: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%",
               opacity: navbarOpen ? (productsOpen ? "-0" : "1") : "0",
             }} 
+            to="/rexona/about" 
+            onClick={() => setNavbarOpen(!navbarOpen)}>
+              Kaubamärgist
+          </Link>
+          <Link className="rexona-navbox-item" 
+            style={{
+              transition: "right .3s, opacity .2s", 
+              right: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%",
+              opacity: navbarOpen ? (productsOpen ? "-0" : "1") : "0",
+            }} 
             to="/contact" 
             onClick={() => setNavbarOpen(!navbarOpen)}>
               Kontakt
