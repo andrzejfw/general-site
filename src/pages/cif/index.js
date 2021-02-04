@@ -1,7 +1,15 @@
 import React from "react"
 import styled from 'styled-components'
 import SEO from '../../components/Seo/Seo'
+import CifCategories from '../../components/CifCategories/CifCategories'
+import CifCategoriesBox from '../../components/CifCategories/CifCategoriesBox'
+import CifBannerAndText from '../../components/CifBannerAndText/CifBannerAndText'
 import CifHeroImg from '../../assets/images/cif-hero.jpg'
+import CifHeroImgMobile from '../../assets/images/cif-hero-mobile.jpg'
+import CifSpray from '../../assets/images/cif-spray.png'
+import CifCream from '../../assets/images/cif-cream.png'
+import CifPurposeHeroImg from '../../assets/images/cif-about.jpg'
+import CifPurposeHeroImgMobile from '../../assets/images/cif-about-mobile.jpg'
 
 
 const Section = styled.section`
@@ -15,23 +23,34 @@ const Section = styled.section`
     }
 `;
 
-const DoveHeroImage = styled.img`
+const CifHeroImage = styled.img`
     width: 100%;
-    height: 550px;
     object-fit: cover;
 
-    @media (max-width: 1200px) {
-        height: 400px;
+    @media (max-width: 692px) {
+        content: url(${CifHeroImgMobile});
     }
 `;
 
 const IndexPageCif = () => {
   return (
    <>
-   <SEO title="Cif Eesti" description="Cif Eesti."/>
+   <SEO title="Cif puhastusvahendid" description="Cifi puhastusvahenditega saab kodu kaunilt puhtaks ja ilusaks pindu kahjustamata. Ilusad kodud teevad meid õnnelikumaks. Uuri lähemalt Cifi kaubamärgi kohta."/>
    <Section> 
-    <DoveHeroImage src={CifHeroImg} alt="Cif"/> 
-    <p style={{margin: "50px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <CifHeroImage src={CifHeroImg} alt="Cif puhastusvahendid"/> 
+    <CifCategories sectionTitle="Meie kategooriaid">
+      <CifCategoriesBox categoryTitle="Puhastuskreemid" categoryImage={CifCream} categoryLink="/cif/products" alt="Cif tootevalik - puhastuskreemid"></CifCategoriesBox>
+      <CifCategoriesBox categoryTitle="Pihustid" categoryImage={CifSpray} categoryLink="/cif/products" alt="Cif tootevalik - pihustid"></CifCategoriesBox>
+    </CifCategories>
+    <CifBannerAndText
+        image={CifPurposeHeroImg}
+        imagemobile={CifPurposeHeroImgMobile}
+        title="Saavuta puhtus pindu kahjustamata"
+        paragraphText="1969. aastal käivitatud ja majapidamises kasutatavad Cifi puhastusvahendid muutsid kodukoristust täielikult."
+        buttonCTA="Loe rohkem"
+        buttonLink="/cif/about"
+        >
+      </CifBannerAndText>
     </Section>
     </>
   )
