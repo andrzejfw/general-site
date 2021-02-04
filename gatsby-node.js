@@ -7,19 +7,19 @@ const API = 'https://cl.estorecontent.com/api/v2/'
 const LANGUAGE = 'et'
 const MANUFACTURER = '634'
 const TOKEN = 'd834cd2d30ab68adcfe288ee245bc3a33db05d6f'
-const BLOCKS_INDEX = 2;
+const BLOCKS_INDEX = '2';
 const FILE = `${__dirname}/data/ids.csv`
 
 const TEMPLATES = {
-  Lipton: path.resolve(`src/layouts/pdp-rexona.js`),
+  Lipton: path.resolve(`src/layouts/pdp-lipton.js`),
   Magnum: path.resolve(`src/layouts/pdp-magnum.js`),
   Domestos: path.resolve(`src/layouts/pdp-cif.js`),
 }
 
 const PATHS = {
-  Lipton: 'rexona/',
-  Magnum: 'magnum/',
-  Domestos: 'cif/',
+  Lipton: 'lipton/products/',
+  Magnum: 'magnum/products/',
+  Domestos: 'domestos/products/',
 }
 
 exports.sourceNodes = async ({
@@ -64,13 +64,13 @@ exports.sourceNodes = async ({
       img: resultData.images.length > 0 ? resultData.images[0].url : '',
       parent: null,
       children: [],
+      variant: [153355,153440] || '',
       internal: {
         type: `Product`,
         contentDigest: createContentDigest(resultData),
       },
     })
   })
-
 }
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -104,6 +104,7 @@ exports.createPages = async ({ graphql, actions }) => {
           tag
           volume
           slug
+          variant
         }
       }
     }
@@ -114,10 +115,9 @@ exports.createPages = async ({ graphql, actions }) => {
     console.error(resultSites.errors)
   }
 
-  console.log('resultSites.data')
-  console.log(resultSites.data)
-
-
+  const getPath = (brand,id)=>`${PATHS[brand]}${id}`
+  // const getProductName = (id)=>resultSites.data.allProduct.edges.find(edge => edge.node.id == id).node.fullName
+  const getProductSize =(id)=>resultSites.data.allProduct.edges.find(edge => edge.node.id == id).node.volume
   resultSites.data.allProduct.edges.forEach(edge => {
     const {node} = edge
     const slugifiedTitle = slugify(node.fullName, {
@@ -125,14 +125,38 @@ exports.createPages = async ({ graphql, actions }) => {
     });
       
     createPage({
-      path: `${PATHS[node.brand]}${node.fullName}_${node.id}`,
+      // path: `${PATHS[node.brand]}${node.fullName}_${node.id}`,
+      path: getPath(node.brand,node.id),
       component: TEMPLATES[node.brand],
       context: {
         slug: node.slug,
+        productName: node.fullName,
+        variant: node.variant ? node.variant.map(v => ({id:v,size:getProductSize(v)})) : [],
       },
     });
   });
 };
+
+const pageNameMap = {
+  "/index-lipton/" : "Lipton Homepage",
+  "/index-magnum/" : "Magnum Homepage",
+  "/about-domestos/" : "About Domestos",
+  "/about-magnum/" : "About Magnum",
+  "/about/" : "About Unilever",
+  "/blog-domestos/" : "Blog Domestos"
+}
+
+exports.onCreateNode = ({node, actions}) => {
+  let value = "undefined"
+  const {createNodeField} = actions;
+  if (pageNameMap[node.path]){
+    value=pageNameMap[node.path]
+  }
+  if (node.context && node.context.productName) {
+    value = node.context.productName
+  }
+  createNodeField({node,name:"fullName",value})
+}
 
 exports.onCreatePage = async ({ page, actions }) => {
   const { createPage, deletePage } = actions
