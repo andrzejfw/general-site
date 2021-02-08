@@ -3,6 +3,8 @@ import styled from "styled-components"
 import SEO from '../../components/Seo/Seo'
 import HeroRexona from '../../assets/images/rexona-about-hero.jpg'
 import HeroRexonaMobile from '../../assets/images/rexona-about-hero-mobile.jpg'
+import BannerRexona from '../../assets/images/rexona-about-banner.jpg'
+import BannerRexonaMobile from '../../assets/images/rexona-about-banner-mobile.jpg'
 
 const HeroImage = styled.img`
     width: 100%;
@@ -15,22 +17,36 @@ const HeroImage = styled.img`
 
 const Section = styled.div`
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 50px auto 80px;
 
     @media(max-width:992px){
         max-width: 90%;
+        margin: 20px auto 50px;
     }
 
     h1 {
         color: #103073;
         text-align: center;
         margin-bottom: 20px;
+
+        @media(max-width:992px){
+        text-align: left;
+    }
     }
 
     h2 {
         color: #103073;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-top: 30px;
+    }
+
+    img {
+        width: 100%;
+        margin-top: 10px;
+
+        @media(max-width:992px){
+        content: url(${BannerRexonaMobile});
+        }
     }
 `;
 
@@ -45,6 +61,7 @@ const RexonaAboutPage = () => (
     <p>Meie teadus- ja arendustöö eksperdid teavad, et meestel ja naistel on deodorantide osas väga erinevad nõudmised. Sellepärast oleme oma tooted välja töötanud vastavalt just inimeste individuaalsetele vajadustele.</p>
     <p>Meie patendeeritud kehale reageeriv tehnoloogia tähendab, et Rexona tunnetab, millal sinu keha vajab täiendavat kaitset – ja annab sellele märguande. </p>
     <p>Rexona teadlased avastasid, et keha reageerib erinevalt olukorras, kui inimesel on palav, ning olukorras, kui inimestel on stress või nad on ärevad. Rexona eesmärk on pakkuda higistamisvastast kaitset mõlemal juhul. No White Marks tehnoloogia tõttu ei jäta deodrandid riietele ühtegi jälge ning riided jäävad sama värskeks nagu sinu enesetunne. Rexona oli esimene kaubamärk, mis tutvustas tooteid, mis ei jäta valgeid jälgi tumedatele riietele.</p>
+    <img src={BannerRexona}/>
     <h2>Rexona rahvusvaheline haare</h2>
     <p>Unilever on üks suurimaid higistamisvastaste vahendite ja deodorantide tootjaid maailmas ning mõistame sellega kaasnevat vastutust. Ühe osana oma pühendumusest jätkusuutlikkuse poole toetame ALUPRO ja BAMA rahvusvahelisi organisatsioone, et julgustada inimesi kogu maailmas tühje aerosoole koguma. Samuti võimaldame miljonitel madala sissetulekuga inimestel nautida Rexona eeliseid tasukohaste minipulkade, minirullide ja teiste deodorantide kaudu, mida toetavad erinevad isikliku hügieeni haridusprogrammid.</p>
     <h2>Iga Rexona aitab levitada positiivset liikumisega seotud sõnumit</h2>

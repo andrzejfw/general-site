@@ -9,7 +9,7 @@ import FormImpl from "react-bootstrap/esm/Form"
 
 export const data = graphql`
 query MyQueryProductsLipton {
-    allProduct {
+    allProduct(filter: {brand: {eq: "Lipton"}}) {
       nodes {
         id
         fullName
@@ -301,7 +301,7 @@ class ProductsLipton extends React.Component{
         <ProductSectionDiv>
         <FilterDiv onLoad={this.ifURL()}>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
-            <Filter onClick={ () => {addURL("All");this.handleShowAll();}}>
+            <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
                 All​​
             </Filter>
             <Filter onClick={ () => {addURL("Functional"); this.handleShowFilterOne();}}>

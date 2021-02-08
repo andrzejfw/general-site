@@ -70,9 +70,9 @@ const HeaderBurgerKnorr = () => {
               transition: "all .3s linear .2s", 
               left: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%",
             }} 
-            to="/knorr" 
+            to="/knorr/about" 
             onClick={() => setNavbarOpen(!navbarOpen)}>
-              Placeholder
+              Kaubamärgist
           </Link>
           <Link className="knorr-navbox-item" 
             style={{
