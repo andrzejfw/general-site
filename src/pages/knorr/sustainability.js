@@ -76,7 +76,7 @@ const AboutPageKnorr = () => {
   return (
     <>
     <SEO title="Knorri jätkusuutlikkus" description="Knorri jätkusuutlikkus. Knorri eesmärk on hankida kõik toorained 100% jätkusuutlikult. Soovime, et meie toit vastaks kõrgeimatele toitumisstandarditele."/>
-    <KnorrHeroImage src={KnorrHeroImg} alt="Knorri jätkusuutlikkus"/> 
+    <KnorrHeroImage src={KnorrHeroImg} alt="Knorr - jätkusuutlik toidu hankimine"/> 
     <Section> 
         <h1>Knorri jätkusuutlikkus</h1>
         <h2>Jätkustuulik toodete hankimine</h2>
@@ -86,7 +86,7 @@ const AboutPageKnorr = () => {
         <h2>Toiduained Knorris</h2>
         <p>Usume, et on oluline tagada, et loomi kasvatatakse heades tingimustes ja, et neid koheldatakse vastavalt heaolustandarditele. Oleme oma loomade heaolu standardid välja töötanud koos erinevate mittetulundusühingutega. Meie eesmärk on tagada, et loomadel on piisavalt ruumi ning valgust ja sobiv keskkond, mis sobib nende loomuliku käitumisega.</p>
         <p>Osana oma 2020. aasta ambitsioonist aitasime paljudel meie tarneahelas olevatel vürtsikasvajatel oma põllumajandustehnikat täiustada ning pääseda juurde koolitustele ja toetustele.</p>
-        <KnorrMiddleBanner src={KnorrBannerImg} alt="Knorri ajalugu"/>
+        <KnorrMiddleBanner src={KnorrBannerImg} alt="Knorr - jätkusuutlik toidu hankimine"/>
         <h2>Toitvate roogade valmistamine</h2>
         <p>Usume, et toitev toit peaks olema kõigile kättesaadav. Hoolitseme selle eest, et köögiviljad säilitaksid naturaalsed omadused meie toodetes. Valmistame toitu, mis sisaldab vajalikke toitaineid erinevatele inimestele – näiteks rauaga rikastatud Knorri kuubikud. Lisaks inspireerime inimesi lisama oma roogadele maitset, kasutades oma retseptides toitvaid koostisosi.</p>
         <p>Koostöös Maailma Toiduprogrammiga (World Food Programme) loome inimestele helgemat tulevikku, kus toitvad road on kättesaadavad rohkematele inimestele kogu maailmas. Igal aastal annetame koos Maailma Toiduprogrammiga koolilastele kuumtoite kogu maailmas ning siiani oleme pakkunud üle kahe miljoni portsjoni.</p>

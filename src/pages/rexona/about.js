@@ -54,14 +54,14 @@ const Section = styled.div`
 const RexonaAboutPage = () => (
   <>
     <SEO title="Rexona deodorantide kaubamärgist. Rexona ainulaadne tehnoloogia vabastab lisakaitse just siis, kui seda kõige rohkem vaja läheb. Rexona ei vea sind alt."/>
-    <HeroImage src={HeroRexona}/>
+    <HeroImage src={HeroRexona} alt="Rexona deodorantide kaubamärgist"/>
     <Section>
     <h1>Rexona deodorantide kaubamärgist</h1>
     <h2>Rexona ei vea sind alt. Unileveri teadlased on välja töötanud ainulaadse tehnoloogia, mis vabastab deodorantide lisakaitse just siis, kui seda kõige rohkem vaja läheb. Võid kindel olla, et Rexona hoiab sind värskena kogu päeva.</h2>
     <p>Meie teadus- ja arendustöö eksperdid teavad, et meestel ja naistel on deodorantide osas väga erinevad nõudmised. Sellepärast oleme oma tooted välja töötanud vastavalt just inimeste individuaalsetele vajadustele.</p>
     <p>Meie patendeeritud kehale reageeriv tehnoloogia tähendab, et Rexona tunnetab, millal sinu keha vajab täiendavat kaitset – ja annab sellele märguande. </p>
     <p>Rexona teadlased avastasid, et keha reageerib erinevalt olukorras, kui inimesel on palav, ning olukorras, kui inimestel on stress või nad on ärevad. Rexona eesmärk on pakkuda higistamisvastast kaitset mõlemal juhul. No White Marks tehnoloogia tõttu ei jäta deodrandid riietele ühtegi jälge ning riided jäävad sama värskeks nagu sinu enesetunne. Rexona oli esimene kaubamärk, mis tutvustas tooteid, mis ei jäta valgeid jälgi tumedatele riietele.</p>
-    <img src={BannerRexona}/>
+    <img src={BannerRexona} alt="Rexona deodorantide kaubamärgist"/>
     <h2>Rexona rahvusvaheline haare</h2>
     <p>Unilever on üks suurimaid higistamisvastaste vahendite ja deodorantide tootjaid maailmas ning mõistame sellega kaasnevat vastutust. Ühe osana oma pühendumusest jätkusuutlikkuse poole toetame ALUPRO ja BAMA rahvusvahelisi organisatsioone, et julgustada inimesi kogu maailmas tühje aerosoole koguma. Samuti võimaldame miljonitel madala sissetulekuga inimestel nautida Rexona eeliseid tasukohaste minipulkade, minirullide ja teiste deodorantide kaudu, mida toetavad erinevad isikliku hügieeni haridusprogrammid.</p>
     <h2>Iga Rexona aitab levitada positiivset liikumisega seotud sõnumit</h2>

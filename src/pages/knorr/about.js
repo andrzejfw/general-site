@@ -76,7 +76,7 @@ const AboutPageKnorr = () => {
   return (
     <>
     <SEO title="Knorri kaubamärgist" description="Knorri kaubamärgist. Knorri lugu sai alguse juba 1838. aastal ning kõrge toidu kvaliteet on olnud meile oluline juba algusest. Loe rohkem Knorri brändi kohta"/>
-    <KnorrHeroImage src={KnorrHeroImg} alt="Knorri kaubamärgistrr"/> 
+    <KnorrHeroImage src={KnorrHeroImg} alt="Knorr kaubamärk - eesmärk, ajalugu, tutvustus"/> 
     <Section> 
         <h1>Knorri kaubamärgist</h1>
         <h2>Knorri eesmärk</h2>
