@@ -21,11 +21,11 @@ const CifAboutSection = styled.section`
       width: 100%;
       margin-bottom:10px;
       object-fit: cover;
-    width: 100%;
-    height: 450px;
-    @media(max-width:992px){
-    height:auto;
-    }
+      width: 100%;
+      height: 450px;
+      @media(max-width:992px){
+      height:auto;
+      }
     }
     @media(max-width:992px){
     margin-top:40px;
@@ -35,6 +35,11 @@ const CifAboutSection = styled.section`
       margin: 20px;
       color: #165648;
       font-size:34px;
+
+      @media(max-width:992px){
+      font-size: 2rem;
+      text-align: left;
+    }
     }
     h2 {
       color: #165648;
@@ -108,21 +113,19 @@ const AboutPage = () => {
     <h2>Puhas maja, puhas meel.</h2>
     <p>Cif usub, et ilusad kodud ja kohad teevad meid õnnelikumaks ning omavad suurt rolli vaimse tervise heaolus. Kuna puhtuse taga on võimas psühholoogia, mis mõjutab otseselt inimese meeleolu, siis on oluline, et kodu puhastamine oleks nauditav ning koristamine tooks naeratuse näole.</p>
     <SectionAccordion>
-      <h2>Esimene samm – korrastage oma kapid ja pinnad</h2>
             <Accordion>
-              {/* Ingredients */}
-              <AccordionTab label="Selgitage välja, mis asjad on olulised/ebaolulised. Millised ebaolulised asjad on võimalik taaskasutada, müüa või annetada?">
+              <AccordionTab label="Esimene samm – korrastage oma kapid ja pinnad">
                 <p>
-                  <ul>
+                  <ul style={{fontSize: "1rem"}}>
+                  <p style={{fontSize: "1rem", marginLeft: "-20px"}}>Selgitage välja, mis asjad on olulised/ebaolulised. Millised ebaolulised asjad on võimalik taaskasutada, müüa või annetada?</p>
                   <li>Kui ees olevad ülesanded hirmutavad teid, alustage väikselt – näiteks kirjutuslaua tühjendamisega, sest puhas kirjutuslaud tekitab puhta meele. Kirjutuslaua puhastamine suurendab tootlikkust.</li>
                   <li>Käige läbi ülejäänud kapid, sahtlid ning eemaldage kõik esemed, mida te enam ei vaja. Sorteerige garderoob näiteks värvi järgi või korrastage faile siltidega.</li>
                   <li>Uurige erinevaid hoiustamise lahendusi nagu korvid, riiulid, mis võiksid aidata põrandapinda puhastada. See mitte ainult ei hoida teie kodu korras, vaid muudab ka koristamise palju lihtsamaks.</li>
                   </ul>
                 </p>
               </AccordionTab>
-              {/* Allergens */}
               <AccordionTab label="Teine samm – sügav puhastus">
-                <p>Kui olete kodu korrastanud, on aeg kodu puhastada tolmust ning mustusest. Lisaks erinevate pindade ja nurkade nühkimise ja poleerimisega, võite tegeleda ka mikrolaineahju, ahju, pesumasina ja muude seadmete puhastamisega. Iga ruumi ja seadme jaoks on Cifil välja pakkuda sobiv puhastusvahend. Palun tutvuge meie <Link to="/cif/products">tootevalikuga</Link>, et välja valida sobivad tooted vajalike pindade puhastamiseks. Palun lugeda tootejuhiseid ja hoiatusi tähelepanelikult.</p>
+                <p style={{fontSize: "1rem"}}>Kui olete kodu korrastanud, on aeg kodu puhastada tolmust ning mustusest. Lisaks erinevate pindade ja nurkade nühkimise ja poleerimisega, võite tegeleda ka mikrolaineahju, ahju, pesumasina ja muude seadmete puhastamisega. Iga ruumi ja seadme jaoks on Cifil välja pakkuda sobiv puhastusvahend. Palun tutvuge meie <Link to="/cif/products">tootevalikuga</Link>, et välja valida sobivad tooted vajalike pindade puhastamiseks. Palun lugeda tootejuhiseid ja hoiatusi tähelepanelikult.</p>
               </AccordionTab>
             </Accordion>
           </SectionAccordion>

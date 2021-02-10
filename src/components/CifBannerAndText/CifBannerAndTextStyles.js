@@ -7,10 +7,10 @@ const CifBannerAndTextStyles = createGlobalStyle`
     margin: 80px auto -20px;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to right,#165648f0,#20846dc2);
+    background: linear-gradient(to bottom,#165648e8 20%,#20846dc2 40%, #20846d1a 100%);
 
     @media(max-width:1600px){
-        padding: 50px 7vw;
+        padding: 50px 7vw 80px;
     }
 
     @media(max-width:992px){
@@ -76,6 +76,7 @@ const CifBannerAndTextStyles = createGlobalStyle`
 
             @media(max-width:992px){
                 text-align: center !important;
+                color: #17584a;
             }
         }
 
@@ -90,6 +91,7 @@ const CifBannerAndTextStyles = createGlobalStyle`
             @media(max-width:992px){
                 text-align: center !important;
                 font-size: 1.1rem;
+                color: #17584a;
             }
         }
         button {
@@ -116,6 +118,8 @@ const CifBannerAndTextStyles = createGlobalStyle`
     @media(max-width:992px){
         margin: 0 auto !important;
         display: block;
+        color: #17584a;
+        background: rgb(255 255 255 / .4);
     }
 }
 
