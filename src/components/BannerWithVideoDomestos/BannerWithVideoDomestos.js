@@ -6,14 +6,20 @@ import { Link } from 'gatsby';
 
 const BannerWithVideoDomestosWrapper = styled.div`
     width:100%;
-    background: #06154b24;    
+    background: linear-gradient(to bottom, #06154b3b, #ffffff);    
     background-size: cover;
 
     @media(max-width:992px){
       height: ${props => props.mobileHeight};
-      background: #06154b24;
+      /* background: #06154b24; */
       padding-bottom:40px;
     }
+
+    .bbpgUy {
+      @media(min-width:993px){
+          margin: 20px 0;
+      }
+}
 `;
 
 const BannerWithVideoDomestos = ({

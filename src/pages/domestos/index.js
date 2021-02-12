@@ -61,6 +61,8 @@ const IndexPage = () => {
       <DomestosCategoriesBox categoryTitle="WC-puhastusvahendid" categoryImage={Bottle} categoryLink="/domestos" alt="WC-puhastusvahendid"></DomestosCategoriesBox>
       <DomestosCategoriesBox categoryTitle="WC-värskendajad" categoryImage={Blocks} categoryLink="/domestos" alt="WC-värskendajad"></DomestosCategoriesBox>
     </DomestosCategories>
+    
+    </DomestosIndexSection>
     <BannerWithVideoDomestos 
                 title="Puhas kodu. Puhas planeet. Puhas tulevik" 
                 paragraph="Põlvkondade vältel oleme aidanud eemaldada mustust ja plekke, mis aitavad inimestel elada tervislikumalt ja nauditavamalt." 
@@ -70,7 +72,6 @@ const IndexPage = () => {
                 videoButtonLink="/domestos/about"
                 >
     </BannerWithVideoDomestos>
-    </DomestosIndexSection>
     </Section>
     </>
   )
