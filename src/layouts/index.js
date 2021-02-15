@@ -106,6 +106,8 @@ import HeaderRexona from "../components/HeaderRexona/HeaderRexona"
 import HeaderRexonaStyles from "../components/HeaderRexona/HeaderRexonaStyles"
 import HeaderBurgerRexona from "../components/HeaderRexona/HeaderBurgerRexona"
 import HeaderBurgerRexonaStyles from "../components/HeaderRexona/HeaderBurgerRexonaStyles"
+import RexonaCategoriesStyles from "../components/RexonaCategories/RexonaCategoriesStyles"
+import RexonaBannerAndTextStyles from "../components/RexonaBannerAndText/RexonaBannerAndTextStyles"
 import FaviconRexona from "../components/Favicon/FaviconRexona"
 
 const MainLayout = ({ children, location }) => (
@@ -394,6 +396,8 @@ const MainLayout = ({ children, location }) => (
       <PopupStyles/>
       <QuotesStyles/>
       <CarouselStyle/>
+      <RexonaCategoriesStyles/>
+      <RexonaBannerAndTextStyles/>
       <FaviconRexona/>
       </>
     }

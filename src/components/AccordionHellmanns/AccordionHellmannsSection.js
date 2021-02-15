@@ -24,7 +24,6 @@ const AccordionDivHellmanns = styled.div`
     }
     
     .div-content {
-
       @media (max-width: 992px){
         display: flex;
         align-items: center;

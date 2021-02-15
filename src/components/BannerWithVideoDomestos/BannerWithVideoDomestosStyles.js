@@ -79,6 +79,8 @@ const BannerWithVideoDomestosStyles = createGlobalStyle`
         height: 200px;
     }
 }
+
+
 `;
 
 export default BannerWithVideoDomestosStyles;

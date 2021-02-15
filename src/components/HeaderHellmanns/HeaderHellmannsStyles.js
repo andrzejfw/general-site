@@ -8,7 +8,6 @@ const HeaderHellmannsStyles = createGlobalStyle`
     z-index: 99;
     height: 75px;
     border-bottom: 3px solid #004976;
-    /* box-shadow: 0 0 10px #004976; */
     text-align: center;
     background: #fdf6e8;
 
