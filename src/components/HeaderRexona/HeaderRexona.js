@@ -12,7 +12,7 @@ const HeaderRexona = () => {
                 <Link to="/rexona" activeClassName="active" className="link-rexona hover">Homepage</Link>
                 <Link to="/rexona/products" activeClassName="active" className="link-rexona hover">Tooted</Link>
                 <Link to="/rexona/about" activeClassName="active" className="link-rexona">Kaubamärgist</Link>
-                <Link to="/contact" activeClassName="active" className="link-rexona">Kontakt</Link>
+                <a href="/contact" target="_blank" activeClassName="active" className="link-rexona">Kontakt</a>
             </div>
         </nav>
         </>

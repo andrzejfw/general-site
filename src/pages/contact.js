@@ -82,8 +82,8 @@ const ContactPage = () => (
           <p>Paldiski mnt 96, Tallinn, 13552</p>
         </ContactInformationOne>
         <ContactInformationTwo>
-          <p><a href="mailto:info-estonia@unilever.com">info-estonia@unilever.com</a></p>
-          <p><a href="tel:+372 612 0410">+372 612 0410</a></p>
+          <p><a href="mailto:info-estonia@unilever.com">office.Estonia@unilever.com</a></p>
+          <p><a href="tel:+372 612 0410">+372 5344 6065</a></p>
         </ContactInformationTwo>
       </ContactInformation>
       <ContactMap>

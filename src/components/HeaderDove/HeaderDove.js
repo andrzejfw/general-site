@@ -12,7 +12,7 @@ const HeaderDove = () => {
                 <Link to="/dove/sustainability" activeStyle={{fontWeight: "700"}}>Jätkusuutlikkus</Link>
                 <Link to="/dove"><img src={DoveLogo} alt="Dove Eesti jäätis logo"/></Link>
                 <Link to="/dove/purpose" activeStyle={{fontWeight: "700"}}>Meie eesmärk</Link>
-                <Link to="/contact" activeStyle={{fontWeight: "700"}}>Kontakt</Link>
+                <a href="/contact" target="_blank" activeStyle={{fontWeight: "700"}}>Kontakt</a>
             </div>
         </nav>
         </>

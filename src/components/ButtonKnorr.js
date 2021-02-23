@@ -10,7 +10,7 @@ const Button = styled.button`
     line-height: 3.125rem;
     margin: 0 auto;
     outline: 0;
-    text-align: center;
+    text-align: center !important;
     font-weight: 700;
     font-size: 1rem;
     border: 1px solid transparent;
@@ -22,9 +22,12 @@ const Button = styled.button`
     transition: all .2s ease-in-out;
 
     &:hover{
-    text-decoration: none;
+      text-decoration: none;
       transform: scale(1.1);
-      
+      border-color: #ffd32e;
+      text-decoration: none;
+      color: #fff;
+      background-color: #ffd32e;
     }
     &:focus{
         outline: none;

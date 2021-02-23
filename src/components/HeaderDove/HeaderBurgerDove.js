@@ -87,16 +87,17 @@ const HeaderBurgerDove = () => {
           onClick={() => setNavbarOpen(!navbarOpen)}>
             Meie eesmärk
         </Link>
-        <Link className="dove-navbox-item" 
+        <a className="dove-navbox-item" 
           style={{
             transition: "all .4s linear .5s", 
             left: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%", 
             display: productsOpen ? "none" : "flex"
-          }} 
-          to="/contact" 
+          }}
+          target="_blank" 
+          href="/contact" 
           onClick={() => setNavbarOpen(!navbarOpen)}>
             Kontakt
-        </Link>
+        </a>
       </div>
 
       <div class="dove-products"  style={{

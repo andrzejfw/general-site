@@ -27,11 +27,11 @@ const FooterKnorr = () => (
             
             <ul className="footer-knorr-list">       
                 <li className="footer-knorr-item"><Link to="/sitemap">saidi kaart</Link></li>
-                <li className="footer-knorr-item"><Link to="/contact">kontakt</Link></li>
+                <li className="footer-knorr-item"><a href="/contact" target="_blank">kontakt </a></li>
                 <li className="footer-knorr-item-list">
-                    <a href="/cookie-notice">küpsise-eeskirjad</a>
-                    <a href="/privacy-notice">privaatsuspoliitika</a>
-                    <a href="/legal-notice">juriidiline teave</a></li>
+                    <a href="/cookie-notice" target="_blank">küpsise-eeskirjad</a>
+                    <a href="/privacy-notice" target="_blank">privaatsuspoliitika</a>
+                    <a href="/legal-notice" target="_blank">juriidiline teave</a></li>
                 <li className="footer-knorr-item">
                 <img src={KnorrFooter} className="knorr-footer-graphic-image-desktop" alt="Knorr ikoon jalus"/>
             </li>           

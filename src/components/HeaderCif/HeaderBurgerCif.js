@@ -111,15 +111,16 @@ const HeaderBurgerCif = () => {
             onClick={() => setNavbarOpen(!navbarOpen)}>
               Ettevõttest
           </Link>
-          <Link className="cif-navbox-item" 
+          <a className="cif-navbox-item" 
             style={{
               transition: "all .3s linear", 
               left: navbarOpen ? "0" : "-100%",
             }} 
-            to="/contact" 
+            href="/contact"
+            target="_blank" 
             onClick={() => setNavbarOpen(!navbarOpen)}>
               Kontakt
-          </Link>
+          </a>
         </div>
     </nav>
   )

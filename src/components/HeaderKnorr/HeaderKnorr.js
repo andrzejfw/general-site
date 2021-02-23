@@ -12,7 +12,7 @@ const HeaderKnorr = () => {
                 <Link to="/knorr/products" activeClassName="active" className="link-knorr">Tooted</Link>
                 <Link to="/knorr/about" activeClassName="active" className="link-knorr">Kaubamärgist</Link>
                 <Link to="/knorr/sustainability" activeClassName="active" className="link-knorr">Jätkusuutlikkus</Link>
-                <Link to="/contact" activeClassName="active" className="link-knorr">Kontakt</Link>
+                <a href="/contact" target="_blank" activeClassName="active" className="link-knorr">Kontakt</a>
             </div>
         </nav>
         </>

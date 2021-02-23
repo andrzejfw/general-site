@@ -187,35 +187,64 @@ const ProductsUl = styled.ul`
         grid-template-columns: repeat(2, 1fr);
     }
 `;
-class ProductsMagnum extends React.Component{
-    state = {
-        allProducts: true,
-        filterOne: false,
-        filterTwo: false,
-        filterThree: false,
+
+const ShowMore = styled.button`
+    color: #523022;
+    padding: 10px 30px;
+    width: 150px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background:linear-gradient(60deg,#c5923c 0,#edd496 40%,#edd496 60%,#c5923c 100%);
+    border:none;
+    text-transform:none;
+    transition:.5s;
+    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
+    outline: none;
+    text-decoration:none;
+    &:hover{
+      background: linear-gradient(60deg,#4e2c1d 0,#c5923c 40%,#c5923c 60%,#4e2c1d 100%);
+      transform: scale(1.15);
+      opacity: 1;
+      border:none;
+      outline: none;
+      text-decoration:none;
     }
+    &:focus{
+        outline: none;
+      }
+`;
+
+const defaultState = {
+    allProducts: true,
+    filterOne: false,
+    filterTwo: false,
+    limit: 12, 
+}
+
+class ProductsMagnum extends React.Component{
+
+    state = defaultState
+
     handleShowAll = () => {
         this.setState({
-            allProducts: true,
-            filterOne: false,
-            filterTwo: false,
-            filterThree: false,
+            ...defaultState
         })
     }
+
     handleShowFilterOne = () => {
         this.setState({
-            allProducts: false,
+            ...defaultState, 
             filterOne: true,
-            filterTwo: false,
-            filterThree: false,
         })
     }
+
     handleShowFilterTwo = () => {
         this.setState({
-            allProducts: false,
-            filterOne: false,
+            ...defaultState, 
             filterTwo: true,
-            filterThree: false,
         })
     }
     
@@ -252,6 +281,7 @@ class ProductsMagnum extends React.Component{
             url.searchParams.delete('filter');
             window.history.pushState({}, '', url);
         }
+
       return (
         <>
         <MagnumHeroImage src={MagnumHeroImg} alt="Magnum jäätis"/> 
@@ -274,9 +304,9 @@ class ProductsMagnum extends React.Component{
                 <div>
                 <h1>Kogu jäätis</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.map(item => (
+                    {data.allProduct.nodes.filter((_,i) => i<this.state.limit).map(item => (
                         <li key={item.id}>
-                            <a href={item.id}>
+                            <a href={`/magnum/products/${item.id}`}>
                             <div>
                                 <img src={item.img}/>
                                 <h3>{item.fullName}</h3>
@@ -285,6 +315,8 @@ class ProductsMagnum extends React.Component{
                         </li>
                     ))}
                 </ProductsUl>
+                {(data.allProduct.nodes.length>12 && this.state.limit<data.allProduct.nodes.length) && 
+                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Show More </ShowMore>}
             </div>
             ) : null}
             </ProductDiv>
@@ -294,9 +326,7 @@ class ProductsMagnum extends React.Component{
                 <div>
                 <h1>Pulgajäätised</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes
-                    .filter(item => (item.format.includes("Pulgajäätised")))
-                    .map(item => (
+                    {data.allProduct.nodes.filter(item => (item.format.includes("Pulgajäätised"))).map(item => (
                         <li key={item.id}>
                             <div>
                                 <img src={item.img}/>
@@ -314,9 +344,7 @@ class ProductsMagnum extends React.Component{
                 <div>
                 <h1 style={{textAlign: "center"}}>Perejäätised</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes
-                    .filter(item => (item.format.includes("Perejäätised")))
-                    .map(item => (
+                    {data.allProduct.nodes.filter(item => (item.format.includes("Perejäätised"))).map(item => (
                         <li key={item.id}>
                             <div>
                                 <img src={item.img}/>

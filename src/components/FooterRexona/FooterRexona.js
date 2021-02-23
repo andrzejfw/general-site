@@ -22,11 +22,11 @@ const FooterRexona = () => (
             
             <ul className="footer-rexona-list">       
                 <li className="footer-rexona-item"><Link to="/sitemap">saidi kaart</Link></li>
-                <li className="footer-rexona-item"><Link to="/contact">kontakt</Link></li>
+                <li className="footer-rexona-item"><a href="/contact" target="_blank">kontakt </a></li>
                 <li className="footer-rexona-item-list">
-                    <a href="/cookie-notice">küpsise-eeskirjad</a>
-                    <a href="/privacy-notice">privaatsuspoliitika</a>
-                    <a href="/legal-notice">juriidiline teave</a>
+                    <a href="/cookie-notice" target="_blank">küpsise-eeskirjad</a>
+                    <a href="/privacy-notice" target="_blank">privaatsuspoliitika</a>
+                    <a href="/legal-notice" target="_blank">juriidiline teave</a>
                   </li>
                 <li className="footer-rexona-item">
                 <img src={RexonaProduct} className="rexona-footer-graphic-image" alt="Dove ikoon jalus"/>

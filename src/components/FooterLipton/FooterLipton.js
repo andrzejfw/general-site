@@ -237,8 +237,8 @@ const FooterLipton = () => (
         </FooterSection>
             <FooterList>            
                 <FooterItem><Link to="/sitemap">saidi kaart</Link></FooterItem>
-                <FooterItem><Link to="/contact">kontakt</Link></FooterItem>
-                <FooterItemList><a href="/cookie-notice">küpsise-eeskirjad</a><a href="/privacy-notice">privaatsuspoliitika</a><a href="/legal-notice">juriidiline teave</a></FooterItemList>           
+                <FooterItem><a href="/contact" target="_blank">kontakt </a></FooterItem>
+                <FooterItemList><a href="/cookie-notice" target="_blank">küpsise-eeskirjad</a><a href="/privacy-notice" target="_blank">privaatsuspoliitika</a><a href="/legal-notice" target="_blank">juriidiline teave</a></FooterItemList>           
             </FooterList>
         <GraphicImage src={LadyWithTea} alt="Lipton ikoon jalus"/>
     </FooterWrapper>

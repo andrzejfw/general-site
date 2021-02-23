@@ -1,13 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
-const CifBannerAndTextStyles = createGlobalStyle`
+const KnorrBannerAndTextReversedStyles = createGlobalStyle`
 
-.cif-bannerandtext-section {
+.knorr-bannerandtext-section-reversed {
     padding: 50px 17vw;
-    margin: 80px auto -20px;
+    margin: 0px auto -20px;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to bottom,#165648e8 20%,#20846dc2 40%, #20846d1a 100%);
+    background: white;
 
     @media(max-width:1600px){
         padding: 50px 7vw 80px;
@@ -25,13 +25,13 @@ const CifBannerAndTextStyles = createGlobalStyle`
     }
 }
 
-.cif-image-section {
+.knorr-image-section-reversed {
 
     img {
         width: 35vw;
         height: 350px;
         object-fit: cover;
-        border: 3px solid #165648;
+        border: 3px solid #007a33;
         border-radius: 14px;
 
         @media(max-width:1600px){
@@ -48,27 +48,28 @@ const CifBannerAndTextStyles = createGlobalStyle`
     }
 
     @media(max-width:992px){
-        margin: 0 auto 25px;
+        margin: 25px auto 0;
     }
-.imagepc {
+.imagepc-reversed {
     @media(max-width:1200px){
         display:none;
     }
 }
-.imagemobile {
+.imagemobile-reversed {
     @media(min-width:1201px){
         display:none;
     }
 }
 }
 
-.cif-paragraph-section {
+.knorr-paragraph-section-reversed {
     margin: 0 50px;
 
         h2 {
             font-size: 1.7rem;
-            color: #fff;
+            color: #007a33;
             font-weight: bold;
+            text-align: right;
 
             @media(max-width:1600px){
                 font-size: 1.5rem;
@@ -76,13 +77,14 @@ const CifBannerAndTextStyles = createGlobalStyle`
 
             @media(max-width:992px){
                 text-align: center !important;
-                color: #17584a;
+                color: #007a33;
             }
         }
 
         p {
             font-size: 1.3rem;
-            color: #fff;
+            color: #007a33;
+            text-align: right;
 
             @media(max-width:1600px){
                 font-size: 1.2rem;
@@ -91,10 +93,13 @@ const CifBannerAndTextStyles = createGlobalStyle`
             @media(max-width:992px){
                 text-align: center !important;
                 font-size: 1.1rem;
-                color: #17584a;
+                color: #007a33;
             }
         }
         button {
+            margin-right: 0;
+            margin-left: auto;
+            text-align: center !important;
             @media(max-width:992px){
                 text-align: center !important;
                 margin: 0 auto;
@@ -109,7 +114,7 @@ const CifBannerAndTextStyles = createGlobalStyle`
         }
 }
 
-.cif-paragraph-section .fKAzQC {
+.knorr-paragraph-section .fKAzQC {
     margin: 0 !important;
     display: inline-block;
     color: #fff;
@@ -123,11 +128,12 @@ const CifBannerAndTextStyles = createGlobalStyle`
     }
 }
 
-.cif-bannerandtext-button-link {
+.knorr-bannerandtext-button-link-reversed {
     text-decoration: none;
+    width: 100%;
     color: inherit;
     font-size: 1.5rem;
-    width: 100%;
+    text-align: center;
 
     &:hover {
         text-decoration: none;
@@ -137,4 +143,4 @@ const CifBannerAndTextStyles = createGlobalStyle`
 
 `;
 
-export default CifBannerAndTextStyles;
+export default KnorrBannerAndTextReversedStyles;

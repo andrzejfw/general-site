@@ -4,9 +4,6 @@ import { graphql } from 'gatsby'
 import LiptonHeroImg from '../../assets/images/lipton-products-hero.jpg'
 import LiptonHeroImgMobile from '../../assets/images/lipton-products-hero-mobile.jpg'
 
-
-import FormImpl from "react-bootstrap/esm/Form"
-
 export const data = graphql`
 query MyQueryProductsLipton {
     allProduct(filter: {brand: {eq: "Lipton"}}) {
@@ -118,7 +115,6 @@ const Filter = styled.button`
     margin: 10px 10px;
     border-radius: 10px;
     background:#BA2318;
-    border:none;
     text-transform:none;
     transition:.5s;
     box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
@@ -342,9 +338,7 @@ class ProductsLipton extends React.Component{
                 <div>
                 <h1 style={{textAlign: "center" }}>Functional</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes
-                    .filter(item => (item.shortTitle.includes("Functional")))
-                    .map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Functional"))).map(item => (
                         <li key={item.id}>
                             <a href={`/lipton/products/${item.id}`}>
                             <div>
@@ -364,9 +358,7 @@ class ProductsLipton extends React.Component{
                 <div>
                 <h1 style={{textAlign: "center"}}>Herbal</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes
-                    .filter(item => (item.shortTitle.includes("Herbal")))
-                    .map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Herbal"))).map(item => (
                         <li key={item.id}>
                             <a href={`/lipton/products/${item.id}`}>
                             <div>
@@ -386,9 +378,7 @@ class ProductsLipton extends React.Component{
                 <div>
                 <h1 style={{textAlign: "center"}}>Green</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes
-                    .filter(item => (item.shortTitle.includes("Green")))
-                    .map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Green"))).map(item => (
                         <li key={item.id}>
                             <a href={`/lipton/products/${item.id}`}>
                             <div>

@@ -83,15 +83,16 @@ const HeaderBurgerKnorr = () => {
             onClick={() => setNavbarOpen(!navbarOpen)}>
               Jätkusuutlikkus
           </Link>
-          <Link className="knorr-navbox-item" 
+          <a className="knorr-navbox-item" 
             style={{
               transition: "all .3s linear .3s", 
               left: navbarOpen ? (productsOpen ? "-100%" : "0") : "-100%",
             }} 
-            to="/contact" 
+            href="/contact" 
+            target="_blank"
             onClick={() => setNavbarOpen(!navbarOpen)}>
               Kontakt
-          </Link>
+          </a>
         </div>
 
         <div class="knorr-products"  style={{

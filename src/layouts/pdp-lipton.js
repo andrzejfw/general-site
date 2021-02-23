@@ -281,7 +281,7 @@ const PostLayout = ({ data, pageContext }) => {
         </ProductImage>
           <ProductMainInfo>
             <h1>{data.product.fullName}</h1>
-            <p>{data.product.productLine}</p>
+            <p>{data.product.productDescription}</p>
             <BINLipton></BINLipton>
             
           </ProductMainInfo>
@@ -326,7 +326,7 @@ const PostLayout = ({ data, pageContext }) => {
           {/* <h3>Kasutusjuhend</h3> */}
         {/* </ProductRowCenter> */}
       </BottomSectionWrapper>
-      <CarouselLipton/>
+      {/* <CarouselLipton/> */}
     </ProductContainer>
     </>
   );

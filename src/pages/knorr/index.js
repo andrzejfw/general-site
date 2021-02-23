@@ -2,7 +2,16 @@ import React from "react"
 import styled from 'styled-components'
 import SEO from '../../components/Seo/Seo'
 import KnorrHeroImg from '../../assets/images/knorr-hero-hp.jpg'
-
+import KnorrCategories from '../../components/KnorrCategories/KnorrCategories'
+import KnorrCategoriesBox from '../../components/KnorrCategories/KnorrCategoriesBox'
+import KnorrBannerAndText from '../../components/KnorrBannerAndText/KnorrBannerAndText'
+import KnorrBannerAndTextReversed from '../../components/KnorrBannerAndTextReversed/KnorrBannerAndTextReversed'
+import CifSpray from '../../assets/images/cif-spray.png'
+import CifCream from '../../assets/images/cif-cream.png'
+import KnorrAboutHeroImg from '../../assets/images/knorr-about-banner.jpg'
+import KnorrAboutHeroImgMobile from '../../assets/images/knorr-about-banner-mobile.jpg'
+import KnorrSustainabilityHeroImg from '../../assets/images/knorr-sustainability-banner.jpg'
+import KnorrSustainabilityHeroImgMobile from '../../assets/images/knorr-sustainability-banner-mobile.jpg'
 
 const Section = styled.section`
     width:100%;
@@ -32,19 +41,36 @@ const KnorrHeroImage = styled.img`
 
 const IndexPageKnorr = () => {
   return (
-   <>
-   <SEO title="Knorr Eesti" description="Knorr Eesti."/>
-   <Section> 
-    <KnorrHeroImage src={KnorrHeroImg} alt="Knorr"/> 
-    <p style={{margin: "50px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p style={{margin: "50px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p style={{margin: "50px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p style={{margin: "50px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p style={{margin: "50px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p style={{margin: "50px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p style={{margin: "50px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </Section>
-    </>
-  )
+    <>
+    <SEO title="Knorr toiduvalmistamise tooted" description="Knorr pakub suurepäraseid maitseelamusi ja aitab lähemale tuua teiste kultuuride autentset kööki. Tutvu Knorri kaubamärgi, eesmärkide ning toodetega."/>
+    <Section> 
+     <KnorrHeroImage src={KnorrHeroImg} alt="Knorr toiduvalmistamise tooted"/> 
+     <KnorrCategories sectionTitle="Meie kategooriaid">
+       <KnorrCategoriesBox categoryTitle="Pakisupid" categoryImage={CifCream} categoryLink="/knorr/products" alt="Knorr Pakisupid"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Topsiroad" categoryImage={CifSpray} categoryLink="/knorr/products" alt="Knorr Topsiroad"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Kiirnuudlid" categoryImage={CifSpray} categoryLink="/knorr/products" alt="Knorr Kiirnuudlid"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Puljongid" categoryImage={CifSpray} categoryLink="/knorr/products" alt="Knorr Puljongid"></KnorrCategoriesBox>
+     </KnorrCategories>
+     <KnorrBannerAndText
+         image={KnorrAboutHeroImg}
+         imagemobile={KnorrAboutHeroImgMobile}
+         title="Knorri kaubamärgist"
+         paragraphText="Knorri lugu sai alguse juba 1838. aastal ning kõrge toidu kvaliteet on olnud meile oluline juba algusest."
+         buttonCTA="Loe rohkem"
+         buttonLink="/knorr/about"
+         >
+      </KnorrBannerAndText>
+      <KnorrBannerAndTextReversed
+         image={KnorrSustainabilityHeroImg}
+         imagemobile={KnorrSustainabilityHeroImgMobile}
+         title="Knorri jätkusuutlikkus"
+         paragraphText="Knorri eesmärk on hankida kõik toorained 100% jätkusuutlikult. Soovime, et meie toit vastaks kõrgeimatele toitumisstandarditele."
+         buttonCTA="Loe rohkem"
+         buttonLink="/knorr/sustainability"
+         >
+      </KnorrBannerAndTextReversed>
+     </Section>
+     </>
+   )
 }
 export default IndexPageKnorr

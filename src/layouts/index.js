@@ -96,6 +96,9 @@ import HeaderKnorr from "../components/HeaderKnorr/HeaderKnorr"
 import HeaderKnorrStyles from "../components/HeaderKnorr/HeaderKnorrStyles"
 import HeaderBurgerKnorr from "../components/HeaderKnorr/HeaderBurgerKnorr"
 import HeaderBurgerKnorrStyles from "../components/HeaderKnorr/HeaderBurgerKnorrStyles"
+import KnorrCategoriesStyles from "../components/KnorrCategories/KnorrCategoriesStyles"
+import KnorrBannerAndTextStyles from "../components/KnorrBannerAndText/KnorrBannerAndTextStyles"
+import KnorrBannerAndTextReversedStyles from "../components/KnorrBannerAndTextReversed/KnorrBannerAndTextReversedStyles"
 import FaviconKnorr from "../components/Favicon/FaviconKnorr"
 
 //rexona
@@ -381,6 +384,9 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle/>
       <FaviconKnorr/>
+      <KnorrCategoriesStyles/>
+      <KnorrBannerAndTextStyles/>
+      <KnorrBannerAndTextReversedStyles/>
       </>
     }
     {location.pathname.match('rexona') && 

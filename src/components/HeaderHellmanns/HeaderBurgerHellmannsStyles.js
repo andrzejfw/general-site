@@ -32,7 +32,7 @@ const HeaderBurgerMagnumStyles = createGlobalStyle`
     display: flex;
     position: absolute;
     top: 35px;
-    right: 10px;
+    right: 30px;
 }
 
 .hellmanns-navbox {

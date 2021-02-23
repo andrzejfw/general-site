@@ -12,7 +12,7 @@ const HeaderHellmanns = () => {
                 <Link to="/hellmanns/sustainability">Ettevõttest</Link>
                 <Link to="/hellmanns"><img src={HellmannsLogo} alt="Hellmann's Eesti logo"/></Link>
                 <Link to="/hellmanns/history">Ajalugu</Link>
-                <Link to="/contact">Kontakt</Link>
+                <a href="/contact" target="_blank">Kontakt</a>
             </div>
         </nav>
         </>

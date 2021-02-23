@@ -82,13 +82,14 @@ const HeaderBurgerMagnum = () => {
             onClick={() => setNavbarOpen(!navbarOpen)}>
               Telli
           </Link>
-          <Link className="magnum-navbox-item" 
+          <a className="magnum-navbox-item" 
             style={{display: navbarOpen ? (productsOpen ? "none" : "flex") : "none"
           }} 
-          to="/contact"
+          href="/contact"
+          target="_blank"
           onClick={() => setNavbarOpen(!navbarOpen)}>
             Kontakt
-          </Link>
+          </a>
         </div>
 
         <div class="magnum-products"  style={{

@@ -12,7 +12,7 @@ const HeaderCif = () => {
                 <Link to="/cif/products" activeClassName="active" className="link-cif">Tooted</Link>
                 <Link to="/cif/about" activeClassName="active" className="link-cif">Ettevõttest</Link>
                 {/* <Link to="/" activeClassName="active" className="link-cif">Meie eesmärk</Link> */}
-                <Link to="/contact" activeClassName="active" className="link-cif">Kontakt</Link>
+                <a href="/contact" activeClassName="active" className="link-cif" target="_blank">Kontakt</a>
             </div>
         </nav>
         </>

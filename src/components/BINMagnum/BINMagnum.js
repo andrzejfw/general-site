@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from "gatsby"
+import CoopLogo from '../../assets/images/coop.png'
+import RimiLogo from '../../assets/images/rimi.png'
+import PrismaLogo from '../../assets/images/prisma.png'
 // import ButtonRadius from "../Button"
 
 const Button = styled.a`
@@ -61,6 +64,10 @@ const PopupBox = styled.div`
     margin: 15px;
     img{
       margin-bottom:10px;
+      width: 200px;
+    }
+    &:hover {
+      transform: scale(1.3);
     }
 `;
 
@@ -100,16 +107,12 @@ transition: all .2s linear;
     border:none;
     outline: none;
     text-decoration:none;
+    color: #523022;
 }
 &:focus{
     outline: none;
 }
 `;
-
- 
-
-
-
 
 
 const BINLipton = () => {
@@ -139,8 +142,19 @@ const BINLipton = () => {
       <Close  href="#">&times;</Close>
       <Content class="content">
         <PopupBox >
-          <img src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg" alt="retailer icon"></img>
-          {/* <ButtonRadius href={etailerUrlArr[0]} target="_blank">KUP TERAZ</ButtonRadius> */}
+          <a href="https://www.prismamarket.ee/products/17839?tag_ids=10305" target="_blank">
+          <img src={PrismaLogo} alt="retailer icon"></img>
+          </a>
+        </PopupBox>
+        <PopupBox >
+          <a href="https://www.rimi.ee/epood/ee/tooted/kulmutatud-toidukaubad/jaatis-ja-jaa/c/SH-4-1?page=1&pageSize=20&query=%3Arelevance%3AallCategories%3ASH-4-1%3Abrand%3AMagnum" target="_blank">
+          <img src={RimiLogo} alt="retailer icon"></img>
+          </a>
+        </PopupBox>
+        <PopupBox >
+          <a href="https://ecoop.ee/et/kategooriad/jaatised/?brand=Magnum" target="_blank">
+          <img src={CoopLogo}  alt="retailer icon"></img>
+          </a>
         </PopupBox>
         
       </Content>

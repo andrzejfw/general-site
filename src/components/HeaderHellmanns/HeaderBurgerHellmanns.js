@@ -122,14 +122,15 @@ const HeaderBurgerHellmanns = () => {
             onClick={() => setNavbarOpen(!navbarOpen)}>
               Ajalugu
           </Link>
-          <Link className="hellmanns-navbox-item" 
+          <a className="hellmanns-navbox-item" 
             style={{
               display: navbarOpen ? "flex" : "none"
             }} 
-            to="/contact" 
+            href="/contact"
+            target="_blank" 
             onClick={() => setNavbarOpen(!navbarOpen)}>
               Kontakt
-          </Link>
+          </a>
         </div>
     </nav>
   )

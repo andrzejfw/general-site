@@ -3,7 +3,41 @@ import styled from 'styled-components';
 import { default as SliderLipton } from 'react-slick'; 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { graphql } from 'gatsby'
 import LiptonGreenTea from '../../assets/images/lipton-green-tea.jpg';
+
+export const data = graphql`
+query MyQueryCarouselLipton ($slug: Int!) {
+  product(slug: { eq: $slug }) {
+    id
+    allergens
+    brand
+    etailerUrl
+    feature1
+    feature2
+    feature3
+    feature4
+    feature5
+    feature6
+    format
+    formatOptional
+    fullName
+    master
+    productDescription
+    productDoYouKnow
+    productHowToUse
+    productLine
+    productShortDescription
+    shortTitle
+    tag
+    volume
+    slug
+    ingredients
+    img
+    variant
+  }
+}
+`;
 
 const SliderDiv = styled.div`
     outline:none;
@@ -68,8 +102,9 @@ function SampleNextArrow(props) {
   }
 
 
- export default class extends React.Component{
+ export default class extends React.Component {
     render() {
+    const { data } = this.props;
     const  settings = {
         dots: true,
         infinite: true,
@@ -102,54 +137,73 @@ function SampleNextArrow(props) {
             },
           ]
       };
+
       return (
+      <>  
         <div className="carousel-lipton">
           <h2>Explore World of Tea</h2>
           <SliderLipton {...settings}>
             <SliderDiv>
               <SliderTextCenter>
-                <ImageSlider src={LiptonGreenTea}/>
-                <TextSlider>Organic Green Tea Natural</TextSlider>
+              <a href="/magnum/Magnum%20Almond%20koonusjäätis_153314">
+                <ImageSlider src={data.product.img}/>
+                <TextSlider>{data.product.fullName}</TextSlider>
+              </a>
+
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
+              <a href="/magnum/Magnum%20Almond%20koonusjäätis_153314">
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea with Mint</TextSlider>
+              </a>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
+              <a href="/magnum/Magnum%20Almond%20koonusjäätis_153314">
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea with Lime and Lemon</TextSlider>
+              </a>
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
+              <a href="/magnum/Magnum%20Almond%20koonusjäätis_153314">
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
+              </a>  
               </SliderTextCenter>
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
+              <a href="/magnum/Magnum%20Almond%20koonusjäätis_153314">
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
+              </a>  
               </SliderTextCenter>
+
             </SliderDiv>
             <SliderDiv>
             <SliderTextCenter>
+              <a href="/magnum/Magnum%20Almond%20koonusjäätis_153314">
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
+              </a>  
               </SliderTextCenter>
             </SliderDiv> 
             <SliderDiv>
             <SliderTextCenter>
+              <a href="/magnum/Magnum%20Almond%20koonusjäätis_153314">
                 <ImageSlider src={LiptonGreenTea}/>
                 <TextSlider>Green Tea</TextSlider>
+              </a>  
               </SliderTextCenter>
             </SliderDiv>
           </SliderLipton>
         </div>
+      </>  
       );
-    }
-  }
+  };
+ }

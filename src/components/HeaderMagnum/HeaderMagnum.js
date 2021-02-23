@@ -12,7 +12,7 @@ const HeaderMagnum = () => {
                 <Link to="/magnum/about" activeStyle={{fontWeight: "700"}}>Ettevõttest</Link>
                 <Link to="/magnum"><img src={MagnumLogo} alt="Magnum Eesti jäätis logo"/></Link>
                 <Link to="/magnum/delivery" activeStyle={{fontWeight: "700"}}>Telli</Link>
-                <Link to="/contact" activeStyle={{fontWeight: "700"}}>Kontakt</Link>
+                <a href="/contact" target="_blank" activeStyle={{fontWeight: "700"}}>Kontakt</a>
             </div>
         </nav>
         </>

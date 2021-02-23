@@ -113,14 +113,12 @@ const SiteMap = ({data}) => {
         <SiteMapHeader>Saidi Kaart</SiteMapHeader>
         <SiteMapWrapper>
             <SiteMapSection>
-                <h2>Common</h2>
+                <h2>Avaleht</h2>
                 <ul>
                     {commonNodes
                     .filter(item => !(item.path.includes("404")))
                     .filter(item => !(item.path.includes("/sitemap/")))
                     .filter(item => !(item.path.includes("/products/")))
-                    .filter(item => !(item.path.includes("/articles/")))
-                    .filter(item => !(item.path.includes("/recipes/")))
                     .map(item => (
                         <li key={item.id}>
                             <Link to={item.path}>
@@ -131,38 +129,10 @@ const SiteMap = ({data}) => {
                 </ul>
             </SiteMapSection>
             <SiteMapSection>
-                <h2>Products</h2>
+                <h2>Tooted</h2>
                 <ul>
                     {productNodes
                     .filter(item => (item.path.includes("/products/")))
-                    .map(item => (
-                        <li key={item.id}>
-                            <Link to={item.path}>
-                                {item.path}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </SiteMapSection>
-            <SiteMapSection>
-                <h2>Articles</h2>
-                <ul>
-                    {articlesNodes
-                    .filter(item => (item.path.includes("/articles/")))
-                    .map(item => (
-                        <li key={item.id}>
-                            <Link to={item.path}>
-                                {item.path}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </SiteMapSection>
-            <SiteMapSection>
-                <h2>Recipes</h2>
-                <ul>
-                    {recipesNodes
-                    .filter(item => (item.path.includes("/recipes/")))
                     .map(item => (
                         <li key={item.id}>
                             <Link to={item.path}>

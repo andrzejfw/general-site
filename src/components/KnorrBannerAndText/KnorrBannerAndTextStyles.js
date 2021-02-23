@@ -1,13 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
+import KnorrWaveOne from '../../assets/images/knorr-wave1.jpg';
+import KnorrWaveTwo from '../../assets/images/knorr-wave2.jpg';
+const KnorrBannerAndTextStyles = createGlobalStyle`
 
-const CifBannerAndTextStyles = createGlobalStyle`
-
-.cif-bannerandtext-section {
+.knorr-bannerandtext-section {
     padding: 50px 17vw;
-    margin: 80px auto -20px;
+    margin: 80px auto 0px;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to bottom,#165648e8 20%,#20846dc2 40%, #20846d1a 100%);
+    background: #007a33;
 
     @media(max-width:1600px){
         padding: 50px 7vw 80px;
@@ -23,15 +24,43 @@ const CifBannerAndTextStyles = createGlobalStyle`
         margin: 0 auto;
         flex-direction: column !important;
     }
+    // &::before {
+    //     background: url(${KnorrWaveOne});
+    //     background-repeat: no-repeat;
+    //     transform: translate(-40%,-50%);
+    //     background-position: center;
+    //     content: '';
+    //     left: 30%;
+    //     position: absolute;
+    //     z-index: -1;
+    //     display: block;
+    //     width: 200%;
+    //     height: 100%;
+    //     background-size: 100%;
+    // }
+    // &::after {
+    //     background: url(${KnorrWaveTwo});
+    //     background-repeat: no-repeat;
+    //     transform: translate(-50%,-50%);
+    //     background-position: center;
+    //     content: '';
+    //     left: 30%;
+    //     position: absolute;
+    //     z-index: -1;
+    //     display: block;
+    //     width: 200%;
+    //     height: 100%;
+    //     background-size: 100%;
+    // }
 }
 
-.cif-image-section {
+.knorr-image-section {
 
     img {
         width: 35vw;
         height: 350px;
         object-fit: cover;
-        border: 3px solid #165648;
+        border: 3px solid #fff;
         border-radius: 14px;
 
         @media(max-width:1600px){
@@ -62,7 +91,7 @@ const CifBannerAndTextStyles = createGlobalStyle`
 }
 }
 
-.cif-paragraph-section {
+.knorr-paragraph-section {
     margin: 0 50px;
 
         h2 {
@@ -95,6 +124,9 @@ const CifBannerAndTextStyles = createGlobalStyle`
             }
         }
         button {
+            margin-left: 0px;
+            text-align: center !important;
+            border: solid 1px;
             @media(max-width:992px){
                 text-align: center !important;
                 margin: 0 auto;
@@ -109,7 +141,7 @@ const CifBannerAndTextStyles = createGlobalStyle`
         }
 }
 
-.cif-paragraph-section .fKAzQC {
+.knorr-paragraph-section .fKAzQC {
     margin: 0 !important;
     display: inline-block;
     color: #fff;
@@ -123,11 +155,12 @@ const CifBannerAndTextStyles = createGlobalStyle`
     }
 }
 
-.cif-bannerandtext-button-link {
+.knorr-bannerandtext-button-link {
     text-decoration: none;
+    width: 100%;
     color: inherit;
     font-size: 1.5rem;
-    width: 100%;
+    text-align: center;
 
     &:hover {
         text-decoration: none;
@@ -137,4 +170,4 @@ const CifBannerAndTextStyles = createGlobalStyle`
 
 `;
 
-export default CifBannerAndTextStyles;
+export default KnorrBannerAndTextStyles;

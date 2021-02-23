@@ -61,7 +61,7 @@ const NavigationLipton = () => {
 
             <Nav.Link Link href="/lipton/purpose">Meie eesmärk</Nav.Link>
             <Nav.Link Link href="/lipton/sustainability">Jätkusuutlik elu</Nav.Link>
-            <Nav.Link Link href="/contact">Kontakt</Nav.Link>
+            <Nav.Link Link href="/contact" target="_blank">Kontakt</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
