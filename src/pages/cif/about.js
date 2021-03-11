@@ -7,6 +7,7 @@ import Accordion from "../../components/AccordionCif/AccordionCif"
 import CifPurposeHeroImg from '../../assets/images/cif-about.jpg'
 import CifPurposeHeroImgMobile from '../../assets/images/cif-about-mobile.jpg'
 import { Link } from "gatsby"
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Section = styled.section`
     width:100%;
@@ -104,14 +105,22 @@ const AboutPage = () => {
       <CifHeroImage src={CifPurposeHeroImg} alt="Cif kodukeemia brändist"/>
    <Section> 
    <CifAboutSection>
-    <h1>1969. aastal käivitatud ja majapidamises kasutatavad Cifi puhastusvahendid muutsid kodukoristust täielikult.</h1>
-    <h2>Kaunilt puhtad pinnad ilma kahjustusteta.</h2>
+   <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true">
+     <h1>1969. aastal käivitatud ja majapidamises kasutatavad Cifi puhastusvahendid muutsid kodukoristust täielikult.</h1>
+   </ScrollAnimation>
+   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">
+     <h2>Kaunilt puhtad pinnad ilma kahjustusteta.</h2>
     <p>Cifi puhastuskreemi abil tekkis võimalus eemaldada mustus pindu kahjustamata, jättes kaunilt puhta tulemuse. Sellest ajast alates on kõik Cifi tooted välja töötatud selleks, et anda parim puhastus pindu kahjustamata, pikendadades nende algset ilu. Tänapäeval loodavad miljonid inimesed kogu maailmas (rohkem kui 60 riigis) Cifi peale, et hoida oma kodu ilusa ja puhtana.</p>
-    <h2>Ilu taastamine heaolu taastamiseks.</h2>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true">
+      <h2>Ilu taastamine heaolu taastamiseks.</h2>
     <p>Cifi eesmärk on taastada kodude ja naabruskondade ilu, kus elame, sest see mõjutab positiivselt nende inimeste heaolu, keda teenime. Cif paneb inimesi tundma end veelgi positiivsemalt, usaldama übritsevat keskkonnda ning osalema aktiivsemalt erinevates kogukondades.</p>
     <p>Kuna inimesed kolivad elavama rohkem linnadesse, on Cif ühinenud ÜRO säästva arengu 11. eesmärgiga, mille põhjal juglustab Cif kohalikke kogukondi kasutama oma avalikke üldkasutavaid alasid ning kaunistama avalikke ruume, mis on ajapikku lagunenud või määrdunud. Selle raames on Cif käivitanud mitmeid kampaaniaid, mille eesmärk on taastada avalike ruumide ilu ning parandada inimeste ja kogukondade heaolu. Erinevate pindade, tervete kodude ja naabruskondade puhastamine mitte ainult ei tõsta esteetilist atraktiivsust, vaid käivitab ka positiivse emotsionaalse reaktsiooni. Lihtsamalt öeldes, ilu loob inimestele rõõmu.</p>
-    <h2>Puhas maja, puhas meel.</h2>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">
+      <h2>Puhas maja, puhas meel.</h2>
     <p>Cif usub, et ilusad kodud ja kohad teevad meid õnnelikumaks ning omavad suurt rolli vaimse tervise heaolus. Kuna puhtuse taga on võimas psühholoogia, mis mõjutab otseselt inimese meeleolu, siis on oluline, et kodu puhastamine oleks nauditav ning koristamine tooks naeratuse näole.</p>
+    </ScrollAnimation>
     <SectionAccordion>
             <Accordion>
               <AccordionTab label="Esimene samm – korrastage oma kapid ja pinnad">
