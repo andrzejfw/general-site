@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from "prop-types";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class RexonaCategories extends Component {
     static propTypes = {
@@ -14,7 +15,9 @@ class RexonaCategories extends Component {
 
         return (
             <section className="categories-section">
-                <h2>{sectionTitle}</h2>
+                <ScrollAnimation animateIn="fadeInLeft">
+                    <h2>{sectionTitle}</h2>
+                </ScrollAnimation>
                 <div className="boxes-section">
                     {children}
                 </div>

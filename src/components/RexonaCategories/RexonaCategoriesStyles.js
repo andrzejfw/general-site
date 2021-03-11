@@ -11,6 +11,7 @@ const RexonaCategoriesStyles = createGlobalStyle`
         text-align: center;
         font-weight: 700;
         text-transform: uppercase;
+        font-size: 3rem;
 
         @media(max-width:692px){
         width: 90vw;
@@ -92,7 +93,6 @@ const RexonaCategoriesStyles = createGlobalStyle`
         color: inherit;
     }
 }
-
 `;
 
 export default RexonaCategoriesStyles;

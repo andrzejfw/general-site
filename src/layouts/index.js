@@ -6,6 +6,7 @@ import CarouselStyle from "../components/Carousel/CarouselStyles.js"
 import ModalStyles from "../components/Modal/ModalStyles"
 import PopupStyles from "../components/Popup/PopupStyles"
 import QuotesStyles from "../components/Quotes/QuotesStyles"
+import Animations from "../assets/styles/animations.js"
 // import CustomerChat from "../components/Messenger/Messenger"
 //corporate
 import Footer from "../components/Footer/Footer.js"
@@ -126,7 +127,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconUni/>
-
+      <Animations/>
       </>
     }
     {location.pathname === '/about' && 
@@ -140,6 +141,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconUni/>
+      <Animations/>
       </>
     }
     {/* {location.pathname === '/404' && 
@@ -179,6 +181,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconUni/>
+      <Animations/>
       </>
     }
     {location.pathname === '/contact' && 
@@ -192,6 +195,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconUni/>
+      <Animations/>
       </>
     }
     {location.pathname === '/cookie-notice' && 
@@ -205,6 +209,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconUni/>
+      <Animations/>
       </>
     }
     {location.pathname === '/legal-notice' && 
@@ -218,6 +223,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconUni/>
+      <Animations/>
       </>
     }
     {location.pathname === '/privacy-notice' && 
@@ -231,6 +237,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconUni/>
+      <Animations/>
       </>
     }
     {location.pathname === '/sitemap' && 
@@ -244,6 +251,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconUni/>
+      <Animations/>
       </>
     }
     {location.pathname === '/sustainability' && 
@@ -257,6 +265,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconUni/>
+      <Animations/>
       </>
     }
     {location.pathname.match('magnum') && 
@@ -276,6 +285,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconMagnum/>
+      <Animations/>
       </>
     }
     {location.pathname.match('domestos') && 
@@ -294,6 +304,7 @@ const MainLayout = ({ children, location }) => (
       <DomestosCategoriesStyles />
       <BannerWithVideoDomestosStyles />
       <FaviconDomestos/>
+      <Animations/>
       </>
     }
     {location.pathname.match('lipton') && 
@@ -312,6 +323,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle />
       <FaviconLipton/>
+      <Animations/>
       </>
     }
     {location.pathname.match('cif') && 
@@ -330,6 +342,7 @@ const MainLayout = ({ children, location }) => (
       <CifCategoriesStyles/>
       <CifBannerAndTextStyles/>
       <FaviconCif/>
+      <Animations/>
       </>
     }
     {location.pathname.match('dove') && 
@@ -348,6 +361,7 @@ const MainLayout = ({ children, location }) => (
       <FaviconDove/>
       <DoveCategoriesStyles/>
       <DoveBannerAndTextStyles/>
+      <Animations/>
       </>
     }
     {location.pathname .match('hellmanns') &&
@@ -368,6 +382,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle/>
       <FaviconHellmanns/>
+      <Animations/>
       </>
     }
     {location.pathname.match('knorr') && 
@@ -387,6 +402,7 @@ const MainLayout = ({ children, location }) => (
       <KnorrCategoriesStyles/>
       <KnorrBannerAndTextStyles/>
       <KnorrBannerAndTextReversedStyles/>
+      <Animations/>
       </>
     }
     {location.pathname.match('rexona') && 
@@ -405,6 +421,7 @@ const MainLayout = ({ children, location }) => (
       <RexonaCategoriesStyles/>
       <RexonaBannerAndTextStyles/>
       <FaviconRexona/>
+      <Animations/>
       </>
     }
     
