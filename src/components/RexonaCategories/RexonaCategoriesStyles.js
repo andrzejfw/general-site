@@ -12,6 +12,9 @@ const RexonaCategoriesStyles = createGlobalStyle`
         font-weight: 700;
         text-transform: uppercase;
         font-size: 3rem;
+        -webkit-text-stroke-color: #103073;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
 
         @media(max-width:692px){
         width: 90vw;
@@ -36,17 +39,20 @@ const RexonaCategoriesStyles = createGlobalStyle`
     margin: 0 20px;
     max-width: 300px;
     text-align: center;
+    position: relative;
 
     h3 {
         text-align: center;
         color:#103073;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight:700;
         /* text-shadow: 2px 2px 10px black; */
-        height: 3.5rem;
+        height: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-transform: uppercase;
+        position: relative;
 
         @media(max-width:692px){
         height: auto;
@@ -67,6 +73,7 @@ const RexonaCategoriesStyles = createGlobalStyle`
     img {
     max-width: 300px;
     transition:.5s;
+    position: relative;
     
 
         &:hover {

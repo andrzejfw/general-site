@@ -45,6 +45,12 @@ const RexonaBannerAndTextStyles = createGlobalStyle`
     width: 42vw;
 
         h2 {
+            -webkit-text-stroke-color: #103073;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+
             @media(max-width:992px){
                 text-align: center !important;
             }

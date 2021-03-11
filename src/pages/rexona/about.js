@@ -5,6 +5,7 @@ import HeroRexona from '../../assets/images/rexona-about-hero.jpg'
 import HeroRexonaMobile from '../../assets/images/rexona-about-hero-mobile.jpg'
 import BannerRexona from '../../assets/images/rexona-about-banner.jpg'
 import BannerRexonaMobile from '../../assets/images/rexona-about-banner-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const HeroImage = styled.img`
     width: 100%;
@@ -26,12 +27,36 @@ const Section = styled.div`
 
     h1 {
         color: #103073;
-        text-align: center;
+        text-align: left;
         margin-bottom: 20px;
+        -webkit-text-stroke-color: #103073;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        text-transform: uppercase;
+        margin-left: 30%;
 
         @media(max-width:992px){
-        text-align: left;
-    }
+            margin-left: 0;
+        }
+
+        .first-line {
+            -webkit-text-fill-color: #103073;
+            margin-left: -50px;
+
+            @media(max-width:992px){
+            margin-left: 0;
+            }
+        }
+
+        .second-line {
+            font-size: 3.5rem;
+            margin-left: 70px;
+
+            @media(max-width:992px) {
+                font-size: 2.5rem;
+                margin-left: 0;
+            }
+        }
     }
 
     h2 {
@@ -56,17 +81,26 @@ const RexonaAboutPage = () => (
     <SEO title="Rexona deodorantide kaubamärgist. Rexona ainulaadne tehnoloogia vabastab lisakaitse just siis, kui seda kõige rohkem vaja läheb. Rexona ei vea sind alt."/>
     <HeroImage src={HeroRexona} alt="Rexona deodorantide kaubamärgist"/>
     <Section>
-    <h1>Rexona deodorantide kaubamärgist</h1>
-    <h2>Rexona ei vea sind alt. Unileveri teadlased on välja töötanud ainulaadse tehnoloogia, mis vabastab deodorantide lisakaitse just siis, kui seda kõige rohkem vaja läheb. Võid kindel olla, et Rexona hoiab sind värskena kogu päeva.</h2>
-    <p>Meie teadus- ja arendustöö eksperdid teavad, et meestel ja naistel on deodorantide osas väga erinevad nõudmised. Sellepärast oleme oma tooted välja töötanud vastavalt just inimeste individuaalsetele vajadustele.</p>
-    <p>Meie patendeeritud kehale reageeriv tehnoloogia tähendab, et Rexona tunnetab, millal sinu keha vajab täiendavat kaitset – ja annab sellele märguande. </p>
-    <p>Rexona teadlased avastasid, et keha reageerib erinevalt olukorras, kui inimesel on palav, ning olukorras, kui inimestel on stress või nad on ärevad. Rexona eesmärk on pakkuda higistamisvastast kaitset mõlemal juhul. No White Marks tehnoloogia tõttu ei jäta deodrandid riietele ühtegi jälge ning riided jäävad sama värskeks nagu sinu enesetunne. Rexona oli esimene kaubamärk, mis tutvustas tooteid, mis ei jäta valgeid jälgi tumedatele riietele.</p>
-    <img src={BannerRexona} alt="Rexona deodorantide kaubamärgist"/>
-    <h2>Rexona rahvusvaheline haare</h2>
-    <p>Unilever on üks suurimaid higistamisvastaste vahendite ja deodorantide tootjaid maailmas ning mõistame sellega kaasnevat vastutust. Ühe osana oma pühendumusest jätkusuutlikkuse poole toetame ALUPRO ja BAMA rahvusvahelisi organisatsioone, et julgustada inimesi kogu maailmas tühje aerosoole koguma. Samuti võimaldame miljonitel madala sissetulekuga inimestel nautida Rexona eeliseid tasukohaste minipulkade, minirullide ja teiste deodorantide kaudu, mida toetavad erinevad isikliku hügieeni haridusprogrammid.</p>
-    <h2>Iga Rexona aitab levitada positiivset liikumisega seotud sõnumit</h2>
-    <p>Inimkeha on loodud liikumiseks – olgu selleks kas kõndmine, jooksmine või hüppamine. Kuid tänapäevases maailmas, kus inimesed liiguvad aina vähem, unustatakse tihtipeale see ära. Rexona usub positiivse sõnumi levitamisse liikumise kohta, nii et iga kord, kui kasutate Rexona deodoranti, aitate inspireerida miljoneid inimesi üles tõusma ja liikuma.</p>
-    <p>Rexona on loonud inimeste liikumise aktiveerimiseks telefonirakenduse 5000 steps, mis aitab seada isiklikke eesmärke igapäevaste sammude täitmiseks. Kuigi meie liikumismissioon on saanud hea alguse, on veel väga palju tööd vaja teha. Jätkates Rexona toodete valimist ja oma keha liigutamist, aitada meelde tuletada, julgustada ja innustada ühe rohkem inimesi elama aktiivsemat eluviisi.</p>
+        <h1>
+        <ScrollAnimation animateIn="fadeInLeft">
+            <span className="first-line">Rexona deodorantide</span>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInRight">
+            <span className="second-line">kaubamärgist</span>
+        </ScrollAnimation>
+        </h1>
+        <h2>Rexona ei vea sind alt. Unileveri teadlased on välja töötanud ainulaadse tehnoloogia, mis vabastab deodorantide lisakaitse just siis, kui seda kõige rohkem vaja läheb. Võid kindel olla, et Rexona hoiab sind värskena kogu päeva.</h2>
+        <p>Meie teadus- ja arendustöö eksperdid teavad, et meestel ja naistel on deodorantide osas väga erinevad nõudmised. Sellepärast oleme oma tooted välja töötanud vastavalt just inimeste individuaalsetele vajadustele.</p>
+        <p>Meie patendeeritud kehale reageeriv tehnoloogia tähendab, et Rexona tunnetab, millal sinu keha vajab täiendavat kaitset – ja annab sellele märguande. </p>
+        <p>Rexona teadlased avastasid, et keha reageerib erinevalt olukorras, kui inimesel on palav, ning olukorras, kui inimestel on stress või nad on ärevad. Rexona eesmärk on pakkuda higistamisvastast kaitset mõlemal juhul. No White Marks tehnoloogia tõttu ei jäta deodrandid riietele ühtegi jälge ning riided jäävad sama värskeks nagu sinu enesetunne. Rexona oli esimene kaubamärk, mis tutvustas tooteid, mis ei jäta valgeid jälgi tumedatele riietele.</p>
+        <ScrollAnimation animateIn="fadeIn">
+            <img src={BannerRexona} alt="Rexona deodorantide kaubamärgist"/>
+        </ScrollAnimation>
+        <h2>Rexona rahvusvaheline haare</h2>
+        <p>Unilever on üks suurimaid higistamisvastaste vahendite ja deodorantide tootjaid maailmas ning mõistame sellega kaasnevat vastutust. Ühe osana oma pühendumusest jätkusuutlikkuse poole toetame ALUPRO ja BAMA rahvusvahelisi organisatsioone, et julgustada inimesi kogu maailmas tühje aerosoole koguma. Samuti võimaldame miljonitel madala sissetulekuga inimestel nautida Rexona eeliseid tasukohaste minipulkade, minirullide ja teiste deodorantide kaudu, mida toetavad erinevad isikliku hügieeni haridusprogrammid.</p>
+        <h2>Iga Rexona aitab levitada positiivset liikumisega seotud sõnumit</h2>
+        <p>Inimkeha on loodud liikumiseks – olgu selleks kas kõndmine, jooksmine või hüppamine. Kuid tänapäevases maailmas, kus inimesed liiguvad aina vähem, unustatakse tihtipeale see ära. Rexona usub positiivse sõnumi levitamisse liikumise kohta, nii et iga kord, kui kasutate Rexona deodoranti, aitate inspireerida miljoneid inimesi üles tõusma ja liikuma.</p>
+        <p>Rexona on loonud inimeste liikumise aktiveerimiseks telefonirakenduse 5000 steps, mis aitab seada isiklikke eesmärke igapäevaste sammude täitmiseks. Kuigi meie liikumismissioon on saanud hea alguse, on veel väga palju tööd vaja teha. Jätkates Rexona toodete valimist ja oma keha liigutamist, aitada meelde tuletada, julgustada ja innustada ühe rohkem inimesi elama aktiivsemat eluviisi.</p>
     </Section>
   </>
 )

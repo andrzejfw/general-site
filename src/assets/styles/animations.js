@@ -2,6 +2,38 @@ import { createGlobalStyle } from 'styled-components';
 
 const Animations = createGlobalStyle`
 
+/*Fade in*/
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+    
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+    
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+} 
+/*Fade in Top*/
+
+
 /*Fade in Top*/
 @-webkit-keyframes fadeInTop {
     0% {
