@@ -82,10 +82,10 @@ const RexonaAboutPage = () => (
     <HeroImage src={HeroRexona} alt="Rexona deodorantide kaubamärgist"/>
     <Section>
         <h1>
-        <ScrollAnimation animateIn="fadeInLeft">
+        <ScrollAnimation animateIn="animate__bounce">
             <span className="first-line">Rexona deodorantide</span>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInRight">
+        <ScrollAnimation animateIn="animate__bounce">
             <span className="second-line">kaubamärgist</span>
         </ScrollAnimation>
         </h1>
