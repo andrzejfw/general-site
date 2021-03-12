@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { Link } from 'gatsby';
 import ButtonRadius from '../ButtonMagnum';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const MagnumBannerAndText = ({image, paragraphText, buttonCTA, buttonLink, second}) => (
     <div className="magnum-bannerandtext-section" style={{flexDirection: second ? `row-reverse` : `row`}}>
         <div className="magnum-image-section">
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" animatePreScroll={false} delay="200">
             <img src={image} />
+        </ScrollAnimation>
         </div>
         <div className="magnum-paragraph-section" style={{textAlign: second ? `right` : `left`}}>
             <p>{paragraphText}</p>

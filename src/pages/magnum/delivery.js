@@ -6,6 +6,7 @@ import WoltBackground from '../../assets/images/wolt-delivery.jpeg';
 import BoltBackground from '../../assets/images/bolt-delivery.jpg';
 import IceCreamDelivery from '../../assets/images/icecream-delivery.jpg';
 import { Link } from 'gatsby';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 const Section = styled.section`
@@ -133,22 +134,33 @@ const DeliveryPage = () => {
     <p>Home of Ice Cream on meie maitsva jäätise kodu! Avastage tõeline eufooria koos Ben&Jerry’s pintidega, mis on täis tükke, et rahuldada Teie jäätise iha. Koguge kokku oma lähimad sõbrad meeldivaks õhtuks, mida aitavad saavutada Super Viva lõbusad maitsed või kogege ülimat mõnu koos Magnumiga, mis on nüüd ka tuubis! Ühendage kõigi kolme kaubamärgiga ülim rahulolu!</p>
 
     <MagnumDelivery>
-      <MagnumDeliveryBox><p>Jäätisepoed Wolti platvormil on aktiivsed Tallinnas ja Tartus</p>
-      <MagnumDeliveryBoxLink>
+    
+      <MagnumDeliveryBox>
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" delay="200">
+          <p>Jäätisepoed Wolti platvormil on aktiivsed Tallinnas ja Tartus</p>
+        </ScrollAnimation>
+      <ScrollAnimation animateIn="animate__zoomInLeft" animateOnce="true" delay="200">
+        <MagnumDeliveryBoxLink>
         <Link target="_blank" to="https://wolt.com/en/search?q=home%20of%20ice%20cream">
           <img src={IceCreamDelivery} alt="Telli Magnumi jäätis koju"></img>
           <span>Home of Ice Cream</span>
           <WoltDelivery><img src={WoltBackground} alt="Telli jäätis koju Wolt kullerteenusega"></img></WoltDelivery>
         </Link>
       </MagnumDeliveryBoxLink>
+      </ScrollAnimation>
       </MagnumDeliveryBox>
-    <MagnumDeliveryBox><p>Jäätisepoed Bolti Foodi platvormil on aktiivsed Tallinnas, Tartus ja Pärnus ning peagi Narvas. Jättisepoed Bolt Foodi platvormil on nähtavad ainult Bolt Foodi telefonirakendusest.</p>
+    <MagnumDeliveryBox>
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" delay="200">
+        <p>Jäätisepoed Bolti Foodi platvormil on aktiivsed Tallinnas, Tartus ja Pärnus ning peagi Narvas. Jättisepoed Bolt Foodi platvormil on nähtavad ainult Bolt Foodi telefonirakendusest.</p>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__zoomInRight" animateOnce="true" delay="200">
       <MagnumDeliveryBoxLink>
         <Link target="_blank" to="https://food.bolt.eu/en-us/">
           <img src={BoltBackground} alt="Telli jäätis koju Bolt Foodist"></img>
           <span>Lisateave</span>
         </Link>
       </MagnumDeliveryBoxLink>
+    </ScrollAnimation>
     </MagnumDeliveryBox>
     
     </MagnumDelivery>

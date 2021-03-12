@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import PropTypes from "prop-types";
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const ButtonRadius = styled.button`
     display:flex;

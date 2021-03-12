@@ -11,7 +11,7 @@ import MagnumVideoBackground from '../../assets/images/magnum-video-background.j
 import MagnumIceCreamStick from '../../assets/images/magnum-on-stick.jpg'
 import MagnumIceCreamBox from '../../assets/images/magnum-in-box.jpg'
 import MagnumDeliver from '../../assets/images/magnum-deliver-now.jpg'
-MagnumDeliver
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const SectionMagnumHP = styled.section`
     width: 100%;
@@ -39,8 +39,12 @@ const IndexPageMagnum = () => {
         <SectionMagnumHP>
             <MagnumHeroImage src={MagnumHeroImg} alt="Magnum jäätis"/> 
             <MagnumCategories sectionTitle="Magnum jäätis">
+            <ScrollAnimation animateIn="animate__backInLeft" animateOnce="true" animatePreScroll={false} delay="200">
                 <MagnumCategoriesBox categoryTitle="Pulgajäätised" categoryImage={MagnumIceCreamStick} categoryLink="/magnum/products?filter=pulgajaatised" alt="Haara Magnumi jäätis"></MagnumCategoriesBox>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__backInRight" animateOnce="true" animatePreScroll={false} delay="200">
                 <MagnumCategoriesBox categoryTitle="Perejäätised" categoryImage={MagnumIceCreamBox} categoryLink="/magnum/products?filter=perejaatised" alt="Magnum Eesti"></MagnumCategoriesBox>
+            </ScrollAnimation>
             </MagnumCategories>
             <BannerWithVideoMagnum 
                 title="Magnum – naudingule truu" 

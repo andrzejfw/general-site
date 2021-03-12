@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import ButtonRadius from '../ButtonMagnum';
 import { Link } from 'gatsby';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const BannerWithVideoLiptonWrapper = styled.div`
     width:100%;
@@ -49,8 +50,11 @@ const BannerWithVideoMagnum = ({
               </ButtonRadius>
               </div>
             </p>
-            <div className="banner-magnum-video-div">
-            <iframe className="magnum-video-iframe" width="600" height="350" src={`https://www.youtube.com/embed/${videoId}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+              <div className="banner-magnum-video-div">
+            <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" animatePreScroll={false} delay="200">
+                <iframe className="magnum-video-iframe" width="600" height="350" src={`https://www.youtube.com/embed/${videoId}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            </ScrollAnimation>
+
             </div>
         </div>
     </BannerWithVideoLiptonWrapper>
