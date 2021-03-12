@@ -13,9 +13,11 @@ const DomestosCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => 
                         <h2 className="domestos-categories-h3">{categoryTitle}</h2>
                     </Link>
                     <Link to={categoryLink}>
+                    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                         <div className="domestos-img-div">
-                        <ScrollAnimation animateIn="fadeIn" animateOnce="true"><img className="domestos-categories-img" src={categoryImage}/></ScrollAnimation>
+                        <img className="domestos-categories-img" src={categoryImage}/>
                         </div>
+                    </ScrollAnimation>
                     </Link>
                     <div className="domestos-button-div">
                         <ButtonRadius>

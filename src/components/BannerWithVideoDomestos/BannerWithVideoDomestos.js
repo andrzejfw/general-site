@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import ButtonRadius from '../ButtonDomestos';
 import { Link } from 'gatsby';
+import ScrollAnimation from 'react-animate-on-scroll'
+
 
 const BannerWithVideoDomestosWrapper = styled.div`
     width:100%;
@@ -54,9 +56,11 @@ const BannerWithVideoDomestos = ({
               </ButtonRadius>
               </div>
             </p>
+            <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" delay="600">
             <div className="banner-domestos-video-div">
             <iframe className="banner-domestos-video-iframe" width="600" height="350" src={`https://www.youtube.com/embed/${videoId}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
             </div>
+            </ScrollAnimation>
         </div>
     </BannerWithVideoDomestosWrapper>
 );

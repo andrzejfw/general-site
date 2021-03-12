@@ -12,6 +12,7 @@ import Blocks from '../../assets/images/domestos-blocks.png'
 import Bottle2 from '../../assets/images/domestos-bottle2.png'
 import BannerWithVideoDomestos from '../../components/BannerWithVideoDomestos/BannerWithVideoDomestos'
 import MagnumVideoBackground from '../../assets/images/magnum-video-background.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 
@@ -58,8 +59,12 @@ const IndexPage = () => {
    <DomestosHeroImage src={HeroBanner} alt="Domestos WC puhastusvahendid avaleht"/> 
    <DomestosIndexSection>
    <DomestosCategories sectionTitle="Meie kategooriaid">
+   <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true">
       <DomestosCategoriesBox categoryTitle="WC-puhastusvahendid" categoryImage={Bottle} categoryLink="/domestos" alt="WC-puhastusvahendid"></DomestosCategoriesBox>
+   </ScrollAnimation>   
+   <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">  
       <DomestosCategoriesBox categoryTitle="WC-värskendajad" categoryImage={Blocks} categoryLink="/domestos" alt="WC-värskendajad"></DomestosCategoriesBox>
+    </ScrollAnimation>
     </DomestosCategories>
     
     </DomestosIndexSection>

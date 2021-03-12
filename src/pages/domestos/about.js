@@ -4,8 +4,7 @@ import SEO from '../../components/Seo/Seo'
 import HeroBanner from '../../assets/images/hellmanns-about.jpg';
 import AccordionImage from '../../assets/images/hellmanns-accordion-about.jpg';
 import Accordion from "../../components/AccordionDomestos/AccordionDomestos"
-
-
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Section = styled.section`
     width:100%;
@@ -87,23 +86,51 @@ const AboutPage = () => {
    {/* <DeliveryHeroImage src={HeroImage} alt="Magnum delivery"/> */}
    {/* <AboutHeroImage src={HeroBanner} alt="Lipton Eesti jätkusuutlik tee"/> */}
    <DomestosAboutSection>
-    <h1>Puhas kodu. Puhas planeet. Puhas tulevik.</h1>
+    <ScrollAnimation animateIn="animate__bounceInLeft" animateOnce="true">
+     <h1>Puhas kodu. Puhas planeet. Puhas tulevik.</h1>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__bounceInRight" animateOnce="true">
     <p>Kujundame uut koristamise tulevikku ja see algab sajanditevanuse keemiaajaloo uuesti leiutamisest. Miljardid inimesed üle kogu maailma soovivad tooteid, mis on mikroobidele ja plekkidele veelgi vastupidavamad ning mida on veelgi mugavam kasutada. Küll aga soovivad ka inimesed, et need tooted oleksid planeedi suhtes hoolivamavad. Teadus ja tehnoloogia on jõudnud nii kaugele, et see on nüüd võimalik!</p>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__bounceIn" animateOnce="true">
     <img src={HeroBanner} alt="Domestos puhastusvahendid. Puhas kodu. Puhas planeet."></img>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__bounceInLeft" animateOnce="true">
     <p>Põlvkondade vältel oleme aidanud eemaldada mustust ja plekke, mis aitavad inimestel elada tervislikumalt ja nauditavamalt.</p>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__bounceInRight" animateOnce="true">
     <p>Meie jõupingutused keskkonnamõju vähendamiseks on olnud märkimisväärsed ja mõningal määral murrangulised, kuid teame, et peame tegema veelgi rohkem. Veel suuremas mastaabis ja veel kiiremini. See kõik algab koostisosadest, mida kasutame. Koostisosad põhjustavad kasvuhoonegaaside ja heitkoguste suurima osa kogu meie kodukeemia tootmisprotsessi vältel ning peame seda muutma.</p>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__bounceInLeft" animateOnce="true">
     <p>Nii oleme välja pakkunud uue strateegia – puhas tulevik ja nii muudame mõned maailma kõige populaarsemad koristus- ja pesupesemisbrändid palju jätkusuutlikumaks kui varem. Võtame kasutusse taastuvaid ja ringlussevõetud süsinikuallikaid, et peatada sõltuvus asendamatutest fosiilkütustest maapõuest. Kasutades jätkusuutlikke aineid, saame mängida oma osa võitluses kliimamuutusega ja aidata säilitada, taastada ja uuendada planeedi loodusvarasid.</p>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__bounceInRight" animateOnce="true">
     <h2>Innovatsioon revolutsiooni taga</h2>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__bounceInLeft" animateOnce="true">
     <p>Muudame kõike alates koostisosade valmisest kuni puhastus- ja pesutoodete pakendamiseni. Puhta tuleviku kaudu püüame aastaks 2030 asendada 100% fosiilkütustest pärinevast süsinikust kodukeemia toodete formulatsioonides taastuva või ringlussevõetud süsinikuga.</p>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__bounceInRight" animateOnce="true">
     <p>Kuid see pole veel kõik, Unileveris oleme pühendunud saavutamaks järgmised eesmärgid:
       <ul>
+      <ScrollAnimation animateIn="animate__bounceInRight" animateOnce="true">
         <li>Metsaraiest vaba tarneahelda saavutamine aastaks 2023.</li>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="animate__bounceInLeft" animateOnce="true">
         <li>Tagame täielikult süsinikust heitgaasidevaba tootmise aastaks 2039.</li>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="animate__bounceInRight" animateOnce="true">
         <li>Vähendame meie toodete mõjul tekkivate kasvuhoonegaaside hulka poole võrra aastaks 2030.</li>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="animate__bounceInLeft" animateOnce="true">
         <li>Muudame meie tootepreparaadid biolagunevateks aastaks 2030.</li>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="animate__bounceInRight" animateOnce="true">
         <li>Vähendame esmakordse plastpakendi kasutamist poolt võrra. Tagame, et kõik meie plastpakendid on 2025. aastaks korduvkasutatavad, ringlussevõetavad või komposteeritavad ning aastaks 2025 on pakendites kasutatud vähemalt 25% ringlussevõetud plastikut.</li>
+      </ScrollAnimation>
       </ul>
     </p>
+    </ScrollAnimation>
     <SectionAccordion>
             <Accordion>
               {/* Ingredients */}
