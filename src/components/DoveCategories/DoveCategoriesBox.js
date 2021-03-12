@@ -2,13 +2,15 @@ import React from 'react';
 import ButtonRadius from '../ButtonDove';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const DoveCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => {
     return (
         <>
+            <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                 <div className="dove-category-box">
-                <Link to={categoryLink}>
+                    <Link to={categoryLink}>
                         <h3 className="dove-categories-h3">{categoryTitle}</h3>
                     </Link>
                     <Link to={categoryLink}>
@@ -24,6 +26,7 @@ const DoveCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => {
                         </ButtonRadius>
                     </div>
                 </div>
+            </ScrollAnimation>
         </>
     )
 }

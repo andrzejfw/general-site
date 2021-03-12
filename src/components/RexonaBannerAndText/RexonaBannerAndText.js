@@ -6,12 +6,12 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const RexonaBannerAndText = ({image, title, paragraphText, buttonCTA, buttonLink, alt, second}) => (
     <div className="bannerandtext-section" style={{flexDirection: second ? `row-reverse` : `row`}}>
-        <ScrollAnimation animateIn="fadeInLeft">
+        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true">
         <div className="image-section">
             <img src={image} alt={alt}/>
         </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInRight">
+        <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">
             <div className="paragraph-section" style={{textAlign: second ? `right` : `left`}}>
                 <h2>{title}</h2>
                 <p>{paragraphText}</p>

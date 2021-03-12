@@ -82,10 +82,10 @@ const RexonaAboutPage = () => (
     <HeroImage src={HeroRexona} alt="Rexona deodorantide kaubamärgist"/>
     <Section>
         <h1>
-        <ScrollAnimation animateIn="animate__bounce">
+        <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true">
             <span className="first-line">Rexona deodorantide</span>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__bounce">
+        <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">
             <span className="second-line">kaubamärgist</span>
         </ScrollAnimation>
         </h1>
@@ -93,7 +93,7 @@ const RexonaAboutPage = () => (
         <p>Meie teadus- ja arendustöö eksperdid teavad, et meestel ja naistel on deodorantide osas väga erinevad nõudmised. Sellepärast oleme oma tooted välja töötanud vastavalt just inimeste individuaalsetele vajadustele.</p>
         <p>Meie patendeeritud kehale reageeriv tehnoloogia tähendab, et Rexona tunnetab, millal sinu keha vajab täiendavat kaitset – ja annab sellele märguande. </p>
         <p>Rexona teadlased avastasid, et keha reageerib erinevalt olukorras, kui inimesel on palav, ning olukorras, kui inimestel on stress või nad on ärevad. Rexona eesmärk on pakkuda higistamisvastast kaitset mõlemal juhul. No White Marks tehnoloogia tõttu ei jäta deodrandid riietele ühtegi jälge ning riided jäävad sama värskeks nagu sinu enesetunne. Rexona oli esimene kaubamärk, mis tutvustas tooteid, mis ei jäta valgeid jälgi tumedatele riietele.</p>
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
             <img src={BannerRexona} alt="Rexona deodorantide kaubamärgist"/>
         </ScrollAnimation>
         <h2>Rexona rahvusvaheline haare</h2>

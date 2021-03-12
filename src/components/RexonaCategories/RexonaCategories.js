@@ -15,7 +15,7 @@ class RexonaCategories extends Component {
 
         return (
             <section className="categories-section">
-                <ScrollAnimation animateIn="fadeInLeft">
+                <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true">
                     <h2>{sectionTitle}</h2>
                 </ScrollAnimation>
                 <div className="boxes-section">
