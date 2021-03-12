@@ -54,7 +54,7 @@ export default class extends React.Component {
 
   render() {
     return (
-      <ScrollAnimation animateIn="animate__tada" className="animate__delay-3s" animateOnce="true"><Button>{this.props.children}​​</Button></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__tada" delay="200" ><Button>{this.props.children}​​</Button></ScrollAnimation>
     );
     }
   }

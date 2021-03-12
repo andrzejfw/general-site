@@ -2,6 +2,7 @@ import React from 'react';
 import ButtonRadius from '../ButtonDomestos';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 const DomestosCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => {
@@ -13,7 +14,7 @@ const DomestosCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => 
                     </Link>
                     <Link to={categoryLink}>
                         <div className="domestos-img-div">
-                            <img className="domestos-categories-img" src={categoryImage}/>
+                        <ScrollAnimation animateIn="fadeIn" animateOnce="true"><img className="domestos-categories-img" src={categoryImage}/></ScrollAnimation>
                         </div>
                     </Link>
                     <div className="domestos-button-div">

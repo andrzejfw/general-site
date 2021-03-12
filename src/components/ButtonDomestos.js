@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import PropTypes from "prop-types";
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Button = styled.button`
     display:flex;
@@ -40,7 +41,7 @@ export default class extends React.Component {
 
   render() {
     return (
-      <Button>{this.props.children}​​</Button>
+      <ScrollAnimation animateIn="animate__headShake"><Button>{this.props.children}​​</Button></ScrollAnimation>
     );
     }
   }
