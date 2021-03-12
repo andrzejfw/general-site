@@ -16,7 +16,9 @@ class DoveCategories extends Component {
         return (
             <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" delay="700">
                 <section className="dove-categories-section">
-                        <h2>{sectionTitle}</h2>
+                        <div className="h2-div">
+                            <h2>{sectionTitle}</h2>
+                        </div>
                     <div className="dove-boxes-section">
                         {children}
                     </div>

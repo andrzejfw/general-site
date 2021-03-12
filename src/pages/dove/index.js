@@ -15,6 +15,11 @@ import DoveSustainabilityHeroImg from '../../assets/images/dove-sustainability-h
 import DoveSustainabilityHeroImgMobile from '../../assets/images/dove-sustainability-hero-mobile.jpg'
 import DovePurposeHeroImg from '../../assets/images/dove-purpose-hero.jpg'
 import DovePurposeHeroImgMobile from '../../assets/images/dove-purpose-hero-mobile.jpg'
+import ShampooCover from '../../assets/images/dove-shampoo.jpg'
+import BodywashCover from '../../assets/images/dove-bodywash.jpg'
+import SoapbarCover from '../../assets/images/dove-soapbar.jpg'
+import DeoCover from '../../assets/images/dove-deo.jpg'
+import CreamCover from '../../assets/images/dove-cream.jpg'
 import BUp from '../../assets/images/happy-shadow-tabl.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -102,11 +107,40 @@ const SustainabilityPageDove = () => {
    </ImageSection>
    <Section>
    <DoveCategories sectionTitle="Meie kategooriaid">
-      <DoveCategoriesBox categoryTitle="Šampoonid ja palsamid" categoryImage={hair} categoryLink="/" alt="Šampoonid ja palsamid"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Dušigeelid" categoryImage={showergel} categoryLink="/" alt="Dušigeelid"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Deodorandid" categoryImage={deos} categoryLink="/" alt="Deodorandid"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Seebid" categoryImage={soap} categoryLink="/" alt="Seebid"></DoveCategoriesBox>
-      <DoveCategoriesBox categoryTitle="Kreemid ja muu" categoryImage={creams} categoryLink="/" alt="Kreemid ja muu"></DoveCategoriesBox>
+      <DoveCategoriesBox 
+        categoryTitle="Šampoonid ja palsamid" 
+        categoryImage={hair} categoryLink="/dove/products" 
+        alt="Šampoonid ja palsamid"
+        cover={ShampooCover}>
+      </DoveCategoriesBox>
+      <DoveCategoriesBox 
+        categoryTitle="Dušigeelid" 
+        categoryImage={showergel} 
+        categoryLink="/dove/products" 
+        alt="Dušigeelid"
+        cover={BodywashCover}>
+      </DoveCategoriesBox>
+      <DoveCategoriesBox 
+        categoryTitle="Deodorandid" 
+        categoryImage={deos} 
+        categoryLink="/dove/products" 
+        alt="Deodorandid"
+        cover={DeoCover}>
+      </DoveCategoriesBox>
+      <DoveCategoriesBox 
+        categoryTitle="Seebid" 
+        categoryImage={soap} 
+        categoryLink="/dove/products" 
+        alt="Seebid"
+        cover={SoapbarCover}>
+      </DoveCategoriesBox>
+      <DoveCategoriesBox 
+        categoryTitle="Kreemid ja muu" 
+        categoryImage={creams} 
+        categoryLink="/dove/products" 
+        alt="Kreemid ja muu"
+        cover={CreamCover}>
+      </DoveCategoriesBox>
     </DoveCategories>
     <BulletsUp><img></img></BulletsUp>
     <DoveBannerAndTextSection>

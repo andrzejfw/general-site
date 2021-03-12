@@ -1,24 +1,28 @@
 import { createGlobalStyle } from 'styled-components';
+import DoveBoxBackground from '../../assets/images/categories-background.png'
 
 const DoveCategoriesStyles = createGlobalStyle`
 
 .dove-categories-section {
     margin: 50px auto;
 
-    h2 {
-        margin: 0 auto;
+    .h2-div {
+        width: 350px;
+        height: 2.5rem;
+        margin: 0 auto 30px;
+
+        h2 {
         color: #054281;
         text-align: center;
         font-weight: 700;
         text-transform: uppercase;
-        border-bottom: 15px solid rgb(204 210 214 / 48%);
-        width: 350px;
-        height: 2.5rem;
+        /* border-bottom: 15px solid rgb(204 210 214 / 48%); */
 
-        @media(max-width:692px){
-        width: 90vw;
-        margin: 0 auto 20px;
-      }
+            @media(max-width:692px){
+            width: 90vw;
+            margin: 0 auto 20px;
+            }
+        }
     }
 }
 
@@ -36,7 +40,6 @@ const DoveCategoriesStyles = createGlobalStyle`
 }
 
 .dove-category-box {
-    padding: 30px 30px;
     max-width: 240px;
     text-align: center;
 
@@ -65,37 +68,72 @@ const DoveCategoriesStyles = createGlobalStyle`
             font-size: 2rem;
         }
       }
-
-    img {
-    max-width: 200px;
-    transition:.5s;
-     
-
-        &:hover {
-            transform: scale(1.1);
-        }
-        
-    }
 }
 
 .dove-img-div {
-    background: linear-gradient(180deg, rgb(0 73 118 / 0%) 50%, rgb(204 210 214 / 48%) 100%);
-    margin: 0 -20px;
-    padding: 20px 0;
+    background-image: url(${DoveBoxBackground});
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 250px;
+    height: 250px;
 
     @media(max-width:767px){
-        margin: 0 120px;
+        margin: 20px auto;
     }
+}
 
-    @media(max-width:692px){
-        margin: 0;
-    }    
+.dove-categories-cover-img {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid gold;
+    width: 190px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-45%) translateY(-60%);
+    transition: .5s;
+    z-index: 1;
+
+    &:hover {
+        opacity: 0;
+    }
+}
+
+.dove-categories-img {
+    position: absolute;
+    width: 130px;
+    bottom: 10px;
+    right: -20px;
+    transition: .5s;
+    z-index: 2;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.dove-category-name {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-45%) translateY(-60%);
+    color: #054281;
+    background: linear-gradient(to right,#b78938 0,#dabf80 25%,#ffe2ac 51%,#dabf80 76%,#b78938 100%);
+
+    p {
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
 }
 
 .dove-button-div {
     margin: 10px -20px -30px;
-
-    
 }
 
 .dove-categories-button-link {
