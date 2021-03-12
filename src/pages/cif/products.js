@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import CifHeroImg from '../../assets/images/cif-products-hero.jpg'
 import CifHeroImgMobile from '../../assets/images/cif-products-hero-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export const data = graphql`
 query MyQueryProductsCif {
