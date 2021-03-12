@@ -161,7 +161,7 @@ const ProductsUl = styled.ul`
         margin-left: auto;
         margin-right: auto;
         background: linear-gradient(180deg,rgb(0 73 118 / 0%) 50%,rgb(204 210 214 / 48%) 100%);
-        color: #white;
+        color: #fff;
         border-radius: 15px;
         width: 80%;
         padding: 0 10px 10px 10px;

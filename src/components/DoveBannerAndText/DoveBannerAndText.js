@@ -4,21 +4,22 @@ import { Link } from 'gatsby';
 import ButtonRadius from '../ButtonDove';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const DoveBannerAndText = ({image, imagemobile, title, paragraphText, buttonCTA, buttonLink, second}) => (
+const DoveBannerAndText = ({image, title, paragraphText, buttonCTA, buttonLink, second}) => (
     <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
     <div className="dove-bannerandtext-section" style={{flexDirection: second ? `row-reverse` : `row`}}>
         <div className="dove-image-section">
-            <img src={image} className="imagepc"/>
-            <img src={imagemobile} className="imagemobile"/>
+            <img src={image}/>
         </div>
         <div className="dove-paragraph-section" style={{textAlign: second ? `right` : `left`}}>
-            <h2>{title}</h2>
-            <p>{paragraphText}</p>
+            <div className="dove-texts">
+                <h2>{title}</h2>
+                <p>{paragraphText}</p>
             <ButtonRadius>
                 <Link className="dove-bannerandtext-button-link" to={buttonLink}>
                     {buttonCTA}
                 </Link>
             </ButtonRadius>
+            </div>
         </div>
     </div>
     </ScrollAnimation>

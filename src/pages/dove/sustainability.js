@@ -15,6 +15,7 @@ const Section = styled.section`
       margin: 30px 0 20px;
       text-align: center;
       color: #054281;
+      text-transform: uppercase;
     }
 
     h2 {

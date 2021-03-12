@@ -12,9 +12,10 @@ const Section = styled.section`
     padding: 0 20px 30px;
 
     h1 {
-      margin: 30px 0 20px;
+      margin: 30px auto 20px;
       text-align: center;
       color: #054281;
+      text-transform: uppercase;
     }
 
     h2 {

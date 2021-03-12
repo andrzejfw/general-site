@@ -7,20 +7,37 @@ const DoveCategoriesStyles = createGlobalStyle`
     margin: 50px auto;
 
     .h2-div {
-        width: 350px;
-        height: 2.5rem;
+        width: 330px;
         margin: 0 auto 30px;
+        position: relative;
 
         h2 {
-        color: #054281;
-        text-align: center;
-        font-weight: 700;
-        text-transform: uppercase;
-        /* border-bottom: 15px solid rgb(204 210 214 / 48%); */
+            font-size: 2rem;
+            color: #054281;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
 
-            @media(max-width:692px){
-            width: 90vw;
-            margin: 0 auto 20px;
+        @media (max-width: 320px) {
+            width: 310px;
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        &:after {
+            background: linear-gradient(to right,#b78938 0,#dabf80 25%,#ffe2ac 51%,#dabf80 76%,#b78938 100%);
+            height: 5px;
+            width: 330px;
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+
+            @media (max-width: 320px) {
+                width: 310px;
             }
         }
     }
@@ -33,9 +50,9 @@ const DoveCategoriesStyles = createGlobalStyle`
     justify-content: center;
     flex-wrap: wrap;
 
-    @media(max-width:767px){
+    @media(max-width:768px){
         flex-direction: column;
-        margin: 0;
+        margin: 0 auto;
       }
 }
 
@@ -54,12 +71,12 @@ const DoveCategoriesStyles = createGlobalStyle`
         align-items: center;
         height: 2rem;
 
-        @media(max-width:767px){
+        @media(max-width:768px){
         height: auto;
         }
     }
 
-    @media(max-width:767px){
+    @media(max-width:768px){
         margin: 10px auto;
         max-width: 100%;
         width: 90vw;
@@ -78,15 +95,15 @@ const DoveCategoriesStyles = createGlobalStyle`
     width: 250px;
     height: 250px;
 
-    @media(max-width:767px){
-        margin: 20px auto;
+    @media(max-width:768px){
+        margin: 30px auto;
     }
 }
 
 .dove-categories-cover-img {
     position: absolute;
     border-radius: 50%;
-    border: 1px solid gold;
+    border: 1px solid #dabf80;
     width: 190px;
     top: 50%;
     left: 50%;
@@ -130,6 +147,11 @@ const DoveCategoriesStyles = createGlobalStyle`
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
+
+    @media (max-width: 768px) {
+        z-index: 1;
+        opacity: .8;
+    }
 }
 
 .dove-button-div {
@@ -147,7 +169,6 @@ const DoveCategoriesStyles = createGlobalStyle`
         color: inherit;
     }
 }
-
 `;
 
 export default DoveCategoriesStyles;

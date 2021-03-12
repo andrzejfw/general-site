@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import DoveArticleBackground from '../../assets/images/dove-background-article.png'
 
 const DoveBannerAndTextStyles = createGlobalStyle`
 
@@ -19,50 +20,65 @@ const DoveBannerAndTextStyles = createGlobalStyle`
 }
 
 .dove-image-section {
+    background-image: url(${DoveArticleBackground});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 150px;
+    margin: 0 auto;
+
+    @media (max-width: 1024px) {
+        padding: 50px;
+    }
+
+    @media (max-width: 320px) {
+        padding: 40px;
+    }
 
     img {
-        width: 35vw;
+        width: 350px;
         height: 350px;
+        margin: 0 auto;
         object-fit: cover;
-        border-radius: 10px 100px / 120px;
-        box-shadow: 0px 2px 6px 0px;
-        @media(max-width:1600px){
-            width: 40vw;
+        border-radius: 50%;
+        border: 1px solid #dabf80; 
+
+        @media (max-width: 768px) {
+            width: 250px;
             height: 250px;
-        }
+        }  
 
-        @media(max-width:767px){
-            width: 100%;
-        }
-        @media(max-width:992px) and (min-width:768px){
-            height:400px;
-            width: 100%;
-        }
-      
+        @media (max-width: 320px) {
+            width: 200px;
+            height: 200px;
+        }    
     }
-
-    @media(max-width:992px){
-        margin: 0 auto 25px;
-    }
-.imagepc {
-    @media(max-width:1200px){
-        display:none;
-    }
-}
-.imagemobile {
-    @media(min-width:1201px){
-        display:none;
-    }
-}
 }
 
 .dove-paragraph-section {
     margin: 0 50px;
+    height: 450px;
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
+
+    .dove-texts {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media (max-width: 768px) {
+            top: 0;
+            transform: none;
+        }
+    }
 
         h2 {
             font-size: 1.7rem;
             color: #004976;
             font-weight: bold;
+            text-transform: uppercase;
 
             @media(max-width:1600px){
                 font-size: 1.5rem;
@@ -94,7 +110,7 @@ const DoveBannerAndTextStyles = createGlobalStyle`
             }
         }
 
-        @media(max-width:767px){
+        @media(max-width:768px){
             width: 290px;
             margin: 0 auto;
             text-align: center;

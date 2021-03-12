@@ -17,7 +17,9 @@ const DoveCategoriesBox = ({categoryTitle, categoryImage, cover, categoryLink}) 
                         <div className="dove-img-div">
                             <img className="dove-categories-cover-img" src={cover}/>
                             <img className="dove-categories-img" src={categoryImage}/>
-                            <div className="dove-category-name"><p>{categoryTitle}</p></div>
+                            <ScrollAnimation animateIn="animate__fadeIn" duration=".5">
+                                <div className="dove-category-name"><p>{categoryTitle}</p></div>
+                            </ScrollAnimation>
                         </div>
                     </Link>
                     <div className="dove-button-div">

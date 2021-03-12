@@ -20,12 +20,12 @@ const Button = styled.button`
     color: #054281;
     background-color: #fff;
     border: 1px solid;
-    border-color: #054281;
+    border-color: #dbc081;
 
     &:hover{
-      border-color: #054281;
+      border-color: transparent;
       color: #fff;
-      background-color: #054281;
+      background: linear-gradient(to right,#b78938 0,#dabf80 25%,#ffe2ac 51%,#dabf80 76%,#b78938 100%);
       text-decoration:none;
       outline:none;
       

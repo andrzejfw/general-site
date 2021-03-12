@@ -11,10 +11,8 @@ import hair from '../../assets/images/dove-hair.png'
 import showergel from '../../assets/images/dove-shower-gel.png'
 import soap from '../../assets/images/dove-soap.png'
 import DoveBannerAndText from '../../components/DoveBannerAndText/DoveBannerAndText'
-import DoveSustainabilityHeroImg from '../../assets/images/dove-sustainability-hero.jpg'
-import DoveSustainabilityHeroImgMobile from '../../assets/images/dove-sustainability-hero-mobile.jpg'
-import DovePurposeHeroImg from '../../assets/images/dove-purpose-hero.jpg'
-import DovePurposeHeroImgMobile from '../../assets/images/dove-purpose-hero-mobile.jpg'
+import DoveSustainabilityHeroImg from '../../assets/images/dove-sustainability-hero-mobile.jpg'
+import DovePurposeHeroImg from '../../assets/images/dove-purpose-hero-mobile.jpg'
 import ShampooCover from '../../assets/images/dove-shampoo.jpg'
 import BodywashCover from '../../assets/images/dove-bodywash.jpg'
 import SoapbarCover from '../../assets/images/dove-soapbar.jpg'
@@ -146,7 +144,6 @@ const SustainabilityPageDove = () => {
     <DoveBannerAndTextSection>
     <DoveBannerAndText
         image={DoveSustainabilityHeroImg}
-        imagemobile={DoveSustainabilityHeroImgMobile}
         title="Dove jätkusuutlikkus"
         paragraphText="Kui hoolite meie planeedist ja inimestest, on meil midagi ühist. Dove on täielikult pühendnud jätkusuutlike ja eetliste toodete loomisele."
         buttonCTA="Loe rohkem"
@@ -155,7 +152,6 @@ const SustainabilityPageDove = () => {
       </DoveBannerAndText>
       <DoveBannerAndText
         image={DovePurposeHeroImg}
-        imagemobile={DovePurposeHeroImgMobile}
         title="Meie eesmärk"
         paragraphText="Dove usub, et ilu peab olema naiste enesekindluse allikas, mitte looma neis ärevust. Aitame noortel mõista, et nad on ilusad just sellisena, nagu nad on."
         buttonCTA="Loe rohkem"
