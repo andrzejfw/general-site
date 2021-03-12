@@ -13,7 +13,7 @@ const CifCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => {
                         <h3 className="categories-h3">{categoryTitle}</h3>
                     </Link>
                     <Link to={categoryLink}>
-                    <ScrollAnimation animateIn="animate__tada" animateOnce="true">
+                    <ScrollAnimation animateIn="animate__tada" animatePreScroll={false} delay="600" animateOnce="true">
                         <img className="categories-img" src={categoryImage}/>
                     </ScrollAnimation>
                     </Link>

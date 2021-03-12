@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { Link } from 'gatsby';
 import ButtonRadius from '../ButtonCif';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const CifBannerAndText = ({image, imagemobile, title, paragraphText, buttonCTA, buttonLink, second}) => (
     <div className="cif-bannerandtext-section" style={{flexDirection: second ? `row-reverse` : `row`}}>
-        <div className="cif-image-section">
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
+            <div className="cif-image-section">
             <img src={image} className="imagepc"/>
             <img src={imagemobile} className="imagemobile"/>
-        </div>
+        </div></ScrollAnimation>
         <div className="cif-paragraph-section" style={{textAlign: second ? `right` : `left`}}>
             <h2>{title}</h2>
             <p>{paragraphText}</p>

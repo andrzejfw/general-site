@@ -36,7 +36,7 @@ function showArrow() {
     <div id="menuToggle">
     <input type="checkbox" className="toggler"/>
     <div class="hamburger"><div></div></div>
-    <a href="/domestos"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></a>
+    <Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}} to="/domestos/"><img src={DomestosLogo} alt="Domestos Eesti WC-puhastusvahendid logo"/></Link>
     <ul id="menu">
       <li><div id="uncheckAll" onClick={() => {showProducts(); showArrow()}} activeClassName="current">Tooted <span id="arrow">&#9662;</span></div></li>
 
