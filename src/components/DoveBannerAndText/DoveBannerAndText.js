@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { Link } from 'gatsby';
 import ButtonRadius from '../ButtonDove';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const DoveBannerAndText = ({image, imagemobile, title, paragraphText, buttonCTA, buttonLink, second}) => (
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
     <div className="dove-bannerandtext-section" style={{flexDirection: second ? `row-reverse` : `row`}}>
         <div className="dove-image-section">
             <img src={image} className="imagepc"/>
@@ -19,6 +21,7 @@ const DoveBannerAndText = ({image, imagemobile, title, paragraphText, buttonCTA,
             </ButtonRadius>
         </div>
     </div>
+    </ScrollAnimation>
 );
 
 DoveBannerAndText.propTypes = {

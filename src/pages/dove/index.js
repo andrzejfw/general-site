@@ -16,6 +16,7 @@ import DoveSustainabilityHeroImgMobile from '../../assets/images/dove-sustainabi
 import DovePurposeHeroImg from '../../assets/images/dove-purpose-hero.jpg'
 import DovePurposeHeroImgMobile from '../../assets/images/dove-purpose-hero-mobile.jpg'
 import BUp from '../../assets/images/happy-shadow-tabl.png'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 
@@ -95,7 +96,9 @@ const SustainabilityPageDove = () => {
    <>
    <SEO title="Dove kehahooldus" description="Dove kehahooldus ja nahahooldus. Tutvu Dove kaubamärgiga. Vaata lähemalt Dove tootevalikut või tutvu meie kaubamärgi eesmärkide ning jätkusuutlikkusega."/>
    <ImageSection>
+      <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
       <DoveHeroImage src={DoveHomepageHeroImg} alt="Dove"/>
+      </ScrollAnimation>
    </ImageSection>
    <Section>
    <DoveCategories sectionTitle="Meie kategooriaid">

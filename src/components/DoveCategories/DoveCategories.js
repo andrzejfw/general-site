@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from "prop-types";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class DoveCategories extends Component {
     static propTypes = {
@@ -13,13 +14,14 @@ class DoveCategories extends Component {
         } = this;
 
         return (
-            <section className="dove-categories-section">
-                <h2>{sectionTitle}</h2>
-                <div className="dove-boxes-section">
-                    {children}
-                </div>
-                    
-            </section>
+            <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" delay="700">
+                <section className="dove-categories-section">
+                        <h2>{sectionTitle}</h2>
+                    <div className="dove-boxes-section">
+                        {children}
+                    </div>
+                </section>
+            </ScrollAnimation>
         )
     }
 }
