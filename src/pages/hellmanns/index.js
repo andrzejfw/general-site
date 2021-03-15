@@ -13,6 +13,7 @@ import backgroundMobile from '../../assets/images/hellmanns-video-bg-mobile-text
 import HellmannsBannerAndText from '../../components/HellmannsBannerAndText/HellmannsBannerAndText'
 import CampaingOneImg from '../../assets/images/hellmanns-hero-banner.jpg'
 import CampaingTwoImg from '../../assets/images/ThePlasticsProblem.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Section = styled.section`
     width:100%;
@@ -46,44 +47,52 @@ const IndexPageHellmanns = () => {
    <>
    <SEO title="Hellmann's Eesti" description="Hellmann's Eesti. Loe lähemalt meie majoneesi, ketšupi ja kastmete kohta. Tutvu lähemalt meie soovitatud retseptidega või Hellmann'si tuntud kaubamärgiga."/>
    <Section> 
-    <HellmannsHeroImage src={HellmannsHeroImg} alt="Magnum jäätis"/> 
+    <ScrollAnimation animateIn="animate__fadeInDown" animateOnce="true"> 
+      <HellmannsHeroImage src={HellmannsHeroImg} alt="Magnum jäätis"/>
+    </ScrollAnimation> 
     <HellmannsCategories sectionTitle="Meie kategooriaid">
       <HellmannsCategoriesBox categoryTitle="Majonees" categoryImage={Mayo} categoryLink="/" alt="Hellmann's Majonees"></HellmannsCategoriesBox>
       <HellmannsCategoriesBox categoryTitle="Ketšup" categoryImage={Ketchup} categoryLink="/" alt="Hellmann's Ketšup"></HellmannsCategoriesBox>
       <HellmannsCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/" alt="Hellmann's Kastmed"></HellmannsCategoriesBox>
     </HellmannsCategories>
     <div style={{marginTop: "130px"}}>
-    <BannerWithVideoHellmanns 
-        title="Jätkusuutlikult hangitud koostisosad" 
-        paragraph="Oleme pühendunud koostisosade hankimisele jätkusuutlikest allikatest. Teame, et peame valmistama tooteid, mis mitte ainult ei maitse hästi, vaid teevad head ka meie klientidele ja planeedile." 
-        videoId="vmSKx7zMF1o" 
-        background={BackgroundImage}
-        backgroundMobile={backgroundMobile}
-        button
-        videoButtonCTA="Loe lähemalt"
-        videoButtonLink="/sustainability-hellmanns"
-        mobileHeight="700px"
-        >
-    </BannerWithVideoHellmanns>
+    <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
+      <BannerWithVideoHellmanns 
+          title="Jätkusuutlikult hangitud koostisosad" 
+          paragraph="Oleme pühendunud koostisosade hankimisele jätkusuutlikest allikatest. Teame, et peame valmistama tooteid, mis mitte ainult ei maitse hästi, vaid teevad head ka meie klientidele ja planeedile." 
+          videoId="vmSKx7zMF1o" 
+          background={BackgroundImage}
+          backgroundMobile={backgroundMobile}
+          button
+          videoButtonCTA="Loe lähemalt"
+          videoButtonLink="/hellmanns/sustainability"
+          mobileHeight="700px"
+          >
+      </BannerWithVideoHellmanns>
+    </ScrollAnimation>
     </div>
     <div style={{marginBottom: "100px"}}>
-    <HellmannsBannerAndText 
+    <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true">
+      <HellmannsBannerAndText 
         image={CampaingOneImg}
         title="TOIT ON RAISKAMISEKS LIIGA MAITSEV"
         paragraphText="Aitame inimestel nautida head, kvaliteetset toitu just sellisena nagu see on, ilma muretsemise ja raiskamiseta."
         buttonCTA="Loe rohkem"
-        buttonLink="/purpose-one-hellmanns"
+        buttonLink="/hellmanns/purpose-one"
         >
       </HellmannsBannerAndText>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">
       <HellmannsBannerAndText 
         image={CampaingTwoImg}
         title="PLASTIKU REVOLUTSIOON"
         paragraphText="Meie Hellmann’sis usume järgmist väidet – vähem raiskamist ja rohkem maitset. Ja nagu võib-olla teate, anname endast parima, et inimesed saaksid nautida head, kvaliteetset toitu just sellisena, nagu see on, ilma muretsemata ja raiskamata. "
         buttonCTA="Loe rohkem"
-        buttonLink="/purpose-two-hellmanns"
+        buttonLink="/hellmanns/purpose-two"
         second
         >
       </HellmannsBannerAndText>
+    </ScrollAnimation>
     </div>
     </Section>
     </>

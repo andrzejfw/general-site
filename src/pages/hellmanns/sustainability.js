@@ -8,12 +8,14 @@ import Img3 from '../../assets/images/seeds.png';
 import Img4 from '../../assets/images/tomatoes.jpg';
 import BgFooter from '../../assets/images/hellmanns-bg-footer.png';
 import BgContent from '../../assets/images/hellmanns-bg-content.png';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const Section = styled.section`
     width:100%;
     margin:auto;
     text-align: center;
+    background: #FDF6E8;
 `;
 
 const Hero = styled.section`
@@ -114,38 +116,48 @@ const SustainabilityPage = () => {
   </Hero>
    <HellmannsAboutSection>
    <HellmannsSustainabilitySectionContent>
+      <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true" delay="800">
         <h1>Jätkusuutlikult hangitud koostisosad</h1>
-    <ImagewithText>
-    <Image src={Img1} alt="Me hoolime jätkusuutlikkusest"></Image>
-    <Text>
-      <h2>Me hoolime jätkusuutlikkusest</h2>
-      <p>Kuigi sellest on juba üle 100 aasta möödas, kui Richard Hellmann avas New Yorkis oma esimese restorani, jätkame me nüüdki kõrge kvaliteediga koostisosade kasutamist, et tuua oma majoneesides, kastmetes ja ketšupites välja just parim. Hangime koostisosasi jätkusuutlikest allikatest, sest tahame, et meie tooted mitte üksnes ei maitseks hästi, vaid teeks head ka meie klientidele ja plaanidele.</p>
-    </Text>
-    </ImagewithText>
-    <ImagewithTextOposite>
-    <Image src={Img2} alt="Hellmann’si majoneesis kasutatakse õrrekanade mune"></Image>
-    <Text>
-      <h2>Õrrekanade monad</h2>
-      <p>Me valmistame igal aastal suures koguses majoneesi. See tähendab, et me kasutame palju mune. Ja meie pühendumus kasutada vaid puurivabasid mune muudab sõna otseses mõttes miljonite kanade elukvaliteeti väga palju. Nii et võime uhkusega öelda: oleme saavutanud oma eesmärgi kasutada õrrekanade mune. Oleme ka ainus kaubamärk, mis kasutab munapulbri asemel ehtsat munakollast
-      </p>
-    </Text>
-    </ImagewithTextOposite>
-    <ImagewithText>
-    <Image src={Img3} alt="Hellmann’s kasutatab vastutustundikult hangitud õlisid"></Image>
-    <Text>
-      <h2>Vastutustundlikult hangitud õlid</h2>
-      <p>Meie tarnijate valik põhineb sellel, kuidas nad oma saaki kasvatavad ja korjavad. Ja teeme kõik endast oleneva tagamaks, et meid õliga varustavad farmid on pühendunud vastutustundlikele põllumajandustavadele säilitamaks ja kaitsmaks oma maad tulevastele põlvkondadele.</p>
-    </Text>
-    </ImagewithText>
-    <ImagewithTextOposite>
-    <Image src={Img4} alt="Hellmann’si ketšupis kasutatakse jätkusuutlikult korjatud tomateid."></Image>
-    <Text>
-      <h2>Jätkusuutlikult korjatud tomatid</h2>
-      <p>Kõik Hellmann`s ketšupid on valmistatud säästlikult hangitud tomatitest, tooted ei sisalda säilitusaineid ning on valmistatud ehtsatest ja puhastest koostisosadest.
-      </p>
-      <p>Me usume, et tomatid on ideaalse ketšupi saladuseks. Ja hoolitseme selle eest, et meie tooted oleksid vaid kõrgeima kvaliteediga! Samuti me teame, et parima maitsega tomatid pärinevad parimatest kasvukohtadest. Seetõttu oleme pühendunud oma ketšupite valmistamisel säästlikult kasvatatud ja korjatud tomatite kasutamisele. Lisaks nende kõrgele kvaliteedile kaitseb selline tarneahel jätkusuutlikku põllumajandust ka tulevaste põlvkondade jaoks.</p>
-    </Text>
-    </ImagewithTextOposite>
+      </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true" delay="1200">
+      <ImagewithText>
+      <Image src={Img1} alt="Me hoolime jätkusuutlikkusest"></Image>
+      <Text>
+        <h2>Me hoolime jätkusuutlikkusest</h2>
+        <p>Kuigi sellest on juba üle 100 aasta möödas, kui Richard Hellmann avas New Yorkis oma esimese restorani, jätkame me nüüdki kõrge kvaliteediga koostisosade kasutamist, et tuua oma majoneesides, kastmetes ja ketšupites välja just parim. Hangime koostisosasi jätkusuutlikest allikatest, sest tahame, et meie tooted mitte üksnes ei maitseks hästi, vaid teeks head ka meie klientidele ja plaanidele.</p>
+      </Text>
+      </ImagewithText>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">
+      <ImagewithTextOposite>
+      <Image src={Img2} alt="Hellmann’si majoneesis kasutatakse õrrekanade mune"></Image>
+      <Text>
+        <h2>Õrrekanade monad</h2>
+        <p>Me valmistame igal aastal suures koguses majoneesi. See tähendab, et me kasutame palju mune. Ja meie pühendumus kasutada vaid puurivabasid mune muudab sõna otseses mõttes miljonite kanade elukvaliteeti väga palju. Nii et võime uhkusega öelda: oleme saavutanud oma eesmärgi kasutada õrrekanade mune. Oleme ka ainus kaubamärk, mis kasutab munapulbri asemel ehtsat munakollast
+        </p>
+      </Text>
+      </ImagewithTextOposite>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true">
+      <ImagewithText>
+      <Image src={Img3} alt="Hellmann’s kasutatab vastutustundikult hangitud õlisid"></Image>
+      <Text>
+        <h2>Vastutustundlikult hangitud õlid</h2>
+        <p>Meie tarnijate valik põhineb sellel, kuidas nad oma saaki kasvatavad ja korjavad. Ja teeme kõik endast oleneva tagamaks, et meid õliga varustavad farmid on pühendunud vastutustundlikele põllumajandustavadele säilitamaks ja kaitsmaks oma maad tulevastele põlvkondadele.</p>
+      </Text>
+      </ImagewithText>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">
+      <ImagewithTextOposite>
+      <Image src={Img4} alt="Hellmann’si ketšupis kasutatakse jätkusuutlikult korjatud tomateid."></Image>
+      <Text>
+        <h2>Jätkusuutlikult korjatud tomatid</h2>
+        <p>Kõik Hellmann`s ketšupid on valmistatud säästlikult hangitud tomatitest, tooted ei sisalda säilitusaineid ning on valmistatud ehtsatest ja puhastest koostisosadest.
+        </p>
+        <p>Me usume, et tomatid on ideaalse ketšupi saladuseks. Ja hoolitseme selle eest, et meie tooted oleksid vaid kõrgeima kvaliteediga! Samuti me teame, et parima maitsega tomatid pärinevad parimatest kasvukohtadest. Seetõttu oleme pühendunud oma ketšupite valmistamisel säästlikult kasvatatud ja korjatud tomatite kasutamisele. Lisaks nende kõrgele kvaliteedile kaitseb selline tarneahel jätkusuutlikku põllumajandust ka tulevaste põlvkondade jaoks.</p>
+      </Text>
+      </ImagewithTextOposite>
+    </ScrollAnimation>
     </HellmannsSustainabilitySectionContent>
     </HellmannsAboutSection>
     </Section>
