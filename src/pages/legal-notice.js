@@ -32,7 +32,7 @@ const Privacy = () => {
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <ImgLogo src="https://cdn.freebiesupply.com/logos/large/2x/unilever-2-logo-png-transparent.png" />
+              {/* <ImgLogo src="https://cdn.freebiesupply.com/logos/large/2x/unilever-2-logo-png-transparent.png" /> */}
             </div>
           </div>
         </div>
@@ -64,8 +64,7 @@ const Privacy = () => {
             <h2>Andmekaitse</h2>
             <p>Selle veebilehe kaudu ettevõttele Unilever edastatud isikuandmeid (nagu nimi, perekonnanimi ja e-posti aadress) kasutatakse ainult vastavalt andmekaitse ja küpsiste teabe sätetele. Enne andmete edastamist Unileverile lugege palun privaatsusteatist ja küpsiste teadet.</p>
             <h2>Kontakt</h2>
-            <p>Kui teil on selle veebilehe kohta küsimusi või kaebusi, kasutage palun järgmisi kontaktandmeid: </p>
-            <p><a href="mailto:info-estonia@unilever.com"> e-mail: info-estonia@unilever.com</a></p>
+            <p>Kui teil on selle veebilehe kohta küsimusi või kaebusi, kasutage palun järgmisi kontaktandmeid:<a href="mailto:info-estonia@unilever.com"> e-mail: info-estonia@unilever.com</a></p>
             <h2>Muud sätted</h2>
             <p>Ettevõte Unilever jätab endale õiguse seda juriidilist teadet edaspidi korrigeerida ja muuta. Unilever annab muudatuste kehtestamise kavatsusest teada oma veebilehel seitse päeva ette.</p>
             <p>Seda juriidilist teadet ja selle veebilehe kasutamist külastajate poolt reguleerivad Eesti seadused.</p>

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import PrivacyStyle from "../components/privacyNotice/privacy-notice"
-import Accordion from '../components/AccordionLipton/Accordion'
+import Accordion from '../components/Accordion/Accordion'
 import SEO from '../components/Seo/Seo'
 
 
@@ -32,7 +32,7 @@ const Privacy = () => {
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <ImgLogo src="https://cdn.freebiesupply.com/logos/large/2x/unilever-2-logo-png-transparent.png" />
+              {/* <ImgLogo src="https://cdn.freebiesupply.com/logos/large/2x/unilever-2-logo-png-transparent.png" /> */}
             </div>
           </div>
         </div>

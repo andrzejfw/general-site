@@ -8,7 +8,7 @@ const PrivacyStyle = createGlobalStyle`
     }
 
     h1{
-        color:#007dbb !important;
+        color:#005EEF !important;
         width:100%;
         font-size:1.75rem !important;
         margin-bottom:40px;
@@ -16,7 +16,7 @@ const PrivacyStyle = createGlobalStyle`
     }
     h2{
         font-size:1.1rem !important;
-        color:#007dbb;
+        color:#005EEF;
         text-transform:uppercase;
         margin-bottom:20px;
         font-weight:bold;
@@ -24,18 +24,21 @@ const PrivacyStyle = createGlobalStyle`
     }
     h3{
         margin:50px 0 30px 0;
-        color:#007dbb !important;
+        /* color:#007dbb !important; */
+        color:#fff !important;
         font-size:1rem !important;
     }
-    p{
+    .row p{
         font-weight:100;
     }
     a{
-        color:#e201a5;
+        /* color:#e201a5; */
+        color: #000b70;
         /* text-decoration:none; */
     }
     a:hover{
-        color:#74ae00;
+        /* color: #74ae00; */
+        color: #000b49;
         text-decoration:none;
     }
     .gfHYfS{
@@ -72,14 +75,14 @@ const PrivacyStyle = createGlobalStyle`
     .bSGTyL span{
         color:#007dbb !important;
     }
-    ul{
+    .row ul{
         margin:0 0 20px 30px !important;
     }
-    ul li{
+    .row ul li{
         font-size:16px !important;
         text-transform:none !important;
         font-weight:100;
-        color:#000 !important;
+        color:#fff !important;
     }
 
 `;
