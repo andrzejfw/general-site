@@ -8,7 +8,8 @@ const PrivacyStyle = createGlobalStyle`
     }
 
     h1{
-        color:#005EEF !important;
+        /* color:#005EEF !important; */
+        color: #1f36c7 !important;
         width:100%;
         font-size:1.75rem !important;
         margin-bottom:40px;
@@ -16,7 +17,8 @@ const PrivacyStyle = createGlobalStyle`
     }
     h2{
         font-size:1.1rem !important;
-        color:#005EEF;
+        /* color:#005EEF; */
+        color: #1f36c7;
         text-transform:uppercase;
         margin-bottom:20px;
         font-weight:bold;

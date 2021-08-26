@@ -22,7 +22,7 @@ const FooterDomestos = () => (
         </div>
             
             <ul className="footer-domestos-list">       
-                <li className="footer-domestos-item"><Link to="/sitemap">saidi kaart</Link></li>
+                <li className="footer-domestos-item"><a href="/sitemap" target="_blank">saidi kaart</a></li>
                 <li className="footer-domestos-item"><a href="/contact" target="_blank">kontakt</a></li>
                 <li className="footer-domestos-item-list">
                     <a href="/cookie-notice" target="_blank">küpsise-eeskirjad</a>

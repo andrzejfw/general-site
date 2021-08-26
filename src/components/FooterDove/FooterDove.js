@@ -22,7 +22,7 @@ const FooterDove = () => (
         </div>
             
             <ul className="footer-dove-list">       
-                <li className="footer-dove-item"><Link to="/sitemap">saidi kaart</Link></li>
+                <li className="footer-dove-item"><a href="/sitemap" target="_blank">saidi kaart</a></li>
                 <li className="footer-dove-item"><a href="/contact" target="_blank">kontakt </a></li>
                 <li className="footer-dove-item-list">
                     <a href="/cookie-notice" target="_blank">küpsise-eeskirjad</a>

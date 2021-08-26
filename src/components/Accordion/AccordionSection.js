@@ -19,8 +19,8 @@ class AccordionSection extends Component {
     return (
       <div
         style={{
-          background: isOpen ? "#004cc2" : "#004cc2",
-          border: "1px solid #004cc2",
+          background: isOpen ? "#1f36c7" : "#1f36c7",
+          border: "1px solid #1f36c7",
           borderRadius: "14px",
           color:"#fff",
           fontWeight: "bold",

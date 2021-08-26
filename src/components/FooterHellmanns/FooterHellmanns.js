@@ -27,7 +27,7 @@ const FooterHellmanns = () => (
         </div>
             
             <ul className="footer-hellmanns-list">       
-                <li className="footer-hellmanns-item"><Link to="/sitemap">saidi kaart</Link></li>
+                <li className="footer-hellmanns-item"><a href="/sitemap" target="_blank">saidi kaart</a></li>
                 <li className="footer-hellmanns-item"><a href="/contact" target="_blank">kontakt </a></li>
                 <li className="footer-hellmanns-item-list">
                     <a href="/cookie-notice" target="_blank">küpsise-eeskirjad</a>

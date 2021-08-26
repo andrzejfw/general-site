@@ -21,7 +21,7 @@ const FooterRexona = () => (
         </div>
             
             <ul className="footer-rexona-list">       
-                <li className="footer-rexona-item"><Link to="/sitemap">saidi kaart</Link></li>
+                <li className="footer-rexona-item"><a href="/sitemap" target="_blank">saidi kaart</a></li>
                 <li className="footer-rexona-item"><a href="/contact" target="_blank">kontakt </a></li>
                 <li className="footer-rexona-item-list">
                     <a href="/cookie-notice" target="_blank">küpsise-eeskirjad</a>

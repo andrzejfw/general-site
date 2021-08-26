@@ -9,7 +9,8 @@ const Footercontainer = styled.div`
 
     height:20vh; 
     z-index:2;
-    background:#005eef;
+    /* background:#005eef; */
+    background: #1f36c7;
     @media (max-width:992px){
     height:100%;
     padding-bottom:20px;
@@ -68,7 +69,8 @@ const FooterWrapper = styled.nav`
   height: 20vh;
   display: flex;
   align-items:center;
-  background-color: #005eef;
+  /* background-color: #005eef; */
+  background-color: #1f36c7;
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;

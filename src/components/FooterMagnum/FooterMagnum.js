@@ -22,7 +22,7 @@ const FooterMagnum = () => (
         </div>
             
             <ul className="footer-magnum-list">       
-                <li className="footer-magnum-item"><Link to="/sitemap">saidi kaart</Link></li>
+                <li className="footer-magnum-item"><a href="/sitemap" target="_blank">saidi kaart</a></li>
                 <li className="footer-magnum-item"><a href="/contact" target="_blank">kontakt </a></li>
                 <li className="footer-magnum-item-list">
                     <a href="/cookie-notice" target="_blank">küpsise-eeskirjad</a>

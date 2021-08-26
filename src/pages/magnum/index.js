@@ -55,14 +55,14 @@ const IndexPageMagnum = () => {
                 button
                 titleShadow
                 videoButtonCTA="Loe rohkem"
-                videoButtonLink="/about-magnum"
+                videoButtonLink="/magnum/about"
                 >
             </BannerWithVideoMagnum>
             <MagnumBannerAndText 
                 image={MagnumDeliver}
                 paragraphText="Oleme avanud Bolt Foodi ja Wolti platvormil virtuaalpoed, kust saad tellida oma lemmiku jäätiste kulleriga koju!"
                 buttonCTA="Loe rohkem"
-                buttonLink="/delivery-magnum"
+                buttonLink="/magnum/delivery"
                 >
             </MagnumBannerAndText>
         </SectionMagnumHP>

@@ -105,7 +105,7 @@ const KnorrBannerAndTextStyles = createGlobalStyle`
 
             @media(max-width:992px){
                 text-align: center !important;
-                color: #17584a;
+                /* color: #17584a; */
             }
         }
 
@@ -120,7 +120,7 @@ const KnorrBannerAndTextStyles = createGlobalStyle`
             @media(max-width:992px){
                 text-align: center !important;
                 font-size: 1.1rem;
-                color: #17584a;
+                /* color: #17584a; */
             }
         }
         button {

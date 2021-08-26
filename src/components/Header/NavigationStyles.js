@@ -13,7 +13,8 @@ const NavigationStyles = createGlobalStyle`
     font-size:20px;
   }
   .navbar-dark .navbar-nav .nav-link{
-    color:#005EEF !important;
+    /* color:#005EEF !important; */
+    color: #1f36c7 !important;
   }
   /* icon animated */
     .navbar-toggler {
@@ -27,7 +28,7 @@ const NavigationStyles = createGlobalStyle`
     }
 
     .navbar-toggler .icon-bar {
-      background-color: #005EEF;
+      background-color: #1f36c7;
       transform: rotate(0deg) translate(0px, 0px);
       transition: ease all .2s;
     }

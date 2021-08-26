@@ -236,7 +236,7 @@ const FooterLipton = () => (
         </FooterItemList>
         </FooterSection>
             <FooterList>            
-                <FooterItem><Link to="/sitemap">saidi kaart</Link></FooterItem>
+                <FooterItem><a href="/sitemap" target="_blank">saidi kaart</a></FooterItem>
                 <FooterItem><a href="/contact" target="_blank">kontakt </a></FooterItem>
                 <FooterItemList><a href="/cookie-notice" target="_blank">küpsise-eeskirjad</a><a href="/privacy-notice" target="_blank">privaatsuspoliitika</a><a href="/legal-notice" target="_blank">juriidiline teave</a></FooterItemList>           
             </FooterList>

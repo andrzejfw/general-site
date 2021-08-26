@@ -41,7 +41,7 @@ export default class extends React.Component {
 
   render() {
     return (
-      <ScrollAnimation animateIn="animate__headShake"><Button>{this.props.children}​​</Button></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__headShake" animateOnce="true"><Button>{this.props.children}​​</Button></ScrollAnimation>
     );
     }
   }
