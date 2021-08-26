@@ -76,26 +76,26 @@ export default class extends React.Component{
                 <Link to="/lipton"><img src={Lipton} alt="Lipton Eesti logo"></img></Link>
                 <Link to="/knorr"><img src={Knorr} alt="Knorr Eesti logo"></img></Link>
                 <Link to="/hellmanns"><img src={Hellmanns} alt="Hellmann's Eesti logo"></img></Link>
-                <Link to="/pukka"><img src={Pukka} alt="Pukka tee Eesti logo"></img></Link>
+                {/* <Link to="/pukka"><img src={Pukka} alt="Pukka tee Eesti logo"></img></Link> */}
             </TabPanel>
 
             <TabPanel style={{backgroundImage: `url(${Sun})`}}>
                 <Link to="/magnum"><img src={Magnum} alt="Magnum Eestis jäätis logo"></img></Link>
-                <Link to="/benandjerrys"><img src={BenAndJerrys} alt="Ben&Jerry's jäätis logo"></img></Link>
+                {/* <Link to="/benandjerrys"><img src={BenAndJerrys} alt="Ben&Jerry's jäätis logo"></img></Link>
                 <Link to="/idull"><img src={Idull} alt="Idüll Eesti jäätis logo"></img></Link>
-                <Link to="/superviva"><img src={SuperViva} alt="Super Viva Eesti jäätis logo"></img></Link>
+                <Link to="/superviva"><img src={SuperViva} alt="Super Viva Eesti jäätis logo"></img></Link> */}
             </TabPanel>
 
             <TabPanel style={{backgroundImage: `url(${Bird})`}}>
                 <Link to="/dove"><img src={Dove} alt="Dove Eesti logo"></img></Link>
                 <Link to="/rexona"><img src={Rexona} alt="Rexona Eesti logo"></img></Link>
-                <Link to="/lbp"><img src={Lbp} alt="Love Beauty & Planet Eesti logo"></img></Link>
+                {/* <Link to="/lbp"><img src={Lbp} alt="Love Beauty & Planet Eesti logo"></img></Link> */}
             </TabPanel>
 
             <TabPanel style={{backgroundImage: `url(${Clothes})`}}>
                 <Link to="/domestos"><img src={Domestos} alt="Domestos Eesti WC-puhastusvahendid logo"></img></Link>
                 <Link to="/cif"><img src={Cif} alt="Cif Eesti kodukeemia logo"></img></Link>
-                <Link to="/seventhgeneration"><img src={SeventhGeneration} alt="Seventh Generation Eesti logo"></img></Link>
+                {/* <Link to="/seventhgeneration"><img src={SeventhGeneration} alt="Seventh Generation Eesti logo"></img></Link> */}
             </TabPanel>
         </Tabs>
       );
