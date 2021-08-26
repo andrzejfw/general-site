@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { Link } from 'gatsby';
 import ButtonRadius from '../ButtonKnorr';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const KnorrBannerAndTextReversed = ({image, imagemobile, title, paragraphText, buttonCTA, buttonLink, second}) => (
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
     <div className="knorr-bannerandtext-section-reversed" style={{flexDirection: second ? `row-reverse` : `row`}}>
         <div className="knorr-paragraph-section-reversed" style={{textAlign: second ? `right` : `left`}}>
             <h2>{title}</h2>
@@ -19,6 +21,7 @@ const KnorrBannerAndTextReversed = ({image, imagemobile, title, paragraphText, b
             <img src={imagemobile} className="imagemobile-reversed"/>
         </div>
     </div>
+    </ScrollAnimation>
 );
 
 KnorrBannerAndTextReversed.propTypes = {

@@ -61,12 +61,12 @@ const HeaderDomestosStyles = createGlobalStyle`
     right:0;
     z-index: 99;
     box-shadow: 0 0 12px 2px #8888;
-    padding: 10px 20% 20px;
+    padding: 10px 20% 20px 10%;
     background:radial-gradient(circle at 20% 15%,#123c7b,#06154b 61%);
     justify-content: space-around;
 
     @media(max-width:1600px){
-        padding: 10px 15% 20px;
+        padding: 10px 10% 20px;
     }
 
     @media(max-width:1100px){

@@ -14,6 +14,7 @@ const HellmannsPurposeDiv = styled.div`
         width: 100%;
         height: 500px;
         object-fit: cover;
+        object-position: right;
 
         @media(max-width:992px){
             content: url(${HellmannsHeroImgMobile});

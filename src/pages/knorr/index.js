@@ -12,6 +12,7 @@ import KnorrAboutHeroImg from '../../assets/images/knorr-about-banner.jpg'
 import KnorrAboutHeroImgMobile from '../../assets/images/knorr-about-banner-mobile.jpg'
 import KnorrSustainabilityHeroImg from '../../assets/images/knorr-sustainability-banner.jpg'
 import KnorrSustainabilityHeroImgMobile from '../../assets/images/knorr-sustainability-banner-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const Section = styled.section`
     width:100%;
@@ -44,13 +45,17 @@ const IndexPageKnorr = () => {
     <>
     <SEO title="Knorr toiduvalmistamise tooted" description="Knorr pakub suurepäraseid maitseelamusi ja aitab lähemale tuua teiste kultuuride autentset kööki. Tutvu Knorri kaubamärgi, eesmärkide ning toodetega."/>
     <Section> 
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
      <KnorrHeroImage src={KnorrHeroImg} alt="Knorr toiduvalmistamise tooted"/> 
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
      <KnorrCategories sectionTitle="Meie kategooriaid">
        <KnorrCategoriesBox categoryTitle="Pakisupid" categoryImage={CifCream} categoryLink="/knorr/products" alt="Knorr Pakisupid"></KnorrCategoriesBox>
        <KnorrCategoriesBox categoryTitle="Topsiroad" categoryImage={CifSpray} categoryLink="/knorr/products" alt="Knorr Topsiroad"></KnorrCategoriesBox>
        <KnorrCategoriesBox categoryTitle="Kiirnuudlid" categoryImage={CifSpray} categoryLink="/knorr/products" alt="Knorr Kiirnuudlid"></KnorrCategoriesBox>
        <KnorrCategoriesBox categoryTitle="Puljongid" categoryImage={CifSpray} categoryLink="/knorr/products" alt="Knorr Puljongid"></KnorrCategoriesBox>
      </KnorrCategories>
+    </ScrollAnimation>
      <KnorrBannerAndText
          image={KnorrAboutHeroImg}
          imagemobile={KnorrAboutHeroImgMobile}

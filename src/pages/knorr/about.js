@@ -4,6 +4,7 @@ import SEO from '../../components/Seo/Seo'
 import KnorrHeroImg from '../../assets/images/knorr-about-hero.jpg'
 import KnorrBannerImg from '../../assets/images/knorr-about-banner.jpg'
 import KnorrBannerImgMobile from '../../assets/images/knorr-about-banner-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 const Section = styled.section`
@@ -76,7 +77,10 @@ const AboutPageKnorr = () => {
   return (
     <>
     <SEO title="Knorri kaubamärgist" description="Knorri kaubamärgist. Knorri lugu sai alguse juba 1838. aastal ning kõrge toidu kvaliteet on olnud meile oluline juba algusest. Loe rohkem Knorri brändi kohta"/>
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
     <KnorrHeroImage src={KnorrHeroImg} alt="Knorr kaubamärk - eesmärk, ajalugu, tutvustus"/> 
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
     <Section> 
         <h1>Knorri kaubamärgist</h1>
         <h2>Knorri eesmärk</h2>
@@ -91,6 +95,7 @@ const AboutPageKnorr = () => {
         <h2>Jätkusuutlik tulevik</h2>
         <p>Meie pühendumus kõrgeima kvaliteediga toidu pakkumisele viib meid nüüd uue tuleviku suunas, mis hõlmab jätkusuutlikkust. Investeerime uutesse, tõhusamatesse protsessidesse ja jätkusuutlikkuse põhimõtete omaksvõtmisesse oma ettevõtte kaudu. See ei ole lihtne tee, kuid meie koostisosade vastutustundlik hankimine aitab tagada, et saaksime pakkuda peredele kogu maailmas maitsvaid ja toitvaid roogasid.</p>
     </Section>
+    </ScrollAnimation>
     </>
   )
 }

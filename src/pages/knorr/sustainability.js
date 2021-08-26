@@ -4,6 +4,7 @@ import SEO from '../../components/Seo/Seo'
 import KnorrHeroImg from '../../assets/images/knorr-sustainability-hero.jpg'
 import KnorrBannerImg from '../../assets/images/knorr-sustainability-banner.jpg'
 import KnorrBannerImgMobile from '../../assets/images/knorr-sustainability-banner-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 const Section = styled.section`
@@ -62,7 +63,7 @@ const KnorrHeroImage = styled.img`
 
     @media (max-width: 692px) {
         margin-top: 0;
-        object-position: 40%;
+        object-position: 60%;
     }
 `;
 
@@ -76,7 +77,10 @@ const AboutPageKnorr = () => {
   return (
     <>
     <SEO title="Knorri jätkusuutlikkus" description="Knorri jätkusuutlikkus. Knorri eesmärk on hankida kõik toorained 100% jätkusuutlikult. Soovime, et meie toit vastaks kõrgeimatele toitumisstandarditele."/>
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
     <KnorrHeroImage src={KnorrHeroImg} alt="Knorr - jätkusuutlik toidu hankimine"/> 
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
     <Section> 
         <h1>Knorri jätkusuutlikkus</h1>
         <h2>Jätkustuulik toodete hankimine</h2>
@@ -92,6 +96,7 @@ const AboutPageKnorr = () => {
         <p>Koostöös Maailma Toiduprogrammiga (World Food Programme) loome inimestele helgemat tulevikku, kus toitvad road on kättesaadavad rohkematele inimestele kogu maailmas. Igal aastal annetame koos Maailma Toiduprogrammiga koolilastele kuumtoite kogu maailmas ning siiani oleme pakkunud üle kahe miljoni portsjoni.</p>
         <p>Unilever jätkusuutliku kava osana on meil ülemaailmne eesmärk, et 75% meie toodetest vastaks soolasisaldusele, mis võimaldab tarbida maksimaalselt 5 grammi päevas. Samuti oli meie eesmärk kahekordistada 2020. aastaks ülemaailmselt tunnustatud toitumisjuhistele tuginedes meie portfelli osakaalu, mis vastaks kõrgeimatele toitumisstandarditele.</p>
     </Section>
+    </ScrollAnimation>
     </>
   )
 }

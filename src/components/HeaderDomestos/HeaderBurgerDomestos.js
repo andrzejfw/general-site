@@ -47,7 +47,7 @@ function showArrow() {
       </div>
 
       <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/about">Ettevõttest</Link></li>
-      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/sustainability">Jätkusuutlikkus</Link></li>
+      {/* <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/sustainability">Jätkusuutlikkus</Link></li> */}
       <li><a id="uncheckAll" target="_blank" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" href="/contact">Kontakt</a></li>
     </ul>
   </div>

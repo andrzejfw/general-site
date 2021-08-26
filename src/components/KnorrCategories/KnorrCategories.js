@@ -18,7 +18,7 @@ class KnorrCategories extends Component {
                 <div className="boxes-section">
                     {children}
                 </div>
-                    
+
             </section>
         )
     }
