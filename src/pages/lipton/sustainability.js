@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import SustainabilityHero from '../../assets/images/world-tea-plantation-scene.jpg'
 import SEO from '../../components/Seo/Seo'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const SustainabilityHeroImage = styled.img`
     width: 100%;
@@ -43,7 +44,10 @@ const SustainabilitySubHeader = styled.h2`
 const SustainabilityPage = () => (
   <>
     <SEO title="Jätkusuutlikkus" description="Liptoni eesmärk on saavutada jätkusuutlik hankimine igal aastal toodetud 19 miljardile teepakile. Tee maitseb paremini, kui see on jätkusuutlikult hangitud."/>
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
     <SustainabilityHeroImage src={SustainabilityHero} alt="Lipton Eesti jätkusuutlik tee"/>
+    </ScrollAnimation>
+    <ScrollAnimation animateIn="animate__fadeIn" delay="800" animateOnce="true">
     <Section>
         <SustainabilityHeader>Jätkusuutlikkus</SustainabilityHeader>
         <p>Alates aastast 1880 on loodus olnud meie teevabrik. Iga tass Liptoni teed kasvatatakse loodusliku vihma, tuule ja päikese käes, et anda teile meie allkirjaga rikkalik maitse ja aroom. Veelgi enam, usume, et iga tassitäis Liptoni teed ei peaks aitama valgustada mitte ainult teie päeva, vaid ka kõigi meie teekasvatajate ja nende perede päeva. Ning loomulikult peaks see valgustama ka meie planeedi tulevikku.</p>
@@ -55,7 +59,8 @@ const SustainabilityPage = () => (
         <p>Pakume meie tee kasvajatele, korjajatele ja nende peredele paremat elukvaliteeti. Kulutada 2,5 miljonit dollarit aastas meie Keenia töötajate tervishoiule, maksta neile kolm korda keskmist palka põllumajandussektoris või pakkuda 20 erinevate kooli nende töötajate lastele – seda kõike aitab meil neile pakkuda teie armastus Liptoni tee vastu. Kuid see ei ole kõik, mida me toetame. Seisame ka meie planeedi eest, sest 95% Kericho tehasest kasutab taastuv energiat ning oleme istutanud ligi 700 000 puud sellele kinnistule.</p>
         <SustainabilitySubHeader>Jätkusuutlik hankimine igal aastal toodetud 19 miljardile teepakile.</SustainabilitySubHeader>
         <p>Jätkusuutlikus meie teekasvandustes on jõudnud kaugele, kuid teekond pole lõppenud enne, kui saame igal aastal toodetud 19 miljardist teepakist iga teelehe jätkusuutlikult hankida. Jätkates koos Liptoni teega ärkamist, enda soojendamist või rahunemist, aitate meil sinna jõuda! Unileveri ettevõtte suuruse tõttu on meil võimalus positiivselt mõjutada kogu teetööstust – aidates kaasa rahvusvahelise tee hinnakujundusele, üle kahe miljoni selles valdkonnas töötava keenialase elule ja kogu teeäri mainele.</p>
-      </Section>
+    </Section>
+    </ScrollAnimation>
   </>
 )
 

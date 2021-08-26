@@ -25,6 +25,7 @@ import HeroImage from '../../assets/images/lipton-hero-image.jpg';
 import BackgroundImage from '../../assets/images/lipton-cups.jpg'
 import backgroundMobile from '../../assets/images/lipton-cups-mobile.jpg'
 import SustainabilityBanner from '../../assets/images/world-tea-plantation-scene.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 
@@ -74,6 +75,7 @@ const IndexPage = () => {
    <>
    <SEO title="Lipton Eesti" description="Liptoni tee on populaarne terves maailmas. Tutvu lähemalt meie musta tee, rohelise tee ja erinevate teiste teede valikuga. Mõnus maitseelamus kõigile!"/>
     <Section> 
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
     <BannerWithVideoLipton 
         title="Meie eesmärk" 
         paragraph="Liptoni eesmärk on äratada maailm kvaliteetsetele ühendustele, et võidelda varjatud üksindusega." 
@@ -86,15 +88,21 @@ const IndexPage = () => {
         videoButtonLink="/lipton/purpose"
         >
     </BannerWithVideoLipton>
+    </ScrollAnimation>
 
+    <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
     <LiptonCategories sectionTitle="Meie kategooriaid">
       <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/lipton/products" alt="Lipton must tee kategooria"></LiptonCategoriesBox>
       <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/lipton/products" alt="Lipton roheline tee kategooria"></LiptonCategoriesBox>
       <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/lipton/products" alt="Lipton funktsionaalne tee, taimetee, infusioontee kategooria"></LiptonCategoriesBox>
     </LiptonCategories>
+    </ScrollAnimation>
+
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
     <LiptonHeroImage src={HeroImage} alt="Lipton tee"/>     
+    </ScrollAnimation>
 
-
+    <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
     <LiptonHpParagraphSection>
       <h2>Jätkusuutlikkus</h2>
       <LiptonBannerAndText 
@@ -113,6 +121,7 @@ const IndexPage = () => {
         >
       </LiptonBannerAndText> */}
     </LiptonHpParagraphSection>
+    </ScrollAnimation>
 
     
     {/* <SectionAccordion>

@@ -14,7 +14,7 @@ const FooterDomestos = () => (
         <li className="footer-domestos-item-list">
             <div className="footer-domestos-image-containter">
             
-            <p><Link to ="https://www.facebook.com/domestoseesti/" target="_blank" rel="noreferrer">
+            <p><Link to ="https://www.facebook.com/DomestosGlobal/" target="_blank" rel="noreferrer">
                 <img src={FacebookImage} alt="Facebook ikoon" className="footer-domestos-social-image"/>
             </Link></p>
             </div>
