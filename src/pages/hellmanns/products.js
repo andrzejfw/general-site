@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 export const data = graphql`
 query MyQueryProductsHellmanns {
-    allProduct(filter: {brand: {eq: "Hellmanns"}}) {
+    allProduct(filter: {brand: {eq: "Lipton"}}) {
       nodes {
         id
         fullName
@@ -82,6 +82,10 @@ position: sticky;
 top: 120px;
 left: 0;
 
+@media (max-width: 1500px) {
+    width: 20%;
+}
+
 @media (max-width: 1100px) {
     width: 25%;
 }
@@ -98,7 +102,7 @@ const ProductDiv = styled.div`
 
     .divider {
       width: 2px;
-      height: calc(100% - 100px);
+      height: calc(100% - 90px);
       /* background: linear-gradient(60deg,#fff 0,#004976 40%,#004976 60%,#fff 100%); */
       background: #004976;
       /* border-radius: 95%; */
@@ -106,9 +110,13 @@ const ProductDiv = styled.div`
       left: 0;
       top: 100px;
 
+      @media (max-width: 1500px) {
+        height: calc(100% - 30px);
+        }
+
       @media (max-width: 692px) {
         display: none;
-    }
+        }
     }
 
     @media (max-width: 1100px) {

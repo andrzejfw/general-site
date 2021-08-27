@@ -69,6 +69,10 @@ position: sticky;
 top: 120px;
 left: 0;
 
+@media (max-width: 1500px) {
+    width: 20%;
+}
+
 @media (max-width: 1100px) {
     width: 25%;
 }
