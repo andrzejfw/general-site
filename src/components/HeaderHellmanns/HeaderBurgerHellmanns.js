@@ -87,20 +87,20 @@ const HeaderBurgerHellmanns = () => {
               }} 
               to="/hellmanns/products" 
               onClick={() => setNavbarOpen(!navbarOpen)}>
-                All
+                Kõik Tooted
             </Link>
             <Link className="hellmanns-navbox-item inside" 
-              to="/hellmanns/products" 
+              to="/hellmanns/products?filter=Majonees" 
               onClick={() => setNavbarOpen(!navbarOpen)}>
                 Majonees
             </Link>
             <Link className="hellmanns-navbox-item inside" 
-              to="/hellmanns/products" 
+              to="/hellmanns/products?filter=Ketsup" 
               onClick={() => setNavbarOpen(!navbarOpen)}>
                 Ketšup
             </Link>
             <Link className="hellmanns-navbox-item inside" 
-              to="/hellmanns/products" 
+              to="/hellmanns/products?filter=Kastmed" 
               onClick={() => setNavbarOpen(!navbarOpen)}>
                 Kastmed
             </Link>

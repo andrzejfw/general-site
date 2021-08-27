@@ -84,10 +84,11 @@ const ProductDiv = styled.div`
     position: relative;
 
     .divider {
-      width: 4px;
+      width: 2px;
       height: calc(100% - 100px);
-      background: linear-gradient(60deg,#fff 0,#004976 40%,#004976 60%,#fff 100%);
-      border-radius: 95%;
+      /* background: linear-gradient(60deg,#fff 0,#004976 40%,#004976 60%,#fff 100%); */
+      background: #004976;
+      /* border-radius: 95%; */
       position: absolute;
       left: 0;
       top: 100px;
@@ -112,28 +113,28 @@ const Filter = styled.button`
     color: #004976;
     font-weight:700;
     padding: 10px 30px;
-    width: 150px;
+    width: 200px;
     border: solid 1px #004976;
     margin: 10px 10px;
     border-radius: 4px;
     background:transparent;
     text-transform:none;
     transition:.5s;
-    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
+    /* box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39); */
     outline: none;
     text-decoration:none;
     &:hover{
       background:#004976;
       color:white;
       opacity: 1;
-      border:none;
+      border: solid 1px transparent;
       outline: none;
       text-decoration:none;
     }
     &:focus{
       outline: none;
       background: #004976;
-      color: #white;
+      color: white;
     }
 `;
 
@@ -142,8 +143,8 @@ const ProductsUl = styled.ul`
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     justify-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 0;
 
     img{
         margin-left: auto;
@@ -161,7 +162,6 @@ const ProductsUl = styled.ul`
         // margin-left: auto;
         // margin-right: auto;
         background: llinear-gradient(180deg,transparent 20%,20%,#ffc72e 80%,80%,transparent 100%);
-        color: #c8381d;
         border-radius: 15px;
         width: 80%;
         padding: 0 10px 10px 10px;
@@ -173,6 +173,7 @@ const ProductsUl = styled.ul`
         h3 {
             font-size: 1rem;
             font-weight: bold;
+            color: #004976;
         }
     }
     
@@ -192,14 +193,14 @@ const ShowMore = styled.button`
     background:transparent;
     text-transform:none;
     transition:.5s;
-    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
+    /* box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39); */
     outline: none;
     text-decoration:none;
     &:hover{
       background:#004976;
       color:white;
       opacity: 1;
-      border:none;
+      border: solid 1px transparent;
       outline: none;
       text-decoration:none;
     }
@@ -249,19 +250,19 @@ class ProductsHellmanns extends React.Component{
 
 
     ifURL = () => {
-        if (window.location.search == "?filter=Functional") {
+        if (window.location.search == "?filter=Majonees") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = true,
                 this.state.filterTwo = false,
                 this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Herbal") {
+        } else if (window.location.search == "?filter=Ketsup") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = false,
                 this.state.filterTwo = true,
                 this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Green") {
+        } else if (window.location.search == "?filter=Kastmed") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = false,
@@ -296,25 +297,25 @@ class ProductsHellmanns extends React.Component{
         <HellmannsHeroImage src={HellmannsHeroImg} alt="Magnum jäätis"/>
         <ProductSectionDiv>
         <FilterDiv onLoad={this.ifURL()}>
-            <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
+            <h2 style={{textAlign: "center", fontWeight: "bold"}}>KATEGOORIAD:</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
-                All​​
+                KÕIK TOOTED
             </Filter>
-            <Filter onClick={ () => {addURL("Functional"); this.handleShowFilterOne();}}>
-                Functional
+            <Filter onClick={ () => {addURL("Majonees"); this.handleShowFilterOne();}}>
+                MAJONEES
             </Filter>
-            <Filter onClick={ () => {addURL("Herbal"); this.handleShowFilterTwo();}}>
-                Herbal
+            <Filter onClick={ () => {addURL("Ketsup"); this.handleShowFilterTwo();}}>
+                KETŠUP
             </Filter>
-            <Filter onClick={ () => {addURL("Green"); this.handleShowFilterThree();}}>
-                Green
+            <Filter onClick={ () => {addURL("Kastmed"); this.handleShowFilterThree();}}>
+                KASTMED
             </Filter>
         </FilterDiv>
         <ProductDiv>
             <div class="divider"></div>
             {this.state.allProducts ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>All Teas</h1>
+                <h1 style={{textAlign: "center"}}>KÕIK TOOTED</h1>
                 <ProductsUl>
                     {data.allProduct.nodes.filter((_,i) => i<this.state.limit).map(item => (
                         <li key={item.id}>
@@ -328,7 +329,7 @@ class ProductsHellmanns extends React.Component{
                     ))}
                 </ProductsUl>
                 {(data.allProduct.nodes.length>12 && this.state.limit<data.allProduct.nodes.length) && 
-                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Show More </ShowMore>}
+                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Näita rohkem </ShowMore>}
             </div>
             ) : null}
             </ProductDiv>
@@ -336,9 +337,9 @@ class ProductsHellmanns extends React.Component{
             <div class="divider"></div>
             {this.state.filterOne ? (
                 <div>
-                <h1 style={{textAlign: "center" }}>Functional</h1>
+                <h1 style={{textAlign: "center" }}>MAJONEES</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Functional"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Majonees"))).map(item => (
                         <li key={item.id}>
                             <a href={`/hellmanns/products/${item.id}`}>
                             <div>
@@ -356,9 +357,9 @@ class ProductsHellmanns extends React.Component{
             <div class="divider"></div>
             {this.state.filterTwo ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>Herbal</h1>
+                <h1 style={{textAlign: "center"}}>KETŠUP</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Herbal"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Ketšup"))).map(item => (
                         <li key={item.id}>
                             <a href={`/hellmanns/products/${item.id}`}>
                             <div>
@@ -376,9 +377,9 @@ class ProductsHellmanns extends React.Component{
             <div class="divider"></div>
             {this.state.filterThree ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>Green</h1>
+                <h1 style={{textAlign: "center"}}>KASTMED</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Green"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Kastmed"))).map(item => (
                         <li key={item.id}>
                             <a href={`/hellmanns/products/${item.id}`}>
                             <div>

@@ -51,9 +51,9 @@ const IndexPageHellmanns = () => {
       <HellmannsHeroImage src={HellmannsHeroImg} alt="Magnum jäätis"/>
     </ScrollAnimation> 
     <HellmannsCategories sectionTitle="Meie kategooriaid">
-      <HellmannsCategoriesBox categoryTitle="Majonees" categoryImage={Mayo} categoryLink="/" alt="Hellmann's Majonees"></HellmannsCategoriesBox>
-      <HellmannsCategoriesBox categoryTitle="Ketšup" categoryImage={Ketchup} categoryLink="/" alt="Hellmann's Ketšup"></HellmannsCategoriesBox>
-      <HellmannsCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/" alt="Hellmann's Kastmed"></HellmannsCategoriesBox>
+      <HellmannsCategoriesBox categoryTitle="Majonees" categoryImage={Mayo} categoryLink="/hellmanns/products?filter=Majonees" alt="Hellmann's Majonees"></HellmannsCategoriesBox>
+      <HellmannsCategoriesBox categoryTitle="Ketšup" categoryImage={Ketchup} categoryLink="/hellmanns/products?filter=Ketsup" alt="Hellmann's Ketšup"></HellmannsCategoriesBox>
+      <HellmannsCategoriesBox categoryTitle="Kastmed" categoryImage={Sauce} categoryLink="/hellmanns/products?filter=Kastmed" alt="Hellmann's Kastmed"></HellmannsCategoriesBox>
     </HellmannsCategories>
     <div style={{marginTop: "130px"}}>
     <ScrollAnimation animateIn="animate__fadeInUp" animateOnce="true">
