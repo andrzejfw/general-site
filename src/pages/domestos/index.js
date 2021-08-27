@@ -60,10 +60,10 @@ const IndexPage = () => {
    <DomestosIndexSection>
    <DomestosCategories sectionTitle="Meie kategooriaid">
    <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce="true">
-      <DomestosCategoriesBox categoryTitle="WC-puhastusvahendid" categoryImage={Bottle} categoryLink="/domestos" alt="WC-puhastusvahendid"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="WC-puhastusvahendid" categoryImage={Bottle} categoryLink="/domestos/products?filter=WC-puhastusvahendid" alt="WC-puhastusvahendid"></DomestosCategoriesBox>
    </ScrollAnimation>   
    <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">  
-      <DomestosCategoriesBox categoryTitle="WC-värskendajad" categoryImage={Blocks} categoryLink="/domestos" alt="WC-värskendajad"></DomestosCategoriesBox>
+      <DomestosCategoriesBox categoryTitle="WC-värskendajad" categoryImage={Blocks} categoryLink="/domestos/products?filter=WC-varskendajad" alt="WC-värskendajad"></DomestosCategoriesBox>
     </ScrollAnimation>
     </DomestosCategories>
     

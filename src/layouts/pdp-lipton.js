@@ -178,7 +178,6 @@ const VariantList = styled.ul `
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
     }
-  }
 `;
 
 const VariantButton = styled.button `

@@ -59,7 +59,7 @@ const ProductSectionDiv = styled.div`
 `;
 
 const FilterDiv = styled.div`
-width: 15%;
+width: 17%;
 margin-left: 5%;
 margin-top: 100px;
 float: left;
@@ -159,7 +159,8 @@ const ProductsUl = styled.ul`
     div {
         margin-left: auto;
         margin-right: auto;
-        background:radial-gradient(circle at 20% 15%,#123c7b,#06154b 61%);
+        /* background:radial-gradient(circle at 20% 15%,#123c7b,#06154b 61%); */
+        box-shadow: 5px 5px 10px #cac9c9;
         color: white;
         border-radius: 15px;
         width: 80%;
@@ -172,6 +173,7 @@ const ProductsUl = styled.ul`
         h3 {
             font-size: 1rem;
             margin-top: 15px;
+            color: #06154b;
         }
     }
     
@@ -212,7 +214,6 @@ const defaultState = {
     allProducts: true,
     filterOne: false,
     filterTwo: false,
-    filterThree: false,
     limit: 12, 
 }
 
@@ -240,39 +241,24 @@ class ProductsDomestos extends React.Component{
         })
     }
 
-    handleShowFilterThree = () => {
-        this.setState({
-            ...defaultState, 
-            filterThree: true,
-        })
-    }
 
 
     ifURL = () => {
-        if (window.location.search == "?filter=Functional") {
+        if (window.location.search == "?filter=WC-puhastusvahendid") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = true,
-                this.state.filterTwo = false,
-                this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Herbal") {
+                this.state.filterTwo = false);
+        } else if (window.location.search == "?filter=WC-varskendajad") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = false,
-                this.state.filterTwo = true,
-                this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Green") {
-            return (
-                this.state.allProducts = false,
-                this.state.filterOne = false,
-                this.state.filterTwo = false,
-                this.state.filterThree = true);
+                this.state.filterTwo = true);
         } else {
             return (
                 this.state.allProducts = true,
                 this.state.filterOne = false,
-                this.state.filterTwo = false,
-                this.state.filterThree = false);
+                this.state.filterTwo = false);
         }
     }
 
@@ -297,24 +283,21 @@ class ProductsDomestos extends React.Component{
         <ProductSectionDiv>
         <FilterDiv onLoad={this.ifURL()}>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
-            <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
-                All​​
+            <Filter onClick={ () => {clearURL();this.handleShowAll();}} style={{width: "215px"}}>
+                Kõik Tooted
             </Filter>
-            <Filter onClick={ () => {addURL("Functional"); this.handleShowFilterOne();}}>
-                Functional
+            <Filter onClick={ () => {addURL("WC-puhastusvahendid"); this.handleShowFilterOne();}} style={{width: "215px"}}>
+                WC-puhastusvahendid
             </Filter>
-            <Filter onClick={ () => {addURL("Herbal"); this.handleShowFilterTwo();}}>
-                Herbal
-            </Filter>
-            <Filter onClick={ () => {addURL("Green"); this.handleShowFilterThree();}}>
-                Green
+            <Filter onClick={ () => {addURL("WC-varskendajad"); this.handleShowFilterTwo();}} style={{width: "215px"}}>
+                WC-värskendajad
             </Filter>
         </FilterDiv>
         <ProductDiv>
             <div class="divider"></div>
             {this.state.allProducts ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>All Teas</h1>
+                <h1 style={{textAlign: "center"}}>Kõik Tooted</h1>
                 <ProductsUl>
                     {data.allProduct.nodes.filter((_,i) => i<this.state.limit).map(item => (
                         <li key={item.id}>
@@ -328,7 +311,7 @@ class ProductsDomestos extends React.Component{
                     ))}
                 </ProductsUl>
                 {(data.allProduct.nodes.length>12 && this.state.limit<data.allProduct.nodes.length) && 
-                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Show More </ShowMore>}
+                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Näita rohkem </ShowMore>}
             </div>
             ) : null}
             </ProductDiv>
@@ -336,9 +319,9 @@ class ProductsDomestos extends React.Component{
             <div class="divider"></div>
             {this.state.filterOne ? (
                 <div>
-                <h1 style={{textAlign: "center" }}>Functional</h1>
+                <h1 style={{textAlign: "center" }}>WC-puhastusvahendid</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Functional"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("WC-puhastusvahendid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/domestos/products/${item.id}`}>
                             <div>
@@ -356,29 +339,9 @@ class ProductsDomestos extends React.Component{
             <div class="divider"></div>
             {this.state.filterTwo ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>Herbal</h1>
+                <h1 style={{textAlign: "center"}}>WC-värskendajad</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Herbal"))).map(item => (
-                        <li key={item.id}>
-                            <a href={`/domestos/products/${item.id}`}>
-                            <div>
-                                <img src={item.img}/>
-                                <h3>{item.fullName}</h3>
-                            </div>
-                            </a>
-                        </li>
-                    ))}
-                </ProductsUl>
-            </div>
-            ) : null}
-            </ProductDiv>
-            <ProductDiv>
-            <div class="divider"></div>
-            {this.state.filterThree ? (
-                <div>
-                <h1 style={{textAlign: "center"}}>Green</h1>
-                <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Green"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("WC-värskendajad"))).map(item => (
                         <li key={item.id}>
                             <a href={`/domestos/products/${item.id}`}>
                             <div>

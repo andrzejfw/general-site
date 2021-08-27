@@ -41,9 +41,9 @@ function showArrow() {
       <li><div id="uncheckAll" onClick={() => {showProducts(); showArrow()}} activeClassName="current">Tooted <span id="arrow">&#9662;</span></div></li>
 
       <div id="productCat">
-      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}} activeClassName="current" to="/domestos/products">All</Link></li>
-      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/products">Category 1</Link></li>
-      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/products">Category 2</Link></li>
+      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}} activeClassName="current" to="/domestos/products">Kõik Tooted</Link></li>
+      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/products?filter=WC-puhastusvahendid">WC-puhastusvahendid</Link></li>
+      <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/products?filter=WC-varskendajad">WC-värskendajad</Link></li>
       </div>
 
       <li><Link id="uncheckAll" onClick={() =>{uncheckAll('menuToggle');hideOnClick()}}  activeClassName="current" to="/domestos/about">Ettevõttest</Link></li>
