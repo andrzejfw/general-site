@@ -83,22 +83,17 @@ const HeaderBurgerCif = () => {
               }} 
               to="/cif/products" 
               onClick={() => setNavbarOpen(!navbarOpen)}>
-                All
+                Kõik Tooted
             </Link>
             <Link className="cif-navbox-item inside" 
-              to="/cif/products" 
+              to="/cif/products?filter=Puhastuskreemid" 
               onClick={() => setNavbarOpen(!navbarOpen)}>
-                Category 1
+                Puhastuskreemid
             </Link>
             <Link className="cif-navbox-item inside" 
-              to="/cif/products" 
+              to="/cif/products?filter=Pihustid" 
               onClick={() => setNavbarOpen(!navbarOpen)}>
-                Category 2
-            </Link>
-            <Link className="cif-navbox-item inside" 
-              to="/cif/products" 
-              onClick={() => setNavbarOpen(!navbarOpen)}>
-                Category 3
+                Pihustid
             </Link>
           </div>
 

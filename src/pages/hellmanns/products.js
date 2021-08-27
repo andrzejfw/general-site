@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import HellmannsHeroImg from '../../assets/images/hellmanns-products-hero.jpg'
 import HellmannsHeroImgMobile from '../../assets/images/hellmanns-products-hero-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export const data = graphql`
 query MyQueryProductsHellmanns {
@@ -17,6 +18,18 @@ query MyQueryProductsHellmanns {
       }
     }
   }
+`;
+
+const Section = styled.section`
+    width:100%;
+    margin:auto;
+    padding-bottom:30px;
+    text-align: center;
+    background: #fdf6e8;
+
+    @media (max-width: 692px) {
+      margin-bottom: -50px;
+    }
 `;
 
 const HellmannsHeroImage = styled.img`
@@ -294,7 +307,11 @@ class ProductsHellmanns extends React.Component{
 
       return (
         <>
-        <HellmannsHeroImage src={HellmannsHeroImg} alt="Magnum jäätis"/>
+        <Section>
+        <ScrollAnimation animateIn="animate__fadeInDown" animateOnce="true">
+        <HellmannsHeroImage src={HellmannsHeroImg} alt="Hellmanns Tooted"/>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInUp" delay="600" animateOnce="true">
         <ProductSectionDiv>
         <FilterDiv onLoad={this.ifURL()}>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>KATEGOORIAD:</h2>
@@ -394,6 +411,8 @@ class ProductsHellmanns extends React.Component{
             ) : null}
             </ProductDiv>
         </ProductSectionDiv>
+        </ScrollAnimation>
+        </Section>
         </>
       );
       }

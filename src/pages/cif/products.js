@@ -110,30 +110,31 @@ const ProductDiv = styled.div`
 
 const Filter = styled.button`
     color: white;
-    padding: 0 1.25rem;
-    width: 150px;
+    /* padding: 0 1.25rem; */
+    width: 200px;
     height: 3.125rem;
     border: transparent;
-    border-bottom: 3px solid #2fa354;
-    border-left: 3px solid #2fa354;
+    /* border-bottom: 3px solid #2fa354;
+    border-left: 3px solid #2fa354; */
     margin: 10px 10px;
-    border-radius: 50%;
-    background:#71b0a2;
+    /* border-radius: 50%; */
+    background:linear-gradient(to right,#165648,#20856e);
     text-transform:none;
     transition:.5s;
     outline: none;
     text-decoration:none;
     font-size: 1.5rem;
     &:hover{
-      background:#71b0a2;
-      transform: scale(1.15);
+      background:linear-gradient(to right,#20856e,#165648);
+      /* transform: scale(1.15); */
       opacity: 1;
-      border-bottom: 1px solid transparent;
+      /* border-bottom: 1px solid transparent;
       border-left: 1px solid transparent;
       border-top: 3px solid #2fa354;
-      border-right: 3px solid #2fa354;
+      border-right: 3px solid #2fa354; */
       outline: none;
       text-decoration:none;
+      transition:.5s;
     }
     &:focus{
       outline: none;
@@ -165,8 +166,8 @@ const ProductsUl = styled.ul`
     div {
         margin-left: auto;
         margin-right: auto;
-        background: linear-gradient(180deg,#fff001,#ffca00);
-        color: #c8381d;
+        box-shadow: 5px 5px 20px #9fb9b4;
+        color: #165648;
         border-radius: 15px;
         width: 80%;
         padding: 0 10px 10px 10px;
@@ -222,7 +223,6 @@ const defaultState = {
     allProducts: true,
     filterOne: false,
     filterTwo: false,
-    filterThree: false,
     limit: 12, 
 }
 
@@ -250,39 +250,23 @@ class ProductsCif extends React.Component{
         })
     }
 
-    handleShowFilterThree = () => {
-        this.setState({
-            ...defaultState, 
-            filterThree: true,
-        })
-    }
-
 
     ifURL = () => {
-        if (window.location.search == "?filter=Functional") {
+        if (window.location.search == "?filter=Puhastuskreemid") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = true,
-                this.state.filterTwo = false,
-                this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Herbal") {
+                this.state.filterTwo = false);
+        } else if (window.location.search == "?filter=Pihustid") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = false,
-                this.state.filterTwo = true,
-                this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Green") {
-            return (
-                this.state.allProducts = false,
-                this.state.filterOne = false,
-                this.state.filterTwo = false,
-                this.state.filterThree = true);
+                this.state.filterTwo = true);
         } else {
             return (
                 this.state.allProducts = true,
                 this.state.filterOne = false,
-                this.state.filterTwo = false,
-                this.state.filterThree = false);
+                this.state.filterTwo = false);
         }
     }
 
@@ -303,28 +287,28 @@ class ProductsCif extends React.Component{
 
       return (
         <>
-        <CifHeroImage src={CifHeroImg} alt="Magnum jäätis"/>
+        <CifHeroImage src={CifHeroImg} alt="Cif Tooted"/>
         <ProductSectionDiv>
+        <ScrollAnimation animateIn="animate__fadeInLeft" delay="200" animateOnce="true" >
         <FilterDiv onLoad={this.ifURL()}>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
-                All​​
+                Kõik Tooted
             </Filter>
-            <Filter onClick={ () => {addURL("Functional"); this.handleShowFilterOne();}}>
-                Functional
+            <Filter onClick={ () => {addURL("Puhastuskreemid"); this.handleShowFilterOne();}}>
+                Puhastuskreemid
             </Filter>
-            <Filter onClick={ () => {addURL("Herbal"); this.handleShowFilterTwo();}}>
-                Herbal
-            </Filter>
-            <Filter onClick={ () => {addURL("Green"); this.handleShowFilterThree();}}>
-                Green
+            <Filter onClick={ () => {addURL("Pihustid"); this.handleShowFilterTwo();}}>
+                Pihustid
             </Filter>
         </FilterDiv>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true" >
         <ProductDiv>
             <div class="divider"></div>
             {this.state.allProducts ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>All Teas</h1>
+                <h1 style={{textAlign: "center"}}>Kõik Tooted</h1>
                 <ProductsUl>
                     {data.allProduct.nodes.filter((_,i) => i<this.state.limit).map(item => (
                         <li key={item.id}>
@@ -346,9 +330,9 @@ class ProductsCif extends React.Component{
             <div class="divider"></div>
             {this.state.filterOne ? (
                 <div>
-                <h1 style={{textAlign: "center" }}>Functional</h1>
+                <h1 style={{textAlign: "center" }}>Puhastuskreemid</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Functional"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Puhastuskreemid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/cif/products/${item.id}`}>
                             <div>
@@ -366,9 +350,9 @@ class ProductsCif extends React.Component{
             <div class="divider"></div>
             {this.state.filterTwo ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>Herbal</h1>
+                <h1 style={{textAlign: "center"}}>Pihustid</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Herbal"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Pihustid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/cif/products/${item.id}`}>
                             <div>
@@ -382,26 +366,7 @@ class ProductsCif extends React.Component{
             </div>
             ) : null}
             </ProductDiv>
-            <ProductDiv>
-            <div class="divider"></div>
-            {this.state.filterThree ? (
-                <div>
-                <h1 style={{textAlign: "center"}}>Green</h1>
-                <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Green"))).map(item => (
-                        <li key={item.id}>
-                            <a href={`/cif/products/${item.id}`}>
-                            <div>
-                                <img src={item.img}/>
-                                <h3>{item.fullName}</h3>
-                            </div>
-                            </a>
-                        </li>
-                    ))}
-                </ProductsUl>
-            </div>
-            ) : null}
-            </ProductDiv>
+            </ScrollAnimation>
         </ProductSectionDiv>
         </>
       );

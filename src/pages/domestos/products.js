@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import DomestosHeroImg from '../../assets/images/domestos-products-hero.jpg'
 import DomestosHeroImgMobile from '../../assets/images/domestos-products-hero-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export const data = graphql`
 query MyQueryProductsDomestos {
@@ -279,8 +280,9 @@ class ProductsDomestos extends React.Component{
 
       return (
         <>
-        <DomestosHeroImage src={DomestosHeroImg} alt="Magnum jäätis"/>
+        <DomestosHeroImage src={DomestosHeroImg} alt="Domestos Tooted"/>
         <ProductSectionDiv>
+        <ScrollAnimation animateIn="animate__fadeInLeft" delay="200" animateOnce="true">
         <FilterDiv onLoad={this.ifURL()}>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}} style={{width: "215px"}}>
@@ -293,6 +295,8 @@ class ProductsDomestos extends React.Component{
                 WC-värskendajad
             </Filter>
         </FilterDiv>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInRight" animateOnce="true">
         <ProductDiv>
             <div class="divider"></div>
             {this.state.allProducts ? (
@@ -355,6 +359,7 @@ class ProductsDomestos extends React.Component{
             </div>
             ) : null}
             </ProductDiv>
+            </ScrollAnimation>
         </ProductSectionDiv>
         </>
       );

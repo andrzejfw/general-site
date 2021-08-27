@@ -49,7 +49,7 @@ const HeaderBurgerCifStyles = createGlobalStyle`
     background-color: rgb(227 232 220 / 95%);
     width: auto;
     height: auto;
-    
+    min-width: 220px;
 }
 
 .cif-navbox-item {

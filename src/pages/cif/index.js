@@ -41,10 +41,10 @@ const IndexPageCif = () => {
     <CifHeroImage src={CifHeroImg} alt="Cif puhastusvahendid"/> 
     <CifCategories sectionTitle="Meie kategooriaid">
     <ScrollAnimation animateIn="animate__fadeInLeft" animatePreScroll={false} animateOnce="true" >
-      <CifCategoriesBox categoryTitle="Puhastuskreemid" categoryImage={CifCream} categoryLink="/cif/products" alt="Cif tootevalik - puhastuskreemid"></CifCategoriesBox>
+      <CifCategoriesBox categoryTitle="Puhastuskreemid" categoryImage={CifCream} categoryLink="/cif/products?filter=Puhastuskreemid" alt="Cif tootevalik - puhastuskreemid"></CifCategoriesBox>
       </ScrollAnimation>
       <ScrollAnimation animateIn="animate__fadeInRight" animatePreScroll={false} animateOnce="true" >
-      <CifCategoriesBox categoryTitle="Pihustid" categoryImage={CifSpray} categoryLink="/cif/products" alt="Cif tootevalik - pihustid"></CifCategoriesBox>
+      <CifCategoriesBox categoryTitle="Pihustid" categoryImage={CifSpray} categoryLink="/cif/products?filter=Pihustid" alt="Cif tootevalik - pihustid"></CifCategoriesBox>
       </ScrollAnimation>
     </CifCategories>
     <CifBannerAndText
