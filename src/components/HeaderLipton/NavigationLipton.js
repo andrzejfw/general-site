@@ -54,9 +54,9 @@ const NavigationLipton = () => {
 
           <Nav className="ml-lipton">
           <NavDropdown title="Tooted" id="collasible-nav-dropdown">
-              <NavDropdown.Item  Link href="/lipton/about">Dropdown1</NavDropdown.Item>
-              <NavDropdown.Item Link href="/lipton/brands">Dropdown1</NavDropdown.Item>
-              <NavDropdown.Item Link href="/contact">Dropdown1</NavDropdown.Item>
+              <NavDropdown.Item  Link href="/lipton/products?filter=Must-tee">Must tee</NavDropdown.Item>
+              <NavDropdown.Item Link href="/lipton/products?filter=Roheline-tee">Roheline tee</NavDropdown.Item>
+              <NavDropdown.Item Link href="/lipton/products?filter=Funktsionaalne-ja-taimetee">Funktsionaalne- ja taimetee</NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Link Link href="/lipton/purpose">Meie eesmärk</Nav.Link>

@@ -92,9 +92,9 @@ const IndexPage = () => {
 
     <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
     <LiptonCategories sectionTitle="Meie kategooriaid">
-      <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/lipton/products" alt="Lipton must tee kategooria"></LiptonCategoriesBox>
-      <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/lipton/products" alt="Lipton roheline tee kategooria"></LiptonCategoriesBox>
-      <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/lipton/products" alt="Lipton funktsionaalne tee, taimetee, infusioontee kategooria"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Must tee" categoryImage={BlackTea} categoryLink="/lipton/products?filter=Must-tee" alt="Lipton must tee kategooria"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Roheline tee" categoryImage={GreenTea} categoryLink="/lipton/products?filter=Roheline-tee" alt="Lipton roheline tee kategooria"></LiptonCategoriesBox>
+      <LiptonCategoriesBox categoryTitle="Funktsionaalne- ja taimetee" categoryImage={FunctionalTea} categoryLink="/lipton/products?filter=Funktsionaalne-ja-taimetee" alt="Lipton funktsionaalne tee, taimetee, infusioontee kategooria"></LiptonCategoriesBox>
     </LiptonCategories>
     </ScrollAnimation>
 

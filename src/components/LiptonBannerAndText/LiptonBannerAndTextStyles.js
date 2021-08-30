@@ -82,6 +82,15 @@ const LiptonBannerAndTextStyles = createGlobalStyle`
     }
 }
 
+.paragraph-section .jdziKH {
+    margin: 40px 0 20px;
+    
+    @media(max-width:992px){
+        margin: 40px auto 20px;
+    }
+
+}
+
 `;
 
 export default LiptonBannerAndTextStyles;
