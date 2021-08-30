@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import LiptonHeroImg from '../../assets/images/lipton-products-hero.jpg'
 import LiptonHeroImgMobile from '../../assets/images/lipton-products-hero-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export const data = graphql`
 query MyQueryProductsLipton {
@@ -294,7 +295,10 @@ class ProductsLipton extends React.Component{
 
       return (
         <>
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
         <LiptonHeroImage src={LiptonHeroImg} alt="Lipton Tooted"/>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
         <ProductSectionDiv>
         <FilterDiv onLoad={this.ifURL()}>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
@@ -394,6 +398,7 @@ class ProductsLipton extends React.Component{
             ) : null}
             </ProductDiv>
         </ProductSectionDiv>
+        </ScrollAnimation>
         </>
       );
       }
