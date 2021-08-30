@@ -50,10 +50,10 @@ const IndexPageKnorr = () => {
     </ScrollAnimation>
     <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
      <KnorrCategories sectionTitle="Meie kategooriaid">
-       <KnorrCategoriesBox categoryTitle="Pakisupid" categoryImage={CifCream} categoryLink="/knorr/products" alt="Knorr Pakisupid"></KnorrCategoriesBox>
-       <KnorrCategoriesBox categoryTitle="Topsiroad" categoryImage={CifSpray} categoryLink="/knorr/products" alt="Knorr Topsiroad"></KnorrCategoriesBox>
-       <KnorrCategoriesBox categoryTitle="Kiirnuudlid" categoryImage={CifSpray} categoryLink="/knorr/products" alt="Knorr Kiirnuudlid"></KnorrCategoriesBox>
-       <KnorrCategoriesBox categoryTitle="Puljongid" categoryImage={CifSpray} categoryLink="/knorr/products" alt="Knorr Puljongid"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Pakisupid" categoryImage={CifCream} categoryLink="/knorr/products?filter=Pakisupid" alt="Knorr Pakisupid"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Topsiroad" categoryImage={CifSpray} categoryLink="/knorr/products?filter=Topsiroad" alt="Knorr Topsiroad"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Kiirnuudlid" categoryImage={CifSpray} categoryLink="/knorr/products?filter=Kiirnuudlid" alt="Knorr Kiirnuudlid"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Puljongid" categoryImage={CifSpray} categoryLink="/knorr/products?filter=Puljongid" alt="Knorr Puljongid"></KnorrCategoriesBox>
      </KnorrCategories>
     </ScrollAnimation>
      <KnorrBannerAndText

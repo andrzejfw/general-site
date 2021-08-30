@@ -118,43 +118,43 @@ const HeaderBurgerKnorr = () => {
           }} 
           to="/knorr/products" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            All
+            Kõik tooted
         </Link>
         <Link className="knorr-navbox-item inside" 
           style={{
             left: productsOpen ? "0" : "-100%",
             transition: "all .3s", 
           }} 
-          to="/knorr/products" 
+          to="/knorr/products?filter=Pakisupid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            Category 1
+            Pakisupid
         </Link>
         <Link className="knorr-navbox-item inside" 
           style={{
             left: productsOpen ? "0" : "-100%",
             transition: "all .3s", 
           }} 
-          to="/knorr/products" 
+          to="/knorr/products?filter=Topsiroad" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            Category 2
+            Topsiroad
         </Link>
         <Link className="knorr-navbox-item inside" 
           style={{
             left: productsOpen ? "0" : "-100%",
             transition: "all .3s", 
           }} 
-          to="/knorr/products" 
+          to="/knorr/products?filter=Kiirnuudlid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            Category 3
+            Kiirnuudlid
         </Link>
         <Link className="knorr-navbox-item inside" 
           style={{
             left: productsOpen ? "0" : "-100%",
             transition: "all .3s", 
           }} 
-          to="/knorr/products" 
+          to="/knorr/products?filter=Puljongid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            Category 4
+            Puljongid
         </Link>
       </div>
     </nav>

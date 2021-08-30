@@ -3,10 +3,11 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import KnorrHeroImg from '../../assets/images/knorr-products-hero.jpg'
 import KnorrHeroImgMobile from '../../assets/images/knorr-products-hero-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export const data = graphql`
 query MyQueryProductsKnorr {
-    allProduct(filter: {brand: {eq: "Knorr"}}) {
+    allProduct(filter: {brand: {eq: "Lipton"}}) {
       nodes {
         id
         fullName
@@ -111,28 +112,24 @@ const Filter = styled.button`
     color: white;
     padding: 10px 30px;
     width: 150px;
-    border: none;
+    border: 1px solid #007a33;
+    background-color: #007a33;
     margin: 10px 10px;
     border-radius: 10px;
-    background:#BA2318;
     text-transform:none;
-    transition:.5s;
-    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
+    transition: all .2s ease-in-out;
     outline: none;
     text-decoration:none;
     &:hover{
-      background:#BA2318;
-      transform: scale(1.15);
-      opacity: 1;
-      border:none;
-      outline: none;
-      text-decoration:none;
+    text-decoration: none;
+    transform: scale(1.1);
+    border-color: #ffd32e;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffd32e;
     }
     &:focus{
       outline: none;
-      background: #ffe902;
-      color: #c8381d;
-      font-weight: bold;
     }
 `;
 
@@ -158,11 +155,11 @@ const ProductsUl = styled.ul`
     div {
         margin-left: auto;
         margin-right: auto;
-        background: linear-gradient(180deg,#fff001,#ffca00);
-        color: #c8381d;
-        border-radius: 15px;
-        width: 80%;
+        background: rgba(0,122,51,0.2);
+        color: #007a33;
         padding: 0 10px 10px 10px;
+        border-radius: 2px;
+        width: 80%;
         margin-bottom: 7%;
         font-weight: bold;
         text-align: center;
@@ -183,36 +180,33 @@ const ShowMore = styled.button`
     color: white;
     padding: 10px 30px;
     width: 150px;
-    border: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border: 1px solid #007a33;
+    background-color: #007a33;
+    margin: 10px 10px;
     border-radius: 10px;
-    background:#BA2318;
-    border:none;
     text-transform:none;
-    transition:.5s;
-    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
+    transition: all .2s ease-in-out;
     outline: none;
     text-decoration:none;
     &:hover{
-      background:#BA2318;
-      transform: scale(1.15);
-      opacity: 1;
-      border:none;
-      outline: none;
-      text-decoration:none;
+    text-decoration: none;
+    transform: scale(1.1);
+    border-color: #ffd32e;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffd32e;
     }
     &:focus{
-        outline: none;
-      }
-    `;
+      outline: none;
+    }
+`;
 
 const defaultState = {
     allProducts: true,
     filterOne: false,
     filterTwo: false,
     filterThree: false,
+    filterFour: false,
     limit: 12, 
 }
 
@@ -247,32 +241,50 @@ class ProductsKnorr extends React.Component{
         })
     }
 
+    handleShowFilterFour = () => {
+        this.setState({
+            ...defaultState, 
+            filterFour: true,
+        })
+    }
+
 
     ifURL = () => {
-        if (window.location.search == "?filter=Functional") {
+        if (window.location.search == "?filter=Pakisupid") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = true,
                 this.state.filterTwo = false,
-                this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Herbal") {
+                this.state.filterThree = false,
+                this.state.filterFour = false);
+        } else if (window.location.search == "?filter=Topsiroad") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = false,
                 this.state.filterTwo = true,
-                this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Green") {
+                this.state.filterThree = false,
+                this.state.filterFour = false);
+        } else if (window.location.search == "?filter=Kiirnuudlid") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = false,
                 this.state.filterTwo = false,
-                this.state.filterThree = true);
+                this.state.filterThree = true,
+                this.state.filterFour = false);
+        } else if (window.location.search == "?filter=Puljongid") {
+            return (
+                this.state.allProducts = false,
+                this.state.filterOne = false,
+                this.state.filterTwo = false,
+                this.state.filterThree = false,
+                this.state.filterFour = true);
         } else {
             return (
                 this.state.allProducts = true,
                 this.state.filterOne = false,
                 this.state.filterTwo = false,
-                this.state.filterThree = false);
+                this.state.filterThree = false,
+                this.state.filterFour = false);
         }
     }
 
@@ -293,29 +305,35 @@ class ProductsKnorr extends React.Component{
 
       return (
         <>
-        <KnorrHeroImage src={KnorrHeroImg} alt="Magnum jäätis"/>
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><KnorrHeroImage src={KnorrHeroImg} alt="Knorr food"/></ScrollAnimation>
         <ProductSectionDiv>
-        <FilterDiv onLoad={this.ifURL()}>
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
+            <FilterDiv onLoad={this.ifURL()}>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
-                All​​
+            Kõik tooted
             </Filter>
-            <Filter onClick={ () => {addURL("Functional"); this.handleShowFilterOne();}}>
-                Functional
+            <Filter onClick={ () => {addURL("Pakisupid"); this.handleShowFilterOne();}}>
+            Pakisupid
             </Filter>
-            <Filter onClick={ () => {addURL("Herbal"); this.handleShowFilterTwo();}}>
-                Herbal
+            <Filter onClick={ () => {addURL("Topsiroad"); this.handleShowFilterTwo();}}>
+            Topsiroad
             </Filter>
-            <Filter onClick={ () => {addURL("Green"); this.handleShowFilterThree();}}>
-                Green
+            <Filter onClick={ () => {addURL("Kiirnuudlid"); this.handleShowFilterThree();}}>
+            Kiirnuudlid
+            </Filter>
+            <Filter onClick={ () => {addURL("Puljongid"); this.handleShowFilterFour();}}>
+            Puljongid
             </Filter>
         </FilterDiv>
-        <ProductDiv>
+        </ScrollAnimation>
+            <ProductDiv>
             <div class="divider"></div>
             {this.state.allProducts ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>All Teas</h1>
-                <ProductsUl>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center"}}>Kõik tooted</h1></ScrollAnimation>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
+                    <ProductsUl>
                     {data.allProduct.nodes.filter((_,i) => i<this.state.limit).map(item => (
                         <li key={item.id}>
                             <a href={`/knorr/products/${item.id}`}>
@@ -326,7 +344,7 @@ class ProductsKnorr extends React.Component{
                             </a>
                         </li>
                     ))}
-                </ProductsUl>
+                </ProductsUl></ScrollAnimation>
                 {(data.allProduct.nodes.length>12 && this.state.limit<data.allProduct.nodes.length) && 
                 <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Show More </ShowMore>}
             </div>
@@ -336,9 +354,10 @@ class ProductsKnorr extends React.Component{
             <div class="divider"></div>
             {this.state.filterOne ? (
                 <div>
-                <h1 style={{textAlign: "center" }}>Functional</h1>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center" }}>Pakisupid</h1></ScrollAnimation>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Functional"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Pakisupid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/knorr/products/${item.id}`}>
                             <div>
@@ -349,6 +368,7 @@ class ProductsKnorr extends React.Component{
                         </li>
                     ))}
                 </ProductsUl>
+                </ScrollAnimation>
             </div>
             ) : null}
             </ProductDiv>
@@ -356,9 +376,10 @@ class ProductsKnorr extends React.Component{
             <div class="divider"></div>
             {this.state.filterTwo ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>Herbal</h1>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center"}}>Topsiroad</h1></ScrollAnimation>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Herbal"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Topsiroad"))).map(item => (
                         <li key={item.id}>
                             <a href={`/knorr/products/${item.id}`}>
                             <div>
@@ -369,6 +390,7 @@ class ProductsKnorr extends React.Component{
                         </li>
                     ))}
                 </ProductsUl>
+                </ScrollAnimation>
             </div>
             ) : null}
             </ProductDiv>
@@ -376,9 +398,10 @@ class ProductsKnorr extends React.Component{
             <div class="divider"></div>
             {this.state.filterThree ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>Green</h1>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center"}}>Kiirnuudlid</h1></ScrollAnimation>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Green"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Kiirnuudlid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/knorr/products/${item.id}`}>
                             <div>
@@ -389,6 +412,29 @@ class ProductsKnorr extends React.Component{
                         </li>
                     ))}
                 </ProductsUl>
+                </ScrollAnimation>
+            </div>
+            ) : null}
+            </ProductDiv>
+            <ProductDiv>
+            <div class="divider"></div>
+            {this.state.filterFour ? (
+                <div>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center"}}>Puljongid</h1></ScrollAnimation>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
+                <ProductsUl>
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Puljongid"))).map(item => (
+                        <li key={item.id}>
+                            <a href={`/knorr/products/${item.id}`}>
+                            <div>
+                                <img src={item.img}/>
+                                <h3>{item.fullName}</h3>
+                            </div>
+                            </a>
+                        </li>
+                    ))}
+                </ProductsUl>
+                </ScrollAnimation>
             </div>
             ) : null}
             </ProductDiv>
