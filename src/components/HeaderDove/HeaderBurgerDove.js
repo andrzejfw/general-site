@@ -121,13 +121,13 @@ const HeaderBurgerDove = () => {
           }} 
           to="/dove/products" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            All
+            Kõik Tooted
         </Link>
         <Link className="dove-navbox-item" 
           style={{
             left: productsOpen ? "0" : "-100%"
           }} 
-          to="/dove/products" 
+          to="/dove/products?filter=Sampoonid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
             Šampoonid ja palsamid
         </Link>
@@ -135,7 +135,7 @@ const HeaderBurgerDove = () => {
           style={{
             left: productsOpen ? "0" : "-100%"
           }} 
-          to="/dove/products" 
+          to="/dove/products?filter=Dusigeelid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
             Dušigeelid
         </Link>
@@ -143,7 +143,7 @@ const HeaderBurgerDove = () => {
           style={{
             left: productsOpen ? "0" : "-100%"
           }} 
-          to="/dove/products" 
+          to="/dove/products?filter=Deodorandid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
             Deodorandid
         </Link>
@@ -151,7 +151,7 @@ const HeaderBurgerDove = () => {
           style={{
             left: productsOpen ? "0" : "-100%"
           }} 
-          to="/dove/products" 
+          to="/dove/products?filter=Seebid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
             Seebid
         </Link>
@@ -159,7 +159,7 @@ const HeaderBurgerDove = () => {
           style={{
             left: productsOpen ? "0" : "-100%"
           }} 
-          to="/dove/products" 
+          to="/dove/products?filter=Kreemid-ja-muu" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
             Kreemid ja muu
         </Link>

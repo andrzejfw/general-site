@@ -326,7 +326,7 @@ class ProductsCif extends React.Component{
                     ))}
                 </ProductsUl>
                 {(data.allProduct.nodes.length>12 && this.state.limit<data.allProduct.nodes.length) && 
-                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Show More </ShowMore>}
+                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Näita rohkem </ShowMore>}
             </div>
             ) : null}
             </ProductDiv>

@@ -107,35 +107,35 @@ const SustainabilityPageDove = () => {
    <DoveCategories sectionTitle="Meie kategooriaid">
       <DoveCategoriesBox 
         categoryTitle="Šampoonid ja palsamid" 
-        categoryImage={hair} categoryLink="/dove/products" 
+        categoryImage={hair} categoryLink="/dove/products?filter=Sampoonid" 
         alt="Šampoonid ja palsamid"
         cover={ShampooCover}>
       </DoveCategoriesBox>
       <DoveCategoriesBox 
         categoryTitle="Dušigeelid" 
         categoryImage={showergel} 
-        categoryLink="/dove/products" 
+        categoryLink="/dove/products?filter=Dusigeelid" 
         alt="Dušigeelid"
         cover={BodywashCover}>
       </DoveCategoriesBox>
       <DoveCategoriesBox 
         categoryTitle="Deodorandid" 
         categoryImage={deos} 
-        categoryLink="/dove/products" 
+        categoryLink="/dove/products?filter=Deodorandid" 
         alt="Deodorandid"
         cover={DeoCover}>
       </DoveCategoriesBox>
       <DoveCategoriesBox 
         categoryTitle="Seebid" 
         categoryImage={soap} 
-        categoryLink="/dove/products" 
+        categoryLink="/dove/products?filter=Seebid" 
         alt="Seebid"
         cover={SoapbarCover}>
       </DoveCategoriesBox>
       <DoveCategoriesBox 
         categoryTitle="Kreemid ja muu" 
         categoryImage={creams} 
-        categoryLink="/dove/products" 
+        categoryLink="/dove/products?filter=Kreemid-ja-muu" 
         alt="Kreemid ja muu"
         cover={CreamCover}>
       </DoveCategoriesBox>

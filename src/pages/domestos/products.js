@@ -115,7 +115,7 @@ const ProductDiv = styled.div`
 const Filter = styled.button`
     color: white;
     padding: 10px 30px;
-    width: 150px;
+    width: 215px;
     border: none;
     margin: 10px 10px;
     background:linear-gradient(180deg,#123c7b,#06154b);
@@ -289,13 +289,13 @@ class ProductsDomestos extends React.Component{
         <ScrollAnimation animateIn="animate__fadeInLeft" delay="200" animateOnce="true">
         <FilterDiv onLoad={this.ifURL()}>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
-            <Filter onClick={ () => {clearURL();this.handleShowAll();}} style={{width: "215px"}}>
+            <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
                 Kõik Tooted
             </Filter>
-            <Filter onClick={ () => {addURL("WC-puhastusvahendid"); this.handleShowFilterOne();}} style={{width: "215px"}}>
+            <Filter onClick={ () => {addURL("WC-puhastusvahendid"); this.handleShowFilterOne();}}>
                 WC-puhastusvahendid
             </Filter>
-            <Filter onClick={ () => {addURL("WC-varskendajad"); this.handleShowFilterTwo();}} style={{width: "215px"}}>
+            <Filter onClick={ () => {addURL("WC-varskendajad"); this.handleShowFilterTwo();}}>
                 WC-värskendajad
             </Filter>
         </FilterDiv>

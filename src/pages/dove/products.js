@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import DoveHeroImg from '../../assets/images/dove-products-hero.jpg'
 import DoveHeroImgMobile from '../../assets/images/dove-products-hero-mobile.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export const data = graphql`
 query MyQueryProductsDove {
@@ -26,7 +27,8 @@ const DoveHeroImage = styled.img`
 
     @media (max-width: 1200px) {
         height: 400px;
-        content: url(${DoveHeroImgMobile});
+        /* content: url(${DoveHeroImgMobile}); */
+        object-position: 70%;
     }
 `;
 
@@ -59,7 +61,7 @@ const ProductSectionDiv = styled.div`
 `;
 
 const FilterDiv = styled.div`
-width: 15%;
+width: 16%;
 margin-left: 5%;
 margin-top: 100px;
 float: left;
@@ -67,6 +69,10 @@ text-align: center;
 position: sticky;
 top: 120px;
 left: 0;
+
+@media (max-width: 1500px) {
+    width: 20%;
+}
 
 @media (max-width: 1100px) {
     width: 25%;
@@ -83,17 +89,16 @@ const ProductDiv = styled.div`
     position: relative;
 
     .divider {
-      width: 4px;
-      height: calc(100% - 100px);
-      background: linear-gradient(60deg,#ccd2d6 0,#004976 40%,#c8381d 60%,#004976 100%);
-      border-radius: 95%;
-      position: absolute;
-      left: 0;
-      top: 100px;
+        width: 1px;
+        height: calc(100% - 50px);
+        background: #dbc081;
+        position: absolute;
+        left: 0;
+        top: 100px;
 
-      @media (max-width: 692px) {
+        @media (max-width: 692px) {
         display: none;
-    }
+        }
     }
 
     @media (max-width: 1100px) {
@@ -108,33 +113,37 @@ const ProductDiv = styled.div`
 `;
 
 const Filter = styled.button`
-    color: #054281;
-    padding: 10px 30px;
-    font-size: 1.5rem;
-    width: 150px;
-    border: 1px solid;
-    border-color: #054281;
-    margin: 10px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 13rem;
+    padding: 0 1.25rem;
+    height: 3.125rem;
+    outline: 0;
     border-radius: 3px;
-    background:white;
-    text-transform:none;
-    transition:.5s;
-    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
-    outline: none;
-    text-decoration:none;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: 0.3s all;
+    color: #054281;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #dbc081;
+    margin: 10px 0;
+    font-weight: 700;
+    width: 170px;
+
     &:hover{
-      background:#054281;
-      color:white;
-      transform: scale(1.05);
-      opacity: 1;
-      border:none;
-      outline: none;
+      border-color: transparent;
+      color: #fff;
+      background: linear-gradient(to right,#b78938 0,#dabf80 25%,#ffe2ac 51%,#dabf80 76%,#b78938 100%);
       text-decoration:none;
+      outline:none;
+      
     }
     &:focus{
-      outline: none;
-      background:#054281;
-      color:white;
+        outline: none;
     }
 `;
 
@@ -145,6 +154,7 @@ const ProductsUl = styled.ul`
     justify-items: center;
     padding-left: 5%;
     padding-right: 5%;
+    min-height: 400px;
 
     img{
         margin-left: auto;
@@ -160,8 +170,8 @@ const ProductsUl = styled.ul`
     div {
         margin-left: auto;
         margin-right: auto;
-        background: linear-gradient(180deg,rgb(0 73 118 / 0%) 50%,rgb(204 210 214 / 48%) 100%);
-        color: #fff;
+        /* background: linear-gradient(180deg,rgb(0 73 118 / 0%) 50%,rgb(204 210 214 / 48%) 100%); */
+        color: #054281;
         border-radius: 15px;
         width: 80%;
         padding: 0 10px 10px 10px;
@@ -211,11 +221,36 @@ text-decoration:none;
       }
     `;
 
+const ImageSection = styled.div`
+  position: relative;
+
+  &:after {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      border-radius: 100%;
+      height: 80px;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -40px;
+    }
+
+    @media (max-width: 692px) {
+      &:after {
+        height: 40px;
+        bottom: -20px;
+      }
+    }
+`;
+
 const defaultState = {
     allProducts: true,
     filterOne: false,
     filterTwo: false,
     filterThree: false,
+    filterFour: false,
+    filterFive: false,
     limit: 12, 
 }
 
@@ -250,32 +285,70 @@ class ProductsDove extends React.Component{
         })
     }
 
+    handleShowFilterFour = () => {
+        this.setState({
+            ...defaultState, 
+            filterFour: true,
+        })
+    }
+
+    handleShowFilterFive = () => {
+        this.setState({
+            ...defaultState, 
+            filterFive: true,
+        })
+    }
+
 
     ifURL = () => {
-        if (window.location.search == "?filter=Functional") {
+        if (window.location.search == "?filter=Sampoonid") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = true,
                 this.state.filterTwo = false,
-                this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Herbal") {
+                this.state.filterThree = false,
+                this.state.filterFour = false,
+                this.state.filterFive = false);
+        } else if (window.location.search == "?filter=Dusigeelid") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = false,
                 this.state.filterTwo = true,
-                this.state.filterThree = false);
-        } else if (window.location.search == "?filter=Green") {
+                this.state.filterThree = false,
+                this.state.filterFour = false,
+                this.state.filterFive = false);
+        } else if (window.location.search == "?filter=Deodorandid") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = false,
                 this.state.filterTwo = false,
-                this.state.filterThree = true);
+                this.state.filterThree = true,
+                this.state.filterFour = false,
+                this.state.filterFive = false);
+        } else if (window.location.search == "?filter=Seebid") {
+            return (
+                this.state.allProducts = false,
+                this.state.filterOne = false,
+                this.state.filterTwo = false,
+                this.state.filterThree = false,
+                this.state.filterFour = true,
+                this.state.filterFive = false);
+        } else if (window.location.search == "?filter=Kreemid-ja-muu") {
+            return (
+                this.state.allProducts = false,
+                this.state.filterOne = false,
+                this.state.filterTwo = false,
+                this.state.filterThree = false,
+                this.state.filterFour = false,
+                this.state.filterFive = true);
         } else {
             return (
                 this.state.allProducts = true,
                 this.state.filterOne = false,
                 this.state.filterTwo = false,
-                this.state.filterThree = false);
+                this.state.filterThree = false,
+                this.state.filterFour = false,
+                this.state.filterFive = false);
         }
     }
 
@@ -296,28 +369,39 @@ class ProductsDove extends React.Component{
 
       return (
         <>
-        <DoveHeroImage src={DoveHeroImg} alt="Magnum jäätis"/>
+        <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
+        <ImageSection>
+            <DoveHeroImage src={DoveHeroImg} alt="Dove Tooted"/>
+        </ImageSection>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
         <ProductSectionDiv>
         <FilterDiv onLoad={this.ifURL()}>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
-                All​​
+                Kõik Tooted
             </Filter>
-            <Filter onClick={ () => {addURL("Functional"); this.handleShowFilterOne();}}>
-                Functional
+            <Filter onClick={ () => {addURL("Sampoonid"); this.handleShowFilterOne();}}>
+                Šampoonid ja palsamid
             </Filter>
-            <Filter onClick={ () => {addURL("Herbal"); this.handleShowFilterTwo();}}>
-                Herbal
+            <Filter onClick={ () => {addURL("Dusigeelid"); this.handleShowFilterTwo();}}>
+                Dušigeelid
             </Filter>
-            <Filter onClick={ () => {addURL("Green"); this.handleShowFilterThree();}}>
-                Green
+            <Filter onClick={ () => {addURL("Deodorandid"); this.handleShowFilterThree();}}>
+                Deodorandid
+            </Filter>
+            <Filter onClick={ () => {addURL("Seebid"); this.handleShowFilterFour();}}>
+                Seebid
+            </Filter>
+            <Filter onClick={ () => {addURL("Kreemid-ja-muu"); this.handleShowFilterFive();}}>
+                Kreemid ja muu
             </Filter>
         </FilterDiv>
         <ProductDiv>
             <div class="divider"></div>
             {this.state.allProducts ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>All Teas</h1>
+                <h1 style={{textAlign: "center"}}>Kõik Tooted</h1>
                 <ProductsUl>
                     {data.allProduct.nodes.filter((_,i) => i<this.state.limit).map(item => (
                         <li key={item.id}>
@@ -331,7 +415,7 @@ class ProductsDove extends React.Component{
                     ))}
                 </ProductsUl>
                 {(data.allProduct.nodes.length>12 && this.state.limit<data.allProduct.nodes.length) && 
-                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Show More </ShowMore>}
+                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Näita rohkem </ShowMore>}
             </div>
             ) : null}
             </ProductDiv>
@@ -339,9 +423,9 @@ class ProductsDove extends React.Component{
             <div class="divider"></div>
             {this.state.filterOne ? (
                 <div>
-                <h1 style={{textAlign: "center" }}>Functional</h1>
+                <h1 style={{textAlign: "center" }}>Šampoonid ja palsamid</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Functional"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Šampoonid ja palsamid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/dove/products/${item.id}`}>
                             <div>
@@ -359,9 +443,9 @@ class ProductsDove extends React.Component{
             <div class="divider"></div>
             {this.state.filterTwo ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>Herbal</h1>
+                <h1 style={{textAlign: "center"}}>Dušigeelid</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Herbal"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Dusigeelid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/dove/products/${item.id}`}>
                             <div>
@@ -379,9 +463,49 @@ class ProductsDove extends React.Component{
             <div class="divider"></div>
             {this.state.filterThree ? (
                 <div>
-                <h1 style={{textAlign: "center"}}>Green</h1>
+                <h1 style={{textAlign: "center"}}>Deodorandid</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Green"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Deodorandid"))).map(item => (
+                        <li key={item.id}>
+                            <a href={`/dove/products/${item.id}`}>
+                            <div>
+                                <img src={item.img}/>
+                                <h3>{item.fullName}</h3>
+                            </div>
+                            </a>
+                        </li>
+                    ))}
+                </ProductsUl>
+            </div>
+            ) : null}
+            </ProductDiv>
+            <ProductDiv>
+            <div class="divider"></div>
+            {this.state.filterFour ? (
+                <div>
+                <h1 style={{textAlign: "center"}}>Seebid</h1>
+                <ProductsUl>
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Seebid"))).map(item => (
+                        <li key={item.id}>
+                            <a href={`/dove/products/${item.id}`}>
+                            <div>
+                                <img src={item.img}/>
+                                <h3>{item.fullName}</h3>
+                            </div>
+                            </a>
+                        </li>
+                    ))}
+                </ProductsUl>
+            </div>
+            ) : null}
+            </ProductDiv>
+            <ProductDiv>
+            <div class="divider"></div>
+            {this.state.filterFive ? (
+                <div>
+                <h1 style={{textAlign: "center"}}>Kreemid ja muu</h1>
+                <ProductsUl>
+                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Kreemid ja muu"))).map(item => (
                         <li key={item.id}>
                             <a href={`/dove/products/${item.id}`}>
                             <div>
@@ -396,6 +520,7 @@ class ProductsDove extends React.Component{
             ) : null}
             </ProductDiv>
         </ProductSectionDiv>
+        </ScrollAnimation>
         </>
       );
       }
