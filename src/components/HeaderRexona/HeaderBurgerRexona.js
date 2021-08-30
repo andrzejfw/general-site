@@ -124,43 +124,25 @@ const HeaderBurgerRexona = () => {
           }} 
           to="/rexona/products" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            All
+            Kõik Tooted
         </Link>
         <Link className="rexona-navbox-item inside" 
           style={{
             left: productsOpen ? "0" : "-100%",
             transition: "all .3s", 
           }} 
-          to="/rexona/products" 
+          to="/rexona/products?filter=meeste-deodorandid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            Category 1
+            Meeste deodorandid
         </Link>
         <Link className="rexona-navbox-item inside" 
           style={{
             left: productsOpen ? "0" : "-100%",
             transition: "all .3s", 
           }} 
-          to="/rexona/products" 
+          to="/rexona/products?filter=naiste-deodorandid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            Category 2
-        </Link>
-        <Link className="rexona-navbox-item inside" 
-          style={{
-            left: productsOpen ? "0" : "-100%",
-            transition: "all .3s", 
-          }} 
-          to="/rexona/products" 
-          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            Category 3
-        </Link>
-        <Link className="rexona-navbox-item inside" 
-          style={{
-            left: productsOpen ? "0" : "-100%",
-            transition: "all .3s", 
-          }} 
-          to="/rexona/products" 
-          onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            Category 4
+            Naiste deodorandid
         </Link>
       </div>
     </nav>

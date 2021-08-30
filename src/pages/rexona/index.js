@@ -23,7 +23,7 @@ const Section = styled.section`
     }
 `;
 
-const CifHeroImage = styled.img`
+const RexonaHeroImage = styled.img`
     width: 100%;
     object-fit: cover;
 
@@ -37,10 +37,10 @@ const IndexPageRexona = () => {
    <>
    <SEO title="Rexona Avaleht" description="Rexona deodorandid vabastavad lisakaitse just siis, kui seda kõige rohkem vaja läheb. Võid kindel olla, et Rexona hoiab sind kogu päeva värskena. loe lähemalt"/>
    <Section> 
-    <CifHeroImage src={RexonaHeroImg} alt="Rexona Avaleht"/> 
+    <RexonaHeroImage src={RexonaHeroImg} alt="Rexona Avaleht"/> 
     <RexonaCategories sectionTitle="Meie kategooriaid">
-      <RexonaCategoriesBox categoryTitle="Naiste deodorandid" categoryImage={RexonaWomen} categoryLink="/rexona/products" alt="Naiste deodorandid"></RexonaCategoriesBox>
-      <RexonaCategoriesBox categoryTitle="Meeste deodorandid" categoryImage={RexonaMen} categoryLink="/rexona/products" alt="Meeste deodorandid"></RexonaCategoriesBox>
+      <RexonaCategoriesBox categoryTitle="Naiste deodorandid" categoryImage={RexonaWomen} categoryLink="/rexona/products?filter=meeste-deodorandid" alt="Naiste deodorandid"></RexonaCategoriesBox>
+      <RexonaCategoriesBox categoryTitle="Meeste deodorandid" categoryImage={RexonaMen} categoryLink="/rexona/products?filter=naiste-deodorandid" alt="Meeste deodorandid"></RexonaCategoriesBox>
     </RexonaCategories>
     <RexonaBannerAndText
         image={RexonaPurposeHeroImg}
