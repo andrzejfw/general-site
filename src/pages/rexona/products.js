@@ -123,7 +123,7 @@ const Filter = styled.button`
     color: white;
     font-weight:700;
     font-size: 1.125rem;
-    padding: 10px 30px;
+    padding: 10px 10px;
     width: 150px;
     border: 1px solid;
     border-color:#054281;
