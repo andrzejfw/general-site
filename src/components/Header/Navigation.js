@@ -22,7 +22,8 @@ const NavbarSection = styled.section`
     .ml-auto.navbar-nav{
       height:90vh !important;
       align-items:center;
-      justify-content:center;
+      justify-content:start;
+      margin-top: 40px;
     }
   }
   @media screen and (min-device-width: 500px) and (max-device-width: 692px) {
@@ -53,7 +54,7 @@ const Navigation = () => {
 
           <Nav className="ml-auto">
             <Nav.Link Link href="/about">Ettevõttest</Nav.Link>
-            <Nav.Link Link href="/brands">Kaubamärgid</Nav.Link>
+            {/* <Nav.Link Link href="/#meie-kaubamargid">Kaubamärgid</Nav.Link> */}
             <Nav.Link Link href="/sustainability">Meie eesmärk</Nav.Link>
             <Nav.Link Link href="/contact">Kontakt</Nav.Link>
 
