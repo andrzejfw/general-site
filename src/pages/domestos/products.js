@@ -119,7 +119,7 @@ const Filter = styled.button`
     border: none;
     margin: 10px 10px;
     background:linear-gradient(180deg,#123c7b,#06154b);
-    border:none;
+    border: solid 2px transparent;
     text-transform:none;
     transition:.5s;
     box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
@@ -129,7 +129,7 @@ const Filter = styled.button`
       background:linear-gradient(180deg,#123c7b 30%,#06154b);
       transform: scale(1.15);
       opacity: 1;
-      border:none;
+      border: solid 2px transparent;
       outline: none;
       text-decoration:none;
     }
