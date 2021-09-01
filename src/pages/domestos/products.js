@@ -116,7 +116,7 @@ const Filter = styled.button`
     color: white;
     padding: 10px 30px;
     width: 215px;
-    /* border: none; */
+    border: none;
     margin: 10px 10px;
     background:linear-gradient(180deg,#123c7b,#06154b);
     text-transform:none;
@@ -125,17 +125,13 @@ const Filter = styled.button`
     outline: none;
     text-decoration:none;
     &:hover{
-      /* background:linear-gradient(180deg,#123c7b 30%,#06154b); */
-      transform: scale(1.05);
-      /* opacity: 1; */
+        transform: scale(1.1);
+        opacity: 1;
+        text-decoration:none;
     }
-    /* &:focus{
-      outline: none;
-      background: white;
-      border: solid 2px #06154b;
-      color: #06154b;
-      font-weight: bold;
-    } */
+    &:focus{
+        outline: none;
+    }
 `;
 
 const ProductsUl = styled.ul`
