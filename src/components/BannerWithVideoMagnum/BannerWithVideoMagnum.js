@@ -43,11 +43,13 @@ const BannerWithVideoMagnum = ({
             <p className="banner-magnum-paragraph">
               {paragraph}
               <div style={{display: button ? "block" : "none"}}>
-              <ButtonRadius>
-                <Link className="button-link" to={videoButtonLink}>
+              
+              <Link className="button-link" to={videoButtonLink}>
+                <ButtonRadius>
                   {videoButtonCTA}
-                </Link>
-              </ButtonRadius>
+                </ButtonRadius>
+              </Link>
+              
               </div>
             </p>
               <div className="banner-magnum-video-div">

@@ -15,11 +15,13 @@ const RexonaBannerAndText = ({image, title, paragraphText, buttonCTA, buttonLink
             <div className="paragraph-section" style={{textAlign: second ? `right` : `left`}}>
                 <h2>{title}</h2>
                 <p>{paragraphText}</p>
-                <ButtonRadius>
-                    <Link className="bannerandtext-button-link" to={buttonLink}>
+                
+                <Link className="bannerandtext-button-link" to={buttonLink}>
+                    <ButtonRadius>
                         {buttonCTA}
-                    </Link>
-                </ButtonRadius>
+                    </ButtonRadius>
+                </Link>
+                
             </div>
         </ScrollAnimation>
     </div>

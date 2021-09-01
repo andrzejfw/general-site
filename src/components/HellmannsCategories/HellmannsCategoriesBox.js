@@ -18,11 +18,13 @@ const HellmannsCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) =>
                     </div>
                 </Link>
                 <div className="hellmanns-button-div">
-                    <ButtonRadius>
-                        <Link className="hellmanns-categories-button-link" to={categoryLink}>
+                    
+                    <Link className="hellmanns-categories-button-link" to={categoryLink}>
+                        <ButtonRadius>
                             Uuri rohkem
-                        </Link>
-                    </ButtonRadius>
+                        </ButtonRadius>
+                    </Link>
+                    
                 </div>
             </div>
         </>

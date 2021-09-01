@@ -16,11 +16,13 @@ const MagnumCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => {
                     </Link>
                     
                     <div className="magnum-button-div">
-                        <ButtonRadius>
-                            <Link className="magnum-categories-button-link" to={categoryLink}>
+                        
+                        <Link className="magnum-categories-button-link" to={categoryLink}>
+                            <ButtonRadius>
                                 {categoryTitle}
-                            </Link>
-                        </ButtonRadius>
+                            </ButtonRadius>
+                        </Link>
+                        
                     </div>
                 </div>
         </>

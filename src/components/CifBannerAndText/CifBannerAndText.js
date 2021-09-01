@@ -14,11 +14,13 @@ const CifBannerAndText = ({image, imagemobile, title, paragraphText, buttonCTA, 
         <div className="cif-paragraph-section" style={{textAlign: second ? `right` : `left`}}>
             <h2>{title}</h2>
             <p>{paragraphText}</p>
-            <ButtonRadius>
-                <Link className="cif-bannerandtext-button-link" to={buttonLink}>
+            
+            <Link className="cif-bannerandtext-button-link" to={buttonLink}>
+                <ButtonRadius>
                     {buttonCTA}
-                </Link>
-            </ButtonRadius>
+                </ButtonRadius>
+            </Link>
+        
         </div>
     </div>
 );

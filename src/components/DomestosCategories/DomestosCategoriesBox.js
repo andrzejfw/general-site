@@ -17,11 +17,13 @@ const DomestosCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => 
                         </div>
                     </Link>
                     <div className="domestos-button-div">
-                        <ButtonRadius>
-                            <Link className="domestos-categories-button-link" to={categoryLink}>
+                        
+                        <Link className="domestos-categories-button-link" to={categoryLink}>
+                            <ButtonRadius>
                                 Uuri rohkem
-                            </Link>
-                        </ButtonRadius>
+                            </ButtonRadius>
+                        </Link>
+                        
                     </div>
                 </div>
         </>

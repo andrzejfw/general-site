@@ -64,6 +64,12 @@ const MagnumBannerAndTextStyles = createGlobalStyle`
             margin: 0 auto;
             text-align: center;
         }
+
+    .jYLXOf {
+        @media(min-width: 692px) {
+            margin: 20px 0;
+        }
+    }
 }
 
 .ifUilS {

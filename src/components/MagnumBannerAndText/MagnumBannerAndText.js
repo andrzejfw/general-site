@@ -13,11 +13,13 @@ const MagnumBannerAndText = ({image, paragraphText, buttonCTA, buttonLink, secon
         </div>
         <div className="magnum-paragraph-section" style={{textAlign: second ? `right` : `left`}}>
             <p>{paragraphText}</p>
-            <ButtonRadius>
-                <Link className="magnum-bannerandtext-button-link" to={buttonLink}>
+            
+            <Link className="magnum-bannerandtext-button-link" to={buttonLink}>
+                <ButtonRadius>
                     {buttonCTA}
-                </Link>
-            </ButtonRadius>
+                </ButtonRadius>
+            </Link>
+            
         </div>
     </div>
 );

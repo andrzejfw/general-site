@@ -10,11 +10,13 @@ const KnorrBannerAndTextReversed = ({image, imagemobile, title, paragraphText, b
         <div className="knorr-paragraph-section-reversed" style={{textAlign: second ? `right` : `left`}}>
             <h2>{title}</h2>
             <p>{paragraphText}</p>
-            <ButtonRadius>
-                <Link className="knorr-bannerandtext-button-link-reversed" to={buttonLink}>
+            
+            <Link className="knorr-bannerandtext-button-link-reversed" to={buttonLink}>
+                <ButtonRadius>
                     {buttonCTA}
-                </Link>
-            </ButtonRadius>
+                </ButtonRadius>
+            </Link>
+            
         </div>
         <div className="knorr-image-section-reversed">
             <img src={image} className="imagepc-reversed"/>

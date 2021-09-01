@@ -14,11 +14,13 @@ const DoveBannerAndText = ({image, title, paragraphText, buttonCTA, buttonLink, 
             <div className="dove-texts">
                 <h2>{title}</h2>
                 <p>{paragraphText}</p>
-            <ButtonRadius>
+            
                 <Link className="dove-bannerandtext-button-link" to={buttonLink}>
-                    {buttonCTA}
+                    <ButtonRadius>
+                        {buttonCTA}
+                    </ButtonRadius>
                 </Link>
-            </ButtonRadius>
+            
             </div>
         </div>
     </div>

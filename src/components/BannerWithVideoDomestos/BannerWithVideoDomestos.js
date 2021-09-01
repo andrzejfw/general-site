@@ -49,11 +49,13 @@ const BannerWithVideoDomestos = ({
             <p className="banner-domestos-paragraph">
               {paragraph}
               <div style={{display: button ? "block" : "none"}}>
-              <ButtonRadius>
-                <Link className="button-link" to={videoButtonLink}>
+              
+              <Link className="button-link" to={videoButtonLink}>
+                <ButtonRadius>
                   {videoButtonCTA}
-                </Link>
-              </ButtonRadius>
+                </ButtonRadius>
+              </Link>
+              
               </div>
             </p>
             <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true" delay="600">

@@ -43,11 +43,13 @@ const BannerWithVideoLipton = ({
             <p className="banner-lipton-paragraph">
               {paragraph}
               <div style={{display: button ? "block" : "none"}}>
-              <ButtonRadius>
-                <Link className="button-link" to={videoButtonLink}>
+              
+              <Link className="button-link" to={videoButtonLink}>
+                <ButtonRadius>
                   {videoButtonCTA}
-                </Link>
-              </ButtonRadius>
+                </ButtonRadius>
+              </Link>
+              
               </div>
             </p>
             <div className="banner-lipton-video-div">

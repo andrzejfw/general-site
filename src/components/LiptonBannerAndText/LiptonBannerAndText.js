@@ -10,11 +10,13 @@ const LiptonBannerAndText = ({image, paragraphText, buttonCTA, buttonLink, secon
         </div>
         <div className="paragraph-section" style={{textAlign: second ? `right` : `left`}}>
             <p>{paragraphText}</p>
-            <ButtonRadius>
-                <Link className="bannerandtext-button-link" to={buttonLink}>
+            
+            <Link className="bannerandtext-button-link" to={buttonLink}>
+                <ButtonRadius>
                     {buttonCTA}
-                </Link>
-            </ButtonRadius>
+                </ButtonRadius>
+            </Link>
+            
         </div>
     </div>
 );

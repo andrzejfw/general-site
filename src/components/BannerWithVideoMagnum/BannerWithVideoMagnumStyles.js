@@ -21,7 +21,7 @@ const BannerWithVideoMagnumStyles = createGlobalStyle`
 
 .banner-magnum-paragraph {
     font-size: 1.4rem;
-    text-align: left;
+    text-align: right;
     color: #fff;
     padding: 5% 5% 5% 18vw;
 
@@ -50,6 +50,12 @@ const BannerWithVideoMagnumStyles = createGlobalStyle`
         color: inherit;
     }
 }
+
+.jYLXOf {
+        @media(min-width: 692px) {
+            margin: 20px 0 20px auto;
+        }
+    }
 }
 
 .banner-magnum-video-div {

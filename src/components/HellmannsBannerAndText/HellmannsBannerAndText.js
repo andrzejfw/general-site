@@ -11,11 +11,13 @@ const HellmannsBannerAndText = ({image, title, paragraphText, buttonCTA, buttonL
         <div className="hellmanns-paragraph-section" style={{textAlign: second ? `right` : `left`}}>
             <h2>{title}</h2>
             <p>{paragraphText}</p>
-            <ButtonRadius>
-                <Link className="hellmanns-bannerandtext-button-link" to={buttonLink}>
+            
+            <Link className="hellmanns-bannerandtext-button-link" to={buttonLink}>
+                <ButtonRadius>
                     {buttonCTA}
-                </Link>
-            </ButtonRadius>
+                </ButtonRadius>    
+            </Link>
+            
         </div>
     </div>
 );

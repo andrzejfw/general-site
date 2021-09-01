@@ -14,11 +14,13 @@ const KnorrBannerAndText = ({image, imagemobile, title, paragraphText, buttonCTA
         <div className="knorr-paragraph-section" style={{textAlign: second ? `right` : `left`}}>
             <h2>{title}</h2>
             <p>{paragraphText}</p>
-            <ButtonRadius>
-                <Link className="knorr-bannerandtext-button-link" to={buttonLink}>
+            
+            <Link className="knorr-bannerandtext-button-link" to={buttonLink}>
+                <ButtonRadius>
                     {buttonCTA}
-                </Link>
-            </ButtonRadius>
+                </ButtonRadius>
+            </Link>
+            
         </div>
     </div>
     </ScrollAnimation>

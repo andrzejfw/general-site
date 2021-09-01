@@ -15,11 +15,13 @@ const RexonaCategoriesBox = ({categoryTitle, categoryImage, categoryLink}) => {
                         <img className="categories-img" src={categoryImage}/>
                     </Link>
                     <div className="button-div">
-                        <ButtonRadius>
-                            <Link className="categories-button-link" to={categoryLink}>
+                        
+                        <Link className="categories-button-link" to={categoryLink}>
+                            <ButtonRadius>
                                 Uuri rohkem
-                            </Link>
-                        </ButtonRadius>
+                            </ButtonRadius>
+                        </Link>
+                        
                     </div>
                 </div>
         </>

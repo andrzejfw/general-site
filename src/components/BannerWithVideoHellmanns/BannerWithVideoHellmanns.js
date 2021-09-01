@@ -43,11 +43,13 @@ const BannerWithVideoHellmanns = ({
             <p className="banner-hellmanns-paragraph">
               {paragraph}
               <div style={{display: button ? "block" : "none"}}>
-              <ButtonRadius>
-                <Link className="button-link" to={videoButtonLink}>
-                  {videoButtonCTA}
-                </Link>
-              </ButtonRadius>
+              
+              <Link className="button-link" to={videoButtonLink}>
+                <ButtonRadius>
+                {videoButtonCTA}
+                </ButtonRadius>
+              </Link>
+              
               </div>
             </p>
             <div className="banner-hellmanns-video-div">
