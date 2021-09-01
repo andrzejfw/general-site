@@ -357,8 +357,8 @@ class ProductsHellmanns extends React.Component{
                 <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Näita rohkem </ShowMore>}
             </div>
             ) : null}
-            </ProductDiv>
-            <ProductDiv>
+            
+            
             <div class="divider"></div>
             {this.state.filterOne ? (
                 <div>
@@ -377,8 +377,8 @@ class ProductsHellmanns extends React.Component{
                 </ProductsUl>
             </div>
             ) : null}
-            </ProductDiv>
-            <ProductDiv>
+            
+            
             <div class="divider"></div>
             {this.state.filterTwo ? (
                 <div>
@@ -397,8 +397,8 @@ class ProductsHellmanns extends React.Component{
                 </ProductsUl>
             </div>
             ) : null}
-            </ProductDiv>
-            <ProductDiv>
+            
+            
             <div class="divider"></div>
             {this.state.filterThree ? (
                 <div>

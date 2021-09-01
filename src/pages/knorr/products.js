@@ -349,8 +349,8 @@ class ProductsKnorr extends React.Component{
                 <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Show More </ShowMore>}
             </div>
             ) : null}
-            </ProductDiv>
-            <ProductDiv>
+            
+            
             <div class="divider"></div>
             {this.state.filterOne ? (
                 <div>
@@ -371,8 +371,8 @@ class ProductsKnorr extends React.Component{
                 </ScrollAnimation>
             </div>
             ) : null}
-            </ProductDiv>
-            <ProductDiv>
+            
+            
             <div class="divider"></div>
             {this.state.filterTwo ? (
                 <div>
@@ -393,8 +393,8 @@ class ProductsKnorr extends React.Component{
                 </ScrollAnimation>
             </div>
             ) : null}
-            </ProductDiv>
-            <ProductDiv>
+            
+            
             <div class="divider"></div>
             {this.state.filterThree ? (
                 <div>
@@ -415,8 +415,8 @@ class ProductsKnorr extends React.Component{
                 </ScrollAnimation>
             </div>
             ) : null}
-            </ProductDiv>
-            <ProductDiv>
+            
+            
             <div class="divider"></div>
             {this.state.filterFour ? (
                 <div>

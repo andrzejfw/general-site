@@ -316,8 +316,8 @@ class ProductsRexona extends React.Component{
                 <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}>Näita rohkem</ShowMore>}
             </div>
             ) : null}
-            </ProductDiv>
-            <ProductDiv>
+            
+            
             <div class="divider"></div>
             {this.state.filterOne ? (
                 <div>
@@ -336,8 +336,8 @@ class ProductsRexona extends React.Component{
                 </ProductsUl>
             </div>
             ) : null}
-            </ProductDiv>
-            <ProductDiv>
+            
+            
             <div class="divider"></div>
             {this.state.filterTwo ? (
                 <div>
