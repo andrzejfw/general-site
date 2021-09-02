@@ -36,9 +36,9 @@ const FooterDove = () => (
     </nav>
   </div>
   <div className="footer-dove-unilever-div">
-    <Link to ="/">
+    <a href ="/">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-dove-unilever-logo"/>
-    </Link>
+    </a>
     <div className="footer-dove-unilever-copyright">© Unilever</div>
   </div>
   </>

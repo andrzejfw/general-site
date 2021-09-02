@@ -12,7 +12,7 @@ import BackgroundImage from '../../assets/images/hellmanns-video-bg.png'
 import backgroundMobile from '../../assets/images/hellmanns-video-bg-mobile-textvideo.png'
 import HellmannsBannerAndText from '../../components/HellmannsBannerAndText/HellmannsBannerAndText'
 import CampaingOneImg from '../../assets/images/hellmanns-hero-banner.jpg'
-import CampaingTwoImg from '../../assets/images/ThePlasticsProblem.jpg'
+import CampaingTwoImg from '../../assets/images/PlasticProblem-teaser.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const Section = styled.section`

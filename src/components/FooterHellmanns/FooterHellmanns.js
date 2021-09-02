@@ -34,16 +34,15 @@ const FooterHellmanns = () => (
                     <a href="/privacy-notice" target="_blank">privaatsuspoliitika</a>
                     <a href="/legal-notice" target="_blank">juriidiline teave</a></li>
                 <li className="footer-hellmanns-item">
-                <img src={HellmannsJar} className="hellmanns-footer-graphic-image" alt="Hellmann's ikoon jalus
-"/>
+                <img src={HellmannsJar} className="hellmanns-footer-graphic-image" alt="Hellmann's ikoon jalus"/>
             </li>           
             </ul>
     </nav>
   </DivHellmannsContainer>
   <div className="footer-hellmanns-unilever-div">
-    <Link to ="/">
+    <a href ="/">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-hellmanns-unilever-logo"/>
-    </Link>
+    </a>
     <div className="footer-hellmanns-unilever-copyright">© Unilever</div>
   </div>
   </>

@@ -35,9 +35,9 @@ const FooterRexona = () => (
     </nav>
   </div>
   <div className="footer-rexona-unilever-div">
-    <Link to ="/">
+    <a href ="/">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-rexona-unilever-logo"/>
-    </Link>
+    </a>
     <div className="footer-rexona-unilever-copyright">© Unilever</div>
   </div>
   </>

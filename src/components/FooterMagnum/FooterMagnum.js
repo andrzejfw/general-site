@@ -36,9 +36,9 @@ const FooterMagnum = () => (
     </nav>
   </div>
   <div className="footer-magnum-unilever-div">
-    <Link to ="/">
+    <a href ="/">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-magnum-unilever-logo"/>
-    </Link>
+    </a>
     <div className="footer-magnum-unilever-copyright">© Unilever</div>
   </div>
   </>
