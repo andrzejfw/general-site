@@ -22,6 +22,10 @@ const ContactHeader = styled.h1`
 const ContactSection = styled.div`
   margin: 50px auto;
   text-align: center;
+
+  @media (max-width: 992px) {
+        margin-top: 100px;
+      }
 `;
 
 const ContactInformation = styled.div`

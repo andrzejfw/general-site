@@ -22,7 +22,11 @@ const Section = styled.section`
     max-width:1200px;
     margin:auto;
     margin-bottom:30px;
-    text-align:justify;
+    /* text-align:justify; */
+
+    @media (max-width: 992px) {
+        margin-top: 100px;
+      }
    
     h2 span {
       font-size:20px;
@@ -32,7 +36,8 @@ const Section = styled.section`
     }
     h1,h2 {
       margin-top:2rem;
-      margin-bottom:1rem
+      margin-bottom:1rem;
+      color: #1f36c7;
     }
     h2 p {
     margin-top: 10px;

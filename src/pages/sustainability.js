@@ -16,6 +16,10 @@ const SustainabilityHeroImage = styled.img`
     @media(min-width:1400px){
         height: 500px;
     }
+
+    @media (max-width: 992px) {
+        margin-top: 60px;
+      }
 `;
 
 const SustainabilityContent = styled.div`
@@ -30,6 +34,7 @@ const SustainabilityContent = styled.div`
 const SustainabilityHeader = styled.h1`
     text-align: center;
     margin-bottom: 50px;
+    color: #1f36c7;
 
     @media(max-width:992px){
         text-align: left;
@@ -39,6 +44,7 @@ const SustainabilityHeader = styled.h1`
 const SustainabilitySubHeader = styled.h2`
     font-size: 1.5rem;
     margin: 30px 0 20px;
+    color: #1f36c7;
 `;
 
 const SustainabilityParagraphMoreInfo = styled.p`

@@ -48,6 +48,10 @@ const SiteMapHeader = styled.h1`
         text-align: left;
         margin: 50px 50px 20px;
     }
+
+    @media (max-width: 992px) {
+        margin-top: 100px;
+      }
 `;
 
 export const data = graphql`

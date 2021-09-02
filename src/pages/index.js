@@ -20,6 +20,10 @@ const Section = styled.section`
     /* width:100%; */
     /* max-width:1200px; */
     margin:auto;
+
+    @media (max-width: 992px) {
+        margin-top: 60px;
+      }
 `;
 
 const HeroSection = styled.div`

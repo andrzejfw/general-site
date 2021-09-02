@@ -12,6 +12,8 @@ import Animations from "../assets/styles/animations.js"
 import Footer from "../components/Footer/Footer.js"
 import Navigation from "../components/Header/Navigation.js"
 import NavigationStyles from "../components/Header/NavigationStyles"
+import NavigationBurger from "../components/Header/NavigationBurger.js"
+import NavigationBurgerStyles from "../components/Header/NavigationBurgerStyles"
 import FaviconUni from "../components/Favicon/FaviconUni"
 
 //lipton
@@ -122,6 +124,8 @@ const MainLayout = ({ children, location }) => (
       <>
       <Navigation/>
       <NavigationStyles/>
+      <NavigationBurger/>
+      <NavigationBurgerStyles/>
       <GlobalStyle />
       <TabStyle />
       <ModalStyles/>
@@ -136,6 +140,8 @@ const MainLayout = ({ children, location }) => (
       <>
       <Navigation/>
       <NavigationStyles/>
+      <NavigationBurger/>
+      <NavigationBurgerStyles/>
       <GlobalStyle />
       <TabStyle />
       <ModalStyles/>
@@ -176,6 +182,8 @@ const MainLayout = ({ children, location }) => (
       <>
       <Navigation/>
       <NavigationStyles/>
+      <NavigationBurger/>
+      <NavigationBurgerStyles/>
       <GlobalStyle />
       <TabStyle />
       <ModalStyles/>
@@ -190,6 +198,8 @@ const MainLayout = ({ children, location }) => (
       <>
       <Navigation/>
       <NavigationStyles/>
+      <NavigationBurger/>
+      <NavigationBurgerStyles/>
       <GlobalStyle />
       <TabStyle />
       <ModalStyles/>
@@ -204,6 +214,8 @@ const MainLayout = ({ children, location }) => (
       <>
       <Navigation/>
       <NavigationStyles/>
+      <NavigationBurger/>
+      <NavigationBurgerStyles/>
       <GlobalStyle />
       <TabStyle />
       <ModalStyles/>
@@ -218,6 +230,8 @@ const MainLayout = ({ children, location }) => (
       <>
       <Navigation/>
       <NavigationStyles/>
+      <NavigationBurger/>
+      <NavigationBurgerStyles/>
       <GlobalStyle />
       <TabStyle />
       <ModalStyles/>
@@ -232,6 +246,8 @@ const MainLayout = ({ children, location }) => (
       <>
       <Navigation/>
       <NavigationStyles/>
+      <NavigationBurger/>
+      <NavigationBurgerStyles/>
       <GlobalStyle />
       <TabStyle />
       <ModalStyles/>
@@ -246,6 +262,8 @@ const MainLayout = ({ children, location }) => (
       <>
       <Navigation/>
       <NavigationStyles/>
+      <NavigationBurger/>
+      <NavigationBurgerStyles/>
       <GlobalStyle />
       <TabStyle />
       <ModalStyles/>
@@ -260,6 +278,8 @@ const MainLayout = ({ children, location }) => (
       <>
       <Navigation/>
       <NavigationStyles/>
+      <NavigationBurger/>
+      <NavigationBurgerStyles/>
       <GlobalStyle />
       <TabStyle />
       <ModalStyles/>

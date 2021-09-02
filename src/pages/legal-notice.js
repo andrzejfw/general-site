@@ -6,9 +6,13 @@ import SEO from '../components/Seo/Seo'
 
 
 const Section = styled.section`
-    width:100%;
+    /* width:100%; */
     max-width:1200px;
     margin:auto;
+
+    @media (max-width: 992px) {
+        margin-top: 60px;
+      }
 `;
 
 const ImgLogo = styled.img`
@@ -16,9 +20,11 @@ const ImgLogo = styled.img`
 `;
 
 const General = styled.div`
-  box-shadow:0 0 12px 0 #e6e3e6;
-  border-radius:20px;
-  margin-bottom:30px;
+  @media (min-width: 769px) {
+    box-shadow:0 0 12px 0 #e6e3e6;
+    border-radius:20px;
+    margin-bottom:30px;
+  }
 `;
 
 
