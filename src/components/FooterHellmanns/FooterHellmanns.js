@@ -40,7 +40,7 @@ const FooterHellmanns = () => (
     </nav>
   </DivHellmannsContainer>
   <div className="footer-hellmanns-unilever-div">
-    <a href ="/">
+    <a href ="/" target="_blank">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-hellmanns-unilever-logo"/>
     </a>
     <div className="footer-hellmanns-unilever-copyright">© Unilever</div>

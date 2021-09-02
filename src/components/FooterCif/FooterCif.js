@@ -36,7 +36,7 @@ const FooterCif = () => (
     </nav>
   </div>
   <div className="footer-cif-unilever-div">
-    <a href ="/">
+    <a href ="/" target="_blank">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-cif-unilever-logo"/>
     </a>
     <div className="footer-cif-unilever-copyright">© Unilever</div>

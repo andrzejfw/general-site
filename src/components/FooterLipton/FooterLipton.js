@@ -244,7 +244,7 @@ const FooterLipton = () => (
     </FooterWrapper>
   </Footercontainer>
   <UnileverFooter>
-    <a href ="/"><LogoImage src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge"/></a><FooterCopyright>© Unilever</FooterCopyright>
+    <a href ="/" target="_blank"><LogoImage src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge"/></a><FooterCopyright>© Unilever</FooterCopyright>
   </UnileverFooter>
   </>
 );

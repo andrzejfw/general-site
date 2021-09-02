@@ -33,7 +33,7 @@ const FooterDomestos = () => (
     </nav>
   </div>
   <div className="footer-domestos-unilever-div">
-    <a href ="/">
+    <a href ="/" target="_blank">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-domestos-unilever-logo"/>
     </a>
     <div className="footer-domestos-unilever-copyright">© Unilever</div>

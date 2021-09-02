@@ -40,7 +40,7 @@ const FooterKnorr = () => (
     </nav>
   </div>
   <div className="footer-knorr-unilever-div">
-    <a href ="/">
+    <a href ="/" target="_blank">
         <img src={UnileverLogoWhite} alt="Unilever Eesti logo - must valge" className="footer-knorr-unilever-logo"/>
     </a>
     <div className="footer-knorr-unilever-copyright">© Unilever</div>
