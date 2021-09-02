@@ -31,6 +31,10 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 const Section = styled.section`
     width:100%;
+
+    @media (max-width: 992px) {
+      margin-top: 60px;
+    }
 `;
 
 const LiptonHeroImage = styled.img`

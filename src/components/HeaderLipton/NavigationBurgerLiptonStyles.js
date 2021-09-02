@@ -1,15 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
-import KnorrWave from '../../assets/images/knorr-bg-wave.png'
 
-const HeaderBurgerKnorrStyles = createGlobalStyle`
-.knorr-burger-menu {
+const HeaderBurgerLiptonStyles = createGlobalStyle`
+.lipton-burger-menu {
     display: none;    
 
     @media (max-width: 710px) {
         display: block;
         position: fixed;
         z-index: 99;
-        background: rgba(255,255,255,.7);
+        background: #ffe902;
         height: 60px;
         top: 0;
         left: 0;
@@ -19,7 +18,7 @@ const HeaderBurgerKnorrStyles = createGlobalStyle`
 
     img {
         position: absolute;
-        top: -15px;
+        top: -5px;
         left: 50%;
         transform: translateX(-50%);
         height: 90px;
@@ -27,7 +26,7 @@ const HeaderBurgerKnorrStyles = createGlobalStyle`
     }
 }
 
-.knorr-toggle {
+.lipton-toggle {
     height: auto;
     padding: 0 35px;
     display: flex;
@@ -36,7 +35,7 @@ const HeaderBurgerKnorrStyles = createGlobalStyle`
     right: 10px;
 }
 
-.knorr-navbox {
+.lipton-navbox {
     position: absolute;
     display: flex;
     justify-content: flex-end;
@@ -47,17 +46,16 @@ const HeaderBurgerKnorrStyles = createGlobalStyle`
     justify-content: start;
     top: 60px;
     z-index: 0;
-    background-color: rgb(0 122 51);
-    background: url(${KnorrWave});
+    background-color: #ffe902;
     background-size: cover;
     width: 100%;
-    height: 90%;
+    height: 100%;
     @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
     padding: 20px 0;
     }
 }
 
-.knorr-products {
+.lipton-products {
     position: absolute;
     display: flex;
     justify-content: flex-end;
@@ -68,19 +66,18 @@ const HeaderBurgerKnorrStyles = createGlobalStyle`
     justify-content: start;
     top: 60px;
     z-index: 0;
-    background-color: rgb(0 122 51);
-    background: url(${KnorrWave});
+    background-color: #ffe902;
     background-size: cover;
     width: 100%;
-    height: 90%;
+    height: 100%;
     @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
     padding: 20px 0;
     }
 }
 
-.knorr-navbox-item {
+.lipton-navbox-item {
     text-decoration: none;
-    color: #fff;
+    color: #c8381d;
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw;
@@ -91,7 +88,6 @@ const HeaderBurgerKnorrStyles = createGlobalStyle`
 
     &:hover {
         font-weight: 700;
-        color: #17594a;
     }
     @media screen and (min-device-width: 500px) and (max-device-width: 710px) {
     padding:10px 0;
@@ -107,4 +103,4 @@ const HeaderBurgerKnorrStyles = createGlobalStyle`
 }
 `;
 
-export default HeaderBurgerKnorrStyles;
+export default HeaderBurgerLiptonStyles;

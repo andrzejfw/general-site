@@ -1,77 +1,22 @@
-import React, {Component} from "react"
-import styled from "styled-components"
-import { Link } from 'gatsby';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import LiptonLogoHeader from '../../assets/images/lipton-logo-header.png'
-import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+import React from 'react'
+import { Link } from 'gatsby'
+import LiptonLogo from '../../assets/images/lipton-logo-header.png'
 
 
-const ImgLogo = styled.img`
-  width:90px;
-  position: absolute;
-  top: -5px;
-  left: 10%;
-  @media(max-width:992px) {
-    position: relative;
-  }
-`;
+const HeaderLipton = () => {
+    return (
+        <>
+        <nav className="header-lipton-nav">
+            <div className="links-section-lipton">
+                <Link to="/lipton"><img src={LiptonLogo} alt="Lipton Eesti logo"/></Link>
+                <Link to="/lipton/products" activeClassName="active" className="link-lipton">Tooted</Link>
+                <Link to="/lipton/purpose" activeClassName="active" className="link-lipton">Meie eesmärk</Link>
+                <Link to="/lipton/sustainability" activeClassName="active" className="link-lipton">Jätkusuutlik elu</Link>
+                <a href="/contact" target="_blank" activeClassName="active" className="link-lipton">Kontakt</a>
+            </div>
+        </nav>
+        </>
+    )
+};
 
-
-const NavbarSection = styled.section`
-  width:100% !important;
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  @media(max-width:992px){
-    justify-content: space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    .ml-auto.navbar-nav{
-      height:90vh !important;
-      align-items:center;
-      justify-content:center;
-    }
-  }
-`;
-
-
-const NavigationLipton = () => {
-  return (
-    <>    
-    <Navbar className="Navbartwo" collapseOnSelect expand="lg" bg="yellow" variant="dark">
-
-      <NavbarSection>
-        <Navbar.Brand>
-          <Link to ="/lipton"><ImgLogo src={LiptonLogoHeader} /></Link>
-        </Navbar.Brand>
-
-        <Navbar.Toggle aria-controls="responsive-navbar-nav">
-          <span className="icon-bar top-bar"></span>
-          <span className="icon-bar middle-bar"></span>
-          <span className="icon-bar bottom-bar"></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-
-          <Nav className="ml-lipton">
-          <NavDropdown title="Tooted" id="collasible-nav-dropdown">
-              <NavDropdown.Item  Link href="/lipton/products">Kõik Tooted</NavDropdown.Item>
-              <NavDropdown.Item  Link href="/lipton/products?filter=Must-tee">Must tee</NavDropdown.Item>
-              <NavDropdown.Item Link href="/lipton/products?filter=Roheline-tee">Roheline tee</NavDropdown.Item>
-              <NavDropdown.Item Link href="/lipton/products?filter=Funktsionaalne-ja-taimetee">Funktsionaalne- ja taimetee</NavDropdown.Item>
-            </NavDropdown>
-
-            <Nav.Link Link href="/lipton/purpose">Meie eesmärk</Nav.Link>
-            <Nav.Link Link href="/lipton/sustainability">Jätkusuutlik elu</Nav.Link>
-            <Nav.Link Link href="/contact" target="_blank">Kontakt</Nav.Link>
-
-          </Nav>
-        </Navbar.Collapse>
-      </NavbarSection>
-
-    </Navbar>
-  </>
-  )
-}
-
-
-export default NavigationLipton 
+export default HeaderLipton;

@@ -28,6 +28,7 @@ const LiptonHeroImage = styled.img`
     @media (max-width: 1200px) {
         height: 400px;
         content: url(${LiptonHeroImgMobile});
+        margin-top: 60px;
     }
 `;
 

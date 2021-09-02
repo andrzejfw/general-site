@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const HeaderDoveStyles = createGlobalStyle`
+const HeaderKnorrStyles = createGlobalStyle`
 .header-knorr-nav {
     position: sticky;
     top: 0;
@@ -59,4 +59,4 @@ a.active {
 
 `;
 
-export default HeaderDoveStyles;
+export default HeaderKnorrStyles;
