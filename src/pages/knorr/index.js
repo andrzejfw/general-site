@@ -6,10 +6,12 @@ import KnorrCategories from '../../components/KnorrCategories/KnorrCategories'
 import KnorrCategoriesBox from '../../components/KnorrCategories/KnorrCategoriesBox'
 import KnorrBannerAndText from '../../components/KnorrBannerAndText/KnorrBannerAndText'
 import KnorrBannerAndTextReversed from '../../components/KnorrBannerAndTextReversed/KnorrBannerAndTextReversed'
-import CifSpray from '../../assets/images/cif-spray.png'
-import CifCream from '../../assets/images/cif-cream.png'
-import KnorrAboutHeroImg from '../../assets/images/knorr-about-banner.jpg'
-import KnorrAboutHeroImgMobile from '../../assets/images/knorr-about-banner-mobile.jpg'
+import CupASoup from '../../assets/images/knorr-cup-a-soup.png'
+import CupDishes from '../../assets/images/knorr-cup-dishes.png'
+import InstantNoodles from '../../assets/images/knorr-instant-noodles.png'
+import Boullion from '../../assets/images/knorr-buillion-and-sauces.png'
+import KnorrAboutHeroImg from '../../assets/images/knorr-about-hero.jpg'
+import KnorrAboutHeroImgMobile from '../../assets/images/knorr-about-hero.jpg'
 import KnorrSustainabilityHeroImg from '../../assets/images/knorr-sustainability-banner.jpg'
 import KnorrSustainabilityHeroImgMobile from '../../assets/images/knorr-sustainability-banner-mobile.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -50,10 +52,10 @@ const IndexPageKnorr = () => {
     </ScrollAnimation>
     <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
      <KnorrCategories sectionTitle="Meie kategooriaid">
-       <KnorrCategoriesBox categoryTitle="Pakisupid" categoryImage={CifCream} categoryLink="/knorr/products?filter=Pakisupid" alt="Knorr Pakisupid"></KnorrCategoriesBox>
-       <KnorrCategoriesBox categoryTitle="Topsiroad" categoryImage={CifSpray} categoryLink="/knorr/products?filter=Topsiroad" alt="Knorr Topsiroad"></KnorrCategoriesBox>
-       <KnorrCategoriesBox categoryTitle="Kiirnuudlid" categoryImage={CifSpray} categoryLink="/knorr/products?filter=Kiirnuudlid" alt="Knorr Kiirnuudlid"></KnorrCategoriesBox>
-       <KnorrCategoriesBox categoryTitle="Puljongid" categoryImage={CifSpray} categoryLink="/knorr/products?filter=Puljongid" alt="Knorr Puljongid"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Pakisupid" categoryImage={CupASoup} categoryLink="/knorr/products?filter=Pakisupid" alt="Knorr Pakisupid"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Topsiroad" categoryImage={CupDishes} categoryLink="/knorr/products?filter=Topsiroad" alt="Knorr Topsiroad"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Kiirnuudlid" categoryImage={InstantNoodles} categoryLink="/knorr/products?filter=Kiirnuudlid" alt="Knorr Kiirnuudlid"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Puljongid" categoryImage={Boullion} categoryLink="/knorr/products?filter=Puljongid" alt="Knorr Puljongid"></KnorrCategoriesBox>
      </KnorrCategories>
     </ScrollAnimation>
      <KnorrBannerAndText

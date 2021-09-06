@@ -63,7 +63,7 @@ const KnorrHeroImage = styled.img`
 
     @media (max-width: 692px) {
         margin-top: 0;
-        object-position: 60%;
+        object-position: 30%;
     }
 `;
 
