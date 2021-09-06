@@ -20,9 +20,7 @@ const KnorrBannerAndTextStyles = createGlobalStyle`
     }
 
     @media(max-width:692px){
-        max-width: 100vw;
         margin: 0 auto;
-        flex-direction: column !important;
     }
     // &::before {
     //     background: url(${KnorrWaveOne});
@@ -131,6 +129,7 @@ const KnorrBannerAndTextStyles = createGlobalStyle`
                 text-align: center !important;
                 margin: 0 auto;
                 display: flex;
+                justify-content: center;
             }
         }
 

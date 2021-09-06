@@ -15,13 +15,13 @@ const KnorrBannerAndTextReversedStyles = createGlobalStyle`
 
     @media(max-width:992px){
         max-width: 100vw;
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
+        padding: 20px 7vw 80px;
     }
 
     @media(max-width:692px){
-        max-width: 100vw;
         margin: 0 auto;
-        flex-direction: column !important;
+
     }
 }
 
@@ -104,12 +104,13 @@ const KnorrBannerAndTextReversedStyles = createGlobalStyle`
                 text-align: center !important;
                 margin: 0 auto;
                 display: flex;
+                justify-content: center;
             }
         }
 
         @media(max-width:767px){
             width: 290px;
-            margin: 0 auto;
+            margin: 20px auto 0;
             text-align: center;
         }
 }
