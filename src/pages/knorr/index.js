@@ -55,7 +55,7 @@ const IndexPageKnorr = () => {
        <KnorrCategoriesBox categoryTitle="Pakisupid" categoryImage={CupASoup} categoryLink="/knorr/products?filter=Pakisupid" alt="Knorr Pakisupid"></KnorrCategoriesBox>
        <KnorrCategoriesBox categoryTitle="Topsiroad" categoryImage={CupDishes} categoryLink="/knorr/products?filter=Topsiroad" alt="Knorr Topsiroad"></KnorrCategoriesBox>
        <KnorrCategoriesBox categoryTitle="Kiirnuudlid" categoryImage={InstantNoodles} categoryLink="/knorr/products?filter=Kiirnuudlid" alt="Knorr Kiirnuudlid"></KnorrCategoriesBox>
-       <KnorrCategoriesBox categoryTitle="Puljongid" categoryImage={Boullion} categoryLink="/knorr/products?filter=Puljongid" alt="Knorr Puljongid"></KnorrCategoriesBox>
+       <KnorrCategoriesBox categoryTitle="Maitseainesegud ja puljongid" categoryImage={Boullion} categoryLink="/knorr/products?filter=Maitseainesegud-ja-Puljongid" alt="Knorr Puljongid"></KnorrCategoriesBox>
      </KnorrCategories>
     </ScrollAnimation>
      <KnorrBannerAndText

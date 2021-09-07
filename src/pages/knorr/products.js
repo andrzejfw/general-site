@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 export const data = graphql`
 query MyQueryProductsKnorr {
-    allProduct(filter: {brand: {eq: "Lipton"}}) {
+    allProduct(filter: {brand: {eq: "Knorr"}}) {
       nodes {
         id
         fullName
@@ -110,7 +110,7 @@ const ProductDiv = styled.div`
 
 const Filter = styled.button`
     color: white;
-    padding: 10px 30px;
+    padding: 10px 0;
     width: 150px;
     border: 1px solid #007a33;
     background-color: #007a33;
@@ -271,7 +271,7 @@ class ProductsKnorr extends React.Component{
                 this.state.filterTwo = false,
                 this.state.filterThree = true,
                 this.state.filterFour = false);
-        } else if (window.location.search == "?filter=Puljongid") {
+        } else if (window.location.search == "?filter=Maitseainesegud-ja-Puljongid") {
             return (
                 this.state.allProducts = false,
                 this.state.filterOne = false,
@@ -322,8 +322,8 @@ class ProductsKnorr extends React.Component{
             <Filter onClick={ () => {addURL("Kiirnuudlid"); this.handleShowFilterThree();}}>
             Kiirnuudlid
             </Filter>
-            <Filter onClick={ () => {addURL("Puljongid"); this.handleShowFilterFour();}}>
-            Puljongid
+            <Filter onClick={ () => {addURL("Maitseainesegud-ja-Puljongid"); this.handleShowFilterFour();}}>
+            Maitseainesegud ja&nbsp;puljongid
             </Filter>
         </FilterDiv>
         </ScrollAnimation>
@@ -346,7 +346,7 @@ class ProductsKnorr extends React.Component{
                     ))}
                 </ProductsUl></ScrollAnimation>
                 {(data.allProduct.nodes.length>12 && this.state.limit<data.allProduct.nodes.length) && 
-                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Show More </ShowMore>}
+                <ShowMore background="none" onClick={() => this.setState({limit: this.state.limit+12})}> Näita rohkem </ShowMore>}
             </div>
             ) : null}
             
@@ -420,7 +420,7 @@ class ProductsKnorr extends React.Component{
             <div class="divider"></div>
             {this.state.filterFour ? (
                 <div>
-                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center"}}>Puljongid</h1></ScrollAnimation>
+                <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center"}}>Maitseainesegud ja puljongid</h1></ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                 <ProductsUl>
                     {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Puljongid"))).map(item => (

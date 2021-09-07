@@ -152,9 +152,9 @@ const HeaderBurgerKnorr = () => {
             left: productsOpen ? "0" : "-100%",
             transition: "all .3s", 
           }} 
-          to="/knorr/products?filter=Puljongid" 
+          to="/knorr/products?filter=Maitseainesegud-ja-Puljongid" 
           onClick={() => {setNavbarOpen(!navbarOpen), setProductsOpen(!productsOpen)}}>
-            Puljongid
+            Maitseainesegud ja puljongid
         </Link>
       </div>
     </nav>

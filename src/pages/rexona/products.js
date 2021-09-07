@@ -8,7 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 export const data = graphql`
 query MyQueryProductsRexona {
-    allProduct(filter: {brand: {eq: "Lipton"}}) {
+    allProduct(filter: {brand: {eq: "Rexona"}}) {
       nodes {
         id
         fullName
