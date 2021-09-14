@@ -24,6 +24,12 @@ const KnorrCategoriesStyles = createGlobalStyle`
     flex-direction: row;
     justify-content: center;
 
+    @media (min-width:693px) and (max-width:1024px){
+        flex-wrap: wrap;
+        gap: 50px;
+        max-width: 800px;
+    }
+
     @media(max-width:692px){
         flex-direction: column;
         margin: 0 0 50px;
@@ -51,6 +57,10 @@ const KnorrCategoriesStyles = createGlobalStyle`
         @media(max-width:692px){
         height: auto;
         }
+    }
+
+    @media (min-width:693px) and (max-width:1024px){
+        margin: 0;
     }
 
     @media(max-width:692px){
