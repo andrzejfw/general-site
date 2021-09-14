@@ -8,7 +8,9 @@ const Navigation = () => {
         <>
         <nav className="header-unilever-nav">
             <div className="links-section-unilever">
-                <a href="/"><img src={UnileverLogo} alt="Unilever Eesti logo"/></a>
+                <div className="img-div">
+                    <a href="/"><img src={UnileverLogo} alt="Unilever Eesti logo"/></a>
+                </div>
                 <Link to="/about" activeClassName="active" className="link-unilever">Ettevõttest</Link>
                 <Link to="/sustainability" activeClassName="active" className="link-unilever">Meie eesmärk</Link>
                 <Link to="/contact" activeClassName="active" className="link-unilever">Kontakt</Link>

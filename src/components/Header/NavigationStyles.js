@@ -23,14 +23,17 @@ const NavigationStyles = createGlobalStyle`
         display: none;
     }
 
-    img {
-        height: 90px;
-        z-index: 999; 
+    .img-div {
         margin-right: 40vw;
 
         @media (max-width: 1700px) {
-          margin-right: 30vw;
+        margin-right: 30vw;
         }
+    }
+
+    img {
+        height: 90px;
+        z-index: 999;
     }
 }
 
