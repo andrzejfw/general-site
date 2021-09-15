@@ -11,7 +11,7 @@ const TabStyle = createGlobalStyle`
   width: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
-    @media(max-width:768px) {
+    @media(max-width:1024px) {
       padding: 10px;
     }
 }
@@ -66,14 +66,25 @@ const TabStyle = createGlobalStyle`
   margin-left: 50%;
   transform: translateX(-50%);
   height: 200px;
-    @media (max-width:768px) {
+    @media (max-width:1024px) {
       display:grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       width:90.1vw;
       background-position: 50%;
       padding: 20px 10px !important;
       height: 350px;
+    }
+
+    @media (max-width:692px) {
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      width:90.1vw;
+      background-position: 50%;
+      padding: 20px 10px !important;
+      height: 350px;
+      align-items: start;
     }
   
   img{
@@ -86,7 +97,7 @@ const TabStyle = createGlobalStyle`
   img:hover {
     transform: scale(1.1);
   }
-  @media(max-width:768px){
+  @media(max-width:1024px){
     img {
       margin: 8px 0;
       max-width:120px;
@@ -99,7 +110,7 @@ const TabStyle = createGlobalStyle`
   position:relative;
   margin-bottom: -4px;
 
-  @media(max-width:768px){
+  @media(max-width:1024px){
     display:flex;
     flex-direction:column;
   }
@@ -119,7 +130,7 @@ const TabStyle = createGlobalStyle`
     color: inherit;
     text-decoration: none !important;
   }
-  @media(max-width:768px){
+  @media(max-width:1024px){
     /* margin-left:15px;
     margin-right:15px; */
     margin:10px auto -20px;
@@ -137,7 +148,7 @@ const TabStyle = createGlobalStyle`
     /* background: rgb(255, 84, 80) !important; */
     p {color: #fff !important;}
   }
-  @media(max-width:768px){
+  @media(max-width:1024px){
     /* margin-left:15px;
     margin-right:15px; */
     margin:10px auto -20px;
@@ -155,7 +166,7 @@ const TabStyle = createGlobalStyle`
     /* background: rgb(255, 121, 198) !important; */
     p {color: #fff !important;}
   }
-  @media(max-width:768px){
+  @media(max-width:1024px){
     /* margin-left:15px;
     margin-right:15px; */
     margin:10px auto -20px;
@@ -172,7 +183,7 @@ const TabStyle = createGlobalStyle`
     /* background: rgb(0, 215, 197) !important; */
     p {color: #fff !important;}
   }
-  @media(max-width:768px){
+  @media(max-width:1024px){
     /* margin-left:15px;
     margin-right:15px; */
     margin:10px auto -20px;
@@ -188,7 +199,7 @@ const TabStyle = createGlobalStyle`
 // end tabs
 
 .divAnchor {
-  @media(min-width:768px){
+  @media(min-width:1024px){
     display: none;
   }
 }
