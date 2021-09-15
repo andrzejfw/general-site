@@ -33,14 +33,14 @@ const HeaderKnorrStyles = createGlobalStyle`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: -30px;
+    gap: 0 10px;
 
     a {
         color: #007a33;
         align-self: center;
         font-size: 1.2rem;
         transition: all .3s ease;
-        padding: 5px 20px;
-        margin: 0 auto;
+        margin: 5px auto;
         border-radius: 45%;
     }
 }

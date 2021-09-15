@@ -39,13 +39,13 @@ const NavigationStyles = createGlobalStyle`
 
 .links-section-unilever {
     display: flex;
+    column-gap: 5px;
 
     a {
         color: #1f36c7;
         align-self: center;
         font-size: 1.2rem;
         transition: all .3s ease;
-        padding: 0 20px;
         margin: 0 auto;
     }
 }

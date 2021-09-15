@@ -33,14 +33,14 @@ const HeaderCifStyles = createGlobalStyle`
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: -30px;
+    column-gap: 10px;
 
     a {
         color: #fff;
         align-self: center;
         font-size: 1.2rem;
         transition: all .3s ease;
-        padding: 5px 20px;
-        margin: 0 auto;
+        margin: 5px auto;
         border-bottom: 3px solid transparent;
         border-left: 3px solid transparent;
         border-radius: 45%;
