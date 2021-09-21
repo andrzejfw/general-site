@@ -11,11 +11,25 @@ const BLOCKS_INDEX = '2';
 const FILE = `${__dirname}/data/ids.csv`
 
 const TEMPLATES = {
-  Lipton: path.resolve(`src/layouts/pdp-lipton.js`),
+  // Cif: path.resolve(`src/layouts/pdp-cif.js`),
+  // Domestos: path.resolve(`src/layouts/pdp-domestos.js`),
+  // Dove: path.resolve(`src/layouts/pdp-dove.js`),
+  'Hellmann\'s': path.resolve(`src/layouts/pdp-hellmanns.js`),
+  // Knorr: path.resolve(`src/layouts/pdp-knorr.js`),
+  // Lipton: path.resolve(`src/layouts/pdp-lipton.js`),
+  // Magnum: path.resolve(`src/layouts/pdp-magnum.js`),
+  // Rexona: path.resolve(`src/layouts/pdp-rexona.js`),
 }
 
 const PATHS = {
-  Lipton: 'lipton/products/',
+  // Cif: 'cif/products/',
+  // Domestos: 'domestos/products/',
+  // Dove: 'dove/products/',
+  'Hellmann\'s': 'hellmanns/products/',
+  // Knorr: 'knorr/products/',
+  // Lipton: 'lipton/products/',
+  // Magnum: 'magnum/products/',
+  // Rexona: 'rexona/products/',
 }
 
 exports.sourceNodes = async ({
@@ -60,7 +74,7 @@ exports.sourceNodes = async ({
       img: resultData.images.length > 0 ? resultData.images[0].url : '',
       parent: null,
       children: [],
-      variant: [153355,153440] || '',
+      variant: [216230] || '',
       internal: {
         type: `Product`,
         contentDigest: createContentDigest(resultData),
@@ -156,10 +170,10 @@ const pageNameMap = {
   "/knorr/about/" : "Kaubamärgist",
   "/knorr/products/" : "Tooted",
   "/knorr/sustainability/" : "Jätkusuutlikkus",
-  "/lipton/index/" : "Avaleht",
-  "/lipton/purpose/" : "Meie eesmärk",
-  "/lipton/products/" : "Tooted",
-  "/lipton/sustainability/" : "Jätkusuutlik elu",
+  // "/lipton/index/" : "Avaleht",
+  // "/lipton/purpose/" : "Meie eesmärk",
+  // "/lipton/products/" : "Tooted",
+  // "/lipton/sustainability/" : "Jätkusuutlik elu",
   "/magnum/index/" : "Avaleht",
   "/magnum/delivery/" : "Telli",
   "/magnum/about/" : "Ettevõttest",
