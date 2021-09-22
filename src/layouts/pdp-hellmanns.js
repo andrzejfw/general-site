@@ -9,6 +9,7 @@ import Button from "../components/ButtonHellmanns"
 import HellmannsBulletsCenter from '../assets/images/hellmanns-bg-content.png'
 import BUp from '../assets/images/hellmanns-bg-footer.png'
 import BDown from '../assets/images/hellmanns-bg-footer.png'
+import { Link } from 'gatsby'
 
 const ProductContainer = styled.div`
     background:#fdf6e8;
@@ -155,6 +156,47 @@ const SectionCarousel = styled.div`
     }
 `;
 
+const VariantList = styled.ul `
+    display: flex;
+    list-style: none;
+    margin: 20px auto;
+
+    
+    .active button {
+      color: #fff;
+    }
+`;
+
+const VariantButton = styled.button `
+    padding: 14px;
+    border: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+    background:#004976;
+    border:none;
+    text-transform:none;
+    transition:.5s;
+    box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.39);
+    outline: none;
+    text-decoration:none;
+    text-align: center;
+    color: #868888;
+    font-weight: 700;
+
+    &:hover{
+      transform: scale(1.15);
+      opacity: 1;
+      border: none;
+      outline: none;
+      text-decoration:none;
+    }
+    &:focus{
+      outline: none;
+      color: #fff;
+      font-weight: bold;
+    }
+`;
+
 export const query = graphql`
 query MyQueryHellmanns($slug: Int!) {
   product(slug: { eq: $slug }) {
@@ -181,12 +223,13 @@ query MyQueryHellmanns($slug: Int!) {
     slug
     ingredients
     img
+    variant
   }
 }
 
 `;
 
-const PostLayoutHellmanns = ({ data }) => {
+const PostLayoutHellmanns = ({ data, pageContext }) => {
     return (
       <>
       <SEO title={data.product.fullName} description={data.product.productShortDescription}/>
@@ -197,7 +240,18 @@ const PostLayoutHellmanns = ({ data }) => {
           </ProductImage>
             <ProductMainInfo>
               <h1>{data.product.fullName}</h1>
-              <h2>{data.product.volume}</h2>
+              {/* <h2>{data.product.volume}</h2> */}
+              <VariantList>
+            {pageContext.variant.map(({id, size}) => 
+            <li>
+              
+              <Link to={`/hellmanns/products/${id}`} activeClassName="active">
+                <VariantButton>{size}</VariantButton>
+              </Link>
+              
+            </li>
+            )}
+          </VariantList>
               <p>{data.product.productDescription}</p>
               <Button>OSTA KOHE</Button>
             </ProductMainInfo>

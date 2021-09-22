@@ -49,7 +49,7 @@ exports.sourceNodes = async ({
       master: attr[0] || '',
       fullName:  attr[1] || '',
       brand:  attr[2] || '',
-      variant: [153444] || '',
+      variant: attr[3].split(", ") || '',
       shortTitle: attr[4] || '',
       volume: attr[5] || '',
       format: attr[6] || '',
