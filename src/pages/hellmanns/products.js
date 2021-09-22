@@ -11,7 +11,7 @@ query MyQueryProductsHellmanns {
       nodes {
         id
         fullName
-        shortTitle
+        productLine
         slug
         img
         format
@@ -207,7 +207,7 @@ const ShowMore = styled.button`
     color: #004976;
     font-weight:700;
     padding: 10px 30px;
-    width: 150px;
+    width: 200px;
     border: solid 1px #004976;
     margin: 10px 10px;
     border-radius: 4px;
@@ -364,7 +364,7 @@ class ProductsHellmanns extends React.Component{
                 <div>
                 <h1 style={{textAlign: "center" }}>MAJONEES</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Majonees"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.productLine.includes("Majonees"))).map(item => (
                         <li key={item.id}>
                             <a href={`/hellmanns/products/${item.id}`}>
                             <div>
@@ -384,7 +384,7 @@ class ProductsHellmanns extends React.Component{
                 <div>
                 <h1 style={{textAlign: "center"}}>KETŠUP</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Ketšup"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.productLine.includes("Ketšup"))).map(item => (
                         <li key={item.id}>
                             <a href={`/hellmanns/products/${item.id}`}>
                             <div>
@@ -404,7 +404,7 @@ class ProductsHellmanns extends React.Component{
                 <div>
                 <h1 style={{textAlign: "center"}}>KASTMED</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Kastmed"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.productLine.includes("Kaste"))).map(item => (
                         <li key={item.id}>
                             <a href={`/hellmanns/products/${item.id}`}>
                             <div>

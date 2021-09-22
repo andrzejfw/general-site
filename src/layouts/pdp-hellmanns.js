@@ -218,7 +218,7 @@ const PostLayoutHellmanns = ({ data }) => {
             <Accordion>
               {/* Ingredients */}
               <AccordionTab label="Koostisosad">
-                <p>{data.product.allergens}</p>
+                <p>{data.product.ingredients}</p>
               </AccordionTab>
               {/* Allergens */}
               <AccordionTab label="Allergeenid">
