@@ -20,7 +20,6 @@ query MyQueryCarouselLipton ($slug: Int!) {
     feature5
     feature6
     format
-    formatOptional
     fullName
     master
     productDescription
@@ -29,7 +28,6 @@ query MyQueryCarouselLipton ($slug: Int!) {
     productLine
     productShortDescription
     shortTitle
-    tag
     volume
     slug
     ingredients

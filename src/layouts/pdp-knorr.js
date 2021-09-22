@@ -178,7 +178,6 @@ query MyQueryKnorr($slug: Int!) {
     feature5
     feature6
     format
-    formatOptional
     fullName
     master
     productDescription
@@ -187,7 +186,6 @@ query MyQueryKnorr($slug: Int!) {
     productLine
     productShortDescription
     shortTitle
-    tag
     volume
     slug
     ingredients

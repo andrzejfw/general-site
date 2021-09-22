@@ -14,8 +14,8 @@ const TEMPLATES = {
   // Cif: path.resolve(`src/layouts/pdp-cif.js`),
   // Domestos: path.resolve(`src/layouts/pdp-domestos.js`),
   // Dove: path.resolve(`src/layouts/pdp-dove.js`),
-  'Hellmann\'s': path.resolve(`src/layouts/pdp-hellmanns.js`),
-  // Knorr: path.resolve(`src/layouts/pdp-knorr.js`),
+  // 'Hellmann\'s': path.resolve(`src/layouts/pdp-hellmanns.js`),
+  Knorr: path.resolve(`src/layouts/pdp-knorr.js`),
   // Lipton: path.resolve(`src/layouts/pdp-lipton.js`),
   // Magnum: path.resolve(`src/layouts/pdp-magnum.js`),
   // Rexona: path.resolve(`src/layouts/pdp-rexona.js`),
@@ -25,8 +25,8 @@ const PATHS = {
   // Cif: 'cif/products/',
   // Domestos: 'domestos/products/',
   // Dove: 'dove/products/',
-  'Hellmann\'s': 'hellmanns/products/',
-  // Knorr: 'knorr/products/',
+  // 'Hellmann\'s': 'hellmanns/products/',
+  Knorr: 'knorr/products/',
   // Lipton: 'lipton/products/',
   // Magnum: 'magnum/products/',
   // Rexona: 'rexona/products/',
@@ -49,32 +49,32 @@ exports.sourceNodes = async ({
       master: attr[0] || '',
       fullName:  attr[1] || '',
       brand:  attr[2] || '',
-      format: attr[3] || '',
+      variant: [153444] || '',
       shortTitle: attr[4] || '',
       volume: attr[5] || '',
-      formatOptional: attr[6] || '',
-      tag: attr[7] || '',
-      productLine: attr[8] || '',
-      productDescription: attr[9] || '',
-      feature1: attr[10] || '',
-      feature2: attr[11] || '',
-      feature3: attr[12] || '',
-      feature4: attr[13] || '',
-      feature5: attr[14] || '',
-      feature6: attr[15] || '',
-      productShortDescription: attr[16] || '',
+      format: attr[6] || '',
+      productLine: attr[7] || '',
+      productDescription: attr[8] || '',
+      feature1: attr[9] || '',
+      feature2: attr[10] || '',
+      feature3: attr[11] || '',
+      feature4: attr[12] || '',
+      feature5: attr[13] || '',
+      feature6: attr[14] || '',
+      productShortDescription: attr[15] || '',      
+      etailerUrl: attr[16] || '',
       productHowToUse: attr[17] || '',
-      productDoYouKnow: attr[18] || '',
-      etailerUrl: attr[19] || '',
-      ingredients: attr[20] || '',
-      allergens: attr[21] || '',
+      ingredients: attr[18] || '',
+      allergens: attr[19] || '',
+      productDoYouKnow: attr[20] || '',
+      // formatOptional: attr[] || '',
+      // tag: attr[] || '',
       language: resultData.language,
       slug:resultData.id,
       id: `${resultData.id}`,
       img: resultData.images.length > 0 ? resultData.images[0].url : '',
       parent: null,
       children: [],
-      variant: [216230] || '',
       internal: {
         type: `Product`,
         contentDigest: createContentDigest(resultData),
@@ -101,7 +101,6 @@ exports.createPages = async ({ graphql, actions }) => {
           feature5
           feature6
           format
-          formatOptional
           fullName
           ingredients
           master
@@ -111,7 +110,6 @@ exports.createPages = async ({ graphql, actions }) => {
           productLine
           productShortDescription
           shortTitle
-          tag
           volume
           slug
           variant

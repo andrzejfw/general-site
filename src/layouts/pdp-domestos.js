@@ -137,7 +137,6 @@ query MyQueryDomestos($slug: Int!) {
     feature5
     feature6
     format
-    formatOptional
     fullName
     master
     productDescription
@@ -146,7 +145,6 @@ query MyQueryDomestos($slug: Int!) {
     productLine
     productShortDescription
     shortTitle
-    tag
     volume
     slug
     ingredients
