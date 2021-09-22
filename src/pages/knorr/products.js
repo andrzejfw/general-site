@@ -11,7 +11,7 @@ query MyQueryProductsKnorr {
       nodes {
         id
         fullName
-        shortTitle
+        productLine
         slug
         img
         format
@@ -182,7 +182,8 @@ const ShowMore = styled.button`
     width: 150px;
     border: 1px solid #007a33;
     background-color: #007a33;
-    margin: 10px 10px;
+    margin: 20px auto;
+    display: flex;
     border-radius: 10px;
     text-transform:none;
     transition: all .2s ease-in-out;
@@ -357,7 +358,7 @@ class ProductsKnorr extends React.Component{
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center" }}>Pakisupid</h1></ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Pakisupid"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.productLine.includes("Pakisupid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/knorr/products/${item.id}`}>
                             <div>
@@ -379,7 +380,7 @@ class ProductsKnorr extends React.Component{
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center"}}>Topsiroad</h1></ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Topsiroad"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.productLine.includes("Topsiroad"))).map(item => (
                         <li key={item.id}>
                             <a href={`/knorr/products/${item.id}`}>
                             <div>
@@ -401,7 +402,7 @@ class ProductsKnorr extends React.Component{
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center"}}>Kiirnuudlid</h1></ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Kiirnuudlid"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.productLine.includes("Kiirnuudlid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/knorr/products/${item.id}`}>
                             <div>
@@ -423,7 +424,7 @@ class ProductsKnorr extends React.Component{
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><h1 style={{textAlign: "center"}}>Maitseainesegud ja puljongid</h1></ScrollAnimation>
                 <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.shortTitle.includes("Puljongid"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.productLine.includes("Maitseainesegud ja puljongid"))).map(item => (
                         <li key={item.id}>
                             <a href={`/knorr/products/${item.id}`}>
                             <div>
