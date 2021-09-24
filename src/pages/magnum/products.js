@@ -326,7 +326,7 @@ class ProductsMagnum extends React.Component{
                 <div>
                 <h1>Pulgajäätised</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.format.includes("Pulgajäätised"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.productLine.includes("Pulgajäätised"))).map(item => (
                         <li key={item.id}>
                             <div>
                                 <img src={item.img}/>
@@ -344,7 +344,7 @@ class ProductsMagnum extends React.Component{
                 <div>
                 <h1 style={{textAlign: "center"}}>Perejäätised</h1>
                 <ProductsUl>
-                    {data.allProduct.nodes.filter(item => (item.format.includes("Perejäätised"))).map(item => (
+                    {data.allProduct.nodes.filter(item => (item.productLine.includes("Perejäätised"))).map(item => (
                         <li key={item.id}>
                             <div>
                                 <img src={item.img}/>
