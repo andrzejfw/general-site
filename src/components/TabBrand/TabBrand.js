@@ -73,7 +73,7 @@ export default class extends React.Component{
             </Link>
 
             <TabPanel style={{backgroundImage: `url(${Spoon})`}}>
-                <Link to="/lipton"><img src={Lipton} alt="Lipton Eesti logo"></img></Link>
+                {/* <Link to="/lipton"><img src={Lipton} alt="Lipton Eesti logo"></img></Link> */}
                 <Link to="/knorr"><img src={Knorr} alt="Knorr Eesti logo"></img></Link>
                 <Link to="/hellmanns"><img src={Hellmanns} alt="Hellmann's Eesti logo"></img></Link>
                 {/* <Link to="/pukka"><img src={Pukka} alt="Pukka tee Eesti logo"></img></Link> */}

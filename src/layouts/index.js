@@ -17,17 +17,17 @@ import NavigationBurgerStyles from "../components/Header/NavigationBurgerStyles"
 import FaviconUni from "../components/Favicon/FaviconUni"
 
 //lipton
-import FooterLipton from "../components/FooterLipton/FooterLipton.js"
-import NavigationLipton from "../components/HeaderLipton/NavigationLipton.js"
-import NavigationBurgerLipton from "../components/HeaderLipton/NavigationBurgerLipton.js"
-import CarouselStyleLipton from "../components/CarouselLipton/CarouselStyles.js"
-import CarouselStyleLiptonRecipe from "../components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js"
-import NavigationLiptonStyles from "../components/HeaderLipton/NavigationLiptonStyles"
-import NavigationBurgerLiptonStyles from "../components/HeaderLipton/NavigationBurgerLiptonStyles"
-import LiptonCategoriesStyles from "../components/LiptonCategories/LiptonCategoriesStyles"
-import LiptonBannerAndTextStyles from "../components/LiptonBannerAndText/LiptonBannerAndTextStyles"
-import BannerWithVideoLiptonStyles from "../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles"
-import FaviconLipton from "../components/Favicon/FaviconLipton"
+// import FooterLipton from "../components/FooterLipton/FooterLipton.js"
+// import NavigationLipton from "../components/HeaderLipton/NavigationLipton.js"
+// import NavigationBurgerLipton from "../components/HeaderLipton/NavigationBurgerLipton.js"
+// import CarouselStyleLipton from "../components/CarouselLipton/CarouselStyles.js"
+// import CarouselStyleLiptonRecipe from "../components/CarouselLiptonRecipe/CarouselLiptonRecipeStyles.js"
+// import NavigationLiptonStyles from "../components/HeaderLipton/NavigationLiptonStyles"
+// import NavigationBurgerLiptonStyles from "../components/HeaderLipton/NavigationBurgerLiptonStyles"
+// import LiptonCategoriesStyles from "../components/LiptonCategories/LiptonCategoriesStyles"
+// import LiptonBannerAndTextStyles from "../components/LiptonBannerAndText/LiptonBannerAndTextStyles"
+// import BannerWithVideoLiptonStyles from "../components/BannerWithVideoLipton/BannerWithVideoLiptonStyles"
+// import FaviconLipton from "../components/Favicon/FaviconLipton"
 
 //domestos
 import FooterDomestos from "../components/FooterDomestos/FooterDomestos.js"
@@ -329,7 +329,7 @@ const MainLayout = ({ children, location }) => (
       <Animations/>
       </>
     }
-    {location.pathname.match('lipton') && 
+    {/* {location.pathname.match('lipton') && 
       <>
       <NavigationLipton/>
       <NavigationBurgerLipton/>
@@ -349,7 +349,7 @@ const MainLayout = ({ children, location }) => (
       <FaviconLipton/>
       <Animations/>
       </>
-    }
+    } */}
     {location.pathname.match('cif') && 
       <>
       <CarouselStyleCif/>
@@ -532,7 +532,7 @@ const MainLayout = ({ children, location }) => (
       <CarouselStyle/>
       </>
     }
-    {location.pathname.match('lipton') && 
+    {/* {location.pathname.match('lipton') && 
       <>
       <FooterLipton/>
       <GlobalStyle />
@@ -542,7 +542,7 @@ const MainLayout = ({ children, location }) => (
       <QuotesStyles/>
       <CarouselStyle/>
       </>
-    }
+    } */}
     {location.pathname.match('cif') && 
       <>
       <FooterCif/>
