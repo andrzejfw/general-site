@@ -160,6 +160,8 @@ const VariantList = styled.ul `
     display: flex;
     list-style: none;
     margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
 
     
     .active button {
@@ -243,7 +245,7 @@ const PostLayoutHellmanns = ({ data, pageContext }) => {
               {/* <h2>{data.product.volume}</h2> */}
               <VariantList>
             {pageContext.variant.map(({id, size}) => 
-            <li>
+            <li style={{order: `${parseInt(size)}`}}>
               
               <Link to={`/hellmanns/products/${id}`} activeClassName="active">
                 <VariantButton>{size}</VariantButton>
