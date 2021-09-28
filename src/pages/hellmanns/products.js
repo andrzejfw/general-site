@@ -101,22 +101,20 @@ const ProductDiv = styled.div`
     position: relative;
 
     .divider {
-      width: 2px;
+      /* width: 2px;
       height: calc(100% - 90px);
-      /* background: linear-gradient(60deg,#fff 0,#004976 40%,#004976 60%,#fff 100%); */
       background: #004976;
-      /* border-radius: 95%; */
       position: absolute;
       left: 0;
-      top: 100px;
+      top: 100px; */
 
-      @media (max-width: 1500px) {
+      /* @media (max-width: 1500px) {
         height: calc(100% - 30px);
         }
 
       @media (max-width: 692px) {
         display: none;
-        }
+        } */
     }
 
     @media (max-width: 1100px) {
