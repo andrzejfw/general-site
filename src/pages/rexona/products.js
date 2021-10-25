@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import RexonaHeroImg from '../../assets/images/rexona-products-hero.jpg'
 import RexonaHeroImgMobile from '../../assets/images/rexona-products-hero-mobile.jpg'
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from 'react-animate-on-scroll'
+import SEO from '../../components/Seo/Seo'
 
 
 export const data = graphql`
@@ -279,6 +280,7 @@ class ProductsRexona extends React.Component{
 
       return (
         <>
+        <SEO title="Rexona Tooted" description="Rexona tootekataloog - deodorandid meestele ja naistele. Tutvu lähemalt meie erinevate deodorantidega ning vaata, kust on võimalik tooteid soetada."/>
         <RexonaHeroImage src={RexonaHeroImg} alt="Rexona move"/>
         <ProductSectionDiv>
         <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">

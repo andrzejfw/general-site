@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import CifHeroImg from '../../assets/images/cif-products-hero.jpg'
 import CifHeroImgMobile from '../../assets/images/cif-products-hero-mobile.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
+import SEO from '../../components/Seo/Seo'
 
 export const data = graphql`
 query MyQueryProductsCif {
@@ -291,6 +292,7 @@ class ProductsCif extends React.Component{
 
       return (
         <>
+        <SEO title="Cif Tooted" description="Cif tootekataloog - puhastuskreemid ja pihustid. Tutvu meie tootevalikuga. Puhastusvahendid terve kodu jaoks. Vaata lähemalt."/>
         <CifHeroImage src={CifHeroImg} alt="Cif Tooted"/>
         <ProductSectionDiv>
         <ScrollAnimation animateIn="animate__fadeInLeft" delay="200" animateOnce="true" >

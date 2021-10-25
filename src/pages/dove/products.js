@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import DoveHeroImg from '../../assets/images/dove-products-hero.jpg'
 import DoveHeroImgMobile from '../../assets/images/dove-products-hero-mobile.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
+import SEO from '../../components/Seo/Seo'
 
 export const data = graphql`
 query MyQueryProductsDove {
@@ -369,6 +370,7 @@ class ProductsDove extends React.Component{
 
       return (
         <>
+        <SEO title="Dove Tooted" description="Dove tootekataloog - deodorandid, juuksehooldus, kehahooldus ning kreemid. Tutvu lähemalt Dove toodetega ning vaata, kust on võimalik meie tooteid soetada."/>
         <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
         <ImageSection>
             <DoveHeroImage src={DoveHeroImg} alt="Dove Tooted"/>

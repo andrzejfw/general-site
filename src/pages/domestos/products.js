@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import DomestosHeroImg from '../../assets/images/domestos-products-hero.jpg'
 import DomestosHeroImgMobile from '../../assets/images/domestos-products-hero-mobile.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
+import SEO from '../../components/Seo/Seo'
 
 export const data = graphql`
 query MyQueryProductsDomestos {
@@ -276,6 +277,7 @@ class ProductsDomestos extends React.Component{
 
       return (
         <>
+        <SEO title="Domestos Tooted" description="Domestose kodukeemia tootekataloog. Tutvu Domestose WC-värskendajate ning puhastusvahenditega ning vaata lähemalt, kust on võimalik osta Domestose tooteid."/>
         <DomestosHeroImage src={DomestosHeroImg} alt="Domestos Tooted"/>
         <ProductSectionDiv>
         <ScrollAnimation animateIn="animate__fadeInLeft" delay="200" animateOnce="true">

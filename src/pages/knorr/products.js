@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import KnorrHeroImg from '../../assets/images/knorr-products-hero.jpg'
 import KnorrHeroImgMobile from '../../assets/images/knorr-products-hero-mobile.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
+import SEO from '../../components/Seo/Seo'
 
 export const data = graphql`
 query MyQueryProductsKnorr {
@@ -306,6 +307,7 @@ class ProductsKnorr extends React.Component{
 
       return (
         <>
+        <SEO title="Knorr Tooted" description="Knorr tootekataloog. Vaata lähemalt, milliseid pakisuppe, kiirnuudleid ning topsiroogasid me pakume ning kust on võimalik leida Knorri tooteid."/>
         <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true"><KnorrHeroImage src={KnorrHeroImg} alt="Knorr food"/></ScrollAnimation>
         <ProductSectionDiv>
         <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
