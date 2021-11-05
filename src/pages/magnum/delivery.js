@@ -75,52 +75,52 @@ const MagnumDeliveryBox = styled.section`
     }
 `;
 
-const MagnumDeliveryBoxLink = styled.section`
-    position: relative;
-    text-align:center;
-    transition: all .5s;
-    margin: 0 auto;
-    margin-bottom:30px;
-    border-radius: 14px;
-    width: 300px;
-    /* @media(max-width:992px){
-        width:100%;
-      } */
-    ${MagnumDeliveryBoxLink}:hover {
-      transform: scale(1.08);
-      box-shadow: 4px 4px 11px 0px rgb(80 51 35 / 72%);
-      border-radius: 14px;
-      img {
-      width:100%;
-      height:100%;
-      border-radius: 14px !important;
-    }
-      }
-    img {
-    border-radius: 14px;
-    max-width: 300px;
-    text-align: center;
-    }
-    span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 20;
-    /* text-shadow: 1px 3px 9px black; */
-    background-color: rgb(255 255 255 / 70%);
-    padding:15px;
-    text-align: center;
-    font-size: 20px;
-    width:100%;
-    }
-    a {
-      color:black
-    }
-    a:hover {
-      color:black;
-    }
-`;
+// const MagnumDeliveryBoxLink = styled.section`
+//     position: relative;
+//     text-align:center;
+//     transition: all .5s;
+//     margin: 0 auto;
+//     margin-bottom:30px;
+//     border-radius: 14px;
+//     width: 300px;
+//     /* @media(max-width:992px){
+//         width:100%;
+//       } */
+//     ${MagnumDeliveryBoxLink}:hover {
+//       transform: scale(1.08);
+//       box-shadow: 4px 4px 11px 0px rgb(80 51 35 / 72%);
+//       border-radius: 14px;
+//       img {
+//       width:100%;
+//       height:100%;
+//       border-radius: 14px !important;
+//     }
+//       }
+//     img {
+//     border-radius: 14px;
+//     max-width: 300px;
+//     text-align: center;
+//     }
+//     span {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 20;
+//     /* text-shadow: 1px 3px 9px black; */
+//     background-color: rgb(255 255 255 / 70%);
+//     padding:15px;
+//     text-align: center;
+//     font-size: 20px;
+//     width:100%;
+//     }
+//     a {
+//       color:black
+//     }
+//     a:hover {
+//       color:black;
+//     }
+// `;
 
 const DeliveryPage = () => {
   return (
@@ -140,13 +140,13 @@ const DeliveryPage = () => {
           <p>Jäätisepoed Wolti platvormil on aktiivsed Tallinnas ja Tartus</p>
         </ScrollAnimation>
       <ScrollAnimation animateIn="animate__zoomInLeft" animateOnce="true" delay="200">
-        <MagnumDeliveryBoxLink>
+        {/* <MagnumDeliveryBoxLink>
         <Link target="_blank" to="https://wolt.com/en/search?q=home%20of%20ice%20cream">
           <img src={IceCreamDelivery} alt="Telli Magnumi jäätis koju"></img>
           <span>Home of Ice Cream</span>
           <WoltDelivery><img src={WoltBackground} alt="Telli jäätis koju Wolt kullerteenusega"></img></WoltDelivery>
         </Link>
-      </MagnumDeliveryBoxLink>
+      </MagnumDeliveryBoxLink> */}
       </ScrollAnimation>
       </MagnumDeliveryBox>
     <MagnumDeliveryBox>
@@ -154,12 +154,12 @@ const DeliveryPage = () => {
         <p>Jäätisepoed Bolti Foodi platvormil on aktiivsed Tallinnas, Tartus ja Pärnus ning peagi Narvas. Jättisepoed Bolt Foodi platvormil on nähtavad ainult Bolt Foodi telefonirakendusest.</p>
     </ScrollAnimation>
     <ScrollAnimation animateIn="animate__zoomInRight" animateOnce="true" delay="200">
-      <MagnumDeliveryBoxLink>
+      {/* <MagnumDeliveryBoxLink>
         <Link target="_blank" to="https://food.bolt.eu/en-us/">
           <img src={BoltBackground} alt="Telli jäätis koju Bolt Foodist"></img>
           <span>Lisateave</span>
         </Link>
-      </MagnumDeliveryBoxLink>
+      </MagnumDeliveryBoxLink> */}
     </ScrollAnimation>
     </MagnumDeliveryBox>
     

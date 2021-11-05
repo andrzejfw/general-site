@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import HellmannsHeroImg from '../../assets/images/hellmanns-products-hero.jpg'
 import HellmannsHeroImgMobile from '../../assets/images/hellmanns-products-hero-mobile.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
-import SEO from '../../components/Seo/Seo'
 
 export const data = graphql`
 query MyQueryProductsHellmanns {
@@ -296,7 +295,9 @@ class ProductsHellmanns extends React.Component{
                 this.state.filterThree = false);
         }
     }
-
+    componentDidMount = () => {
+        this.ifURL()
+    }
     render() {
         const { data } = this.props;
 
@@ -314,14 +315,13 @@ class ProductsHellmanns extends React.Component{
 
       return (
         <>
-        <SEO title="Hellmann's Tooted" description="Hellmann’s tootekataloog. Meie tootevalikusse kuuluvad majonees, ketšup ning erinevad kastmed. Tutvu meie toodetega ning vaata, kust on võimalik neid soetada"/>
         <Section>
         <ScrollAnimation animateIn="animate__fadeInDown" animateOnce="true">
         <HellmannsHeroImage src={HellmannsHeroImg} alt="Hellmanns Tooted"/>
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__fadeInUp" delay="600" animateOnce="true">
         <ProductSectionDiv>
-        <FilterDiv onLoad={this.ifURL()}>
+        <FilterDiv>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>KATEGOORIAD:</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
                 KÕIK TOOTED

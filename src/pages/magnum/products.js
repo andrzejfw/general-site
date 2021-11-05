@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import MagnumHeroImg from '../../assets/images/magnum-products-hero.jpg'
 import MagnumHeroImgMobile from '../../assets/images/magnum-products-hero-mobile.jpg'
-import SEO from '../../components/Seo/Seo'
 
 export const data = graphql`
 query MyQueryProductsMagnum {
@@ -270,6 +269,9 @@ class ProductsMagnum extends React.Component{
                 this.state.filterThree = false);
         }
     }
+    componentDidMount = () => {
+        this.ifURL()
+    }
     render() {
         const { data } = this.props;
         function addURL(filterName) {
@@ -285,10 +287,9 @@ class ProductsMagnum extends React.Component{
 
       return (
         <>
-        <SEO title="Magnum Tooted" description="Magnumi jäätiste tootekataloog. Tutvu meie tootevalikuga ning uuri lähemalt, kust on võimalik osta maitsvaid Magnumi jäätiseid."/>
         <MagnumHeroImage src={MagnumHeroImg} alt="Magnum jäätis"/> 
         <ProductSectionDiv>
-        <FilterDiv onLoad={this.ifURL()}>
+        <FilterDiv>
             <h2>Kategooriad</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
                 Kogu jäätis

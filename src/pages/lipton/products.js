@@ -278,7 +278,9 @@ class ProductsLipton extends React.Component{
                 this.state.filterThree = false);
         }
     }
-
+    componentDidMount = () => {
+        this.ifURL()
+    }
     render() {
         const { data } = this.props;
 
@@ -301,7 +303,7 @@ class ProductsLipton extends React.Component{
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__fadeIn" delay="600" animateOnce="true">
         <ProductSectionDiv>
-        <FilterDiv onLoad={this.ifURL()}>
+        <FilterDiv>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
                 Kõik Tooted​​

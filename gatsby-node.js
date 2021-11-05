@@ -38,14 +38,13 @@ exports.sourceNodes = async ({
 }) => {
   const csv = await fs.readFile(FILE, 'utf8')
   const ids = csv.split('\n')
-  await ids.forEach(async (id) => {
+  const promises =  ids.map(async (id) => {
     const result = await fetch(`${API}product-detail/${id}/?language=${LANGUAGE}&token=${TOKEN}&manufacturer=${MANUFACTURER}`)
     const resultData = await result.json()
-
     const blocks = resultData.blocks[BLOCKS_INDEX]
     const attr = blocks.attributes.map(a => a.value || '');
 
-    createNode({
+    await createNode({
       master: attr[0] || '',
       fullName:  attr[1] || '',
       brand:  attr[2] || '',
@@ -81,6 +80,7 @@ exports.sourceNodes = async ({
       },
     })
   })
+  return Promise.all(promises)
 }
 
 exports.createPages = async ({ graphql, actions }) => {

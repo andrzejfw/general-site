@@ -9,7 +9,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-layout`,
     `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
-    
+
     // `gatsby-plugin-ngrok-tunneling`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -18,16 +18,16 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
- 
+
     {
       resolve: `gatsby-source-graphql`,
       options: {
         typeName: `GitHub`,
         fieldName: `github`,
-        url: `https://api.github.com/graphql`,
-        headers: {
-          Authorization: `Bearer your-github-token`,
-        },
+        url: `https://swapi-graphql.netlify.app/.netlify/functions/index`,
+        // headers: {
+        //   Authorization: `Bearer your-github-token`,
+        // },
       },
     },
     {

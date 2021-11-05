@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import CifHeroImg from '../../assets/images/cif-products-hero.jpg'
 import CifHeroImgMobile from '../../assets/images/cif-products-hero-mobile.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
-import SEO from '../../components/Seo/Seo'
 
 export const data = graphql`
 query MyQueryProductsCif {
@@ -274,7 +273,9 @@ class ProductsCif extends React.Component{
                 this.state.filterTwo = false);
         }
     }
-
+    componentDidMount = () => {
+        this.ifURL()
+    }
     render() {
         const { data } = this.props;
 
@@ -289,14 +290,12 @@ class ProductsCif extends React.Component{
             url.searchParams.delete('filter');
             window.history.pushState({}, '', url);
         }
-
       return (
         <>
-        <SEO title="Cif Tooted" description="Cif tootekataloog - puhastuskreemid ja pihustid. Tutvu meie tootevalikuga. Puhastusvahendid terve kodu jaoks. Vaata lähemalt."/>
         <CifHeroImage src={CifHeroImg} alt="Cif Tooted"/>
         <ProductSectionDiv>
         <ScrollAnimation animateIn="animate__fadeInLeft" delay="200" animateOnce="true" >
-        <FilterDiv onLoad={this.ifURL()}>
+        <FilterDiv>
             <h2 style={{textAlign: "center", fontWeight: "bold"}}>Kategooriad:</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
                 Kõik Tooted

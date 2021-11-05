@@ -2,10 +2,8 @@
 const preferDefault = m => (m && m.default) || m
 
 exports.components = {
-  "component---cache-dev-404-page-js": () => import("./../../dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
-  "component---src-layouts-pdp-cif-js": () => import("./../../../src/layouts/pdp-cif.js" /* webpackChunkName: "component---src-layouts-pdp-cif-js" */),
-  "component---src-layouts-pdp-lipton-js": () => import("./../../../src/layouts/pdp-lipton.js" /* webpackChunkName: "component---src-layouts-pdp-lipton-js" */),
-  "component---src-layouts-pdp-magnum-js": () => import("./../../../src/layouts/pdp-magnum.js" /* webpackChunkName: "component---src-layouts-pdp-magnum-js" */),
+  "component---src-layouts-pdp-hellmanns-js": () => import("./../../../src/layouts/pdp-hellmanns.js" /* webpackChunkName: "component---src-layouts-pdp-hellmanns-js" */),
+  "component---src-layouts-pdp-knorr-js": () => import("./../../../src/layouts/pdp-knorr.js" /* webpackChunkName: "component---src-layouts-pdp-knorr-js" */),
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-500-js": () => import("./../../../src/pages/500.js" /* webpackChunkName: "component---src-pages-500-js" */),
   "component---src-pages-about-js": () => import("./../../../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),

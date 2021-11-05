@@ -1,10 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
 import RexonaHeroImg from '../../assets/images/rexona-products-hero.jpg'
 import RexonaHeroImgMobile from '../../assets/images/rexona-products-hero-mobile.jpg'
-import ScrollAnimation from 'react-animate-on-scroll'
-import SEO from '../../components/Seo/Seo'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export const data = graphql`
@@ -262,7 +261,9 @@ class ProductsRexona extends React.Component{
                 this.state.filterTwo = true);
         }
     }
-
+    componentDidMount = () => {
+        this.ifURL()
+    }
     render() {
         const { data } = this.props;
 
@@ -277,14 +278,12 @@ class ProductsRexona extends React.Component{
             url.searchParams.delete('filter');
             window.history.pushState({}, '', url);
         }
-
       return (
         <>
-        <SEO title="Rexona Tooted" description="Rexona tootekataloog - deodorandid meestele ja naistele. Tutvu lähemalt meie erinevate deodorantidega ning vaata, kust on võimalik tooteid soetada."/>
         <RexonaHeroImage src={RexonaHeroImg} alt="Rexona move"/>
         <ProductSectionDiv>
         <ScrollAnimation animateIn="animate__fadeIn" animateOnce="true">
-        <FilterDiv onLoad={this.ifURL()}>
+        <FilterDiv>
             <h2 style={{textAlign: "center", fontWeight: "bold",}}>Kategooriad:</h2>
             <Filter onClick={ () => {clearURL();this.handleShowAll();}}>
             Kõik Tooted
